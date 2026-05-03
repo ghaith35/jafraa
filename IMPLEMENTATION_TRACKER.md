@@ -24,8 +24,8 @@ Last updated: 2026-05-03 (Block 8 complete)
 | 5 | Customers & Customer Devices | ✅ Done | Customer list/create/edit/archive, walk-in vs named, phones, assets |
 | 6 | Catalog Foundation | ✅ Done | DeviceCategory/DeviceBrand/DeviceModelFamily, seed data, catalog UI, asset form integration |
 | 7 | Inventory — Products / Parts / Services | ✅ Done | Products, parts, services, schemas, seed data, unified UI |
-| 8 | Basic Repair Tickets | ⏳ Not Started | Ticket creation, intake, status |
-| 9 | Repair Status Flow | ⏳ Not Started | Full status machine, history |
+| 8 | Basic Repair Tickets | ✅ Done | Ticket creation, intake, status |
+| 9 | Repair Status Flow | ✅ Done | Full status machine, history |
 | 10 | Estimates / Devis | ⏳ Not Started | Draft → sent → accepted → rejected |
 | 11 | Cash Register Sessions | ⏳ Not Started | Open/close session, Z-report |
 | 12 | Cash-Only POS | ⏳ Not Started | POS screen, held carts, barcode scan |

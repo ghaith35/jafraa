@@ -1,0 +1,34 @@
+
+> jafraa@0.1.0 lint
+> eslint
+
+
+/Users/ghaith/Desktop/jafraa/src/app/(dashboard)/dashboard/repairs/[id]/page.tsx
+  7:40  warning  'props' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ghaith/Desktop/jafraa/src/features/repairs/components/RepairDetail.tsx
+   6:46  warning  'MapPin' is defined but never used        @typescript-eslint/no-unused-vars
+   6:59  warning  'Wrench' is defined but never used        @typescript-eslint/no-unused-vars
+   6:92  warning  'Edit' is defined but never used          @typescript-eslint/no-unused-vars
+   6:98  warning  'ChevronDown' is defined but never used   @typescript-eslint/no-unused-vars
+  27:73  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/ghaith/Desktop/jafraa/src/features/repairs/components/RepairForm.tsx
+  12:54  warning  'catalog' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  18:55  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+  55:14  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  61:25  warning  Compilation Skipped: Use of incompatible library
+
+This API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.
+
+/Users/ghaith/Desktop/jafraa/src/features/repairs/components/RepairForm.tsx:61:25
+  59 |   };
+  60 |
+> 61 |   const watchCustomer = form.watch("customerId");
+     |                         ^^^^ React Hook Form's `useForm()` API returns a `watch()` function which cannot be memoized safely.
+  62 |   /* eslint-disable-next-line @typescript-eslint/no-explicit-any */ 
+  63 |   const customerAssets = customers.find((c: any) => c.id === watchCustomer)?.assets || [];
+  64 |  react-hooks/incompatible-library
+
+✖ 10 problems (2 errors, 8 warnings)
+

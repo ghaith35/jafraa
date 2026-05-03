@@ -83,6 +83,28 @@ enum DocumentSequenceType {
   tradein
 }
 
+// Repair Ticket Enums
+enum RepairStatus {
+  received
+  in_diagnosis
+  in_repair
+  ready_for_pickup
+  completed
+  not_repaired
+}
+
+enum RepairPriority {
+  normal
+  rush
+}
+
+enum ProblemResolutionStatus {
+  pending
+  fixed
+  not_fixed
+  deferred
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // TENANT & AUTH
 // ─────────────────────────────────────────────────────────────────────────────
@@ -111,6 +133,7 @@ model Company {
   purchaseInvoices      PurchaseInvoice[]
   stockBatches          StockBatch[]
   stockMovements        StockMovement[]
+  repairTickets         RepairTicket[]
 
   @@index([name])
   @@map("companies")
@@ -150,6 +173,9 @@ model User {
   auditLogs             AuditLog[]
   purchaseInvoicesCreated PurchaseInvoice[]
   stockMovementsCreated   StockMovement[]
+  repairsAssigned         RepairTicket[] @relation("AssignedRepairs")
+  repairsCreated          RepairTicket[] @relation("CreatedRepairs")
+  repairStatusChanges     RepairStatusHistory[]
 
   @@unique([companyId, email])
   @@index([companyId, role])
@@ -186,6 +212,7 @@ model Store {
   purchaseInvoices  PurchaseInvoice[]
   stockBatches      StockBatch[]
   stockMovements    StockMovement[]
+  repairTickets     RepairTicket[]
 
   @@unique([companyId, prefix])
   @@index([companyId])
@@ -331,6 +358,7 @@ model Customer {
   assets           CustomerAsset[]
   debtBalance      CustomerDebtBalance?
   debtTransactions CustomerDebtTransaction[]
+  repairTickets    RepairTicket[]
 
   @@index([companyId, customerType, isArchived])
   @@map("customers")
@@ -380,6 +408,7 @@ model CustomerAsset {
   deviceCategory    DeviceCategory?    @relation(fields: [deviceCategoryId], references: [id], onDelete: SetNull)
   deviceBrand       DeviceBrand?       @relation(fields: [deviceBrandId], references: [id], onDelete: SetNull)
   deviceModelFamily DeviceModelFamily? @relation(fields: [deviceModelFamilyId], references: [id], onDelete: SetNull)
+  repairTickets     RepairTicket[]
 
   @@index([customerId])
   @@map("customer_assets")
@@ -404,6 +433,7 @@ model DeviceCategory {
   brands         DeviceBrand[]
   customerAssets CustomerAsset[]
   compatibleParts Part[]
+  repairTickets  RepairTicket[]
 
   @@index([isActive, sortOrder])
   @@map("device_categories")
@@ -429,6 +459,7 @@ model DeviceBrand {
   modelFamilies  DeviceModelFamily[]
   customerAssets CustomerAsset[]
   compatibleParts Part[]
+  repairTickets  RepairTicket[]
 
   @@unique([categoryId, companyId, storeId, name])
   @@index([categoryId, isActive, sortOrder])
@@ -454,6 +485,7 @@ model DeviceModelFamily {
   brand          DeviceBrand     @relation(fields: [brandId], references: [id])
   customerAssets CustomerAsset[]
   compatibleParts Part[]
+  repairTickets  RepairTicket[]
 
   @@unique([brandId, companyId, storeId, name])
   @@index([brandId, isActive, sortOrder])
@@ -857,4 +889,87 @@ model StockMovement {
 
   @@index([storeId, itemType])
   @@map("stock_movements")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// REPAIRS (Block 9)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model RepairTicket {
+  id                  String         @id @default(cuid())
+  companyId           String
+  storeId             String
+  ticketNumber        String
+  customerId          String
+  customerDeviceId    String?
+  deviceCategoryId    String?
+  deviceBrandId       String?
+  deviceFamilyId      String?
+  customDeviceBrand   String?
+  customDeviceModel   String?
+  deviceColor         String?
+  deviceStorageRam    String?
+  imeiSerial          String?
+  currentStatus       RepairStatus   @default(received)
+  priority            RepairPriority @default(normal)
+  assignedTechnicianId String?
+  diagnosisNote       String?
+  internalNotes       String?
+  customerNotes       String?
+  estimatedPrice      Decimal?       @db.Decimal(12, 2)
+  finalPrice          Decimal?       @db.Decimal(12, 2)
+  warrantyDays        Int?
+  dueAt               DateTime?
+  isArchived          Boolean        @default(false)
+  createdByUserId     String
+  createdAt           DateTime       @default(now())
+  updatedAt           DateTime       @updatedAt
+
+  company             Company              @relation(fields: [companyId], references: [id])
+  store               Store                @relation(fields: [storeId], references: [id])
+  customer            Customer             @relation(fields: [customerId], references: [id])
+  customerDevice      CustomerAsset?       @relation(fields: [customerDeviceId], references: [id], onDelete: SetNull)
+  deviceCategory      DeviceCategory?      @relation(fields: [deviceCategoryId], references: [id], onDelete: SetNull)
+  deviceBrand         DeviceBrand?         @relation(fields: [deviceBrandId], references: [id], onDelete: SetNull)
+  deviceFamily        DeviceModelFamily?   @relation(fields: [deviceFamilyId], references: [id], onDelete: SetNull)
+  assignedTechnician  User?                @relation("AssignedRepairs", fields: [assignedTechnicianId], references: [id])
+  createdBy           User                 @relation("CreatedRepairs", fields: [createdByUserId], references: [id])
+  
+  problems            RepairTicketProblem[]
+  statusHistory       RepairStatusHistory[]
+
+  @@unique([storeId, ticketNumber])
+  @@index([storeId, currentStatus])
+  @@index([customerId])
+  @@index([assignedTechnicianId])
+  @@map("repair_tickets")
+}
+
+model RepairTicketProblem {
+  id               String                  @id @default(cuid())
+  repairTicketId   String
+  problemText      String
+  resolutionStatus ProblemResolutionStatus @default(pending)
+  createdAt        DateTime                @default(now())
+
+  repairTicket     RepairTicket            @relation(fields: [repairTicketId], references: [id], onDelete: Cascade)
+
+  @@index([repairTicketId])
+  @@map("repair_ticket_problems")
+}
+
+model RepairStatusHistory {
+  id               String       @id @default(cuid())
+  repairTicketId   String
+  oldStatus        RepairStatus?
+  newStatus        RepairStatus
+  changedByUserId  String
+  note             String?
+  createdAt        DateTime     @default(now())
+
+  repairTicket     RepairTicket @relation(fields: [repairTicketId], references: [id], onDelete: Cascade)
+  changedBy        User         @relation(fields: [changedByUserId], references: [id])
+
+  @@index([repairTicketId, createdAt(sort: Desc)])
+  @@map("repair_status_history")
 }

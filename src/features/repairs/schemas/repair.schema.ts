@@ -1,0 +1,59 @@
+import { z } from "zod";
+
+export const repairTicketProblemSchema = z.object({
+  problemText: z.string().trim().min(1, "Veuillez décrire le problème"),
+});
+
+export const createRepairTicketSchema = z.object({
+  customerId: z.string().cuid("Sélectionnez un client"),
+  customerDeviceId: z.string().cuid().optional().or(z.literal("")),
+  
+  // Custom device fields (if customerDeviceId is empty)
+  deviceCategoryId: z.string().cuid().optional().or(z.literal("")),
+  deviceBrandId: z.string().cuid().optional().or(z.literal("")),
+  deviceFamilyId: z.string().cuid().optional().or(z.literal("")),
+  customDeviceBrand: z.string().trim().max(100).optional().or(z.literal("")),
+  customDeviceModel: z.string().trim().max(100).optional().or(z.literal("")),
+  deviceColor: z.string().trim().max(50).optional().or(z.literal("")),
+  deviceStorageRam: z.string().trim().max(50).optional().or(z.literal("")),
+  imeiSerial: z.string().trim().max(100).optional().or(z.literal("")),
+
+  priority: z.enum(["normal", "rush"]).default("normal"),
+  assignedTechnicianId: z.string().cuid().optional().or(z.literal("")),
+  
+  diagnosisNote: z.string().trim().max(2000).optional().or(z.literal("")),
+  internalNotes: z.string().trim().max(2000).optional().or(z.literal("")),
+  customerNotes: z.string().trim().max(2000).optional().or(z.literal("")),
+  
+  estimatedPrice: z.number().min(0, "Le prix ne peut pas être négatif").optional(),
+  warrantyDays: z.number().int().min(0).optional(),
+  dueAt: z.string().optional().or(z.literal("")),
+
+  problems: z.array(repairTicketProblemSchema).min(1, "Veuillez ajouter au moins un problème"),
+}).refine(
+  (data) => {
+    // Must have either an existing device OR at least custom model/brand or category
+    if (data.customerDeviceId) return true;
+    if (data.deviceCategoryId || data.customDeviceBrand || data.customDeviceModel) return true;
+    return false;
+  },
+  {
+    message: "Veuillez sélectionner un appareil existant ou fournir les détails du nouvel appareil",
+    path: ["customDeviceModel"], // focus error here
+  }
+);
+
+export const updateRepairStatusSchema = z.object({
+  newStatus: z.enum([
+    "received",
+    "in_diagnosis",
+    "in_repair",
+    "ready_for_pickup",
+    "completed",
+    "not_repaired",
+  ]),
+  note: z.string().trim().max(1000).optional().or(z.literal("")),
+});
+
+export type CreateRepairTicketInput = z.infer<typeof createRepairTicketSchema>;
+export type UpdateRepairStatusInput = z.infer<typeof updateRepairStatusSchema>;

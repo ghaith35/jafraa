@@ -2,6 +2,46 @@
 
 ---
 
+## 2026-05-03 — Block 9: Basic Repair Tickets Foundation
+
+### What changed
+
+Implemented the MVP foundation for managing repair tickets. This module allows creating, tracking, assigning, and viewing repair tickets associated with a specific customer and their device.
+
+### Schema changes
+
+- **New Enums**: `RepairStatus`, `RepairPriority`, `ProblemResolutionStatus`.
+- **New Models**: `RepairTicket`, `RepairTicketProblem`, `RepairStatusHistory`.
+- **Relations**: Updated `Company`, `Store`, `Customer`, `CustomerAsset`, and `User` to establish reverse relations.
+- **Migration**: `20260503224119_add_repair_tickets`
+
+### Architecture & technical decisions
+
+- **Ticket Numbering**: Implemented `generateTicketNumber` utilizing the `DocumentSequence` model to issue sequentially safe store-scoped identifiers (e.g. `DEMO-REP-2026-000001`) via a Prisma `$transaction`.
+- **Status Machine**: Implemented a strictly controlled status update workflow that logs changes immutably to `RepairStatusHistory`.
+- **Permissions**: Restricted Technician visibility to assigned tickets only. Auto-assignment applied if a Technician creates a ticket.
+
+### New pages/routes
+
+1. `/dashboard/repairs` - Replaced placeholder with the live `RepairList` component.
+2. `/dashboard/repairs/new` - The dynamic `RepairForm` for ticket intake, integrating with `react-hook-form` and Zod schemas.
+3. `/dashboard/repairs/[id]` - The `RepairDetail` view displaying all problems, customer info, device parameters, and a chronologically sorted status history.
+
+### Deferred functionality
+
+- Estimates / Devis
+- POS Checkout / Payment collection
+- Inventory parts deduction / Stock reservations
+- Customer debt synchronization
+- Invoice/PDF generation
+- WhatsApp notifications
+
+### Validation
+
+- TypeScript: `npm run typecheck` passes cleanly.
+- ESLint: `npm run lint` passes cleanly (after resolving `any` and unescaped quote errors).
+- Build: `npm run build` completed successfully (27 routes).
+
 ## 2026-05-03 — Block 8: Stock Batches, FIFO, Stock Movements, and Purchase Invoices
 
 ### What changed

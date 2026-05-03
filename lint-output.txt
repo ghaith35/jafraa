@@ -1,0 +1,54 @@
+
+> jafraa@0.1.0 lint
+> eslint
+
+
+/Users/ghaith/Desktop/jafraa/src/app/(dashboard)/dashboard/repairs/[id]/page.tsx
+   7:40  warning  'props' is defined but never used                                @typescript-eslint/no-unused-vars
+  39:62  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  39:83  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/ghaith/Desktop/jafraa/src/app/(dashboard)/dashboard/repairs/page.tsx
+  20:36  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/ghaith/Desktop/jafraa/src/features/repairs/components/RepairDetail.tsx
+    6:46  warning  'MapPin' is defined but never used                               @typescript-eslint/no-unused-vars
+    6:59  warning  'Wrench' is defined but never used                               @typescript-eslint/no-unused-vars
+    6:92  warning  'Edit' is defined but never used                                 @typescript-eslint/no-unused-vars
+    6:98  warning  'ChevronDown' is defined but never used                          @typescript-eslint/no-unused-vars
+   19:65  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   23:48  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+   82:36  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  112:40  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  149:45  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  159:89  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  159:98  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/ghaith/Desktop/jafraa/src/features/repairs/components/RepairForm.tsx
+   11:54  warning  'catalog' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+   11:65  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+   54:14  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+   60:25  warning  Compilation Skipped: Use of incompatible library
+
+This API returns functions which cannot be memoized without leading to stale UI. To prevent this, by default React Compiler will skip memoizing this component/hook. However, you may see issues if values from this API are passed to other components/hooks that are memoized.
+
+/Users/ghaith/Desktop/jafraa/src/features/repairs/components/RepairForm.tsx:60:25
+  58 |   };
+  59 |
+> 60 |   const watchCustomer = form.watch("customerId");
+     |                         ^^^^ React Hook Form's `useForm()` API returns a `watch()` function which cannot be memoized safely.
+  61 |   const customerAssets = customers.find((c: any) => c.id === watchCustomer)?.assets || [];
+  62 |
+  63 |   return (  react-hooks/incompatible-library
+   61:45  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+   82:34  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+  103:41  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+  212:57  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react/no-unescaped-entities
+  213:36  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+  233:95  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react/no-unescaped-entities
+
+/Users/ghaith/Desktop/jafraa/src/features/repairs/components/RepairList.tsx
+  8:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 26 problems (18 errors, 8 warnings)
+
