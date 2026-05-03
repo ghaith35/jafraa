@@ -352,6 +352,8 @@ model CustomerAsset {
   deviceFamilyId String?
   deviceBrandId  String?
   deviceModelId  String?
+  // Free-text device type for Block 5 display (e.g. "phone", "laptop"). FK via deviceFamilyId in Block 6.
+  deviceTypeName String?
   customBrand    String?
   customModel    String?
   imeiSerial     String?

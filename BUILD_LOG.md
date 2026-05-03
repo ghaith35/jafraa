@@ -2,6 +2,55 @@
 
 ---
 
+## 2026-05-03 — Block 5: Customers & Customer Devices (TypeScript fixes)
+
+### What changed
+
+Fixed all TypeScript errors from Block 5 implementation. Zero errors, zero warnings in typecheck + lint + build.
+
+### Root causes fixed
+
+| Error | Fix |
+|-------|-----|
+| RHF resolver type mismatch in `CustomerForm` | Introduced `CustomerFormValues` superset type; cast resolver with `as Resolver<CustomerFormValues>` |
+| RHF resolver type mismatch in `AssetForm` | Removed `.transform()` and `.nullable()` from all Zod schema fields; use plain `.optional()` |
+| `<form action={archiveCustomer.bind(...)}>` type error | Created `ArchiveCustomerButton` client component using `useTransition`; removed `<form action>` pattern |
+| `archiveAsset.bind(...)` form action type error | Converted `AssetCard` to a client component using `useTransition` |
+| `useRef()` without initial value (React 19 breaking change) | Changed to `useRef<... \| undefined>(undefined)` in `CustomerSearchBar` |
+| Unused `hasPermission` import | Removed from `customers/[id]/edit/page.tsx` |
+| `form.watch()` React Compiler warning | Replaced with `useWatch({ control, name })` hook |
+
+### Files modified
+
+- `src/features/customers/schemas/customer.schema.ts` — removed transforms from phone/notes/customerGroupId fields
+- `src/features/customers/schemas/asset.schema.ts` — removed transforms from all optional text fields
+- `src/features/customers/components/CustomerForm.tsx` — unified `CustomerFormValues` type, `useWatch`, clean resolver cast
+- `src/features/customers/components/AssetForm.tsx` — fixed default values from `null` to `""`/`undefined`
+- `src/features/customers/components/AssetCard.tsx` — converted to client component with `useTransition`
+- `src/features/customers/components/CustomerSearchBar.tsx` — fixed `useRef` initial value
+- `src/app/(dashboard)/dashboard/customers/[id]/page.tsx` — replaced `<form action>` with `ArchiveCustomerButton`
+- `src/app/(dashboard)/dashboard/customers/[id]/edit/page.tsx` — removed unused import
+
+### Files created
+
+- `src/features/customers/components/ArchiveCustomerButton.tsx` — client component for archive action
+
+### Checks run
+
+- `npm run typecheck` — ✅ 0 errors
+- `npm run lint` — ✅ 0 errors, 0 warnings
+- `npm run build` — ✅ 18 routes compiled successfully
+
+### Known issues
+
+None.
+
+### Next recommended block
+
+Block 6 — Catalog Foundation (device families, brands, models — seed + admin UI for catalog browsing)
+
+---
+
 ## 2026-05-03 — Block 1: Project Foundation
 
 ### What changed

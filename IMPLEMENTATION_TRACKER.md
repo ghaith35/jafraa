@@ -1,6 +1,6 @@
 # REPAIRE — Implementation Tracker
 
-Last updated: 2026-05-03 (Block 4 complete)
+Last updated: 2026-05-03 (Block 5 complete)
 
 ## Legend
 
@@ -21,7 +21,7 @@ Last updated: 2026-05-03 (Block 4 complete)
 | 2 | Database Foundation | ✅ Done | Prisma 7 + pg adapter, full schema, migration applied, seed data |
 | 3 | Auth, Roles, Permissions | ✅ Done | JWT HS256, refresh rotation + grace window, 4 roles, login page, middleware |
 | 4 | Dashboard Shell & RTL Layout | ✅ Done | App shell, sidebar nav, RTL support, 8 placeholder routes, proxy migration |
-| 5 | Customers & Customer Devices | ⏳ Not Started | Company-scoped customers, walk-in, assets |
+| 5 | Customers & Customer Devices | ✅ Done | Customer list/create/edit/archive, walk-in vs named, phones, assets |
 | 6 | Catalog Foundation | ⏳ Not Started | Device families, brands, seed data |
 | 7 | Inventory — Products / Parts / Services | ⏳ Not Started | FIFO, stock movements, adjustments |
 | 8 | Basic Repair Tickets | ⏳ Not Started | Ticket creation, intake, status |
