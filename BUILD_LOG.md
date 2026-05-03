@@ -212,10 +212,63 @@ All passwords: `demo1234`
 
 ### Next recommended block
 
-**Block 4 — Dashboard Shell & RTL Layout**
-- `[locale]` routing with next-intl
-- Locale-aware `<html lang dir>` 
-- Sidebar layout (collapsible, RTL-aware)
-- Arabic font loading
-- `NextIntlClientProvider` in layout
-- Client-side token refresh on 401
+**Block 5 — Customers & Customer Devices**
+
+---
+
+## 2026-05-03 — Block 4: Dashboard Shell, Navigation, Theme, RTL Layout
+
+### What changed
+
+Full protected application shell. No business logic. Auth behavior from Block 3 preserved.
+
+### Proxy migration (Next.js 16)
+
+`src/middleware.ts` deprecated and removed. `src/proxy.ts` created with named `proxy` export per the Next.js 16 file convention. Build output now shows `ƒ Proxy` instead of emitting a deprecation warning. Behavior identical: `/dashboard/**` protected, `/login` redirects authenticated users to `/dashboard`.
+
+### Packages added
+
+- `next/font/google` — `Noto_Sans_Arabic` (already available, no new package needed)
+
+### Files created
+
+| File | Purpose |
+|------|---------|
+| `src/proxy.ts` | Route guard — replaces middleware.ts |
+| `src/app/(dashboard)/layout.tsx` | Server layout: reads session + DB user/company |
+| `src/components/layout/DashboardShell.tsx` | Client: sidebar state, dir, shell structure |
+| `src/components/layout/Sidebar.tsx` | Navigation, user info, logout |
+| `src/components/layout/Topbar.tsx` | Mobile hamburger, company name |
+| `src/components/layout/NavItem.tsx` | Nav link with active state |
+| `src/components/layout/nav-items.ts` | Nav config with permission gates |
+| `src/components/shared/PageHeader.tsx` | Page title component |
+| `src/components/shared/EmptyState.tsx` | Empty state card |
+| `src/components/shared/StatusBadge.tsx` | Status pill |
+| `src/components/shared/RoleBadge.tsx` | Role pill |
+| 7× placeholder pages | `/dashboard/{pos,repairs,customers,inventory,suppliers,reports,settings}` |
+
+### Files modified / deleted
+
+| File | Change |
+|------|--------|
+| `src/middleware.ts` | Deleted — replaced by `src/proxy.ts` |
+| `src/app/(dashboard)/dashboard/page.tsx` | Upgraded to stat cards |
+| `src/app/(dashboard)/dashboard/_components/LogoutButton.tsx` | Deleted — logout in Sidebar |
+| `src/app/layout.tsx` | Noto Sans Arabic font added |
+| `src/app/globals.css` | `[dir="rtl"]` uses Arabic font variable |
+
+### Checks run
+
+- `npm run typecheck` — passed
+- `npm run lint` — passed
+- `npm run build` — passed (17 routes, proxy recognized, no deprecation warning)
+
+### Known issues / notes
+
+- `dir` applied on `DashboardShell` div, not on `<html>` — full locale URL routing deferred
+- Sidebar mobile animation uses explicit `dir` prop (avoids `rtl:` CSS specificity conflicts)
+- No active breadcrumb in topbar yet — deferred to Block 5+ when routes have real content
+
+### Next recommended block
+
+**Block 5 — Customers & Customer Devices**

@@ -1,6 +1,6 @@
 # REPAIRE — Implementation Tracker
 
-Last updated: 2026-05-03 (Block 3 complete)
+Last updated: 2026-05-03 (Block 4 complete)
 
 ## Legend
 
@@ -20,7 +20,7 @@ Last updated: 2026-05-03 (Block 3 complete)
 | 1 | Project Foundation | ✅ Done | Folder structure, shadcn/ui setup, i18n structure, RTL foundation, theme |
 | 2 | Database Foundation | ✅ Done | Prisma 7 + pg adapter, full schema, migration applied, seed data |
 | 3 | Auth, Roles, Permissions | ✅ Done | JWT HS256, refresh rotation + grace window, 4 roles, login page, middleware |
-| 4 | Dashboard Shell & RTL Layout | ⏳ Not Started | Sidebar, locale routing, RTL for Arabic |
+| 4 | Dashboard Shell & RTL Layout | ✅ Done | App shell, sidebar nav, RTL support, 8 placeholder routes, proxy migration |
 | 5 | Customers & Customer Devices | ⏳ Not Started | Company-scoped customers, walk-in, assets |
 | 6 | Catalog Foundation | ⏳ Not Started | Device families, brands, seed data |
 | 7 | Inventory — Products / Parts / Services | ⏳ Not Started | FIFO, stock movements, adjustments |
@@ -147,8 +147,62 @@ Last updated: 2026-05-03 (Block 3 complete)
 
 ### Deferred to Later Blocks
 - [ ] SuperAdmin login route (Block 18)
-- [ ] Subscription status check in middleware (Block 4)
+- [ ] Subscription status check in proxy (Block 5+)
 - [ ] Manager PIN approval flows (Blocks 12, 14)
-- [ ] Token refresh on client when access token expires (Block 4)
+- [ ] Client-side token auto-refresh on 401 (Block 5+)
 - [ ] Rate limiting on auth endpoints (Block 19)
 - [ ] Audit log on login events (Block 19)
+
+---
+
+## Block 4 — Dashboard Shell & RTL Layout
+
+**Status:** ✅ Done
+
+### Completed
+- [x] Migrated `src/middleware.ts` → `src/proxy.ts` (Next.js 16 `proxy` convention, eliminates deprecation warning)
+- [x] `src/proxy.ts` — exports `proxy` function with same auth guard behavior as before
+- [x] `Noto_Sans_Arabic` font loaded via `next/font/google` (`--font-arabic` CSS variable)
+- [x] `globals.css` updated: `[dir="rtl"]` uses `--font-arabic`
+- [x] `src/app/(dashboard)/layout.tsx` — server layout: reads session + user from DB, renders `DashboardShell`
+- [x] `src/components/layout/DashboardShell.tsx` — client: manages mobile sidebar state, sets `dir` from user's `languagePreference`
+- [x] `src/components/layout/Sidebar.tsx` — client: navigation, user info, logout; RTL slide direction explicit via `dir` prop
+- [x] `src/components/layout/Topbar.tsx` — client: mobile hamburger, company name on mobile, user name on all sizes
+- [x] `src/components/layout/NavItem.tsx` — client: link with active state highlighting, lucide icon
+- [x] `src/components/layout/nav-items.ts` — nav config with permission guard per item
+- [x] `src/components/shared/PageHeader.tsx` — title + description + optional actions slot
+- [x] `src/components/shared/EmptyState.tsx` — icon + title + description + optional action
+- [x] `src/components/shared/StatusBadge.tsx` — colored status pill (5 variants)
+- [x] `src/components/shared/RoleBadge.tsx` — role display (Admin/Manager/Cashier/Technician)
+- [x] Dashboard page upgraded — 4 stat cards (static 0 placeholders) + cash register status card
+- [x] 7 placeholder module pages: `/dashboard/pos`, `/dashboard/repairs`, `/dashboard/customers`, `/dashboard/inventory`, `/dashboard/suppliers`, `/dashboard/reports`, `/dashboard/settings`
+
+### Role-based navigation
+| Role | Visible nav items |
+|------|------------------|
+| Admin | All 8 items |
+| Manager | All except Paramètres |
+| Cashier | Tableau de bord, Caisse, Réparations, Clients, Inventaire |
+| Technician | Tableau de bord, Réparations, Clients, Inventaire |
+
+### RTL implementation
+- `dir` is derived from the authenticated user's `languagePreference` (from DB in layout)
+- `dir` attribute applied on the `DashboardShell` wrapper `<div>` (not on `<html>` — deferred to locale routing block)
+- Sidebar uses `start-0` (CSS logical `inset-inline-start: 0`) — positions right in RTL, left in LTR
+- Main content uses `ms-64` (`margin-inline-start: 256px`) — RTL-aware sidebar offset
+- Topbar uses `border-e` (`border-inline-end`) for sidebar border — flips in RTL
+- Mobile slide animation uses explicit `dir` prop to avoid `rtl:` specificity conflicts
+
+### Key design decisions
+- `dir` computed from user `languagePreference` stored in DB — no cookie/URL needed for shell layout
+- Sidebar always visible at `lg:` breakpoint (1024px+); mobile: overlay drawer with backdrop
+- `Noto_Sans_Arabic` loaded globally; applied only under `[dir="rtl"]` via CSS
+- `[locale]` next-intl routing deferred — not needed for shell-level RTL
+
+### Deferred to Later Blocks
+- [ ] `[locale]` URL routing + `<html lang dir>` dynamic (full next-intl routing)
+- [ ] Breadcrumb in topbar (Block 5+, once routes have real content)
+- [ ] Notification bell in topbar (Block 8+)
+- [ ] User language preference switcher UI (Block 4.5 or Block 20)
+- [ ] Subscription status banner in topbar (Block 5+)
+- [ ] Client-side token refresh interceptor (Block 5+)

@@ -154,6 +154,7 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-arabic: var(--font-arabic);
 }
 
 /* ─── Base Styles ───────────────────────────────────────────────────── */
@@ -167,7 +168,7 @@ body {
   color: var(--foreground);
 }
 
-/* RTL: flip scroll and margin utilities that Tailwind cannot auto-flip */
+/* RTL: use Arabic font when direction is rtl */
 [dir="rtl"] {
-  font-family: var(--font-sans), "Segoe UI", Tahoma, Arial, sans-serif;
+  font-family: var(--font-arabic), "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
 }
