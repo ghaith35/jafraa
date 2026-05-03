@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, User as UserIcon, Phone, MapPin, Tag, Wrench, AlertTriangle, Calendar, Edit, ChevronDown, CheckCircle } from "lucide-react";
+import { ArrowLeft, User as UserIcon, Phone, Tag, AlertTriangle, Calendar, CheckCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { changeRepairTicketStatus, assignTechnician } from "../actions/repair.actions";
 import type { RepairStatus } from "@prisma/client";

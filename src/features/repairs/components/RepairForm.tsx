@@ -8,8 +8,8 @@ import { Plus, Trash2, Loader2, Save } from "lucide-react";
 import { createRepairTicketSchema, type CreateRepairTicketInput } from "../schemas/repair.schema";
 import { createRepairTicket } from "../actions/repair.actions";
 
-/* eslint-disable-next-line @typescript-eslint/no-explicit-any */ 
-export function RepairForm({ customers, technicians, catalog }: any) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function RepairForm({ customers, technicians }: any) {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -53,14 +53,15 @@ export function RepairForm({ customers, technicians, catalog }: any) {
       } else {
         router.push(`/dashboard/repairs/${res.id}`);
       }
-    } catch (e) {
+    } catch {
       setError("Une erreur inattendue est survenue");
       setIsSubmitting(false);
     }
   };
 
+  // eslint-disable-next-line react-hooks/incompatible-library
   const watchCustomer = form.watch("customerId");
-  /* eslint-disable-next-line @typescript-eslint/no-explicit-any */ 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const customerAssets = customers.find((c: any) => c.id === watchCustomer)?.assets || [];
 
   return (

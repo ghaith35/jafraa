@@ -4,7 +4,7 @@ import { prisma } from "@/lib/db";
 import { getRepairTicket } from "@/features/repairs/actions/repair.actions";
 import { RepairDetail } from "@/features/repairs/components/RepairDetail";
 
-export async function generateMetadata(props: { params: Promise<{ id: string }> }) {
+export async function generateMetadata() {
   return { title: "Détail Ticket | Réparations" };
 }
 
