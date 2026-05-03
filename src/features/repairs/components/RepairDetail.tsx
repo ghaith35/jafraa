@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowLeft, User as UserIcon, Phone, MapPin, Tag, Wrench, AlertTriangle, Calendar, Edit, ChevronDown, CheckCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { changeRepairTicketStatus, assignTechnician } from "../actions/repair.actions";
+import type { RepairStatus } from "@prisma/client";
 
 const STATUS_CONFIG: Record<string, { label: string; cls: string }> = {
   received: { label: "Reçu", cls: "bg-blue-100 text-blue-800 border-blue-200" },
@@ -24,8 +25,7 @@ export function RepairDetail({ ticket, technicians, userRole }: { ticket: any, t
   const handleStatusChange = async (newStatus: string) => {
     if (newStatus === ticket.currentStatus) return;
     setIsChangingStatus(true);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    await changeRepairTicketStatus(ticket.id, { newStatus: newStatus as any, note: "" });
+    await changeRepairTicketStatus(ticket.id, { newStatus: newStatus as RepairStatus, note: "" });
     setIsChangingStatus(false);
     router.refresh();
   };
