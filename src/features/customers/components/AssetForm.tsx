@@ -1,17 +1,46 @@
 "use client";
 
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useTransition, useState } from "react";
+import { useTransition, useState, useCallback } from "react";
 import { cn } from "@/lib/utils";
-import { createAssetSchema, DEVICE_TYPES, type CreateAssetInput } from "../schemas/asset.schema";
+import { createAssetSchema, type CreateAssetInput } from "../schemas/asset.schema";
 import { createAsset } from "../actions/asset.actions";
+import {
+  listBrandsByCategory,
+  listFamiliesByBrand,
+} from "@/features/catalog/actions/catalog.actions";
+
+// ─── Types ───────────────────────────────────────────────────────────────────
+
+interface Category {
+  id: string;
+  key: string;
+  nameFr: string;
+}
+
+interface Brand {
+  id: string;
+  name: string;
+  isGlobalDefault: boolean;
+}
+
+interface Family {
+  id: string;
+  name: string;
+  isGlobalDefault: boolean;
+}
 
 interface Props {
   customerId: string;
+  categories: Category[];
+  companyId: string;
+  storeId: string | undefined;
   onSuccess: () => void;
   onCancel: () => void;
 }
+
+// ─── Styles ──────────────────────────────────────────────────────────────────
 
 const inputCls =
   "w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring disabled:opacity-50";
@@ -36,13 +65,29 @@ function Field({
   );
 }
 
-export function AssetForm({ customerId, onSuccess, onCancel }: Props) {
+// ─── Component ───────────────────────────────────────────────────────────────
+
+export function AssetForm({
+  customerId,
+  categories,
+  companyId,
+  storeId,
+  onSuccess,
+  onCancel,
+}: Props) {
   const [isPending, startTransition] = useTransition();
   const [serverError, setServerError] = useState<string | null>(null);
+  const [brands, setBrands] = useState<Brand[]>([]);
+  const [families, setFamilies] = useState<Family[]>([]);
+  const [loadingBrands, setLoadingBrands] = useState(false);
+  const [loadingFamilies, setLoadingFamilies] = useState(false);
 
   const form = useForm<CreateAssetInput>({
     resolver: zodResolver(createAssetSchema),
     defaultValues: {
+      deviceCategoryId: undefined,
+      deviceBrandId: undefined,
+      deviceModelFamilyId: undefined,
       deviceTypeName: undefined,
       customBrand: "",
       customModel: "",
@@ -53,6 +98,65 @@ export function AssetForm({ customerId, onSuccess, onCancel }: Props) {
     },
   });
 
+  const selectedBrandId = useWatch({ control: form.control, name: "deviceBrandId" });
+
+  // ── Category change handler (no useEffect — called from onChange) ────────
+
+  const handleCategoryChange = useCallback(
+    async (categoryId: string) => {
+      // Reset downstream fields
+      form.setValue("deviceBrandId", undefined);
+      form.setValue("deviceModelFamilyId", undefined);
+      setFamilies([]);
+
+      if (!categoryId) {
+        setBrands([]);
+        return;
+      }
+
+      // Sync deviceTypeName for backward compat
+      const cat = categories.find((c) => c.id === categoryId);
+      if (cat) {
+        form.setValue("deviceTypeName", cat.key as CreateAssetInput["deviceTypeName"]);
+      }
+
+      setLoadingBrands(true);
+      try {
+        const data = await listBrandsByCategory(categoryId, { companyId, storeId });
+        setBrands(data);
+      } catch {
+        setBrands([]);
+      } finally {
+        setLoadingBrands(false);
+      }
+    },
+    [categories, companyId, storeId, form]
+  );
+
+  // ── Brand change handler ────────────────────────────────────────────────
+
+  const handleBrandChange = useCallback(
+    async (brandId: string) => {
+      form.setValue("deviceModelFamilyId", undefined);
+
+      if (!brandId) {
+        setFamilies([]);
+        return;
+      }
+
+      setLoadingFamilies(true);
+      try {
+        const data = await listFamiliesByBrand(brandId, { companyId, storeId });
+        setFamilies(data);
+      } catch {
+        setFamilies([]);
+      } finally {
+        setLoadingFamilies(false);
+      }
+    },
+    [companyId, storeId, form]
+  );
+
   function onSubmit(data: CreateAssetInput) {
     setServerError(null);
     startTransition(async () => {
@@ -61,6 +165,8 @@ export function AssetForm({ customerId, onSuccess, onCancel }: Props) {
         setServerError(result.error);
       } else {
         form.reset();
+        setBrands([]);
+        setFamilies([]);
         onSuccess();
       }
     });
@@ -76,43 +182,116 @@ export function AssetForm({ customerId, onSuccess, onCancel }: Props) {
       <p className="text-sm font-semibold text-foreground">Ajouter un appareil</p>
 
       <div className="grid grid-cols-2 gap-3">
-        {/* Device type */}
-        <Field label="Type d'appareil" error={errors.deviceTypeName?.message}>
+        {/* Category (from catalog) */}
+        <Field
+          label="Catégorie"
+          error={errors.deviceCategoryId?.message ?? errors.deviceTypeName?.message}
+        >
           <select
-            {...form.register("deviceTypeName")}
+            {...form.register("deviceCategoryId", {
+              onChange: (e) => handleCategoryChange(e.target.value),
+            })}
             className={inputCls}
             disabled={isPending}
           >
             <option value="">— Sélectionner —</option>
-            {DEVICE_TYPES.map((t) => (
-              <option key={t.value} value={t.value}>
-                {t.label}
+            {categories.map((cat) => (
+              <option key={cat.id} value={cat.id}>
+                {cat.nameFr}
               </option>
             ))}
           </select>
         </Field>
 
-        {/* Brand */}
-        <Field label="Marque" error={errors.customBrand?.message} half>
-          <input
-            {...form.register("customBrand")}
-            type="text"
-            placeholder="Apple, Samsung…"
-            className={inputCls}
-            disabled={isPending}
-          />
+        {/* Brand (from catalog — cascading) */}
+        <Field
+          label="Marque"
+          error={errors.deviceBrandId?.message ?? errors.customBrand?.message}
+        >
+          {brands.length > 0 || loadingBrands ? (
+            <select
+              {...form.register("deviceBrandId", {
+                onChange: (e) => handleBrandChange(e.target.value),
+              })}
+              className={inputCls}
+              disabled={isPending || loadingBrands}
+            >
+              <option value="">
+                {loadingBrands ? "Chargement…" : "— Sélectionner —"}
+              </option>
+              {brands.map((b) => (
+                <option key={b.id} value={b.id}>
+                  {b.name}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <input
+              {...form.register("customBrand")}
+              type="text"
+              placeholder="Apple, Samsung…"
+              className={inputCls}
+              disabled={isPending}
+            />
+          )}
         </Field>
 
-        {/* Model */}
-        <Field label="Modèle" error={errors.customModel?.message} half>
-          <input
-            {...form.register("customModel")}
-            type="text"
-            placeholder="iPhone 13, Galaxy S22…"
-            className={inputCls}
-            disabled={isPending}
-          />
+        {/* Model family (from catalog — cascading) */}
+        <Field
+          label="Famille / Modèle"
+          error={errors.deviceModelFamilyId?.message ?? errors.customModel?.message}
+        >
+          {families.length > 0 || loadingFamilies ? (
+            <select
+              {...form.register("deviceModelFamilyId")}
+              className={inputCls}
+              disabled={isPending || loadingFamilies}
+            >
+              <option value="">
+                {loadingFamilies ? "Chargement…" : "— Sélectionner —"}
+              </option>
+              {families.map((f) => (
+                <option key={f.id} value={f.id}>
+                  {f.name}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <input
+              {...form.register("customModel")}
+              type="text"
+              placeholder="iPhone 13, Galaxy S22…"
+              className={inputCls}
+              disabled={isPending}
+            />
+          )}
         </Field>
+
+        {/* Custom brand (shown when brand dropdown has items, as override) */}
+        {brands.length > 0 && (
+          <Field label="Marque personnalisée" half>
+            <input
+              {...form.register("customBrand")}
+              type="text"
+              placeholder="Si absent de la liste…"
+              className={inputCls}
+              disabled={isPending}
+            />
+          </Field>
+        )}
+
+        {/* Custom model (shown when family dropdown has items, as override) */}
+        {(families.length > 0 || selectedBrandId) && (
+          <Field label="Modèle personnalisé" half>
+            <input
+              {...form.register("customModel")}
+              type="text"
+              placeholder="Si absent de la liste…"
+              className={inputCls}
+              disabled={isPending}
+            />
+          </Field>
+        )}
 
         {/* Color */}
         <Field label="Couleur" half>

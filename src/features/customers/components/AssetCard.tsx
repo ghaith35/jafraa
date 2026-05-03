@@ -8,12 +8,19 @@ import { archiveAsset } from "../actions/asset.actions";
 interface Asset {
   id: string;
   deviceTypeName: string | null;
+  deviceCategoryId: string | null;
+  deviceBrandId: string | null;
+  deviceModelFamilyId: string | null;
   customBrand: string | null;
   customModel: string | null;
   color: string | null;
   storage: string | null;
   imeiSerial: string | null;
   notes: string | null;
+  // Joined catalog names for display
+  categoryName?: string | null;
+  brandName?: string | null;
+  familyName?: string | null;
 }
 
 interface Props {
@@ -30,11 +37,12 @@ function typeLabel(v: string | null): string {
 export function AssetCard({ asset, customerId, canManage }: Props) {
   const [isPending, startTransition] = useTransition();
 
-  const title = [
-    typeLabel(asset.deviceTypeName),
-    asset.customBrand,
-    asset.customModel,
-  ]
+  // Build title from catalog names first, then fall back to free-text
+  const categoryDisplay = asset.categoryName || typeLabel(asset.deviceTypeName);
+  const brandDisplay = asset.brandName || asset.customBrand;
+  const modelDisplay = asset.familyName || asset.customModel;
+
+  const title = [categoryDisplay, brandDisplay, modelDisplay]
     .filter(Boolean)
     .join(" · ");
 

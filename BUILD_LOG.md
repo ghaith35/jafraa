@@ -2,6 +2,112 @@
 
 ---
 
+## 2026-05-03 — Block 6: Catalog Foundation
+
+### What changed
+
+Full device catalog system: schema, seed data, service layer, management UI, and customer asset form integration.
+
+### Schema changes
+
+- **New models**: `DeviceCategory` (7 entries), `DeviceBrand` (65 entries), `DeviceModelFamily` (173 entries)
+- **`CustomerAsset` updated**: `deviceFamilyId` → `deviceCategoryId`, `deviceModelId` → `deviceModelFamilyId`; FK constraints added with `onDelete: SetNull`
+- **Migration**: `20260503210936_add_device_catalog`
+- **Unique constraints**: `DeviceBrand` and `DeviceModelFamily` use `@@unique([..., companyId, storeId, name])` for global/custom scope isolation
+
+### Seed data scope
+
+| Category | Brands | Model Families |
+|----------|--------|---------------|
+| Phone | 15 | 58 |
+| Tablet / iPad | 10 | 14 |
+| Laptop | 14 | 37 |
+| Desktop | 10 | 22 |
+| Printer | 10 | 21 |
+| Game Console | 6 | 17 |
+| Other | 0 | 0 |
+| **Total** | **65** | **173** (4 missing brands that have no families) |
+
+### Files created
+
+| File | Purpose |
+|------|---------|
+| `prisma/seed-catalog.ts` | Catalog seed data (idempotent, findFirst + create/update pattern) |
+| `src/features/catalog/actions/catalog.actions.ts` | Server actions: list categories/brands/families, create custom, search, getCatalogPageData |
+| `src/features/catalog/components/CatalogBrowser.tsx` | Client: two-column catalog browser with category tabs, scope badges, search, inline add forms |
+| `src/app/(dashboard)/dashboard/settings/catalog/page.tsx` | Catalog management page (server component) |
+
+### Files modified
+
+| File | Change |
+|------|--------|
+| `prisma/schema.prisma` | Added 3 models, updated `CustomerAsset` with FKs, renamed fields |
+| `prisma/seed.ts` | Imported and calls `seedCatalog()` |
+| `src/features/customers/schemas/asset.schema.ts` | Added `deviceCategoryId`, `deviceBrandId`, `deviceModelFamilyId` fields |
+| `src/features/customers/actions/asset.actions.ts` | Handles new catalog FK fields in create/update |
+| `src/features/customers/components/AssetForm.tsx` | Catalog-linked cascading selects with free-text fallback |
+| `src/features/customers/components/AssetSection.tsx` | Passes categories/companyId/storeId to AssetForm |
+| `src/features/customers/components/AssetCard.tsx` | Displays catalog names when available |
+| `src/app/(dashboard)/dashboard/customers/[id]/page.tsx` | Loads categories, joins catalog names for assets |
+| `src/app/(dashboard)/dashboard/settings/page.tsx` | Settings card grid with catalog link |
+| `IMPLEMENTATION_TRACKER.md` | Block 6 marked done + detail section added |
+
+### Checks run
+
+- `npx prisma generate` — ✅
+- `npx prisma migrate dev --name add_device_catalog` — ✅ migration applied
+- `npm run db:seed` — ✅ 7 categories, 65 brands, 173 families
+- `npm run typecheck` — ✅ 0 errors
+- `npm run lint` — ✅ 0 errors, 0 warnings
+- `npm run build` — ✅ 19 routes compiled successfully
+
+### Key design decisions
+
+- **No useEffect for cascading selects** — React 19 lint rules forbid synchronous setState in effects. Used onChange event handlers instead.
+- **findFirst + create/update** for seed — PostgreSQL NULL ≠ NULL in unique indexes, so Prisma `upsert` cannot reliably target rows with nullable unique columns.
+- **Catalog is global-first** — `DeviceBrand` and `DeviceModelFamily` have no FK back to `Company`/`Store` to keep the schema clean.
+- **Settings sub-route** — Catalog lives at `/dashboard/settings/catalog` rather than a top-level nav item, keeping the sidebar clean.
+
+### Known issues
+
+None.
+
+### Next recommended block
+
+Block 7 — Inventory Products / Parts / Services
+
+---
+
+## 2026-05-03 — Handoff Document
+
+### What changed
+
+Created `HANDOFF_TO_ANTIGRAVITY.md` — a complete agent handoff covering project status, all critical rules, technical setup (Prisma 7 breaking changes, Next.js 16 proxy, Tailwind v4, React 19), auth system, current app structure, customer module status, database status, known issues, and a recommended prompt for Block 6.
+
+### Files created
+
+- `HANDOFF_TO_ANTIGRAVITY.md`
+
+### Files modified
+
+- `IMPLEMENTATION_TRACKER.md` — noted handoff document creation
+
+### Checks run
+
+- `npm run typecheck` — ✅ 0 errors
+- `npm run lint` — ✅ 0 errors, 0 warnings
+- `npm run build` — ✅ 18 routes compiled successfully
+
+### Known issues
+
+None.
+
+### Next recommended block
+
+Block 6 — Catalog Foundation (device families, brands, models — migration, seed, AssetForm update)
+
+---
+
 ## 2026-05-03 — Block 5: Customers & Customer Devices (TypeScript fixes)
 
 ### What changed

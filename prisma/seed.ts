@@ -3,6 +3,7 @@ import { PrismaPg } from "@prisma/adapter-pg";
 import { Pool } from "pg";
 import * as dotenv from "dotenv";
 import bcrypt from "bcryptjs";
+import { seedCatalog } from "./seed-catalog";
 
 // Prisma 7 requires an adapter — no implicit url from schema.prisma
 dotenv.config();
@@ -148,6 +149,9 @@ async function main() {
 
     console.log(`  User: ${u.email} (${u.role})`);
   }
+
+  // ─── Device Catalog (Block 6) ───────────────────────────────────────────────
+  await seedCatalog(prisma);
 
   console.log("\nSeed complete.");
   console.log("\nDemo credentials (password: demo1234):");

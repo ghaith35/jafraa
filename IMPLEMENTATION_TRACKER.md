@@ -1,6 +1,6 @@
 # REPAIRE — Implementation Tracker
 
-Last updated: 2026-05-03 (Block 5 complete)
+Last updated: 2026-05-03 (Block 6 complete)
 
 ## Legend
 
@@ -22,7 +22,7 @@ Last updated: 2026-05-03 (Block 5 complete)
 | 3 | Auth, Roles, Permissions | ✅ Done | JWT HS256, refresh rotation + grace window, 4 roles, login page, middleware |
 | 4 | Dashboard Shell & RTL Layout | ✅ Done | App shell, sidebar nav, RTL support, 8 placeholder routes, proxy migration |
 | 5 | Customers & Customer Devices | ✅ Done | Customer list/create/edit/archive, walk-in vs named, phones, assets |
-| 6 | Catalog Foundation | ⏳ Not Started | Device families, brands, seed data |
+| 6 | Catalog Foundation | ✅ Done | DeviceCategory/DeviceBrand/DeviceModelFamily, seed data, catalog UI, asset form integration |
 | 7 | Inventory — Products / Parts / Services | ⏳ Not Started | FIFO, stock movements, adjustments |
 | 8 | Basic Repair Tickets | ⏳ Not Started | Ticket creation, intake, status |
 | 9 | Repair Status Flow | ⏳ Not Started | Full status machine, history |
@@ -206,3 +206,74 @@ Last updated: 2026-05-03 (Block 5 complete)
 - [ ] User language preference switcher UI (Block 4.5 or Block 20)
 - [ ] Subscription status banner in topbar (Block 5+)
 - [ ] Client-side token refresh interceptor (Block 5+)
+
+---
+
+## Block 5 — Customers & Customer Devices
+
+**Status:** ✅ Done
+
+### Completed
+- [x] Customer list (`/dashboard/customers`) — searchable by name/phone, filterable by type and archived status
+- [x] Create customer (`/dashboard/customers/new`) — named (requires phone) or walk-in
+- [x] Customer detail (`/dashboard/customers/[id]`) — profile card, phones, assets, placeholder sections
+- [x] Edit customer (`/dashboard/customers/[id]/edit`) — name, language, notes, group
+- [x] Archive customer — Admin/Manager only, server-side permission check
+- [x] Customer devices/assets — add/view/archive per customer; free-text type, brand, model, IMEI, storage, color, notes
+- [x] Phone uniqueness per company (DB constraint + P2002 handling)
+- [x] Walk-in customer support (no phone required)
+- [x] All roles can view customers/detail; Admin/Manager only can archive
+- [x] TypeScript fixes: RHF resolver types, React 19 useRef, useWatch pattern
+
+### Deferred to Later Blocks
+- [ ] Phone add/remove UI (actions exist, no UI yet)
+- [ ] Walk-in → named customer promotion flow
+- [ ] Customer group management (create/edit groups)
+- [ ] `pg_trgm` trigram indexes for faster search (Block 19)
+
+---
+
+## Block 6 — Catalog Foundation
+
+**Status:** ✅ Done
+
+### Completed
+- [x] New Prisma models: `DeviceCategory`, `DeviceBrand`, `DeviceModelFamily`
+- [x] Migration `20260503210936_add_device_catalog` applied
+- [x] FK constraints from `CustomerAsset` → catalog tables (onDelete: SetNull)
+- [x] `CustomerAsset` fields renamed: `deviceFamilyId` → `deviceCategoryId`, `deviceModelId` → `deviceModelFamilyId`
+- [x] Catalog seed: 7 categories, 65 brands, 173 model families
+- [x] Seed data covers: phones (15 brands), tablets (10), laptops (14), desktops (10), printers (10), game consoles (6)
+- [x] Global vs store custom entry support: `isGlobalDefault` flag, nullable `companyId`/`storeId`
+- [x] Catalog service layer (`src/features/catalog/actions/catalog.actions.ts`)
+- [x] Catalog management UI page (`/dashboard/settings/catalog`)
+- [x] Two-column browser: brands + model families with scope badges (Global/Custom)
+- [x] Category tabs with icons per device type
+- [x] Search bar for filtering brands/families
+- [x] Admin/Manager can add store-custom brands and model families
+- [x] Cashier/Technician can view but cannot add entries (permission: `inventory:manage`)
+- [x] Customer AssetForm upgraded with catalog-linked cascading selects
+- [x] Free-text brand/model fallback always available
+- [x] AssetCard displays catalog names when available, falls back to free-text
+- [x] Settings page updated with catalog card link
+- [x] Build clean: typecheck ✅, lint ✅, build ✅ (19 routes)
+
+### Schema design decisions
+- `DeviceCategory` has a unique `key` field (phone, tablet, laptop, etc.) for stable programmatic reference
+- `DeviceBrand` and `DeviceModelFamily` use `@@unique([..., companyId, storeId, name])` — null-safe in PostgreSQL for global entries
+- No FK from `DeviceBrand`/`DeviceModelFamily` back to `Company`/`Store` — intentional to keep the catalog global-first
+- `CustomerAsset` FK constraints use `onDelete: SetNull` — safe for catalog cleanup without breaking existing assets
+
+### Seed approach
+- Separate seed file (`prisma/seed-catalog.ts`) for maintainability
+- Uses `findFirst + create/update` pattern (not `upsert`) because PostgreSQL NULL ≠ NULL in unique indexes
+- Called from main `prisma/seed.ts`
+- Idempotent — safe to re-run
+
+### Deferred to Later Blocks
+- [ ] Super Admin global catalog management (Block 18)
+- [ ] Archive/deactivate store custom entries UI
+- [ ] `DeviceModelAlias` for alternative names (deferred to post-MVP)
+- [ ] Products/accessories catalog extension (Block 7)
+- [ ] Repair service catalog (Block 7)
+

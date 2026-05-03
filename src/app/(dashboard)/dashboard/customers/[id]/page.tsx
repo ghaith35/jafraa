@@ -9,6 +9,7 @@ import { StatusBadge } from "@/components/shared/StatusBadge";
 import { RoleBadge } from "@/components/shared/RoleBadge";
 import { AssetSection } from "@/features/customers/components/AssetSection";
 import { ArchiveCustomerButton } from "@/features/customers/components/ArchiveCustomerButton";
+import { listDeviceCategories } from "@/features/catalog/actions/catalog.actions";
 import type { CustomerType, LanguagePreference } from "@prisma/client";
 
 export const metadata = { title: "Fiche client" };
@@ -42,19 +43,45 @@ export default async function CustomerDetailPage({
 
   const { id } = await params;
 
-  const customer = await prisma.customer.findFirst({
-    where: { id, companyId: session.companyId },
-    include: {
-      phones: { orderBy: { isPrimary: "desc" } },
-      assets: {
-        where: { isArchived: false },
-        orderBy: { createdAt: "desc" },
+  const [customer, categories] = await Promise.all([
+    prisma.customer.findFirst({
+      where: { id, companyId: session.companyId },
+      include: {
+        phones: { orderBy: { isPrimary: "desc" } },
+        assets: {
+          where: { isArchived: false },
+          orderBy: { createdAt: "desc" },
+          include: {
+            deviceCategory: { select: { nameFr: true } },
+            deviceBrand: { select: { name: true } },
+            deviceModelFamily: { select: { name: true } },
+          },
+        },
+        customerGroup: { select: { id: true, name: true } },
       },
-      customerGroup: { select: { id: true, name: true } },
-    },
-  });
+    }),
+    listDeviceCategories(),
+  ]);
 
   if (!customer) notFound();
+
+  // Map assets to include display names from catalog joins
+  const assetsWithNames = customer.assets.map((a) => ({
+    id: a.id,
+    deviceTypeName: a.deviceTypeName,
+    deviceCategoryId: a.deviceCategoryId,
+    deviceBrandId: a.deviceBrandId,
+    deviceModelFamilyId: a.deviceModelFamilyId,
+    customBrand: a.customBrand,
+    customModel: a.customModel,
+    color: a.color,
+    storage: a.storage,
+    imeiSerial: a.imeiSerial,
+    notes: a.notes,
+    categoryName: a.deviceCategory?.nameFr ?? null,
+    brandName: a.deviceBrand?.name ?? null,
+    familyName: a.deviceModelFamily?.name ?? null,
+  }));
 
   const canManage = hasPermission(session.role, "customers:manage");
 
@@ -187,8 +214,11 @@ export default async function CustomerDetailPage({
           <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
             <AssetSection
               customerId={customer.id}
-              initialAssets={customer.assets}
+              initialAssets={assetsWithNames}
               canManage={canManage && !customer.isArchived}
+              categories={categories}
+              companyId={session.companyId}
+              storeId={session.storeIds[0]}
             />
           </div>
 

@@ -30,13 +30,26 @@ export async function createAsset(
     return { error: first ?? "Données invalides" };
   }
 
-  const { deviceTypeName, customBrand, customModel, color, storage, imeiSerial, notes } =
-    parsed.data;
+  const {
+    deviceCategoryId,
+    deviceBrandId,
+    deviceModelFamilyId,
+    deviceTypeName,
+    customBrand,
+    customModel,
+    color,
+    storage,
+    imeiSerial,
+    notes,
+  } = parsed.data;
 
   try {
     await prisma.customerAsset.create({
       data: {
         customerId,
+        deviceCategoryId: deviceCategoryId || undefined,
+        deviceBrandId: deviceBrandId || undefined,
+        deviceModelFamilyId: deviceModelFamilyId || undefined,
         deviceTypeName: deviceTypeName ?? undefined,
         customBrand: customBrand ?? undefined,
         customModel: customModel ?? undefined,
@@ -79,13 +92,26 @@ export async function updateAsset(
     return { error: first ?? "Données invalides" };
   }
 
-  const { deviceTypeName, customBrand, customModel, color, storage, imeiSerial, notes } =
-    parsed.data;
+  const {
+    deviceCategoryId,
+    deviceBrandId,
+    deviceModelFamilyId,
+    deviceTypeName,
+    customBrand,
+    customModel,
+    color,
+    storage,
+    imeiSerial,
+    notes,
+  } = parsed.data;
 
   try {
     await prisma.customerAsset.update({
       where: { id: assetId },
       data: {
+        deviceCategoryId: deviceCategoryId || null,
+        deviceBrandId: deviceBrandId || null,
+        deviceModelFamilyId: deviceModelFamilyId || null,
         deviceTypeName: deviceTypeName ?? null,
         customBrand: customBrand ?? null,
         customModel: customModel ?? null,

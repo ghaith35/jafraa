@@ -344,29 +344,103 @@ model CustomerPhone {
 }
 
 // Devices owned by a customer — used to autofill ticket creation
-// FK to device catalog (deviceFamilyId, deviceBrandId, deviceModelId) added in Block 6
 model CustomerAsset {
-  id             String   @id @default(cuid())
-  customerId     String
-  // These will get FK constraints in Block 6 when catalog tables are created
-  deviceFamilyId String?
-  deviceBrandId  String?
-  deviceModelId  String?
-  // Free-text device type for Block 5 display (e.g. "phone", "laptop"). FK via deviceFamilyId in Block 6.
-  deviceTypeName String?
-  customBrand    String?
-  customModel    String?
-  imeiSerial     String?
-  color          String?
-  storage        String?
-  notes          String?
-  isArchived     Boolean  @default(false)
-  createdAt      DateTime @default(now())
+  id                  String   @id @default(cuid())
+  customerId          String
+  // FK to catalog tables (Block 6)
+  deviceCategoryId    String?
+  deviceBrandId       String?
+  deviceModelFamilyId String?
+  // Free-text device type for Block 5 display (e.g. "phone", "laptop"). Kept for backward compat.
+  deviceTypeName      String?
+  customBrand         String?
+  customModel         String?
+  imeiSerial          String?
+  color               String?
+  storage             String?
+  notes               String?
+  isArchived          Boolean  @default(false)
+  createdAt           DateTime @default(now())
 
-  customer Customer @relation(fields: [customerId], references: [id])
+  customer          Customer           @relation(fields: [customerId], references: [id])
+  deviceCategory    DeviceCategory?    @relation(fields: [deviceCategoryId], references: [id], onDelete: SetNull)
+  deviceBrand       DeviceBrand?       @relation(fields: [deviceBrandId], references: [id], onDelete: SetNull)
+  deviceModelFamily DeviceModelFamily? @relation(fields: [deviceModelFamilyId], references: [id], onDelete: SetNull)
 
   @@index([customerId])
   @@map("customer_assets")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// DEVICE CATALOG  (global defaults + store custom entries)
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Device type category (phone, tablet, laptop, desktop, printer, console, other)
+model DeviceCategory {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  nameFr    String
+  nameAr    String
+  nameEn    String
+  sortOrder Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  brands         DeviceBrand[]
+  customerAssets CustomerAsset[]
+
+  @@index([isActive, sortOrder])
+  @@map("device_categories")
+}
+
+// Device brand (Apple, Samsung, …) — scoped to a category
+// Global defaults: companyId/storeId = null, isGlobalDefault = true
+// Store custom: companyId + storeId filled, isGlobalDefault = false
+model DeviceBrand {
+  id              String   @id @default(cuid())
+  categoryId      String
+  // null = global default; filled = tenant custom entry
+  companyId       String?
+  storeId         String?
+  name            String
+  sortOrder       Int      @default(0)
+  isGlobalDefault Boolean  @default(false)
+  isActive        Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  category       DeviceCategory      @relation(fields: [categoryId], references: [id])
+  modelFamilies  DeviceModelFamily[]
+  customerAssets CustomerAsset[]
+
+  @@unique([categoryId, companyId, storeId, name])
+  @@index([categoryId, isActive, sortOrder])
+  @@map("device_brands")
+}
+
+// Device model family (Galaxy A, iPhone 13, ThinkPad, …) — grouped under a brand
+// Global defaults: companyId/storeId = null, isGlobalDefault = true
+// Store custom: companyId + storeId filled, isGlobalDefault = false
+model DeviceModelFamily {
+  id              String   @id @default(cuid())
+  brandId         String
+  // null = global default; filled = tenant custom entry
+  companyId       String?
+  storeId         String?
+  name            String
+  sortOrder       Int      @default(0)
+  isGlobalDefault Boolean  @default(false)
+  isActive        Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  brand          DeviceBrand     @relation(fields: [brandId], references: [id])
+  customerAssets CustomerAsset[]
+
+  @@unique([brandId, companyId, storeId, name])
+  @@index([brandId, isActive, sortOrder])
+  @@map("device_model_families")
 }
 
 // Denormalized balance — source of truth is customer_debt_transactions

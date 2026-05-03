@@ -8,21 +8,44 @@ import { AssetForm } from "./AssetForm";
 interface Asset {
   id: string;
   deviceTypeName: string | null;
+  deviceCategoryId: string | null;
+  deviceBrandId: string | null;
+  deviceModelFamilyId: string | null;
   customBrand: string | null;
   customModel: string | null;
   color: string | null;
   storage: string | null;
   imeiSerial: string | null;
   notes: string | null;
+  // Joined catalog names for display
+  categoryName?: string | null;
+  brandName?: string | null;
+  familyName?: string | null;
+}
+
+interface Category {
+  id: string;
+  key: string;
+  nameFr: string;
 }
 
 interface Props {
   customerId: string;
   initialAssets: Asset[];
   canManage: boolean;
+  categories: Category[];
+  companyId: string;
+  storeId: string | undefined;
 }
 
-export function AssetSection({ customerId, initialAssets, canManage }: Props) {
+export function AssetSection({
+  customerId,
+  initialAssets,
+  canManage,
+  categories,
+  companyId,
+  storeId,
+}: Props) {
   const [showForm, setShowForm] = useState(false);
 
   return (
@@ -49,6 +72,9 @@ export function AssetSection({ customerId, initialAssets, canManage }: Props) {
       {showForm && (
         <AssetForm
           customerId={customerId}
+          categories={categories}
+          companyId={companyId}
+          storeId={storeId}
           onSuccess={() => setShowForm(false)}
           onCancel={() => setShowForm(false)}
         />
