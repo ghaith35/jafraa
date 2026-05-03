@@ -1,0 +1,521 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Prisma 7: url is no longer in schema.prisma — it lives in prisma.config.ts
+// Runtime client uses @prisma/adapter-pg (see src/lib/db/index.ts)
+datasource db {
+  provider = "postgresql"
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ENUMS
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum UserRole {
+  Admin
+  Manager
+  Cashier
+  Technician
+}
+
+enum SubscriptionStatus {
+  trial
+  active
+  grace
+  read_only
+  cancelled
+  suspended
+}
+
+enum PaymentModel {
+  yearly
+  lifetime
+}
+
+enum PlanCode {
+  trial
+  single_store
+  multi_store
+}
+
+enum CustomerType {
+  named
+  walkin
+}
+
+enum LanguagePreference {
+  fr
+  ar
+  en
+}
+
+enum DebtTransactionType {
+  repair_debt
+  sale_debt
+  manual_debt
+  payment
+  adjustment
+  opening_balance
+}
+
+enum DebtDirection {
+  debit
+  credit
+}
+
+// Connector types for device models (used in catalog — Block 6)
+enum ConnectorType {
+  lightning
+  usb_c
+  micro_usb
+  other
+  unknown
+}
+
+// Document sequence types for ticket/invoice numbering
+enum DocumentSequenceType {
+  ticket
+  invoice
+  estimate
+  purchase_invoice
+  refund
+  tradein
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TENANT & AUTH
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Company {
+  id         String   @id @default(cuid())
+  name       String
+  address    String?
+  phone      String?
+  email      String?
+  logoUrl    String?
+  isArchived Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  stores                Store[]
+  users                 User[]
+  subscriptions         CompanySubscription[]
+  customerGroups        CustomerGroup[]
+  customers             Customer[]
+  // Denormalized back-relation for phone uniqueness per company
+  customerPhones        CustomerPhone[]
+  auditLogs             AuditLog[]
+  impersonationSessions TenantImpersonationSession[]
+
+  @@index([name])
+  @@map("companies")
+}
+
+model SuperAdminUser {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+
+  impersonationSessions TenantImpersonationSession[]
+  auditLogs             AuditLog[]
+
+  @@map("super_admin_users")
+}
+
+model User {
+  id                 String             @id @default(cuid())
+  companyId          String
+  name               String
+  email              String
+  passwordHash       String
+  // 4-digit manager PIN for in-shop approval flows (bcrypt hashed)
+  pinHash            String?
+  role               UserRole
+  languagePreference LanguagePreference @default(fr)
+  isActive           Boolean            @default(true)
+  isArchived         Boolean            @default(false)
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+
+  company       Company           @relation(fields: [companyId], references: [id])
+  storeAccess   UserStoreAccess[]
+  refreshTokens RefreshToken[]
+  auditLogs     AuditLog[]
+
+  @@unique([companyId, email])
+  @@index([companyId, role])
+  @@map("users")
+}
+
+model Store {
+  id                String   @id @default(cuid())
+  companyId         String
+  // prefix is used in document numbers: e.g. "ALG-2025-11-0042"
+  name              String
+  prefix            String
+  address           String?
+  phone             String?
+  email             String?
+  logoUrl           String?
+  businessHoursJson Json?
+  isActive          Boolean  @default(true)
+  isArchived        Boolean  @default(false)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  company           Company                   @relation(fields: [companyId], references: [id])
+  userAccess        UserStoreAccess[]
+  auditLogs         AuditLog[]
+  settings          StoreSettings?
+  documentSequences DocumentSequence[]
+  debtTransactions  CustomerDebtTransaction[]
+
+  @@unique([companyId, prefix])
+  @@index([companyId])
+  @@map("stores")
+}
+
+model UserStoreAccess {
+  id      String @id @default(cuid())
+  userId  String
+  storeId String
+
+  user  User  @relation(fields: [userId], references: [id])
+  store Store @relation(fields: [storeId], references: [id])
+
+  @@unique([userId, storeId])
+  @@map("user_store_access")
+}
+
+model Plan {
+  id           String   @id @default(cuid())
+  name         String
+  code         PlanCode @unique
+  // null = unlimited stores (multi_store plan)
+  maxStores    Int?
+  featuresJson Json     @default("{}")
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+
+  subscriptions CompanySubscription[]
+
+  @@map("plans")
+}
+
+model CompanySubscription {
+  id          String             @id @default(cuid())
+  companyId   String
+  planId      String
+  paymentModel PaymentModel      @default(yearly)
+  status      SubscriptionStatus @default(trial)
+  startedAt   DateTime           @default(now())
+  // null = no expiry (lifetime plan)
+  expiresAt   DateTime?
+  // Set when status transitions active → grace
+  graceEndsAt DateTime?
+  // Lifetime plan only: maintenance contract expiry
+  maintenanceExpiresAt DateTime?
+  // ID of the SuperAdminUser who activated this subscription
+  activatedBy String?
+  note        String?
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+
+  company Company @relation(fields: [companyId], references: [id])
+  plan    Plan    @relation(fields: [planId], references: [id])
+
+  @@index([companyId, status])
+  @@map("company_subscriptions")
+}
+
+model TenantImpersonationSession {
+  id               String    @id @default(cuid())
+  superAdminUserId String
+  companyId        String
+  reason           String
+  startedAt        DateTime  @default(now())
+  // null = session still active
+  endedAt          DateTime?
+
+  superAdminUser SuperAdminUser @relation(fields: [superAdminUserId], references: [id])
+  company        Company        @relation(fields: [companyId], references: [id])
+
+  @@index([companyId])
+  @@map("tenant_impersonation_sessions")
+}
+
+// Refresh token with family-based reuse detection and 2–3 second race grace window
+model RefreshToken {
+  id           String    @id @default(cuid())
+  userId       String
+  tokenHash    String    @unique
+  // All tokens in a rotation chain share the same familyId; reuse in family = revoke all
+  familyId     String
+  expiresAt    DateTime
+  isRevoked    Boolean   @default(false)
+  replacedById String?
+  replacedAt   DateTime?
+  createdAt    DateTime  @default(now())
+  createdIp    String?
+
+  user           User           @relation(fields: [userId], references: [id])
+  replacedBy     RefreshToken?  @relation("TokenChain", fields: [replacedById], references: [id])
+  replacedTokens RefreshToken[] @relation("TokenChain")
+
+  @@index([userId])
+  @@index([tokenHash])
+  @@index([familyId])
+  @@map("refresh_tokens")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CUSTOMERS  (company-scoped — shared across all stores in a company)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model CustomerGroup {
+  id                     String   @id @default(cuid())
+  companyId              String
+  name                   String
+  // Warning threshold — never a hard block
+  debtAlertLimit         Decimal? @db.Decimal(12, 2)
+  defaultDiscountPercent Decimal  @default(0) @db.Decimal(5, 2)
+  isArchived             Boolean  @default(false)
+  createdAt              DateTime @default(now())
+
+  company   Company    @relation(fields: [companyId], references: [id])
+  customers Customer[]
+
+  @@index([companyId])
+  @@map("customer_groups")
+}
+
+model Customer {
+  id                     String             @id @default(cuid())
+  companyId              String
+  customerType           CustomerType       @default(named)
+  name                   String
+  customerGroupId        String?
+  languagePreference     LanguagePreference @default(fr)
+  // Per-customer override of the group debt alert limit
+  debtAlertLimitOverride Decimal?           @db.Decimal(12, 2)
+  cnasNumber             String?
+  casnosNumber           String?
+  address                String?
+  // ISO 3166-2:DZ wilaya code (01-58)
+  wilayaCode             String?
+  notes                  String?
+  isArchived             Boolean            @default(false)
+  createdAt              DateTime           @default(now())
+  updatedAt              DateTime           @updatedAt
+
+  company          Company                   @relation(fields: [companyId], references: [id])
+  customerGroup    CustomerGroup?            @relation(fields: [customerGroupId], references: [id])
+  phones           CustomerPhone[]
+  assets           CustomerAsset[]
+  debtBalance      CustomerDebtBalance?
+  debtTransactions CustomerDebtTransaction[]
+
+  @@index([companyId, customerType, isArchived])
+  @@map("customers")
+}
+
+// Phone uniqueness is enforced per company via @@unique([companyId, phoneNumber])
+// companyId is denormalized here to make that constraint possible at the DB level
+model CustomerPhone {
+  id          String   @id @default(cuid())
+  customerId  String
+  // Denormalized from customer.companyId — enables the unique-per-company constraint
+  companyId   String
+  phoneNumber String
+  isPrimary   Boolean  @default(false)
+  note        String?
+  createdAt   DateTime @default(now())
+
+  customer Customer @relation(fields: [customerId], references: [id])
+  company  Company  @relation(fields: [companyId], references: [id])
+
+  // Core business rule: phone unique per company (across all customers)
+  @@unique([companyId, phoneNumber])
+  @@index([phoneNumber])
+  @@map("customer_phones")
+}
+
+// Devices owned by a customer — used to autofill ticket creation
+// FK to device catalog (deviceFamilyId, deviceBrandId, deviceModelId) added in Block 6
+model CustomerAsset {
+  id             String   @id @default(cuid())
+  customerId     String
+  // These will get FK constraints in Block 6 when catalog tables are created
+  deviceFamilyId String?
+  deviceBrandId  String?
+  deviceModelId  String?
+  customBrand    String?
+  customModel    String?
+  imeiSerial     String?
+  color          String?
+  storage        String?
+  notes          String?
+  isArchived     Boolean  @default(false)
+  createdAt      DateTime @default(now())
+
+  customer Customer @relation(fields: [customerId], references: [id])
+
+  @@index([customerId])
+  @@map("customer_assets")
+}
+
+// Denormalized balance — source of truth is customer_debt_transactions
+// Reconciled by cron every 6 hours; application always reads this for display
+model CustomerDebtBalance {
+  id         String   @id @default(cuid())
+  customerId String   @unique
+  repairDebt Decimal  @default(0) @db.Decimal(12, 2)
+  saleDebt   Decimal  @default(0) @db.Decimal(12, 2)
+  manualDebt Decimal  @default(0) @db.Decimal(12, 2)
+  // totalDebt = repairDebt + saleDebt + manualDebt (maintained by app + reconciliation cron)
+  totalDebt  Decimal  @default(0) @db.Decimal(12, 2)
+  updatedAt  DateTime @updatedAt
+
+  customer Customer @relation(fields: [customerId], references: [id])
+
+  @@map("customer_debt_balances")
+}
+
+// Immutable ledger — never edited; corrections create new rows
+// invoiceId and paymentId FKs added in Block 11 when those tables are created
+model CustomerDebtTransaction {
+  id         String              @id @default(cuid())
+  customerId String
+  // null for company-level adjustments (manual_debt type)
+  storeId    String?
+  type       DebtTransactionType
+  direction  DebtDirection
+  amount     Decimal             @db.Decimal(12, 2)
+  // FK to invoices table — added in Block 11
+  invoiceId  String?
+  // FK to payments table — added in Block 11
+  paymentId  String?
+  note       String?
+  createdAt  DateTime            @default(now())
+  // User id who created this transaction (plain String — no FK to avoid cycles)
+  createdBy  String
+
+  customer Customer @relation(fields: [customerId], references: [id])
+  store    Store?   @relation(fields: [storeId], references: [id])
+
+  @@index([customerId, createdAt(sort: Desc)])
+  @@map("customer_debt_transactions")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// AUDIT LOG  (immutable — no edits, no deletes)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model AuditLog {
+  id               String   @id @default(cuid())
+  companyId        String
+  // null for company-level events (user management, subscription changes)
+  storeId          String?
+  // null when action is performed by super admin
+  userId           String?
+  // null when action is performed by tenant user
+  superAdminUserId String?
+  action           String
+  entityType       String
+  entityId         String
+  changedFieldsJson Json?
+  ipAddress        String?
+  userAgent        String?
+  createdAt        DateTime @default(now())
+
+  company        Company         @relation(fields: [companyId], references: [id])
+  store          Store?          @relation(fields: [storeId], references: [id])
+  user           User?           @relation(fields: [userId], references: [id])
+  superAdminUser SuperAdminUser? @relation(fields: [superAdminUserId], references: [id])
+
+  @@index([companyId, createdAt(sort: Desc)])
+  @@index([entityType, entityId])
+  @@index([userId, createdAt(sort: Desc)])
+  @@index([action, createdAt(sort: Desc)])
+  @@map("audit_logs")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// STORE SETTINGS  (one row per store — explicit columns for type safety)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model StoreSettings {
+  id      String @id @default(cuid())
+  storeId String @unique
+
+  // Document numbering
+  ticketNumberFormat String @default("PREFIX-YYYY-MM-NNNN")
+
+  // Repair defaults
+  warrantyDaysDefault Int @default(30)
+
+  // Abandoned device workflow thresholds (days)
+  abandonedDeviceNoticeDays    Int @default(14)
+  abandonedDeviceThresholdDays Int @default(30)
+
+  // Operational thresholds
+  pickupOverdueDays            Int     @default(7)
+  lowStockDefaultThreshold     Int     @default(5)
+  // Cashier can apply discounts up to this % without manager PIN
+  cashierDiscountThresholdPct  Decimal @default(5) @db.Decimal(5, 2)
+  // Refunds above this amount require Manager
+  refundApprovalThreshold      Decimal @default(10000) @db.Decimal(12, 2)
+  // Stock adjustments above this amount require Admin approval
+  highValueAdjustmentThreshold Decimal @default(50000) @db.Decimal(12, 2)
+
+  // WhatsApp
+  whatsappOnPosSale Boolean @default(false)
+
+  // Display
+  currencyDisplay String @default("DZD")
+
+  updatedAt DateTime @updatedAt
+  // User id who last updated (plain String — no FK to avoid cycles with User table)
+  updatedBy String?
+
+  store Store @relation(fields: [storeId], references: [id])
+
+  @@map("store_settings")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// DOCUMENT SEQUENCES  (advisory-locked increment for race-safe numbering)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model DocumentSequence {
+  id         String               @id @default(cuid())
+  storeId    String
+  type       DocumentSequenceType
+  year       Int
+  month      Int
+  lastNumber Int                  @default(0)
+
+  store Store @relation(fields: [storeId], references: [id])
+
+  @@unique([storeId, type, year, month])
+  @@map("document_sequences")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PAYMENT METHODS  (seeded; cash-only for MVP — FK ready for V1.5 methods)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model PaymentMethod {
+  id        String  @id @default(cuid())
+  code      String  @unique
+  nameFr    String
+  nameAr    String
+  nameEn    String
+  isActive  Boolean @default(true)
+  isDefault Boolean @default(false)
+
+  @@map("payment_methods")
+}

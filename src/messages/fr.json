@@ -1,0 +1,39 @@
+{
+  "common": {
+    "appName": "REPAIRE",
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "search": "Rechercher",
+    "confirm": "Confirmer",
+    "back": "Retour",
+    "next": "Suivant",
+    "close": "Fermer",
+    "yes": "Oui",
+    "no": "Non",
+    "actions": "Actions",
+    "status": "Statut",
+    "date": "Date",
+    "total": "Total",
+    "subtotal": "Sous-total",
+    "currency": "DZD"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "customers": "Clients",
+    "tickets": "Tickets",
+    "inventory": "Inventaire",
+    "pos": "Caisse",
+    "reports": "Rapports",
+    "settings": "Paramètres"
+  },
+  "auth": {
+    "signIn": "Se connecter",
+    "signOut": "Se déconnecter",
+    "email": "Email",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié ?"
+  }
+}

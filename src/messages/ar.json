@@ -1,0 +1,39 @@
+{
+  "common": {
+    "appName": "REPAIRE",
+    "loading": "جار التحميل...",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "search": "بحث",
+    "confirm": "تأكيد",
+    "back": "رجوع",
+    "next": "التالي",
+    "close": "إغلاق",
+    "yes": "نعم",
+    "no": "لا",
+    "actions": "إجراءات",
+    "status": "الحالة",
+    "date": "التاريخ",
+    "total": "المجموع",
+    "subtotal": "المجموع الجزئي",
+    "currency": "دج"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "customers": "العملاء",
+    "tickets": "التذاكر",
+    "inventory": "المخزون",
+    "pos": "الصندوق",
+    "reports": "التقارير",
+    "settings": "الإعدادات"
+  },
+  "auth": {
+    "signIn": "تسجيل الدخول",
+    "signOut": "تسجيل الخروج",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟"
+  }
+}
