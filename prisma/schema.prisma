@@ -107,6 +107,10 @@ model Company {
   customerPhones        CustomerPhone[]
   auditLogs             AuditLog[]
   impersonationSessions TenantImpersonationSession[]
+  suppliers             Supplier[]
+  purchaseInvoices      PurchaseInvoice[]
+  stockBatches          StockBatch[]
+  stockMovements        StockMovement[]
 
   @@index([name])
   @@map("companies")
@@ -142,8 +146,10 @@ model User {
 
   company       Company           @relation(fields: [companyId], references: [id])
   storeAccess   UserStoreAccess[]
-  refreshTokens RefreshToken[]
-  auditLogs     AuditLog[]
+  refreshTokens         RefreshToken[]
+  auditLogs             AuditLog[]
+  purchaseInvoicesCreated PurchaseInvoice[]
+  stockMovementsCreated   StockMovement[]
 
   @@unique([companyId, email])
   @@index([companyId, role])
@@ -172,6 +178,14 @@ model Store {
   settings          StoreSettings?
   documentSequences DocumentSequence[]
   debtTransactions  CustomerDebtTransaction[]
+  inventoryCategories InventoryCategory[]
+  products          Product[]
+  parts             Part[]
+  services          Service[]
+  suppliers         Supplier[]
+  purchaseInvoices  PurchaseInvoice[]
+  stockBatches      StockBatch[]
+  stockMovements    StockMovement[]
 
   @@unique([companyId, prefix])
   @@index([companyId])
@@ -389,6 +403,7 @@ model DeviceCategory {
 
   brands         DeviceBrand[]
   customerAssets CustomerAsset[]
+  compatibleParts Part[]
 
   @@index([isActive, sortOrder])
   @@map("device_categories")
@@ -413,6 +428,7 @@ model DeviceBrand {
   category       DeviceCategory      @relation(fields: [categoryId], references: [id])
   modelFamilies  DeviceModelFamily[]
   customerAssets CustomerAsset[]
+  compatibleParts Part[]
 
   @@unique([categoryId, companyId, storeId, name])
   @@index([categoryId, isActive, sortOrder])
@@ -437,6 +453,7 @@ model DeviceModelFamily {
 
   brand          DeviceBrand     @relation(fields: [brandId], references: [id])
   customerAssets CustomerAsset[]
+  compatibleParts Part[]
 
   @@unique([brandId, companyId, storeId, name])
   @@index([brandId, isActive, sortOrder])
@@ -581,6 +598,127 @@ model DocumentSequence {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// INVENTORY  (store-scoped — products, parts, services)
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Shared category lookup for products and parts (not device catalog)
+model InventoryCategory {
+  id        String   @id @default(cuid())
+  storeId   String
+  name      String
+  // "product" | "part" — which item type this category belongs to
+  itemType  String
+  sortOrder Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  products Product[]
+  parts    Part[]
+
+  store Store @relation(fields: [storeId], references: [id])
+
+  @@unique([storeId, itemType, name])
+  @@index([storeId, itemType, isActive])
+  @@map("inventory_categories")
+}
+
+// Sellable product — chargers, cables, cases, accessories, etc.
+// Store-scoped. No cost/FIFO fields in MVP.
+model Product {
+  id                String   @id @default(cuid())
+  storeId           String
+  categoryId        String?
+  name              String
+  // PRD-000001 style, unique per store
+  sku               String
+  barcode           String?
+  brand             String?
+  modelReference    String?
+  sellingPrice      Decimal  @db.Decimal(12, 2)
+  stockQty          Int      @default(0)
+  lowStockThreshold Int?
+  notes             String?
+  imageUrl          String?
+  isArchived        Boolean  @default(false)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  store    Store              @relation(fields: [storeId], references: [id])
+  category InventoryCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  purchaseInvoiceLines PurchaseInvoiceLine[]
+  stockBatches         StockBatch[]
+  stockMovements       StockMovement[]
+
+  @@unique([storeId, sku])
+  @@unique([storeId, barcode])
+  @@index([storeId, isArchived])
+  @@map("products")
+}
+
+// Repair part — screens, batteries, ports, cameras, etc.
+// Store-scoped. Compatible with device catalog via optional FKs.
+model Part {
+  id                    String   @id @default(cuid())
+  storeId               String
+  categoryId            String?
+  // Optional catalog compatibility fields
+  compatibleCategoryId  String?
+  compatibleBrandId     String?
+  compatibleFamilyId    String?
+  name                  String
+  // PRT-000001 style, unique per store
+  sku                   String
+  barcode               String?
+  brand                 String?
+  modelReference        String?
+  sellingPrice          Decimal  @db.Decimal(12, 2)
+  stockQty              Int      @default(0)
+  lowStockThreshold     Int?
+  notes                 String?
+  imageUrl              String?
+  isArchived            Boolean  @default(false)
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  store               Store              @relation(fields: [storeId], references: [id])
+  category            InventoryCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  compatibleCategory  DeviceCategory?    @relation(fields: [compatibleCategoryId], references: [id], onDelete: SetNull)
+  compatibleBrand     DeviceBrand?       @relation(fields: [compatibleBrandId], references: [id], onDelete: SetNull)
+  compatibleFamily    DeviceModelFamily? @relation(fields: [compatibleFamilyId], references: [id], onDelete: SetNull)
+  purchaseInvoiceLines PurchaseInvoiceLine[]
+  stockBatches         StockBatch[]
+  stockMovements       StockMovement[]
+
+  @@unique([storeId, sku])
+  @@unique([storeId, barcode])
+  @@index([storeId, isArchived])
+  @@map("parts")
+}
+
+// Labor/service item — diagnosis, screen replacement labor, cleaning, etc.
+// Store-scoped. No stock quantity.
+model Service {
+  id                      String   @id @default(cuid())
+  storeId                 String
+  name                    String
+  // SRV-000001 style, unique per store
+  sku                     String
+  category                String?
+  sellingPrice            Decimal  @db.Decimal(12, 2)
+  estimatedDurationMinutes Int?
+  notes                   String?
+  isArchived              Boolean  @default(false)
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+
+  store Store @relation(fields: [storeId], references: [id])
+
+  @@unique([storeId, sku])
+  @@index([storeId, isArchived])
+  @@map("services")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // PAYMENT METHODS  (seeded; cash-only for MVP — FK ready for V1.5 methods)
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -594,4 +732,129 @@ model PaymentMethod {
   isDefault Boolean @default(false)
 
   @@map("payment_methods")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SUPPLIERS & PURCHASES (Block 8)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model Supplier {
+  id         String   @id @default(cuid())
+  companyId  String
+  storeId    String
+  name       String
+  phone      String?
+  address    String?
+  notes      String?
+  balance    Decimal  @db.Decimal(12, 2) @default(0)
+  isArchived Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  company         Company           @relation(fields: [companyId], references: [id])
+  store           Store             @relation(fields: [storeId], references: [id])
+  purchaseInvoices PurchaseInvoice[]
+
+  @@index([storeId, isArchived])
+  @@map("suppliers")
+}
+
+model PurchaseInvoice {
+  id               String   @id @default(cuid())
+  companyId        String
+  storeId          String
+  supplierId       String
+  invoiceNumber    String
+  invoiceDate      DateTime
+  totalAmount      Decimal  @db.Decimal(12, 2)
+  amountPaid       Decimal  @db.Decimal(12, 2) @default(0)
+  remainingAmount  Decimal  @db.Decimal(12, 2)
+  status           String   // unpaid, partial, paid
+  notes            String?
+  createdByUserId  String
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  company   Company               @relation(fields: [companyId], references: [id])
+  store     Store                 @relation(fields: [storeId], references: [id])
+  supplier  Supplier              @relation(fields: [supplierId], references: [id])
+  createdBy User                  @relation(fields: [createdByUserId], references: [id])
+  lines     PurchaseInvoiceLine[]
+
+  @@unique([storeId, invoiceNumber])
+  @@index([storeId, status])
+  @@map("purchase_invoices")
+}
+
+model PurchaseInvoiceLine {
+  id                String   @id @default(cuid())
+  purchaseInvoiceId String
+  itemType          String   // "product" | "part"
+  productId         String?
+  partId            String?
+  quantity          Int
+  unitCost          Decimal  @db.Decimal(12, 2)
+  totalCost         Decimal  @db.Decimal(12, 2)
+
+  purchaseInvoice PurchaseInvoice @relation(fields: [purchaseInvoiceId], references: [id], onDelete: Cascade)
+  product         Product?        @relation(fields: [productId], references: [id])
+  part            Part?           @relation(fields: [partId], references: [id])
+
+  @@map("purchase_invoice_lines")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// STOCK & FIFO BATCHES (Block 8)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model StockBatch {
+  id             String   @id @default(cuid())
+  companyId      String
+  storeId        String
+  itemType       String   // "product" | "part"
+  productId      String?
+  partId         String?
+  sourceType     String   // "purchase_invoice" | "adjustment" | "return" | "opening_balance"
+  sourceId       String?
+  qtyInitial     Int
+  qtyRemaining   Int
+  unitCost       Decimal  @db.Decimal(12, 2)
+  createdAt      DateTime @default(now())
+
+  company   Company         @relation(fields: [companyId], references: [id])
+  store     Store           @relation(fields: [storeId], references: [id])
+  product   Product?        @relation(fields: [productId], references: [id])
+  part      Part?           @relation(fields: [partId], references: [id])
+  movements StockMovement[]
+
+  @@index([storeId, itemType, qtyRemaining])
+  @@map("stock_batches")
+}
+
+model StockMovement {
+  id               String   @id @default(cuid())
+  companyId        String
+  storeId          String
+  itemType         String   // "product" | "part"
+  productId        String?
+  partId           String?
+  movementType     String   // "purchase" | "adjustment_in" | "adjustment_out" | "return" | "correction"
+  quantityDelta    Int
+  unitCostSnapshot Decimal? @db.Decimal(12, 2)
+  stockBatchId     String?
+  sourceType       String?
+  sourceId         String?
+  note             String?
+  createdByUserId  String
+  createdAt        DateTime @default(now())
+
+  company   Company     @relation(fields: [companyId], references: [id])
+  store     Store       @relation(fields: [storeId], references: [id])
+  product   Product?    @relation(fields: [productId], references: [id])
+  part      Part?       @relation(fields: [partId], references: [id])
+  batch     StockBatch? @relation(fields: [stockBatchId], references: [id])
+  createdBy User        @relation(fields: [createdByUserId], references: [id])
+
+  @@index([storeId, itemType])
+  @@map("stock_movements")
 }

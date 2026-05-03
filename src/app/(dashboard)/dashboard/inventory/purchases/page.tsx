@@ -4,46 +4,40 @@ import { Plus } from "lucide-react";
 import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
-import { listSuppliers } from "@/features/inventory/actions/supplier.actions";
-import { SupplierList } from "@/features/inventory/components/SupplierList";
+import { listPurchaseInvoices } from "@/features/inventory/actions/purchase.actions";
+import { PurchaseList } from "@/features/inventory/components/PurchaseList";
 
-export const metadata = { title: "Fournisseurs — REPAIRE" };
+export const metadata = { title: "Achats — REPAIRE" };
 
-export default async function SuppliersPage(props: {
-  searchParams: Promise<{ q?: string; archived?: string }>;
-}) {
+export default async function PurchasesPage() {
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard");
 
-  const searchParams = await props.searchParams;
-  const q = searchParams.q;
-  const showArchived = searchParams.archived === "true";
-
-  const suppliers = await listSuppliers({ q, showArchived });
+  const purchases = await listPurchaseInvoices();
 
   return (
     <div className="max-w-screen-xl mx-auto space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold tracking-tight text-foreground">
-            Fournisseurs
+            Achats
           </h1>
           <p className="text-sm text-muted-foreground">
-            Gérez vos fournisseurs et suivez vos soldes.
+            Historique des factures d&apos;achat et entrées en stock.
           </p>
         </div>
         <Link
-          href="/dashboard/suppliers/new"
+          href="/dashboard/inventory/purchases/new"
           className="inline-flex shrink-0 items-center gap-1.5 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
         >
           <Plus className="h-4 w-4" />
-          Nouveau fournisseur
+          Saisir un achat
         </Link>
       </div>
 
       <Suspense fallback={<div className="h-20 bg-muted animate-pulse rounded-md" />}>
-        <SupplierList suppliers={suppliers} userRole={session.role} />
+        <PurchaseList purchases={purchases} />
       </Suspense>
     </div>
   );

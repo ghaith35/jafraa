@@ -2,6 +2,72 @@
 
 ---
 
+## 2026-05-03 — Block 8: Stock Batches, FIFO, Stock Movements, and Purchase Invoices
+
+### What changed
+
+Implemented the core stock foundation for inventory. This enables traceability of stock, FIFO batch management, supplier management, and processing purchase invoices to safely update stock quantities and supplier balances within guaranteed transactions.
+
+### Schema changes
+
+- **New models**: `Supplier`, `PurchaseInvoice`, `PurchaseInvoiceLine`, `StockBatch`, `StockMovement`.
+- **Relations updated**: `Company`, `Store`, `Product`, `Part`, and `User` models updated with necessary reverse relations.
+- **Migration**: `20260503221631_add_stock_foundation`
+
+### Architecture & technical decisions
+
+- **Massive Prisma Transaction**: The `createPurchaseInvoice` server action executes within a single `$transaction`. It creates the invoice, line items, initializes stock batches, writes to the immutable stock movement log, updates `stockQty` on products/parts, and updates supplier debt balances. If any step fails, everything rolls back.
+- **Zod / RHF integration**: Modified the `createPurchaseInvoiceSchema` to carefully calculate remaining amounts and enforce that the `amountPaid` cannot exceed the `totalAmount`.
+- **Permissions**: Added `inventory:manage` checks across all new actions. Suppliers and purchases are hidden from Cashiers and Technicians.
+
+### New pages/routes
+
+1. `/dashboard/suppliers` - List suppliers
+2. `/dashboard/suppliers/new` & `[id]/edit` - Supplier CRUD forms
+3. `/dashboard/suppliers/[id]` - Supplier detail view showing balance
+4. `/dashboard/inventory/purchases` - List purchase invoices
+5. `/dashboard/inventory/purchases/new` - Dynamic form to create purchase invoices with multiple line items (products or parts)
+6. `/dashboard/inventory/stock-movements` - Read-only audit log for all stock changes
+
+### Validation
+
+- Tested full typecheck cleanly across all forms and API server actions.
+- Full `npm run build` succeeds (26 static/dynamic routes).
+
+## 2026-05-03 — Block 7: Inventory Foundation
+
+### What changed
+
+Full inventory system for products, parts, and services with schema, seed data, service layer, and management UI.
+
+### Schema changes
+
+- **New models**: `InventoryCategory` (unified), `Product`, `Part`, `Service`.
+- **Foreign Keys**: Parts can reference `DeviceCategory`, `DeviceBrand`, and `DeviceModelFamily` for compatibility.
+- **Scoping**: Strict `storeId` constraints on all inventory models.
+- **Constraints**: Optional unique constraints for `sku` and `barcode` per store.
+- **Migration**: `20260503213338_add_inventory`
+
+### Architecture & technical decisions
+
+- **Separate models**: Instead of a single "Item" model, we opted for separate tables since products, parts, and services have different specific fields (e.g., compatibility for parts, duration for services).
+- **Zod v4 Support**: Encountered type mismatch between Zod `.optional().default()` output and React Hook Form inputs; resolved by simplifying the schema to strictly use `.optional()` and managing defaults within the form `defaultValues`.
+- **SKU Generation**: Created an auto-incrementing SKU utility with format `PRD-NNNNNN`, `PRT-NNNNNN`, `SRV-NNNNNN` that safely scans the current store's max suffix.
+
+### New pages/routes
+
+1. `/dashboard/inventory` - Unified list view with segmented tabs
+2. `/dashboard/inventory/products/new` & `[id]/edit` - Product forms
+3. `/dashboard/inventory/parts/new` & `[id]/edit` - Part forms (with cascading device selects)
+4. `/dashboard/inventory/services/new` & `[id]/edit` - Service forms
+
+### Validation
+
+- Tested full typecheck cleanly across all forms and API server actions.
+- Full `npm run build` succeeds (22 static/dynamic routes).
+
+
+
 ## 2026-05-03 — Block 6: Catalog Foundation
 
 ### What changed

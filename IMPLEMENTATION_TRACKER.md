@@ -1,6 +1,6 @@
 # REPAIRE — Implementation Tracker
 
-Last updated: 2026-05-03 (Block 6 complete)
+Last updated: 2026-05-03 (Block 8 complete)
 
 ## Legend
 
@@ -23,7 +23,7 @@ Last updated: 2026-05-03 (Block 6 complete)
 | 4 | Dashboard Shell & RTL Layout | ✅ Done | App shell, sidebar nav, RTL support, 8 placeholder routes, proxy migration |
 | 5 | Customers & Customer Devices | ✅ Done | Customer list/create/edit/archive, walk-in vs named, phones, assets |
 | 6 | Catalog Foundation | ✅ Done | DeviceCategory/DeviceBrand/DeviceModelFamily, seed data, catalog UI, asset form integration |
-| 7 | Inventory — Products / Parts / Services | ⏳ Not Started | FIFO, stock movements, adjustments |
+| 7 | Inventory — Products / Parts / Services | ✅ Done | Products, parts, services, schemas, seed data, unified UI |
 | 8 | Basic Repair Tickets | ⏳ Not Started | Ticket creation, intake, status |
 | 9 | Repair Status Flow | ⏳ Not Started | Full status machine, history |
 | 10 | Estimates / Devis | ⏳ Not Started | Draft → sent → accepted → rejected |
@@ -277,3 +277,66 @@ Last updated: 2026-05-03 (Block 6 complete)
 - [ ] Products/accessories catalog extension (Block 7)
 - [ ] Repair service catalog (Block 7)
 
+---
+
+## ✅ Block 7: Inventory Foundation (Products, Parts, Services)
+
+### Goal
+Implement the foundation for the store's inventory, distinguishing between sellable products (accessories), repair parts (components linked to the catalog), and labor services. This serves as the prerequisite for POS checkout and repair ticket creation.
+
+### Status
+✅ Complete
+
+### Key Achievements
+- [x] Schema extensions for `InventoryCategory`, `Product`, `Part`, and `Service`
+- [x] Enforced strict `storeId` scoping on all inventory items
+- [x] Implemented optional unique constraints per store for `sku` and `barcode`
+- [x] Integrated `Part` with the Block 6 catalog (`DeviceCategory`, `DeviceBrand`, `DeviceModelFamily`) via optional FKs
+- [x] Created `prisma/seed-inventory.ts` to inject sample categories and common services into the demo store
+- [x] Server Actions layer implemented with search, filtering, and role-based permissions (`inventory:manage`)
+- [x] SKU generation logic implemented (`PRD-000001`, `PRT-000001`, `SRV-000001`)
+- [x] UI: Main `/dashboard/inventory` page with segmented tabs for Products, Parts, and Services
+- [x] UI: Create and Edit forms for all three item types with Zod validation (Zod v4 compatible)
+- [x] UI: Cascading selects in Part form for device compatibility
+- [x] Build clean: typecheck ✅, lint ✅, build ✅
+
+### Schema design decisions
+- Kept `InventoryCategory` unified with an `itemType` discriminator for simplicity
+- Separated `Product`, `Part`, and `Service` into distinct tables since they have different fields (e.g. `estimatedDurationMinutes` vs `compatibleBrandId`)
+- MVP stock fields (`stockQty`, `lowStockThreshold`) included on the items directly, deferring complex FIFO/batch tracking to a future block
+
+### Deferred to Later Blocks
+- [ ] Inventory adjustments / movements log (Block 21)
+- [ ] FIFO/LIFO batch cost tracking (Block 21)
+- [ ] Low stock alert dashboard widget
+- [ ] Print barcode labels
+
+---
+
+## ✅ Block 8: Stock Batches, FIFO, Stock Movements, and Purchase Invoices
+
+### Goal
+Implement the core stock foundation for inventory. This enables traceability of stock, FIFO batch management, supplier management, and processing purchase invoices to safely update stock quantities and supplier balances within guaranteed transactions.
+
+### Status
+✅ Complete
+
+### Key Achievements
+- [x] Schema extensions for `Supplier`, `PurchaseInvoice`, `PurchaseInvoiceLine`, `StockBatch`, and `StockMovement`.
+- [x] All new models are fully store-scoped (`storeId`) and isolated by tenant (`companyId`).
+- [x] **Massive Prisma Transaction**: `createPurchaseInvoice` action safely orchestrates creating the invoice, its lines, initializing stock batches, writing to the immutable stock movement log, updating `stockQty` on products/parts, and updating supplier debt balance.
+- [x] **Suppliers Module**: Full CRUD UI under `/dashboard/suppliers` including a detail page to view supplier balances.
+- [x] **Purchases Module**: A complex dynamic form under `/dashboard/inventory/purchases/new` that allows selecting products/parts, managing quantities, and capturing paid amounts.
+- [x] **Stock Movements**: Read-only audit log page at `/dashboard/inventory/stock-movements`.
+- [x] Implemented proper authorization checks; Cashiers/Technicians cannot view/manage purchases or suppliers.
+- [x] Build clean: typecheck ✅, lint ✅, build ✅ (26 routes)
+
+### Schema design decisions
+- **Denormalized Stock Qty**: The `stockQty` on `Product` and `Part` is immediately updated. The `StockBatch` tracks the granular remaining quantities for future FIFO consumption.
+- **Immutable Movements**: The `StockMovement` table acts as a true append-only ledger for any delta to the stock quantity.
+
+### Deferred to Later Blocks
+- [ ] POS checkout stock consumption (Block 12)
+- [ ] Repair ticket part usage (Block 8/9)
+- [ ] Payment of past supplier invoices (Supplier Debt Payments)
+- [ ] Manual stock adjustments and counts

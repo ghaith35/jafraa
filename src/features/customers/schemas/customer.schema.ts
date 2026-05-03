@@ -16,8 +16,8 @@ export const createCustomerSchema = z
     name: z.string().trim().min(1, "Le nom est requis").max(120),
     phone: phoneField,
     languagePreference: z.enum(["fr", "ar", "en"]).default("fr"),
-    notes: z.string().trim().max(1000).optional(),
-    customerGroupId: z.string().cuid().optional(),
+    notes: z.string().trim().max(1000).optional().or(z.literal("")),
+    customerGroupId: z.string().cuid("ID invalide").optional().or(z.literal("")),
   })
   .refine(
     (d) => d.customerType === "walkin" || !!(d.phone?.trim()),
@@ -32,8 +32,8 @@ export type CreateCustomerInput = z.infer<typeof createCustomerSchema>;
 export const updateCustomerSchema = z.object({
   name: z.string().trim().min(1, "Le nom est requis").max(120),
   languagePreference: z.enum(["fr", "ar", "en"]),
-  notes: z.string().trim().max(1000).optional(),
-  customerGroupId: z.string().cuid().optional(),
+  notes: z.string().trim().max(1000).optional().or(z.literal("")),
+  customerGroupId: z.string().cuid("ID invalide").optional().or(z.literal("")),
 });
 
 export type UpdateCustomerInput = z.infer<typeof updateCustomerSchema>;

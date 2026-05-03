@@ -4,6 +4,8 @@ import { Pool } from "pg";
 import * as dotenv from "dotenv";
 import bcrypt from "bcryptjs";
 import { seedCatalog } from "./seed-catalog";
+import { seedInventory } from "./seed-inventory";
+import { seedSuppliers } from "./seed-suppliers";
 
 // Prisma 7 requires an adapter — no implicit url from schema.prisma
 dotenv.config();
@@ -152,6 +154,12 @@ async function main() {
 
   // ─── Device Catalog (Block 6) ───────────────────────────────────────────────
   await seedCatalog(prisma);
+
+  // ─── Inventory Catalog (Block 7) ─────────────────────────────────────────────
+  await seedInventory(prisma);
+
+  // ─── Suppliers (Block 8) ─────────────────────────────────────────────────────
+  await seedSuppliers(prisma);
 
   console.log("\nSeed complete.");
   console.log("\nDemo credentials (password: demo1234):");
