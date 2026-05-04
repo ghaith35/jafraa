@@ -549,6 +549,7 @@ Implement the core stock foundation for inventory. This enables traceability of 
 - **RBAC**: Invoicing and payment functions hidden from Technicians.
 - **FIFO Integration**: POS debt sales still consume stock via FIFO exactly like cash sales.
 - **Automatic Status**: Repair tickets move to `completed` status automatically upon invoice settlement (full or partial/debt).
+- **Offline Build**: Removed `next/font/google` dependencies to ensure the project builds in restricted-network environments.
 
 ### Deferred to Later Blocks
 - [ ] Z-Report / X-Report

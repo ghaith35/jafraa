@@ -830,3 +830,8 @@ Implemented the repair invoicing system and extended the POS to support named-cu
 ### Next recommended block
 
 Block 16 — Advanced Reporting & Z-Reports
+### Offline Build Fix — Google Fonts Removal
+
+- Removed `next/font/google` usage from `src/app/layout.tsx` to prevent build failures in restricted-network/offline environments.
+- Replaced Google Fonts with system font stacks in `src/app/globals.css`.
+- Verified that `npm run build` now completes successfully (Exit code: 0).
