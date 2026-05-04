@@ -1,0 +1,292 @@
+"use client";
+
+import { useState, useCallback } from "react";
+import { useRouter } from "next/navigation";
+import { Loader2, Lock } from "lucide-react";
+import Link from "next/link";
+import { ItemSearch } from "./ItemSearch";
+import { CartPanel } from "./CartPanel";
+import { SaleConfirmationView } from "./SaleConfirmation";
+import {
+  checkoutCashSale,
+  type CartLine,
+  type SellableItem,
+  type SaleConfirmation,
+} from "../actions/pos-sale.actions";
+
+interface PosCheckoutProps {
+  hasOpenSession: boolean;
+  userRole: string;
+}
+
+export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
+  const router = useRouter();
+  const [cartLines, setCartLines] = useState<CartLine[]>([]);
+  const [discount, setDiscount] = useState<number>(0);
+  const [cashReceived, setCashReceived] = useState<number | "">("");
+  const [isCheckingOut, setIsCheckingOut] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [saleConfirmation, setSaleConfirmation] = useState<SaleConfirmation | null>(null);
+
+  const canApplyDiscount = userRole === "Admin" || userRole === "Manager";
+
+  // Calculate totals
+  const subtotal = cartLines.reduce(
+    (sum, line) => sum + line.unitPrice * line.quantity,
+    0
+  );
+  const total = Math.max(0, subtotal - discount);
+  const cashReceivedNum = typeof cashReceived === "number" ? cashReceived : 0;
+  const change = cashReceivedNum - total;
+
+  // ─── Cart handlers ─────────────────────────────────────────────────────────
+
+  const handleAddToCart = useCallback((item: SellableItem) => {
+    setCartLines((prev) => {
+      const existing = prev.find((l) => l.itemId === item.id);
+      if (existing) {
+        // Check stock limit for products/parts
+        if (
+          item.stockQty !== null &&
+          existing.quantity >= item.stockQty
+        ) {
+          return prev; // Don't exceed stock
+        }
+        return prev.map((l) =>
+          l.itemId === item.id
+            ? { ...l, quantity: l.quantity + 1 }
+            : l
+        );
+      }
+      return [
+        ...prev,
+        {
+          lineType: item.type,
+          itemId: item.id,
+          name: item.name,
+          sku: item.sku,
+          quantity: 1,
+          unitPrice: item.sellingPrice,
+        },
+      ];
+    });
+    setError(null);
+  }, []);
+
+  const handleUpdateQuantity = useCallback((itemId: string, delta: number) => {
+    setCartLines((prev) =>
+      prev
+        .map((l) =>
+          l.itemId === itemId
+            ? { ...l, quantity: Math.max(0, l.quantity + delta) }
+            : l
+        )
+        .filter((l) => l.quantity > 0)
+    );
+    setError(null);
+  }, []);
+
+  const handleRemoveLine = useCallback((itemId: string) => {
+    setCartLines((prev) => prev.filter((l) => l.itemId !== itemId));
+    setError(null);
+  }, []);
+
+  const handleClearCart = useCallback(() => {
+    setCartLines([]);
+    setDiscount(0);
+    setCashReceived("");
+    setError(null);
+  }, []);
+
+  // ─── Checkout ──────────────────────────────────────────────────────────────
+
+  const handleCheckout = async () => {
+    if (cartLines.length === 0) {
+      setError("Le panier est vide");
+      return;
+    }
+
+    if (typeof cashReceived !== "number" || cashReceived < total) {
+      setError(
+        `Espèces insuffisantes. Total: ${total.toFixed(2)} DZD`
+      );
+      return;
+    }
+
+    setIsCheckingOut(true);
+    setError(null);
+
+    const result = await checkoutCashSale(
+      cartLines,
+      cashReceived,
+      null, // no customer selection for MVP
+      discount > 0 ? discount : undefined
+    );
+
+    if ("error" in result) {
+      setError(result.error);
+      setIsCheckingOut(false);
+    } else {
+      setSaleConfirmation(result);
+      setIsCheckingOut(false);
+    }
+  };
+
+  const handleNewSale = () => {
+    setSaleConfirmation(null);
+    setCartLines([]);
+    setDiscount(0);
+    setCashReceived("");
+    setError(null);
+    router.refresh();
+  };
+
+  // ─── Guards ────────────────────────────────────────────────────────────────
+
+  if (!hasOpenSession) {
+    return (
+      <div className="max-w-md mx-auto mt-10 rounded-xl border border-border bg-card p-8 text-center">
+        <div className="flex justify-center mb-4">
+          <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
+            <Lock className="h-6 w-6 text-muted-foreground" />
+          </div>
+        </div>
+        <h2 className="text-lg font-bold mb-2">Caisse fermée</h2>
+        <p className="text-sm text-muted-foreground mb-4">
+          Vous devez ouvrir une session de caisse avant de pouvoir effectuer des ventes.
+        </p>
+        <Link
+          href="/dashboard/pos/cash-register"
+          className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+        >
+          Ouvrir la caisse
+        </Link>
+      </div>
+    );
+  }
+
+  if (saleConfirmation) {
+    return <SaleConfirmationView sale={saleConfirmation} onNewSale={handleNewSale} />;
+  }
+
+  // ─── Main POS interface ────────────────────────────────────────────────────
+
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 h-[calc(100vh-180px)]">
+      {/* Left: Item search (3/5) */}
+      <div className="lg:col-span-3 flex flex-col min-h-0">
+        <ItemSearch onAddToCart={handleAddToCart} cartLines={cartLines} />
+      </div>
+
+      {/* Right: Cart + Checkout (2/5) */}
+      <div className="lg:col-span-2 rounded-xl border border-border bg-card p-5 flex flex-col min-h-0">
+        {/* Cart */}
+        <div className="flex-1 min-h-0 overflow-hidden">
+          <CartPanel
+            lines={cartLines}
+            onUpdateQuantity={handleUpdateQuantity}
+            onRemoveLine={handleRemoveLine}
+            onClearCart={handleClearCart}
+          />
+        </div>
+
+        {/* Checkout section */}
+        {cartLines.length > 0 && (
+          <div className="pt-4 mt-4 border-t border-border space-y-3">
+            {/* Discount (Admin/Manager only) */}
+            {canApplyDiscount && (
+              <div className="flex items-center justify-between gap-3">
+                <label className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                  Remise (DZD)
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  step="0.01"
+                  value={discount || ""}
+                  onChange={(e) =>
+                    setDiscount(e.target.value ? parseFloat(e.target.value) : 0)
+                  }
+                  className="h-9 w-32 rounded-md border border-input bg-background px-3 text-sm text-right"
+                  placeholder="0.00"
+                />
+              </div>
+            )}
+
+            {/* Total */}
+            <div className="flex items-center justify-between">
+              <span className="text-base font-bold">Total</span>
+              <span className="text-2xl font-black text-primary">
+                {total.toFixed(2)} DZD
+              </span>
+            </div>
+
+            {/* Cash received */}
+            <div className="space-y-1.5">
+              <label className="text-sm font-bold">Espèces reçues (DZD)</label>
+              <input
+                type="number"
+                min="0"
+                step="0.01"
+                value={cashReceived}
+                onChange={(e) =>
+                  setCashReceived(
+                    e.target.value ? parseFloat(e.target.value) : ""
+                  )
+                }
+                className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-lg font-bold ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                placeholder="0.00"
+              />
+            </div>
+
+            {/* Change display */}
+            {typeof cashReceived === "number" && cashReceived > 0 && (
+              <div
+                className={`p-3 rounded-lg text-center border ${
+                  change >= 0
+                    ? "bg-emerald-50 border-emerald-200 dark:bg-emerald-950/20 dark:border-emerald-800"
+                    : "bg-red-50 border-red-200 dark:bg-red-950/20 dark:border-red-800"
+                }`}
+              >
+                <span className="text-xs font-medium text-muted-foreground block">
+                  Monnaie à rendre
+                </span>
+                <span
+                  className={`text-xl font-black ${
+                    change >= 0 ? "text-emerald-600" : "text-red-600"
+                  }`}
+                >
+                  {change >= 0 ? change.toFixed(2) : "—"} DZD
+                </span>
+              </div>
+            )}
+
+            {/* Error */}
+            {error && (
+              <div className="rounded-md bg-destructive/15 p-3 text-sm text-destructive">
+                {error}
+              </div>
+            )}
+
+            {/* Checkout button */}
+            <button
+              onClick={handleCheckout}
+              disabled={
+                isCheckingOut ||
+                cartLines.length === 0 ||
+                typeof cashReceived !== "number" ||
+                cashReceived < total
+              }
+              className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-primary px-4 text-base font-bold text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isCheckingOut ? (
+                <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+              ) : null}
+              Encaisser {total.toFixed(2)} DZD
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}

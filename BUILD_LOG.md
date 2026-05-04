@@ -2,6 +2,74 @@
 
 ---
 
+## 2026-05-04 — Block 13: Cash-Only POS Checkout
+
+### What changed
+
+Implemented the full cash-only POS checkout system. Staff can search for products/parts/services, build a cart, and checkout with cash payment. The system performs FIFO stock consumption, creates sale records with cash movement tracking, and updates the cash session expected amount.
+
+### Schema changes
+
+- Added `PosSaleStatus` enum: `completed`, `cancelled`
+- Added `CashMovementType` enum: `opening`, `pos_sale`, `repair_payment`, `debt_payment`, `refund`, `expense`, `correction`
+- Added `CashMovementDirection` enum: `in`, `out`
+- Added `pos_sale` to `DocumentSequenceType`
+- Added `PosSale` model with company/store/customer/cashSession scoping
+- Added `PosSaleLine` model with product/part/service FKs and costTotal
+- Added `CashMovement` model for cash ledger tracking
+- Added reverse relations to 8 existing models
+- Migration: `20260504092205_add_pos_sales_and_cash_movements`
+
+### Key features implemented
+
+- **Item search**: Real-time search across products, parts, and services by name/SKU/barcode
+- **Client-side cart**: In-memory cart with quantity controls, line removal, clear
+- **FIFO stock consumption**: Reusable helper consuming oldest batches first
+- **Cash checkout**: Single Prisma `$transaction` covering validation → FIFO → sale record → cash movement → session update
+- **Discount**: Admin/Manager only; Cashier blocked server-side
+- **Sale numbering**: `{PREFIX}-POS-{YYYY}-{000001}` via DocumentSequence
+- **Cash session guard**: Checkout blocked if no open session; link to open one
+- **Sale confirmation**: On-screen summary with change amount
+
+### Files changed
+
+| File | Change |
+|------|--------|
+| `prisma/schema.prisma` | 3 enums, 1 enum value, 3 models, 8 reverse relations |
+| `prisma/migrations/20260504092205_*/migration.sql` | DDL |
+| `src/lib/sequences/sale-sequence.ts` | **NEW** — sale number generator |
+| `src/lib/stock/consume-fifo.ts` | **NEW** — FIFO consumption helper |
+| `src/features/pos/actions/pos-sale.actions.ts` | **NEW** — 2 server actions |
+| `src/features/pos/components/ItemSearch.tsx` | **NEW** |
+| `src/features/pos/components/CartPanel.tsx` | **NEW** |
+| `src/features/pos/components/PosCheckout.tsx` | **NEW** |
+| `src/features/pos/components/SaleConfirmation.tsx` | **NEW** |
+| `src/app/(dashboard)/dashboard/pos/page.tsx` | Replaced: full checkout UI |
+
+### Checks run
+
+- `npm run typecheck` ✅
+- `npm run lint` ✅ (0 errors, 1 pre-existing warning)
+- `npm run build` ✅ (28 routes, exit 0)
+
+### Deferred to later blocks
+
+- Held/suspended carts
+- Customer selection in POS
+- Repair ticket checkout / repair payments
+- Customer debt
+- Partial payments
+- Refunds / returns
+- PDF receipt
+- WhatsApp receipt
+- Barcode scanner optimization
+
+### Next recommended block
+
+Block 14 — Customer Debt
+
+---
+
 ## 2026-05-04 — Block 12: Cash Register Sessions
 
 ### What changed

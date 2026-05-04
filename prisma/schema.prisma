@@ -81,6 +81,7 @@ enum DocumentSequenceType {
   purchase_invoice
   refund
   tradein
+  pos_sale
 }
 
 // Repair Ticket Enums
@@ -143,6 +144,27 @@ enum CashSessionStatus {
   force_closed
 }
 
+// POS Sale Enums
+enum PosSaleStatus {
+  completed
+  cancelled
+}
+
+enum CashMovementType {
+  opening
+  pos_sale
+  repair_payment
+  debt_payment
+  refund
+  expense
+  correction
+}
+
+enum CashMovementDirection {
+  in
+  out
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // TENANT & AUTH
 // ─────────────────────────────────────────────────────────────────────────────
@@ -175,6 +197,8 @@ model Company {
   estimates             Estimate[]
   customerApprovalLogs  CustomerApprovalLog[]
   cashSessions          CashRegisterSession[]
+  posSales              PosSale[]
+  cashMovements         CashMovement[]
 
   @@index([name])
   @@map("companies")
@@ -224,6 +248,8 @@ model User {
   openedCashSessions      CashRegisterSession[] @relation("CashSessionOpenedBy")
   closedCashSessions      CashRegisterSession[] @relation("CashSessionClosedBy")
   forceClosedCashSessions CashRegisterSession[] @relation("CashSessionForceClosedBy")
+  posSalesCreated         PosSale[]
+  cashMovementsCreated    CashMovement[]
 
   @@unique([companyId, email])
   @@index([companyId, role])
@@ -264,6 +290,8 @@ model Store {
   estimates         Estimate[]
   customerApprovalLogs CustomerApprovalLog[]
   cashSessions      CashRegisterSession[]
+  posSales          PosSale[]
+  cashMovements     CashMovement[]
 
   @@unique([companyId, prefix])
   @@index([companyId])
@@ -410,6 +438,7 @@ model Customer {
   debtBalance      CustomerDebtBalance?
   debtTransactions CustomerDebtTransaction[]
   repairTickets    RepairTicket[]
+  posSales         PosSale[]
 
   @@index([companyId, customerType, isArchived])
   @@map("customers")
@@ -732,6 +761,7 @@ model Product {
   stockBatches         StockBatch[]
   stockMovements       StockMovement[]
   estimateLines        EstimateLine[]
+  posSaleLines         PosSaleLine[]
 
   @@unique([storeId, sku])
   @@unique([storeId, barcode])
@@ -774,6 +804,7 @@ model Part {
   stockMovements       StockMovement[]
   estimateLines        EstimateLine[]
   repairTicketParts    RepairTicketPart[]
+  posSaleLines         PosSaleLine[]
 
   @@unique([storeId, sku])
   @@unique([storeId, barcode])
@@ -799,6 +830,7 @@ model Service {
 
   store Store @relation(fields: [storeId], references: [id])
   estimateLines        EstimateLine[]
+  posSaleLines         PosSaleLine[]
 
   @@unique([storeId, sku])
   @@index([storeId, isArchived])
@@ -1171,8 +1203,95 @@ model CashRegisterSession {
   openedBy            User              @relation("CashSessionOpenedBy", fields: [openedByUserId], references: [id])
   closedBy            User?             @relation("CashSessionClosedBy", fields: [closedByUserId], references: [id])
   forceClosedBy       User?             @relation("CashSessionForceClosedBy", fields: [forceClosedByUserId], references: [id])
+  posSales            PosSale[]
+  cashMovements       CashMovement[]
 
   @@index([storeId, status])
   @@index([companyId, storeId])
   @@map("cash_register_sessions")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// POS SALES (Block 13)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model PosSale {
+  id                 String        @id @default(cuid())
+  companyId          String
+  storeId            String
+  saleNumber         String
+  customerId         String?
+  cashSessionId      String
+  subtotalAmount     Decimal       @db.Decimal(12, 2)
+  discountAmount     Decimal       @default(0) @db.Decimal(12, 2)
+  totalAmount        Decimal       @db.Decimal(12, 2)
+  cashReceivedAmount Decimal       @db.Decimal(12, 2)
+  changeAmount       Decimal       @db.Decimal(12, 2)
+  status             PosSaleStatus @default(completed)
+  createdByUserId    String
+  createdAt          DateTime      @default(now())
+  updatedAt          DateTime      @updatedAt
+
+  company     Company              @relation(fields: [companyId], references: [id])
+  store       Store                @relation(fields: [storeId], references: [id])
+  customer    Customer?            @relation(fields: [customerId], references: [id])
+  cashSession CashRegisterSession  @relation(fields: [cashSessionId], references: [id])
+  createdBy   User                 @relation(fields: [createdByUserId], references: [id])
+  lines       PosSaleLine[]
+
+  @@unique([storeId, saleNumber])
+  @@index([storeId, createdAt(sort: Desc)])
+  @@index([cashSessionId])
+  @@map("pos_sales")
+}
+
+model PosSaleLine {
+  id          String   @id @default(cuid())
+  posSaleId   String
+  lineType    String   // "product" | "part" | "service"
+  productId   String?
+  partId      String?
+  serviceId   String?
+  description String
+  quantity    Int
+  unitPrice   Decimal  @db.Decimal(12, 2)
+  totalPrice  Decimal  @db.Decimal(12, 2)
+  costTotal   Decimal? @db.Decimal(12, 2)
+  createdAt   DateTime @default(now())
+
+  posSale     PosSale  @relation(fields: [posSaleId], references: [id], onDelete: Cascade)
+  product     Product? @relation(fields: [productId], references: [id])
+  part        Part?    @relation(fields: [partId], references: [id])
+  service     Service? @relation(fields: [serviceId], references: [id])
+
+  @@index([posSaleId])
+  @@map("pos_sale_lines")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CASH MOVEMENTS (Block 13)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model CashMovement {
+  id                String                @id @default(cuid())
+  companyId         String
+  storeId           String
+  cashSessionId     String
+  movementType      CashMovementType
+  direction         CashMovementDirection
+  amount            Decimal               @db.Decimal(12, 2)
+  sourceType        String?
+  sourceId          String?
+  note              String?
+  createdByUserId   String
+  createdAt         DateTime              @default(now())
+
+  company     Company              @relation(fields: [companyId], references: [id])
+  store       Store                @relation(fields: [storeId], references: [id])
+  cashSession CashRegisterSession  @relation(fields: [cashSessionId], references: [id])
+  createdBy   User                 @relation(fields: [createdByUserId], references: [id])
+
+  @@index([cashSessionId])
+  @@index([storeId, createdAt(sort: Desc)])
+  @@map("cash_movements")
 }

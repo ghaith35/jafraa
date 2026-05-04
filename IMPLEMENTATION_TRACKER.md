@@ -1,6 +1,6 @@
 # REPAIRE — Implementation Tracker
 
-Last updated: 2026-05-04 (Block 12 complete)
+Last updated: 2026-05-04 (Block 13 complete)
 
 ## Legend
 
@@ -29,7 +29,7 @@ Last updated: 2026-05-04 (Block 12 complete)
 | 10 | Estimates / Devis & Customer Approval | ✅ Done | Estimate lifecycle, lines, customer approval log, status transitions |
 | 11 | Stock Reservation for Repair Tickets | ✅ Done | RepairTicketPart, availability calc, reserve/release UI |
 | 12 | Cash Register Sessions | ✅ Done | CashRegisterSession, open/close/force-close, session history, dashboard widget |
-| 13 | Cash-Only POS Checkout | ⏳ Not Started | POS screen, barcode scan, receipt |
+| 13 | Cash-Only POS Checkout | ✅ Done | PosSale, PosSaleLine, CashMovement, FIFO consumption, cart UI, cash checkout |
 | 14 | Customer Debt | ⏳ Not Started | Three-source debt, debt statement |
 | 15 | Cash Payments & Receipts | ⏳ Not Started | Payment recording, change calc |
 | 16 | PDFs | ⏳ Not Started | Ticket receipt, invoice, debt statement |
@@ -384,9 +384,81 @@ Implement the core stock foundation for inventory. This enables traceability of 
 - `variance` = `countedCashAmount` − `expectedCashAmount`
 
 ### Deferred to Later Blocks
-- [ ] `CashMovement` ledger table (sale, repair payment, debt, refund, expense, correction)
-- [ ] Re-calculate `expectedCashAmount` from real cash movements
+- [x] ~~`CashMovement` ledger table~~ → Implemented in Block 13
+- [x] ~~Re-calculate `expectedCashAmount` from real cash movements~~ → Implemented in Block 13
 - [ ] Z-report PDF generation
-- [ ] POS checkout integration (Block 13)
+- [x] ~~POS checkout integration (Block 13)~~ → Implemented in Block 13
 - [ ] Repair payment integration
 - [ ] Expense recording
+
+---
+
+## Block 13 — Cash-Only POS Checkout
+
+**Status:** ✅ Done
+
+### Completed
+- [x] **Schema**: Added `PosSaleStatus`, `CashMovementType`, `CashMovementDirection` enums
+- [x] **Schema**: Added `pos_sale` to `DocumentSequenceType`
+- [x] **Schema**: Added `PosSale`, `PosSaleLine`, `CashMovement` models with full relations
+- [x] **Migration**: `20260504092205_add_pos_sales_and_cash_movements`
+- [x] **Sale Sequence** (`src/lib/sequences/sale-sequence.ts`): `{PREFIX}-POS-{YYYY}-{000001}`
+- [x] **FIFO Helper** (`src/lib/stock/consume-fifo.ts`): Reusable helper for oldest-batch-first consumption
+- [x] **Server Actions** (`src/features/pos/actions/pos-sale.actions.ts`):
+  - `searchSellableItems(query)` — search products/parts/services by name/SKU/barcode
+  - `checkoutCashSale(lines, cashReceived, customerId, discount)` — full transactional checkout
+- [x] **UI Components** (`src/features/pos/components/`):
+  - `ItemSearch` — search-as-you-type with stock info and type badges
+  - `CartPanel` — quantity controls, line removal, subtotal
+  - `PosCheckout` — main POS interface with cart, discount, cash input, checkout
+  - `SaleConfirmation` — post-checkout success screen
+- [x] **Page**: `/dashboard/pos` → full checkout interface with cash session guard
+- [x] **Permission Enforcement**: Technician blocked; Cashier cannot apply discounts; Admin/Manager full access
+- [x] Build clean: typecheck ✅, lint ✅, build ✅ (28 routes)
+
+### Checkout transaction flow
+1. Verify user permission (not Technician)
+2. Verify open cash session exists
+3. Validate customer if provided
+4. Validate all items exist and belong to store
+5. Pre-check stock availability for products/parts
+6. Generate sale number via `DocumentSequence`
+7. FIFO consume stock batches → `StockMovement` per batch
+8. Decrement `Product.stockQty` / `Part.stockQty`
+9. Create `PosSale` + `PosSaleLine` records
+10. Create `CashMovement` (type: `pos_sale`, direction: `in`)
+11. Increment `CashRegisterSession.expectedCashAmount`
+12. Full rollback on any failure
+
+### FIFO consumption rules
+- Oldest batches consumed first (`createdAt ASC`)
+- Pre-checks total available ≥ requested before any mutations
+- Each batch decrement creates its own `StockMovement`
+- `costTotal` = Σ(consumed_qty × batch.unitCost)
+- Services skip stock entirely
+- `qtyRemaining` and `stockQty` never go below 0
+
+### Permission matrix
+| Role | Access POS | Checkout | Apply Discount |
+|------|-----------|----------|----------------|
+| Admin | ✅ | ✅ | ✅ |
+| Manager | ✅ | ✅ | ✅ |
+| Cashier | ✅ | ✅ | ❌ |
+| Technician | ❌ | ❌ | ❌ |
+
+### Design decisions
+- **Client-side cart**: Cart state is managed in React state, not persisted to DB. Checkout sends full cart payload in one transaction. Simpler for MVP; held carts deferred.
+- **CashMovement created at checkout**: `expectedCashAmount` is now dynamically updated by real sales.
+
+### Deferred to Later Blocks
+- [ ] Held/suspended carts
+- [ ] Customer selection in POS
+- [ ] Repair ticket checkout / repair payments
+- [ ] Customer debt creation
+- [ ] Partial payments
+- [ ] Refunds / returns
+- [ ] PDF receipt
+- [ ] WhatsApp receipt
+- [ ] Barcode scanner optimization
+- [ ] Expense recording via CashMovement
+
