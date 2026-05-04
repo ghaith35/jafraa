@@ -12,6 +12,8 @@ import {
 import { cn } from "@/lib/utils";
 import { generateRepairInvoice, payRepairInvoice } from "../actions/invoice.actions";
 import type { InvoiceSummary, PaymentConfirmation } from "../actions/invoice.actions";
+import { RepairRefundForm } from "./RepairRefundForm";
+import { RotateCcw } from "lucide-react";
 import type { UserRole } from "@prisma/client";
 
 // ─── Type labels ──────────────────────────────────────────────────────────────
@@ -222,6 +224,8 @@ export function RepairInvoiceSection({
   const [confirmation, setConfirmation] = useState<PaymentConfirmation | null>(null);
   const [generating, startGenerating] = useTransition();
   const [genError, setGenError] = useState<string | null>(null);
+  const [showRefundForm, setShowRefundForm] = useState(false);
+  const [refundResult, setRefundResult] = useState<{ number: string; amount: number } | null>(null);
 
   const canGenerate = userRole !== "Technician";
   const canPay = userRole !== "Technician";
@@ -346,6 +350,12 @@ export function RepairInvoiceSection({
             <span>{invoice.debtAmount.toFixed(2)} DZD</span>
           </div>
         )}
+        {invoice.refundedAmount > 0 && (
+          <div className="flex justify-between text-sm font-bold text-red-700 dark:text-red-400">
+            <span>Total remboursé</span>
+            <span>-{invoice.refundedAmount.toFixed(2)} DZD</span>
+          </div>
+        )}
         {invoice.status !== "paid" && invoice.status !== "cancelled" && (
           <div className="flex justify-between text-sm font-bold text-red-700 dark:text-red-400">
             <span>Reste à payer</span>
@@ -375,10 +385,49 @@ export function RepairInvoiceSection({
             );
           }}
         />
-      ) : invoice.status === "paid" ? (
-        <div className="flex items-center gap-2 text-emerald-700 dark:text-emerald-400">
-          <CheckCircle2 className="h-4 w-4" />
-          <span className="text-sm font-semibold">Facture entièrement réglée</span>
+      ) : invoice.status === "paid" || invoice.status === "partial" ? (
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-emerald-700 dark:text-emerald-400">
+              <CheckCircle2 className="h-4 w-4" />
+              <span className="text-sm font-semibold">
+                {invoice.status === "paid" ? "Facture entièrement réglée" : "Facture partiellement réglée"}
+              </span>
+            </div>
+            {!showRefundForm && !refundResult && canPay && invoice.paidAmount > invoice.refundedAmount && (
+              <button
+                onClick={() => setShowRefundForm(true)}
+                className="text-xs font-bold text-muted-foreground hover:text-amber-600 flex items-center gap-1 transition-colors"
+              >
+                <RotateCcw className="h-3 w-3" />
+                Rembourser
+              </button>
+            )}
+          </div>
+
+          {showRefundForm && (
+            <RepairRefundForm
+              invoice={invoice}
+              onCancel={() => setShowRefundForm(false)}
+              onSuccess={(conf) => {
+                setRefundResult({ number: conf.refundNumber, amount: conf.amountRefunded });
+                setShowRefundForm(false);
+                setInvoice(prev => prev ? { ...prev, refundedAmount: prev.refundedAmount + conf.amountRefunded } : prev);
+              }}
+            />
+          )}
+
+          {refundResult && (
+            <div className="rounded-lg border border-amber-200 bg-amber-50 dark:bg-amber-950/20 p-4 text-sm animate-in zoom-in duration-300">
+              <div className="flex items-center gap-2 text-amber-800 dark:text-amber-300 font-bold mb-1">
+                <CheckCircle2 className="h-4 w-4" />
+                Remboursement effectué
+              </div>
+              <p className="text-muted-foreground">
+                <span className="font-bold text-foreground">{refundResult.amount.toFixed(2)} DZD</span> remboursés sous le reçu <span className="font-mono font-bold text-foreground">{refundResult.number}</span>.
+              </p>
+            </div>
+          )}
         </div>
       ) : null}
     </div>

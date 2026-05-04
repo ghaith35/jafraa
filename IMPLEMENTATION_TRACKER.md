@@ -31,13 +31,14 @@ Last updated: 2026-05-04 (Block 14 complete)
 | 12 | Cash Register Sessions | ✅ Done | CashRegisterSession, open/close/force-close, session history, dashboard widget |
 | 13 | Cash-Only POS Checkout | ✅ Done | PosSale, PosSaleLine, CashMovement, FIFO consumption, cart UI, cash checkout |
 | 14 | Customer Debt Ledger & Payments | ✅ Done | Debt ledger, balance, opening balance, manual debt/credit, cash debt payment |
-| 15 | Cash Payments & Receipts | ⏳ Not Started | Repair payment, partial payment |
-| 16 | PDFs | ⏳ Not Started | Ticket receipt, invoice, debt statement |
-| 17 | WhatsApp | ⏳ Not Started | whatsapp-web.js, per-store session |
-| 18 | Reports | ⏳ Not Started | Daily sales, repair revenue, cash variance |
-| 19 | Super Admin | ⏳ Not Started | Tenant management, impersonation |
-| 20 | Security Hardening | ⏳ Not Started | ESLint guards, rate limiting, audit log |
-| 21 | Production Polish | ⏳ Not Started | Empty states, print layouts, error pages |
+| 15 | Repair Invoice, Cash Payment, and POS Debt Support | ✅ Done | RepairInvoice, sequences, POS debt, customer selection |
+| 16 | Refunds and Returns | ✅ Done | Refund models, POS/Repair refunds, stock return, cash session sync |
+| 17 | Reports | ⏳ Not Started | Daily sales, repair revenue, cash variance |
+| 18 | PDFs | ⏳ Not Started | Ticket receipt, invoice, debt statement |
+| 19 | WhatsApp | ⏳ Not Started | whatsapp-web.js, per-store session |
+| 20 | Super Admin | ⏳ Not Started | Tenant management, impersonation |
+| 21 | Security Hardening | ⏳ Not Started | ESLint guards, rate limiting, audit log |
+| 22 | Production Polish | ⏳ Not Started | Empty states, print layouts, error pages |
 
 ---
 
@@ -558,3 +559,30 @@ Implement the core stock foundation for inventory. This enables traceability of 
 - [ ] Multi-store stock transfers
 - [ ] Advanced reporting
 
+
+## ✅ Block 16: Refunds and Returns
+
+### Goal
+Implement a robust and transactionally safe refund system for POS sales and repair invoices, ensuring financial and inventory integrity.
+
+### Status
+✅ Complete
+
+### Key Achievements
+- [x] **Schema**: Added `Refund` and `RefundLine` models with full relations to sales, invoices, and stock.
+- [x] **Sequences**: Implemented `refund-sequence.ts` for unique refund document numbers.
+- [x] **Inventory Return**: Created `returnStockFifo` helper to correctly re-insert returned items into inventory as active stock batches.
+- [x] **Financial Logic**: All refunds are processed in transactions that:
+    - Create a `Refund` record.
+    - Record outward `CashMovement`.
+    - Update `CashRegisterSession.expectedCashAmount`.
+    - Update `RepairInvoice.refundedAmount` (for repairs).
+- [x] **POS Refunds**: Dedicated UI for searching sales and processing partial/full item-based refunds.
+- [x] **Repair Refunds**: Integrated refund form within the repair detail page for quick adjustments.
+- [x] **Role Guards**: Cashiers restricted to refunding sales within their active session; Technicians blocked entirely.
+- [x] **Debt Safety**: Implemented guards to block refunds on debt sales/invoices for MVP safety (deferred for Admin/Manager).
+
+### Deferred to Later Blocks
+- [ ] Automated customer debt reduction via refund (credit notes)
+- [ ] Damaged item/No-return refund flow (stock discard)
+- [ ] Refund receipts (PDF)

@@ -208,6 +208,8 @@ model Company {
   posSales              PosSale[]
   cashMovements         CashMovement[]
   repairInvoices        RepairInvoice[]
+  refunds               Refund[]
+
 
   @@index([name])
   @@map("companies")
@@ -260,6 +262,8 @@ model User {
   posSalesCreated         PosSale[]
   cashMovementsCreated    CashMovement[]
   repairInvoicesCreated   RepairInvoice[] @relation("RepairInvoicesCreated")
+  refundsCreated          Refund[]
+
 
   @@unique([companyId, email])
   @@index([companyId, role])
@@ -303,6 +307,8 @@ model Store {
   posSales          PosSale[]
   cashMovements     CashMovement[]
   repairInvoices    RepairInvoice[]
+  refunds           Refund[]
+
 
   @@unique([companyId, prefix])
   @@index([companyId])
@@ -774,6 +780,8 @@ model Product {
   stockMovements       StockMovement[]
   estimateLines        EstimateLine[]
   posSaleLines         PosSaleLine[]
+  refundLines          RefundLine[]
+
 
   @@unique([storeId, sku])
   @@unique([storeId, barcode])
@@ -817,6 +825,8 @@ model Part {
   estimateLines        EstimateLine[]
   repairTicketParts    RepairTicketPart[]
   posSaleLines         PosSaleLine[]
+  refundLines          RefundLine[]
+
 
   @@unique([storeId, sku])
   @@unique([storeId, barcode])
@@ -843,6 +853,8 @@ model Service {
   store Store @relation(fields: [storeId], references: [id])
   estimateLines        EstimateLine[]
   posSaleLines         PosSaleLine[]
+  refundLines          RefundLine[]
+
 
   @@unique([storeId, sku])
   @@index([storeId, isArchived])
@@ -1218,6 +1230,8 @@ model CashRegisterSession {
   forceClosedBy       User?             @relation("CashSessionForceClosedBy", fields: [forceClosedByUserId], references: [id])
   posSales            PosSale[]
   cashMovements       CashMovement[]
+  refunds             Refund[]
+
 
   @@index([storeId, status])
   @@index([companyId, storeId])
@@ -1252,6 +1266,8 @@ model PosSale {
   cashSession CashRegisterSession  @relation(fields: [cashSessionId], references: [id])
   createdBy   User                 @relation(fields: [createdByUserId], references: [id])
   lines       PosSaleLine[]
+  refunds     Refund[]
+
 
   @@unique([storeId, saleNumber])
   @@index([storeId, createdAt(sort: Desc)])
@@ -1277,6 +1293,7 @@ model PosSaleLine {
   product     Product? @relation(fields: [productId], references: [id])
   part        Part?    @relation(fields: [partId], references: [id])
   service     Service? @relation(fields: [serviceId], references: [id])
+  refundLines RefundLine[]
 
   @@index([posSaleId])
   @@map("pos_sale_lines")
@@ -1326,6 +1343,7 @@ model RepairInvoice {
   totalAmount       Decimal              @db.Decimal(12, 2)
   paidAmount        Decimal              @default(0) @db.Decimal(12, 2)
   debtAmount        Decimal              @default(0) @db.Decimal(12, 2)
+  refundedAmount    Decimal              @default(0) @db.Decimal(12, 2)
   status            RepairInvoiceStatus  @default(unpaid)
   createdByUserId   String
   createdAt         DateTime             @default(now())
@@ -1337,6 +1355,8 @@ model RepairInvoice {
   customer     Customer      @relation(fields: [customerId], references: [id])
   createdBy    User          @relation("RepairInvoicesCreated", fields: [createdByUserId], references: [id])
   lines        RepairInvoiceLine[]
+  refunds      Refund[]
+
 
   @@unique([storeId, invoiceNumber])
   @@index([repairTicketId])
@@ -1359,7 +1379,79 @@ model RepairInvoiceLine {
   createdAt           DateTime  @default(now())
 
   repairInvoice RepairInvoice @relation(fields: [repairInvoiceId], references: [id], onDelete: Cascade)
+  refundLines   RefundLine[]
 
   @@index([repairInvoiceId])
   @@map("repair_invoice_lines")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// REFUNDS (Block 16)
+// ─────────────────────────────────────────────────────────────────────────────
+
+enum RefundType {
+  pos_sale
+  repair_invoice
+}
+
+enum RefundStatus {
+  completed
+  cancelled
+}
+
+model Refund {
+  id                  String       @id @default(cuid())
+  companyId           String
+  storeId             String
+  refundNumber        String
+  refundType          RefundType
+  posSaleId           String?
+  repairInvoiceId     String?
+  cashSessionId       String
+  totalRefundAmount   Decimal      @db.Decimal(12, 2)
+  reason              String
+  status              RefundStatus @default(completed)
+  createdByUserId     String
+  createdAt           DateTime     @default(now())
+  updatedAt           DateTime     @updatedAt
+
+  company       Company             @relation(fields: [companyId], references: [id])
+  store         Store               @relation(fields: [storeId], references: [id])
+  posSale       PosSale?            @relation(fields: [posSaleId], references: [id])
+  repairInvoice RepairInvoice?      @relation(fields: [repairInvoiceId], references: [id])
+  cashSession   CashRegisterSession @relation(fields: [cashSessionId], references: [id])
+  createdBy     User                @relation(fields: [createdByUserId], references: [id])
+  lines         RefundLine[]
+
+  @@unique([storeId, refundNumber])
+  @@index([posSaleId])
+  @@index([repairInvoiceId])
+  @@index([storeId, createdAt(sort: Desc)])
+  @@map("refunds")
+}
+
+model RefundLine {
+  id                    String   @id @default(cuid())
+  refundId              String
+  lineType              String   // "product" | "part" | "service" | "labor" | "custom"
+  posSaleLineId         String?
+  repairInvoiceLineId   String?
+  productId             String?
+  partId                String?
+  serviceId             String?
+  description           String
+  quantity              Decimal  @db.Decimal(12, 3)
+  unitPrice             Decimal  @db.Decimal(12, 2)
+  totalRefundAmount     Decimal  @db.Decimal(12, 2)
+  createdAt             DateTime @default(now())
+
+  refund            Refund             @relation(fields: [refundId], references: [id], onDelete: Cascade)
+  posSaleLine       PosSaleLine?       @relation(fields: [posSaleLineId], references: [id])
+  repairInvoiceLine RepairInvoiceLine? @relation(fields: [repairInvoiceLineId], references: [id])
+  product           Product?           @relation(fields: [productId], references: [id])
+  part              Part?              @relation(fields: [partId], references: [id])
+  service           Service?           @relation(fields: [serviceId], references: [id])
+
+  @@index([refundId])
+  @@map("refund_lines")
 }

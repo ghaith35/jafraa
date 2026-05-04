@@ -28,6 +28,7 @@ export interface InvoiceSummary {
   totalAmount: number;
   paidAmount: number;
   debtAmount: number;
+  refundedAmount: number;
   lines: InvoiceLine[];
   createdAt: Date;
 }
@@ -72,6 +73,7 @@ export async function getRepairInvoice(
     totalAmount: Number(invoice.totalAmount),
     paidAmount: Number(invoice.paidAmount),
     debtAmount: Number(invoice.debtAmount),
+    refundedAmount: Number(invoice.refundedAmount),
     createdAt: invoice.createdAt,
     lines: invoice.lines.map((l) => ({
       id: l.id,

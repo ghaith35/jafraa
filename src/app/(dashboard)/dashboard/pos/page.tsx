@@ -4,7 +4,7 @@ import { getSession } from "@/lib/auth/session";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { getCurrentCashSession } from "@/features/pos/actions/cash-session.actions";
 import { PosCheckout } from "@/features/pos/components/PosCheckout";
-import { Settings } from "lucide-react";
+import { Settings, RotateCcw } from "lucide-react";
 
 export const metadata = { title: "Caisse" };
 
@@ -23,13 +23,22 @@ export default async function PosPage() {
         title="Caisse"
         description="Point de vente — ventes directes en espèces"
         actions={
-          <Link
-            href="/dashboard/pos/cash-register"
-            className="inline-flex h-9 items-center justify-center gap-2 rounded-md border border-input bg-background px-4 text-sm font-medium hover:bg-muted transition-colors"
-          >
-            <Settings className="h-4 w-4" />
-            Gestion de la caisse
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/dashboard/pos/refunds"
+              className="inline-flex h-9 items-center justify-center gap-2 rounded-md border border-input bg-background px-4 text-sm font-medium hover:bg-muted transition-colors"
+            >
+              <RotateCcw className="h-4 w-4" />
+              Remboursements
+            </Link>
+            <Link
+              href="/dashboard/pos/cash-register"
+              className="inline-flex h-9 items-center justify-center gap-2 rounded-md border border-input bg-background px-4 text-sm font-medium hover:bg-muted transition-colors"
+            >
+              <Settings className="h-4 w-4" />
+              Gestion de la caisse
+            </Link>
+          </div>
         }
       />
 
