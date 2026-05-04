@@ -1,6 +1,6 @@
 # REPAIRE — Implementation Tracker
 
-Last updated: 2026-05-04 (Block 13 complete)
+Last updated: 2026-05-04 (Block 14 complete)
 
 ## Legend
 
@@ -30,8 +30,8 @@ Last updated: 2026-05-04 (Block 13 complete)
 | 11 | Stock Reservation for Repair Tickets | ✅ Done | RepairTicketPart, availability calc, reserve/release UI |
 | 12 | Cash Register Sessions | ✅ Done | CashRegisterSession, open/close/force-close, session history, dashboard widget |
 | 13 | Cash-Only POS Checkout | ✅ Done | PosSale, PosSaleLine, CashMovement, FIFO consumption, cart UI, cash checkout |
-| 14 | Customer Debt | ⏳ Not Started | Three-source debt, debt statement |
-| 15 | Cash Payments & Receipts | ⏳ Not Started | Payment recording, change calc |
+| 14 | Customer Debt Ledger & Payments | ✅ Done | Debt ledger, balance, opening balance, manual debt/credit, cash debt payment |
+| 15 | Cash Payments & Receipts | ⏳ Not Started | Repair payment, partial payment |
 | 16 | PDFs | ⏳ Not Started | Ticket receipt, invoice, debt statement |
 | 17 | WhatsApp | ⏳ Not Started | whatsapp-web.js, per-store session |
 | 18 | Reports | ⏳ Not Started | Daily sales, repair revenue, cash variance |
@@ -462,3 +462,59 @@ Implement the core stock foundation for inventory. This enables traceability of 
 - [ ] Barcode scanner optimization
 - [ ] Expense recording via CashMovement
 
+
+---
+
+## Block 14 — Customer Debt Ledger and Debt Payments
+
+**Status:** ✅ Done
+
+### Key Facts
+- No schema migration required — `CustomerDebtTransaction`, `CustomerDebtBalance`, `DebtTransactionType`, `DebtDirection`, and `debt:manage`/`debt:view` permissions were all present from Block 2.
+- POS sale debt deferred (Option B) — POS checkout not modified; deferred to Block 15.
+
+### Completed
+- [x] **Server Actions** (`src/features/customers/actions/debt.actions.ts`):
+  - `getCustomerDebtSummary(customerId)` — balance + alert limit (group/customer override)
+  - `listCustomerDebtEntries(customerId)` — full ledger history
+  - `addOpeningBalance(customerId, amount, note)` — debit entry + balance update
+  - `addManualDebt(customerId, amount, note)` — debit entry + balance update
+  - `addManualCredit(customerId, amount, note)` — credit entry + balance update; blocks overpayment
+  - `payCustomerDebt(customerId, cashAmount, note)` — credit + CashMovement + session expectedCashAmount
+- [x] **UI** (`src/features/customers/components/DebtSection.tsx`):
+  - Balance card with color coding (green/amber/red)
+  - Debt-over-limit alert banner
+  - Breakdown: repair / sale / manual
+  - Inline action forms (no modals): payment, manual debt, opening balance, correction
+  - Ledger table with running balance (computed client-side)
+  - Role-gated action buttons
+- [x] **Customer detail page**: replaced placeholder with real `DebtSection`; debt data fetched server-side
+- [x] **Dashboard**: "Dettes clients" card now shows real aggregated total from `CustomerDebtBalance`
+- [x] Build clean: typecheck ✅, lint ✅ (0 errors), build ✅ (28 routes)
+
+### Business rules enforced
+- Walk-in customers blocked server-side for all debt operations
+- Technician: no access (`debt:view` not in role)
+- Cashier: can view debt + pay debt; cannot add manual entries
+- Manager/Admin: full debt management
+- Overpayment blocked (payment > currentBalance throws)
+- Manual debt/correction: note required
+- Debt payment: requires open cash session, creates CashMovement, updates expectedCashAmount
+- All balance updates inside `$transaction` — atomic
+
+### Enum mapping
+| Spec type | Enum used | Direction |
+|-----------|-----------|-----------|
+| opening_balance | `opening_balance` | debit |
+| manual_debt | `manual_debt` | debit |
+| manual_credit / correction | `adjustment` | credit |
+| debt_payment | `payment` | credit |
+
+### Deferred to Later Blocks
+- [ ] POS sale debt (partial cash + remaining debt)
+- [ ] Repair debt (from repair invoice)
+- [ ] PDF debt receipt
+- [ ] WhatsApp debt message
+- [ ] Customer debt aging report
+- [ ] Customer credit / overpayment handling
+- [ ] Refunds

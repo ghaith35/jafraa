@@ -2,6 +2,50 @@
 
 ---
 
+## 2026-05-04 — Block 14: Customer Debt Ledger and Debt Payments
+
+### What changed
+
+Implemented customer debt management: immutable ledger entries, denormalized balance tracking, manual debt operations, and cash debt payments integrated with the cash register session. No schema migration was required — all debt models and enums were already in place from Block 2.
+
+### No schema changes
+
+All required models existed: `CustomerDebtTransaction`, `CustomerDebtBalance`, `DebtTransactionType` enum, `DebtDirection` enum, `debt:manage`/`debt:view` permissions.
+
+### Key features implemented
+
+- **6 server actions** in `debt.actions.ts`: summary, list entries, opening balance, manual debt, manual credit, cash debt payment
+- **DebtSection component**: balance card (color-coded), debt warning, inline action forms, ledger table with running balance
+- **Customer detail page**: replaced placeholder with live `DebtSection`
+- **Dashboard**: "Dettes clients" card shows real aggregate from `CustomerDebtBalance`
+- **Cash integration**: debt payment creates `CashMovement` + increments `expectedCashAmount`
+- **Permission enforcement**: Technician blocked; Cashier pay-only; Manager/Admin full access
+
+### Files changed
+
+| File | Change |
+|------|--------|
+| `src/features/customers/actions/debt.actions.ts` | **NEW** — 6 server actions |
+| `src/features/customers/components/DebtSection.tsx` | **NEW** — full debt UI |
+| `src/app/(dashboard)/dashboard/customers/[id]/page.tsx` | Added debt data fetch + DebtSection |
+| `src/app/(dashboard)/dashboard/page.tsx` | Real total debt query |
+
+### Checks run
+
+- `npm run typecheck` ✅
+- `npm run lint` ✅ (0 errors, 1 pre-existing warning)
+- `npm run build` ✅ (28 routes, exit 0)
+
+### POS sale debt
+
+Deferred (Option B) — POS checkout not modified. POS debt (partial cash + debt) deferred to Block 15.
+
+### Next recommended block
+
+Block 15 — Cash Payments & Receipts (Repair Payments)
+
+---
+
 ## 2026-05-04 — Block 13: Cash-Only POS Checkout
 
 ### What changed

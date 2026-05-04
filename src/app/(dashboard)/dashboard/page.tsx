@@ -49,9 +49,10 @@ export default async function DashboardPage() {
   const storeId = session.storeIds[0];
   const canViewCash = hasPermission(session.role, "payments:manage") || hasPermission(session.role, "payments:view");
   const canViewRepairs = hasPermission(session.role, "tickets:view");
+  const canViewDebt = hasPermission(session.role, "debt:view");
 
   // Parallel data fetches — scoped to store/company
-  const [activeSession, openRepairCount, criticalStockCount] = await Promise.all([
+  const [activeSession, openRepairCount, criticalStockCount, totalCustomerDebt] = await Promise.all([
     canViewCash && storeId ? getCurrentCashSession() : Promise.resolve(null),
     canViewRepairs && storeId
       ? prisma.repairTicket.count({
@@ -74,6 +75,18 @@ export default async function DashboardPage() {
           },
         }).catch(() => 0)
       : Promise.resolve(0),
+    // Total customer debt — aggregated from denormalized balances for this company
+    canViewDebt
+      ? prisma.customerDebtBalance
+          .aggregate({
+            _sum: { totalDebt: true },
+            where: {
+              customer: { companyId: session.companyId, isArchived: false },
+            },
+          })
+          .then((r) => Number(r._sum.totalDebt ?? 0))
+          .catch(() => 0)
+      : Promise.resolve(null),
   ]);
 
   return (
@@ -108,8 +121,8 @@ export default async function DashboardPage() {
         />
         <StatCard
           label="Dettes clients"
-          value="0 DZD"
-          sub="Total impayé"
+          value={totalCustomerDebt !== null ? `${totalCustomerDebt.toFixed(0)} DZD` : "—"}
+          sub={totalCustomerDebt !== null ? "Total impayé clients" : "Accès restreint"}
           icon={<CreditCard className="h-5 w-5 text-muted-foreground" />}
           iconBg="bg-muted"
         />

@@ -1,6 +1,6 @@
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, Phone, Edit } from "lucide-react";
+import { ArrowLeft, Phone, Edit, TrendingDown } from "lucide-react";
 import { getSession } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
 import { hasPermission } from "@/lib/auth/permissions";
@@ -9,7 +9,12 @@ import { StatusBadge } from "@/components/shared/StatusBadge";
 import { RoleBadge } from "@/components/shared/RoleBadge";
 import { AssetSection } from "@/features/customers/components/AssetSection";
 import { ArchiveCustomerButton } from "@/features/customers/components/ArchiveCustomerButton";
+import { DebtSection } from "@/features/customers/components/DebtSection";
 import { listDeviceCategories } from "@/features/catalog/actions/catalog.actions";
+import {
+  getCustomerDebtSummary,
+  listCustomerDebtEntries,
+} from "@/features/customers/actions/debt.actions";
 import type { CustomerType, LanguagePreference } from "@prisma/client";
 
 export const metadata = { title: "Fiche client" };
@@ -84,6 +89,17 @@ export default async function CustomerDetailPage({
   }));
 
   const canManage = hasPermission(session.role, "customers:manage");
+  const canViewDebt = hasPermission(session.role, "debt:view");
+  const canManageDebt = hasPermission(session.role, "debt:manage");
+  const canPayDebt = hasPermission(session.role, "payments:manage");
+
+  // Debt data (only fetch for non-Technician)
+  const [debtSummary, debtEntries] = canViewDebt
+    ? await Promise.all([
+        getCustomerDebtSummary(id),
+        listCustomerDebtEntries(id),
+      ])
+    : [null, null];
 
   return (
     <>
@@ -222,19 +238,20 @@ export default async function CustomerDetailPage({
             />
           </div>
 
-          {/* Placeholder: Repair history */}
-          <div className="rounded-xl border border-dashed border-border bg-muted/30 p-5">
-            <p className="text-sm font-medium text-muted-foreground">
-              Historique des réparations — disponible au Bloc 8
-            </p>
-          </div>
-
-          {/* Placeholder: Debt — hidden from Technician */}
-          {session.role !== "Technician" && (
-            <div className="rounded-xl border border-dashed border-border bg-muted/30 p-5">
-              <p className="text-sm font-medium text-muted-foreground">
-                Solde dette client — disponible au Bloc 13
-              </p>
+          {/* Debt section */}
+          {canViewDebt && debtSummary && debtEntries && (
+            <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
+              <div className="flex items-center gap-2 mb-4">
+                <TrendingDown className="h-4 w-4 text-muted-foreground" />
+                <h2 className="text-sm font-semibold">Dette client</h2>
+              </div>
+              <DebtSection
+                customerId={customer.id}
+                initialSummary={debtSummary}
+                initialEntries={Array.isArray(debtEntries) ? debtEntries : []}
+                canManageDebt={canManageDebt && !customer.isArchived}
+                canPayDebt={canPayDebt && !customer.isArchived}
+              />
             </div>
           )}
         </div>
