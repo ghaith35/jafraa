@@ -47,6 +47,7 @@ export const updateRepairStatusSchema = z.object({
   newStatus: z.enum([
     "received",
     "in_diagnosis",
+    "waiting_customer_approval",
     "in_repair",
     "ready_for_pickup",
     "completed",

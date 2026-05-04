@@ -533,3 +533,11 @@ Full protected application shell. No business logic. Auth behavior from Block 3 
 ### Next recommended block
 
 **Block 5 — Customers & Customer Devices**
+
+## Block 10: Estimates / Devis & Customer Approval Foundation (Completed)
+- Created models for `Estimate`, `EstimateLine`, and `CustomerApprovalLog` in Prisma Schema.
+- Implemented server actions and sequence generator for safe estimate lifecycle transitions (Draft -> Sent -> Accepted/Rejected).
+- Upgraded the `/dashboard/repairs/[id]` page to include an integrated `EstimateSection`.
+- Validated the codebase ensuring total calculation and validation strictness via Zod schemas.
+- Ran `npx prisma migrate dev` successfully.
+- Codebase compiles cleanly with `npm run build` with zero errors.

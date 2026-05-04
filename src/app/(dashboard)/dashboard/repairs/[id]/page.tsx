@@ -3,6 +3,8 @@ import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { getRepairTicket } from "@/features/repairs/actions/repair.actions";
 import { RepairDetail } from "@/features/repairs/components/RepairDetail";
+import { getEstimatesForTicket } from "@/features/estimates/actions/estimate.actions";
+import { EstimateSection } from "@/features/estimates/components/EstimateSection";
 
 export async function generateMetadata() {
   return { title: "Détail Ticket | Réparations" };
@@ -17,7 +19,7 @@ export default async function RepairDetailPage(props: { params: Promise<{ id: st
   const storeId = session.storeIds[0];
   if (!storeId) redirect("/dashboard");
 
-  const [ticket, technicians] = await Promise.all([
+  const [ticket, technicians, estimates] = await Promise.all([
     getRepairTicket(params.id),
     prisma.user.findMany({
       where: {
@@ -30,6 +32,7 @@ export default async function RepairDetailPage(props: { params: Promise<{ id: st
       select: { id: true, name: true },
       orderBy: { name: "asc" },
     }),
+    getEstimatesForTicket(params.id),
   ]);
 
   if (!ticket) {
@@ -42,8 +45,9 @@ export default async function RepairDetailPage(props: { params: Promise<{ id: st
   }
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto space-y-8">
       <RepairDetail ticket={ticket} technicians={technicians} userRole={session.role} />
+      <EstimateSection ticket={ticket} initialEstimates={estimates} userRole={session.role} />
     </div>
   );
 }
