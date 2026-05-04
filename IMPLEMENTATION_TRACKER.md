@@ -1,6 +1,6 @@
 # REPAIRE — Implementation Tracker
 
-Last updated: 2026-05-03 (Block 8 complete)
+Last updated: 2026-05-04 (Block 12 complete)
 
 ## Legend
 
@@ -24,19 +24,20 @@ Last updated: 2026-05-03 (Block 8 complete)
 | 5 | Customers & Customer Devices | ✅ Done | Customer list/create/edit/archive, walk-in vs named, phones, assets |
 | 6 | Catalog Foundation | ✅ Done | DeviceCategory/DeviceBrand/DeviceModelFamily, seed data, catalog UI, asset form integration |
 | 7 | Inventory — Products / Parts / Services | ✅ Done | Products, parts, services, schemas, seed data, unified UI |
-| 8 | Basic Repair Tickets | ✅ Done | Ticket creation, intake, status |
-| 9 | Repair Status Flow | ✅ Done | Full status machine, history |
-| 10 | Estimates / Devis | ⏳ Not Started | Draft → sent → accepted → rejected |
-| 11 | Cash Register Sessions | ⏳ Not Started | Open/close session, Z-report |
-| 12 | Cash-Only POS | ⏳ Not Started | POS screen, held carts, barcode scan |
-| 13 | Customer Debt | ⏳ Not Started | Three-source debt, debt statement |
-| 14 | Cash Payments & Receipts | ⏳ Not Started | Payment recording, change calc |
-| 15 | PDFs | ⏳ Not Started | Ticket receipt, invoice, debt statement |
-| 16 | WhatsApp | ⏳ Not Started | whatsapp-web.js, per-store session |
-| 17 | Reports | ⏳ Not Started | Daily sales, repair revenue, cash variance |
-| 18 | Super Admin | ⏳ Not Started | Tenant management, impersonation |
-| 19 | Security Hardening | ⏳ Not Started | ESLint guards, rate limiting, audit log |
-| 20 | Production Polish | ⏳ Not Started | Empty states, print layouts, error pages |
+| 8 | Stock Batches, FIFO, Stock Movements, Purchase Invoices | ✅ Done | Suppliers, PurchaseInvoice, StockBatch, StockMovement, FIFO foundation |
+| 9 | Basic Repair Tickets Foundation | ✅ Done | Ticket creation, intake, device linking, status history |
+| 10 | Estimates / Devis & Customer Approval | ✅ Done | Estimate lifecycle, lines, customer approval log, status transitions |
+| 11 | Stock Reservation for Repair Tickets | ✅ Done | RepairTicketPart, availability calc, reserve/release UI |
+| 12 | Cash Register Sessions | ✅ Done | CashRegisterSession, open/close/force-close, session history, dashboard widget |
+| 13 | Cash-Only POS Checkout | ⏳ Not Started | POS screen, barcode scan, receipt |
+| 14 | Customer Debt | ⏳ Not Started | Three-source debt, debt statement |
+| 15 | Cash Payments & Receipts | ⏳ Not Started | Payment recording, change calc |
+| 16 | PDFs | ⏳ Not Started | Ticket receipt, invoice, debt statement |
+| 17 | WhatsApp | ⏳ Not Started | whatsapp-web.js, per-store session |
+| 18 | Reports | ⏳ Not Started | Daily sales, repair revenue, cash variance |
+| 19 | Super Admin | ⏳ Not Started | Tenant management, impersonation |
+| 20 | Security Hardening | ⏳ Not Started | ESLint guards, rate limiting, audit log |
+| 21 | Production Polish | ⏳ Not Started | Empty states, print layouts, error pages |
 
 ---
 
@@ -336,7 +337,56 @@ Implement the core stock foundation for inventory. This enables traceability of 
 - **Immutable Movements**: The `StockMovement` table acts as a true append-only ledger for any delta to the stock quantity.
 
 ### Deferred to Later Blocks
-- [ ] POS checkout stock consumption (Block 12)
-- [ ] Repair ticket part usage (Block 8/9)
+- [ ] POS checkout stock consumption
+- [ ] Repair ticket part usage
 - [ ] Payment of past supplier invoices (Supplier Debt Payments)
 - [ ] Manual stock adjustments and counts
+
+---
+
+## Block 12 — Cash Register Sessions
+
+**Status:** ✅ Done
+
+### Completed
+- [x] **Schema**: Added `CashSessionStatus` enum and `CashRegisterSession` model with company/store scoping
+- [x] **Migration**: `20260504085953_add_cash_register_sessions` applied successfully
+- [x] **Server Actions** (`src/features/pos/actions/cash-session.actions.ts`):
+  - `getCurrentCashSession()` — fetch active session for current store
+  - `listCashSessions()` — session history (last 50)
+  - `openCashSession(amount, notes)` — transactional; enforces one-open-per-store rule
+  - `closeCashSession(id, counted, notes)` — calculates variance, enforces ownership/role
+  - `forceCloseCashSession(id, counted, note)` — Admin/Manager only, mandatory note
+- [x] **UI Components** (`src/features/pos/components/`):
+  - `OpenSessionCard` — form to open session
+  - `ActiveSessionCard` — live session viewer + close/force-close forms with variance display
+  - `CashSessionHistory` — paginated history table with color-coded variance
+- [x] **Pages**:
+  - `/dashboard/pos` — updated with live cash status card and navigation
+  - `/dashboard/pos/cash-register` — full session management page
+  - `/dashboard` — dashboard cash widget shows live open/closed status with clickable link
+- [x] **Permission Enforcement**: Technician blocked at server-action level and redirect level; Cashier cannot force-close; Manager/Admin can force-close any session
+- [x] `CashMovement` — **deferred** (see below)
+- [x] Build clean: typecheck ✅, lint ✅, build ✅ (28 routes)
+
+### Session lifecycle rules
+| Rule | Enforcement |
+|------|-------------|
+| One open session per store | `$transaction` check in `openCashSession` |
+| Cannot close already-closed session | Status guard in `closeCashSession` |
+| User closes own session | `openedByUserId === session.sub` check |
+| Manager/Admin can close any session | Role check fallback |
+| Force-close requires note | Non-empty `forceCloseNote` validation |
+| Technician blocked entirely | Server action + redirect guard |
+
+### Available stock formula (MVP)
+- `expectedCashAmount` = `openingCashAmount` (no cash movements yet)
+- `variance` = `countedCashAmount` − `expectedCashAmount`
+
+### Deferred to Later Blocks
+- [ ] `CashMovement` ledger table (sale, repair payment, debt, refund, expense, correction)
+- [ ] Re-calculate `expectedCashAmount` from real cash movements
+- [ ] Z-report PDF generation
+- [ ] POS checkout integration (Block 13)
+- [ ] Repair payment integration
+- [ ] Expense recording

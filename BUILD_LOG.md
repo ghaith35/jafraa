@@ -2,6 +2,67 @@
 
 ---
 
+## 2026-05-04 — Block 12: Cash Register Sessions
+
+### What changed
+
+Implemented the cash register session foundation. Staff can now open, close, and force-close cash sessions per store. The dashboard and POS index now display live session status. No POS checkout, payments, or invoices were created.
+
+### Schema changes
+
+- Added `CashSessionStatus` enum: `opened`, `closed`, `force_closed`
+- Added `CashRegisterSession` model with full lifecycle fields (opening/counted/expected/variance amounts, timestamps, note fields)
+- Added reverse relations to `Company`, `Store`, and `User` (three named relations: `CashSessionOpenedBy`, `CashSessionClosedBy`, `CashSessionForceClosedBy`)
+- Migration: `20260504085953_add_cash_register_sessions`
+
+### CashMovement decision
+
+**Deferred.** The `CashMovement` ledger table was not implemented in this block. In MVP, `expectedCashAmount` is initialized to `openingCashAmount`. When real cash movements (from POS sales, repair payments, etc.) are implemented, they will update `expectedCashAmount` and the variance calculation will use real data.
+
+### Permission enforcement
+
+| Role | Open | Close own | Close any | Force-close |
+|------|------|-----------|-----------|-------------|
+| Admin | ✅ | ✅ | ✅ | ✅ |
+| Manager | ✅ | ✅ | ✅ | ✅ |
+| Cashier | ✅ | ✅ | ❌ | ❌ |
+| Technician | ❌ | ❌ | ❌ | ❌ |
+
+Technician is blocked at both the server action level and the page redirect level.
+
+### Files changed
+
+- `prisma/schema.prisma` — enum + model + three User/Company/Store relations
+- `prisma/migrations/20260504085953_add_cash_register_sessions/migration.sql` — DDL
+- `src/features/pos/actions/cash-session.actions.ts` — **NEW** — 5 server actions
+- `src/features/pos/components/OpenSessionCard.tsx` — **NEW**
+- `src/features/pos/components/ActiveSessionCard.tsx` — **NEW**
+- `src/features/pos/components/CashSessionHistory.tsx` — **NEW**
+- `src/app/(dashboard)/dashboard/pos/cash-register/page.tsx` — **NEW**
+- `src/app/(dashboard)/dashboard/pos/page.tsx` — Updated: live status card + navigation
+- `src/app/(dashboard)/dashboard/page.tsx` — Updated: live cash session widget, real repair count
+
+### Checks run
+
+- `npm run typecheck` ✅
+- `npm run lint` ✅ (0 errors, 1 pre-existing warning in EstimateForm)
+- `npm run build` ✅ (28 routes, exit 0)
+
+### Deferred to later blocks
+
+- `CashMovement` ledger (sale_payment, repair_payment, debt_payment, refund, expense, correction)
+- Re-calculate `expectedCashAmount` from real movements
+- Z-report PDF generation
+- POS checkout (Block 13)
+- Repair payment collection
+- Expense recording
+
+### Next recommended block
+
+Block 13 — Cash-Only POS Checkout
+
+---
+
 ## 2026-05-04 — Block 11: Stock Reservation for Repair Tickets
 
 ### What changed
