@@ -13,6 +13,8 @@ import {
   type SellableItem,
   type SaleConfirmation,
 } from "../actions/pos-sale.actions";
+import { CustomerSearch } from "./CustomerSearch";
+import { type NamedCustomerResult } from "../actions/customer-search.actions";
 
 interface PosCheckoutProps {
   hasOpenSession: boolean;
@@ -27,6 +29,8 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
   const [isCheckingOut, setIsCheckingOut] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [saleConfirmation, setSaleConfirmation] = useState<SaleConfirmation | null>(null);
+  const [selectedCustomer, setSelectedCustomer] = useState<NamedCustomerResult | null>(null);
+  const [debtEnabled, setDebtEnabled] = useState(false);
 
   const canApplyDiscount = userRole === "Admin" || userRole === "Manager";
 
@@ -37,7 +41,11 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
   );
   const total = Math.max(0, subtotal - discount);
   const cashReceivedNum = typeof cashReceived === "number" ? cashReceived : 0;
-  const change = cashReceivedNum - total;
+  
+  // Change calculation is only valid if debt is NOT enabled OR cash covers total
+  const isDebtMode = debtEnabled && !!selectedCustomer && cashReceivedNum < total;
+  const change = isDebtMode ? 0 : cashReceivedNum - total;
+  const debtAmount = isDebtMode ? total - cashReceivedNum : 0;
 
   // ─── Cart handlers ─────────────────────────────────────────────────────────
 
@@ -106,11 +114,20 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
       return;
     }
 
-    if (typeof cashReceived !== "number" || cashReceived < total) {
-      setError(
-        `Espèces insuffisantes. Total: ${total.toFixed(2)} DZD`
-      );
-      return;
+    // Validation for full-cash or debt
+    if (!debtEnabled || !selectedCustomer) {
+      if (typeof cashReceived !== "number" || cashReceived < total) {
+        setError(
+          `Espèces insuffisantes. Total: ${total.toFixed(2)} DZD`
+        );
+        return;
+      }
+    } else {
+      // Debt enabled: ensure cashReceived is at least 0 (it is by type)
+      if (typeof cashReceived !== "number") {
+        setError("Entrez le montant reçu (même si 0)");
+        return;
+      }
     }
 
     setIsCheckingOut(true);
@@ -118,9 +135,10 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
 
     const result = await checkoutCashSale(
       cartLines,
-      cashReceived,
-      null, // no customer selection for MVP
-      discount > 0 ? discount : undefined
+      cashReceivedNum,
+      selectedCustomer?.id || null,
+      discount > 0 ? discount : undefined,
+      debtEnabled
     );
 
     if ("error" in result) {
@@ -137,6 +155,8 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
     setCartLines([]);
     setDiscount(0);
     setCashReceived("");
+    setSelectedCustomer(null);
+    setDebtEnabled(false);
     setError(null);
     router.refresh();
   };
@@ -191,8 +211,21 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
         </div>
 
         {/* Checkout section */}
-        {cartLines.length > 0 && (
-          <div className="pt-4 mt-4 border-t border-border space-y-3">
+        <div className="pt-4 mt-4 border-t border-border space-y-4">
+          {/* Customer Selection */}
+          <div className="space-y-2">
+            <label className="text-sm font-semibold">Client</label>
+            <CustomerSearch 
+              selectedCustomer={selectedCustomer}
+              onSelect={(c) => {
+                setSelectedCustomer(c);
+                if (!c) setDebtEnabled(false);
+              }}
+            />
+          </div>
+
+          {cartLines.length > 0 && (
+            <div className="space-y-3 pt-2">
             {/* Discount (Admin/Manager only) */}
             {canApplyDiscount && (
               <div className="flex items-center justify-between gap-3">
@@ -239,8 +272,20 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
               />
             </div>
 
-            {/* Change display */}
-            {typeof cashReceived === "number" && cashReceived > 0 && (
+            {/* Debt Preview */}
+            {isDebtMode && (
+              <div className="p-3 rounded-lg border border-amber-200 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-800 text-center">
+                <span className="text-xs font-medium text-amber-800 dark:text-amber-300 block">
+                  Le reste sera mis en dette
+                </span>
+                <span className="text-xl font-black text-amber-600">
+                  {debtAmount.toFixed(2)} DZD
+                </span>
+              </div>
+            )}
+
+            {/* Change display (only if not in debt mode) */}
+            {!isDebtMode && typeof cashReceived === "number" && cashReceived > 0 && (
               <div
                 className={`p-3 rounded-lg text-center border ${
                   change >= 0
@@ -261,6 +306,22 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
               </div>
             )}
 
+            {/* Debt Toggle (only if customer selected) */}
+            {selectedCustomer && cashReceivedNum < total && (
+              <div className="flex items-center gap-3 py-2 px-1">
+                <input
+                  type="checkbox"
+                  id="debt-toggle"
+                  checked={debtEnabled}
+                  onChange={(e) => setDebtEnabled(e.target.checked)}
+                  className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                />
+                <label htmlFor="debt-toggle" className="text-sm font-medium cursor-pointer">
+                  Mettre le reste en dette client
+                </label>
+              </div>
+            )}
+
             {/* Error */}
             {error && (
               <div className="rounded-md bg-destructive/15 p-3 text-sm text-destructive">
@@ -274,19 +335,23 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
               disabled={
                 isCheckingOut ||
                 cartLines.length === 0 ||
-                typeof cashReceived !== "number" ||
-                cashReceived < total
+                (typeof cashReceived !== "number") ||
+                (!debtEnabled && cashReceived < total)
               }
               className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-primary px-4 text-base font-bold text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isCheckingOut ? (
                 <Loader2 className="mr-2 h-5 w-5 animate-spin" />
               ) : null}
-              Encaisser {total.toFixed(2)} DZD
+              {isDebtMode 
+                ? `Encaisser (Crédit: ${debtAmount.toFixed(0)})` 
+                : `Encaisser ${total.toFixed(0)} DZD`}
             </button>
           </div>
         )}
       </div>
     </div>
+    </div>
   );
 }
+

@@ -7,6 +7,8 @@ import { getEstimatesForTicket } from "@/features/estimates/actions/estimate.act
 import { EstimateSection } from "@/features/estimates/components/EstimateSection";
 import { listReservedPartsForTicket } from "@/features/repairs/actions/reservation.actions";
 import { ReservedPartsSection } from "@/features/repairs/components/ReservedPartsSection";
+import { getRepairInvoice } from "@/features/repairs/actions/invoice.actions";
+import { RepairInvoiceSection } from "@/features/repairs/components/RepairInvoiceSection";
 
 export async function generateMetadata() {
   return { title: "Détail Ticket | Réparations" };
@@ -21,7 +23,7 @@ export default async function RepairDetailPage(props: { params: Promise<{ id: st
   const storeId = session.storeIds[0];
   if (!storeId) redirect("/dashboard");
 
-  const [ticket, technicians, estimates, reservedParts] = await Promise.all([
+  const [ticket, technicians, estimates, reservedParts, invoiceResult] = await Promise.all([
     getRepairTicket(params.id),
     prisma.user.findMany({
       where: {
@@ -36,7 +38,11 @@ export default async function RepairDetailPage(props: { params: Promise<{ id: st
     }),
     getEstimatesForTicket(params.id),
     listReservedPartsForTicket(params.id),
+    getRepairInvoice(params.id),
   ]);
+
+  const initialInvoice =
+    invoiceResult && !('error' in invoiceResult) ? invoiceResult : null;
 
   if (!ticket) {
     return (
@@ -52,6 +58,22 @@ export default async function RepairDetailPage(props: { params: Promise<{ id: st
       <RepairDetail ticket={ticket} technicians={technicians} userRole={session.role} />
       <EstimateSection ticket={ticket} initialEstimates={estimates} userRole={session.role} />
       <ReservedPartsSection ticket={ticket} initialParts={reservedParts} userRole={session.role} />
+
+      {/* Invoice & Payment section — hidden from Technician */}
+      {session.role !== "Technician" && (
+        <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-sm font-semibold">Facture &amp; Paiement</span>
+          </div>
+          <RepairInvoiceSection
+            ticketId={ticket.id}
+            ticketStatus={ticket.currentStatus}
+            isWalkin={ticket.customer.customerType === "walkin"}
+            initialInvoice={initialInvoice}
+            userRole={session.role}
+          />
+        </div>
+      )}
     </div>
   );
 }

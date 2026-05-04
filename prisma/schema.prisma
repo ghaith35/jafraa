@@ -150,6 +150,14 @@ enum PosSaleStatus {
   cancelled
 }
 
+// Repair Invoice Enums
+enum RepairInvoiceStatus {
+  unpaid
+  partial
+  paid
+  cancelled
+}
+
 enum CashMovementType {
   opening
   pos_sale
@@ -199,6 +207,7 @@ model Company {
   cashSessions          CashRegisterSession[]
   posSales              PosSale[]
   cashMovements         CashMovement[]
+  repairInvoices        RepairInvoice[]
 
   @@index([name])
   @@map("companies")
@@ -250,6 +259,7 @@ model User {
   forceClosedCashSessions CashRegisterSession[] @relation("CashSessionForceClosedBy")
   posSalesCreated         PosSale[]
   cashMovementsCreated    CashMovement[]
+  repairInvoicesCreated   RepairInvoice[] @relation("RepairInvoicesCreated")
 
   @@unique([companyId, email])
   @@index([companyId, role])
@@ -292,6 +302,7 @@ model Store {
   cashSessions      CashRegisterSession[]
   posSales          PosSale[]
   cashMovements     CashMovement[]
+  repairInvoices    RepairInvoice[]
 
   @@unique([companyId, prefix])
   @@index([companyId])
@@ -439,6 +450,7 @@ model Customer {
   debtTransactions CustomerDebtTransaction[]
   repairTickets    RepairTicket[]
   posSales         PosSale[]
+  repairInvoices   RepairInvoice[]
 
   @@index([companyId, customerType, isArchived])
   @@map("customers")
@@ -1027,6 +1039,7 @@ model RepairTicket {
   estimates           Estimate[]
   approvalLogs        CustomerApprovalLog[]
   reservedParts       RepairTicketPart[]
+  repairInvoices      RepairInvoice[]
 
   @@unique([storeId, ticketNumber])
   @@index([storeId, currentStatus])
@@ -1227,6 +1240,7 @@ model PosSale {
   totalAmount        Decimal       @db.Decimal(12, 2)
   cashReceivedAmount Decimal       @db.Decimal(12, 2)
   changeAmount       Decimal       @db.Decimal(12, 2)
+  debtAmount         Decimal       @default(0) @db.Decimal(12, 2)
   status             PosSaleStatus @default(completed)
   createdByUserId    String
   createdAt          DateTime      @default(now())
@@ -1294,4 +1308,58 @@ model CashMovement {
   @@index([cashSessionId])
   @@index([storeId, createdAt(sort: Desc)])
   @@map("cash_movements")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// REPAIR INVOICES (Block 15)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model RepairInvoice {
+  id                String               @id @default(cuid())
+  companyId         String
+  storeId           String
+  repairTicketId    String
+  invoiceNumber     String
+  customerId        String
+  subtotalAmount    Decimal              @db.Decimal(12, 2)
+  discountAmount    Decimal              @default(0) @db.Decimal(12, 2)
+  totalAmount       Decimal              @db.Decimal(12, 2)
+  paidAmount        Decimal              @default(0) @db.Decimal(12, 2)
+  debtAmount        Decimal              @default(0) @db.Decimal(12, 2)
+  status            RepairInvoiceStatus  @default(unpaid)
+  createdByUserId   String
+  createdAt         DateTime             @default(now())
+  updatedAt         DateTime             @updatedAt
+
+  company      Company       @relation(fields: [companyId], references: [id])
+  store        Store         @relation(fields: [storeId], references: [id])
+  repairTicket RepairTicket  @relation(fields: [repairTicketId], references: [id])
+  customer     Customer      @relation(fields: [customerId], references: [id])
+  createdBy    User          @relation("RepairInvoicesCreated", fields: [createdByUserId], references: [id])
+  lines        RepairInvoiceLine[]
+
+  @@unique([storeId, invoiceNumber])
+  @@index([repairTicketId])
+  @@index([customerId])
+  @@index([storeId, createdAt(sort: Desc)])
+  @@map("repair_invoices")
+}
+
+model RepairInvoiceLine {
+  id                  String    @id @default(cuid())
+  repairInvoiceId     String
+  lineType            String    // "labor" | "part" | "service" | "custom"
+  description         String
+  repairTicketPartId  String?
+  serviceId           String?
+  quantity            Decimal   @db.Decimal(12, 3)
+  unitPrice           Decimal   @db.Decimal(12, 2)
+  totalPrice          Decimal   @db.Decimal(12, 2)
+  costTotal           Decimal?  @db.Decimal(12, 2)
+  createdAt           DateTime  @default(now())
+
+  repairInvoice RepairInvoice @relation(fields: [repairInvoiceId], references: [id], onDelete: Cascade)
+
+  @@index([repairInvoiceId])
+  @@map("repair_invoice_lines")
 }

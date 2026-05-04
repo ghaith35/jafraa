@@ -77,7 +77,7 @@ export async function getRepairTicket(id: string) {
       ...(isTechnician ? { assignedTechnicianId: session.sub } : {}),
     },
     include: {
-      customer: { select: { name: true, phones: { select: { phoneNumber: true } }, address: true, wilayaCode: true } },
+      customer: { select: { name: true, phones: { select: { phoneNumber: true } }, address: true, wilayaCode: true, customerType: true } },
       customerDevice: true,
       deviceCategory: true,
       deviceBrand: true,

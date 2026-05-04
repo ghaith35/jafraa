@@ -518,3 +518,42 @@ Implement the core stock foundation for inventory. This enables traceability of 
 - [ ] Customer debt aging report
 - [ ] Customer credit / overpayment handling
 - [ ] Refunds
+
+---
+
+## Block 15 — Repair Invoice, Cash Payment, and POS Debt Support
+
+**Status:** ✅ Done
+
+### Completed
+- [x] **Schema migration**: 
+  - `RepairInvoice` and `RepairInvoiceLine` models
+  - `RepairInvoiceStatus` enum (`unpaid`, `partial`, `paid`, `cancelled`)
+  - `debtAmount` field added to `PosSale`
+- [x] **Sequences**: `invoice-sequence.ts` for sequential repair invoice numbering (`PREFIX-INV-YYYY-XXXXXX`).
+- [x] **Repair Invoice Actions**:
+  - `generateRepairInvoice(ticketId)`: Creates invoice from accepted estimate or fallback labor price.
+  - `payRepairInvoice(invoiceId, cashAmount)`: Handles cash + debt remainder, updates balance, creates `CashMovement`, and marks ticket as `completed`.
+- [x] **POS Extensions**:
+  - `searchNamedCustomers(query)`: Server action for POS customer selection.
+  - `checkoutCashSale`: Extended to support partial-cash/full-debt sales for named customers.
+  - `CustomerSearch.tsx`: UI component for POS customer search and selection.
+  - `PosCheckout.tsx`: Integrated customer selection, debt toggle, and debt-aware checkout flow.
+  - `SaleConfirmation.tsx`: Displays debt amount for credit sales.
+- [x] **Repair UI**:
+  - `RepairInvoiceSection.tsx`: Integrated into repair detail page (managed by Cashiers/Managers/Admins).
+
+### Business rules enforced
+- **Walk-in Protection**: Blocked from incurring debt in both POS and Repairs. Full cash required.
+- **Atomic Transactions**: All payments (POS/Repairs) use `$transaction` to ensure invoice, cash movement, debt ledger, and status updates stay in sync.
+- **RBAC**: Invoicing and payment functions hidden from Technicians.
+- **FIFO Integration**: POS debt sales still consume stock via FIFO exactly like cash sales.
+- **Automatic Status**: Repair tickets move to `completed` status automatically upon invoice settlement (full or partial/debt).
+
+### Deferred to Later Blocks
+- [ ] Z-Report / X-Report
+- [ ] Expense tracking (non-inventory)
+- [ ] Refunds and returns
+- [ ] Multi-store stock transfers
+- [ ] Advanced reporting
+

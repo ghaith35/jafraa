@@ -780,3 +780,53 @@ Full protected application shell. No business logic. Auth behavior from Block 3 
 - Validated the codebase ensuring total calculation and validation strictness via Zod schemas.
 - Ran `npx prisma migrate dev` successfully.
 - Codebase compiles cleanly with `npm run build` with zero errors.
+## 2026-05-04 — Block 15: Repair Invoice, Cash Payment, and POS Debt Support
+
+### What changed
+
+Implemented the repair invoicing system and extended the POS to support named-customer debt. This completes the core repair-to-payment lifecycle, allowing staff to generate invoices from estimates, collect full or partial cash payments, and track the remaining balance in the customer debt ledger.
+
+### Schema changes
+
+- **New Models**: `RepairInvoice`, `RepairInvoiceLine`.
+- **New Enums**: `RepairInvoiceStatus` (`unpaid`, `partial`, `paid`, `cancelled`).
+- **Updated Model**: `PosSale` now includes `debtAmount`.
+- **Migration**: `20260504095439_add_repair_invoices_and_pos_debt`.
+
+### Key features implemented
+
+- **Repair Invoicing**:
+  - `generateRepairInvoice`: Auto-generates invoice from accepted estimates or fallback labor price.
+  - `payRepairInvoice`: Transactional payment handler (Cash + Debt), CashMovement creation, and automatic ticket status transition to `completed`.
+  - `RepairInvoiceSection`: Dynamic UI for generation and payment collection.
+- **POS Debt Support**:
+  - `searchNamedCustomers`: Real-time named-customer search for POS.
+  - `CustomerSearch`: Reusable selection component.
+  - `debtEnabled` toggle: Allows splitting sales between cash and debt.
+  - `SaleConfirmation`: Updated to display debt totals.
+
+### Files changed
+
+| File | Change |
+|------|--------|
+| `prisma/schema.prisma` | Added invoice models, status enum, and PosSale debt fields |
+| `src/lib/sequences/invoice-sequence.ts` | **NEW** — Repair invoice number generator |
+| `src/features/repairs/actions/invoice.actions.ts` | **NEW** — Invoice CRUD and payment actions |
+| `src/features/pos/actions/customer-search.actions.ts` | **NEW** — POS customer search |
+| `src/features/pos/actions/pos-sale.actions.ts` | Extended `checkoutCashSale` for debt support |
+| `src/features/repairs/components/RepairInvoiceSection.tsx` | **NEW** — Integrated invoicing UI |
+| `src/features/pos/components/CustomerSearch.tsx` | **NEW** — POS customer selector |
+| `src/features/pos/components/PosCheckout.tsx` | Integrated customer search and debt logic |
+| `src/features/pos/components/SaleConfirmation.tsx` | Added debt display |
+| `src/features/repairs/actions/repair.actions.ts` | Added `customerType` to fetch |
+| `src/app/(dashboard)/dashboard/repairs/[id]/page.tsx` | Integrated invoice section |
+
+### Checks run
+
+- `npm run typecheck` ✅
+- `npm run lint` ✅
+- `npm run build` ✅
+
+### Next recommended block
+
+Block 16 — Advanced Reporting & Z-Reports

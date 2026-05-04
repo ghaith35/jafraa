@@ -39,10 +39,17 @@ export function SaleConfirmationView({ sale, onNewSale }: SaleConfirmationViewPr
               <span className="text-muted-foreground">Espèces reçues</span>
               <span className="font-medium">{sale.cashReceived.toFixed(2)} DZD</span>
             </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-muted-foreground">Monnaie à rendre</span>
-              <span className="font-bold text-primary">{sale.changeAmount.toFixed(2)} DZD</span>
-            </div>
+            {sale.debtAmount > 0 ? (
+              <div className="flex justify-between text-sm">
+                <span className="text-muted-foreground">Montant en dette</span>
+                <span className="font-bold text-amber-600">{sale.debtAmount.toFixed(2)} DZD</span>
+              </div>
+            ) : (
+              <div className="flex justify-between text-sm">
+                <span className="text-muted-foreground">Monnaie à rendre</span>
+                <span className="font-bold text-primary">{sale.changeAmount.toFixed(2)} DZD</span>
+              </div>
+            )}
           </div>
         </div>
 

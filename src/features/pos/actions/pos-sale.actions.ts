@@ -34,6 +34,7 @@ export interface SaleConfirmation {
   saleNumber: string;
   totalAmount: number;
   cashReceived: number;
+  debtAmount: number;
   changeAmount: number;
   lineCount: number;
 }
@@ -155,7 +156,8 @@ export async function checkoutCashSale(
   lines: CartLine[],
   cashReceived: number,
   customerId?: string | null,
-  discountAmount?: number
+  discountAmount?: number,
+  debtEnabled?: boolean
 ): Promise<ActionError | SaleConfirmation> {
   const session = await getSession();
   if (!session) return { error: "Non autorisé" };
@@ -191,17 +193,21 @@ export async function checkoutCashSale(
 
   const total = subtotal - discount;
 
-  if (cashReceived < total) {
+  // Debt mode: named customer required, cash may be less than total
+  const useDebt = !!(debtEnabled && customerId);
+  const debtAmount = useDebt && cashReceived < total ? total - cashReceived : 0;
+  const changeAmount = !useDebt && cashReceived > total ? cashReceived - total : 0;
+
+  // Full-cash path: cash must cover total
+  if (!useDebt && cashReceived < total) {
     return {
       error: `Espèces reçues insuffisantes. Total: ${total.toFixed(2)} DZD, reçu: ${cashReceived.toFixed(2)} DZD`,
     };
   }
 
-  const changeAmount = cashReceived - total;
-
-  try {
+    try {
     const result = await prisma.$transaction(async (tx) => {
-      // 1. Verify open cash session
+      // 1. Verify open cash session (always required — even for debt-only sales)
       const cashSession = await tx.cashRegisterSession.findFirst({
         where: { storeId, status: "opened" },
       });
@@ -220,9 +226,16 @@ export async function checkoutCashSale(
       if (customerId) {
         const customer = await tx.customer.findFirst({
           where: { id: customerId, companyId: session.companyId, isArchived: false },
+          include: { debtBalance: true },
         });
         if (!customer) {
           throw new Error("Client introuvable");
+        }
+        // Debt mode validation
+        if (useDebt && debtAmount > 0) {
+          if (customer.customerType === "walkin") {
+            throw new Error("Les clients de passage ne peuvent pas avoir de dette");
+          }
         }
       }
 
@@ -276,6 +289,7 @@ export async function checkoutCashSale(
           totalAmount: total,
           cashReceivedAmount: cashReceived,
           changeAmount,
+          debtAmount,
           status: "completed",
           createdByUserId: session.sub,
         },
@@ -317,37 +331,74 @@ export async function checkoutCashSale(
         });
       }
 
-      // 8. Create CashMovement
-      await tx.cashMovement.create({
-        data: {
-          companyId: session.companyId,
-          storeId,
-          cashSessionId: cashSession.id,
-          movementType: "pos_sale",
-          direction: "in",
-          amount: total,
-          sourceType: "pos_sale",
-          sourceId: sale.id,
-          note: `Vente ${saleNumber}`,
-          createdByUserId: session.sub,
-        },
-      });
+      // 8. Create CashMovement (only when cash was actually received)
+      const cashForMovement = useDebt ? cashReceived : total;
+      if (cashForMovement > 0) {
+        await tx.cashMovement.create({
+          data: {
+            companyId: session.companyId,
+            storeId,
+            cashSessionId: cashSession.id,
+            movementType: "pos_sale",
+            direction: "in",
+            amount: cashForMovement,
+            sourceType: "pos_sale",
+            sourceId: sale.id,
+            note: `Vente ${saleNumber}`,
+            createdByUserId: session.sub,
+          },
+        });
+      }
 
       // 9. Update cash session expected amount
-      await tx.cashRegisterSession.update({
-        where: { id: cashSession.id },
-        data: {
-          expectedCashAmount: {
-            increment: total,
+      if (cashForMovement > 0) {
+        await tx.cashRegisterSession.update({
+          where: { id: cashSession.id },
+          data: { expectedCashAmount: { increment: cashForMovement } },
+        });
+      }
+
+      // 10. Create customer debt entry if debt mode
+      if (useDebt && debtAmount > 0 && customerId) {
+        // Load customer with debtBalance for update
+        const customerForDebt = await tx.customer.findUniqueOrThrow({
+          where: { id: customerId },
+          include: { debtBalance: true },
+        });
+
+        await tx.customerDebtTransaction.create({
+          data: {
+            customerId,
+            storeId,
+            type: "sale_debt",
+            direction: "debit",
+            amount: debtAmount,
+            note: `Vente à crédit — ${saleNumber}`,
+            createdBy: session.sub,
           },
-        },
-      });
+        });
+
+        if (customerForDebt.debtBalance) {
+          await tx.customerDebtBalance.update({
+            where: { customerId },
+            data: {
+              saleDebt: { increment: debtAmount },
+              totalDebt: { increment: debtAmount },
+            },
+          });
+        } else {
+          await tx.customerDebtBalance.create({
+            data: { customerId, saleDebt: debtAmount, totalDebt: debtAmount },
+          });
+        }
+      }
 
       return {
         saleId: sale.id,
         saleNumber: sale.saleNumber,
         totalAmount: total,
         cashReceived,
+        debtAmount,
         changeAmount,
         lineCount: lines.length,
       } satisfies SaleConfirmation;
