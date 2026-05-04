@@ -2,6 +2,72 @@
 
 ---
 
+## 2026-05-04 — Block 11: Stock Reservation for Repair Tickets
+
+### What changed
+
+Implemented the MVP foundation for reserving parts against repair tickets without deducting physical stock. Reservations reduce "available stock" for future reservations/POS but do not modify `Part.stockQty` or create `StockMovement` records.
+
+### Schema changes
+
+- Added `RepairPartStatus` enum (`reserved`, `released`, `used`)
+- Added `RepairTicketPart` model with indexes on `repairTicketId`, `partId`, `storeId+partId+status`, `companyId+storeId`
+- Added reverse relations to `User` (reserved/released), `Part`, and `RepairTicket`
+- Migration: `20260504084410_add_repair_ticket_parts`
+
+### Available stock formula
+
+- `reservedQty` = SUM(quantity) from `RepairTicketPart` WHERE status = `reserved`
+- `availableQty` = `Part.stockQty` - `reservedQty`
+- Enforced inside a Prisma transaction to prevent race conditions
+
+### Reservation lifecycle
+
+- **Reserved**: Part linked to ticket, excluded from available stock, no physical deduction
+- **Released**: Reservation canceled, available stock restored, reservation history preserved
+- **Used**: Enum exists but is not reachable in this block (deferred to stock deduction block)
+
+### Permission enforcement
+
+- Admin/Manager/Cashier: full reservation access on all store tickets
+- Technician: can only reserve/release on assigned tickets
+- Cost/FIFO data hidden from Cashier/Technician in the UI
+
+### Status restrictions
+
+- Cannot reserve on `completed` or `not_repaired` tickets
+- `ready_for_pickup` requires Manager/Admin role
+- All other active statuses allow reservation
+
+### Files changed
+
+- `prisma/schema.prisma` — enum + model + reverse relations
+- `src/features/repairs/actions/reservation.actions.ts` — server actions
+- `src/features/repairs/components/ReservedPartsSection.tsx` — section wrapper
+- `src/features/repairs/components/ReservePartForm.tsx` — search + availability + form
+- `src/features/repairs/components/ReservedPartsList.tsx` — active list + release + history
+- `src/app/(dashboard)/dashboard/repairs/[id]/page.tsx` — data fetch + integration
+
+### Checks run
+
+- `npm run typecheck` ✅
+- `npm run lint` ✅ (0 errors, 1 pre-existing warning)
+- `npm run build` ✅ (27 routes)
+
+### Deferred to later blocks
+
+- Used part transition (stock deduction)
+- Stock movement creation on usage
+- StockBatch.qtyRemaining reduction
+- Invoice line generation from used parts
+- Inventory list UI update (reservedQty / availableQty columns)
+
+### Next recommended block
+
+Block 12 — Cash Register Sessions
+
+---
+
 ## 2026-05-03 — Block 9: Basic Repair Tickets Foundation
 
 ### What changed

@@ -129,6 +129,13 @@ enum CustomerApprovalMethod {
   other
 }
 
+// Repair Part Reservation Enums
+enum RepairPartStatus {
+  reserved
+  released
+  used
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // TENANT & AUTH
 // ─────────────────────────────────────────────────────────────────────────────
@@ -204,6 +211,8 @@ model User {
   repairStatusChanges     RepairStatusHistory[]
   createdEstimates        Estimate[]
   confirmedApprovals      CustomerApprovalLog[]
+  reservedParts           RepairTicketPart[] @relation("ReservedByUser")
+  releasedParts           RepairTicketPart[] @relation("ReleasedByUser")
 
   @@unique([companyId, email])
   @@index([companyId, role])
@@ -752,6 +761,7 @@ model Part {
   stockBatches         StockBatch[]
   stockMovements       StockMovement[]
   estimateLines        EstimateLine[]
+  repairTicketParts    RepairTicketPart[]
 
   @@unique([storeId, sku])
   @@unique([storeId, barcode])
@@ -972,6 +982,7 @@ model RepairTicket {
   statusHistory       RepairStatusHistory[]
   estimates           Estimate[]
   approvalLogs        CustomerApprovalLog[]
+  reservedParts       RepairTicketPart[]
 
   @@unique([storeId, ticketNumber])
   @@index([storeId, currentStatus])
@@ -1087,4 +1098,35 @@ model CustomerApprovalLog {
 
   @@index([repairTicketId])
   @@map("customer_approval_logs")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// REPAIR TICKET PARTS (Stock Reservation — Block 11)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model RepairTicketPart {
+  id                String           @id @default(cuid())
+  companyId         String
+  storeId           String
+  repairTicketId    String
+  partId            String
+  quantity          Int
+  status            RepairPartStatus @default(reserved)
+  reservedByUserId  String
+  releasedByUserId  String?
+  releasedAt        DateTime?
+  note              String?
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+
+  repairTicket      RepairTicket     @relation(fields: [repairTicketId], references: [id])
+  part              Part             @relation(fields: [partId], references: [id])
+  reservedBy        User             @relation("ReservedByUser", fields: [reservedByUserId], references: [id])
+  releasedBy        User?            @relation("ReleasedByUser", fields: [releasedByUserId], references: [id])
+
+  @@index([repairTicketId])
+  @@index([partId])
+  @@index([storeId, partId, status])
+  @@index([companyId, storeId])
+  @@map("repair_ticket_parts")
 }
