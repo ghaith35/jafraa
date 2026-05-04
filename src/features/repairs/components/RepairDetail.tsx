@@ -3,9 +3,10 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, User as UserIcon, Phone, Tag, AlertTriangle, Calendar, CheckCircle } from "lucide-react";
+import { ArrowLeft, User as UserIcon, Phone, Tag, AlertTriangle, Calendar, CheckCircle, MessageSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { changeRepairTicketStatus, assignTechnician } from "../actions/repair.actions";
+import { notifyCustomerWhatsApp } from "../../whatsapp/actions/whatsapp.actions";
 import type { RepairStatus } from "@prisma/client";
 
 const STATUS_CONFIG: Record<string, { label: string; cls: string }> = {
@@ -184,9 +185,18 @@ export function RepairDetail({ ticket, technicians, userRole }: { ticket: any, t
                 <div>
                   <p className="font-medium text-sm">{ticket.customer.name}</p>
                   {ticket.customer.phones?.[0] && (
-                    <p className="text-xs text-muted-foreground flex items-center gap-1 mt-0.5">
-                      <Phone className="h-3 w-3" /> {ticket.customer.phones[0].phoneNumber}
-                    </p>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <p className="text-xs text-muted-foreground flex items-center gap-1">
+                        <Phone className="h-3 w-3" /> {ticket.customer.phones[0].phoneNumber}
+                      </p>
+                      <button 
+                        onClick={() => notifyCustomerWhatsApp(ticket.id, ticket.currentStatus === "ready_for_pickup" ? "ready" : "received")}
+                        className="text-emerald-600 hover:text-emerald-700 transition-colors"
+                        title="Notifier par WhatsApp"
+                      >
+                        <MessageSquare className="h-3.5 w-3.5" />
+                      </button>
+                    </div>
                   )}
                 </div>
               </div>

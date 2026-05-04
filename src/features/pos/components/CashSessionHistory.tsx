@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { Printer } from "lucide-react";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function CashSessionHistory({ sessions }: { sessions: any[] }) {
@@ -27,6 +28,7 @@ export function CashSessionHistory({ sessions }: { sessions: any[] }) {
               <th className="px-4 py-3 font-medium text-right">Espèces attendues</th>
               <th className="px-4 py-3 font-medium text-right">Espèces comptées</th>
               <th className="px-4 py-3 font-medium text-right">Écart</th>
+              <th className="px-4 py-3 font-medium text-center">Action</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-border">
@@ -70,6 +72,17 @@ export function CashSessionHistory({ sessions }: { sessions: any[] }) {
                     ) : (
                       <span className="text-muted-foreground">—</span>
                     )}
+                  </td>
+                   <td className="px-4 py-3 text-center">
+                    <a
+                      href={`/dashboard/pos/cash-register/${session.id}/z-report`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-md border bg-white dark:bg-transparent text-muted-foreground hover:text-primary hover:bg-muted transition-colors"
+                      title="Imprimer le rapport Z"
+                    >
+                      <Printer className="h-4 w-4" />
+                    </a>
                   </td>
                 </tr>
               );

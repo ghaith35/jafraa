@@ -2,8 +2,8 @@ import { getSession } from "@/lib/auth/session";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { PageHeader } from "@/components/shared/PageHeader";
-import { getCurrentCashSession } from "@/features/pos/actions/cash-session.actions";
 import { prisma } from "@/lib/db";
+import { getDashboardStats } from "@/features/reports/actions/report.actions";
 import { hasPermission } from "@/lib/auth/permissions";
 import {
   TrendingUp,
@@ -48,46 +48,20 @@ export default async function DashboardPage() {
 
   const storeId = session.storeIds[0];
   const canViewCash = hasPermission(session.role, "payments:manage") || hasPermission(session.role, "payments:view");
-  const canViewRepairs = hasPermission(session.role, "tickets:view");
   const canViewDebt = hasPermission(session.role, "debt:view");
 
   // Parallel data fetches — scoped to store/company
-  const [activeSession, openRepairCount, criticalStockCount, totalCustomerDebt] = await Promise.all([
-    canViewCash && storeId ? getCurrentCashSession() : Promise.resolve(null),
-    canViewRepairs && storeId
-      ? prisma.repairTicket.count({
-          where: {
-            storeId,
-            isArchived: false,
-            currentStatus: {
-              notIn: ["completed", "not_repaired", "ready_for_pickup"],
-            },
-          },
+  const [activeSession, stats] = await Promise.all([
+    canViewCash && storeId 
+      ? prisma.cashRegisterSession.findFirst({
+          where: { storeId, status: "opened" },
+          include: { openedBy: { select: { name: true } } }
         })
-      : Promise.resolve(0),
-    storeId
-      ? prisma.part.count({
-          where: {
-            storeId,
-            isArchived: false,
-            lowStockThreshold: { not: null },
-            stockQty: { lte: prisma.part.fields.lowStockThreshold as never },
-          },
-        }).catch(() => 0)
-      : Promise.resolve(0),
-    // Total customer debt — aggregated from denormalized balances for this company
-    canViewDebt
-      ? prisma.customerDebtBalance
-          .aggregate({
-            _sum: { totalDebt: true },
-            where: {
-              customer: { companyId: session.companyId, isArchived: false },
-            },
-          })
-          .then((r) => Number(r._sum.totalDebt ?? 0))
-          .catch(() => 0)
       : Promise.resolve(null),
+    getDashboardStats()
   ]);
+
+  if (!stats) return null;
 
   return (
     <>
@@ -99,30 +73,30 @@ export default async function DashboardPage() {
       {/* Stat cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
         <StatCard
-          label="Chiffre d'affaires du jour"
-          value="0 DZD"
-          sub="Données disponibles après ouverture de caisse"
+          label="Chiffre d'affaires (Jour)"
+          value={`${stats.dailyRevenue.toLocaleString()} DZD`}
+          sub="Ventes POS aujourd'hui"
           icon={<TrendingUp className="h-5 w-5 text-primary" />}
           iconBg="bg-primary/10"
         />
         <StatCard
           label="Réparations en cours"
-          value={String(openRepairCount)}
+          value={String(stats.openTickets)}
           sub="Tickets actifs"
           icon={<Wrench className="h-5 w-5 text-warning" />}
           iconBg="bg-warning/10"
         />
         <StatCard
-          label="Articles en stock critique"
-          value={String(criticalStockCount)}
-          sub="Sous le seuil d'alerte"
+          label="Stock Critique"
+          value={String(stats.lowStock)}
+          sub="Articles en rupture ou bas"
           icon={<AlertTriangle className="h-5 w-5 text-destructive" />}
           iconBg="bg-destructive/10"
         />
         <StatCard
           label="Dettes clients"
-          value={totalCustomerDebt !== null ? `${totalCustomerDebt.toFixed(0)} DZD` : "—"}
-          sub={totalCustomerDebt !== null ? "Total impayé clients" : "Accès restreint"}
+          value={canViewDebt ? `${stats.totalDebt.toLocaleString()} DZD` : "—"}
+          sub={canViewDebt ? "Total impayé clients" : "Accès restreint"}
           icon={<CreditCard className="h-5 w-5 text-muted-foreground" />}
           iconBg="bg-muted"
         />

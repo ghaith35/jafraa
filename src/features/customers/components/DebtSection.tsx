@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { Loader2, TrendingDown, Plus, Minus, Wallet, AlertTriangle } from "lucide-react";
+import { Loader2, TrendingDown, Plus, Minus, Wallet, AlertTriangle, Printer } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
   addOpeningBalance,
@@ -322,6 +322,15 @@ export function DebtSection({
               )}
             </>
           )}
+          <a
+            href={`/dashboard/customers/${customerId}/debt-statement`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-9 items-center gap-2 rounded-md border border-border px-4 text-sm font-medium hover:bg-muted transition-colors"
+          >
+            <Printer className="h-4 w-4" />
+            Relevé de compte
+          </a>
         </div>
       )}
 

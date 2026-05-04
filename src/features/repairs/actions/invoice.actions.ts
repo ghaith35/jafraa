@@ -5,6 +5,7 @@ import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { generateInvoiceNumber } from "@/lib/sequences/invoice-sequence";
+import { WhatsAppNotifications } from "@/lib/whatsapp/notifications";
 
 type ActionError = { error: string };
 
@@ -34,6 +35,7 @@ export interface InvoiceSummary {
 }
 
 export interface PaymentConfirmation {
+  invoiceId: string;
   invoiceNumber: string;
   cashReceived: number;
   debtCreated: number;
@@ -386,6 +388,7 @@ export async function payRepairInvoice(
       });
 
       return {
+        invoiceId: invoice.id,
         invoiceNumber: invoice.invoiceNumber,
         cashReceived: cashToApply,
         debtCreated: debtRemaining,
@@ -399,6 +402,10 @@ export async function payRepairInvoice(
     revalidatePath("/dashboard/customers");
     revalidatePath("/dashboard");
     revalidatePath("/dashboard/pos/cash-register");
+
+    // Background WhatsApp notification
+    WhatsAppNotifications.sendInvoice(invoiceId).catch(console.error);
+
     return result;
   } catch (e: unknown) {
     return { error: e instanceof Error ? e.message : "Erreur lors du paiement" };

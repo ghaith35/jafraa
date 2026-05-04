@@ -8,6 +8,8 @@ import {
   AlertTriangle,
   Receipt,
   Clock,
+  Printer,
+  MessageSquare,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { generateRepairInvoice, payRepairInvoice } from "../actions/invoice.actions";
@@ -15,6 +17,7 @@ import type { InvoiceSummary, PaymentConfirmation } from "../actions/invoice.act
 import { RepairRefundForm } from "./RepairRefundForm";
 import { RotateCcw } from "lucide-react";
 import type { UserRole } from "@prisma/client";
+import { notifyCustomerWhatsApp } from "../../whatsapp/actions/whatsapp.actions";
 
 // ─── Type labels ──────────────────────────────────────────────────────────────
 
@@ -199,6 +202,24 @@ function ConfirmationCard({ confirmation }: { confirmation: PaymentConfirmation 
           </div>
         )}
       </div>
+      <div className="mt-4 pt-4 border-t flex gap-3">
+        <a
+          href={`/dashboard/repairs/invoices/${confirmation.invoiceId}/receipt`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 inline-flex h-9 items-center justify-center gap-2 rounded-md border bg-white dark:bg-transparent text-sm font-medium hover:bg-muted transition-colors"
+        >
+          <Printer className="h-4 w-4" />
+          Imprimer la facture
+        </a>
+        <button
+          onClick={() => notifyCustomerWhatsApp(confirmation.invoiceId, "ready")}
+          className="flex-1 inline-flex h-9 items-center justify-center gap-2 rounded-md border border-emerald-200 bg-emerald-600 text-sm font-medium text-white hover:bg-emerald-700 transition-colors"
+        >
+          <MessageSquare className="h-4 w-4" />
+          WhatsApp
+        </button>
+      </div>
     </div>
   );
 }
@@ -301,6 +322,26 @@ export function RepairInvoiceSection({
         <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
           <Clock className="h-3.5 w-3.5" />
           {new Date(invoice.createdAt).toLocaleDateString("fr-FR")}
+          <div className="ml-2 border-l pl-2 flex gap-2">
+            <a
+              href={`/dashboard/repairs/invoices/${invoice.id}/receipt`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors flex items-center gap-1"
+            >
+              <Printer className="h-3 w-3" />
+              Facture
+            </a>
+            <a
+              href={`/dashboard/repairs/${ticketId}/ticket-receipt`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors flex items-center gap-1"
+            >
+              <Printer className="h-3 w-3" />
+              Ticket
+            </a>
+          </div>
         </div>
       </div>
 

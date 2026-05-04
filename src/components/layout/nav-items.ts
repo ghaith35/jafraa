@@ -7,6 +7,7 @@ import {
   Truck,
   BarChart2,
   Settings,
+  MessageSquare,
   type LucideIcon,
 } from "lucide-react";
 import type { UserRole } from "@prisma/client";
@@ -66,6 +67,12 @@ const ALL_NAV_ITEMS: NavItem[] = [
     href: "/dashboard/settings",
     label: "Paramètres",
     icon: Settings,
+    permission: "settings:manage",
+  },
+  {
+    href: "/dashboard/settings/whatsapp",
+    label: "WhatsApp",
+    icon: MessageSquare,
     permission: "settings:manage",
   },
 ];

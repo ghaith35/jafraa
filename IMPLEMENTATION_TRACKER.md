@@ -33,8 +33,8 @@ Last updated: 2026-05-04 (Block 14 complete)
 | 14 | Customer Debt Ledger & Payments | ✅ Done | Debt ledger, balance, opening balance, manual debt/credit, cash debt payment |
 | 15 | Repair Invoice, Cash Payment, and POS Debt Support | ✅ Done | RepairInvoice, sequences, POS debt, customer selection |
 | 16 | Refunds and Returns | ✅ Done | Refund models, POS/Repair refunds, stock return, cash session sync |
-| 17 | Reports | ⏳ Not Started | Daily sales, repair revenue, cash variance |
-| 18 | PDFs | ⏳ Not Started | Ticket receipt, invoice, debt statement |
+| 17 | PDFs and Receipt Preview | ✅ Done | Document templates, A4/Receipt styles, browser print support |
+| 18 | Reporting | ✅ Done | Live stats, 7 reports, PDF export, Dashboard widgets |
 | 19 | WhatsApp | ⏳ Not Started | whatsapp-web.js, per-store session |
 | 20 | Super Admin | ⏳ Not Started | Tenant management, impersonation |
 | 21 | Security Hardening | ⏳ Not Started | ESLint guards, rate limiting, audit log |
@@ -586,3 +586,31 @@ Implement a robust and transactionally safe refund system for POS sales and repa
 - [ ] Automated customer debt reduction via refund (credit notes)
 - [ ] Damaged item/No-return refund flow (stock discard)
 - [ ] Refund receipts (PDF)
+
+---
+
+## ✅ Block 17: PDFs and Receipt Preview
+
+### Goal
+Implement document preview and basic printable receipt/invoice templates for all store operations.
+
+### Status
+✅ Complete
+
+### Key Achievements
+- [x] **Document Foundation**: Reusable `DocumentShell`, `DocumentHeader`, `DocumentFooter`, `DocumentTable`, and `MoneySummary` components.
+- [x] **Data Layer**: Unified `document.actions.ts` for secure, tenant-scoped document fetching.
+- [x] **POS Receipts**: Printable receipts for POS sales and refunds.
+- [x] **Repair Documents**: Printable Intake Tickets, Repair Invoices, and Estimates.
+- [x] **Financial Reports**: Cash Session Z-Report and Customer Debt Statement.
+- [x] **UI Integration**: Integrated print buttons/links into success screens and history tables across the app.
+- [x] **Print Styles**: Comprehensive CSS for clean browser printing (hiding nav/sidebar, optimizing layout).
+- [x] **Build & Quality**: Fully type-checked, lint-clean, and production-ready build.
+
+### Design decisions
+- **Browser Print**: Used `window.print()` and CSS `@media print` instead of external PDF libraries for speed, simplicity, and offline support.
+- **Tenant Isolation**: Strict `storeId` validation on every document fetching action.
+
+### Next Steps
+- [ ] Reporting dashboard (Block 18)
+- [ ] WhatsApp integration (Block 19)

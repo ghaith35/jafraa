@@ -53,13 +53,24 @@ export function SaleConfirmationView({ sale, onNewSale }: SaleConfirmationViewPr
           </div>
         </div>
 
-        <button
-          onClick={onNewSale}
-          className="mt-6 inline-flex h-10 w-full items-center justify-center gap-2 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Nouvelle vente
-        </button>
+        <div className="mt-6 flex flex-col gap-3">
+          <a
+            href={`/dashboard/pos/sales/${sale.saleId}/receipt`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-md border border-input bg-background px-4 text-sm font-medium hover:bg-muted transition-colors"
+          >
+            Imprimer le reçu
+          </a>
+          
+          <button
+            onClick={onNewSale}
+            className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Nouvelle vente
+          </button>
+        </div>
       </div>
     </div>
   );

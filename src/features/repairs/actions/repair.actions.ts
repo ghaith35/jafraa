@@ -11,6 +11,7 @@ import {
   type UpdateRepairStatusInput,
 } from "../schemas/repair.schema";
 import type { RepairStatus } from "@prisma/client";
+import { WhatsAppNotifications } from "@/lib/whatsapp/notifications";
 
 type ActionError = { error: string };
 
@@ -173,6 +174,10 @@ export async function createRepairTicket(
     });
 
     revalidatePath("/dashboard/repairs");
+    
+    // Background WhatsApp notification
+    WhatsAppNotifications.sendTicketReceived(result.id).catch(console.error);
+
     return { id: result.id };
   } catch (e) {
     console.error("createRepairTicket:", e);
@@ -236,6 +241,12 @@ export async function changeRepairTicketStatus(
 
     revalidatePath("/dashboard/repairs");
     revalidatePath(`/dashboard/repairs/${id}`);
+
+    // Background WhatsApp notification for specific status
+    if (newStatus === "ready_for_pickup") {
+      WhatsAppNotifications.sendTicketReady(id).catch(console.error);
+    }
+
     return { success: true };
   } catch (e) {
     console.error("changeRepairTicketStatus:", e);

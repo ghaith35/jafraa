@@ -8,7 +8,8 @@ import {
   CheckCircle2, 
   Loader2, 
   ChevronLeft,
-  Receipt
+  Receipt,
+  Printer
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { 
@@ -124,6 +125,17 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
           <div className="mt-6 pt-6 border-t border-emerald-200 dark:border-emerald-800 flex flex-col items-center gap-2">
             <span className="text-xs uppercase tracking-widest text-emerald-600 dark:text-emerald-500 font-bold">Numéro de reçu</span>
             <span className="text-lg font-mono font-bold text-emerald-900 dark:text-emerald-300">{confirmation.refundNumber}</span>
+          </div>
+          <div className="mt-6">
+            <a
+              href={`/dashboard/refunds/${confirmation.refundId}/receipt`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-bold text-emerald-700 dark:text-emerald-400 hover:underline"
+            >
+              <Printer className="h-4 w-4" />
+              Imprimer le reçu de remboursement
+            </a>
           </div>
         </div>
         <button

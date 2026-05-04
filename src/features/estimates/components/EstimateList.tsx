@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Send, CheckCircle, XCircle, RotateCcw, Loader2 } from "lucide-react";
+import { Send, CheckCircle, XCircle, RotateCcw, Loader2, Printer } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { markEstimateSent, approveEstimate, reopenEstimateToDraft } from "../actions/estimate.actions";
 
@@ -135,6 +135,16 @@ export function EstimateList({ estimates, userRole }: { estimates: any[], userRo
                     Rouvrir
                   </button>
                 )}
+
+                <a
+                  href={`/dashboard/repairs/estimates/${est.id}/preview`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-8 items-center justify-center gap-1.5 rounded-md border bg-white dark:bg-transparent px-3 text-xs font-medium hover:bg-muted transition-colors"
+                >
+                  <Printer className="h-3 w-3" />
+                  Imprimer
+                </a>
               </div>
             </div>
 
