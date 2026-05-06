@@ -120,7 +120,7 @@ export async function buildEstimateReadyPreview(
         where: { status: { not: "converted_to_invoice" as EstimateStatus } },
         orderBy: { createdAt: "desc" },
         take: 1,
-        select: { totalAmount: true, estimateNumber: true },
+        select: { totalAmount: true, estimateNumber: true, publicApprovalToken: true },
       },
     },
   });
@@ -133,12 +133,18 @@ export async function buildEstimateReadyPreview(
   const estimate = (ticket as any).estimates?.[0];
   if (!estimate) return null;
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || process.env.APP_URL || "";
+  const approvalUrl = estimate.publicApprovalToken && baseUrl
+    ? `${baseUrl.replace(/\/$/, "")}/estimate-approval/${estimate.publicApprovalToken}`
+    : undefined;
+
   const message = WhatsAppTemplates.estimateReady[locale]({
     customerName: ticket.customer.name,
     ticketNumber: ticket.ticketNumber,
     deviceName,
     estimateAmount: Number(estimate.totalAmount).toLocaleString("fr-DZ"),
     storeName: ticket.store.name,
+    approvalUrl,
   });
 
   return {

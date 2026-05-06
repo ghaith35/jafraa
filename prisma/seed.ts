@@ -4,6 +4,9 @@ import { Pool } from "pg";
 import * as dotenv from "dotenv";
 import bcrypt from "bcryptjs";
 import { seedCatalog } from "./seed-catalog";
+import { seedExpandedLaptopCatalog } from "./seed-laptops-expanded";
+import { seedExpandedPhoneCatalog } from "./seed-phones-expanded";
+import { seedExpandedPrinterCatalog } from "./seed-printers-expanded";
 import { seedInventory } from "./seed-inventory";
 import { seedSuppliers } from "./seed-suppliers";
 
@@ -154,6 +157,9 @@ async function main() {
 
   // ─── Device Catalog (Block 6) ───────────────────────────────────────────────
   await seedCatalog(prisma);
+  await seedExpandedLaptopCatalog(prisma);
+  await seedExpandedPhoneCatalog(prisma);
+  await seedExpandedPrinterCatalog(prisma);
 
   // ─── Inventory Catalog (Block 7) ─────────────────────────────────────────────
   await seedInventory(prisma);

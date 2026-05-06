@@ -13,7 +13,12 @@
     "db:push": "prisma db push",
     "db:seed": "prisma db seed",
     "db:studio": "prisma studio",
-    "db:reset": "prisma migrate reset"
+    "db:reset": "prisma migrate reset",
+    "db:setup": "prisma generate && prisma migrate dev && prisma db seed",
+    "db:sync": "prisma generate && prisma db push && prisma db seed",
+    "validate:workflows": "node scripts/validate-workflows.mjs",
+    "validate:production": "npm run validate:workflows && npm run typecheck && npm run build",
+    "deploy:check": "npm run db:generate && npm run validate:production"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

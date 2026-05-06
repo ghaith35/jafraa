@@ -622,9 +622,11 @@ export function getRepairIntlLocale(locale: RepairLocale): string {
 }
 
 export function tRepair(locale: RepairLocale, key: RepairTranslationKey, params?: Params): string {
-  const template = repairTranslations[locale][key] || repairTranslations.fr[key] || repairTranslations.en[key] || key;
+  const template = String(
+    repairTranslations[locale][key] || repairTranslations.fr[key] || repairTranslations.en[key] || key
+  );
   if (!params) return template;
-  return Object.entries(params).reduce(
+  return Object.entries(params).reduce<string>(
     (acc, [param, value]) => acc.replaceAll(`{${param}}`, String(value)),
     template
   );

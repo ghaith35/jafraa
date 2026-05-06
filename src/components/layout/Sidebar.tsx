@@ -2,7 +2,7 @@
 
 import { X, LogOut } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useAppI18n } from "@/lib/i18n/ui";
+import { useAppI18n, type AppTranslationKey } from "@/lib/i18n/ui";
 import { useState } from "react";
 import { useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
@@ -29,6 +29,10 @@ function userInitials(name: string): string {
     .slice(0, 2)
     .map((w) => w[0]?.toUpperCase() ?? "")
     .join("");
+}
+
+function roleTranslationKey(role: UserRole): AppTranslationKey {
+  return `role.${role}` as AppTranslationKey;
 }
 
 export function Sidebar({ user, company, mobileOpen, onMobileClose, dir }: Props) {
@@ -103,7 +107,7 @@ export function Sidebar({ user, company, mobileOpen, onMobileClose, dir }: Props
                 {user.name}
               </p>
               <p className="text-xs text-sidebar-muted-foreground">
-                {t(`role.${user.role}` as any)}
+                {t(roleTranslationKey(user.role))}
               </p>
             </div>
           </div>

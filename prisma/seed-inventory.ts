@@ -38,7 +38,11 @@ const PART_CATEGORIES = [
   { name: "Chargeurs ordinateur",  sortOrder: 7 },
   { name: "Claviers ordinateur",   sortOrder: 8 },
   { name: "Rouleaux imprimante",   sortOrder: 9 },
-  { name: "Contrôleurs / Ports console", sortOrder: 10 },
+  { name: "Cartouches / toners",    sortOrder: 10 },
+  { name: "Têtes imprimante",       sortOrder: 11 },
+  { name: "Fuser / four imprimante", sortOrder: 12 },
+  { name: "Masters / encre duplicateur", sortOrder: 13 },
+  { name: "Contrôleurs / Ports console", sortOrder: 14 },
 ];
 
 // ─── Sample services ──────────────────────────────────────────────────────────
@@ -129,5 +133,173 @@ export async function seedInventory(prisma: PrismaClient) {
     }
   }
   console.log(`    ✓ ${serviceCount} sample services`);
+
+  // 4. Seed practical demo parts with device compatibility for the repair intake wizard
+  const partCategories = await prisma.inventoryCategory.findMany({
+    where: { storeId, itemType: "part" },
+    select: { id: true, name: true },
+  });
+  const partCategoryId = (name: string) => partCategories.find((cat) => cat.name === name)?.id;
+
+  async function getDeviceRefs(categoryKey: string, brandName: string, familyName?: string) {
+    const category = await prisma.deviceCategory.findUnique({
+      where: { key: categoryKey },
+      select: { id: true },
+    });
+    if (!category) return null;
+
+    const brand = await prisma.deviceBrand.findFirst({
+      where: { categoryId: category.id, name: brandName, isActive: true },
+      select: { id: true },
+    });
+    if (!brand) return { categoryId: category.id, brandId: null, familyId: null };
+
+    const family = familyName
+      ? await prisma.deviceModelFamily.findFirst({
+          where: {
+            brandId: brand.id,
+            isActive: true,
+            OR: [{ name: familyName }, { name: { contains: familyName } }],
+          },
+          select: { id: true },
+        })
+      : null;
+
+    return { categoryId: category.id, brandId: brand.id, familyId: family?.id ?? null };
+  }
+
+  const sampleParts = [
+    {
+      sku: "PRT-DEMO-IP14PM-OLED",
+      name: "iPhone 14 Pro Max OLED Screen",
+      categoryName: "Écrans téléphone",
+      price: 28500,
+      stock: 5,
+      refs: await getDeviceRefs("phone", "Apple", "iPhone 14 Pro Max"),
+    },
+    {
+      sku: "PRT-DEMO-IP14PM-BATT",
+      name: "iPhone 14 Pro Max Battery",
+      categoryName: "Batteries téléphone",
+      price: 8500,
+      stock: 8,
+      refs: await getDeviceRefs("phone", "Apple", "iPhone 14 Pro Max"),
+    },
+    {
+      sku: "PRT-DEMO-IP14-PORT",
+      name: "iPhone 14 Series Charging Port",
+      categoryName: "Ports de charge",
+      price: 6500,
+      stock: 4,
+      refs: await getDeviceRefs("phone", "Apple", "iPhone 14"),
+    },
+    {
+      sku: "PRT-DEMO-IP15PLUS-BATT",
+      name: "iPhone 15 Plus Battery",
+      categoryName: "Batteries téléphone",
+      price: 9500,
+      stock: 6,
+      refs: await getDeviceRefs("phone", "Apple", "iPhone 15 Plus"),
+    },
+    {
+      sku: "PRT-DEMO-SAM-A15-SCREEN",
+      name: "Samsung Galaxy A15 Screen",
+      categoryName: "Écrans téléphone",
+      price: 12000,
+      stock: 7,
+      refs: await getDeviceRefs("phone", "Samsung", "Galaxy A15"),
+    },
+    {
+      sku: "PRT-DEMO-HP-M404-ROLLER",
+      name: "HP LaserJet Pro M404 Pickup Roller",
+      categoryName: "Rouleaux imprimante",
+      price: 4200,
+      stock: 10,
+      refs: await getDeviceRefs("printer", "HP", "LaserJet Pro M404"),
+    },
+    {
+      sku: "PRT-DEMO-HP-M404-FUSER",
+      name: "HP LaserJet Pro M404 Fuser Unit",
+      categoryName: "Fuser / four imprimante",
+      price: 18500,
+      stock: 2,
+      refs: await getDeviceRefs("printer", "HP", "LaserJet Pro M404"),
+    },
+    {
+      sku: "PRT-DEMO-EP-L3250-PAD",
+      name: "Epson EcoTank L3250 Maintenance Pad",
+      categoryName: "Rouleaux imprimante",
+      price: 3500,
+      stock: 6,
+      refs: await getDeviceRefs("printer", "Epson", "EcoTank L3250"),
+    },
+    {
+      sku: "PRT-DEMO-EP-L3250-HEAD",
+      name: "Epson EcoTank L3250 Printhead",
+      categoryName: "Têtes imprimante",
+      price: 16500,
+      stock: 3,
+      refs: await getDeviceRefs("printer", "Epson", "EcoTank L3250"),
+    },
+    {
+      sku: "PRT-DEMO-CAN-G3420-HEAD",
+      name: "Canon PIXMA G3420 Printhead",
+      categoryName: "Têtes imprimante",
+      price: 14800,
+      stock: 3,
+      refs: await getDeviceRefs("printer", "Canon", "PIXMA G3420"),
+    },
+    {
+      sku: "PRT-DEMO-HP-M404-TONER",
+      name: "HP LaserJet Pro M404 Toner Cartridge",
+      categoryName: "Cartouches / toners",
+      price: 9500,
+      stock: 8,
+      refs: await getDeviceRefs("printer", "HP", "LaserJet Pro M404"),
+    },
+    {
+      sku: "PRT-DEMO-RISO-SF5330-MASTER",
+      name: "RISO SF 5330 Master Roll",
+      categoryName: "Masters / encre duplicateur",
+      price: 22000,
+      stock: 2,
+      refs: await getDeviceRefs("printer", "RISO", "SF 5330"),
+    },
+    {
+      sku: "PRT-DEMO-RISO-SF5330-INK",
+      name: "RISO SF 5330 Black Ink",
+      categoryName: "Masters / encre duplicateur",
+      price: 12500,
+      stock: 4,
+      refs: await getDeviceRefs("printer", "RISO", "SF 5330"),
+    },
+  ];
+
+  let partCount = 0;
+  for (const part of sampleParts) {
+    const existing = await prisma.part.findFirst({ where: { storeId, sku: part.sku } });
+    if (existing || !part.refs) continue;
+
+    await prisma.part.create({
+      data: {
+        storeId,
+        categoryId: partCategoryId(part.categoryName) ?? null,
+        compatibleCategoryId: part.refs.categoryId,
+        compatibleBrandId: part.refs.brandId,
+        compatibleFamilyId: part.refs.familyId,
+        name: part.name,
+        sku: part.sku,
+        brand: part.name.split(" ")[0],
+        modelReference: part.name,
+        sellingPrice: part.price,
+        stockQty: part.stock,
+        lowStockThreshold: 2,
+        notes: "Pièce de démonstration compatible avec le nouveau workflow de réparation.",
+      },
+    });
+    partCount++;
+  }
+  console.log(`    ✓ ${partCount} sample compatible parts`);
+
   console.log("  Inventory catalog seeded.");
 }

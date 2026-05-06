@@ -6,6 +6,7 @@ import { getCurrentCashSession } from "@/features/pos/actions/cash-session.actio
 import { PosCheckout } from "@/features/pos/components/PosCheckout";
 import { Settings, RotateCcw } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import { getRepairIntakeData } from "@/features/repairs/lib/intake-data";
 
 export const metadata = { title: "Caisse" };
 
@@ -18,6 +19,10 @@ export default async function PosPage() {
   if (session.role === "Technician") redirect("/dashboard");
 
   const activeSession = await getCurrentCashSession();
+  const storeId = session.storeIds[0];
+  const repairIntake = storeId
+    ? await getRepairIntakeData(session.companyId, storeId)
+    : null;
 
   return (
     <>
@@ -47,6 +52,7 @@ export default async function PosPage() {
       <PosCheckout
         hasOpenSession={!!activeSession}
         userRole={session.role}
+        repairIntake={repairIntake ?? undefined}
       />
     </>
   );

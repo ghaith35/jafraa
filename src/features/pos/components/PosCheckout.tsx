@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { Loader2, Lock } from "lucide-react";
+import { Loader2, Lock, ShoppingBag, Wrench } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { ItemSearch } from "./ItemSearch";
@@ -16,13 +16,16 @@ import {
 } from "../actions/pos-sale.actions";
 import { CustomerSearch } from "./CustomerSearch";
 import { type NamedCustomerResult } from "../actions/customer-search.actions";
+import type { RepairIntakeData } from "@/features/repairs/lib/intake-data";
+import { PosRepairWorkspace } from "./PosRepairWorkspace";
 
 interface PosCheckoutProps {
   hasOpenSession: boolean;
   userRole: string;
+  repairIntake?: RepairIntakeData;
 }
 
-export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
+export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheckoutProps) {
   const t = useTranslations("pos");
   const router = useRouter();
   const [cartLines, setCartLines] = useState<CartLine[]>([]);
@@ -33,6 +36,7 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
   const [saleConfirmation, setSaleConfirmation] = useState<SaleConfirmation | null>(null);
   const [selectedCustomer, setSelectedCustomer] = useState<NamedCustomerResult | null>(null);
   const [debtEnabled, setDebtEnabled] = useState(false);
+  const [mode, setMode] = useState<"sale" | "repair">("sale");
 
   const canApplyDiscount = userRole === "Admin" || userRole === "Manager";
 
@@ -161,6 +165,41 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
     router.refresh();
   };
 
+
+  const modeTabs = (
+    <div className="mb-4 flex flex-wrap items-center gap-2 rounded-2xl border border-border bg-card p-2 shadow-sm">
+      <button
+        type="button"
+        onClick={() => setMode("sale")}
+        className={`inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-bold transition ${
+          mode === "sale"
+            ? "bg-primary text-primary-foreground shadow-sm"
+            : "text-muted-foreground hover:bg-muted hover:text-foreground"
+        }`}
+      >
+        <ShoppingBag className="h-4 w-4" />
+        Vente produits
+      </button>
+      {repairIntake && (
+        <button
+          type="button"
+          onClick={() => setMode("repair")}
+          className={`inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-bold transition ${
+            mode === "repair"
+              ? "bg-primary text-primary-foreground shadow-sm"
+              : "text-muted-foreground hover:bg-muted hover:text-foreground"
+          }`}
+        >
+          <Wrench className="h-4 w-4" />
+          Réparation POS
+        </button>
+      )}
+      <p className="ms-auto hidden text-xs text-muted-foreground md:block">
+        Créez une vente rapide ou ouvrez un ticket réparation depuis la caisse.
+      </p>
+    </div>
+  );
+
   // ─── Guards ────────────────────────────────────────────────────────────────
 
   if (!hasOpenSession) {
@@ -189,10 +228,21 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
     return <SaleConfirmationView sale={saleConfirmation} onNewSale={handleNewSale} />;
   }
 
+  if (mode === "repair" && repairIntake) {
+    return (
+      <div className="space-y-4">
+        {modeTabs}
+        <PosRepairWorkspace repairIntake={repairIntake} />
+      </div>
+    );
+  }
+
   // ─── Main POS interface ────────────────────────────────────────────────────
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 h-[calc(100vh-180px)]">
+    <div className="space-y-4">
+      {modeTabs}
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 h-[calc(100vh-230px)]">
       {/* Left: Item search (3/5) */}
       <div className="lg:col-span-3 flex flex-col min-h-0">
         <ItemSearch onAddToCart={handleAddToCart} cartLines={cartLines} />
@@ -349,8 +399,9 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
             </button>
           </div>
         )}
+        </div>
       </div>
-    </div>
+      </div>
     </div>
   );
 }

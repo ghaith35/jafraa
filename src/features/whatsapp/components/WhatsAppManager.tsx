@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { MessageSquare, Phone, Save, Clock, CheckCircle2 } from "lucide-react";
+import { MessageSquare, Phone, Save, Clock, CheckCircle2, FileText, Send, CreditCard } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { saveStoreWhatsAppPhone } from "../actions/whatsapp.actions";
 
@@ -55,6 +55,14 @@ export function WhatsAppManager({ initialPhone, logs }: Props) {
             Le client n&apos;est <strong>jamais contacté automatiquement</strong> — vous contrôlez chaque envoi.
           </p>
         </div>
+      </div>
+
+
+      {/* Template coverage */}
+      <div className="grid gap-4 md:grid-cols-3">
+        <TemplateCard icon={<MessageSquare className="h-5 w-5" />} title="Ticket reçu" text="Confirmation de dépôt envoyée quand le ticket est créé." />
+        <TemplateCard icon={<FileText className="h-5 w-5" />} title="Devis prêt" text="Inclut le lien public accepter/refuser le devis." />
+        <TemplateCard icon={<CreditCard className="h-5 w-5" />} title="Paiement / retrait" text="Message prêt à récupérer et rappel de solde." />
       </div>
 
       {/* Store WhatsApp number */}
@@ -138,6 +146,17 @@ export function WhatsAppManager({ initialPhone, logs }: Props) {
           </div>
         )}
       </div>
+    </div>
+  );
+}
+
+
+function TemplateCard({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) {
+  return (
+    <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
+      <div className="mb-3 inline-flex rounded-xl bg-emerald-100 p-2 text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-300">{icon}</div>
+      <h4 className="font-bold">{title}</h4>
+      <p className="mt-1 text-sm text-muted-foreground">{text}</p>
     </div>
   );
 }

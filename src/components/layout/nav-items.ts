@@ -8,6 +8,7 @@ import {
   BarChart2,
   Settings,
   MessageSquare,
+  ClipboardCheck,
   type LucideIcon,
 } from "lucide-react";
 import type { UserRole } from "@prisma/client";
@@ -37,6 +38,12 @@ const ALL_NAV_ITEMS: NavItem[] = [
     href: "/dashboard/repairs",
     labelKey: "repairs",
     icon: Wrench,
+    permission: "tickets:view",
+  },
+  {
+    href: "/dashboard/technician",
+    labelKey: "technicianWorkspace",
+    icon: ClipboardCheck,
     permission: "tickets:view",
   },
   {

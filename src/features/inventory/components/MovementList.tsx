@@ -2,7 +2,7 @@
 
 import { Package, Wrench, ArrowRightLeft, ArrowDownToLine, ArrowUpFromLine, RefreshCw } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useAppI18n } from "@/lib/i18n/ui";
+import { useAppI18n, type AppTranslationKey } from "@/lib/i18n/ui";
 // Infer type from action return
 type StockMovement = {
   id: string;
@@ -20,16 +20,6 @@ interface Props {
   movements: StockMovement[];
 }
 
-function formatDate(d: Date): string {
-  return new Intl.DateTimeFormat("fr-FR", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-  }).format(d);
-}
-
 const TYPE_CONFIG: Record<string, { label: string; icon: React.ElementType; cls: string }> = {
   purchase: { label: "Achat", icon: ArrowDownToLine, cls: "text-emerald-600 bg-emerald-100 border-emerald-200" },
   return: { label: "Retour", icon: ArrowUpFromLine, cls: "text-amber-600 bg-amber-100 border-amber-200" },
@@ -37,6 +27,10 @@ const TYPE_CONFIG: Record<string, { label: string; icon: React.ElementType; cls:
   adjustment_out: { label: "Ajust. (-)", icon: ArrowRightLeft, cls: "text-red-600 bg-red-100 border-red-200" },
   correction: { label: "Correction", icon: RefreshCw, cls: "text-purple-600 bg-purple-100 border-purple-200" },
 };
+
+function movementTranslationKey(type: string): AppTranslationKey {
+  return `inventory.movement.${type}` as AppTranslationKey;
+}
 
 export function MovementList({ movements }: Props) {
   const { t, formatDateTime } = useAppI18n();
@@ -71,7 +65,7 @@ export function MovementList({ movements }: Props) {
           <tbody className="divide-y divide-border">
             {movements.map((m) => {
               const cfg = TYPE_CONFIG[m.movementType] || { label: m.movementType, icon: ArrowRightLeft, cls: "text-gray-600 bg-gray-100" };
-              const movementLabel = t(`inventory.movement.${m.movementType}` as any) || cfg.label;
+              const movementLabel = t(movementTranslationKey(m.movementType)) || cfg.label;
               const Icon = cfg.icon;
               const itemName = m.itemType === "product" ? m.product?.name : m.part?.name;
               const itemSku = m.itemType === "product" ? m.product?.sku : m.part?.sku;

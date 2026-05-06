@@ -10,7 +10,7 @@ import {
   restoreCompany,
 } from "@/features/super-admin/actions/companies.actions";
 import { useRouter } from "next/navigation";
-import { useAppI18n } from "@/lib/i18n/ui";
+import { useAppI18n, type AppTranslationKey } from "@/lib/i18n/ui";
 
 const STATUS_OPTS = [
   { value: "trial", label: "Essai" },
@@ -29,6 +29,10 @@ const STATUS_CLS: Record<string, string> = {
   suspended: "bg-red-100 text-red-800",
   cancelled: "bg-gray-100 text-gray-500",
 };
+
+function statusTranslationKey(status: string): AppTranslationKey {
+  return `superAdmin.status.${status}` as AppTranslationKey;
+}
 
 function MetricCard({ label, value, icon }: { label: string; value: number; icon: React.ReactNode }) {
   return (
@@ -104,7 +108,7 @@ export function CompanyDetailView({ company }: { company: any }) {
             )}
             {sub && (
               <span className={cn("text-xs px-2 py-0.5 rounded-full font-medium", STATUS_CLS[sub.status] ?? "bg-gray-100")}>
-                {t(`superAdmin.status.${sub.status}` as any)}
+                {t(statusTranslationKey(sub.status))}
               </span>
             )}
           </div>
@@ -142,7 +146,7 @@ export function CompanyDetailView({ company }: { company: any }) {
                   className="w-full h-9 rounded-md border border-input bg-background px-3 text-sm focus:outline-none"
                 >
                   {STATUS_OPTS.map((o) => (
-                    <option key={o.value} value={o.value}>{t(`superAdmin.status.${o.value}` as any)}</option>
+                    <option key={o.value} value={o.value}>{t(statusTranslationKey(o.value))}</option>
                   ))}
                 </select>
               </div>

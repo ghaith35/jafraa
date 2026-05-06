@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
 import Link from "next/link";
-import { Plus } from "lucide-react";
+import { AlertTriangle, ClipboardList, Plus } from "lucide-react";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { PageHeader } from "@/components/shared/PageHeader";
@@ -75,15 +75,31 @@ export default async function InventoryPage({
         title={t("inventory.title")}
         description={t("inventory.description", { count, item: tabLabel, plural: count !== 1 ? "s" : "" })}
         actions={
-          canManage ? (
+          <div className="flex flex-wrap items-center gap-2">
             <Link
-              href={addLink.href}
-              className="flex items-center gap-2 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+              href="/dashboard/inventory/reorder"
+              className="flex items-center gap-2 rounded-md border border-input bg-background px-3 py-2 text-sm font-semibold hover:bg-muted transition-colors"
             >
-              <Plus className="h-4 w-4" />
-              {addLink.label}
+              <AlertTriangle className="h-4 w-4" />
+              Réapprovisionnement
             </Link>
-          ) : undefined
+            <Link
+              href="/dashboard/inventory/purchase-orders"
+              className="flex items-center gap-2 rounded-md border border-input bg-background px-3 py-2 text-sm font-semibold hover:bg-muted transition-colors"
+            >
+              <ClipboardList className="h-4 w-4" />
+              Commandes
+            </Link>
+            {canManage ? (
+              <Link
+                href={addLink.href}
+                className="flex items-center gap-2 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+              >
+                <Plus className="h-4 w-4" />
+                {addLink.label}
+              </Link>
+            ) : null}
+          </div>
         }
       />
 

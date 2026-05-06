@@ -33,7 +33,8 @@
     "reports": "Reports",
     "settings": "Settings",
     "suppliers": "Suppliers",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "technicianWorkspace": "Workshop"
   },
   "auth": {
     "signIn": "Sign In",
@@ -77,11 +78,13 @@
     "title": "Settings",
     "description": "Store and company configuration",
     "catalogTitle": "Device catalog",
-    "catalogDescription": "Manage categories, brands, and model families",
+    "catalogDescription": "Manage the catalog used by the repair workflow: laptops by series/generation, printers by type, phones, and store-specific models.",
     "whatsappTitle": "WhatsApp notifications",
     "whatsappDescription": "Store number, message preview, and send history",
     "storeTitle": "Store settings",
-    "storeDescription": "Profile, warranty delays, cash and stock thresholds"
+    "storeDescription": "Profile, warranty delays, cash and stock thresholds",
+    "catalogSuggestionsTitle": "Catalog suggestions",
+    "catalogSuggestionsDescription": "Review missing device models added from repair intake and approve them into the store catalog."
   },
   "reportsPage": {
     "title": "Reports & Analytics",

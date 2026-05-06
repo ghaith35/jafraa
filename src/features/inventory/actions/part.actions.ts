@@ -235,3 +235,93 @@ export async function archivePart(id: string): Promise<ActionError | void> {
 
   revalidatePath("/dashboard/inventory");
 }
+
+// ─── Repair intake compatibility search ───────────────────────────────────────
+
+export async function listCompatiblePartsForRepair(opts: {
+  categoryId?: string;
+  brandId?: string;
+  familyId?: string;
+  q?: string;
+}) {
+  const session = await getSession();
+  if (!session) return [];
+
+  const storeId = session.storeIds[0];
+  if (!storeId) return [];
+
+  const q = opts.q?.trim();
+  const andFilters: Prisma.PartWhereInput[] = [];
+
+  if (opts.categoryId) {
+    andFilters.push({
+      OR: [{ compatibleCategoryId: null }, { compatibleCategoryId: opts.categoryId }],
+    });
+  }
+  if (opts.brandId) {
+    andFilters.push({
+      OR: [{ compatibleBrandId: null }, { compatibleBrandId: opts.brandId }],
+    });
+  }
+  if (opts.familyId) {
+    andFilters.push({
+      OR: [{ compatibleFamilyId: null }, { compatibleFamilyId: opts.familyId }],
+    });
+  }
+
+  const parts = await prisma.part.findMany({
+    where: {
+      storeId,
+      isArchived: false,
+      ...(andFilters.length ? { AND: andFilters } : {}),
+      ...(q
+        ? {
+            OR: [
+              { name: { contains: q, mode: "insensitive" } },
+              { sku: { contains: q, mode: "insensitive" } },
+              { barcode: { contains: q, mode: "insensitive" } },
+              { brand: { contains: q, mode: "insensitive" } },
+              { modelReference: { contains: q, mode: "insensitive" } },
+            ],
+          }
+        : {}),
+    },
+    select: {
+      id: true,
+      name: true,
+      sku: true,
+      barcode: true,
+      brand: true,
+      modelReference: true,
+      sellingPrice: true,
+      stockQty: true,
+      imageUrl: true,
+      compatibleCategoryId: true,
+      compatibleBrandId: true,
+      compatibleFamilyId: true,
+    },
+    orderBy: [{ compatibleFamilyId: "desc" }, { compatibleBrandId: "desc" }, { name: "asc" }],
+    take: 80,
+  });
+
+  const partIds = parts.map((part) => part.id);
+  const reservations = partIds.length
+    ? await prisma.repairTicketPart.groupBy({
+        by: ["partId"],
+        where: { partId: { in: partIds }, storeId, status: "reserved" },
+        _sum: { quantity: true },
+      })
+    : [];
+
+  const reservedByPart = new Map(reservations.map((item) => [item.partId, item._sum.quantity || 0]));
+
+  return parts.map((part) => {
+    const reservedQty = reservedByPart.get(part.id) || 0;
+    return {
+      ...part,
+      sellingPrice: Number(part.sellingPrice),
+      reservedQty,
+      availableQty: Math.max(0, part.stockQty - reservedQty),
+    };
+  });
+}

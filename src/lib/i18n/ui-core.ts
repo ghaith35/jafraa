@@ -1118,8 +1118,8 @@ const AR: Partial<Record<FrKey, string>> = {
   "superAdmin.logout": "تسجيل الخروج",
 };
 
-(APP_UI as any).en = EN;
-(APP_UI as any).ar = AR;
+Object.assign(APP_UI.en, EN);
+Object.assign(APP_UI.ar, AR);
 
 export type AppTranslationKey = FrKey;
 

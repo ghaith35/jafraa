@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { randomUUID } from "crypto";
 import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
 import { generateEstimateNumber } from "@/lib/sequences/estimate-sequence";
@@ -148,7 +149,12 @@ export async function markEstimateSent(
     await prisma.$transaction(async (tx) => {
       await tx.estimate.update({
         where: { id: estimateId },
-        data: { status: "sent", sentAt: new Date() },
+        data: {
+          status: "sent",
+          sentAt: new Date(),
+          publicApprovalToken: randomUUID(),
+          publicApprovalExpiresAt: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000),
+        },
       });
 
       // Update ticket status if it's currently received or in diagnosis
@@ -322,4 +328,92 @@ export async function reopenEstimateToDraft(
     console.error("reopenEstimate error:", e);
     return { error: "Erreur lors de la réouverture" };
   }
+}
+
+
+// ─── Public Customer Approval ────────────────────────────────────────────────
+
+export async function getPublicEstimateByToken(token: string) {
+  if (!token || token.length < 20) return null;
+
+  const estimate = await prisma.estimate.findUnique({
+    where: { publicApprovalToken: token },
+    include: {
+      lines: { orderBy: { sortOrder: "asc" } },
+      store: true,
+      repairTicket: {
+        include: {
+          customer: { select: { name: true, phones: { select: { phoneNumber: true }, take: 1 } } },
+          deviceBrand: { select: { name: true } },
+          deviceFamily: { select: { name: true } },
+        },
+      },
+    },
+  });
+
+  if (!estimate) return null;
+  if (estimate.publicApprovalExpiresAt && estimate.publicApprovalExpiresAt < new Date()) return null;
+  return estimate;
+}
+
+export async function submitPublicEstimateDecision(input: {
+  token: string;
+  decision: "accepted" | "rejected";
+  note?: string;
+  userAgent?: string;
+  ip?: string;
+}): Promise<ActionError | { success: true }> {
+  const estimate = await prisma.estimate.findUnique({
+    where: { publicApprovalToken: input.token },
+    include: { repairTicket: { select: { currentStatus: true } } },
+  });
+
+  if (!estimate) return { error: "Devis introuvable" };
+  if (estimate.publicApprovalExpiresAt && estimate.publicApprovalExpiresAt < new Date()) return { error: "Ce lien de validation a expiré" };
+  if (estimate.status !== "sent") return { error: "Ce devis a déjà été traité" };
+
+  await prisma.$transaction(async (tx) => {
+    await tx.estimate.update({
+      where: { id: estimate.id },
+      data: {
+        status: input.decision,
+        acceptedAt: input.decision === "accepted" ? new Date() : null,
+        rejectedAt: input.decision === "rejected" ? new Date() : null,
+        publicDecisionIp: input.ip || null,
+        publicDecisionUserAgent: input.userAgent?.slice(0, 300) || null,
+      },
+    });
+
+    await tx.customerApprovalLog.create({
+      data: {
+        companyId: estimate.companyId,
+        storeId: estimate.storeId,
+        repairTicketId: estimate.repairTicketId,
+        estimateId: estimate.id,
+        decision: input.decision,
+        confirmationMethod: "other",
+        confirmedByUserId: estimate.createdByUserId,
+        note: input.note || "Décision client depuis le lien public.",
+      },
+    });
+
+    const newTicketStatus = input.decision === "accepted" ? "in_repair" : "not_repaired";
+    await tx.repairTicket.update({
+      where: { id: estimate.repairTicketId },
+      data: { currentStatus: newTicketStatus },
+    });
+
+    await tx.repairStatusHistory.create({
+      data: {
+        repairTicketId: estimate.repairTicketId,
+        oldStatus: estimate.repairTicket.currentStatus,
+        newStatus: newTicketStatus,
+        changedByUserId: estimate.createdByUserId,
+        note: input.decision === "accepted" ? "Devis accepté par le client via lien public." : "Devis refusé par le client via lien public.",
+      },
+    });
+  });
+
+  revalidatePath(`/dashboard/repairs/${estimate.repairTicketId}`);
+  return { success: true };
 }

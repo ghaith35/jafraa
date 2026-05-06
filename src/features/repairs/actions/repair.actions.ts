@@ -104,7 +104,10 @@ export async function createRepairTicket(
   const storeId = session.storeIds[0];
   if (!storeId) return { error: "Aucune boutique assignée" };
 
-  const store = await prisma.store.findFirst({ where: { id: storeId }, select: { prefix: true } });
+  const store = await prisma.store.findFirst({
+    where: { id: storeId, companyId: session.companyId },
+    select: { prefix: true },
+  });
   if (!store) return { error: "Boutique introuvable" };
 
   const parsed = createRepairTicketSchema.safeParse(data);
@@ -115,15 +118,111 @@ export async function createRepairTicket(
 
   const d = parsed.data;
 
-  // Technicians auto-assign to themselves if they create it
+  const customer = await prisma.customer.findFirst({
+    where: { id: d.customerId, companyId: session.companyId, isArchived: false },
+    select: { id: true },
+  });
+  if (!customer) return { error: "Client introuvable" };
+
+  if (d.customerDeviceId) {
+    const asset = await prisma.customerAsset.findFirst({
+      where: { id: d.customerDeviceId, customerId: d.customerId, isArchived: false },
+      select: { id: true },
+    });
+    if (!asset) return { error: "Appareil client introuvable" };
+  }
+
+  // Technicians auto-assign to themselves if they create it.
   let assignedTechnicianId = d.assignedTechnicianId || null;
   if (session.role === "Technician") {
     assignedTechnicianId = session.sub;
   }
 
+  const initialStatus = d.initialStatus ?? "received";
+
   try {
     const result = await prisma.$transaction(async (tx) => {
       const ticketNumber = await generateTicketNumber(tx, storeId, store.prefix);
+
+      let customerDeviceId = d.customerDeviceId || null;
+
+      // When the intake wizard creates a new device, save it as a customer asset
+      // so the next repair can be opened in one click.
+      let selectedCategoryKey: string | null = null;
+      let selectedBrandName: string | null = null;
+
+      if (d.deviceCategoryId) {
+        const category = await tx.deviceCategory.findUnique({ where: { id: d.deviceCategoryId }, select: { key: true } });
+        selectedCategoryKey = category?.key ?? null;
+      }
+      if (d.deviceBrandId) {
+        const brand = await tx.deviceBrand.findUnique({ where: { id: d.deviceBrandId }, select: { name: true } });
+        selectedBrandName = brand?.name ?? null;
+      }
+
+      if (!customerDeviceId && (d.deviceCategoryId || d.deviceBrandId || d.deviceFamilyId || d.customDeviceBrand || d.customDeviceModel || d.imeiSerial)) {
+        const asset = await tx.customerAsset.create({
+          data: {
+            customerId: d.customerId,
+            deviceCategoryId: d.deviceCategoryId || null,
+            deviceBrandId: d.deviceBrandId || null,
+            deviceModelFamilyId: d.deviceFamilyId || null,
+            deviceTypeName: selectedCategoryKey,
+            customBrand: d.customDeviceBrand || null,
+            customModel: d.customDeviceModel || null,
+            imeiSerial: d.imeiSerial || null,
+            color: d.deviceColor || null,
+            storage: d.deviceStorageRam || null,
+          },
+          select: { id: true },
+        });
+        customerDeviceId = asset.id;
+      }
+
+      // If the catalog did not contain the model, keep the ticket usable now and
+      // create a pending suggestion so the owner can approve/merge it later.
+      if (!d.deviceFamilyId && d.customDeviceModel?.trim()) {
+        const existingPendingSuggestion = await tx.deviceCatalogSuggestion.findFirst({
+          where: {
+            companyId: session.companyId,
+            storeId,
+            status: "pending",
+            modelName: { equals: d.customDeviceModel.trim(), mode: "insensitive" },
+            ...(d.deviceCategoryId ? { categoryId: d.deviceCategoryId } : {}),
+            ...(d.deviceBrandId ? { brandId: d.deviceBrandId } : {}),
+          },
+          select: { id: true },
+        });
+
+        if (!existingPendingSuggestion) {
+          await tx.deviceCatalogSuggestion.create({
+            data: {
+              companyId: session.companyId,
+              storeId,
+              createdByUserId: session.sub,
+              categoryId: d.deviceCategoryId || null,
+              categoryKey: selectedCategoryKey,
+              brandId: d.deviceBrandId || null,
+              brandName: d.customDeviceBrand || selectedBrandName,
+              modelName: d.customDeviceModel.trim(),
+              printerType: d.printerType || null,
+              seriesName: d.laptopSeriesName || null,
+              modelLine: d.laptopModelLine || null,
+              generation: d.laptopGeneration || null,
+              processor: d.laptopProcessor || null,
+              ram: d.laptopRam || null,
+              storage: d.laptopDisk || d.deviceStorageRam || null,
+              gpu: d.laptopGpu || null,
+              notes: [
+                d.diagnosisNote ? `Diagnostic: ${d.diagnosisNote}` : "",
+                d.imeiSerial ? `Serial/IMEI: ${d.imeiSerial}` : "",
+              ].filter(Boolean).join("\n") || null,
+              source: "repair_intake",
+              status: "pending",
+            },
+          });
+        }
+      }
 
       const ticket = await tx.repairTicket.create({
         data: {
@@ -131,7 +230,7 @@ export async function createRepairTicket(
           storeId,
           ticketNumber,
           customerId: d.customerId,
-          customerDeviceId: d.customerDeviceId || null,
+          customerDeviceId,
           deviceCategoryId: d.deviceCategoryId || null,
           deviceBrandId: d.deviceBrandId || null,
           deviceFamilyId: d.deviceFamilyId || null,
@@ -149,7 +248,7 @@ export async function createRepairTicket(
           warrantyDays: d.warrantyDays ?? null,
           dueAt: d.dueAt ? new Date(d.dueAt) : null,
           createdByUserId: session.sub,
-          currentStatus: "received",
+          currentStatus: initialStatus,
           problems: {
             create: d.problems.map((p) => ({
               problemText: p.problemText,
@@ -158,12 +257,44 @@ export async function createRepairTicket(
         },
       });
 
+      for (const selectedPart of d.selectedParts ?? []) {
+        const part = await tx.part.findFirst({
+          where: { id: selectedPart.partId, storeId, isArchived: false },
+          select: { id: true, name: true, stockQty: true },
+        });
+        if (!part) {
+          throw new Error("Pièce introuvable ou archivée");
+        }
+
+        const reserved = await tx.repairTicketPart.aggregate({
+          where: { partId: part.id, storeId, status: "reserved" },
+          _sum: { quantity: true },
+        });
+        const availableQty = part.stockQty - (reserved._sum.quantity || 0);
+        if (selectedPart.quantity > availableQty) {
+          throw new Error(`Stock insuffisant pour ${part.name}. Disponible: ${availableQty}`);
+        }
+
+        await tx.repairTicketPart.create({
+          data: {
+            companyId: session.companyId,
+            storeId,
+            repairTicketId: ticket.id,
+            partId: part.id,
+            quantity: selectedPart.quantity,
+            status: "reserved",
+            reservedByUserId: session.sub,
+            note: selectedPart.note || null,
+          },
+        });
+      }
+
       // Initial status history
       await tx.repairStatusHistory.create({
         data: {
           repairTicketId: ticket.id,
           oldStatus: null,
-          newStatus: "received",
+          newStatus: initialStatus,
           changedByUserId: session.sub,
           note: "Création du ticket",
         },
@@ -173,11 +304,13 @@ export async function createRepairTicket(
     });
 
     revalidatePath("/dashboard/repairs");
-    
+    revalidatePath(`/dashboard/repairs/${result.id}`);
+
     return { id: result.id };
   } catch (e) {
+    const message = e instanceof Error ? e.message : "Erreur lors de la création du ticket";
     console.error("createRepairTicket:", e);
-    return { error: "Erreur lors de la création du ticket" };
+    return { error: message };
   }
 }
 

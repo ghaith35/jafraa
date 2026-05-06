@@ -1,5 +1,5 @@
 import { PageHeader } from "@/components/shared/PageHeader";
-import { Settings, Cpu, MessageSquare } from "lucide-react";
+import { Settings, Cpu, MessageSquare, ListChecks } from "lucide-react";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
@@ -29,6 +29,23 @@ export default async function SettingsPage() {
           </h3>
           <p className="mt-1 text-xs text-muted-foreground">
             {t("catalogDescription")}
+          </p>
+        </Link>
+
+
+        {/* Catalog suggestions */}
+        <Link
+          href="/dashboard/settings/catalog/suggestions"
+          className="group rounded-xl border border-border bg-card p-5 hover:border-primary/40 hover:shadow-sm transition-all"
+        >
+          <div className="mb-3 rounded-lg bg-accent p-2.5 w-fit">
+            <ListChecks className="h-5 w-5 text-accent-foreground" />
+          </div>
+          <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
+            {t("catalogSuggestionsTitle")}
+          </h3>
+          <p className="mt-1 text-xs text-muted-foreground">
+            {t("catalogSuggestionsDescription")}
           </p>
         </Link>
 

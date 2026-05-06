@@ -2,7 +2,7 @@
 
 import { FileText, Truck, Calendar } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useAppI18n } from "@/lib/i18n/ui";
+import { useAppI18n, type AppTranslationKey } from "@/lib/i18n/ui";
 
 interface PurchaseInvoice {
   id: string;
@@ -27,19 +27,15 @@ function formatPrice(v: { toNumber: () => number } | number): string {
   }).format(num) + " DZD";
 }
 
-function formatDate(d: Date): string {
-  return new Intl.DateTimeFormat("fr-FR", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  }).format(d);
-}
-
 const STATUS_MAP: Record<string, { label: string; cls: string }> = {
   paid: { label: "Payé", cls: "bg-emerald-100 text-emerald-800 border-emerald-200" },
   partial: { label: "Partiel", cls: "bg-amber-100 text-amber-800 border-amber-200" },
   unpaid: { label: "Non payé", cls: "bg-red-100 text-red-800 border-red-200" },
 };
+
+function statusTranslationKey(status: string): AppTranslationKey {
+  return `inventory.status.${status}` as AppTranslationKey;
+}
 
 export function PurchaseList({ purchases }: Props) {
   const { t, formatDate } = useAppI18n();
@@ -61,7 +57,7 @@ export function PurchaseList({ purchases }: Props) {
     <div className="space-y-2">
       {purchases.map((p) => {
         const s = STATUS_MAP[p.status] || STATUS_MAP.unpaid;
-        const statusLabel = t(`inventory.status.${p.status}` as any) || s.label;
+        const statusLabel = t(statusTranslationKey(p.status)) || s.label;
         return (
           <div key={p.id} className="flex flex-col sm:flex-row sm:items-center gap-4 rounded-xl border border-border bg-card px-4 py-3 hover:bg-accent/30 transition-colors">
             <div className="hidden sm:flex rounded-md bg-muted p-2 shrink-0">

@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "key": "phone",
+      "nameFr": "Téléphone",
+      "nameEn": "Phone",
+      "nameAr": "هاتف",
+      "brands": [
+        {
+          "name": "Samsung",
+          "models": [
+            "Galaxy S23 Ultra",
+            "Galaxy S22 Ultra",
+            "Galaxy A12",
+            "Galaxy A50"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "printer",
+      "nameFr": "Imprimante",
+      "nameEn": "Printer",
+      "nameAr": "طابعة",
+      "brands": [
+        {
+          "name": "HP",
+          "models": [
+            "Laser | LaserJet Pro M404",
+            "Ink Tank | Smart Tank 515",
+            "Ink Cartridge | DeskJet 2710"
+          ]
+        }
+      ]
+    }
+  ]
+}

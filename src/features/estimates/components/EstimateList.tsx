@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Send, CheckCircle, XCircle, RotateCcw, Loader2, Printer } from "lucide-react";
+import { Send, CheckCircle, XCircle, RotateCcw, Loader2, Printer, Link2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { markEstimateSent, approveEstimate, reopenEstimateToDraft } from "../actions/estimate.actions";
 import { WhatsAppSendButton } from "@/features/whatsapp/components/WhatsAppSendButton";
@@ -119,6 +119,17 @@ export function EstimateList({ estimates, userRole, ticketId, storeId, customerI
 
                 {est.status === "sent" && (
                   <>
+                    {est.publicApprovalToken && (
+                      <a
+                        href={`/estimate-approval/${est.publicApprovalToken}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex h-8 items-center justify-center gap-1.5 rounded-md border border-input bg-background px-3 text-xs font-medium hover:bg-muted transition-colors"
+                      >
+                        <Link2 className="h-3 w-3" />
+                        Lien client
+                      </a>
+                    )}
                     <button
                       onClick={() => setApprovalModal({ isOpen: true, estimateId: est.id, decision: "accepted" })}
                       disabled={loadingAction !== null}

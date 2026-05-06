@@ -173,6 +173,13 @@ enum CashMovementDirection {
   out
 }
 
+enum CatalogSuggestionStatus {
+  pending
+  approved
+  rejected
+  merged
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // TENANT & AUTH
 // ─────────────────────────────────────────────────────────────────────────────
@@ -199,6 +206,7 @@ model Company {
   impersonationSessions TenantImpersonationSession[]
   suppliers             Supplier[]
   purchaseInvoices      PurchaseInvoice[]
+  purchaseOrders        PurchaseOrder[]
   stockBatches          StockBatch[]
   stockMovements        StockMovement[]
   repairTickets         RepairTicket[]
@@ -264,6 +272,7 @@ model User {
   repairInvoicesCreated   RepairInvoice[] @relation("RepairInvoicesCreated")
   refundsCreated          Refund[]
   expensesCreated         Expense[] @relation("ExpensesCreated")
+  purchaseOrdersCreated    PurchaseOrder[] @relation("PurchaseOrdersCreated")
 
 
   @@unique([companyId, email])
@@ -299,6 +308,7 @@ model Store {
   services          Service[]
   suppliers         Supplier[]
   purchaseInvoices  PurchaseInvoice[]
+  purchaseOrders    PurchaseOrder[]
   stockBatches      StockBatch[]
   stockMovements    StockMovement[]
   repairTickets     RepairTicket[]
@@ -593,6 +603,42 @@ model DeviceModelFamily {
   @@map("device_model_families")
 }
 
+
+model DeviceCatalogSuggestion {
+  id               String                  @id @default(cuid())
+  companyId        String
+  storeId          String?
+  createdByUserId  String?
+  categoryId       String?
+  categoryKey      String?
+  brandId          String?
+  brandName        String?
+  familyId         String?
+  printerType      String?
+  seriesName       String?
+  modelLine        String?
+  generation       String?
+  modelName        String
+  processor        String?
+  ram              String?
+  storage          String?
+  gpu              String?
+  sku              String?
+  notes            String?
+  source           String                  @default("repair_intake")
+  status           CatalogSuggestionStatus @default(pending)
+  approvedFamilyId String?
+  rejectionReason  String?
+  createdAt        DateTime                @default(now())
+  updatedAt        DateTime                @updatedAt
+  reviewedAt       DateTime?
+  reviewedByUserId String?
+
+  @@index([companyId, storeId, status, createdAt])
+  @@index([categoryId, brandId, status])
+  @@map("device_catalog_suggestions")
+}
+
 // Denormalized balance — source of truth is customer_debt_transactions
 // Reconciled by cron every 6 hours; application always reads this for display
 model CustomerDebtBalance {
@@ -785,6 +831,7 @@ model Product {
   estimateLines        EstimateLine[]
   posSaleLines         PosSaleLine[]
   refundLines          RefundLine[]
+  purchaseOrderLines  PurchaseOrderLine[]
 
 
   @@unique([storeId, sku])
@@ -828,6 +875,7 @@ model Part {
   stockMovements       StockMovement[]
   estimateLines        EstimateLine[]
   repairTicketParts    RepairTicketPart[]
+  purchaseOrderLines    PurchaseOrderLine[]
   posSaleLines         PosSaleLine[]
   refundLines          RefundLine[]
 
@@ -901,6 +949,7 @@ model Supplier {
   company         Company           @relation(fields: [companyId], references: [id])
   store           Store             @relation(fields: [storeId], references: [id])
   purchaseInvoices PurchaseInvoice[]
+  purchaseOrders   PurchaseOrder[]
 
   @@index([storeId, isArchived])
   @@map("suppliers")
@@ -948,6 +997,57 @@ model PurchaseInvoiceLine {
   part            Part?           @relation(fields: [partId], references: [id])
 
   @@map("purchase_invoice_lines")
+}
+
+
+
+model PurchaseOrder {
+  id              String   @id @default(cuid())
+  companyId       String
+  storeId         String
+  supplierId      String?
+  orderNumber     String
+  status          String   @default("draft") // draft | sent | confirmed | received | cancelled
+  expectedAt      DateTime?
+  subtotalAmount  Decimal  @default(0) @db.Decimal(12, 2)
+  notes           String?
+  sentAt          DateTime?
+  receivedAt      DateTime?
+  createdByUserId String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  company   Company              @relation(fields: [companyId], references: [id])
+  store     Store                @relation(fields: [storeId], references: [id])
+  supplier  Supplier?            @relation(fields: [supplierId], references: [id], onDelete: SetNull)
+  createdBy User                 @relation("PurchaseOrdersCreated", fields: [createdByUserId], references: [id])
+  lines     PurchaseOrderLine[]
+
+  @@unique([storeId, orderNumber])
+  @@index([storeId, status])
+  @@index([storeId, createdAt(sort: Desc)])
+  @@map("purchase_orders")
+}
+
+model PurchaseOrderLine {
+  id                 String   @id @default(cuid())
+  purchaseOrderId    String
+  itemType           String   // "product" | "part" | "custom"
+  productId          String?
+  partId             String?
+  description        String
+  quantity           Int
+  unitCost           Decimal  @default(0) @db.Decimal(12, 2)
+  totalCost          Decimal  @default(0) @db.Decimal(12, 2)
+  suggestedFromStock Boolean  @default(false)
+  createdAt          DateTime @default(now())
+
+  purchaseOrder PurchaseOrder @relation(fields: [purchaseOrderId], references: [id], onDelete: Cascade)
+  product       Product?      @relation(fields: [productId], references: [id], onDelete: SetNull)
+  part          Part?         @relation(fields: [partId], references: [id], onDelete: SetNull)
+
+  @@index([purchaseOrderId])
+  @@map("purchase_order_lines")
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -1112,6 +1212,10 @@ model Estimate {
   sentAt          DateTime?
   acceptedAt      DateTime?
   rejectedAt      DateTime?
+  publicApprovalToken     String?   @unique
+  publicApprovalExpiresAt DateTime?
+  publicDecisionIp        String?
+  publicDecisionUserAgent String?
   createdByUserId String
   createdAt       DateTime       @default(now())
   updatedAt       DateTime       @updatedAt

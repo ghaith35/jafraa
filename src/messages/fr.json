@@ -33,7 +33,8 @@
     "reports": "Rapports",
     "settings": "Paramètres",
     "suppliers": "Fournisseurs",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "technicianWorkspace": "Atelier"
   },
   "auth": {
     "signIn": "Se connecter",
@@ -77,11 +78,13 @@
     "title": "Paramètres",
     "description": "Configuration de la boutique et de l'entreprise",
     "catalogTitle": "Catalogue des appareils",
-    "catalogDescription": "Gérer les catégories, marques et familles de modèles",
+    "catalogDescription": "Gérer le catalogue utilisé par le workflow réparation : laptops par série/génération, imprimantes par type, téléphones et modèles boutique.",
     "whatsappTitle": "Notifications WhatsApp",
     "whatsappDescription": "Numéro boutique, aperçu des messages et historique des envois",
     "storeTitle": "Paramètres boutique",
-    "storeDescription": "Profil, délais de garantie, seuils caisse et stock"
+    "storeDescription": "Profil, délais de garantie, seuils caisse et stock",
+    "catalogSuggestionsTitle": "Suggestions catalogue",
+    "catalogSuggestionsDescription": "Revoir les modèles manquants ajoutés depuis la création de réparation et les approuver dans le catalogue boutique."
   },
   "reportsPage": {
     "title": "Rapports & Analyses",

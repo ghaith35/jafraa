@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, User as UserIcon, Phone, Tag, AlertTriangle, Calendar, CheckCircle } from "lucide-react";
+import { ArrowLeft, User as UserIcon, Phone, Tag, AlertTriangle, Calendar, CheckCircle, Printer, ShieldCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { changeRepairTicketStatus, assignTechnician } from "../actions/repair.actions";
 import { WhatsAppSendButton } from "../../whatsapp/components/WhatsAppSendButton";
@@ -65,6 +65,11 @@ export function RepairDetail({ ticket, technicians, userRole }: { ticket: any, t
     deviceName = ticket.deviceFamily.name;
   }
 
+  const warrantyExpiresAt = ticket.warrantyDays
+    ? new Date(new Date(ticket.createdAt).getTime() + Number(ticket.warrantyDays) * 24 * 60 * 60 * 1000)
+    : null;
+  const warrantyActive = warrantyExpiresAt ? warrantyExpiresAt >= new Date() : false;
+
   const resolutionLabel = (status: string) => {
     if (status === "fixed") return t("resolution_fixed");
     if (status === "pending") return t("resolution_pending");
@@ -84,6 +89,14 @@ export function RepairDetail({ ticket, technicians, userRole }: { ticket: any, t
           </button>
           <div>
             <div className="flex items-center gap-2 flex-wrap">
+          <Link
+            href={`/dashboard/repairs/${ticket.id}/label`}
+            target="_blank"
+            className="inline-flex h-9 items-center gap-2 rounded-md border border-input bg-background px-3 text-sm font-semibold shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
+            <Printer className="h-4 w-4" />
+            Étiquette
+          </Link>
               <h1 className="text-2xl font-bold tracking-tight text-foreground">{ticket.ticketNumber}</h1>
               <span className={cn("inline-flex items-center px-2.5 py-0.5 rounded-full border text-xs font-semibold", cfg.cls)}>
                 {cfg.label}
@@ -248,6 +261,34 @@ export function RepairDetail({ ticket, technicians, userRole }: { ticket: any, t
                   <p className="text-sm font-medium">---</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="rounded-xl border border-border bg-card overflow-hidden">
+            <div className="bg-muted/50 px-5 py-3 border-b border-border">
+              <h3 className="font-semibold text-sm flex items-center gap-2">
+                <ShieldCheck className="h-4 w-4 text-muted-foreground" />
+                Garantie
+              </h3>
+            </div>
+            <div className="p-5 space-y-2">
+              {ticket.warrantyDays ? (
+                <>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">Durée</span>
+                    <span className="text-sm font-bold">{ticket.warrantyDays} jours</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">Expire le</span>
+                    <span className="text-sm font-bold">{warrantyExpiresAt ? formatDate(warrantyExpiresAt) : "—"}</span>
+                  </div>
+                  <div className={cn("mt-3 rounded-lg border px-3 py-2 text-xs font-bold", warrantyActive ? "border-emerald-200 bg-emerald-50 text-emerald-700" : "border-slate-200 bg-slate-50 text-slate-600")}>
+                    {warrantyActive ? "Garantie active" : "Garantie expirée"}
+                  </div>
+                </>
+              ) : (
+                <p className="text-sm text-muted-foreground">Aucune garantie définie pour ce ticket.</p>
+              )}
             </div>
           </div>
         </div>

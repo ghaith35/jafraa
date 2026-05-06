@@ -3,7 +3,7 @@
 import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
-import { startOfDay, endOfDay, format, eachDayOfInterval } from "date-fns";
+import { startOfDay, endOfDay, format, eachDayOfInterval, subDays } from "date-fns";
 
 /**
  * Common report filters
@@ -359,5 +359,97 @@ export async function getInventoryHealthReport() {
       ...lowStockProducts.map(p => ({ id: p.id, name: p.name, type: "Produit", qty: Number(p.stockQty), threshold: Number(p.lowStockThreshold) })),
       ...lowStockParts.map(p => ({ id: p.id, name: p.name, type: "Pièce", qty: Number(p.stockQty), threshold: Number(p.lowStockThreshold) })),
     ],
+  };
+}
+
+/**
+ * 8. Executive dashboard: one screen for owner/manager.
+ */
+export async function getExecutiveDashboardReport(filters?: Partial<ReportFilters>) {
+  const session = await ensureReportAccess();
+  const storeId = filters?.storeId || session.storeIds[0];
+  const endDate = filters?.endDate || new Date();
+  const startDate = filters?.startDate || subDays(endDate, 30);
+
+  const [sales, repairInvoices, tickets, debts, parts, products, purchases] = await Promise.all([
+    prisma.posSale.findMany({
+      where: { storeId, createdAt: { gte: startOfDay(startDate), lte: endOfDay(endDate) } },
+      select: { totalAmount: true, cashReceivedAmount: true, debtAmount: true, createdAt: true },
+    }),
+    prisma.repairInvoice.findMany({
+      where: { storeId, createdAt: { gte: startOfDay(startDate), lte: endOfDay(endDate) }, status: { not: "cancelled" } },
+      select: { totalAmount: true, paidAmount: true, debtAmount: true, createdAt: true },
+    }),
+    prisma.repairTicket.findMany({
+      where: { storeId, createdAt: { gte: startOfDay(startDate), lte: endOfDay(endDate) }, isArchived: false },
+      select: { currentStatus: true, deviceCategory: { select: { nameFr: true } }, createdAt: true },
+    }),
+    prisma.customerDebtBalance.aggregate({
+      _sum: { totalDebt: true },
+      where: { customer: { companyId: session.companyId, isArchived: false } },
+    }),
+    prisma.part.findMany({ where: { storeId, isArchived: false }, select: { stockQty: true, lowStockThreshold: true, sellingPrice: true } }),
+    prisma.product.findMany({ where: { storeId, isArchived: false }, select: { stockQty: true, lowStockThreshold: true, sellingPrice: true } }),
+    prisma.purchaseOrder.findMany({ where: { storeId, status: { in: ["draft", "sent", "confirmed"] } }, select: { id: true, subtotalAmount: true, status: true } }).catch(() => []),
+  ]);
+
+  const salesRevenue = sales.reduce((sum, s) => sum + Number(s.totalAmount), 0);
+  const repairRevenue = repairInvoices.reduce((sum, i) => sum + Number(i.totalAmount), 0);
+  const paid = sales.reduce((sum, s) => sum + Number(s.cashReceivedAmount), 0) + repairInvoices.reduce((sum, i) => sum + Number(i.paidAmount), 0);
+  const periodDebt = sales.reduce((sum, s) => sum + Number(s.debtAmount), 0) + repairInvoices.reduce((sum, i) => sum + Number(i.debtAmount), 0);
+  const lowStockCount = [...parts, ...products].filter((item) => item.lowStockThreshold !== null && Number(item.stockQty) <= Number(item.lowStockThreshold)).length;
+  const stockValue = [...parts, ...products].reduce((sum, item) => sum + Number(item.stockQty) * Number(item.sellingPrice), 0);
+
+  const daily = new Map<string, { revenue: number; repairs: number }>();
+  for (const d of eachDayOfInterval({ start: startDate, end: endDate })) {
+    daily.set(format(d, "yyyy-MM-dd"), { revenue: 0, repairs: 0 });
+  }
+  sales.forEach((s) => {
+    const key = format(s.createdAt, "yyyy-MM-dd");
+    const row = daily.get(key) || { revenue: 0, repairs: 0 };
+    row.revenue += Number(s.totalAmount);
+    daily.set(key, row);
+  });
+  repairInvoices.forEach((i) => {
+    const key = format(i.createdAt, "yyyy-MM-dd");
+    const row = daily.get(key) || { revenue: 0, repairs: 0 };
+    row.revenue += Number(i.totalAmount);
+    daily.set(key, row);
+  });
+  tickets.forEach((t) => {
+    const key = format(t.createdAt, "yyyy-MM-dd");
+    const row = daily.get(key) || { revenue: 0, repairs: 0 };
+    row.repairs += 1;
+    daily.set(key, row);
+  });
+
+  const statusCounts = tickets.reduce((acc, ticket) => {
+    acc[ticket.currentStatus] = (acc[ticket.currentStatus] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
+
+  const categories = tickets.reduce((acc, ticket) => {
+    const name = ticket.deviceCategory?.nameFr || "Autre";
+    acc[name] = (acc[name] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
+
+  return {
+    summary: {
+      totalRevenue: salesRevenue + repairRevenue,
+      salesRevenue,
+      repairRevenue,
+      paid,
+      periodDebt,
+      totalDebt: Number(debts._sum.totalDebt || 0),
+      ticketCount: tickets.length,
+      lowStockCount,
+      stockValue,
+      openPurchaseOrders: purchases.length,
+      openPurchaseAmount: purchases.reduce((sum, po) => sum + Number(po.subtotalAmount), 0),
+    },
+    daily: Array.from(daily.entries()).map(([date, value]) => ({ date, ...value })),
+    statusCounts,
+    categories: Object.entries(categories).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([name, count]) => ({ name, count })),
   };
 }

@@ -980,3 +980,41 @@ Block 16 — Advanced Reporting & Z-Reports
 - Removed `next/font/google` usage from `src/app/layout.tsx` to prevent build failures in restricted-network/offline environments.
 - Replaced Google Fonts with system font stacks in `src/app/globals.css`.
 - Verified that `npm run build` now completes successfully (Exit code: 0).
+
+## 2026-05-06 — Typecheck / Lint / Build Stabilization
+
+### What changed
+
+- Fixed Prisma catalog JSON importer nullable compound-key type errors by replacing null-scoped `upsert` calls with `findFirst` plus `update`/`create`.
+- Typed the technician workspace Prisma query and included payload so lane tickets match the rendered data.
+- Tightened catalog manager auth narrowing, repair i18n interpolation, and executive report category fields.
+- Removed remaining lint errors from dynamic i18n keys and repair intake React hook/compiler rules.
+
+### Files touched
+
+- `prisma/import-device-catalog-json.ts`
+- `src/app/(dashboard)/dashboard/technician/page.tsx`
+- `src/features/catalog/actions/catalog.actions.ts`
+- `src/features/repairs/i18n.ts`
+- `src/features/reports/actions/report.actions.ts`
+- `src/app/super-admin/(panel)/companies/[id]/CompanyDetailView.tsx`
+- `src/components/layout/Sidebar.tsx`
+- `src/features/inventory/components/MovementList.tsx`
+- `src/features/inventory/components/PurchaseList.tsx`
+- `src/features/repairs/components/intake/RepairIntakeWizard.tsx`
+- `src/lib/i18n/ui-core.ts`
+
+### Checks run
+
+- `npm run typecheck` — passed
+- `npm run lint` — passed with 7 warnings
+- `npm run validate:workflows` — passed
+- `npm run build` — passed when rerun outside sandbox restrictions
+
+### Known issues / notes
+
+- Local Prisma database drift remains on the developer machine. The DB has partially applied expense tables while migration history is not aligned, and `store_settings.whatsappPhone` is missing.
+
+### Next recommended block
+
+Repair local migration history with either `npm run db:reset` for disposable dev data, or manually reconcile the partially applied expense/WhatsApp migration before running `npm run db:migrate` and `npm run db:seed`.
