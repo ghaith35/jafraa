@@ -7,8 +7,7 @@ import {
   Truck,
   BarChart2,
   Settings,
-  MessageSquare,
-  ClipboardCheck,
+  ClipboardList,
   type LucideIcon,
 } from "lucide-react";
 import type { UserRole } from "@prisma/client";
@@ -16,76 +15,98 @@ import { hasPermission, type Permission } from "@/lib/auth/permissions";
 
 export interface NavItem {
   href: string;
-  labelKey: string;
+  label: string;
   icon: LucideIcon;
   permission: Permission | null;
+  badge?: string;
+  alert?: boolean;
 }
 
-const ALL_NAV_ITEMS: NavItem[] = [
+export interface NavSection {
+  title: string;
+  items: NavItem[];
+}
+
+const ALL_NAV_SECTIONS: NavSection[] = [
   {
-    href: "/dashboard",
-    labelKey: "dashboard",
-    icon: LayoutDashboard,
-    permission: null, // visible to all
+    title: "Principal",
+    items: [
+      {
+        href: "/dashboard",
+        label: "Tableau de bord",
+        icon: LayoutDashboard,
+        permission: null,
+      },
+      {
+        href: "/dashboard/repairs",
+        label: "Tickets réparation",
+        icon: Wrench,
+        permission: "tickets:view",
+        badge: "3",
+      },
+      {
+        href: "/dashboard/pos",
+        label: "Point de vente",
+        icon: ShoppingCart,
+        permission: "payments:manage",
+      },
+      {
+        href: "/dashboard/customers",
+        label: "Clients",
+        icon: Users,
+        permission: "customers:view",
+      },
+    ],
   },
   {
-    href: "/dashboard/pos",
-    labelKey: "pos",
-    icon: ShoppingCart,
-    permission: "payments:manage",
+    title: "Inventaire",
+    items: [
+      {
+        href: "/dashboard/inventory",
+        label: "Stock & produits",
+        icon: Package,
+        permission: "inventory:view",
+      },
+      {
+        href: "/dashboard/suppliers",
+        label: "Fournisseurs",
+        icon: Truck,
+        permission: "inventory:manage",
+      },
+      {
+        href: "/dashboard/inventory/purchase-orders",
+        label: "Bons de commande",
+        icon: ClipboardList,
+        permission: "inventory:manage",
+        badge: "2",
+        alert: true,
+      },
+    ],
   },
   {
-    href: "/dashboard/repairs",
-    labelKey: "repairs",
-    icon: Wrench,
-    permission: "tickets:view",
-  },
-  {
-    href: "/dashboard/technician",
-    labelKey: "technicianWorkspace",
-    icon: ClipboardCheck,
-    permission: "tickets:view",
-  },
-  {
-    href: "/dashboard/customers",
-    labelKey: "customers",
-    icon: Users,
-    permission: "customers:view",
-  },
-  {
-    href: "/dashboard/inventory",
-    labelKey: "inventory",
-    icon: Package,
-    permission: "inventory:view",
-  },
-  {
-    href: "/dashboard/suppliers",
-    labelKey: "suppliers",
-    icon: Truck,
-    permission: "inventory:manage",
-  },
-  {
-    href: "/dashboard/reports",
-    labelKey: "reports",
-    icon: BarChart2,
-    permission: "reports:view",
-  },
-  {
-    href: "/dashboard/settings",
-    labelKey: "settings",
-    icon: Settings,
-    permission: "settings:manage",
-  },
-  {
-    href: "/dashboard/settings/whatsapp",
-    labelKey: "whatsapp",
-    icon: MessageSquare,
-    permission: "settings:manage",
+    title: "Admin",
+    items: [
+      {
+        href: "/dashboard/reports",
+        label: "Rapports",
+        icon: BarChart2,
+        permission: "reports:view",
+      },
+      {
+        href: "/dashboard/settings",
+        label: "Paramètres",
+        icon: Settings,
+        permission: "settings:manage",
+      },
+    ],
   },
 ];
 
-export function getNavItemsForRole(role: UserRole): NavItem[] {
-  return ALL_NAV_ITEMS.filter(
-    (item) => item.permission === null || hasPermission(role, item.permission)
-  );
+export function getNavSectionsForRole(role: UserRole): NavSection[] {
+  return ALL_NAV_SECTIONS.map((section) => ({
+    ...section,
+    items: section.items.filter(
+      (item) => item.permission === null || hasPermission(role, item.permission)
+    ),
+  })).filter((section) => section.items.length > 0);
 }

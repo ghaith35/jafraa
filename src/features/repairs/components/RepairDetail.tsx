@@ -3,25 +3,34 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, User as UserIcon, Phone, Tag, AlertTriangle, Calendar, CheckCircle, Printer, ShieldCheck } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { changeRepairTicketStatus, assignTechnician } from "../actions/repair.actions";
-import { WhatsAppSendButton } from "../../whatsapp/components/WhatsAppSendButton";
+import {
+  ArrowLeft,
+  Ban,
+  Check,
+  FileText,
+  History,
+  Link as LinkIcon,
+  Lock,
+  MessageCircle,
+  Package,
+  Printer,
+  ReceiptText,
+  RefreshCw,
+  ShieldCheck,
+  Smartphone,
+  Truck,
+  User as UserIcon,
+  Wrench,
+} from "lucide-react";
 import type { RepairStatus } from "@prisma/client";
+import { cn, formatCurrency } from "@/lib/utils";
+import { RepairStatusBadge } from "@/components/ui/repair-status-badge";
+import { PriorityBadge } from "@/components/ui/priority-badge";
+import { changeRepairTicketStatus, assignTechnician } from "../actions/repair.actions";
 import { getRepairStatusLabel } from "../i18n";
 import { useRepairI18n } from "./RepairLanguageSwitcher";
 
-const STATUS_CLASSES: Record<string, string> = {
-  received: "bg-blue-100 text-blue-800 border-blue-200",
-  in_diagnosis: "bg-purple-100 text-purple-800 border-purple-200",
-  waiting_customer_approval: "bg-cyan-100 text-cyan-800 border-cyan-200",
-  in_repair: "bg-amber-100 text-amber-800 border-amber-200",
-  ready_for_pickup: "bg-emerald-100 text-emerald-800 border-emerald-200",
-  completed: "bg-gray-100 text-gray-800 border-gray-200",
-  not_repaired: "bg-red-100 text-red-800 border-red-200",
-};
-
-const STATUS_KEYS = [
+const STATUS_KEYS: RepairStatus[] = [
   "received",
   "in_diagnosis",
   "waiting_customer_approval",
@@ -31,16 +40,44 @@ const STATUS_KEYS = [
   "not_repaired",
 ];
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function RepairDetail({ ticket, technicians, userRole }: { ticket: any, technicians: Array<{ id: string, name: string }>, userRole: string }) {
+type ReservedPart = {
+  id: string;
+  quantity: number;
+  status: string;
+  part: { name: string; sku: string; sellingPrice: { toNumber: () => number } | number };
+};
+
+type EstimateSummary = {
+  id: string;
+  status: string;
+  estimateNumber: string;
+  totalAmount: number;
+  acceptedAt: Date | null;
+  lines: Array<{ id: string; description: string; totalPrice: number }>;
+};
+
+export function RepairDetail({
+  ticket,
+  technicians,
+  userRole,
+  reservedParts = [],
+  estimates = [],
+}: {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ticket: any;
+  technicians: Array<{ id: string; name: string }>;
+  userRole: string;
+  reservedParts?: ReservedPart[];
+  estimates?: EstimateSummary[];
+}) {
   const router = useRouter();
   const { locale, dir, t, formatDate, formatDateTime } = useRepairI18n();
   const [isChangingStatus, setIsChangingStatus] = useState(false);
-  
-  const handleStatusChange = async (newStatus: string) => {
+
+  const handleStatusChange = async (newStatus: RepairStatus) => {
     if (newStatus === ticket.currentStatus) return;
     setIsChangingStatus(true);
-    await changeRepairTicketStatus(ticket.id, { newStatus: newStatus as RepairStatus, note: "" });
+    await changeRepairTicketStatus(ticket.id, { newStatus, note: "" });
     setIsChangingStatus(false);
     router.refresh();
   };
@@ -50,248 +87,373 @@ export function RepairDetail({ ticket, technicians, userRole }: { ticket: any, t
     router.refresh();
   };
 
-  const isRush = ticket.priority === "rush";
-  const cfg = {
-    label: getRepairStatusLabel(ticket.currentStatus, locale),
-    cls: STATUS_CLASSES[ticket.currentStatus] || "bg-gray-100 text-gray-800",
-  };
+  const deviceName =
+    [
+      ticket.deviceBrand?.name ?? ticket.customerDevice?.customBrand ?? ticket.customDeviceBrand,
+      ticket.deviceFamily?.name ?? ticket.customerDevice?.customModel ?? ticket.customDeviceModel,
+    ]
+      .filter(Boolean)
+      .join(" ") ||
+    ticket.customerDevice?.deviceTypeName ||
+    t("unknownDevice");
 
-  let deviceName = t("unknownDevice");
-  if (ticket.customerDevice) {
-    deviceName = ticket.customerDevice.customModel || ticket.customerDevice.deviceTypeName || t("customerDevice");
-  } else if (ticket.customDeviceModel) {
-    deviceName = `${ticket.customDeviceBrand ? ticket.customDeviceBrand + " " : ""}${ticket.customDeviceModel}`;
-  } else if (ticket.deviceFamily) {
-    deviceName = ticket.deviceFamily.name;
-  }
-
-  const warrantyExpiresAt = ticket.warrantyDays
-    ? new Date(new Date(ticket.createdAt).getTime() + Number(ticket.warrantyDays) * 24 * 60 * 60 * 1000)
-    : null;
-  const warrantyActive = warrantyExpiresAt ? warrantyExpiresAt >= new Date() : false;
-
-  const resolutionLabel = (status: string) => {
-    if (status === "fixed") return t("resolution_fixed");
-    if (status === "pending") return t("resolution_pending");
-    if (status === "unresolved") return t("resolution_unresolved");
-    return status;
-  };
+  const acceptedEstimate =
+    estimates.find((estimate) => estimate.status === "accepted") ?? estimates[0] ?? null;
+  const customerPhone = ticket.customer.phones?.[0]?.phoneNumber;
+  const currentStatusIndex = STATUS_KEYS.indexOf(ticket.currentStatus);
+  const deviceCategory = ticket.deviceCategory?.nameFr ?? ticket.customerDevice?.deviceTypeName ?? t("device");
 
   return (
-    <div dir={dir} lang={locale} className="space-y-6">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => router.push("/dashboard/repairs")}
-            className="flex h-9 w-9 items-center justify-center rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground"
-          >
-            <ArrowLeft className="h-4 w-4" />
-          </button>
-          <div>
-            <div className="flex items-center gap-2 flex-wrap">
-          <Link
-            href={`/dashboard/repairs/${ticket.id}/label`}
-            target="_blank"
-            className="inline-flex h-9 items-center gap-2 rounded-md border border-input bg-background px-3 text-sm font-semibold shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
-          >
-            <Printer className="h-4 w-4" />
+    <div dir={dir} lang={locale} className="rd-page">
+      <div className="rd-topbar">
+        <button type="button" onClick={() => router.push("/dashboard/repairs")} className="rd-back">
+          <ArrowLeft className="h-3.5 w-3.5" />
+          Retour
+        </button>
+        <span className="rd-crumb">
+          Réparations / <span>{ticket.ticketNumber}</span>
+        </span>
+        <div className="rd-actions">
+          <Link href={`/dashboard/repairs/${ticket.id}/ticket-receipt`} target="_blank" className="rd-btn">
+            <Printer className="h-3.5 w-3.5" />
+            Imprimer
+          </Link>
+          <Link href={`/dashboard/repairs/${ticket.id}/label`} target="_blank" className="rd-btn">
+            <FileText className="h-3.5 w-3.5" />
             Étiquette
           </Link>
-              <h1 className="text-2xl font-bold tracking-tight text-foreground">{ticket.ticketNumber}</h1>
-              <span className={cn("inline-flex items-center px-2.5 py-0.5 rounded-full border text-xs font-semibold", cfg.cls)}>
-                {cfg.label}
-              </span>
-              {isRush && (
-                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full border border-destructive/20 bg-destructive/10 text-destructive text-xs font-semibold">
-                  <AlertTriangle className="h-3 w-3" /> {t("urgent")}
-                </span>
-              )}
-            </div>
-            <p className="text-sm text-muted-foreground mt-1">
-              {t("createdOnBy", { date: formatDate(ticket.createdAt), name: ticket.createdBy.name })}
-            </p>
-          </div>
-        </div>
-        
-        <div className="flex items-center gap-2 flex-wrap">
-          {userRole !== "Technician" && (
-            <select
-              value={ticket.assignedTechnicianId || ""}
-              onChange={(e) => handleAssign(e.target.value)}
-              className="h-9 rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-            >
-              <option value="">{t("unassigned")}</option>
-              {technicians.map((technician: { id: string, name: string }) => (
-                <option key={technician.id} value={technician.id}>{technician.name}</option>
-              ))}
-            </select>
-          )}
-
-          <select
-            value={ticket.currentStatus}
-            onChange={(e) => handleStatusChange(e.target.value)}
+          <button
+            type="button"
+            className="rd-btn rd-btn-destructive"
             disabled={isChangingStatus}
-            className="h-9 rounded-md border border-input bg-primary text-primary-foreground px-3 py-1 text-sm font-medium shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-50"
+            onClick={() => handleStatusChange("not_repaired")}
           >
-            {STATUS_KEYS.map((key) => (
-              <option key={key} value={key}>{getRepairStatusLabel(key, locale)}</option>
-            ))}
-          </select>
+            <Ban className="h-3.5 w-3.5" />
+            Non réparé
+          </button>
+          <button
+            type="button"
+            className="rd-btn rd-btn-primary"
+            disabled={isChangingStatus}
+            onClick={() => handleStatusChange("completed")}
+          >
+            <Check className="h-3.5 w-3.5" />
+            Marquer livré
+          </button>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 space-y-6">
-          <div className="rounded-xl border border-border bg-card p-5">
-            <h3 className="font-semibold text-lg flex items-center gap-2 mb-4">
-              <AlertTriangle className="h-5 w-5 text-amber-500" />
-              {t("detail_reportedProblems")}
-            </h3>
-            <ul className="space-y-3">
-              {ticket.problems.map((problem: { id: string, problemText: string, resolutionStatus: string }) => (
-                <li key={problem.id} className="flex items-start gap-3 p-3 rounded-lg bg-muted/50 border border-border">
-                  <CheckCircle className={cn("h-5 w-5 mt-0.5", problem.resolutionStatus === "fixed" ? "text-emerald-500" : "text-muted-foreground")} />
-                  <div>
-                    <p className="text-sm font-medium">{problem.problemText}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{resolutionLabel(problem.resolutionStatus)}</p>
-                  </div>
-                </li>
+      <div className="rd-content">
+        <div className="rd-left">
+          <section className="rd-hero">
+            <div className="rd-hero-body">
+              <div className="rd-hero-icon">
+                <Smartphone />
+              </div>
+              <div className="rd-hero-text">
+                <div className="rd-hero-num">Ticket · {ticket.ticketNumber}</div>
+                <div className="rd-hero-title">{deviceName}</div>
+                <div className="rd-hero-sub">
+                  {t("createdOnBy", { date: formatDate(ticket.createdAt), name: ticket.createdBy.name })}
+                </div>
+              </div>
+              <div className="rd-hero-right">
+                <RepairStatusBadge status={ticket.currentStatus} />
+                <PriorityBadge priority={ticket.priority} />
+              </div>
+            </div>
+            <div className="rd-hero-attrs">
+              <div className="rd-hattr">
+                <div className="rd-hattr-label">Catégorie</div>
+                <div className="rd-hattr-val">{deviceCategory}</div>
+              </div>
+              <div className="rd-hattr">
+                <div className="rd-hattr-label">Marque / modèle</div>
+                <div className="rd-hattr-val">{deviceName}</div>
+              </div>
+              <div className="rd-hattr">
+                <div className="rd-hattr-label">Technicien</div>
+                <div className="rd-hattr-val blue">{ticket.assignedTechnician?.name ?? t("unassigned")}</div>
+              </div>
+              <div className="rd-hattr">
+                <div className="rd-hattr-label">Date limite</div>
+                <div className="rd-hattr-val">{ticket.dueAt ? formatDate(ticket.dueAt) : "—"}</div>
+              </div>
+            </div>
+          </section>
+
+          <section className="rd-card">
+            <div className="rd-card-header">
+              <div className="rd-card-title">
+                <Package className="h-[15px] w-[15px]" />
+                Problèmes signalés
+              </div>
+            </div>
+            <div className="rd-problems">
+              {ticket.problems.map((problem: { id: string; problemText: string }) => (
+                <span key={problem.id} className="rd-problem-tag">
+                  {problem.problemText}
+                </span>
               ))}
-            </ul>
-          </div>
+            </div>
+          </section>
+
+          <section className="rd-card">
+            <div className="rd-card-header">
+              <div className="rd-card-title">
+                <Package className="h-[15px] w-[15px]" />
+                Pièces réservées
+              </div>
+            </div>
+            <div className="px-4 pb-1">
+              <table className="w-full table-fixed border-collapse">
+                <thead>
+                  <tr className="border-b border-border text-start text-[10px] font-semibold uppercase tracking-[0.04em] text-[#a1a1aa]">
+                    <th className="w-[55%] py-2 text-start">Pièce</th>
+                    <th className="w-[10%] py-2 text-start">Qté</th>
+                    <th className="w-[20%] py-2 text-start">Prix unit.</th>
+                    <th className="w-[15%] py-2 text-end">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {reservedParts.length ? (
+                    reservedParts.map((reservation) => {
+                      const unitPrice =
+                        typeof reservation.part.sellingPrice === "number"
+                          ? reservation.part.sellingPrice
+                          : reservation.part.sellingPrice.toNumber();
+                      return (
+                        <tr key={reservation.id} className="border-b border-border last:border-b-0 text-[12px]">
+                          <td className="py-2.5">
+                            <div className="font-medium text-foreground">
+                              {reservation.part.name}
+                              <span className="ms-1 inline-flex items-center gap-1 rounded bg-[var(--status-inrepair-bg)] px-1.5 py-0.5 text-[10px] font-medium text-[var(--status-inrepair-fg)]">
+                                <Lock className="h-2.5 w-2.5" />
+                                Réservé
+                              </span>
+                            </div>
+                            <div className="mt-0.5 text-[10px] text-[#a1a1aa]">{reservation.part.sku}</div>
+                          </td>
+                          <td className="py-2.5 text-[#52525b]">{reservation.quantity}</td>
+                          <td className="py-2.5 text-[#52525b]">{formatCurrency(unitPrice)}</td>
+                          <td className="py-2.5 text-end font-semibold">{formatCurrency(unitPrice * reservation.quantity)}</td>
+                        </tr>
+                      );
+                    })
+                  ) : (
+                    <tr>
+                      <td colSpan={4} className="py-4 text-[12px] text-muted-foreground">
+                        Aucune pièce réservée.
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </section>
 
           {(ticket.internalNotes || ticket.diagnosisNote) && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {ticket.internalNotes && (
-                <div className="rounded-xl border border-border bg-amber-50/50 dark:bg-amber-950/20 p-5">
-                  <h3 className="font-semibold text-sm text-amber-800 dark:text-amber-400 mb-2">{t("detail_internalNotes")}</h3>
-                  <p className="text-sm text-foreground whitespace-pre-wrap">{ticket.internalNotes}</p>
+            <section className="rd-card">
+              <div className="rd-card-header">
+                <div className="rd-card-title">
+                  <FileText className="h-[15px] w-[15px]" />
+                  Notes technicien
                 </div>
-              )}
-              {ticket.diagnosisNote && (
-                <div className="rounded-xl border border-border bg-blue-50/50 dark:bg-blue-950/20 p-5">
-                  <h3 className="font-semibold text-sm text-blue-800 dark:text-blue-400 mb-2">{t("detail_diagnosisNote")}</h3>
-                  <p className="text-sm text-foreground whitespace-pre-wrap">{ticket.diagnosisNote}</p>
+              </div>
+              <div className="py-3">
+                <div className="rd-notes-body">
+                  {[ticket.diagnosisNote, ticket.internalNotes].filter(Boolean).join("\n\n")}
                 </div>
-              )}
-            </div>
+              </div>
+            </section>
           )}
 
-          <div className="rounded-xl border border-border bg-card p-5">
-            <h3 className="font-semibold text-lg flex items-center gap-2 mb-4">
-              <Calendar className="h-5 w-5 text-muted-foreground" />
-              {t("detail_statusHistory")}
-            </h3>
-            <div className="relative border-s border-border ms-3 space-y-6">
-              {ticket.statusHistory.map((history: { id: string, newStatus: string, createdAt: Date, note: string | null, changedBy: { name: string } }) => (
-                <div key={history.id} className="relative ps-6">
-                  <span className="absolute -start-1.5 top-1.5 h-3 w-3 rounded-full border-2 border-background bg-primary ring-1 ring-border" />
-                  <div className="flex flex-col">
-                    <span className="text-sm font-medium">
-                      {t("movedToStatus", { status: getRepairStatusLabel(history.newStatus, locale) })}
-                    </span>
-                    <span className="text-xs text-muted-foreground">
-                      {t("onDateBy", { date: formatDateTime(history.createdAt), name: history.changedBy.name })}
-                    </span>
-                    {history.note && <p className="text-sm text-muted-foreground mt-1 italic">&quot;{history.note}&quot;</p>}
-                  </div>
-                </div>
-              ))}
+          <section className="rd-card">
+            <div className="rd-card-header">
+              <div className="rd-card-title">
+                <History className="h-[15px] w-[15px]" />
+                Historique
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div className="space-y-6">
-          <div className="rounded-xl border border-border bg-card overflow-hidden">
-            <div className="bg-muted/50 px-5 py-3 border-b border-border flex items-center justify-between">
-              <h3 className="font-semibold text-sm">{t("customer")}</h3>
-              <Link href={`/dashboard/customers/${ticket.customerId}`} className="text-xs text-primary hover:underline">
-                {t("view")}
-              </Link>
-            </div>
-            <div className="p-5 space-y-3">
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
-                  <UserIcon className="h-5 w-5" />
-                </div>
-                <div>
-                  <p className="font-medium text-sm">{ticket.customer.name}</p>
-                  {ticket.customer.phones?.[0] && (
-                    <div className="flex items-center gap-2 mt-0.5">
-                      <p className="text-xs text-muted-foreground flex items-center gap-1">
-                        <Phone className="h-3 w-3" /> {ticket.customer.phones[0].phoneNumber}
-                      </p>
-                      <WhatsAppSendButton
-                        ticketId={ticket.id}
-                        storeId={ticket.storeId}
-                        customerId={ticket.customerId}
-                        type={ticket.currentStatus === "ready_for_pickup" ? "ready" : "received"}
-                        variant="icon"
-                      />
+            <div className="rd-timeline">
+              {ticket.statusHistory.map(
+                (history: {
+                  id: string;
+                  newStatus: RepairStatus;
+                  createdAt: Date;
+                  note: string | null;
+                  changedBy: { name: string };
+                }, index: number) => (
+                  <div key={history.id} className="rd-tl">
+                    <div className={cn("rd-tl-icon", index === 0 ? "active" : "done")}>
+                      {index === 0 ? <Wrench className="h-3.5 w-3.5" /> : <Check className="h-3.5 w-3.5" />}
                     </div>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="rounded-xl border border-border bg-card overflow-hidden">
-            <div className="bg-muted/50 px-5 py-3 border-b border-border">
-              <h3 className="font-semibold text-sm flex items-center gap-2">
-                <Tag className="h-4 w-4 text-muted-foreground" />
-                {t("device")}
-              </h3>
-            </div>
-            <div className="p-5 space-y-4">
-              <div>
-                <p className="text-lg font-semibold">{deviceName}</p>
-                {(ticket.deviceColor || ticket.customerDevice?.color) && (
-                  <p className="text-sm text-muted-foreground mt-0.5">
-                    {t("color")}: {ticket.deviceColor || ticket.customerDevice?.color}
-                  </p>
-                )}
-              </div>
-              <div className="pt-3 border-t border-border grid grid-cols-2 gap-3">
-                <div>
-                  <p className="text-xs text-muted-foreground">{t("imeiSerial")}</p>
-                  <p className="text-sm font-medium">{ticket.imeiSerial || ticket.customerDevice?.imeiSerial || "---"}</p>
-                </div>
-                <div>
-                  <p className="text-xs text-muted-foreground">{t("password")}</p>
-                  <p className="text-sm font-medium">---</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="rounded-xl border border-border bg-card overflow-hidden">
-            <div className="bg-muted/50 px-5 py-3 border-b border-border">
-              <h3 className="font-semibold text-sm flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-muted-foreground" />
-                Garantie
-              </h3>
-            </div>
-            <div className="p-5 space-y-2">
-              {ticket.warrantyDays ? (
-                <>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">Durée</span>
-                    <span className="text-sm font-bold">{ticket.warrantyDays} jours</span>
+                    <div className="rd-tl-content">
+                      <div className="rd-tl-title">
+                        {getRepairStatusLabel(history.newStatus, locale)}
+                      </div>
+                      <div className="rd-tl-time">
+                        {history.changedBy.name} · {formatDateTime(history.createdAt)}
+                      </div>
+                      {history.note && <div className="rd-tl-note">{history.note}</div>}
+                    </div>
                   </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">Expire le</span>
-                    <span className="text-sm font-bold">{warrantyExpiresAt ? formatDate(warrantyExpiresAt) : "—"}</span>
-                  </div>
-                  <div className={cn("mt-3 rounded-lg border px-3 py-2 text-xs font-bold", warrantyActive ? "border-emerald-200 bg-emerald-50 text-emerald-700" : "border-slate-200 bg-slate-50 text-slate-600")}>
-                    {warrantyActive ? "Garantie active" : "Garantie expirée"}
-                  </div>
-                </>
-              ) : (
-                <p className="text-sm text-muted-foreground">Aucune garantie définie pour ce ticket.</p>
+                )
               )}
             </div>
-          </div>
+          </section>
         </div>
+
+        <aside className="rd-right">
+          <section className="rd-side-card">
+            <div className="rd-side-head">
+              <UserIcon className="h-3.5 w-3.5" />
+              Cliente
+            </div>
+            <div className="rd-side-body">
+              <div className="rd-customer-row">
+                <div className="rd-customer-avatar">
+                  {ticket.customer.name
+                    .split(" ")
+                    .slice(0, 2)
+                    .map((word: string) => word[0])
+                    .join("")
+                    .toUpperCase()}
+                </div>
+                <div className="min-w-0">
+                  <div className="rd-customer-name">{ticket.customer.name}</div>
+                  <div className="rd-customer-phone">{customerPhone ?? "—"}</div>
+                </div>
+              </div>
+              <hr className="rd-side-divider" />
+              <div className="rd-side-row">
+                <Smartphone className="h-3.5 w-3.5" />
+                <div>
+                  <div className="rd-side-label">Appareil</div>
+                  <div className="rd-side-val">{deviceName}</div>
+                </div>
+              </div>
+              <div className="rd-side-row">
+                <ShieldCheck className="h-3.5 w-3.5" />
+                <div>
+                  <div className="rd-side-label">Garantie ticket</div>
+                  <div className="rd-side-val blue">{ticket.warrantyDays ? `${ticket.warrantyDays} jours` : "—"}</div>
+                </div>
+              </div>
+              <div className="mt-2 flex gap-1.5">
+                <Link href={`/dashboard/customers/${ticket.customerId}`} className="rd-btn flex-1 px-2 text-[11px]">
+                  <UserIcon className="h-3.5 w-3.5" />
+                  Profil
+                </Link>
+                <Link href={`/dashboard/customers/${ticket.customerId}`} className="rd-btn flex-1 px-2 text-[11px]">
+                  <History className="h-3.5 w-3.5" />
+                  Historique
+                </Link>
+              </div>
+            </div>
+          </section>
+
+          <section className="rd-side-card">
+            <div className="rd-side-head">
+              <RefreshCw className="h-3.5 w-3.5" />
+              Avancer le statut
+            </div>
+            <div className="rd-stepper">
+              {STATUS_KEYS.slice(0, 6).map((status, index) => {
+                const current = status === ticket.currentStatus;
+                const done = index < currentStatusIndex;
+                return (
+                  <button
+                    key={status}
+                    type="button"
+                    disabled={isChangingStatus}
+                    onClick={() => handleStatusChange(status)}
+                    className={cn("rd-step", current && "current", done && "done")}
+                  >
+                    <span className="rd-step-node" />
+                    {getRepairStatusLabel(status, locale)}
+                    {done && <Check className="ms-auto h-3 w-3 text-success" />}
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+
+          <section className="rd-side-card">
+            <div className="rd-side-head">
+              <ReceiptText className="h-3.5 w-3.5" />
+              Devis accepté
+            </div>
+            <div className="rd-side-body">
+              {acceptedEstimate ? (
+                <div className="rounded-md border border-border bg-muted p-3">
+                  {acceptedEstimate.lines.slice(0, 3).map((line) => (
+                    <div key={line.id} className="flex justify-between py-0.5 text-[12px] text-[#52525b]">
+                      <span className="truncate pe-2">{line.description}</span>
+                      <span className="shrink-0">{formatCurrency(line.totalPrice)}</span>
+                    </div>
+                  ))}
+                  <div className="mt-1 flex justify-between border-t border-border pt-2 text-[13px] font-bold">
+                    <span>Total</span>
+                    <span>{formatCurrency(acceptedEstimate.totalAmount)}</span>
+                  </div>
+                  <div className="mt-2 inline-flex items-center gap-1 rounded-full bg-[var(--status-inrepair-bg)] px-2 py-0.5 text-[10px] font-semibold text-[var(--status-inrepair-fg)]">
+                    <Check className="h-2.5 w-2.5" />
+                    {acceptedEstimate.status === "accepted" ? "Accepté" : acceptedEstimate.estimateNumber}
+                  </div>
+                </div>
+              ) : (
+                <div className="rounded-md border border-border bg-muted p-3 text-[12px] text-muted-foreground">
+                  Aucun devis disponible.
+                </div>
+              )}
+            </div>
+          </section>
+
+          <section className="rd-side-card">
+            <div className="rd-side-head">
+              <MessageCircle className="h-3.5 w-3.5 text-[var(--wa-green)]" />
+              WhatsApp
+            </div>
+            <div className="rd-wa-list">
+              <button type="button" className="rd-wa-row">
+                <RefreshCw className="h-3.5 w-3.5 text-[var(--wa-green)]" />
+                Mise à jour statut
+              </button>
+              <button type="button" className="rd-wa-row">
+                <LinkIcon className="h-3.5 w-3.5" />
+                Renvoyer lien devis
+              </button>
+              <button type="button" className="rd-wa-row">
+                <Truck className="h-3.5 w-3.5 text-[var(--wa-green)]" />
+                Prêt à livrer
+              </button>
+            </div>
+          </section>
+
+          {userRole !== "Technician" && (
+            <section className="rd-side-card">
+              <div className="rd-side-head">
+                <Wrench className="h-3.5 w-3.5" />
+                Assignation
+              </div>
+              <div className="rd-side-body">
+                <select
+                  value={ticket.assignedTechnicianId || ""}
+                  onChange={(event) => handleAssign(event.target.value)}
+                  className="h-9 w-full rounded-md border border-input bg-card px-3 text-[12px] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  <option value="">{t("unassigned")}</option>
+                  {technicians.map((technician) => (
+                    <option key={technician.id} value={technician.id}>
+                      {technician.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </section>
+          )}
+        </aside>
       </div>
     </div>
   );

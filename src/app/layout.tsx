@@ -26,8 +26,14 @@ export default async function RootLayout({
       lang={locale}
       dir={dir}
       className="h-full antialiased"
+      suppressHydrationWarning
     >
       <body className="min-h-full bg-background text-foreground font-sans">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem("repaire-theme");var r=document.documentElement;if(t==="dark"){r.classList.add("dark");r.classList.remove("light")}else if(t==="light"){r.classList.add("light");r.classList.remove("dark")}}catch(e){}`,
+          }}
+        />
         <NextIntlClientProvider messages={messages}>
           <AutoTranslator />
           {children}

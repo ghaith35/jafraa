@@ -26,7 +26,7 @@ export function DashboardShell({ children, user, company }: Props) {
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <div dir={dir} className="flex h-svh overflow-hidden bg-background">
+    <div dir={dir} className="flex h-svh overflow-hidden bg-surface-page">
       {/* Mobile overlay backdrop */}
       {mobileOpen && (
         <div
@@ -46,14 +46,14 @@ export function DashboardShell({ children, user, company }: Props) {
       />
 
       {/* Main content — offset by sidebar width on desktop */}
-      <div className="flex flex-1 flex-col overflow-hidden lg:ms-64">
+      <div className="flex flex-1 flex-col overflow-hidden lg:ms-[220px]">
         <Topbar
           user={user}
           company={company}
           onMobileMenuToggle={() => setMobileOpen((o) => !o)}
         />
         <main className="flex-1 overflow-y-auto">
-          <div className="p-4 md:p-6">{children}</div>
+          <div className="p-4 md:p-5">{children}</div>
         </main>
       </div>
     </div>

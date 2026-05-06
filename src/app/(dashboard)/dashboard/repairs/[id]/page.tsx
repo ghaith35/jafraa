@@ -56,14 +56,20 @@ export default async function RepairDetailPage(props: { params: Promise<{ id: st
   }
 
   return (
-    <div className="max-w-6xl mx-auto space-y-8">
-      <RepairDetail ticket={ticket} technicians={technicians} userRole={session.role} />
+    <div className="mx-auto max-w-7xl space-y-5">
+      <RepairDetail
+        ticket={ticket}
+        technicians={technicians}
+        userRole={session.role}
+        reservedParts={reservedParts}
+        estimates={estimates}
+      />
       <EstimateSection ticket={ticket} initialEstimates={estimates} userRole={session.role} />
       <ReservedPartsSection ticket={ticket} initialParts={reservedParts} userRole={session.role} />
 
       {/* Invoice & Payment section — hidden from Technician */}
       {session.role !== "Technician" && (
-        <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
+        <div className="rounded-md border border-border bg-card p-4 shadow-[var(--shadow-sm)]">
           <div className="flex items-center gap-2 mb-4">
             <span className="text-sm font-semibold">{t("repairs.invoicePayment")}</span>
           </div>

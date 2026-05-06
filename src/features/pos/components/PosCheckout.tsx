@@ -167,11 +167,11 @@ export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheck
 
 
   const modeTabs = (
-    <div className="mb-4 flex flex-wrap items-center gap-2 rounded-2xl border border-border bg-card p-2 shadow-sm">
+    <div className="mb-4 flex flex-wrap items-center gap-2 rounded-md border border-border bg-card p-2 shadow-[var(--shadow-sm)]">
       <button
         type="button"
         onClick={() => setMode("sale")}
-        className={`inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-bold transition ${
+        className={`inline-flex items-center gap-2 rounded-md px-4 py-2 text-sm font-bold transition ${
           mode === "sale"
             ? "bg-primary text-primary-foreground shadow-sm"
             : "text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -184,7 +184,7 @@ export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheck
         <button
           type="button"
           onClick={() => setMode("repair")}
-          className={`inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-bold transition ${
+        className={`inline-flex items-center gap-2 rounded-md px-4 py-2 text-sm font-bold transition ${
             mode === "repair"
               ? "bg-primary text-primary-foreground shadow-sm"
               : "text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -204,7 +204,7 @@ export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheck
 
   if (!hasOpenSession) {
     return (
-      <div className="max-w-md mx-auto mt-10 rounded-xl border border-border bg-card p-8 text-center">
+      <div className="max-w-md mx-auto mt-10 rounded-md border border-border bg-card p-8 text-center shadow-[var(--shadow-sm)]">
         <div className="flex justify-center mb-4">
           <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center">
             <Lock className="h-6 w-6 text-muted-foreground" />
@@ -242,14 +242,14 @@ export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheck
   return (
     <div className="space-y-4">
       {modeTabs}
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 h-[calc(100vh-230px)]">
+      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_360px] gap-5 h-[calc(100vh-210px)]">
       {/* Left: Item search (3/5) */}
-      <div className="lg:col-span-3 flex flex-col min-h-0">
+      <div className="flex flex-col min-h-0">
         <ItemSearch onAddToCart={handleAddToCart} cartLines={cartLines} />
       </div>
 
       {/* Right: Cart + Checkout (2/5) */}
-      <div className="lg:col-span-2 rounded-xl border border-border bg-card p-5 flex flex-col min-h-0">
+      <div className="rounded-md border border-border bg-card p-4 flex flex-col min-h-0 shadow-[var(--shadow-sm)]">
         {/* Cart */}
         <div className="flex-1 min-h-0 overflow-hidden">
           <CartPanel
@@ -290,18 +290,20 @@ export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheck
                   onChange={(e) =>
                     setDiscount(e.target.value ? parseFloat(e.target.value) : 0)
                   }
-                  className="h-9 w-32 rounded-md border border-input bg-background px-3 text-sm text-right"
+              className="h-9 w-32 rounded-md border border-input bg-card px-3 text-sm text-right"
                   placeholder="0.00"
                 />
               </div>
             )}
 
             {/* Total */}
+            <div className="rounded-md bg-surface-sunken p-3">
             <div className="flex items-center justify-between">
               <span className="text-base font-bold">{t("total")}</span>
-              <span className="text-2xl font-black text-primary">
+              <span className="text-2xl font-black" style={{ color: "var(--pos-total-fg)" }}>
                 {total.toFixed(2)} DZD
               </span>
+            </div>
             </div>
 
             {/* Cash received */}
@@ -317,18 +319,18 @@ export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheck
                     e.target.value ? parseFloat(e.target.value) : ""
                   )
                 }
-                className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-lg font-bold ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="flex h-11 w-full rounded-md border border-input bg-card px-3 py-2 text-lg font-bold ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 placeholder="0.00"
               />
             </div>
 
             {/* Debt Preview */}
             {isDebtMode && (
-              <div className="p-3 rounded-lg border border-amber-200 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-800 text-center">
-                <span className="text-xs font-medium text-amber-800 dark:text-amber-300 block">
+              <div className="p-3 rounded-md border text-center" style={{ backgroundColor: "var(--debt-partial-bg)", color: "var(--debt-partial-fg)", borderColor: "var(--debt-active-border)" }}>
+                <span className="text-xs font-medium block">
                   {t("remainingDebt")}
                 </span>
-                <span className="text-xl font-black text-amber-600">
+                <span className="text-xl font-black">
                   {debtAmount.toFixed(2)} DZD
                 </span>
               </div>
@@ -337,19 +339,18 @@ export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheck
             {/* Change display (only if not in debt mode) */}
             {!isDebtMode && typeof cashReceived === "number" && cashReceived > 0 && (
               <div
-                className={`p-3 rounded-lg text-center border ${
-                  change >= 0
-                    ? "bg-emerald-50 border-emerald-200 dark:bg-emerald-950/20 dark:border-emerald-800"
-                    : "bg-red-50 border-red-200 dark:bg-red-950/20 dark:border-red-800"
-                }`}
+                className="p-3 rounded-md text-center border"
+                style={{
+                  backgroundColor: change >= 0 ? "var(--pos-cash-in-bg)" : "var(--pos-cash-out-bg)",
+                  borderColor: change >= 0 ? "var(--status-ready-border)" : "var(--status-norepair-border)",
+                }}
               >
                 <span className="text-xs font-medium text-muted-foreground block">
                   {t("changeDue")}
                 </span>
                 <span
-                  className={`text-xl font-black ${
-                    change >= 0 ? "text-emerald-600" : "text-red-600"
-                  }`}
+                  className="text-xl font-black"
+                  style={{ color: change >= 0 ? "var(--pos-change-fg)" : "var(--pos-cash-out-fg)" }}
                 >
                   {change >= 0 ? change.toFixed(2) : "—"} DZD
                 </span>
@@ -374,7 +375,7 @@ export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheck
 
             {/* Error */}
             {error && (
-              <div className="rounded-md bg-destructive/15 p-3 text-sm text-destructive">
+              <div className="rounded-md border border-[var(--status-norepair-border)] bg-[var(--status-norepair-bg)] p-3 text-sm text-[var(--status-norepair-fg)]">
                 {error}
               </div>
             )}
@@ -388,7 +389,7 @@ export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheck
                 (typeof cashReceived !== "number") ||
                 (!debtEnabled && cashReceived < total)
               }
-              className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-primary px-4 text-base font-bold text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="inline-flex h-12 w-full items-center justify-center rounded-md bg-primary px-4 text-base font-bold text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isCheckingOut ? (
                 <Loader2 className="mr-2 h-5 w-5 animate-spin" />
@@ -405,4 +406,3 @@ export function PosCheckout({ hasOpenSession, userRole, repairIntake }: PosCheck
     </div>
   );
 }
-

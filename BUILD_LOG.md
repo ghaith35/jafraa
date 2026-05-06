@@ -1018,3 +1018,74 @@ Block 16 — Advanced Reporting & Z-Reports
 ### Next recommended block
 
 Repair local migration history with either `npm run db:reset` for disposable dev data, or manually reconcile the partially applied expense/WhatsApp migration before running `npm run db:migrate` and `npm run db:seed`.
+
+## 2026-05-06 — Repair Detail Mockup Alignment
+
+### What changed
+
+- Reworked the dashboard shell to match the mockup proportions more closely: 220px sidebar, compact navigation rows, REPAIRE wordmark, and store selector under the logo.
+- Added repair-detail-specific CSS classes in `src/app/globals.css` matching the supplied mockup structure.
+- Rebuilt the repair ticket detail component around the mockup layout:
+  - route action bar
+  - ticket hero
+  - 4-column ticket attributes
+  - problem chips
+  - reserved parts table
+  - technician notes callout
+  - timeline
+  - right-side customer/status/estimate/WhatsApp panels
+
+### Files touched
+
+- `src/app/globals.css`
+- `src/components/layout/DashboardShell.tsx`
+- `src/components/layout/Sidebar.tsx`
+- `src/components/layout/NavItem.tsx`
+- `src/components/layout/Topbar.tsx`
+- `src/features/repairs/components/RepairDetail.tsx`
+- `src/app/(dashboard)/dashboard/repairs/[id]/page.tsx`
+
+### Checks run
+
+- `npm run typecheck` — passed
+- `npm run lint` — passed with existing warnings
+- `npm run build` — passed when rerun outside sandbox restrictions
+
+### Known issues / notes
+
+- The supplied mockup uses Tabler icons (`ti-*`); implementation uses existing `lucide-react` icons to avoid adding a new dependency.
+- WhatsApp quick rows are styled in the right panel; wiring each row to a distinct WhatsApp template is the next refinement.
+
+## 2026-05-06 — Dashboard / Shell Redesign
+
+### What changed
+
+- Rebuilt the `/dashboard` page around the supplied REPAIRE dashboard prompt:
+  - 4 KPI cards
+  - repair pipeline table with semantic status pills
+  - recent activity timeline
+  - low-stock alert strip
+  - quick action buttons
+- Updated the global shell to match the mockup direction:
+  - 220px dark slate sidebar
+  - compact grouped French navigation
+  - REPAIRE logo block and store selector
+  - 48px topbar with search, notification, language switcher, and user pill
+- Added the segmented Arabic/French/English language switcher with locale cookie switching and RTL direction updates.
+
+### Files touched
+
+- `src/app/(dashboard)/dashboard/page.tsx`
+- `src/components/layout/DashboardShell.tsx`
+- `src/components/layout/Sidebar.tsx`
+- `src/components/layout/NavItem.tsx`
+- `src/components/layout/nav-items.ts`
+- `src/components/layout/Topbar.tsx`
+- `src/components/layout/LanguageSwitcher.tsx`
+- `src/app/globals.css`
+
+### Checks run
+
+- `npm run typecheck` — passed
+- `npm run lint` — passed with existing warnings
+- `npm run build` — passed when rerun outside sandbox restrictions

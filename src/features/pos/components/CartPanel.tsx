@@ -25,7 +25,7 @@ export function CartPanel({
 
   if (lines.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center py-12 text-center">
+      <div className="flex flex-col items-center justify-center rounded-md border border-dashed border-border bg-surface-sunken py-12 text-center">
         <ShoppingCart className="h-10 w-10 text-muted-foreground/40 mb-3" />
         <p className="text-sm text-muted-foreground">{t("cartEmpty")}</p>
         <p className="text-xs text-muted-foreground mt-1">
@@ -55,7 +55,7 @@ export function CartPanel({
         {lines.map((line) => (
           <div
             key={line.itemId}
-            className="rounded-lg border border-border bg-background p-3"
+            className="rounded-md border border-border bg-card p-3 shadow-[var(--shadow-xs)]"
           >
             <div className="flex items-start justify-between gap-2">
               <div className="min-w-0 flex-1">
@@ -76,7 +76,7 @@ export function CartPanel({
               <div className="flex items-center gap-1">
                 <button
                   onClick={() => onUpdateQuantity(line.itemId, -1)}
-                  className="inline-flex h-7 w-7 items-center justify-center rounded border border-input bg-background hover:bg-muted text-sm"
+                  className="inline-flex h-7 w-7 items-center justify-center rounded border border-input bg-card hover:bg-muted text-sm"
                 >
                   <Minus className="h-3 w-3" />
                 </button>
@@ -85,7 +85,7 @@ export function CartPanel({
                 </span>
                 <button
                   onClick={() => onUpdateQuantity(line.itemId, 1)}
-                  className="inline-flex h-7 w-7 items-center justify-center rounded border border-input bg-background hover:bg-muted text-sm"
+                  className="inline-flex h-7 w-7 items-center justify-center rounded border border-input bg-card hover:bg-muted text-sm"
                 >
                   <Plus className="h-3 w-3" />
                 </button>
@@ -101,7 +101,7 @@ export function CartPanel({
       </div>
 
       {/* Subtotal */}
-      <div className="pt-3 mt-3 border-t border-border">
+      <div className="pt-3 mt-3 border-t border-border rounded-md bg-surface-sunken p-3">
         <div className="flex items-center justify-between">
           <span className="text-sm font-medium text-muted-foreground">
             {t("subtotal")}

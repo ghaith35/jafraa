@@ -1,29 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import { Wrench, Calendar, Clock, AlertTriangle } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { getRepairStatusLabel } from "../i18n";
+import { Wrench, Calendar, Clock, Smartphone } from "lucide-react";
+import type { RepairPriority, RepairStatus } from "@prisma/client";
+import { RepairStatusBadge } from "@/components/ui/repair-status-badge";
+import { PriorityBadge } from "@/components/ui/priority-badge";
 import { useRepairI18n } from "./RepairLanguageSwitcher";
 
-// Infer type from action return
- /* eslint-disable-next-line @typescript-eslint/no-explicit-any */ 
-type RepairTicket = any; // simplified for rapid UI
+type RepairTicket = {
+  id: string;
+  ticketNumber: string;
+  currentStatus: RepairStatus;
+  priority: RepairPriority;
+  customDeviceBrand: string | null;
+  customDeviceModel: string | null;
+  createdAt: Date;
+  dueAt: Date | null;
+  customer: { name: string; phones: Array<{ phoneNumber: string }> };
+  customerDevice: { customModel: string | null; deviceTypeName: string | null } | null;
+  deviceFamily: { name: string } | null;
+  assignedTechnician: { name: string } | null;
+};
 
 interface Props {
   tickets: RepairTicket[];
   userRole: string;
 }
-
-const STATUS_CLASSES: Record<string, string> = {
-  received: "bg-blue-100 text-blue-800 border-blue-200",
-  in_diagnosis: "bg-purple-100 text-purple-800 border-purple-200",
-  waiting_customer_approval: "bg-cyan-100 text-cyan-800 border-cyan-200",
-  in_repair: "bg-amber-100 text-amber-800 border-amber-200",
-  ready_for_pickup: "bg-emerald-100 text-emerald-800 border-emerald-200",
-  completed: "bg-gray-100 text-gray-800 border-gray-200",
-  not_repaired: "bg-red-100 text-red-800 border-red-200",
-};
 
 export function RepairList({ tickets, userRole }: Props) {
   const { locale, dir, t, formatDate } = useRepairI18n();
@@ -31,7 +33,7 @@ export function RepairList({ tickets, userRole }: Props) {
   if (tickets.length === 0) {
     return (
       <div dir={dir} lang={locale} className="space-y-4">
-        <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-border bg-card p-10 text-center">
+        <div className="flex flex-col items-center justify-center rounded-md border border-dashed border-border bg-card p-10 text-center shadow-[var(--shadow-sm)]">
           <div className="mb-4 rounded-full bg-muted p-3">
             <Wrench className="h-6 w-6 text-muted-foreground" />
           </div>
@@ -46,26 +48,20 @@ export function RepairList({ tickets, userRole }: Props) {
 
   return (
     <div dir={dir} lang={locale} className="space-y-4">
-      <div className="rounded-xl border border-border bg-card overflow-hidden">
+      <div className="overflow-hidden rounded-md border border-border bg-card shadow-[var(--shadow-sm)]">
         <div className="overflow-x-auto">
-          <table className="w-full text-sm text-start">
-            <thead className="bg-muted/50 text-muted-foreground text-xs uppercase font-medium">
+          <table className="w-full table-fixed text-start text-[12px]">
+            <thead className="bg-surface-sunken text-[10px] font-semibold uppercase tracking-[0.04em] text-muted-foreground">
               <tr>
-                <th className="px-4 py-3 text-start">{t("repairList_ticketDevice")}</th>
-                <th className="px-4 py-3 text-start">{t("customer")}</th>
-                <th className="px-4 py-3 text-start">{t("status")}</th>
-                <th className="px-4 py-3 text-start">{t("repairList_technician")}</th>
-                <th className="px-4 py-3 text-start">{t("date")}</th>
+                <th className="w-[34%] px-4 py-3 text-start">{t("repairList_ticketDevice")}</th>
+                <th className="w-[20%] px-4 py-3 text-start">{t("customer")}</th>
+                <th className="w-[16%] px-4 py-3 text-start">{t("status")}</th>
+                <th className="w-[14%] px-4 py-3 text-start">{t("repairList_technician")}</th>
+                <th className="w-[16%] px-4 py-3 text-start">{t("date")}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
               {tickets.map((ticket) => {
-                const cfg = {
-                  label: getRepairStatusLabel(ticket.currentStatus, locale),
-                  cls: STATUS_CLASSES[ticket.currentStatus] || "bg-gray-100 text-gray-800",
-                };
-                const isRush = ticket.priority === "rush";
-                
                 let deviceName = t("unknownDevice");
                 if (ticket.customerDevice) {
                   deviceName = ticket.customerDevice.customModel || ticket.customerDevice.deviceTypeName || t("customerDevice");
@@ -76,14 +72,21 @@ export function RepairList({ tickets, userRole }: Props) {
                 }
 
                 return (
-                  <tr key={ticket.id} className="hover:bg-accent/30 transition-colors">
+                  <tr key={ticket.id} className="transition-colors hover:bg-muted/60">
                     <td className="px-4 py-3 min-w-[200px]">
-                      <div className="flex flex-col">
-                        <Link href={`/dashboard/repairs/${ticket.id}`} className="font-semibold text-primary hover:underline flex items-center gap-1.5">
-                          {ticket.ticketNumber}
-                          {isRush && <AlertTriangle className="h-3 w-3 text-destructive" />}
-                        </Link>
-                        <span className="text-xs text-muted-foreground mt-0.5">{deviceName}</span>
+                      <div className="flex min-w-0 items-center gap-3">
+                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-accent text-primary">
+                          <Smartphone className="h-4 w-4" />
+                        </div>
+                        <div className="min-w-0">
+                          <Link href={`/dashboard/repairs/${ticket.id}`} className="font-semibold text-primary hover:underline">
+                            {ticket.ticketNumber}
+                          </Link>
+                          <div className="mt-1 flex min-w-0 items-center gap-2">
+                            <span className="truncate text-[11px] text-muted-foreground">{deviceName}</span>
+                            {ticket.priority === "rush" && <PriorityBadge priority={ticket.priority} />}
+                          </div>
+                        </div>
                       </div>
                     </td>
                     <td className="px-4 py-3 whitespace-nowrap">
@@ -93,9 +96,7 @@ export function RepairList({ tickets, userRole }: Props) {
                       </div>
                     </td>
                     <td className="px-4 py-3 whitespace-nowrap">
-                      <span className={cn("inline-flex items-center px-2 py-0.5 rounded border text-xs font-medium", cfg.cls)}>
-                        {cfg.label}
-                      </span>
+                      <RepairStatusBadge status={ticket.currentStatus} />
                     </td>
                     <td className="px-4 py-3 whitespace-nowrap text-muted-foreground">
                       {ticket.assignedTechnician?.name || t("unassigned")}
