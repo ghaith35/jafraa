@@ -1,84 +1,114 @@
 "use server";
 
+import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
-import { whatsappService } from "@/lib/whatsapp/whatsapp.service";
-import { revalidatePath } from "next/cache";
+import {
+  buildTicketReceivedPreview,
+  buildTicketReadyPreview,
+  buildEstimateReadyPreview,
+  type WaPreview,
+} from "@/lib/whatsapp/notifications";
+import type { TemplateLocale } from "@/lib/whatsapp/templates";
+
+// ─── Preview Actions ───────────────────────────────────────────────────────────
 
 /**
- * Get WhatsApp status and QR Code
+ * Returns a wa.me preview for a repair ticket notification.
+ * Does NOT send anything — the client opens the link manually.
  */
-export async function getWhatsAppConnectionInfo() {
+export async function getTicketWhatsAppPreview(
+  ticketId: string,
+  type: "received" | "ready" | "estimate",
+  locale: TemplateLocale = "fr"
+): Promise<WaPreview | null> {
   const session = await getSession();
   if (!session) throw new Error("Unauthorized");
-  const storeId = session.storeIds[0];
 
-  return {
-    status: whatsappService.getStatus(storeId),
-    qrCode: whatsappService.getQRCode(storeId),
-  };
+  if (type === "received") return buildTicketReceivedPreview(ticketId, locale);
+  if (type === "ready") return buildTicketReadyPreview(ticketId, locale);
+  if (type === "estimate") return buildEstimateReadyPreview(ticketId, locale);
+  return null;
 }
 
+// ─── Log Action ───────────────────────────────────────────────────────────────
+
 /**
- * Start WhatsApp connection (initializes client)
+ * Log that a wa.me link was opened (user self-reports they sent the message).
+ * Called client-side after the user clicks "Ouvrir WhatsApp".
  */
-export async function connectWhatsApp() {
+export async function logWhatsAppSent(input: {
+  storeId: string;
+  customerId?: string;
+  entityType: string;
+  entityId: string;
+  phone: string;
+  messagePreview: string;
+}) {
   const session = await getSession();
   if (!session) throw new Error("Unauthorized");
-  const storeId = session.storeIds[0];
 
-  await whatsappService.initClient(storeId);
-  revalidatePath("/dashboard/settings/whatsapp");
-  return { success: true };
+  await prisma.whatsAppNotificationLog.create({
+    data: {
+      storeId: input.storeId,
+      customerId: input.customerId ?? null,
+      entityType: input.entityType,
+      entityId: input.entityId,
+      phone: input.phone,
+      messagePreview: input.messagePreview.slice(0, 200),
+      sentByUserId: session.sub,
+    },
+  });
 }
 
-/**
- * Disconnect WhatsApp
- */
-export async function disconnectWhatsApp() {
+// ─── Notification Log ─────────────────────────────────────────────────────────
+
+export async function listWhatsAppLogs(limit = 50) {
   const session = await getSession();
   if (!session) throw new Error("Unauthorized");
-  const storeId = session.storeIds[0];
 
-  await whatsappService.disconnect(storeId);
-  revalidatePath("/dashboard/settings/whatsapp");
-  return { success: true };
+  const storeId = session.storeIds[0];
+  if (!storeId) return [];
+
+  return prisma.whatsAppNotificationLog.findMany({
+    where: { storeId },
+    orderBy: { createdAt: "desc" },
+    take: limit,
+  });
 }
 
-/**
- * Test WhatsApp message
- */
-export async function testWhatsAppMessage(phone: string) {
-  const session = await getSession();
-  if (!session) throw new Error("Unauthorized");
-  const storeId = session.storeIds[0];
+// ─── Store WhatsApp Number ─────────────────────────────────────────────────────
 
-  try {
-    await whatsappService.sendMessage(
-      storeId, 
-      phone, 
-      "Message de test de votre boutique REPAIRE ! 🚀"
-    );
-    return { success: true };
-  } catch (err: unknown) {
-    const error = err as Error;
-    return { error: error.message || "Failed to send message" };
-  }
+export async function getStoreWhatsAppPhone(): Promise<string | null> {
+  const session = await getSession();
+  if (!session) return null;
+
+  const storeId = session.storeIds[0];
+  if (!storeId) return null;
+
+  const settings = await prisma.storeSettings.findUnique({
+    where: { storeId },
+    select: { whatsappPhone: true },
+  });
+  return settings?.whatsappPhone ?? null;
 }
 
-/**
- * Notify customer about ticket manually
- */
-export async function notifyCustomerWhatsApp(ticketId: string, type: "received" | "ready") {
+export async function saveStoreWhatsAppPhone(phone: string) {
   const session = await getSession();
   if (!session) throw new Error("Unauthorized");
-  
-  const { WhatsAppNotifications } = await import("@/lib/whatsapp/notifications");
-  
-  if (type === "received") {
-    await WhatsAppNotifications.sendTicketReceived(ticketId);
-  } else {
-    await WhatsAppNotifications.sendTicketReady(ticketId);
-  }
-  
+  if (!["admin", "manager"].includes(session.role)) throw new Error("Forbidden");
+
+  const storeId = session.storeIds[0];
+  if (!storeId) throw new Error("No store");
+
+  await prisma.storeSettings.upsert({
+    where: { storeId },
+    update: { whatsappPhone: phone || null, updatedBy: session.sub },
+    create: {
+      storeId,
+      whatsappPhone: phone || null,
+      updatedBy: session.sub,
+    },
+  });
+
   return { success: true };
 }

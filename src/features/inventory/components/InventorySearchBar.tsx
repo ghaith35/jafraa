@@ -10,7 +10,7 @@ interface Props {
 }
 
 export function InventorySearchBar({
-  placeholder = "Rechercher…",
+  placeholder = "Search…",
   defaultValue = "",
 }: Props) {
   const router = useRouter();

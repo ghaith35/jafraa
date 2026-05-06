@@ -4,14 +4,17 @@ import { getInventoryHealthReport } from "@/features/reports/actions/report.acti
 import { ReportShell } from "@/features/reports/components/ReportShell";
 import { KpiGrid, KpiCard } from "@/features/reports/components/KpiGrid";
 import { Package, AlertTriangle, Smartphone, Coins } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export default async function InventoryReportPage() {
+  const { t } = await getAppI18n();
   const data = await getInventoryHealthReport();
 
   return (
     <ReportShell
-      title="Stock & Inventaire"
-      description="Santé du stock et alertes de réapprovisionnement"
+      title={t("reports.inventory.title")}
+      description={t("reports.inventory.description")}
     >
       <KpiGrid>
         <KpiCard
@@ -92,4 +95,3 @@ export default async function InventoryReportPage() {
   );
 }
 
-import { cn } from "@/lib/utils";

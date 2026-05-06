@@ -3,20 +3,16 @@
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Package, Wrench, Zap } from "lucide-react";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 type Tab = "products" | "parts" | "services";
-
-const TABS: { key: Tab; label: string; icon: React.ElementType }[] = [
-  { key: "products", label: "Produits",  icon: Package },
-  { key: "parts",    label: "Pièces",    icon: Wrench },
-  { key: "services", label: "Services",  icon: Zap },
-];
 
 interface Props {
   activeTab: Tab;
 }
 
 export function InventoryTabs({ activeTab }: Props) {
+  const { t } = useAppI18n();
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -28,9 +24,15 @@ export function InventoryTabs({ activeTab }: Props) {
     router.push(`${pathname}?${params.toString()}`);
   }
 
+  const tabs: { key: Tab; label: string; icon: React.ElementType }[] = [
+    { key: "products", label: t("inventory.products"), icon: Package },
+    { key: "parts", label: t("inventory.parts"), icon: Wrench },
+    { key: "services", label: t("inventory.services"), icon: Zap },
+  ];
+
   return (
     <div className="flex gap-1 rounded-xl border border-border bg-muted p-1">
-      {TABS.map(({ key, label, icon: Icon }) => (
+      {tabs.map(({ key, label, icon: Icon }) => (
         <button
           key={key}
           onClick={() => selectTab(key)}

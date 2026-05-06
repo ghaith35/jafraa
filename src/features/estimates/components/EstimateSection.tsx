@@ -48,7 +48,13 @@ export function EstimateSection({ ticket, initialEstimates, userRole }: any) {
           <EstimateForm ticketId={ticket.id} onSuccess={() => setIsCreating(false)} />
         </div>
       ) : (
-        <EstimateList estimates={initialEstimates} userRole={userRole} />
+        <EstimateList
+          estimates={initialEstimates}
+          userRole={userRole}
+          ticketId={ticket.id}
+          storeId={ticket.storeId}
+          customerId={ticket.customerId}
+        />
       )}
     </div>
   );

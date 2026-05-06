@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/shared/PageHeader";
 import { prisma } from "@/lib/db";
 import { getDashboardStats } from "@/features/reports/actions/report.actions";
 import { hasPermission } from "@/lib/auth/permissions";
+import { getTranslations } from "next-intl/server";
 import {
   TrendingUp,
   Wrench,
@@ -43,6 +44,7 @@ function StatCard({ label, value, sub, icon, iconBg }: StatCardProps) {
 }
 
 export default async function DashboardPage() {
+  const t = await getTranslations("dashboard");
   const session = await getSession();
   if (!session) redirect("/login");
 
@@ -66,37 +68,37 @@ export default async function DashboardPage() {
   return (
     <>
       <PageHeader
-        title="Tableau de bord"
-        description="Vue d'ensemble de votre boutique"
+        title={t("title")}
+        description={t("description")}
       />
 
       {/* Stat cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
         <StatCard
-          label="Chiffre d'affaires (Jour)"
+          label={t("dailyRevenue")}
           value={`${stats.dailyRevenue.toLocaleString()} DZD`}
-          sub="Ventes POS aujourd'hui"
+          sub={t("dailyRevenueSub")}
           icon={<TrendingUp className="h-5 w-5 text-primary" />}
           iconBg="bg-primary/10"
         />
         <StatCard
-          label="Réparations en cours"
+          label={t("openRepairs")}
           value={String(stats.openTickets)}
-          sub="Tickets actifs"
+          sub={t("openRepairsSub")}
           icon={<Wrench className="h-5 w-5 text-warning" />}
           iconBg="bg-warning/10"
         />
         <StatCard
-          label="Stock Critique"
+          label={t("criticalStock")}
           value={String(stats.lowStock)}
-          sub="Articles en rupture ou bas"
+          sub={t("criticalStockSub")}
           icon={<AlertTriangle className="h-5 w-5 text-destructive" />}
           iconBg="bg-destructive/10"
         />
         <StatCard
-          label="Dettes clients"
+          label={t("customerDebt")}
           value={canViewDebt ? `${stats.totalDebt.toLocaleString()} DZD` : "—"}
-          sub={canViewDebt ? "Total impayé clients" : "Accès restreint"}
+          sub={canViewDebt ? t("customerDebtSub") : t("restrictedAccess")}
           icon={<CreditCard className="h-5 w-5 text-muted-foreground" />}
           iconBg="bg-muted"
         />
@@ -121,24 +123,24 @@ export default async function DashboardPage() {
             </div>
             <div>
               <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
-                Session de caisse
+                {t("cashSession")}
               </p>
               {activeSession ? (
                 <p className="text-xs text-muted-foreground">
-                  Ouverte par{" "}
+                  {t("openedBy")}{" "}
                   <span className="font-medium text-foreground">
                     {activeSession.openedBy.name}
                   </span>{" "}
-                  à{" "}
+                  {t("at")}{" "}
                   {new Date(activeSession.openedAt).toLocaleTimeString("fr-FR", {
                     hour: "2-digit",
                     minute: "2-digit",
                   })}{" "}
-                  — {Number(activeSession.expectedCashAmount).toFixed(2)} DZD attendus
+                  — {Number(activeSession.expectedCashAmount).toFixed(2)} DZD {t("expectedAmount")}
                 </p>
               ) : (
                 <p className="text-xs text-muted-foreground">
-                  Aucune session active pour cette boutique
+                  {t("noActiveSession")}
                 </p>
               )}
             </div>
@@ -152,24 +154,34 @@ export default async function DashboardPage() {
                 : "bg-gray-100 text-gray-700 border-gray-200 dark:bg-muted dark:text-muted-foreground"
             )}>
               {activeSession ? (
-                <><span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" /> Ouverte</>
+                <><span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" /> {t("opened")}</>
               ) : (
-                "Fermée"
+                t("closed")
               )}
             </span>
             <span className="text-xs text-primary font-medium group-hover:underline hidden sm:block">
-              Gérer →
+              {t("manage")} →
             </span>
           </div>
         </Link>
       )}
 
-      {/* Placeholder notice */}
-      <div className="rounded-lg border border-border bg-muted/40 px-4 py-3">
-        <p className="text-xs text-muted-foreground">
-          Les données du tableau de bord seront alimentées au fil des blocs suivants
-          (caisse, réparations, stock, dettes).
-        </p>
+      {/* Quick links */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        {[
+          { label: t("newRepair"), href: "/dashboard/repairs/new" },
+          { label: t("pos"), href: "/dashboard/pos" },
+          { label: t("newCustomer"), href: "/dashboard/customers/new" },
+          { label: t("reports"), href: "/dashboard/reports" },
+        ].map((l) => (
+          <a
+            key={l.href}
+            href={l.href}
+            className="rounded-lg border border-border bg-card px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground transition-colors text-center"
+          >
+            {l.label}
+          </a>
+        ))}
       </div>
     </>
   );

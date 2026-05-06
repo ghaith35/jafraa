@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLocale } from "next-intl";
 import type { UserRole, LanguagePreference } from "@prisma/client";
 import { Sidebar } from "./Sidebar";
 import { Topbar } from "./Topbar";
@@ -20,8 +21,9 @@ interface Props {
 
 export function DashboardShell({ children, user, company }: Props) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const locale = useLocale();
 
-  const dir = user.languagePreference === "ar" ? "rtl" : "ltr";
+  const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
     <div dir={dir} className="flex h-svh overflow-hidden bg-background">

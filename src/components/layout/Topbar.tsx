@@ -2,6 +2,8 @@
 
 import { Menu } from "lucide-react";
 import type { UserRole } from "@prisma/client";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
 interface Props {
   user: {
@@ -13,13 +15,14 @@ interface Props {
 }
 
 export function Topbar({ user, company, onMobileMenuToggle }: Props) {
+  const t = useTranslations("common");
   return (
     <header className="sticky top-0 z-10 flex h-14 items-center gap-3 border-b border-border bg-card px-4 shrink-0">
       {/* Mobile: hamburger */}
       <button
         onClick={onMobileMenuToggle}
         className="lg:hidden rounded-md p-1.5 text-muted-foreground hover:text-foreground hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        aria-label="Ouvrir le menu"
+        aria-label={t("openMenu")}
       >
         <Menu className="h-5 w-5" />
       </button>
@@ -34,8 +37,7 @@ export function Topbar({ user, company, onMobileMenuToggle }: Props) {
         </span>
       </div>
 
-      {/* Desktop spacer */}
-      <div className="hidden lg:flex flex-1" />
+      <LanguageSwitcher className="me-auto" />
 
       {/* User info chip — visible on all sizes */}
       <div className="flex items-center gap-2 text-sm text-muted-foreground">

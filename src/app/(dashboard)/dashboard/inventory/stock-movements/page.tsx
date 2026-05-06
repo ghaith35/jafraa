@@ -4,10 +4,12 @@ import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { listStockMovements } from "@/features/inventory/actions/movement.actions";
 import { MovementList } from "@/features/inventory/components/MovementList";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export const metadata = { title: "Mouvements de stock — REPAIRE" };
 
 export default async function StockMovementsPage() {
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard");
@@ -18,10 +20,10 @@ export default async function StockMovementsPage() {
     <div className="max-w-screen-xl mx-auto space-y-6">
       <div>
         <h1 className="text-2xl font-bold tracking-tight text-foreground">
-          Mouvements de stock
+          {t("inventory.stockMovements")}
         </h1>
         <p className="text-sm text-muted-foreground mt-1">
-          Historique immuable de toutes les entrées et sorties de stock.
+          {t("inventory.stockMovementsFullDescription")}
         </p>
       </div>
 

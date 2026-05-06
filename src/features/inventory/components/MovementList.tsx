@@ -2,6 +2,7 @@
 
 import { Package, Wrench, ArrowRightLeft, ArrowDownToLine, ArrowUpFromLine, RefreshCw } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useAppI18n } from "@/lib/i18n/ui";
 // Infer type from action return
 type StockMovement = {
   id: string;
@@ -38,15 +39,16 @@ const TYPE_CONFIG: Record<string, { label: string; icon: React.ElementType; cls:
 };
 
 export function MovementList({ movements }: Props) {
+  const { t, formatDateTime } = useAppI18n();
   if (movements.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-border bg-card p-10 text-center">
         <div className="mb-4 rounded-full bg-muted p-3">
           <ArrowRightLeft className="h-6 w-6 text-muted-foreground" />
         </div>
-        <p className="text-sm font-medium text-foreground">Aucun mouvement</p>
+        <p className="text-sm font-medium text-foreground">{t("inventory.noMovement")}</p>
         <p className="mt-1 text-sm text-muted-foreground max-w-sm">
-          L&apos;historique des entrées et sorties de stock apparaîtra ici.
+          {t("inventory.noMovementDescription")}
         </p>
       </div>
     );
@@ -58,17 +60,18 @@ export function MovementList({ movements }: Props) {
         <table className="w-full text-sm text-left">
           <thead className="bg-muted/50 text-muted-foreground text-xs uppercase font-medium">
             <tr>
-              <th className="px-4 py-3">Date</th>
-              <th className="px-4 py-3">Type</th>
-              <th className="px-4 py-3">Article</th>
-              <th className="px-4 py-3 text-right">Qté</th>
-              <th className="px-4 py-3">Utilisateur</th>
-              <th className="px-4 py-3">Note</th>
+              <th className="px-4 py-3">{t("common.date")}</th>
+              <th className="px-4 py-3">{t("common.type")}</th>
+              <th className="px-4 py-3">{t("inventory.item")}</th>
+              <th className="px-4 py-3 text-right">{t("common.quantityShort")}</th>
+              <th className="px-4 py-3">{t("inventory.user")}</th>
+              <th className="px-4 py-3">{t("common.note")}</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-border">
             {movements.map((m) => {
               const cfg = TYPE_CONFIG[m.movementType] || { label: m.movementType, icon: ArrowRightLeft, cls: "text-gray-600 bg-gray-100" };
+              const movementLabel = t(`inventory.movement.${m.movementType}` as any) || cfg.label;
               const Icon = cfg.icon;
               const itemName = m.itemType === "product" ? m.product?.name : m.part?.name;
               const itemSku = m.itemType === "product" ? m.product?.sku : m.part?.sku;
@@ -77,12 +80,12 @@ export function MovementList({ movements }: Props) {
               return (
                 <tr key={m.id} className="hover:bg-accent/30 transition-colors">
                   <td className="px-4 py-3 whitespace-nowrap text-muted-foreground">
-                    {formatDate(m.createdAt)}
+                    {formatDateTime(m.createdAt)}
                   </td>
                   <td className="px-4 py-3 whitespace-nowrap">
                     <span className={cn("inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[10px] font-medium uppercase tracking-wider", cfg.cls)}>
                       <Icon className="h-3 w-3" />
-                      {cfg.label}
+                      {movementLabel}
                     </span>
                   </td>
                   <td className="px-4 py-3 min-w-[200px]">
@@ -93,7 +96,7 @@ export function MovementList({ movements }: Props) {
                         <Wrench className="h-4 w-4 text-muted-foreground shrink-0" />
                       )}
                       <div className="flex flex-col">
-                        <span className="font-medium text-foreground">{itemName || "Inconnu"}</span>
+                        <span className="font-medium text-foreground">{itemName || t("inventory.unknown")}</span>
                         <span className="text-xs text-muted-foreground">{itemSku || "---"}</span>
                       </div>
                     </div>

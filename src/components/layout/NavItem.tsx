@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import type { NavItem as NavItemType } from "./nav-items";
 
@@ -12,6 +12,7 @@ interface Props {
 
 export function NavItem({ item, onClick }: Props) {
   const pathname = usePathname();
+  const t = useTranslations("nav");
 
   // Exact match for dashboard root, prefix match for sub-routes
   const isActive =
@@ -34,7 +35,7 @@ export function NavItem({ item, onClick }: Props) {
       )}
     >
       <Icon className="h-4 w-4 shrink-0" aria-hidden="true" />
-      <span>{item.label}</span>
+      <span>{t(item.labelKey)}</span>
     </Link>
   );
 }

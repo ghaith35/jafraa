@@ -9,14 +9,12 @@ import { EmptyState } from "@/components/shared/EmptyState";
 import { StatusBadge } from "@/components/shared/StatusBadge";
 import { CustomerSearchBar } from "@/features/customers/components/CustomerSearchBar";
 import type { CustomerType } from "@prisma/client";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export const metadata = { title: "Clients" };
 
 const LANG_LABELS: Record<string, string> = { fr: "FR", ar: "AR", en: "EN" };
 
-function customerTypeLabel(type: CustomerType) {
-  return type === "named" ? "Nommé" : "De passage";
-}
 
 function initials(name: string): string {
   return name
@@ -26,19 +24,13 @@ function initials(name: string): string {
     .join("");
 }
 
-function formatDate(d: Date): string {
-  return new Intl.DateTimeFormat("fr-DZ", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric",
-  }).format(d);
-}
 
 export default async function CustomersPage({
   searchParams,
 }: {
   searchParams: Promise<{ q?: string; type?: string; archived?: string }>;
 }) {
+  const { t, formatDate } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
 
@@ -78,15 +70,15 @@ export default async function CustomersPage({
   return (
     <>
       <PageHeader
-        title="Clients"
-        description={`${customers.length} client${customers.length !== 1 ? "s" : ""} trouvé${customers.length !== 1 ? "s" : ""}`}
+        title={t("customers.title")}
+        description={t("customers.countFound", { count: customers.length, plural: customers.length !== 1 ? "s" : "" })}
         actions={
           <Link
             href="/dashboard/customers/new"
             className="flex items-center gap-2 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
           >
             <Plus className="h-4 w-4" />
-            Nouveau client
+            {t("customers.new")}
           </Link>
         }
       />
@@ -98,11 +90,11 @@ export default async function CustomersPage({
       {customers.length === 0 ? (
         <EmptyState
           icon={Users}
-          title={q ? "Aucun résultat" : "Aucun client pour le moment"}
+          title={q ? t("customers.noResults") : t("customers.emptyTitle")}
           description={
             q
-              ? `Aucun client ne correspond à « ${q} ».`
-              : "Commencez par créer votre premier client."
+              ? t("customers.noMatch", { query: q })
+              : t("customers.emptyDescription")
           }
           action={
             !q ? (
@@ -110,7 +102,7 @@ export default async function CustomersPage({
                 href="/dashboard/customers/new"
                 className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
               >
-                Créer un client
+                {t("customers.create")}
               </Link>
             ) : undefined
           }
@@ -137,14 +129,14 @@ export default async function CustomersPage({
                       {c.name}
                     </span>
                     {c.isArchived && (
-                      <StatusBadge label="Archivé" variant="outline" />
+                      <StatusBadge label={t("customers.archived")} variant="outline" />
                     )}
                   </div>
                   <div className="flex items-center gap-3 mt-0.5 text-xs text-muted-foreground flex-wrap">
                     {c.phones[0] ? (
                       <span>{c.phones[0].phoneNumber}</span>
                     ) : (
-                      <span className="italic">Aucun téléphone</span>
+                      <span className="italic">{t("customers.noPhone")}</span>
                     )}
                     {c.customerGroup && <span>· {c.customerGroup.name}</span>}
                   </div>
@@ -153,7 +145,7 @@ export default async function CustomersPage({
                 {/* Badges */}
                 <div className="hidden sm:flex items-center gap-2 shrink-0">
                   <StatusBadge
-                    label={customerTypeLabel(c.customerType)}
+                    label={c.customerType === "named" ? t("customers.namedShort") : t("customers.walkinShort")}
                     variant={c.customerType === "named" ? "default" : "outline"}
                   />
                   <span className="text-xs text-muted-foreground rounded border border-border px-1.5 py-0.5">

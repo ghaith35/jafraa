@@ -32,7 +32,7 @@ export async function listParts(opts?: {
   const storeId = opts?.storeId ?? session.storeIds[0];
   if (!storeId) return [];
 
-  return prisma.part.findMany({
+  const parts = await prisma.part.findMany({
     where: {
       storeId,
       isArchived: opts?.showArchived ? undefined : false,
@@ -56,6 +56,11 @@ export async function listParts(opts?: {
     orderBy: { name: "asc" },
     take: 200,
   });
+
+  return parts.map(p => ({
+    ...p,
+    sellingPrice: Number(p.sellingPrice),
+  }));
 }
 
 // ─── Get one ──────────────────────────────────────────────────────────────────
@@ -67,7 +72,7 @@ export async function getPart(id: string) {
   const storeId = session.storeIds[0];
   if (!storeId) return null;
 
-  return prisma.part.findFirst({
+  const part = await prisma.part.findFirst({
     where: { id, storeId },
     include: {
       category: { select: { id: true, name: true } },
@@ -76,6 +81,13 @@ export async function getPart(id: string) {
       compatibleFamily: { select: { id: true, name: true } },
     },
   });
+
+  if (!part) return null;
+
+  return {
+    ...part,
+    sellingPrice: Number(part.sellingPrice),
+  };
 }
 
 // ─── Create ───────────────────────────────────────────────────────────────────

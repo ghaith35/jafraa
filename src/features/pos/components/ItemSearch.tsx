@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import { Search, Package, Cpu, Wrench, Plus } from "lucide-react";
 import { searchSellableItems, type SellableItem, type CartLine } from "../actions/pos-sale.actions";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 const TYPE_CONFIG = {
   product: { label: "Produit", icon: Package, cls: "bg-blue-100 text-blue-800 border-blue-200" },
@@ -17,6 +18,7 @@ interface ItemSearchProps {
 }
 
 export function ItemSearch({ onAddToCart, cartLines }: ItemSearchProps) {
+  const t = useTranslations("pos");
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SellableItem[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -61,7 +63,7 @@ export function ItemSearch({ onAddToCart, cartLines }: ItemSearchProps) {
           type="text"
           value={query}
           onChange={handleChange}
-          placeholder="Rechercher par nom, SKU ou code-barres..."
+          placeholder={t("searchPlaceholder")}
           className="flex h-11 w-full rounded-lg border border-input bg-background pl-10 pr-4 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           autoFocus
         />
@@ -76,7 +78,7 @@ export function ItemSearch({ onAddToCart, cartLines }: ItemSearchProps) {
       <div className="space-y-2 max-h-[calc(100vh-320px)] overflow-y-auto">
         {results.length === 0 && query.length > 0 && !isSearching && (
           <div className="text-center py-8 text-sm text-muted-foreground">
-            Aucun article trouvé pour &quot;{query}&quot;
+            {t("noItemFound", { query })}
           </div>
         )}
 
@@ -128,12 +130,12 @@ export function ItemSearch({ onAddToCart, cartLines }: ItemSearchProps) {
                             : "text-emerald-600"
                         )}
                       >
-                        Stock: {effectiveStock}
+                        {t("stock", { value: String(effectiveStock) })}
                       </span>
                     )}
                     {cartQty > 0 && (
                       <span className="text-primary font-medium">
-                        ({cartQty} au panier)
+                        {t("inCart", { count: String(cartQty) })}
                       </span>
                     )}
                   </div>
@@ -151,7 +153,7 @@ export function ItemSearch({ onAddToCart, cartLines }: ItemSearchProps) {
                     (effectiveStock !== null && effectiveStock <= 0)
                   }
                   className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                  title="Ajouter au panier"
+                  title={t("addToCart")}
                 >
                   <Plus className="h-4 w-4" />
                 </button>

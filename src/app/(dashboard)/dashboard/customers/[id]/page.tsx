@@ -16,6 +16,7 @@ import {
   listCustomerDebtEntries,
 } from "@/features/customers/actions/debt.actions";
 import type { CustomerType, LanguagePreference } from "@prisma/client";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export const metadata = { title: "Fiche client" };
 
@@ -25,24 +26,18 @@ const LANG_LABELS: Record<LanguagePreference, string> = {
   en: "English",
 };
 
-const TYPE_CONFIG: Record<CustomerType, { label: string; variant: "default" | "outline" }> = {
-  named: { label: "Client nommé", variant: "default" },
-  walkin: { label: "Client de passage", variant: "outline" },
+const TYPE_VARIANTS: Record<CustomerType, "default" | "outline"> = {
+  named: "default",
+  walkin: "outline",
 };
 
-function formatDate(d: Date): string {
-  return new Intl.DateTimeFormat("fr-DZ", {
-    day: "2-digit",
-    month: "long",
-    year: "numeric",
-  }).format(d);
-}
 
 export default async function CustomerDetailPage({
   params,
 }: {
   params: Promise<{ id: string }>;
 }) {
+  const { t, formatDate } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
 
@@ -110,13 +105,13 @@ export default async function CustomerDetailPage({
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft className="h-3.5 w-3.5" />
-          Retour aux clients
+          {t("customers.backToList")}
         </Link>
       </div>
 
       <PageHeader
         title={customer.name}
-        description={`Client créé le ${formatDate(customer.createdAt)}`}
+        description={t("customers.createdOn", { date: formatDate(customer.createdAt) })}
         actions={
           <div className="flex items-center gap-2">
             {canManage && !customer.isArchived && (
@@ -126,7 +121,7 @@ export default async function CustomerDetailPage({
                   className="flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
                 >
                   <Edit className="h-3.5 w-3.5" />
-                  Modifier
+                  {t("common.edit")}
                 </Link>
                 <ArchiveCustomerButton customerId={customer.id} />
               </>
@@ -151,12 +146,12 @@ export default async function CustomerDetailPage({
                 <p className="text-base font-semibold text-foreground">{customer.name}</p>
                 <div className="flex items-center gap-2 flex-wrap">
                   <StatusBadge
-                    label={TYPE_CONFIG[customer.customerType].label}
-                    variant={TYPE_CONFIG[customer.customerType].variant}
+                    label={customer.customerType === "named" ? t("customers.named") : t("customers.walkin")}
+                    variant={TYPE_VARIANTS[customer.customerType]}
                   />
                   <RoleBadge role={session.role} className="hidden" />
                   {customer.isArchived && (
-                    <StatusBadge label="Archivé" variant="warning" />
+                    <StatusBadge label={t("customers.archived")} variant="warning" />
                   )}
                 </div>
               </div>
@@ -165,21 +160,21 @@ export default async function CustomerDetailPage({
             {/* Details */}
             <dl className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <dt className="text-muted-foreground">Langue</dt>
+                <dt className="text-muted-foreground">{t("customers.language")}</dt>
                 <dd className="font-medium text-foreground">
                   {LANG_LABELS[customer.languagePreference]}
                 </dd>
               </div>
               {customer.customerGroup && (
                 <div className="flex justify-between">
-                  <dt className="text-muted-foreground">Groupe</dt>
+                  <dt className="text-muted-foreground">{t("customers.group")}</dt>
                   <dd className="font-medium text-foreground">
                     {customer.customerGroup.name}
                   </dd>
                 </div>
               )}
               <div className="flex justify-between">
-                <dt className="text-muted-foreground">Créé le</dt>
+                <dt className="text-muted-foreground">{t("customers.createdAt")}</dt>
                 <dd className="text-foreground">{formatDate(customer.createdAt)}</dd>
               </div>
             </dl>
@@ -187,7 +182,7 @@ export default async function CustomerDetailPage({
             {/* Notes */}
             {customer.notes && (
               <div className="pt-2 border-t border-border">
-                <p className="text-xs text-muted-foreground mb-1">Notes</p>
+                <p className="text-xs text-muted-foreground mb-1">{t("common.notes")}</p>
                 <p className="text-sm text-foreground whitespace-pre-wrap">
                   {customer.notes}
                 </p>
@@ -200,12 +195,12 @@ export default async function CustomerDetailPage({
             <div className="flex items-center gap-2 mb-3">
               <Phone className="h-4 w-4 text-muted-foreground" />
               <h2 className="text-sm font-semibold text-foreground">
-                Téléphones ({customer.phones.length})
+                {t("common.phone")}s ({customer.phones.length})
               </h2>
             </div>
             {customer.phones.length === 0 ? (
               <p className="text-sm text-muted-foreground italic">
-                Aucun numéro enregistré
+                {t("customers.noPhone")}
               </p>
             ) : (
               <ul className="space-y-2">
@@ -215,7 +210,7 @@ export default async function CustomerDetailPage({
                       {p.phoneNumber}
                     </span>
                     {p.isPrimary && (
-                      <StatusBadge label="Principal" variant="success" />
+                      <StatusBadge label={t("customers.primary")} variant="success" />
                     )}
                   </li>
                 ))}
@@ -243,7 +238,7 @@ export default async function CustomerDetailPage({
             <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
               <div className="flex items-center gap-2 mb-4">
                 <TrendingDown className="h-4 w-4 text-muted-foreground" />
-                <h2 className="text-sm font-semibold">Dette client</h2>
+                <h2 className="text-sm font-semibold">{t("customers.customerDebt")}</h2>
               </div>
               <DebtSection
                 customerId={customer.id}

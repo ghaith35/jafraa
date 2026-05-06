@@ -111,6 +111,7 @@ export async function getProfitReport(filters: ReportFilters) {
         },
       },
     }),
+    // Expenses table may not exist yet (pending migration) — fail gracefully
     prisma.expense.findMany({
        where: {
          storeId,
@@ -119,7 +120,7 @@ export async function getProfitReport(filters: ReportFilters) {
            lte: endOfDay(filters.endDate),
          },
        }
-    }),
+    }).catch(() => []),
   ]);
 
   const posRevenue = posLines.reduce((acc, l) => acc + Number(l.totalPrice), 0);

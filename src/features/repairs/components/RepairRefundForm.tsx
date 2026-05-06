@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 import { RotateCcw, Loader2, AlertTriangle } from "lucide-react";
 import { createRepairInvoiceRefund, type RepairRefundConfirmation } from "../actions/refund.actions";
 import type { InvoiceSummary } from "../actions/invoice.actions";
+import { useRepairI18n } from "./RepairLanguageSwitcher";
 
 interface RepairRefundFormProps {
   invoice: InvoiceSummary;
@@ -12,6 +13,7 @@ interface RepairRefundFormProps {
 }
 
 export function RepairRefundForm({ invoice, onSuccess, onCancel }: RepairRefundFormProps) {
+  const { t, trMessage } = useRepairI18n();
   const maxRefundable = invoice.paidAmount - invoice.refundedAmount;
   const [amount, setAmount] = useState<number | "">(maxRefundable);
   const [reason, setReason] = useState("");
@@ -21,15 +23,15 @@ export function RepairRefundForm({ invoice, onSuccess, onCancel }: RepairRefundF
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!amount || amount <= 0) {
-      setError("Le montant doit être supérieur à 0");
+      setError(t("refund_amountPositive"));
       return;
     }
     if (amount > maxRefundable) {
-      setError(`Montant maximum remboursable: ${maxRefundable.toFixed(2)} DZD`);
+      setError(t("refund_maxAmount", { amount: maxRefundable.toFixed(2) }));
       return;
     }
     if (!reason.trim()) {
-      setError("Veuillez indiquer le motif du remboursement");
+      setError(t("refund_reasonRequired"));
       return;
     }
 
@@ -37,7 +39,7 @@ export function RepairRefundForm({ invoice, onSuccess, onCancel }: RepairRefundF
     startTransition(async () => {
       const result = await createRepairInvoiceRefund(invoice.id, Number(amount), reason);
       if ("error" in result) {
-        setError(result.error);
+        setError(trMessage(result.error));
       } else {
         onSuccess(result);
       }
@@ -48,13 +50,13 @@ export function RepairRefundForm({ invoice, onSuccess, onCancel }: RepairRefundF
     <div className="rounded-xl border border-amber-200 bg-amber-50/50 dark:bg-amber-950/10 dark:border-amber-900 p-5 animate-in slide-in-from-top-2 duration-300">
       <h4 className="font-bold text-amber-900 dark:text-amber-400 flex items-center gap-2 mb-4">
         <RotateCcw className="h-4 w-4" />
-        Remboursement de la facture
+        {t("refund_title")}
       </h4>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-1">
-            <label className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-500">Montant (DZD)</label>
+            <label className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-500">{t("refund_amount")}</label>
             <input
               type="number"
               step="0.01"
@@ -67,7 +69,7 @@ export function RepairRefundForm({ invoice, onSuccess, onCancel }: RepairRefundF
             />
           </div>
           <div className="space-y-1">
-            <label className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-500">Max remboursable</label>
+            <label className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-500">{t("refund_maxRefundable")}</label>
             <div className="flex h-10 items-center px-3 bg-amber-100/50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800 text-sm font-black">
               {maxRefundable.toFixed(2)} DZD
             </div>
@@ -75,12 +77,12 @@ export function RepairRefundForm({ invoice, onSuccess, onCancel }: RepairRefundF
         </div>
 
         <div className="space-y-1">
-          <label className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-500">Motif</label>
+          <label className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-500">{t("refund_reason")}</label>
           <textarea
             required
             value={reason}
             onChange={(e) => setReason(e.target.value)}
-            placeholder="Ex: Écran défectueux après pose, Geste commercial..."
+            placeholder={t("refund_reasonPlaceholder")}
             className="w-full h-20 rounded-lg border border-amber-200 bg-background p-3 text-sm focus:ring-2 focus:ring-amber-500 outline-none resize-none"
           />
         </div>
@@ -99,7 +101,7 @@ export function RepairRefundForm({ invoice, onSuccess, onCancel }: RepairRefundF
             className="flex-1 h-10 rounded-lg bg-amber-600 text-white font-bold text-sm hover:bg-amber-700 disabled:opacity-50 transition-all flex items-center justify-center gap-2 shadow-sm shadow-amber-200"
           >
             {isPending ? <Loader2 className="h-4 w-4 animate-spin" /> : <RotateCcw className="h-4 w-4" />}
-            Confirmer le remboursement
+            {t("refund_confirm")}
           </button>
           <button
             type="button"
@@ -107,7 +109,7 @@ export function RepairRefundForm({ invoice, onSuccess, onCancel }: RepairRefundF
             onClick={onCancel}
             className="px-4 h-10 rounded-lg border border-amber-200 bg-white dark:bg-transparent text-amber-700 dark:text-amber-400 font-bold text-sm hover:bg-amber-100 dark:hover:bg-amber-900/20 transition-all"
           >
-            Annuler
+            {t("cancel")}
           </button>
         </div>
       </form>

@@ -5,14 +5,16 @@ import { ReportShell } from "@/features/reports/components/ReportShell";
 import { KpiGrid, KpiCard } from "@/features/reports/components/KpiGrid";
 import { CreditCard, Users, AlertTriangle } from "lucide-react";
 import Link from "next/link";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export default async function DebtReportPage() {
+  const { t } = await getAppI18n();
   const data = await getDebtReport();
 
   return (
     <ReportShell
-      title="Dettes Clients"
-      description="Suivi des créances et des impayés"
+      title={t("reports.debt.title")}
+      description={t("reports.debt.description")}
     >
       <KpiGrid cols={3}>
         <KpiCard

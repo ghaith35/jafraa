@@ -3,10 +3,12 @@ import { hasPermission } from "@/lib/auth/permissions";
 import { redirect, notFound } from "next/navigation";
 import { getSupplier } from "@/features/inventory/actions/supplier.actions";
 import { SupplierForm } from "@/features/inventory/components/SupplierForm";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export const metadata = { title: "Modifier le fournisseur — REPAIRE" };
 
 export default async function EditSupplierPage(props: { params: Promise<{ id: string }> }) {
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard");
@@ -22,10 +24,10 @@ export default async function EditSupplierPage(props: { params: Promise<{ id: st
     <div className="max-w-2xl mx-auto space-y-6">
       <div>
         <h1 className="text-2xl font-bold tracking-tight text-foreground">
-          Modifier {supplier.name}
+          {t("suppliers.edit", { name: supplier.name })}
         </h1>
         <p className="text-sm text-muted-foreground mt-1">
-          Mettez à jour les informations du fournisseur.
+          {t("suppliers.editDescription")}
         </p>
       </div>
 

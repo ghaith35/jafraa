@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { getSession } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
 import { PageHeader } from "@/components/shared/PageHeader";
+import { getAppI18n } from "@/lib/i18n/server";
 import { CustomerForm } from "@/features/customers/components/CustomerForm";
 
 export const metadata = { title: "Modifier le client" };
@@ -13,6 +14,7 @@ export default async function EditCustomerPage({
 }: {
   params: Promise<{ id: string }>;
 }) {
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
 
@@ -49,12 +51,12 @@ export default async function EditCustomerPage({
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft className="h-3.5 w-3.5" />
-          Retour à la fiche client
+          {t("customers.backToProfile")}
         </Link>
       </div>
 
       <PageHeader
-        title="Modifier le client"
+        title={t("customers.edit")}
         description={customer.name}
       />
 

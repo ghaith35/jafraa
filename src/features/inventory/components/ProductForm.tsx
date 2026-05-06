@@ -10,6 +10,7 @@ import {
   type CreateProductInput,
 } from "../schemas/inventory.schema";
 import { createProduct, updateProduct } from "../actions/product.actions";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -73,6 +74,7 @@ function Field({
 // ─── Component ───────────────────────────────────────────────────────────────
 
 export function ProductForm({ categories, product }: Props) {
+  const { t } = useAppI18n();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [serverError, setServerError] = useState<string | null>(null);
@@ -109,14 +111,14 @@ export function ProductForm({ categories, product }: Props) {
     startTransition(async () => {
       if (isEdit && product) {
         const result = await updateProduct(product.id, data);
-        if (result?.error) {
+        if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
           router.push("/dashboard/inventory?tab=products");
         }
       } else {
         const result = await createProduct(data);
-        if ("error" in result) {
+        if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
           router.push("/dashboard/inventory?tab=products");
@@ -129,7 +131,7 @@ export function ProductForm({ categories, product }: Props) {
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
       <div className="grid grid-cols-2 gap-4">
         {/* Name */}
-        <Field label="Nom du produit" required error={errors.name?.message}>
+        <Field label={t("inventory.productName")} required error={errors.name?.message}>
           <input
             {...form.register("name")}
             type="text"
@@ -140,13 +142,13 @@ export function ProductForm({ categories, product }: Props) {
         </Field>
 
         {/* Category */}
-        <Field label="Catégorie" error={errors.categoryId?.message} half>
+        <Field label={t("inventory.category")} error={errors.categoryId?.message} half>
           <select
             {...form.register("categoryId")}
             className={inputCls}
             disabled={isPending}
           >
-            <option value="">— Sans catégorie —</option>
+            <option value="">{t("inventory.noCategory")}</option>
             {categories.map((c) => (
               <option key={c.id} value={c.id}>
                 {c.name}
@@ -156,7 +158,7 @@ export function ProductForm({ categories, product }: Props) {
         </Field>
 
         {/* Brand */}
-        <Field label="Marque" error={errors.brand?.message} half>
+        <Field label={t("inventory.brand")} error={errors.brand?.message} half>
           <input
             {...form.register("brand")}
             type="text"
@@ -167,7 +169,7 @@ export function ProductForm({ categories, product }: Props) {
         </Field>
 
         {/* Model Reference */}
-        <Field label="Référence modèle" error={errors.modelReference?.message} half>
+        <Field label={t("inventory.modelReference")} error={errors.modelReference?.message} half>
           <input
             {...form.register("modelReference")}
             type="text"
@@ -182,14 +184,14 @@ export function ProductForm({ categories, product }: Props) {
           <input
             {...form.register("sku")}
             type="text"
-            placeholder="Auto-généré si vide"
+            placeholder={t("inventory.skuAuto")}
             className={cn(inputCls, "font-mono")}
             disabled={isPending}
           />
         </Field>
 
         {/* Barcode */}
-        <Field label="Code-barres" error={errors.barcode?.message} half>
+        <Field label={t("inventory.barcode")} error={errors.barcode?.message} half>
           <input
             {...form.register("barcode")}
             type="text"
@@ -200,7 +202,7 @@ export function ProductForm({ categories, product }: Props) {
         </Field>
 
         {/* Selling price */}
-        <Field label="Prix de vente (DZD)" required error={errors.sellingPrice?.message} half>
+        <Field label={t("inventory.sellingPrice")} required error={errors.sellingPrice?.message} half>
           <input
             {...form.register("sellingPrice", { valueAsNumber: true })}
             type="number"
@@ -214,7 +216,7 @@ export function ProductForm({ categories, product }: Props) {
 
         {/* Stock qty */}
         <Field
-          label={isEdit ? "Stock actuel" : "Stock initial"}
+          label={isEdit ? t("inventory.currentStock") : t("inventory.initialStock")}
           error={errors.stockQty?.message}
           half
         >
@@ -230,7 +232,7 @@ export function ProductForm({ categories, product }: Props) {
         </Field>
 
         {/* Low stock threshold */}
-        <Field label="Seuil stock bas" error={errors.lowStockThreshold?.message} half>
+        <Field label={t("inventory.lowStockThreshold")} error={errors.lowStockThreshold?.message} half>
           <input
             {...form.register("lowStockThreshold", { valueAsNumber: true })}
             type="number"
@@ -243,7 +245,7 @@ export function ProductForm({ categories, product }: Props) {
         </Field>
 
         {/* Image URL placeholder */}
-        <Field label="URL image (optionnel)" error={errors.imageUrl?.message} half>
+        <Field label={t("inventory.imageUrlOptional")} error={errors.imageUrl?.message} half>
           <input
             {...form.register("imageUrl")}
             type="url"
@@ -254,11 +256,11 @@ export function ProductForm({ categories, product }: Props) {
         </Field>
 
         {/* Notes */}
-        <Field label="Notes">
+        <Field label={t("common.notes")}>
           <textarea
             {...form.register("notes")}
             rows={2}
-            placeholder="Remarques internes…"
+            placeholder={t("inventory.internalNotes")}
             className={cn(inputCls, "resize-y")}
             disabled={isPending}
           />
@@ -279,11 +281,11 @@ export function ProductForm({ categories, product }: Props) {
         >
           {isPending
             ? isEdit
-              ? "Mise à jour…"
-              : "Création…"
+              ? t("inventory.updating")
+              : t("inventory.creating")
             : isEdit
-              ? "Enregistrer les modifications"
-              : "Créer le produit"}
+              ? t("inventory.updateProduct")
+              : t("inventory.createProduct")}
         </button>
         <button
           type="button"
@@ -291,7 +293,7 @@ export function ProductForm({ categories, product }: Props) {
           disabled={isPending}
           className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-50"
         >
-          Annuler
+          {t("common.cancel")}
         </button>
       </div>
     </form>

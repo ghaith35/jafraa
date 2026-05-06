@@ -4,14 +4,10 @@ import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useRef, useCallback } from "react";
 import { Search } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const TYPE_FILTERS = [
-  { value: "", label: "Tous" },
-  { value: "named", label: "Nommés" },
-  { value: "walkin", label: "De passage" },
-] as const;
+import { useAppI18n } from "@/lib/i18n/ui";
 
 export function CustomerSearchBar() {
+  const { t } = useAppI18n();
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -41,6 +37,12 @@ export function CustomerSearchBar() {
     timerRef.current = setTimeout(() => push({ q: value || undefined }), 300);
   }
 
+  const typeFilters = [
+    { value: "", label: t("customers.all") },
+    { value: "named", label: t("customers.namedShort") },
+    { value: "walkin", label: t("customers.walkinShort") },
+  ] as const;
+
   return (
     <div className="flex flex-col gap-3 mb-5">
       {/* Search input */}
@@ -50,14 +52,14 @@ export function CustomerSearchBar() {
           type="search"
           defaultValue={q}
           onChange={(e) => handleSearch(e.target.value)}
-          placeholder="Rechercher par nom ou téléphone…"
+          placeholder={t("customers.searchPlaceholder")}
           className="w-full rounded-md border border-input bg-background ps-9 pe-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring sm:max-w-sm"
         />
       </div>
 
       {/* Type filter tabs */}
       <div className="flex items-center gap-2 flex-wrap">
-        {TYPE_FILTERS.map((f) => (
+        {typeFilters.map((f) => (
           <button
             key={f.value}
             onClick={() => push({ type: f.value || undefined })}
@@ -79,7 +81,7 @@ export function CustomerSearchBar() {
             onChange={(e) => push({ archived: e.target.checked ? "1" : undefined })}
             className="h-3.5 w-3.5 rounded border-input accent-primary"
           />
-          <span className="text-xs text-muted-foreground">Afficher archivés</span>
+          <span className="text-xs text-muted-foreground">{t("customers.showArchived")}</span>
         </label>
       </div>
     </div>

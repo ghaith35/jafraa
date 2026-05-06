@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import { Search, User, X } from "lucide-react";
 import { searchNamedCustomers, type NamedCustomerResult } from "../actions/customer-search.actions";
+import { useTranslations } from "next-intl";
 
 interface CustomerSearchProps {
   onSelect: (customer: NamedCustomerResult | null) => void;
@@ -10,6 +11,7 @@ interface CustomerSearchProps {
 }
 
 export function CustomerSearch({ onSelect, selectedCustomer }: CustomerSearchProps) {
+  const t = useTranslations("pos");
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<NamedCustomerResult[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -58,14 +60,14 @@ export function CustomerSearch({ onSelect, selectedCustomer }: CustomerSearchPro
           <div className="min-w-0">
             <p className="font-semibold text-sm truncate">{selectedCustomer.name}</p>
             <p className="text-xs text-muted-foreground truncate">
-              {selectedCustomer.phone || "Pas de téléphone"} • Dette: {selectedCustomer.totalDebt.toFixed(2)} DZD
+              {selectedCustomer.phone || t("noPhone")} • {t("debtLabel")}: {selectedCustomer.totalDebt.toFixed(2)} DZD
             </p>
           </div>
         </div>
         <button
           onClick={handleClear}
           className="h-8 w-8 flex items-center justify-center rounded-md hover:bg-primary/10 transition-colors"
-          title="Changer de client"
+          title={t("changeCustomer")}
         >
           <X className="h-4 w-4 text-muted-foreground" />
         </button>
@@ -82,7 +84,7 @@ export function CustomerSearch({ onSelect, selectedCustomer }: CustomerSearchPro
           value={query}
           onChange={handleChange}
           onFocus={() => query.length >= 2 && setShowResults(true)}
-          placeholder="Client (Nom ou téléphone)..."
+          placeholder={t("customerPlaceholder")}
           className="flex h-10 w-full rounded-lg border border-input bg-background pl-9 pr-4 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         />
         {isSearching && (
@@ -96,7 +98,7 @@ export function CustomerSearch({ onSelect, selectedCustomer }: CustomerSearchPro
         <div className="absolute z-50 mt-1 w-full rounded-md border border-border bg-popover p-1 shadow-md outline-none">
           {results.length === 0 && !isSearching ? (
             <div className="py-2 px-3 text-sm text-muted-foreground italic">
-              Aucun client trouvé
+              {t("noCustomerFound")}
             </div>
           ) : (
             <div className="max-h-[200px] overflow-y-auto">
@@ -110,7 +112,7 @@ export function CustomerSearch({ onSelect, selectedCustomer }: CustomerSearchPro
                   <div className="min-w-0">
                     <p className="font-medium truncate">{customer.name}</p>
                     <p className="text-[10px] text-muted-foreground truncate">
-                      {customer.phone || "—"} • Dette: {customer.totalDebt.toFixed(2)} DZD
+                      {customer.phone || "—"} • {t("debtLabel")}: {customer.totalDebt.toFixed(2)} DZD
                     </p>
                   </div>
                 </button>

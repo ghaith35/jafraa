@@ -18,12 +18,14 @@ import {
   type RefundableSale, 
   type RefundConfirmation 
 } from "../actions/refund.actions";
+import { useTranslations } from "next-intl";
 
 interface PosRefundViewProps {
   hasOpenSession: boolean;
 }
 
 export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
+  const t = useTranslations("pos");
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearching, startSearching] = useTransition();
   const [sale, setSale] = useState<RefundableSale | null>(null);
@@ -77,12 +79,12 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
       .map(([lineId, quantity]) => ({ lineId, quantity }));
 
     if (lines.length === 0) {
-      setError("Veuillez sélectionner au moins un article à rembourser");
+      setError(t("refundSelectItemError"));
       return;
     }
 
     if (!reason.trim()) {
-      setError("Veuillez indiquer le motif du remboursement");
+      setError(t("refundReasonRequired"));
       return;
     }
 
@@ -103,9 +105,9 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
     return (
       <div className="rounded-xl border border-destructive/20 bg-destructive/5 p-6 text-center">
         <AlertTriangle className="mx-auto h-8 w-8 text-destructive mb-2" />
-        <h3 className="text-lg font-bold">Caisse fermée</h3>
+        <h3 className="text-lg font-bold">{t("closedTitle")}</h3>
         <p className="text-muted-foreground">
-          Vous devez ouvrir une session de caisse avant de pouvoir effectuer des remboursements.
+          {t("closedDescription")}
         </p>
       </div>
     );
@@ -118,12 +120,12 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
           <div className="mx-auto h-16 w-16 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center mb-4">
             <CheckCircle2 className="h-10 w-10 text-emerald-600 dark:text-emerald-400" />
           </div>
-          <h2 className="text-2xl font-bold text-emerald-900 dark:text-emerald-300">Remboursement validé</h2>
+          <h2 className="text-2xl font-bold text-emerald-900 dark:text-emerald-300">{t("refundValidated")}</h2>
           <p className="text-emerald-700 dark:text-emerald-400 mt-2 font-medium">
-            Le montant de <span className="text-xl font-black">{confirmation.totalRefunded.toFixed(2)} DZD</span> a été remboursé en espèces.
+            {t("refundCashMessage", { amount: confirmation.totalRefunded.toFixed(2) })}
           </p>
           <div className="mt-6 pt-6 border-t border-emerald-200 dark:border-emerald-800 flex flex-col items-center gap-2">
-            <span className="text-xs uppercase tracking-widest text-emerald-600 dark:text-emerald-500 font-bold">Numéro de reçu</span>
+            <span className="text-xs uppercase tracking-widest text-emerald-600 dark:text-emerald-500 font-bold">{t("receiptNumber")}</span>
             <span className="text-lg font-mono font-bold text-emerald-900 dark:text-emerald-300">{confirmation.refundNumber}</span>
           </div>
           <div className="mt-6">
@@ -134,7 +136,7 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
               className="inline-flex items-center gap-2 text-sm font-bold text-emerald-700 dark:text-emerald-400 hover:underline"
             >
               <Printer className="h-4 w-4" />
-              Imprimer le reçu de remboursement
+              {t("printRefundReceipt")}
             </a>
           </div>
         </div>
@@ -142,7 +144,7 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
           onClick={() => setConfirmation(null)}
           className="w-full h-12 rounded-xl bg-primary text-primary-foreground font-bold hover:bg-primary/90 transition-all flex items-center justify-center gap-2"
         >
-          Effectuer un autre remboursement
+          {t("anotherRefund")}
         </button>
       </div>
     );
@@ -155,7 +157,7 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
         <div className="rounded-xl border border-border bg-card p-6 shadow-sm space-y-4">
           <h2 className="text-lg font-bold flex items-center gap-2">
             <Search className="h-5 w-5 text-primary" />
-            Trouver une vente
+            {t("findSale")}
           </h2>
           <form onSubmit={handleSearch} className="flex gap-2">
             <div className="relative flex-1">
@@ -174,7 +176,7 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
               className="h-11 rounded-lg bg-primary px-6 font-bold text-primary-foreground hover:bg-primary/90 disabled:opacity-50 transition-all flex items-center gap-2"
             >
               {isSearching ? <Loader2 className="h-4 w-4 animate-spin" /> : <Search className="h-4 w-4" />}
-              Rechercher
+              {t("search")}
             </button>
           </form>
           {error && (
@@ -195,10 +197,10 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
               className="text-sm font-medium text-muted-foreground hover:text-foreground flex items-center gap-1 transition-colors"
             >
               <ChevronLeft className="h-4 w-4" />
-              Retour à la recherche
+              {t("backToSearch")}
             </button>
             <div className="text-right">
-              <span className="text-xs text-muted-foreground uppercase tracking-tighter font-bold">Vente</span>
+              <span className="text-xs text-muted-foreground uppercase tracking-tighter font-bold">{t("sale")}</span>
               <h3 className="text-lg font-black">{sale.saleNumber}</h3>
             </div>
           </div>
@@ -210,10 +212,10 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
                 <table className="w-full text-sm">
                   <thead className="bg-muted/50 border-b border-border">
                     <tr>
-                      <th className="px-4 py-3 text-left font-bold">Article</th>
-                      <th className="px-4 py-3 text-center font-bold">Qté</th>
-                      <th className="px-4 py-3 text-right font-bold">P.U.</th>
-                      <th className="px-4 py-3 text-center font-bold">Rembourser</th>
+                      <th className="px-4 py-3 text-left font-bold">{t("item")}</th>
+                      <th className="px-4 py-3 text-center font-bold">{t("qty")}</th>
+                      <th className="px-4 py-3 text-right font-bold">{t("unitPriceShort")}</th>
+                      <th className="px-4 py-3 text-center font-bold">{t("refund")}</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-border">
@@ -224,13 +226,13 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
                           <td className="px-4 py-4">
                             <p className="font-semibold">{line.description}</p>
                             <p className="text-xs text-muted-foreground">
-                              {line.lineType === "product" ? "Produit" : line.lineType === "part" ? "Pièce" : "Service"}
+                              {line.lineType === "product" ? t("product") : line.lineType === "part" ? t("part") : t("service")}
                             </p>
                           </td>
                           <td className="px-4 py-4 text-center">
                             {line.quantity}
                             {line.alreadyRefundedQty > 0 && (
-                              <p className="text-[10px] text-destructive font-bold">-{line.alreadyRefundedQty} déjà remb.</p>
+                              <p className="text-[10px] text-destructive font-bold">-{line.alreadyRefundedQty} {t("alreadyRefundedShort")}</p>
                             )}
                           </td>
                           <td className="px-4 py-4 text-right font-mono">
@@ -261,26 +263,26 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
             {/* Right: Summary & Action */}
             <div className="space-y-4">
               <div className="rounded-xl border border-border bg-card p-5 shadow-sm space-y-4">
-                <h3 className="font-bold border-b border-border pb-2">Récapitulatif</h3>
+                <h3 className="font-bold border-b border-border pb-2">{t("summary")}</h3>
                 
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Total payé</span>
+                    <span className="text-muted-foreground">{t("totalPaid")}</span>
                     <span className="font-bold">{sale.totalAmount.toFixed(2)} DZD</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Espèces reçues</span>
+                    <span className="text-muted-foreground">{t("cashReceived")}</span>
                     <span className="font-bold">{sale.cashReceivedAmount.toFixed(2)} DZD</span>
                   </div>
                   {sale.debtAmount > 0 && (
                     <div className="flex justify-between text-destructive">
-                      <span className="font-medium">Dette</span>
+                      <span className="font-medium">{t("debt")}</span>
                       <span className="font-bold">{sale.debtAmount.toFixed(2)} DZD</span>
                     </div>
                   )}
                   {sale.alreadyRefundedCash > 0 && (
                     <div className="flex justify-between text-amber-600">
-                      <span className="font-medium">Déjà remboursé</span>
+                      <span className="font-medium">{t("alreadyRefunded")}</span>
                       <span className="font-bold">-{sale.alreadyRefundedCash.toFixed(2)} DZD</span>
                     </div>
                   )}
@@ -288,16 +290,16 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
 
                 <div className="pt-2 border-t border-border">
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-base font-bold">À rembourser</span>
+                    <span className="text-base font-bold">{t("toRefund")}</span>
                     <span className="text-xl font-black text-primary">{calculateTotalRefund().toFixed(2)} DZD</span>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Motif du remboursement</label>
+                    <label className="text-xs font-bold uppercase tracking-widest text-muted-foreground">{t("refundReason")}</label>
                     <textarea
                       value={reason}
                       onChange={(e) => setReason(e.target.value)}
-                      placeholder="Ex: Client a changé d'avis, Article défectueux..."
+                      placeholder={t("refundReasonPlaceholder")}
                       className="w-full h-24 rounded-lg border border-input bg-background p-3 text-sm focus:ring-1 focus:ring-primary outline-none resize-none"
                     />
                   </div>
@@ -315,7 +317,7 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
                     className="w-full mt-4 h-12 rounded-lg bg-primary text-primary-foreground font-bold hover:bg-primary/90 disabled:opacity-50 transition-all flex items-center justify-center gap-2"
                   >
                     {isRefunding ? <Loader2 className="h-5 w-5 animate-spin" /> : <RotateCcw className="h-5 w-5" />}
-                    Confirmer le remboursement
+                    {t("confirmRefund")}
                   </button>
                 </div>
               </div>
@@ -323,7 +325,7 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
               {sale.debtAmount > 0 && (
                 <div className="p-4 rounded-xl border border-amber-200 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-800 text-amber-800 dark:text-amber-300 text-xs italic">
                   <AlertTriangle className="h-4 w-4 inline mr-1 mb-1" />
-                  Cette vente comporte une dette. Le remboursement est limité au montant payé en espèces.
+                  {t("refundDebtWarning")}
                 </div>
               )}
             </div>

@@ -4,6 +4,7 @@ import { useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTransition, useState, useCallback } from "react";
 import { cn } from "@/lib/utils";
+import { useAppI18n } from "@/lib/i18n/ui";
 import { createAssetSchema, type CreateAssetInput } from "../schemas/asset.schema";
 import { createAsset } from "../actions/asset.actions";
 import {
@@ -75,6 +76,7 @@ export function AssetForm({
   onSuccess,
   onCancel,
 }: Props) {
+  const { t } = useAppI18n();
   const [isPending, startTransition] = useTransition();
   const [serverError, setServerError] = useState<string | null>(null);
   const [brands, setBrands] = useState<Brand[]>([]);
@@ -160,8 +162,8 @@ export function AssetForm({
   function onSubmit(data: CreateAssetInput) {
     setServerError(null);
     startTransition(async () => {
-      const result = await createAsset(customerId, data);
-      if (result?.error) {
+      const result = (await createAsset(customerId, data)) as { error?: string } | void;
+      if (result && "error" in result && result.error) {
         setServerError(result.error);
       } else {
         form.reset();
@@ -179,12 +181,12 @@ export function AssetForm({
       onSubmit={form.handleSubmit(onSubmit)}
       className="rounded-lg border border-border bg-card p-4 space-y-4"
     >
-      <p className="text-sm font-semibold text-foreground">Ajouter un appareil</p>
+      <p className="text-sm font-semibold text-foreground">{t("customers.asset.add")}</p>
 
       <div className="grid grid-cols-2 gap-3">
         {/* Category (from catalog) */}
         <Field
-          label="Catégorie"
+          label={t("customers.asset.category")}
           error={errors.deviceCategoryId?.message ?? errors.deviceTypeName?.message}
         >
           <select
@@ -194,7 +196,7 @@ export function AssetForm({
             className={inputCls}
             disabled={isPending}
           >
-            <option value="">— Sélectionner —</option>
+            <option value="">{t("common.select")}</option>
             {categories.map((cat) => (
               <option key={cat.id} value={cat.id}>
                 {cat.nameFr}
@@ -205,7 +207,7 @@ export function AssetForm({
 
         {/* Brand (from catalog — cascading) */}
         <Field
-          label="Marque"
+          label={t("customers.asset.brand")}
           error={errors.deviceBrandId?.message ?? errors.customBrand?.message}
         >
           {brands.length > 0 || loadingBrands ? (
@@ -217,7 +219,7 @@ export function AssetForm({
               disabled={isPending || loadingBrands}
             >
               <option value="">
-                {loadingBrands ? "Chargement…" : "— Sélectionner —"}
+                {loadingBrands ? t("common.loading") : t("common.select")}
               </option>
               {brands.map((b) => (
                 <option key={b.id} value={b.id}>
@@ -229,7 +231,7 @@ export function AssetForm({
             <input
               {...form.register("customBrand")}
               type="text"
-              placeholder="Apple, Samsung…"
+              placeholder={t("customers.asset.placeholderBrand")}
               className={inputCls}
               disabled={isPending}
             />
@@ -238,7 +240,7 @@ export function AssetForm({
 
         {/* Model family (from catalog — cascading) */}
         <Field
-          label="Famille / Modèle"
+          label={t("customers.asset.family")}
           error={errors.deviceModelFamilyId?.message ?? errors.customModel?.message}
         >
           {families.length > 0 || loadingFamilies ? (
@@ -248,7 +250,7 @@ export function AssetForm({
               disabled={isPending || loadingFamilies}
             >
               <option value="">
-                {loadingFamilies ? "Chargement…" : "— Sélectionner —"}
+                {loadingFamilies ? t("common.loading") : t("common.select")}
               </option>
               {families.map((f) => (
                 <option key={f.id} value={f.id}>
@@ -269,11 +271,11 @@ export function AssetForm({
 
         {/* Custom brand (shown when brand dropdown has items, as override) */}
         {brands.length > 0 && (
-          <Field label="Marque personnalisée" half>
+          <Field label={t("customers.asset.customBrand")} half>
             <input
               {...form.register("customBrand")}
               type="text"
-              placeholder="Si absent de la liste…"
+              placeholder={t("customers.asset.placeholderMissing")}
               className={inputCls}
               disabled={isPending}
             />
@@ -282,11 +284,11 @@ export function AssetForm({
 
         {/* Custom model (shown when family dropdown has items, as override) */}
         {(families.length > 0 || selectedBrandId) && (
-          <Field label="Modèle personnalisé" half>
+          <Field label={t("customers.asset.customModel")} half>
             <input
               {...form.register("customModel")}
               type="text"
-              placeholder="Si absent de la liste…"
+              placeholder={t("customers.asset.placeholderMissing")}
               className={inputCls}
               disabled={isPending}
             />
@@ -294,18 +296,18 @@ export function AssetForm({
         )}
 
         {/* Color */}
-        <Field label="Couleur" half>
+        <Field label={t("customers.asset.color")} half>
           <input
             {...form.register("color")}
             type="text"
-            placeholder="Noir, Blanc…"
+            placeholder={t("customers.asset.placeholderColor")}
             className={inputCls}
             disabled={isPending}
           />
         </Field>
 
         {/* Storage */}
-        <Field label="Stockage / RAM" half>
+        <Field label={t("customers.asset.storage")} half>
           <input
             {...form.register("storage")}
             type="text"
@@ -316,7 +318,7 @@ export function AssetForm({
         </Field>
 
         {/* IMEI */}
-        <Field label="IMEI / Numéro de série">
+        <Field label={t("customers.asset.imei")}>
           <input
             {...form.register("imeiSerial")}
             type="text"
@@ -327,11 +329,11 @@ export function AssetForm({
         </Field>
 
         {/* Notes */}
-        <Field label="Notes">
+        <Field label={t("customers.asset.notes")}>
           <textarea
             {...form.register("notes")}
             rows={2}
-            placeholder="État de l'appareil, accessoires inclus…"
+            placeholder={t("customers.asset.placeholderNotes")}
             className={cn(inputCls, "resize-y")}
             disabled={isPending}
           />
@@ -350,7 +352,7 @@ export function AssetForm({
           disabled={isPending}
           className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 disabled:opacity-50 transition-colors"
         >
-          {isPending ? "Ajout en cours…" : "Ajouter l'appareil"}
+          {isPending ? t("customers.asset.adding") : t("customers.asset.addButton")}
         </button>
         <button
           type="button"
@@ -358,7 +360,7 @@ export function AssetForm({
           disabled={isPending}
           className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-50"
         >
-          Annuler
+          {t("common.cancel")}
         </button>
       </div>
     </form>

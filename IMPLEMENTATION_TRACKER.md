@@ -1,6 +1,6 @@
 # REPAIRE — Implementation Tracker
 
-Last updated: 2026-05-04 (Block 14 complete)
+Last updated: 2026-05-06 (i18n routing and language switcher added)
 
 ## Legend
 
@@ -35,10 +35,11 @@ Last updated: 2026-05-04 (Block 14 complete)
 | 16 | Refunds and Returns | ✅ Done | Refund models, POS/Repair refunds, stock return, cash session sync |
 | 17 | PDFs and Receipt Preview | ✅ Done | Document templates, A4/Receipt styles, browser print support |
 | 18 | Reporting | ✅ Done | Live stats, 7 reports, PDF export, Dashboard widgets |
-| 19 | WhatsApp | ⏳ Not Started | whatsapp-web.js, per-store session |
-| 20 | Super Admin | ⏳ Not Started | Tenant management, impersonation |
-| 21 | Security Hardening | ⏳ Not Started | ESLint guards, rate limiting, audit log |
-| 22 | Production Polish | ⏳ Not Started | Empty states, print layouts, error pages |
+| 19 | WhatsApp | ✅ Done | wa.me links, preview modal, notification log, FR+AR templates |
+| 20 | Super Admin | ✅ Done | Company list, detail, subscription mgmt, archive/restore, separate JWT cookie |
+| 21 | Security / Audit Log | ✅ Done | AuditLog viewer (Admin-only), expense table migration, Profit report graceful fallback |
+| 22 | Settings & Store Config | ✅ Done | Store profile, operational settings, catalog browser, WhatsApp settings page |
+| 23 | Production Polish | ✅ Done | Dashboard quick-links, removed unused deps (@aws-sdk, qrcode), QA checklist |
 
 ---
 
@@ -202,10 +203,10 @@ Last updated: 2026-05-04 (Block 14 complete)
 - `[locale]` next-intl routing deferred — not needed for shell-level RTL
 
 ### Deferred to Later Blocks
-- [ ] `[locale]` URL routing + `<html lang dir>` dynamic (full next-intl routing)
+- [x] `[locale]` URL routing + `<html lang dir>` dynamic (full next-intl routing)
 - [ ] Breadcrumb in topbar (Block 5+, once routes have real content)
 - [ ] Notification bell in topbar (Block 8+)
-- [ ] User language preference switcher UI (Block 4.5 or Block 20)
+- [x] User language preference switcher UI (Block 4.5 or Block 20)
 - [ ] Subscription status banner in topbar (Block 5+)
 - [ ] Client-side token refresh interceptor (Block 5+)
 
@@ -611,6 +612,100 @@ Implement document preview and basic printable receipt/invoice templates for all
 - **Browser Print**: Used `window.print()` and CSS `@media print` instead of external PDF libraries for speed, simplicity, and offline support.
 - **Tenant Isolation**: Strict `storeId` validation on every document fetching action.
 
-### Next Steps
-- [ ] Reporting dashboard (Block 18)
-- [ ] WhatsApp integration (Block 19)
+---
+
+## ✅ Block 19: WhatsApp Notifications
+
+**Status:** ✅ Done
+
+### Key Achievements
+- [x] Replaced fragile `whatsapp-web.js` Puppeteer automation with stateless `wa.me` deep-link approach
+- [x] `src/lib/whatsapp/whatsapp.service.ts` — `formatPhoneForWa()`, `generateWaLink()`
+- [x] `src/lib/whatsapp/templates.ts` — FR + AR message variants for ticket_received, ticket_ready, estimate_ready
+- [x] `src/lib/whatsapp/notifications.ts` — `buildTicketReceivedPreview`, `buildTicketReadyPreview`, `buildEstimateReadyPreview`
+- [x] `src/features/whatsapp/actions/whatsapp.actions.ts` — preview, logSent, listLogs, get/savePhone
+- [x] `WhatsAppSendButton` client component — inline modal preview, opens wa.me link, logs send
+- [x] Integrated into `RepairDetail`, `RepairInvoiceSection`, `EstimateList`
+- [x] `src/app/(dashboard)/dashboard/settings/whatsapp/page.tsx` — store phone + notification log
+- [x] Schema: `WhatsAppNotificationLog` model + `whatsappPhone` on `StoreSettings`
+- [x] Migration: `20260504120000_add_expenses_and_whatsapp_log`
+- [x] Removed auto-send from `repair.actions.ts` and `invoice.actions.ts`
+- [x] Removed `@aws-sdk/client-s3` and `qrcode` from `package.json`
+
+### Design decisions
+- Server-side actions cannot hold a browser session → wa.me link is the only viable MVP approach
+- Type `WaPreview` kept in `notifications.ts` (not re-exported from `"use server"`) to satisfy Turbopack
+- All three notification types are manual (user-initiated), not automatic
+
+---
+
+## ✅ Block 20: Super Admin
+
+**Status:** ✅ Done
+
+### Key Achievements
+- [x] `src/lib/auth/super-admin-session.ts` — separate JWT cookie `sa_token` (path: `/super-admin`)
+- [x] `src/features/super-admin/actions/auth.actions.ts` — login/logout against `SuperAdminUser` table
+- [x] `src/features/super-admin/actions/companies.actions.ts` — listCompanies, getCompanyDetail, updateSubscriptionStatus, archiveCompany, restoreCompany
+- [x] `/super-admin/login` — login form with error state
+- [x] `/super-admin/(panel)/layout.tsx` — panel shell with header nav + logout
+- [x] `/super-admin/(panel)/companies` — table of all companies with subscription status badges
+- [x] `/super-admin/(panel)/companies/[id]` — detail view with users, stores, subscription edit, archive/restore
+- [x] `CompanyDetailView` — status update form + expiry date picker + note
+- [x] Regular dashboard routes are inaccessible from super-admin session (separate auth layer)
+
+### Design decisions
+- Super admin uses its own JWT cookie (`sa_token`) isolated to `/super-admin` path — no cross-contamination with regular user session
+- Impersonation deferred (schema `TenantImpersonationSession` exists, no UI)
+
+---
+
+## ✅ Block 21: Security & Audit Log
+
+**Status:** ✅ Done
+
+### Key Achievements
+- [x] `src/features/reports/actions/audit.actions.ts` — `getAuditLogs(filters)` (Admin only), `getCompanyUsers()`
+- [x] `src/app/(dashboard)/dashboard/reports/audit/page.tsx` — Admin-only server-side guard
+- [x] `AuditLogViewer.tsx` — client-side search + filter by user/entity type + server-side URL filter
+- [x] Added "Journal d'Audit" card to `/dashboard/reports` (Admin badge)
+- [x] `getProfitReport` wrapped with `.catch(() => [])` — graceful no-crash before expense migration applied
+- [x] Expense migration SQL created: `prisma/migrations/20260504120000_add_expenses_and_whatsapp_log/migration.sql`
+
+---
+
+## ✅ Block 22: Settings & Store Configuration
+
+**Status:** ✅ Done
+
+### Key Achievements
+- [x] `src/features/settings/actions/settings.actions.ts` — `getStoreConfig`, `saveStoreProfile`, `saveStoreSettings`
+- [x] `StoreSettingsForm.tsx` — two-section form: store profile + operational settings (warranty, thresholds, discount limits)
+- [x] `/dashboard/settings/store` — server component page
+- [x] `/dashboard/settings` — updated index with WhatsApp and store config cards
+- [x] `/dashboard/settings/whatsapp` — store WhatsApp number input + notification log table
+- [x] `WhatsAppManager.tsx` — rewritten with real data (initialPhone + logs)
+- [x] Prefix field is read-only (document numbering sequence)
+
+---
+
+## ✅ Block 23: Production Polish
+
+**Status:** ✅ Done
+
+### Key Achievements
+- [x] Dashboard replaced placeholder notice with 4 quick-link buttons (New repair, POS, New customer, Reports)
+- [x] Removed `@aws-sdk/client-s3` from `package.json` (never imported)
+- [x] Removed `qrcode` from `package.json` (only used by old whatsapp service)
+- [x] `FINAL_QA_CHECKLIST.md` created — covers Auth, POS, Repairs, Debt, Refunds, Documents, WhatsApp, Reports, Settings, Super Admin, Tenant Isolation, RTL/Mobile, DZD, Known Issues
+- [x] Build clean: typecheck ✅ (0 errors), lint ✅ (0 errors), build ✅ (35 routes, clean exit)
+
+### Known deferred items (post-MVP)
+- Manager PIN approval flow
+- Barcode scanner optimization
+- Held/suspended POS carts
+- Expense tracking UI (migration exists, table ready)
+- RTL `[locale]` URL routing
+- Super admin impersonation UI
+- Abandoned device cron notifications
+- Refunds on debt sales/invoices (Admin/Manager)

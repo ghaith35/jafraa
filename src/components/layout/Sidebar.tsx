@@ -1,8 +1,10 @@
 "use client";
 
 import { X, LogOut } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { useAppI18n } from "@/lib/i18n/ui";
 import { useState } from "react";
+import { useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { NavItem } from "./NavItem";
 import { getNavItemsForRole } from "./nav-items";
@@ -21,13 +23,6 @@ interface Props {
   dir: "ltr" | "rtl";
 }
 
-const ROLE_LABELS: Record<UserRole, string> = {
-  Admin: "Administrateur",
-  Manager: "Gérant",
-  Cashier: "Caissier",
-  Technician: "Technicien",
-};
-
 function userInitials(name: string): string {
   return name
     .split(" ")
@@ -40,6 +35,9 @@ export function Sidebar({ user, company, mobileOpen, onMobileClose, dir }: Props
   const router = useRouter();
   const [loggingOut, setLoggingOut] = useState(false);
   const navItems = getNavItemsForRole(user.role);
+  const tCommon = useTranslations("common");
+  const tAuth = useTranslations("auth");
+  const { t } = useAppI18n();
 
   async function handleLogout() {
     setLoggingOut(true);
@@ -79,7 +77,7 @@ export function Sidebar({ user, company, mobileOpen, onMobileClose, dir }: Props
           <button
             onClick={onMobileClose}
             className="lg:hidden rounded-md p-1 text-sidebar-muted-foreground hover:text-sidebar-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sidebar-accent"
-            aria-label="Fermer le menu"
+            aria-label={tCommon("close")}
           >
             <X className="h-4 w-4" />
           </button>
@@ -105,7 +103,7 @@ export function Sidebar({ user, company, mobileOpen, onMobileClose, dir }: Props
                 {user.name}
               </p>
               <p className="text-xs text-sidebar-muted-foreground">
-                {ROLE_LABELS[user.role]}
+                {t(`role.${user.role}` as any)}
               </p>
             </div>
           </div>
@@ -119,7 +117,7 @@ export function Sidebar({ user, company, mobileOpen, onMobileClose, dir }: Props
             )}
           >
             <LogOut className="h-4 w-4 shrink-0" />
-            <span>{loggingOut ? "Déconnexion…" : "Se déconnecter"}</span>
+            <span>{loggingOut ? `${tAuth("signOut")}…` : tAuth("signOut")}</span>
           </button>
         </div>
       </aside>

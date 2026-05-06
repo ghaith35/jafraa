@@ -1,4 +1,5 @@
 import { PageHeader } from "@/components/shared/PageHeader";
+import { getAppI18n } from "@/lib/i18n/server";
 import { getSession } from "@/lib/auth/session";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
@@ -7,6 +8,7 @@ import { RepairForm } from "@/features/repairs/components/RepairForm";
 export const metadata = { title: "Nouveau Ticket | Réparations" };
 
 export default async function NewRepairPage() {
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
 
@@ -50,8 +52,8 @@ export default async function NewRepairPage() {
   return (
     <div className="max-w-4xl mx-auto space-y-6">
       <PageHeader
-        title="Nouveau Ticket de Réparation"
-        description="Enregistrez un nouvel appareil pour réparation"
+        title={t("repairs.newTicketTitle")}
+        description={t("repairs.newTicketDescription")}
       />
       <RepairForm customers={customers} technicians={technicians} />
     </div>

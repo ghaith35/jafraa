@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { Loader2, Lock } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { ItemSearch } from "./ItemSearch";
 import { CartPanel } from "./CartPanel";
 import { SaleConfirmationView } from "./SaleConfirmation";
@@ -22,6 +23,7 @@ interface PosCheckoutProps {
 }
 
 export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
+  const t = useTranslations("pos");
   const router = useRouter();
   const [cartLines, setCartLines] = useState<CartLine[]>([]);
   const [discount, setDiscount] = useState<number>(0);
@@ -110,22 +112,20 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
 
   const handleCheckout = async () => {
     if (cartLines.length === 0) {
-      setError("Le panier est vide");
+      setError(t("cartEmpty"));
       return;
     }
 
     // Validation for full-cash or debt
     if (!debtEnabled || !selectedCustomer) {
       if (typeof cashReceived !== "number" || cashReceived < total) {
-        setError(
-          `Espèces insuffisantes. Total: ${total.toFixed(2)} DZD`
-        );
+        setError(t("insufficientCash", { amount: total.toFixed(2) }));
         return;
       }
     } else {
       // Debt enabled: ensure cashReceived is at least 0 (it is by type)
       if (typeof cashReceived !== "number") {
-        setError("Entrez le montant reçu (même si 0)");
+        setError(t("enterReceivedAmount"));
         return;
       }
     }
@@ -171,15 +171,15 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
             <Lock className="h-6 w-6 text-muted-foreground" />
           </div>
         </div>
-        <h2 className="text-lg font-bold mb-2">Caisse fermée</h2>
+        <h2 className="text-lg font-bold mb-2">{t("closedTitle")}</h2>
         <p className="text-sm text-muted-foreground mb-4">
-          Vous devez ouvrir une session de caisse avant de pouvoir effectuer des ventes.
+          {t("closedDescription")}
         </p>
         <Link
           href="/dashboard/pos/cash-register"
           className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90"
         >
-          Ouvrir la caisse
+          {t("openCashRegister")}
         </Link>
       </div>
     );
@@ -214,7 +214,7 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
         <div className="pt-4 mt-4 border-t border-border space-y-4">
           {/* Customer Selection */}
           <div className="space-y-2">
-            <label className="text-sm font-semibold">Client</label>
+            <label className="text-sm font-semibold">{t("customer")}</label>
             <CustomerSearch 
               selectedCustomer={selectedCustomer}
               onSelect={(c) => {
@@ -230,7 +230,7 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
             {canApplyDiscount && (
               <div className="flex items-center justify-between gap-3">
                 <label className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                  Remise (DZD)
+                  {t("discount")}
                 </label>
                 <input
                   type="number"
@@ -248,7 +248,7 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
 
             {/* Total */}
             <div className="flex items-center justify-between">
-              <span className="text-base font-bold">Total</span>
+              <span className="text-base font-bold">{t("total")}</span>
               <span className="text-2xl font-black text-primary">
                 {total.toFixed(2)} DZD
               </span>
@@ -256,7 +256,7 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
 
             {/* Cash received */}
             <div className="space-y-1.5">
-              <label className="text-sm font-bold">Espèces reçues (DZD)</label>
+              <label className="text-sm font-bold">{t("cashReceived")}</label>
               <input
                 type="number"
                 min="0"
@@ -276,7 +276,7 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
             {isDebtMode && (
               <div className="p-3 rounded-lg border border-amber-200 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-800 text-center">
                 <span className="text-xs font-medium text-amber-800 dark:text-amber-300 block">
-                  Le reste sera mis en dette
+                  {t("remainingDebt")}
                 </span>
                 <span className="text-xl font-black text-amber-600">
                   {debtAmount.toFixed(2)} DZD
@@ -294,7 +294,7 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
                 }`}
               >
                 <span className="text-xs font-medium text-muted-foreground block">
-                  Monnaie à rendre
+                  {t("changeDue")}
                 </span>
                 <span
                   className={`text-xl font-black ${
@@ -317,7 +317,7 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
                   className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
                 />
                 <label htmlFor="debt-toggle" className="text-sm font-medium cursor-pointer">
-                  Mettre le reste en dette client
+                  {t("debtToggle")}
                 </label>
               </div>
             )}
@@ -344,8 +344,8 @@ export function PosCheckout({ hasOpenSession, userRole }: PosCheckoutProps) {
                 <Loader2 className="mr-2 h-5 w-5 animate-spin" />
               ) : null}
               {isDebtMode 
-                ? `Encaisser (Crédit: ${debtAmount.toFixed(0)})` 
-                : `Encaisser ${total.toFixed(0)} DZD`}
+                ? t("checkoutWithDebt", { amount: debtAmount.toFixed(0) })
+                : t("checkoutAmount", { amount: total.toFixed(0) })}
             </button>
           </div>
         )}

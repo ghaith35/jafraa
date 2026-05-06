@@ -5,12 +5,14 @@ import { ReportShell } from "@/features/reports/components/ReportShell";
 import { KpiGrid, KpiCard } from "@/features/reports/components/KpiGrid";
 import { ArrowRightLeft, ArrowDownRight, ArrowUpRight } from "lucide-react";
 import { parseISO, subDays } from "date-fns";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export default async function CashFlowReportPage({
   searchParams,
 }: {
   searchParams: Promise<{ start?: string; end?: string }>;
 }) {
+  const { t } = await getAppI18n();
   const params = await searchParams;
   const startDate = params.start ? parseISO(params.start) : subDays(new Date(), 30);
   const endDate = params.end ? parseISO(params.end) : new Date();
@@ -20,8 +22,8 @@ export default async function CashFlowReportPage({
 
   return (
     <ReportShell
-      title="Flux de Trésorerie"
-      description="Suivi des entrées et sorties de caisse réelles"
+      title={t("reports.cashFlow.title")}
+      description={t("reports.cashFlow.description")}
     >
       <KpiGrid cols={3}>
         <KpiCard

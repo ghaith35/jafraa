@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useTransition, useState } from "react";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { useAppI18n } from "@/lib/i18n/ui";
 import {
   createCustomerSchema,
   updateCustomerSchema,
@@ -73,6 +74,7 @@ const inputCls =
   "w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring disabled:opacity-50";
 
 export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
+  const { t } = useAppI18n();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [serverError, setServerError] = useState<string | null>(null);
@@ -122,7 +124,7 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
               customerGroupId: data.customerGroupId || undefined,
             });
 
-      if (result?.error) {
+      if (result && "error" in result && result.error) {
         setServerError(result.error);
       }
       // On success: redirect() was called inside the server action
@@ -133,7 +135,7 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
       {/* Customer type toggle — create mode only */}
       {mode === "create" && (
-        <Field label="Type de client" required>
+        <Field label={t("customers.customerType")} required>
           <Controller
             name="customerType"
             control={form.control}
@@ -141,8 +143,8 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
               <div className="flex gap-0 rounded-md border border-input overflow-hidden">
                 {(
                   [
-                    { value: "named", label: "Client nommé" },
-                    { value: "walkin", label: "Client de passage" },
+                    { value: "named", label: t("customers.named") },
+                    { value: "walkin", label: t("customers.walkin") },
                   ] as const
                 ).map(({ value, label }) => (
                   <button
@@ -166,11 +168,11 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
       )}
 
       {/* Name */}
-      <Field label="Nom" required error={form.formState.errors.name?.message}>
+      <Field label={t("customers.name")} required error={form.formState.errors.name?.message}>
         <input
           {...form.register("name")}
           type="text"
-          placeholder={customerType === "walkin" ? "Client de passage" : "Nom du client"}
+          placeholder={customerType === "walkin" ? t("customers.walkinName") : t("customers.customerNamePlaceholder")}
           className={inputCls}
           disabled={isPending}
         />
@@ -179,7 +181,7 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
       {/* Phone — create mode only */}
       {mode === "create" && (
         <Field
-          label="Téléphone"
+          label={t("customers.phone")}
           required={customerType === "named"}
           error={form.formState.errors.phone?.message}
         >
@@ -192,7 +194,7 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
           />
           {customerType === "walkin" && (
             <p className="mt-1 text-xs text-muted-foreground">
-              Facultatif pour un client de passage
+              {t("customers.phoneOptionalWalkin")}
             </p>
           )}
         </Field>
@@ -200,7 +202,7 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
 
       {/* Language */}
       <Field
-        label="Langue préférée"
+        label={t("customers.preferredLanguage")}
         error={form.formState.errors.languagePreference?.message}
       >
         <select {...form.register("languagePreference")} className={inputCls} disabled={isPending}>
@@ -214,13 +216,13 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
 
       {/* Customer group */}
       {groups.length > 0 && (
-        <Field label="Groupe client">
+        <Field label={t("customers.customerGroup")}>
           <select
             {...form.register("customerGroupId")}
             className={inputCls}
             disabled={isPending}
           >
-            <option value="">Aucun groupe</option>
+            <option value="">{t("customers.noGroup")}</option>
             {groups.map((g) => (
               <option key={g.id} value={g.id}>
                 {g.name}
@@ -231,11 +233,11 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
       )}
 
       {/* Notes */}
-      <Field label="Notes" error={form.formState.errors.notes?.message}>
+      <Field label={t("common.notes")} error={form.formState.errors.notes?.message}>
         <textarea
           {...form.register("notes")}
           rows={3}
-          placeholder="Informations complémentaires…"
+          placeholder={t("customers.notesPlaceholder")}
           className={cn(inputCls, "resize-y")}
           disabled={isPending}
         />
@@ -256,10 +258,10 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
           className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 disabled:opacity-50 transition-colors"
         >
           {isPending
-            ? "Enregistrement…"
+            ? t("common.saving")
             : mode === "create"
-            ? "Créer le client"
-            : "Enregistrer les modifications"}
+            ? t("customers.createCustomer")
+            : t("customers.updateCustomer")}
         </button>
         <button
           type="button"
@@ -267,7 +269,7 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
           disabled={isPending}
           className="rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground disabled:opacity-50 transition-colors"
         >
-          Annuler
+          {t("common.cancel")}
         </button>
       </div>
     </form>

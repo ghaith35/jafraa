@@ -3,6 +3,7 @@ import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { prisma } from "@/lib/db";
 import { PageHeader } from "@/components/shared/PageHeader";
+import { getAppI18n } from "@/lib/i18n/server";
 import { PartForm } from "@/features/inventory/components/PartForm";
 import { listDeviceCategories } from "@/features/catalog/actions/catalog.actions";
 
@@ -13,6 +14,7 @@ export default async function EditPartPage({
 }: {
   params: Promise<{ id: string }>;
 }) {
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard/inventory?tab=parts");
@@ -37,8 +39,8 @@ export default async function EditPartPage({
   return (
     <>
       <PageHeader
-        title={`Modifier — ${part.name}`}
-        description="Mettre à jour les informations de la pièce"
+        title={t("inventory.editPart", { name: part.name })}
+        description={t("inventory.editPartDescription")}
       />
       <div className="max-w-2xl">
         <div className="rounded-xl border border-border bg-card p-6 shadow-sm">

@@ -3,6 +3,7 @@ import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { prisma } from "@/lib/db";
 import { PageHeader } from "@/components/shared/PageHeader";
+import { getAppI18n } from "@/lib/i18n/server";
 import { ProductForm } from "@/features/inventory/components/ProductForm";
 
 export const metadata = { title: "Modifier le produit" };
@@ -12,6 +13,7 @@ export default async function EditProductPage({
 }: {
   params: Promise<{ id: string }>;
 }) {
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard/inventory?tab=products");
@@ -37,8 +39,8 @@ export default async function EditProductPage({
   return (
     <>
       <PageHeader
-        title={`Modifier — ${product.name}`}
-        description="Mettre à jour les informations du produit"
+        title={t("inventory.editProduct", { name: product.name })}
+        description={t("inventory.editProductDescription")}
       />
       <div className="max-w-2xl">
         <div className="rounded-xl border border-border bg-card p-6 shadow-sm">

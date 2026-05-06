@@ -6,12 +6,14 @@ import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { listSuppliers } from "@/features/inventory/actions/supplier.actions";
 import { SupplierList } from "@/features/inventory/components/SupplierList";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export const metadata = { title: "Fournisseurs — REPAIRE" };
 
 export default async function SuppliersPage(props: {
   searchParams: Promise<{ q?: string; archived?: string }>;
 }) {
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard");
@@ -27,10 +29,10 @@ export default async function SuppliersPage(props: {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold tracking-tight text-foreground">
-            Fournisseurs
+            {t("suppliers.title")}
           </h1>
           <p className="text-sm text-muted-foreground">
-            Gérez vos fournisseurs et suivez vos soldes.
+            {t("suppliers.description")}
           </p>
         </div>
         <Link
@@ -38,7 +40,7 @@ export default async function SuppliersPage(props: {
           className="inline-flex shrink-0 items-center gap-1.5 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
         >
           <Plus className="h-4 w-4" />
-          Nouveau fournisseur
+          {t("suppliers.new")}
         </Link>
       </div>
 

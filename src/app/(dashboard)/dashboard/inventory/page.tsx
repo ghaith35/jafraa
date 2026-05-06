@@ -13,6 +13,7 @@ import { ServiceList } from "@/features/inventory/components/ServiceList";
 import { listProducts } from "@/features/inventory/actions/product.actions";
 import { listParts } from "@/features/inventory/actions/part.actions";
 import { listServices } from "@/features/inventory/actions/service.actions";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export const metadata = { title: "Inventaire" };
 
@@ -22,23 +23,12 @@ function isValidTab(v?: string): v is TabKey {
   return v === "products" || v === "parts" || v === "services";
 }
 
-const ADD_LINKS: Record<TabKey, { href: string; label: string }> = {
-  products: { href: "/dashboard/inventory/products/new", label: "Nouveau produit" },
-  parts:    { href: "/dashboard/inventory/parts/new",    label: "Nouvelle pièce" },
-  services: { href: "/dashboard/inventory/services/new", label: "Nouveau service" },
-};
-
-const SEARCH_PLACEHOLDERS: Record<TabKey, string> = {
-  products: "Rechercher par nom, SKU, code-barres, marque…",
-  parts:    "Rechercher par nom, SKU, code-barres, marque…",
-  services: "Rechercher par nom, SKU, catégorie…",
-};
-
 export default async function InventoryPage({
   searchParams,
 }: {
   searchParams: Promise<{ tab?: string; q?: string; archived?: string }>;
 }) {
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
 
@@ -49,7 +39,11 @@ export default async function InventoryPage({
   const storeId = session.storeIds[0];
   const canManage = hasPermission(session.role, "inventory:manage");
 
-  const addLink = ADD_LINKS[tab];
+  const addLink = {
+    products: { href: "/dashboard/inventory/products/new", label: t("inventory.newProduct") },
+    parts: { href: "/dashboard/inventory/parts/new", label: t("inventory.newPart") },
+    services: { href: "/dashboard/inventory/services/new", label: t("inventory.newService") },
+  }[tab];
 
   // Load the active tab's data only
   const [products, parts, services] = await Promise.all([
@@ -72,14 +66,14 @@ export default async function InventoryPage({
         ? parts.length
         : services.length;
 
-  const tabLabel =
-    tab === "products" ? "produit" : tab === "parts" ? "pièce" : "service";
+  const tabLabel = tab === "products" ? t("inventory.product") : tab === "parts" ? t("inventory.part") : t("inventory.service");
+  const searchPlaceholder = tab === "services" ? t("inventory.searchServices") : t("inventory.searchProducts");
 
   return (
     <>
       <PageHeader
-        title="Inventaire"
-        description={`${count} ${tabLabel}${count !== 1 ? "s" : ""} trouvé${count !== 1 ? "s" : ""}`}
+        title={t("inventory.title")}
+        description={t("inventory.description", { count, item: tabLabel, plural: count !== 1 ? "s" : "" })}
         actions={
           canManage ? (
             <Link
@@ -101,7 +95,7 @@ export default async function InventoryPage({
       {/* Search */}
       <Suspense>
         <InventorySearchBar
-          placeholder={SEARCH_PLACEHOLDERS[tab]}
+          placeholder={searchPlaceholder}
           defaultValue={q ?? ""}
         />
       </Suspense>

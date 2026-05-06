@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { Calendar, Download, RefreshCw } from "lucide-react";
 import { format, subDays } from "date-fns";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 interface ReportShellProps {
   title: string;
@@ -13,6 +14,7 @@ interface ReportShellProps {
 }
 
 export function ReportShell({ title, description, children }: ReportShellProps) {
+  const { t } = useAppI18n();
   const router = useRouter();
   const searchParams = useSearchParams();
   
@@ -50,7 +52,7 @@ export function ReportShell({ title, description, children }: ReportShellProps) 
               onChange={(e) => setStartDate(e.target.value)}
               className="bg-transparent text-sm focus:outline-none"
             />
-            <span className="text-muted-foreground">à</span>
+            <span className="text-muted-foreground">{t("common.to")}</span>
             <input
               type="date"
               value={endDate}
@@ -62,7 +64,7 @@ export function ReportShell({ title, description, children }: ReportShellProps) 
               disabled={isUpdating}
               className="ml-2 rounded-md bg-primary/10 px-2 py-1 text-xs font-medium text-primary hover:bg-primary/20 disabled:opacity-50"
             >
-              {isUpdating ? <RefreshCw className="h-3 w-3 animate-spin" /> : "Appliquer"}
+              {isUpdating ? <RefreshCw className="h-3 w-3 animate-spin" /> : t("reports.apply")}
             </button>
           </div>
 
@@ -71,7 +73,7 @@ export function ReportShell({ title, description, children }: ReportShellProps) 
             className="flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2 text-sm font-medium shadow-sm hover:bg-muted transition-colors"
           >
             <Download className="h-4 w-4" />
-            Exporter PDF
+            {t("reports.exportPdf")}
           </button>
         </div>
       </div>
@@ -85,7 +87,7 @@ export function ReportShell({ title, description, children }: ReportShellProps) 
         <h1 className="text-2xl font-bold">{title}</h1>
         <p className="text-sm text-muted-foreground">{description}</p>
         <p className="text-xs mt-2">
-          Période : {format(new Date(startDate), "dd/MM/yyyy")} au {format(new Date(endDate), "dd/MM/yyyy")}
+          {t("reports.period", { start: format(new Date(startDate), "dd/MM/yyyy"), end: format(new Date(endDate), "dd/MM/yyyy") })}
         </p>
       </div>
     </div>

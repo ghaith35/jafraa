@@ -5,10 +5,12 @@ import { getCurrentCashSession, listCashSessions } from "@/features/pos/actions/
 import { OpenSessionCard } from "@/features/pos/components/OpenSessionCard";
 import { ActiveSessionCard } from "@/features/pos/components/ActiveSessionCard";
 import { CashSessionHistory } from "@/features/pos/components/CashSessionHistory";
+import { getTranslations } from "next-intl/server";
 
 export const metadata = { title: "Gestion de la Caisse" };
 
 export default async function CashRegisterPage() {
+  const t = await getTranslations("pos");
   const session = await getSession();
   
   if (!session) redirect("/login");
@@ -22,8 +24,8 @@ export default async function CashRegisterPage() {
   return (
     <div className="max-w-6xl mx-auto space-y-8">
       <PageHeader
-        title="Gestion de la Caisse"
-        description="Gérez les ouvertures, fermetures et écarts de caisse"
+        title={t("cashRegisterManagementTitle")}
+        description={t("cashRegisterManagementDescription")}
       />
 
       <div className="space-y-10">
@@ -40,7 +42,7 @@ export default async function CashRegisterPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold mb-4">Historique des sessions</h2>
+          <h2 className="text-xl font-bold mb-4">{t("sessionHistory")}</h2>
           <CashSessionHistory sessions={history} />
         </section>
       </div>

@@ -4,6 +4,7 @@ import { useTransition } from "react";
 import Link from "next/link";
 import { Zap, Clock, Archive, Pencil } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useAppI18n } from "@/lib/i18n/ui";
 import { archiveService } from "../actions/service.actions";
 import type { UserRole } from "@prisma/client";
 import { hasPermission } from "@/lib/auth/permissions";
@@ -52,6 +53,7 @@ function ServiceRow({
   service: Service;
   canManage: boolean;
 }) {
+  const { t } = useAppI18n();
   const [isPending, startTransition] = useTransition();
 
   function handleArchive() {
@@ -81,7 +83,7 @@ function ServiceRow({
           )}
           {service.isArchived && (
             <span className="text-xs text-muted-foreground border border-border rounded px-1.5 py-0.5">
-              Archivé
+              {t("inventory.archived")}
             </span>
           )}
         </div>
@@ -101,7 +103,7 @@ function ServiceRow({
         <span className="text-sm font-semibold text-foreground">
           {formatPrice(service.sellingPrice)}
         </span>
-        <span className="text-xs text-muted-foreground">Main-d&apos;œuvre</span>
+        <span className="text-xs text-muted-foreground">{t("inventory.labor")}</span>
       </div>
 
       {/* Actions */}
@@ -110,7 +112,7 @@ function ServiceRow({
           <Link
             href={`/dashboard/inventory/services/${service.id}/edit`}
             className="rounded-md p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-            title="Modifier"
+            title={t("common.edit")}
           >
             <Pencil className="h-3.5 w-3.5" />
           </Link>
@@ -118,7 +120,7 @@ function ServiceRow({
             type="button"
             onClick={handleArchive}
             disabled={isPending}
-            title="Archiver ce service"
+            title={t("inventory.archiveService")}
             className="rounded-md p-1.5 text-muted-foreground hover:text-destructive hover:bg-destructive/10 disabled:opacity-50 transition-colors"
           >
             <Archive className="h-3.5 w-3.5" />
@@ -132,6 +134,7 @@ function ServiceRow({
 // ─── List ─────────────────────────────────────────────────────────────────────
 
 export function ServiceList({ services, userRole }: Props) {
+  const { t } = useAppI18n();
   const canManage = hasPermission(userRole, "inventory:manage");
 
   if (services.length === 0) {
@@ -140,9 +143,9 @@ export function ServiceList({ services, userRole }: Props) {
         <div className="mb-4 rounded-full bg-muted p-3">
           <Zap className="h-6 w-6 text-muted-foreground" />
         </div>
-        <p className="text-sm font-medium text-foreground">Aucun service</p>
+        <p className="text-sm font-medium text-foreground">{t("inventory.noServices")}</p>
         <p className="mt-1 text-sm text-muted-foreground max-w-sm">
-          Ajoutez vos services (diagnostic, main-d&apos;œuvre, logiciel…).
+          {t("inventory.noServicesDesc")}
         </p>
       </div>
     );

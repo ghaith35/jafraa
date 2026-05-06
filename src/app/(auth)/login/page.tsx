@@ -1,11 +1,14 @@
 import { Suspense } from "react";
+import { getTranslations } from "next-intl/server";
 import { LoginForm } from "./_components/LoginForm";
 
 export const metadata = {
   title: "Connexion — REPAIRE",
 };
 
-export default function LoginPage() {
+export default async function LoginPage() {
+  const t = await getTranslations("auth");
+
   return (
     <main className="min-h-screen flex items-center justify-center bg-background px-4">
       <div className="w-full max-w-sm">
@@ -14,7 +17,7 @@ export default function LoginPage() {
             REPAIRE
           </h1>
           <p className="mt-2 text-sm text-muted-foreground">
-            Connectez-vous à votre espace
+            {t("loginSubtitle")}
           </p>
         </div>
 

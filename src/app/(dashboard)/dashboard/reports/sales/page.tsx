@@ -5,12 +5,14 @@ import { ReportShell } from "@/features/reports/components/ReportShell";
 import { KpiGrid, KpiCard } from "@/features/reports/components/KpiGrid";
 import { TrendingUp, CreditCard, ShoppingBag, Receipt } from "lucide-react";
 import { format, parseISO, subDays } from "date-fns";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export default async function SalesReportPage({
   searchParams,
 }: {
   searchParams: Promise<{ start?: string; end?: string }>;
 }) {
+  const { t } = await getAppI18n();
   const params = await searchParams;
   const startDate = params.start ? parseISO(params.start) : subDays(new Date(), 30);
   const endDate = params.end ? parseISO(params.end) : new Date();
@@ -19,8 +21,8 @@ export default async function SalesReportPage({
 
   return (
     <ReportShell
-      title="Rapport des Ventes"
-      description="Analyse des ventes POS et du chiffre d'affaires"
+      title={t("reports.sales.title")}
+      description={t("reports.sales.description")}
     >
       <KpiGrid>
         <KpiCard

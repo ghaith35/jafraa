@@ -9,6 +9,7 @@ import { listReservedPartsForTicket } from "@/features/repairs/actions/reservati
 import { ReservedPartsSection } from "@/features/repairs/components/ReservedPartsSection";
 import { getRepairInvoice } from "@/features/repairs/actions/invoice.actions";
 import { RepairInvoiceSection } from "@/features/repairs/components/RepairInvoiceSection";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export async function generateMetadata() {
   return { title: "Détail Ticket | Réparations" };
@@ -16,6 +17,7 @@ export async function generateMetadata() {
 
 export default async function RepairDetailPage(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
 
@@ -47,8 +49,8 @@ export default async function RepairDetailPage(props: { params: Promise<{ id: st
   if (!ticket) {
     return (
       <div className="flex h-[50vh] flex-col items-center justify-center text-center">
-        <h2 className="text-2xl font-bold tracking-tight">Ticket introuvable</h2>
-        <p className="mt-2 text-muted-foreground">Ce ticket n&apos;existe pas ou vous n&apos;y avez pas accès.</p>
+        <h2 className="text-2xl font-bold tracking-tight">{t("repairs.ticketNotFound")}</h2>
+        <p className="mt-2 text-muted-foreground">{t("repairs.ticketNotFoundDescription")}</p>
       </div>
     );
   }
@@ -63,10 +65,12 @@ export default async function RepairDetailPage(props: { params: Promise<{ id: st
       {session.role !== "Technician" && (
         <div className="rounded-xl border border-border bg-card p-5 shadow-sm">
           <div className="flex items-center gap-2 mb-4">
-            <span className="text-sm font-semibold">Facture &amp; Paiement</span>
+            <span className="text-sm font-semibold">{t("repairs.invoicePayment")}</span>
           </div>
           <RepairInvoiceSection
             ticketId={ticket.id}
+            storeId={ticket.storeId}
+            customerId={ticket.customerId}
             ticketStatus={ticket.currentStatus}
             isWalkin={ticket.customer.customerType === "walkin"}
             initialInvoice={initialInvoice}

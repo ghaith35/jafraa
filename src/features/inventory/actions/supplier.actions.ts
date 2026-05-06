@@ -27,7 +27,7 @@ export async function listSuppliers(opts?: {
   const storeId = opts?.storeId ?? session.storeIds[0];
   if (!storeId) return [];
 
-  return prisma.supplier.findMany({
+  const suppliers = await prisma.supplier.findMany({
     where: {
       storeId,
       isArchived: opts?.showArchived ? undefined : false,
@@ -42,6 +42,11 @@ export async function listSuppliers(opts?: {
     },
     orderBy: { name: "asc" },
   });
+
+  return suppliers.map(s => ({
+    ...s,
+    balance: Number(s.balance),
+  }));
 }
 
 // ─── Get one ──────────────────────────────────────────────────────────────────
@@ -54,9 +59,16 @@ export async function getSupplier(id: string) {
   const storeId = session.storeIds[0];
   if (!storeId) return null;
 
-  return prisma.supplier.findFirst({
+  const supplier = await prisma.supplier.findFirst({
     where: { id, storeId },
   });
+
+  if (!supplier) return null;
+
+  return {
+    ...supplier,
+    balance: Number(supplier.balance),
+  };
 }
 
 // ─── Create ───────────────────────────────────────────────────────────────────

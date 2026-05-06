@@ -2,6 +2,7 @@
 
 import { FileText, Truck, Calendar } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 interface PurchaseInvoice {
   id: string;
@@ -41,15 +42,16 @@ const STATUS_MAP: Record<string, { label: string; cls: string }> = {
 };
 
 export function PurchaseList({ purchases }: Props) {
+  const { t, formatDate } = useAppI18n();
   if (purchases.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-border bg-card p-10 text-center">
         <div className="mb-4 rounded-full bg-muted p-3">
           <FileText className="h-6 w-6 text-muted-foreground" />
         </div>
-        <p className="text-sm font-medium text-foreground">Aucun achat</p>
+        <p className="text-sm font-medium text-foreground">{t("inventory.noPurchases")}</p>
         <p className="mt-1 text-sm text-muted-foreground max-w-sm">
-          Enregistrez vos factures d&apos;achat pour mettre à jour votre stock.
+          {t("inventory.purchaseDescription")}
         </p>
       </div>
     );
@@ -59,6 +61,7 @@ export function PurchaseList({ purchases }: Props) {
     <div className="space-y-2">
       {purchases.map((p) => {
         const s = STATUS_MAP[p.status] || STATUS_MAP.unpaid;
+        const statusLabel = t(`inventory.status.${p.status}` as any) || s.label;
         return (
           <div key={p.id} className="flex flex-col sm:flex-row sm:items-center gap-4 rounded-xl border border-border bg-card px-4 py-3 hover:bg-accent/30 transition-colors">
             <div className="hidden sm:flex rounded-md bg-muted p-2 shrink-0">
@@ -71,7 +74,7 @@ export function PurchaseList({ purchases }: Props) {
                   {p.invoiceNumber}
                 </span>
                 <span className={cn("text-[10px] font-medium px-1.5 py-0.5 rounded border", s.cls)}>
-                  {s.label}
+                  {statusLabel}
                 </span>
               </div>
               <div className="flex flex-wrap gap-x-4 gap-y-1 mt-1 text-xs text-muted-foreground">
@@ -92,7 +95,7 @@ export function PurchaseList({ purchases }: Props) {
               </span>
               {p.status !== "paid" && (
                 <span className="text-xs text-destructive">
-                  Reste: {formatPrice(p.remainingAmount)}
+                  {t("inventory.remaining")}: {formatPrice(p.remainingAmount)}
                 </span>
               )}
             </div>

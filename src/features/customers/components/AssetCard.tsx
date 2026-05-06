@@ -4,6 +4,7 @@ import { useTransition } from "react";
 import { Cpu, Archive } from "lucide-react";
 import { DEVICE_TYPES } from "../schemas/asset.schema";
 import { archiveAsset } from "../actions/asset.actions";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 interface Asset {
   id: string;
@@ -35,6 +36,7 @@ function typeLabel(v: string | null): string {
 }
 
 export function AssetCard({ asset, customerId, canManage }: Props) {
+  const { t } = useAppI18n();
   const [isPending, startTransition] = useTransition();
 
   // Build title from catalog names first, then fall back to free-text
@@ -60,11 +62,11 @@ export function AssetCard({ asset, customerId, canManage }: Props) {
 
       <div className="flex-1 min-w-0 space-y-1">
         <p className="text-sm font-medium text-foreground truncate">
-          {title || "Appareil sans nom"}
+          {title || t("customers.asset.noName")}
         </p>
         <div className="flex flex-wrap gap-x-4 gap-y-0.5 text-xs text-muted-foreground">
-          {asset.color && <span>Couleur : {asset.color}</span>}
-          {asset.storage && <span>Stockage : {asset.storage}</span>}
+          {asset.color && <span>{t("customers.asset.color")} : {asset.color}</span>}
+          {asset.storage && <span>{t("customers.asset.storage")} : {asset.storage}</span>}
           {asset.imeiSerial && (
             <span className="font-mono">IMEI : {asset.imeiSerial}</span>
           )}
@@ -79,7 +81,7 @@ export function AssetCard({ asset, customerId, canManage }: Props) {
           type="button"
           onClick={handleArchive}
           disabled={isPending}
-          title="Archiver cet appareil"
+          title={t("customers.asset.archiveTitle")}
           className="shrink-0 rounded-md p-1.5 text-muted-foreground hover:text-destructive hover:bg-destructive/10 disabled:opacity-50 transition-colors"
         >
           <Archive className="h-3.5 w-3.5" />

@@ -32,7 +32,7 @@ export async function listProducts(opts?: {
   const storeId = opts?.storeId ?? session.storeIds[0];
   if (!storeId) return [];
 
-  return prisma.product.findMany({
+  const products = await prisma.product.findMany({
     where: {
       storeId,
       isArchived: opts?.showArchived ? undefined : false,
@@ -51,6 +51,11 @@ export async function listProducts(opts?: {
     orderBy: { name: "asc" },
     take: 200,
   });
+
+  return products.map(p => ({
+    ...p,
+    sellingPrice: Number(p.sellingPrice),
+  }));
 }
 
 // ─── Get one ──────────────────────────────────────────────────────────────────
@@ -62,10 +67,17 @@ export async function getProduct(id: string) {
   const storeId = session.storeIds[0];
   if (!storeId) return null;
 
-  return prisma.product.findFirst({
+  const product = await prisma.product.findFirst({
     where: { id, storeId },
     include: { category: { select: { id: true, name: true } } },
   });
+
+  if (!product) return null;
+
+  return {
+    ...product,
+    sellingPrice: Number(product.sellingPrice),
+  };
 }
 
 // ─── Create ───────────────────────────────────────────────────────────────────

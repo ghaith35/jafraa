@@ -14,6 +14,7 @@ import {
   listBrandsByCategory,
   listFamiliesByBrand,
 } from "@/features/catalog/actions/catalog.actions";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -109,6 +110,7 @@ export function PartForm({
   storeId,
   part,
 }: Props) {
+  const { t } = useAppI18n();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [serverError, setServerError] = useState<string | null>(null);
@@ -196,14 +198,14 @@ export function PartForm({
     startTransition(async () => {
       if (isEdit && part) {
         const result = await updatePart(part.id, data);
-        if (result?.error) {
+        if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
           router.push("/dashboard/inventory?tab=parts");
         }
       } else {
         const result = await createPart(data);
-        if ("error" in result) {
+        if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
           router.push("/dashboard/inventory?tab=parts");
@@ -216,9 +218,9 @@ export function PartForm({
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
       <div className="grid grid-cols-2 gap-4">
         {/* ── Part info ──────────────────────────────────────────────── */}
-        <SectionTitle>Informations pièce</SectionTitle>
+        <SectionTitle>{t("inventory.partInfo")}</SectionTitle>
 
-        <Field label="Nom de la pièce" required error={errors.name?.message}>
+        <Field label={t("inventory.partName")} required error={errors.name?.message}>
           <input
             {...form.register("name")}
             type="text"
@@ -228,13 +230,13 @@ export function PartForm({
           />
         </Field>
 
-        <Field label="Catégorie pièce" error={errors.categoryId?.message}>
+        <Field label={t("inventory.partCategory")} error={errors.categoryId?.message}>
           <select
             {...form.register("categoryId")}
             className={inputCls}
             disabled={isPending}
           >
-            <option value="">— Sans catégorie —</option>
+            <option value="">{t("inventory.noCategory")}</option>
             {categories.map((c) => (
               <option key={c.id} value={c.id}>
                 {c.name}
@@ -243,7 +245,7 @@ export function PartForm({
           </select>
         </Field>
 
-        <Field label="Marque fournisseur" error={errors.brand?.message}>
+        <Field label={t("inventory.supplierBrand")} error={errors.brand?.message}>
           <input
             {...form.register("brand")}
             type="text"
@@ -253,7 +255,7 @@ export function PartForm({
           />
         </Field>
 
-        <Field label="Référence" error={errors.modelReference?.message}>
+        <Field label={t("inventory.reference")} error={errors.modelReference?.message}>
           <input
             {...form.register("modelReference")}
             type="text"
@@ -264,9 +266,9 @@ export function PartForm({
         </Field>
 
         {/* ── Compatibility ─────────────────────────────────────────── */}
-        <SectionTitle>Compatibilité appareil (optionnel)</SectionTitle>
+        <SectionTitle>{t("inventory.deviceCompatibilityOptional")}</SectionTitle>
 
-        <Field label="Type d'appareil" error={errors.compatibleCategoryId?.message}>
+        <Field label={t("inventory.deviceType")} error={errors.compatibleCategoryId?.message}>
           <select
             {...form.register("compatibleCategoryId", {
               onChange: (e) => handleDeviceCategoryChange(e.target.value),
@@ -274,7 +276,7 @@ export function PartForm({
             className={inputCls}
             disabled={isPending}
           >
-            <option value="">— Tous —</option>
+            <option value="">{t("inventory.all")}</option>
             {deviceCategories.map((c) => (
               <option key={c.id} value={c.id}>
                 {c.nameFr}
@@ -283,7 +285,7 @@ export function PartForm({
           </select>
         </Field>
 
-        <Field label="Marque appareil" error={errors.compatibleBrandId?.message}>
+        <Field label={t("inventory.deviceBrand")} error={errors.compatibleBrandId?.message}>
           <select
             {...form.register("compatibleBrandId", {
               onChange: (e) => handleDeviceBrandChange(e.target.value),
@@ -292,7 +294,7 @@ export function PartForm({
             disabled={isPending || loadingBrands}
           >
             <option value="">
-              {loadingBrands ? "Chargement…" : "— Toutes marques —"}
+              {loadingBrands ? t("common.loading") : t("inventory.allBrands")}
             </option>
             {deviceBrands.map((b) => (
               <option key={b.id} value={b.id}>
@@ -302,14 +304,14 @@ export function PartForm({
           </select>
         </Field>
 
-        <Field label="Famille / Modèle" error={errors.compatibleFamilyId?.message}>
+        <Field label={t("inventory.familyModel")} error={errors.compatibleFamilyId?.message}>
           <select
             {...form.register("compatibleFamilyId")}
             className={inputCls}
             disabled={isPending || loadingFamilies}
           >
             <option value="">
-              {loadingFamilies ? "Chargement…" : "— Tous modèles —"}
+              {loadingFamilies ? t("common.loading") : t("inventory.allModels")}
             </option>
             {deviceFamilies.map((f) => (
               <option key={f.id} value={f.id}>
@@ -320,19 +322,19 @@ export function PartForm({
         </Field>
 
         {/* ── Stock & pricing ───────────────────────────────────────── */}
-        <SectionTitle>Stock et prix</SectionTitle>
+        <SectionTitle>{t("inventory.stockAndPrice")}</SectionTitle>
 
         <Field label="SKU" error={errors.sku?.message}>
           <input
             {...form.register("sku")}
             type="text"
-            placeholder="Auto-généré si vide"
+            placeholder={t("inventory.skuAuto")}
             className={cn(inputCls, "font-mono")}
             disabled={isPending}
           />
         </Field>
 
-        <Field label="Code-barres" error={errors.barcode?.message}>
+        <Field label={t("inventory.barcode")} error={errors.barcode?.message}>
           <input
             {...form.register("barcode")}
             type="text"
@@ -342,7 +344,7 @@ export function PartForm({
           />
         </Field>
 
-        <Field label="Prix de vente (DZD)" required error={errors.sellingPrice?.message}>
+        <Field label={t("inventory.sellingPrice")} required error={errors.sellingPrice?.message}>
           <input
             {...form.register("sellingPrice", { valueAsNumber: true })}
             type="number"
@@ -355,7 +357,7 @@ export function PartForm({
         </Field>
 
         <Field
-          label={isEdit ? "Stock actuel" : "Stock initial"}
+          label={isEdit ? t("inventory.currentStock") : t("inventory.initialStock")}
           error={errors.stockQty?.message}
         >
           <input
@@ -369,7 +371,7 @@ export function PartForm({
           />
         </Field>
 
-        <Field label="Seuil stock bas" error={errors.lowStockThreshold?.message}>
+        <Field label={t("inventory.lowStockThreshold")} error={errors.lowStockThreshold?.message}>
           <input
             {...form.register("lowStockThreshold", { valueAsNumber: true })}
             type="number"
@@ -381,7 +383,7 @@ export function PartForm({
           />
         </Field>
 
-        <Field label="URL image (optionnel)" error={errors.imageUrl?.message}>
+        <Field label={t("inventory.imageUrlOptional")} error={errors.imageUrl?.message}>
           <input
             {...form.register("imageUrl")}
             type="url"
@@ -392,7 +394,7 @@ export function PartForm({
         </Field>
 
         {/* Notes */}
-        <Field label="Notes">
+        <Field label={t("common.notes")}>
           <textarea
             {...form.register("notes")}
             rows={2}
@@ -417,11 +419,11 @@ export function PartForm({
         >
           {isPending
             ? isEdit
-              ? "Mise à jour…"
-              : "Création…"
+              ? t("inventory.updating")
+              : t("inventory.creating")
             : isEdit
-              ? "Enregistrer les modifications"
-              : "Créer la pièce"}
+              ? t("inventory.updatePart")
+              : t("inventory.createPart")}
         </button>
         <button
           type="button"
@@ -429,7 +431,7 @@ export function PartForm({
           disabled={isPending}
           className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-50"
         >
-          Annuler
+          {t("common.cancel")}
         </button>
       </div>
     </form>

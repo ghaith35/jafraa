@@ -2,8 +2,10 @@
 
 import { useState, type FormEvent } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export function LoginForm() {
+  const t = useTranslations("auth");
   const router = useRouter();
   const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
@@ -25,7 +27,7 @@ export function LoginForm() {
 
       if (!res.ok) {
         const data = await res.json();
-        setError(data.error ?? "Une erreur est survenue");
+        setError(data.error ?? t("requestError"));
         return;
       }
 
@@ -33,7 +35,7 @@ export function LoginForm() {
       router.push(from);
       router.refresh();
     } catch {
-      setError("Impossible de contacter le serveur");
+      setError(t("serverUnreachable"));
     } finally {
       setLoading(false);
     }
@@ -46,7 +48,7 @@ export function LoginForm() {
           htmlFor="email"
           className="block text-sm font-medium text-foreground mb-1.5"
         >
-          Adresse e-mail
+          {t("emailAddress")}
         </label>
         <input
           id="email"
@@ -66,7 +68,7 @@ export function LoginForm() {
           htmlFor="password"
           className="block text-sm font-medium text-foreground mb-1.5"
         >
-          Mot de passe
+          {t("password")}
         </label>
         <input
           id="password"
@@ -92,7 +94,7 @@ export function LoginForm() {
         disabled={loading}
         className="w-full rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
       >
-        {loading ? "Connexion en cours…" : "Se connecter"}
+        {loading ? t("loggingIn") : t("signIn")}
       </button>
     </form>
   );

@@ -5,12 +5,15 @@ import { ReportShell } from "@/features/reports/components/ReportShell";
 import { KpiGrid, KpiCard } from "@/features/reports/components/KpiGrid";
 import { Wallet, BarChart3, ArrowDownCircle, ArrowUpCircle } from "lucide-react";
 import { parseISO, subDays } from "date-fns";
+import { cn } from "@/lib/utils";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export default async function ProfitReportPage({
   searchParams,
 }: {
   searchParams: Promise<{ start?: string; end?: string }>;
 }) {
+  const { t } = await getAppI18n();
   const params = await searchParams;
   const startDate = params.start ? parseISO(params.start) : subDays(new Date(), 30);
   const endDate = params.end ? parseISO(params.end) : new Date();
@@ -23,8 +26,8 @@ export default async function ProfitReportPage({
 
   return (
     <ReportShell
-      title="Analyse de Rentabilité"
-      description="Chiffre d'affaires, coûts (COGS) et bénéfices"
+      title={t("reports.profit.title")}
+      description={t("reports.profit.description")}
     >
       <KpiGrid>
         <KpiCard
@@ -89,5 +92,3 @@ export default async function ProfitReportPage({
   );
 }
 
-// Utility import needed for cn
-import { cn } from "@/lib/utils";

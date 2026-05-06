@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { Send, CheckCircle, XCircle, RotateCcw, Loader2, Printer } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { markEstimateSent, approveEstimate, reopenEstimateToDraft } from "../actions/estimate.actions";
+import { WhatsAppSendButton } from "@/features/whatsapp/components/WhatsAppSendButton";
 
 const STATUS_CONFIG: Record<string, { label: string; cls: string }> = {
   draft: { label: "Brouillon", cls: "bg-gray-100 text-gray-800 border-gray-200" },
@@ -14,7 +15,7 @@ const STATUS_CONFIG: Record<string, { label: string; cls: string }> = {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function EstimateList({ estimates, userRole }: { estimates: any[], userRole: string }) {
+export function EstimateList({ estimates, userRole, ticketId, storeId, customerId }: { estimates: any[], userRole: string, ticketId?: string, storeId?: string, customerId?: string }) {
   const router = useRouter();
   const [loadingAction, setLoadingAction] = useState<string | null>(null);
   const [approvalModal, setApprovalModal] = useState<{ isOpen: boolean; estimateId: string | null; decision: "accepted" | "rejected" | null }>({
@@ -94,14 +95,26 @@ export function EstimateList({ estimates, userRole }: { estimates: any[], userRo
 
               <div className="flex items-center gap-2">
                 {est.status === "draft" && (
-                  <button
-                    onClick={() => handleSend(est.id)}
-                    disabled={loadingAction !== null}
-                    className="inline-flex h-8 items-center justify-center gap-1.5 rounded-md bg-blue-100 text-blue-800 hover:bg-blue-200 px-3 text-xs font-medium transition-colors"
-                  >
-                    {loadingAction === `send-${est.id}` ? <Loader2 className="h-3 w-3 animate-spin" /> : <Send className="h-3 w-3" />}
-                    Marquer envoyé
-                  </button>
+                  <>
+                    <button
+                      onClick={() => handleSend(est.id)}
+                      disabled={loadingAction !== null}
+                      className="inline-flex h-8 items-center justify-center gap-1.5 rounded-md bg-blue-100 text-blue-800 hover:bg-blue-200 px-3 text-xs font-medium transition-colors"
+                    >
+                      {loadingAction === `send-${est.id}` ? <Loader2 className="h-3 w-3 animate-spin" /> : <Send className="h-3 w-3" />}
+                      Marquer envoyé
+                    </button>
+                    {ticketId && storeId && (
+                      <WhatsAppSendButton
+                        ticketId={ticketId}
+                        storeId={storeId}
+                        customerId={customerId}
+                        type="estimate"
+                        variant="button"
+                        label="Notifier"
+                      />
+                    )}
+                  </>
                 )}
 
                 {est.status === "sent" && (

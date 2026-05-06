@@ -10,6 +10,7 @@ import {
   type CreateSupplierInput,
 } from "../schemas/supplier.schema";
 import { createSupplier, updateSupplier } from "../actions/supplier.actions";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -56,6 +57,7 @@ function Field({
 // ─── Component ───────────────────────────────────────────────────────────────
 
 export function SupplierForm({ supplier }: Props) {
+  const { t } = useAppI18n();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [serverError, setServerError] = useState<string | null>(null);
@@ -78,14 +80,14 @@ export function SupplierForm({ supplier }: Props) {
     startTransition(async () => {
       if (isEdit && supplier) {
         const result = await updateSupplier(supplier.id, data);
-        if (result?.error) {
+        if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
           router.push("/dashboard/suppliers");
         }
       } else {
         const result = await createSupplier(data);
-        if ("error" in result) {
+        if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
           router.push("/dashboard/suppliers");
@@ -98,18 +100,18 @@ export function SupplierForm({ supplier }: Props) {
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div className="sm:col-span-2">
-          <Field label="Nom de l'entreprise ou contact" required error={errors.name?.message}>
+          <Field label={t("suppliers.nameLabel")} required error={errors.name?.message}>
             <input
               {...form.register("name")}
               type="text"
-              placeholder="Ex: Fournisseur A…"
+              placeholder={t("suppliers.namePlaceholder")}
               className={inputCls}
               disabled={isPending}
             />
           </Field>
         </div>
 
-        <Field label="Téléphone" error={errors.phone?.message}>
+        <Field label={t("common.phone")} error={errors.phone?.message}>
           <input
             {...form.register("phone")}
             type="tel"
@@ -119,22 +121,22 @@ export function SupplierForm({ supplier }: Props) {
           />
         </Field>
 
-        <Field label="Adresse" error={errors.address?.message}>
+        <Field label={t("common.address")} error={errors.address?.message}>
           <input
             {...form.register("address")}
             type="text"
-            placeholder="Alger Centre…"
+            placeholder={t("suppliers.addressPlaceholder")}
             className={inputCls}
             disabled={isPending}
           />
         </Field>
 
         <div className="sm:col-span-2">
-          <Field label="Notes" error={errors.notes?.message}>
+          <Field label={t("common.notes")} error={errors.notes?.message}>
             <textarea
               {...form.register("notes")}
               rows={3}
-              placeholder="Spécialité, conditions de paiement, contacts secondaires…"
+              placeholder={t("suppliers.notesPlaceholder")}
               className={cn(inputCls, "resize-y")}
               disabled={isPending}
             />
@@ -156,11 +158,11 @@ export function SupplierForm({ supplier }: Props) {
         >
           {isPending
             ? isEdit
-              ? "Mise à jour…"
-              : "Création…"
+              ? t("suppliers.updating")
+              : t("suppliers.creating")
             : isEdit
-              ? "Enregistrer les modifications"
-              : "Créer le fournisseur"}
+              ? t("suppliers.updateSupplier")
+              : t("suppliers.createSupplier")}
         </button>
         <button
           type="button"
@@ -168,7 +170,7 @@ export function SupplierForm({ supplier }: Props) {
           disabled={isPending}
           className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-50"
         >
-          Annuler
+          {t("common.cancel")}
         </button>
       </div>
     </form>

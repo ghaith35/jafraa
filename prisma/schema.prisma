@@ -309,9 +309,9 @@ model Store {
   cashMovements     CashMovement[]
   repairInvoices    RepairInvoice[]
   refunds           Refund[]
-  expenses          Expense[]
-  expenseCategories ExpenseCategory[]
-
+  expenses                Expense[]
+  expenseCategories       ExpenseCategory[]
+  whatsappNotificationLogs WhatsAppNotificationLog[]
 
   @@unique([companyId, prefix])
   @@index([companyId])
@@ -698,6 +698,7 @@ model StoreSettings {
   highValueAdjustmentThreshold Decimal @default(50000) @db.Decimal(12, 2)
 
   // WhatsApp
+  whatsappPhone     String?
   whatsappOnPosSale Boolean @default(false)
 
   // Display
@@ -1494,4 +1495,28 @@ model Expense {
   @@index([storeId])
   @@index([expenseDate])
   @@map("expenses")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// WHATSAPP NOTIFICATION LOG  (immutable audit trail of wa.me messages opened)
+// ─────────────────────────────────────────────────────────────────────────────
+
+model WhatsAppNotificationLog {
+  id             String   @id @default(cuid())
+  storeId        String
+  // null for walk-in or when customer record not known
+  customerId     String?
+  entityType     String   // 'repair_ticket' | 'repair_invoice' | 'pos_sale' | 'test'
+  entityId       String
+  phone          String
+  // First 200 chars of message for display in log
+  messagePreview String
+  sentByUserId   String
+  createdAt      DateTime @default(now())
+
+  store Store @relation(fields: [storeId], references: [id])
+
+  @@index([storeId, createdAt(sort: Desc)])
+  @@index([entityType, entityId])
+  @@map("whatsapp_notification_logs")
 }

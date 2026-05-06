@@ -32,7 +32,7 @@ export async function listServices(opts?: {
   const storeId = opts?.storeId ?? session.storeIds[0];
   if (!storeId) return [];
 
-  return prisma.service.findMany({
+  const services = await prisma.service.findMany({
     where: {
       storeId,
       isArchived: opts?.showArchived ? undefined : false,
@@ -49,6 +49,11 @@ export async function listServices(opts?: {
     orderBy: { name: "asc" },
     take: 200,
   });
+
+  return services.map(s => ({
+    ...s,
+    sellingPrice: Number(s.sellingPrice),
+  }));
 }
 
 // ─── Get one ──────────────────────────────────────────────────────────────────
@@ -60,7 +65,12 @@ export async function getService(id: string) {
   const storeId = session.storeIds[0];
   if (!storeId) return null;
 
-  return prisma.service.findFirst({ where: { id, storeId } });
+  const service = await prisma.service.findFirst({ where: { id, storeId } });
+  if (!service) return null;
+  return {
+    ...service,
+    sellingPrice: Number(service.sellingPrice),
+  };
 }
 
 // ─── Create ───────────────────────────────────────────────────────────────────

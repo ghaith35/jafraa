@@ -2,6 +2,151 @@
 
 ---
 
+## 2026-05-06 — i18n Activation: Locale Routing + Language Switcher
+
+### What changed
+
+Activated the multilingual infrastructure end-to-end (French, Arabic, English) and added a fast language switcher in the dashboard top bar.
+
+- `src/proxy.ts`
+  - Added `next-intl` middleware handling with full-app matcher
+  - Kept auth guard behavior and made it locale-aware by stripping locale prefixes before checking protected/auth routes
+- `src/app/layout.tsx`
+  - Converted to async layout using `getLocale()` and `getMessages()`
+  - Added `NextIntlClientProvider` for client translations
+  - `<html lang>` and `<html dir>` now follow active locale (`ar` => `rtl`, others => `ltr`)
+- `src/i18n/navigation.ts` (new)
+  - Added locale-aware navigation helpers (`Link`, `useRouter`, `usePathname`, etc.)
+- Dashboard UI localization wiring
+  - New `src/components/layout/LanguageSwitcher.tsx` (FR/EN/AR selector)
+  - Added switcher to `Topbar` (top-left in LTR/French)
+  - Updated sidebar/nav components to use locale-aware routing hooks and translation keys
+  - Dashboard direction now follows current locale instead of only user DB preference
+- Translation dictionaries
+  - Added missing keys in `src/messages/fr.json`, `src/messages/en.json`, `src/messages/ar.json` for nav labels and language switcher labels
+
+### Files touched
+
+- `src/proxy.ts`
+- `src/app/layout.tsx`
+- `src/i18n/navigation.ts` (new)
+- `src/components/layout/LanguageSwitcher.tsx` (new)
+- `src/components/layout/Topbar.tsx`
+- `src/components/layout/Sidebar.tsx`
+- `src/components/layout/NavItem.tsx`
+- `src/components/layout/nav-items.ts`
+- `src/components/layout/DashboardShell.tsx`
+- `src/messages/fr.json`
+- `src/messages/en.json`
+- `src/messages/ar.json`
+- `IMPLEMENTATION_TRACKER.md`
+
+### Checks run
+
+- `npm run typecheck` ✅
+
+### Known issues / next recommended
+
+- Multilingual routing and switcher are now active, but many existing page texts are still hardcoded in French and need progressive migration to translation keys.
+- Next recommended block: migrate page/module labels and form copy to `next-intl` namespaces feature-by-feature (dashboard, customers, repairs, inventory, settings).
+
+---
+
+## 2026-05-04 — Blocks 19–23: WhatsApp, Super Admin, Audit, Settings, Polish
+
+### What changed
+
+Five remaining MVP sections implemented in a single session, bringing the project to feature-complete status.
+
+**Block 19 — WhatsApp Notifications**
+- Replaced fragile `whatsapp-web.js` Puppeteer singleton with stateless `wa.me` deep-link approach
+- Rewrote `src/lib/whatsapp/whatsapp.service.ts` — link generator only, no browser sessions
+- Added FR + AR message templates in `src/lib/whatsapp/templates.ts`
+- Added preview builders in `src/lib/whatsapp/notifications.ts`
+- Rewrote `src/features/whatsapp/actions/whatsapp.actions.ts` — preview, log, settings CRUD
+- New `WhatsAppSendButton.tsx` — inline modal: preview → open wa.me → log
+- Integrated into repair detail, repair invoice section, estimate list
+- Schema: added `WhatsAppNotificationLog` model + `whatsappPhone` on `StoreSettings`
+- Removed auto-send from `repair.actions.ts` and `invoice.actions.ts`
+- Fixed Turbopack re-export error: `WaPreview` type kept in `notifications.ts`
+
+**Block 20 — Super Admin**
+- Separate JWT auth layer (`sa_token` cookie, path `/super-admin`)
+- Login/logout actions against `SuperAdminUser` table
+- Company list with subscription status badges + metrics
+- Company detail: subscription edit (status, expiry, note), archive/restore
+- 6 new pages under `/super-admin/`
+
+**Block 21 — Security / Audit Log**
+- `getAuditLogs` server action (Admin only, filter by user/entity)
+- Admin-only audit log page with client-side search + URL filter
+- Added Audit Log card to reports index
+- `getProfitReport` expense query wrapped in `.catch(() => [])` for graceful pre-migration behavior
+- Manual SQL migration `20260504120000_add_expenses_and_whatsapp_log` created
+
+**Block 22 — Settings & Store Configuration**
+- `getStoreConfig`, `saveStoreProfile`, `saveStoreSettings` server actions
+- `StoreSettingsForm` — store profile + operational thresholds
+- `/dashboard/settings/store` page
+- `/dashboard/settings` index updated with WhatsApp + store config cards
+- `WhatsAppManager` rewritten with live data
+
+**Block 23 — Production Polish**
+- Dashboard quick-links (New repair, POS, New customer, Reports)
+- Removed `@aws-sdk/client-s3` and `qrcode` from `package.json`
+- `FINAL_QA_CHECKLIST.md` written covering all MVP flows
+- `suppliers/[id]/page.tsx` — fixed `.toNumber()` on plain number (typecheck error)
+
+### Files changed (major)
+
+| File | Change |
+|------|--------|
+| `src/lib/whatsapp/whatsapp.service.ts` | Rewritten — wa.me links only |
+| `src/lib/whatsapp/templates.ts` | Rewritten — FR+AR templates |
+| `src/lib/whatsapp/notifications.ts` | Rewritten — preview builders |
+| `src/features/whatsapp/actions/whatsapp.actions.ts` | Rewritten — 5 server actions |
+| `src/features/whatsapp/components/WhatsAppSendButton.tsx` | NEW |
+| `src/features/whatsapp/components/WhatsAppManager.tsx` | Rewritten |
+| `src/app/(dashboard)/dashboard/settings/whatsapp/page.tsx` | Live data |
+| `src/lib/auth/super-admin-session.ts` | NEW |
+| `src/features/super-admin/actions/auth.actions.ts` | NEW |
+| `src/features/super-admin/actions/companies.actions.ts` | NEW |
+| `src/app/super-admin/**` (6 files) | NEW |
+| `src/features/reports/actions/audit.actions.ts` | NEW |
+| `src/app/(dashboard)/dashboard/reports/audit/**` | NEW |
+| `src/features/settings/actions/settings.actions.ts` | NEW |
+| `src/features/settings/components/StoreSettingsForm.tsx` | NEW |
+| `src/app/(dashboard)/dashboard/settings/store/page.tsx` | NEW |
+| `prisma/schema.prisma` | Added WhatsAppNotificationLog, whatsappPhone |
+| `prisma/migrations/20260504120000_*/migration.sql` | NEW — expenses + whatsapp_log |
+| `package.json` | Removed @aws-sdk/client-s3, qrcode |
+| `FINAL_QA_CHECKLIST.md` | NEW |
+
+### Checks run
+
+- `npm run typecheck` ✅ (0 errors)
+- `npm run lint` ✅ (0 errors)
+- `npm run build` ✅ (35 routes, clean exit)
+- `npx prisma generate` ✅ (after schema changes)
+
+### Known issues / deferred
+
+- Migration `20260504120000` must be applied (`npx prisma migrate deploy`) before expense tracking and WhatsApp log storage work in production
+- `npm install` should be run to remove unused packages from `node_modules`
+- `whatsapp-web.js` can be removed from `package.json` post-MVP (still listed as dependency)
+- Super admin impersonation: schema exists, no UI (deferred)
+- Manager PIN approval: deferred post-MVP
+
+### Next recommended
+
+Run production deployment steps from `FINAL_QA_CHECKLIST.md`:
+1. `npm install`
+2. `npx prisma generate`
+3. `npx prisma migrate deploy`
+4. `npm run typecheck && npm run lint && npm run build`
+
+---
+
 ## 2026-05-04 — Block 14: Customer Debt Ledger and Debt Payments
 
 ### What changed

@@ -3,6 +3,7 @@ import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { prisma } from "@/lib/db";
 import { PageHeader } from "@/components/shared/PageHeader";
+import { getAppI18n } from "@/lib/i18n/server";
 import { ServiceForm } from "@/features/inventory/components/ServiceForm";
 
 export const metadata = { title: "Modifier le service" };
@@ -12,6 +13,7 @@ export default async function EditServicePage({
 }: {
   params: Promise<{ id: string }>;
 }) {
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard/inventory?tab=services");
@@ -30,8 +32,8 @@ export default async function EditServicePage({
   return (
     <>
       <PageHeader
-        title={`Modifier — ${service.name}`}
-        description="Mettre à jour les informations du service"
+        title={t("inventory.editService", { name: service.name })}
+        description={t("inventory.editServiceDescription")}
       />
       <div className="max-w-2xl">
         <div className="rounded-xl border border-border bg-card p-6 shadow-sm">

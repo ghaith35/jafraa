@@ -11,6 +11,7 @@ import {
   type CreatePurchaseInvoiceInput,
 } from "../schemas/purchase.schema";
 import { createPurchaseInvoice } from "../actions/purchase.actions";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -54,6 +55,7 @@ function Field({
 // ─── Component ───────────────────────────────────────────────────────────────
 
 export function PurchaseForm({ suppliers, products, parts }: Props) {
+  const { t } = useAppI18n();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [serverError, setServerError] = useState<string | null>(null);
@@ -107,16 +109,16 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
       {/* ─── Header Info ─── */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <Field label="Fournisseur" required error={form.formState.errors.supplierId?.message}>
+        <Field label={t("inventory.purchase.supplier")} required error={form.formState.errors.supplierId?.message}>
           <select {...form.register("supplierId")} className={inputCls} disabled={isPending}>
-            <option value="">Sélectionnez un fournisseur</option>
+            <option value="">{t("inventory.purchase.selectSupplier")}</option>
             {suppliers.map((s) => (
               <option key={s.id} value={s.id}>{s.name}</option>
             ))}
           </select>
         </Field>
 
-        <Field label="Numéro de facture" required error={form.formState.errors.invoiceNumber?.message}>
+        <Field label={t("inventory.purchase.invoiceNumber")} required error={form.formState.errors.invoiceNumber?.message}>
           <input
             {...form.register("invoiceNumber")}
             type="text"
@@ -126,7 +128,7 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
           />
         </Field>
 
-        <Field label="Date de facturation" required error={form.formState.errors.invoiceDate?.message}>
+        <Field label={t("inventory.purchase.invoiceDate")} required error={form.formState.errors.invoiceDate?.message}>
           <input
             {...form.register("invoiceDate")}
             type="date"
@@ -139,7 +141,7 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
       {/* ─── Lines ─── */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
-          <h3 className="text-lg font-semibold">Articles</h3>
+          <h3 className="text-lg font-semibold">{t("inventory.purchase.items")}</h3>
           <button
             type="button"
             onClick={() =>
@@ -156,7 +158,7 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
             className="flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80"
           >
             <Plus className="h-4 w-4" />
-            Ajouter une ligne
+            {t("inventory.purchase.addLine")}
           </button>
         </div>
 
@@ -192,8 +194,8 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
                       form.setValue(`lines.${index}.itemType`, e.target.value as "product" | "part");
                     }}
                   >
-                    <option value="product">Produit</option>
-                    <option value="part">Pièce</option>
+                    <option value="product">{t("inventory.product")}</option>
+                    <option value="part">{t("inventory.part")}</option>
                   </select>
                 </div>
 
@@ -204,7 +206,7 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
                       className={inputCls}
                       disabled={isPending}
                     >
-                      <option value="">Sélectionnez un produit...</option>
+                      <option value="">{t("inventory.purchase.selectProduct")}</option>
                       {products.map((p) => (
                         <option key={p.id} value={p.id}>[{p.sku}] {p.name}</option>
                       ))}
@@ -215,7 +217,7 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
                       className={inputCls}
                       disabled={isPending}
                     >
-                      <option value="">Sélectionnez une pièce...</option>
+                      <option value="">{t("inventory.purchase.selectPart")}</option>
                       {parts.map((p) => (
                         <option key={p.id} value={p.id}>[{p.sku}] {p.name}</option>
                       ))}
@@ -232,7 +234,7 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
                       {...form.register(`lines.${index}.quantity`, { valueAsNumber: true })}
                       type="number"
                       min="1"
-                      placeholder="Qté"
+                      placeholder={t("inventory.purchase.qty")}
                       className={inputCls}
                       disabled={isPending}
                     />
@@ -244,7 +246,7 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
                       type="number"
                       min="0"
                       step="0.01"
-                      placeholder="Prix unit."
+                      placeholder={t("inventory.purchase.unitPriceShort")}
                       className={inputCls}
                       disabled={isPending}
                     />
@@ -260,7 +262,7 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
                   onClick={() => remove(index)}
                   disabled={isPending || fields.length === 1}
                   className="p-2 text-muted-foreground hover:text-destructive disabled:opacity-30 transition-colors"
-                  title="Supprimer la ligne"
+                  title={t("inventory.purchase.deleteLine")}
                 >
                   <Trash2 className="h-4 w-4" />
                 </button>
@@ -273,11 +275,11 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
       {/* ─── Footer / Totals ─── */}
       <div className="flex flex-col sm:flex-row gap-6 justify-between items-start sm:items-end border-t border-border pt-6">
         <div className="w-full sm:w-1/2">
-          <Field label="Notes" error={form.formState.errors.notes?.message}>
+          <Field label={t("common.notes")} error={form.formState.errors.notes?.message}>
             <textarea
               {...form.register("notes")}
               rows={2}
-              placeholder="Notes optionnelles..."
+              placeholder={t("inventory.purchase.optionalNotes")}
               className={cn(inputCls, "resize-y")}
               disabled={isPending}
             />
@@ -286,12 +288,12 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
 
         <div className="w-full sm:w-72 space-y-3 bg-muted/30 p-4 rounded-xl border border-border">
           <div className="flex justify-between text-sm">
-            <span className="text-muted-foreground">Total Facture:</span>
+            <span className="text-muted-foreground">{t("inventory.purchase.invoiceTotal")}:</span>
             <span className="font-semibold text-foreground">{formatCurrency(totalAmount)}</span>
           </div>
           
           <div className="flex justify-between items-center text-sm">
-            <span className="text-muted-foreground">Montant payé:</span>
+            <span className="text-muted-foreground">{t("inventory.purchase.amountPaid")}:</span>
             <div className="w-32">
               <input
                 {...form.register("amountPaid", { valueAsNumber: true })}
@@ -308,7 +310,7 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
           )}
 
           <div className="flex justify-between text-sm pt-2 border-t border-border/50">
-            <span className="font-medium text-foreground">Reste à payer:</span>
+            <span className="font-medium text-foreground">{t("inventory.purchase.remainingDue")}:</span>
             <span className={cn("font-bold", remaining > 0 ? "text-destructive" : "text-emerald-600")}>
               {formatCurrency(remaining)}
             </span>
@@ -329,14 +331,14 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
           disabled={isPending}
           className="text-sm font-medium text-muted-foreground hover:text-foreground disabled:opacity-50"
         >
-          Annuler
+          {t("common.cancel")}
         </button>
         <button
           type="submit"
           disabled={isPending}
           className="rounded-md bg-primary px-6 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 disabled:opacity-50 transition-colors"
         >
-          {isPending ? "Enregistrement..." : "Enregistrer l'achat"}
+          {isPending ? t("inventory.purchase.saving") : t("inventory.purchase.save")}
         </button>
       </div>
     </form>

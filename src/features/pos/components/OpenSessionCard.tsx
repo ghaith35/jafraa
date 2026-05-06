@@ -4,8 +4,10 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Loader2, DollarSign } from "lucide-react";
 import { openCashSession } from "../actions/cash-session.actions";
+import { useTranslations } from "next-intl";
 
 export function OpenSessionCard() {
+  const t = useTranslations("pos");
   const router = useRouter();
   const [openingCash, setOpeningCash] = useState<number | "">("");
   const [notes, setNotes] = useState("");
@@ -15,7 +17,7 @@ export function OpenSessionCard() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (openingCash === "" || openingCash < 0) {
-      setError("Veuillez entrer un montant valide (≥ 0)");
+      setError(t("validAmount"));
       return;
     }
 
@@ -40,9 +42,9 @@ export function OpenSessionCard() {
           <DollarSign className="h-6 w-6 text-primary" />
         </div>
         <div>
-          <h2 className="text-xl font-bold">Ouvrir la caisse</h2>
+          <h2 className="text-xl font-bold">{t("openSessionTitle")}</h2>
           <p className="text-sm text-muted-foreground">
-            Une session de caisse doit être ouverte avant d&apos;encaisser des paiements.
+            {t("openSessionDescription")}
           </p>
         </div>
       </div>
@@ -56,7 +58,7 @@ export function OpenSessionCard() {
 
         <div className="space-y-2">
           <label htmlFor="openingCash" className="text-sm font-medium">
-            Espèces d&apos;ouverture (DZD)
+            {t("openingCash")}
           </label>
           <input
             id="openingCash"
@@ -73,14 +75,14 @@ export function OpenSessionCard() {
 
         <div className="space-y-2">
           <label htmlFor="notes" className="text-sm font-medium">
-            Notes (Optionnel)
+            {t("notesOptional")}
           </label>
           <textarea
             id="notes"
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            placeholder="Billet endommagé, fonds de roulement ajouté, etc."
+            placeholder={t("openingNotesPlaceholder")}
           />
         </div>
 
@@ -94,7 +96,7 @@ export function OpenSessionCard() {
           ) : (
             <DollarSign className="mr-2 h-4 w-4" />
           )}
-          Ouvrir la caisse
+          {t("openCashRegisterButton")}
         </button>
       </form>
     </div>

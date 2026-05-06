@@ -3,6 +3,7 @@
 import { useState, useTransition } from "react";
 import { Loader2, TrendingDown, Plus, Minus, Wallet, AlertTriangle, Printer } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useAppI18n } from "@/lib/i18n/ui";
 import {
   addOpeningBalance,
   addManualDebt,
@@ -10,22 +11,6 @@ import {
   payCustomerDebt,
 } from "../actions/debt.actions";
 import type { DebtEntry, DebtSummary } from "../actions/debt.actions";
-
-// ─── Type labels ──────────────────────────────────────────────────────────────
-
-const TYPE_LABELS: Record<string, string> = {
-  opening_balance: "Solde d'ouverture",
-  manual_debt: "Dette manuelle",
-  sale_debt: "Vente à crédit",
-  repair_debt: "Réparation à crédit",
-  payment: "Paiement",
-  adjustment: "Correction / Crédit",
-};
-
-const DIRECTION_CONFIG = {
-  debit: { label: "Débit", cls: "text-red-600 dark:text-red-400" },
-  credit: { label: "Crédit", cls: "text-emerald-600 dark:text-emerald-400" },
-};
 
 // ─── Running balance calculator ───────────────────────────────────────────────
 
@@ -51,30 +36,31 @@ interface InlineFormProps {
 }
 
 function InlineForm({ type, customerId, currentBalance, onDone, onCancel }: InlineFormProps) {
+  const { t } = useAppI18n();
   const [amount, setAmount] = useState<number | "">("");
   const [note, setNote] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
 
   const config = {
-    payment: { label: "Paiement de dette", noteRequired: false, noteHint: "Optionnel" },
-    manual_debt: { label: "Ajouter une dette manuelle", noteRequired: true, noteHint: "Obligatoire" },
-    opening_balance: { label: "Solde d'ouverture", noteRequired: false, noteHint: "Optionnel" },
-    correction: { label: "Correction / Crédit", noteRequired: true, noteHint: "Obligatoire" },
+    payment: { label: t("customers.debt.addPayment"), noteRequired: false, noteHint: t("common.optional") },
+    manual_debt: { label: t("customers.debt.addManual"), noteRequired: true, noteHint: t("common.required") },
+    opening_balance: { label: t("customers.debt.openingBalance"), noteRequired: false, noteHint: t("common.optional") },
+    correction: { label: t("customers.debt.correction"), noteRequired: true, noteHint: t("common.required") },
   }[type ?? "payment"];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!amount || amount <= 0) {
-      setError("Le montant doit être supérieur à 0");
+      setError(t("customers.error.amountPositive"));
       return;
     }
     if (type === "payment" && amount > currentBalance) {
-      setError(`Le paiement dépasse la dette actuelle (${currentBalance.toFixed(2)} DZD)`);
+      setError(t("customers.error.paymentExceedsDebt", { amount: currentBalance.toFixed(2) }));
       return;
     }
     if ((type === "manual_debt" || type === "correction") && !note.trim()) {
-      setError("Une note est obligatoire");
+      setError(t("customers.error.noteRequired"));
       return;
     }
 
@@ -102,7 +88,7 @@ function InlineForm({ type, customerId, currentBalance, onDone, onCancel }: Inli
       <div className="flex items-center justify-between">
         <h4 className="font-semibold text-sm">{config?.label}</h4>
         <button type="button" onClick={onCancel} className="text-xs text-muted-foreground hover:text-foreground">
-          Annuler
+          {t("common.cancel")}
         </button>
       </div>
 
@@ -112,7 +98,7 @@ function InlineForm({ type, customerId, currentBalance, onDone, onCancel }: Inli
 
       <div className="grid grid-cols-2 gap-3">
         <div className="space-y-1">
-          <label className="text-xs font-medium">Montant (DZD)</label>
+          <label className="text-xs font-medium">{t("customers.debt.amount")}</label>
           <input
             type="number"
             step="0.01"
@@ -126,7 +112,7 @@ function InlineForm({ type, customerId, currentBalance, onDone, onCancel }: Inli
         </div>
         {type === "payment" && currentBalance > 0 && (
           <div className="space-y-1">
-            <label className="text-xs font-medium text-muted-foreground">Solde actuel</label>
+            <label className="text-xs font-medium text-muted-foreground">{t("customers.debt.currentBalance")}</label>
             <div className="flex h-9 items-center px-3 bg-muted/50 rounded-md border text-sm font-bold text-red-600">
               {currentBalance.toFixed(2)} DZD
             </div>
@@ -136,14 +122,14 @@ function InlineForm({ type, customerId, currentBalance, onDone, onCancel }: Inli
 
       <div className="space-y-1">
         <label className="text-xs font-medium">
-          Note {config?.noteRequired ? "(Obligatoire)" : `(${config?.noteHint})`}
+          {t("customers.debt.noteLabel", { suffix: config?.noteRequired ? `(${t("common.required")})` : `(${config?.noteHint})` })}
         </label>
         <textarea
           value={note}
           onChange={(e) => setNote(e.target.value)}
           required={config?.noteRequired}
           className="flex min-h-[60px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-          placeholder={type === "payment" ? "Reçu en espèces..." : "Raison..."}
+          placeholder={type === "payment" ? t("customers.debt.cashPlaceholder") : t("customers.debt.reasonPlaceholder")}
         />
       </div>
 
@@ -159,7 +145,7 @@ function InlineForm({ type, customerId, currentBalance, onDone, onCancel }: Inli
           )}
         >
           {isPending && <Loader2 className="mr-2 h-3.5 w-3.5 animate-spin" />}
-          Confirmer
+          {t("customers.debt.confirm")}
         </button>
       </div>
     </form>
@@ -183,6 +169,7 @@ export function DebtSection({
   canManageDebt,
   canPayDebt,
 }: DebtSectionProps) {
+  const { t, formatDate } = useAppI18n();
   const [activeAction, setActiveAction] = useState<ActionType>(null);
   const [refreshKey, setRefreshKey] = useState(0);
 
@@ -203,7 +190,7 @@ export function DebtSection({
     return (
       <div className="rounded-xl border border-dashed border-border bg-muted/20 p-5">
         <p className="text-sm text-muted-foreground italic">
-          Les clients de passage ne peuvent pas avoir de dette.
+          {t("customers.debt.walkinNoDebt")}
         </p>
       </div>
     );
@@ -223,7 +210,7 @@ export function DebtSection({
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-1">
-              Solde actuel
+              {t("customers.debt.currentBalance")}
             </p>
             <p className={cn(
               "text-3xl font-black",
@@ -237,7 +224,7 @@ export function DebtSection({
             </p>
             {alertLimit !== null && (
               <p className="text-xs text-muted-foreground mt-1">
-                Limite d&apos;alerte: {alertLimit.toFixed(2)} DZD
+                {t("customers.debt.alertLimit", { amount: alertLimit.toFixed(2) })}
               </p>
             )}
           </div>
@@ -257,7 +244,7 @@ export function DebtSection({
           <div className="mt-3 flex items-center gap-2 rounded-md bg-red-100 dark:bg-red-900/30 p-2.5 border border-red-200 dark:border-red-800">
             <AlertTriangle className="h-4 w-4 text-red-600 shrink-0" />
             <p className="text-xs font-medium text-red-800 dark:text-red-300">
-              Ce client a dépassé sa limite d&apos;alerte de dette
+              {t("customers.debt.overLimit")}
             </p>
           </div>
         )}
@@ -266,15 +253,15 @@ export function DebtSection({
         {totalDebt > 0 && (
           <div className="mt-3 pt-3 border-t border-current/10 grid grid-cols-3 gap-4 text-center">
             <div>
-              <p className="text-xs text-muted-foreground">Réparations</p>
+              <p className="text-xs text-muted-foreground">{t("customers.debt.repairs")}</p>
               <p className="text-sm font-bold">{(summary?.repairDebt ?? 0).toFixed(0)} DZD</p>
             </div>
             <div>
-              <p className="text-xs text-muted-foreground">Ventes</p>
+              <p className="text-xs text-muted-foreground">{t("customers.debt.sales")}</p>
               <p className="text-sm font-bold">{(summary?.saleDebt ?? 0).toFixed(0)} DZD</p>
             </div>
             <div>
-              <p className="text-xs text-muted-foreground">Manuel</p>
+              <p className="text-xs text-muted-foreground">{t("customers.debt.manual")}</p>
               <p className="text-sm font-bold">{(summary?.manualDebt ?? 0).toFixed(0)} DZD</p>
             </div>
           </div>
@@ -290,7 +277,7 @@ export function DebtSection({
               className="inline-flex h-9 items-center gap-2 rounded-md bg-emerald-600 px-4 text-sm font-medium text-white hover:bg-emerald-700 transition-colors"
             >
               <Wallet className="h-4 w-4" />
-              Paiement de dette
+              {t("customers.debt.addPayment")}
             </button>
           )}
           {canManageDebt && (
@@ -300,7 +287,7 @@ export function DebtSection({
                 className="inline-flex h-9 items-center gap-2 rounded-md border border-destructive px-4 text-sm font-medium text-destructive hover:bg-destructive/10 transition-colors"
               >
                 <Plus className="h-4 w-4" />
-                Ajouter une dette
+                {t("customers.debt.addDebt")}
               </button>
               {totalDebt > 0 && (
                 <button
@@ -308,7 +295,7 @@ export function DebtSection({
                   className="inline-flex h-9 items-center gap-2 rounded-md border border-border px-4 text-sm font-medium hover:bg-muted transition-colors"
                 >
                   <Minus className="h-4 w-4" />
-                  Correction
+                  {t("customers.debt.correction")}
                 </button>
               )}
               {entriesWithBalance.length === 0 && (
@@ -317,7 +304,7 @@ export function DebtSection({
                   className="inline-flex h-9 items-center gap-2 rounded-md border border-border px-4 text-sm font-medium hover:bg-muted transition-colors"
                 >
                   <Plus className="h-4 w-4" />
-                  Solde d&apos;ouverture
+                  {t("customers.debt.openingBalance")}
                 </button>
               )}
             </>
@@ -329,7 +316,7 @@ export function DebtSection({
             className="inline-flex h-9 items-center gap-2 rounded-md border border-border px-4 text-sm font-medium hover:bg-muted transition-colors"
           >
             <Printer className="h-4 w-4" />
-            Relevé de compte
+            {t("customers.debt.statement")}
           </a>
         </div>
       )}
@@ -347,10 +334,10 @@ export function DebtSection({
 
       {/* Ledger table */}
       <div>
-        <h3 className="text-sm font-semibold mb-3">Historique de la dette</h3>
+        <h3 className="text-sm font-semibold mb-3">{t("customers.debt.history")}</h3>
         {entriesWithBalance.length === 0 ? (
           <div className="rounded-xl border border-dashed border-border p-6 text-center">
-            <p className="text-sm text-muted-foreground">Aucune transaction de dette enregistrée.</p>
+            <p className="text-sm text-muted-foreground">{t("customers.debt.empty")}</p>
           </div>
         ) : (
           <div className="rounded-xl border border-border overflow-hidden">
@@ -358,22 +345,18 @@ export function DebtSection({
               <table className="w-full text-sm whitespace-nowrap">
                 <thead className="bg-muted/30 text-xs uppercase text-muted-foreground border-b border-border">
                   <tr>
-                    <th className="px-4 py-3 text-left font-medium">Date</th>
-                    <th className="px-4 py-3 text-left font-medium">Type</th>
-                    <th className="px-4 py-3 text-right font-medium">Montant</th>
-                    <th className="px-4 py-3 text-right font-medium">Solde après</th>
-                    <th className="px-4 py-3 text-left font-medium">Note</th>
+                    <th className="px-4 py-3 text-left font-medium">{t("common.date")}</th>
+                    <th className="px-4 py-3 text-left font-medium">{t("common.type")}</th>
+                    <th className="px-4 py-3 text-right font-medium">{t("common.amount")}</th>
+                    <th className="px-4 py-3 text-right font-medium">{t("customers.debt.balanceAfter")}</th>
+                    <th className="px-4 py-3 text-left font-medium">{t("common.note")}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
                   {[...entriesWithBalance].reverse().map((entry) => (
                     <tr key={entry.id} className="bg-background hover:bg-muted/30 transition-colors">
                       <td className="px-4 py-3 text-muted-foreground">
-                        {new Date(entry.createdAt).toLocaleDateString("fr-FR", {
-                          day: "2-digit",
-                          month: "short",
-                          year: "numeric",
-                        })}
+                        {formatDate(entry.createdAt)}
                       </td>
                       <td className="px-4 py-3">
                         <span className={cn(
@@ -382,10 +365,10 @@ export function DebtSection({
                             ? "bg-red-50 text-red-800 border-red-200 dark:bg-red-950/30 dark:text-red-300 dark:border-red-800"
                             : "bg-emerald-50 text-emerald-800 border-emerald-200 dark:bg-emerald-950/30 dark:text-emerald-300 dark:border-emerald-800"
                         )}>
-                          {TYPE_LABELS[entry.type] ?? entry.type}
+                          {entry.type === "opening_balance" ? t("customers.debt.openingBalance") : entry.type === "manual_debt" ? t("customers.debt.manualDebt") : entry.type === "sale_debt" ? t("customers.debt.saleDebt") : entry.type === "repair_debt" ? t("customers.debt.repairDebt") : entry.type === "payment" ? t("customers.debt.payment") : entry.type === "adjustment" ? t("customers.debt.adjustment") : entry.type}
                         </span>
                       </td>
-                      <td className={cn("px-4 py-3 text-right font-bold", DIRECTION_CONFIG[entry.direction as "debit" | "credit"].cls)}>
+                      <td className={cn("px-4 py-3 text-right font-bold", entry.direction === "debit" ? "text-red-600 dark:text-red-400" : "text-emerald-600 dark:text-emerald-400")}>
                         {entry.direction === "debit" ? "+" : "-"}{entry.amount.toFixed(2)}
                       </td>
                       <td className="px-4 py-3 text-right font-semibold">

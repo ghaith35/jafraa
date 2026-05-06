@@ -6,12 +6,14 @@ import {
   listFamiliesByBrand,
 } from "@/features/catalog/actions/catalog.actions";
 import { CatalogBrowser } from "@/features/catalog/components/CatalogBrowser";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export const metadata = { title: "Catalogue des appareils" };
 
 export default async function CatalogPage(props: {
   searchParams: Promise<{ category?: string; brand?: string }>;
 }) {
+  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
 
@@ -38,8 +40,8 @@ export default async function CatalogPage(props: {
   return (
     <>
       <PageHeader
-        title="Catalogue"
-        description="Appareils, marques et familles de modèles"
+        title={t("settings.catalogTitle")}
+        description={t("settings.catalogDescription")}
       />
       <CatalogBrowser
         categories={categories}

@@ -2,12 +2,14 @@ import { getSession } from "@/lib/auth/session";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { PosRefundView } from "@/features/pos/components/PosRefundView";
+import { getTranslations } from "next-intl/server";
 
 export const metadata = {
   title: "Remboursements POS | REPAIRE",
 };
 
 export default async function PosRefundPage() {
+  const t = await getTranslations("pos");
   const session = await getSession();
   if (!session) redirect("/login");
   
@@ -25,9 +27,9 @@ export default async function PosRefundPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight">Remboursements POS</h1>
+        <h1 className="text-2xl font-bold tracking-tight">{t("refundsTitle")}</h1>
         <p className="text-muted-foreground">
-          Rechercher une vente et effectuer un remboursement total ou partiel.
+          {t("refundsDescription")}
         </p>
       </div>
 

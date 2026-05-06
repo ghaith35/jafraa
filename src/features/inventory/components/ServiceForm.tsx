@@ -10,6 +10,7 @@ import {
   type CreateServiceInput,
 } from "../schemas/inventory.schema";
 import { createService, updateService } from "../actions/service.actions";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -60,6 +61,7 @@ function Field({
 // ─── Component ───────────────────────────────────────────────────────────────
 
 export function ServiceForm({ service }: Props) {
+  const { t } = useAppI18n();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [serverError, setServerError] = useState<string | null>(null);
@@ -91,14 +93,14 @@ export function ServiceForm({ service }: Props) {
     startTransition(async () => {
       if (isEdit && service) {
         const result = await updateService(service.id, data);
-        if (result?.error) {
+        if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
           router.push("/dashboard/inventory?tab=services");
         }
       } else {
         const result = await createService(data);
-        if ("error" in result) {
+        if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
           router.push("/dashboard/inventory?tab=services");
@@ -111,7 +113,7 @@ export function ServiceForm({ service }: Props) {
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
       <div className="grid grid-cols-2 gap-4">
         {/* Name */}
-        <Field label="Nom du service" required error={errors.name?.message}>
+        <Field label={t("inventory.serviceName")} required error={errors.name?.message}>
           <input
             {...form.register("name")}
             type="text"
@@ -122,7 +124,7 @@ export function ServiceForm({ service }: Props) {
         </Field>
 
         {/* Category */}
-        <Field label="Catégorie" error={errors.category?.message} half>
+        <Field label={t("inventory.category")} error={errors.category?.message} half>
           <input
             {...form.register("category")}
             type="text"
@@ -137,14 +139,14 @@ export function ServiceForm({ service }: Props) {
           <input
             {...form.register("sku")}
             type="text"
-            placeholder="Auto-généré si vide"
+            placeholder={t("inventory.skuAuto")}
             className={cn(inputCls, "font-mono")}
             disabled={isPending}
           />
         </Field>
 
         {/* Selling price */}
-        <Field label="Prix de vente (DZD)" required error={errors.sellingPrice?.message} half>
+        <Field label={t("inventory.sellingPrice")} required error={errors.sellingPrice?.message} half>
           <input
             {...form.register("sellingPrice", { valueAsNumber: true })}
             type="number"
@@ -157,7 +159,7 @@ export function ServiceForm({ service }: Props) {
         </Field>
 
         {/* Duration */}
-        <Field label="Durée estimée (minutes)" error={errors.estimatedDurationMinutes?.message} half>
+        <Field label={t("inventory.durationMinutes")} error={errors.estimatedDurationMinutes?.message} half>
           <input
             {...form.register("estimatedDurationMinutes", { valueAsNumber: true })}
             type="number"
@@ -170,11 +172,11 @@ export function ServiceForm({ service }: Props) {
         </Field>
 
         {/* Notes */}
-        <Field label="Notes">
+        <Field label={t("common.notes")}>
           <textarea
             {...form.register("notes")}
             rows={3}
-            placeholder="Conditions, inclusions, remarques internes…"
+            placeholder={t("inventory.internalNotes")}
             className={cn(inputCls, "resize-y")}
             disabled={isPending}
           />
@@ -195,11 +197,11 @@ export function ServiceForm({ service }: Props) {
         >
           {isPending
             ? isEdit
-              ? "Mise à jour…"
-              : "Création…"
+              ? t("inventory.updating")
+              : t("inventory.creating")
             : isEdit
-              ? "Enregistrer les modifications"
-              : "Créer le service"}
+              ? t("inventory.updateService")
+              : t("inventory.createService")}
         </button>
         <button
           type="button"
@@ -207,7 +209,7 @@ export function ServiceForm({ service }: Props) {
           disabled={isPending}
           className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-50"
         >
-          Annuler
+          {t("common.cancel")}
         </button>
       </div>
     </form>

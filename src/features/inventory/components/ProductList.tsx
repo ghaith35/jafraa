@@ -4,6 +4,7 @@ import { useTransition } from "react";
 import Link from "next/link";
 import { Package, AlertTriangle, Archive, Pencil } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useAppI18n } from "@/lib/i18n/ui";
 import { archiveProduct } from "../actions/product.actions";
 import type { UserRole } from "@prisma/client";
 import { hasPermission } from "@/lib/auth/permissions";
@@ -53,6 +54,7 @@ function ProductRow({
   product: Product;
   canManage: boolean;
 }) {
+  const { t } = useAppI18n();
   const [isPending, startTransition] = useTransition();
   const low = isLowStock(product);
 
@@ -84,12 +86,12 @@ function ProductRow({
           {low && (
             <span className="flex items-center gap-0.5 text-xs font-medium text-warning">
               <AlertTriangle className="h-3 w-3" />
-              Stock bas
+              {t("inventory.lowStock")}
             </span>
           )}
           {product.isArchived && (
             <span className="text-xs text-muted-foreground border border-border rounded px-1.5 py-0.5">
-              Archivé
+              {t("inventory.archived")}
             </span>
           )}
         </div>
@@ -106,7 +108,7 @@ function ProductRow({
           {formatPrice(product.sellingPrice)}
         </span>
         <span className={cn("text-xs", low ? "text-warning font-medium" : "text-muted-foreground")}>
-          Stock: {product.stockQty}
+          {t("inventory.stock", { qty: product.stockQty })}
         </span>
       </div>
 
@@ -116,7 +118,7 @@ function ProductRow({
           <Link
             href={`/dashboard/inventory/products/${product.id}/edit`}
             className="rounded-md p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-            title="Modifier"
+            title={t("common.edit")}
           >
             <Pencil className="h-3.5 w-3.5" />
           </Link>
@@ -124,7 +126,7 @@ function ProductRow({
             type="button"
             onClick={handleArchive}
             disabled={isPending}
-            title="Archiver ce produit"
+            title={t("inventory.archiveProduct")}
             className="rounded-md p-1.5 text-muted-foreground hover:text-destructive hover:bg-destructive/10 disabled:opacity-50 transition-colors"
           >
             <Archive className="h-3.5 w-3.5" />
@@ -138,6 +140,7 @@ function ProductRow({
 // ─── List ─────────────────────────────────────────────────────────────────────
 
 export function ProductList({ products, userRole }: Props) {
+  const { t } = useAppI18n();
   const canManage = hasPermission(userRole, "inventory:manage");
 
   if (products.length === 0) {
@@ -146,9 +149,9 @@ export function ProductList({ products, userRole }: Props) {
         <div className="mb-4 rounded-full bg-muted p-3">
           <Package className="h-6 w-6 text-muted-foreground" />
         </div>
-        <p className="text-sm font-medium text-foreground">Aucun produit</p>
+        <p className="text-sm font-medium text-foreground">{t("inventory.noProducts")}</p>
         <p className="mt-1 text-sm text-muted-foreground max-w-sm">
-          Commencez par ajouter votre premier produit.
+          {t("inventory.noProductsDesc")}
         </p>
       </div>
     );

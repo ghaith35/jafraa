@@ -7,10 +7,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Plus, Trash2, Loader2, Save } from "lucide-react";
 import { createRepairTicketSchema, type CreateRepairTicketInput } from "../schemas/repair.schema";
 import { createRepairTicket } from "../actions/repair.actions";
+import { useRepairI18n } from "./RepairLanguageSwitcher";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function RepairForm({ customers, technicians }: any) {
   const router = useRouter();
+  const { locale, dir, t, trMessage } = useRepairI18n();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -48,13 +50,13 @@ export function RepairForm({ customers, technicians }: any) {
     try {
       const res = await createRepairTicket(data);
       if ("error" in res) {
-        setError(res.error);
+        setError(trMessage(res.error));
         setIsSubmitting(false);
       } else {
         router.push(`/dashboard/repairs/${res.id}`);
       }
     } catch {
-      setError("Une erreur inattendue est survenue");
+      setError(t("form_unexpectedError"));
       setIsSubmitting(false);
     }
   };
@@ -65,203 +67,202 @@ export function RepairForm({ customers, technicians }: any) {
   const customerAssets = customers.find((c: any) => c.id === watchCustomer)?.assets || [];
 
   return (
-    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-      {error && (
-        <div className="rounded-md bg-destructive/15 p-3 text-sm text-destructive">
-          {error}
-        </div>
-      )}
+    <div dir={dir} lang={locale} className="space-y-4">
 
-      {/* 1. Client & Appareil */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-4 rounded-xl border border-border bg-card p-5">
-          <h3 className="font-semibold text-lg">1. Client</h3>
-          <div>
-            <label className="text-sm font-medium mb-1.5 block">Sélectionner un client *</label>
-            <select
-              {...form.register("customerId")}
-              className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-            >
-              <option value="">Choisir un client...</option>
-              {customers.map((c: { id: string, name: string, phones?: Array<{ phoneNumber: string }> }) => (
-                <option key={c.id} value={c.id}>{c.name} {c.phones?.[0] ? `(${c.phones[0].phoneNumber})` : ""}</option>
-              ))}
-            </select>
-            {form.formState.errors.customerId && (
-              <p className="text-xs text-destructive mt-1">{form.formState.errors.customerId.message}</p>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        {error && (
+          <div className="rounded-md bg-destructive/15 p-3 text-sm text-destructive">
+            {error}
+          </div>
+        )}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-4 rounded-xl border border-border bg-card p-5">
+            <h3 className="font-semibold text-lg">{t("form_sectionCustomer")}</h3>
+            <div>
+              <label className="text-sm font-medium mb-1.5 block">{t("form_selectCustomer")}</label>
+              <select
+                {...form.register("customerId")}
+                className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              >
+                <option value="">{t("form_chooseCustomer")}</option>
+                {customers.map((c: { id: string, name: string, phones?: Array<{ phoneNumber: string }> }) => (
+                  <option key={c.id} value={c.id}>{c.name} {c.phones?.[0] ? `(${c.phones[0].phoneNumber})` : ""}</option>
+                ))}
+              </select>
+              {form.formState.errors.customerId && (
+                <p className="text-xs text-destructive mt-1">{trMessage(form.formState.errors.customerId.message)}</p>
+              )}
+            </div>
+          </div>
+
+          <div className="space-y-4 rounded-xl border border-border bg-card p-5">
+            <h3 className="font-semibold text-lg">{t("form_sectionDevice")}</h3>
+            
+            {customerAssets.length > 0 && (
+              <div>
+                <label className="text-sm font-medium mb-1.5 block">{t("form_existingDevice")}</label>
+                <select
+                  {...form.register("customerDeviceId")}
+                  className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  <option value="">{t("form_newDeviceOption")}</option>
+                  {customerAssets.map((a: { id: string, customBrand: string | null, customModel: string | null, imeiSerial: string | null }) => (
+                    <option key={a.id} value={a.id}>
+                      {a.customBrand} {a.customModel} {a.imeiSerial ? `(IMEI: ${a.imeiSerial})` : ""}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+
+            {!form.watch("customerDeviceId") && (
+              <div className="grid grid-cols-2 gap-3 p-4 bg-muted/30 rounded-lg border border-border">
+                <div className="col-span-2">
+                  <label className="text-sm font-medium mb-1.5 block">{t("form_brand")}</label>
+                  <input
+                    type="text"
+                    {...form.register("customDeviceBrand")}
+                    className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                    placeholder={t("form_brandPlaceholder")}
+                  />
+                </div>
+                <div className="col-span-2">
+                  <label className="text-sm font-medium mb-1.5 block">{t("form_model")}</label>
+                  <input
+                    type="text"
+                    {...form.register("customDeviceModel")}
+                    className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                    placeholder={t("form_modelPlaceholder")}
+                  />
+                  {form.formState.errors.customDeviceModel && (
+                    <p className="text-xs text-destructive mt-1">{trMessage(form.formState.errors.customDeviceModel.message)}</p>
+                  )}
+                </div>
+                <div>
+                  <label className="text-sm font-medium mb-1.5 block">{t("color")}</label>
+                  <input
+                    type="text"
+                    {...form.register("deviceColor")}
+                    className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                  />
+                </div>
+                <div>
+                  <label className="text-sm font-medium mb-1.5 block">{t("form_unlockCode")}</label>
+                  <input
+                    type="text"
+                    {...form.register("imeiSerial")}
+                    className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                    placeholder={t("form_unlockCodePlaceholder")}
+                  />
+                </div>
+              </div>
             )}
           </div>
         </div>
 
         <div className="space-y-4 rounded-xl border border-border bg-card p-5">
-          <h3 className="font-semibold text-lg">2. Appareil</h3>
+          <div className="flex items-center justify-between gap-3">
+            <h3 className="font-semibold text-lg">{t("form_sectionProblems")}</h3>
+            <button
+              type="button"
+              onClick={() => append({ problemText: "" })}
+              className="text-sm flex items-center gap-1 text-primary hover:underline font-medium"
+            >
+              <Plus className="h-4 w-4" /> {t("form_addProblem")}
+            </button>
+          </div>
           
-          {customerAssets.length > 0 && (
+          <div className="space-y-3">
+            {fields.map((field, index) => (
+              <div key={field.id} className="flex gap-2">
+                <div className="flex-1">
+                  <input
+                    {...form.register(`problems.${index}.problemText`)}
+                    className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                    placeholder={t("form_problemPlaceholder", { index: index + 1 })}
+                  />
+                  {form.formState.errors.problems?.[index]?.problemText && (
+                    <p className="text-xs text-destructive mt-1">
+                      {trMessage(form.formState.errors.problems[index]?.problemText?.message)}
+                    </p>
+                  )}
+                </div>
+                {fields.length > 1 && (
+                  <button
+                    type="button"
+                    onClick={() => remove(index)}
+                    className="h-9 w-9 flex items-center justify-center rounded-md border border-input bg-transparent text-destructive hover:bg-destructive/10"
+                  >
+                    <Trash2 className="h-4 w-4" />
+                  </button>
+                )}
+              </div>
+            ))}
+          </div>
+          {form.formState.errors.problems && (
+            <p className="text-xs text-destructive mt-1">{trMessage(form.formState.errors.problems.message)}</p>
+          )}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-4 rounded-xl border border-border bg-card p-5">
+            <h3 className="font-semibold text-lg">{t("form_sectionTracking")}</h3>
             <div>
-              <label className="text-sm font-medium mb-1.5 block">Appareil existant</label>
+              <label className="text-sm font-medium mb-1.5 block">{t("form_assignTechnician")}</label>
               <select
-                {...form.register("customerDeviceId")}
+                {...form.register("assignedTechnicianId")}
                 className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                <option value="">-- Saisir un nouvel appareil --</option>
-                {customerAssets.map((a: { id: string, customBrand: string | null, customModel: string | null, imeiSerial: string | null }) => (
-                  <option key={a.id} value={a.id}>
-                    {a.customBrand} {a.customModel} {a.imeiSerial ? `(IMEI: ${a.imeiSerial})` : ""}
-                  </option>
+                <option value="">{t("form_doNotAssignNow")}</option>
+                {technicians.map((technician: { id: string, name: string }) => (
+                  <option key={technician.id} value={technician.id}>{technician.name}</option>
                 ))}
               </select>
             </div>
-          )}
-
-          {!form.watch("customerDeviceId") && (
-            <div className="grid grid-cols-2 gap-3 p-4 bg-muted/30 rounded-lg border border-border">
-              <div className="col-span-2">
-                <label className="text-sm font-medium mb-1.5 block">Marque *</label>
-                <input
-                  type="text"
-                  {...form.register("customDeviceBrand")}
-                  className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                  placeholder="Ex: Apple, Samsung..."
-                />
-              </div>
-              <div className="col-span-2">
-                <label className="text-sm font-medium mb-1.5 block">Modèle *</label>
-                <input
-                  type="text"
-                  {...form.register("customDeviceModel")}
-                  className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                  placeholder="Ex: iPhone 13, Galaxy S21..."
-                />
-                {form.formState.errors.customDeviceModel && (
-                  <p className="text-xs text-destructive mt-1">{form.formState.errors.customDeviceModel.message}</p>
-                )}
-              </div>
-              <div>
-                <label className="text-sm font-medium mb-1.5 block">Couleur</label>
-                <input
-                  type="text"
-                  {...form.register("deviceColor")}
-                  className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                />
-              </div>
-              <div>
-                <label className="text-sm font-medium mb-1.5 block">Mot de passe / Code</label>
-                <input
-                  type="text"
-                  {...form.register("imeiSerial")}
-                  className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                  placeholder="Code de déverrouillage"
-                />
-              </div>
+            <div>
+              <label className="text-sm font-medium mb-1.5 block">{t("form_priority")}</label>
+              <select
+                {...form.register("priority")}
+                className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              >
+                <option value="normal">{t("form_priorityNormal")}</option>
+                <option value="rush">{t("form_priorityRush")}</option>
+              </select>
             </div>
-          )}
-        </div>
-      </div>
+          </div>
 
-      {/* 3. Problèmes */}
-      <div className="space-y-4 rounded-xl border border-border bg-card p-5">
-        <div className="flex items-center justify-between">
-          <h3 className="font-semibold text-lg">3. Problèmes signalés *</h3>
+          <div className="space-y-4 rounded-xl border border-border bg-card p-5">
+            <h3 className="font-semibold text-lg">{t("form_sectionNotes")}</h3>
+            <div>
+              <label className="text-sm font-medium mb-1.5 block">{t("form_internalNotes")}</label>
+              <textarea
+                {...form.register("internalNotes")}
+                className="flex min-h-[80px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                placeholder={t("form_internalNotesPlaceholder")}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-end gap-4 pt-4">
           <button
             type="button"
-            onClick={() => append({ problemText: "" })}
-            className="text-sm flex items-center gap-1 text-primary hover:underline font-medium"
+            onClick={() => router.back()}
+            className="h-10 px-4 py-2 rounded-md border border-input bg-background text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
           >
-            <Plus className="h-4 w-4" /> Ajouter un problème
+            {t("cancel")}
+          </button>
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="h-10 px-4 py-2 inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors disabled:opacity-50"
+          >
+            {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
+            {t("form_createTicket")}
           </button>
         </div>
-        
-        <div className="space-y-3">
-          {fields.map((field, index) => (
-            <div key={field.id} className="flex gap-2">
-              <div className="flex-1">
-                <input
-                  {...form.register(`problems.${index}.problemText`)}
-                  className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                  placeholder={`Description du problème ${index + 1}...`}
-                />
-                {form.formState.errors.problems?.[index]?.problemText && (
-                  <p className="text-xs text-destructive mt-1">
-                    {form.formState.errors.problems[index]?.problemText?.message}
-                  </p>
-                )}
-              </div>
-              {fields.length > 1 && (
-                <button
-                  type="button"
-                  onClick={() => remove(index)}
-                  className="h-9 w-9 flex items-center justify-center rounded-md border border-input bg-transparent text-destructive hover:bg-destructive/10"
-                >
-                  <Trash2 className="h-4 w-4" />
-                </button>
-              )}
-            </div>
-          ))}
-        </div>
-        {form.formState.errors.problems && (
-          <p className="text-xs text-destructive mt-1">{form.formState.errors.problems.message}</p>
-        )}
-      </div>
-
-      {/* 4. Assignation & Priorité */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-4 rounded-xl border border-border bg-card p-5">
-          <h3 className="font-semibold text-lg">4. Suivi</h3>
-          <div>
-            <label className="text-sm font-medium mb-1.5 block">Assigner à un technicien</label>
-            <select
-              {...form.register("assignedTechnicianId")}
-              className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-            >
-              <option value="">-- Ne pas assigner dans l&apos;immédiat --</option>
-              {technicians.map((t: { id: string, name: string }) => (
-                <option key={t.id} value={t.id}>{t.name}</option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label className="text-sm font-medium mb-1.5 block">Priorité</label>
-            <select
-              {...form.register("priority")}
-              className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-            >
-              <option value="normal">Normale</option>
-              <option value="rush">Urgent (Prioritaire)</option>
-            </select>
-          </div>
-        </div>
-
-        <div className="space-y-4 rounded-xl border border-border bg-card p-5">
-          <h3 className="font-semibold text-lg">5. Notes (Optionnel)</h3>
-          <div>
-            <label className="text-sm font-medium mb-1.5 block">Notes internes (visibles par l&apos;équipe)</label>
-            <textarea
-              {...form.register("internalNotes")}
-              className="flex min-h-[80px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              placeholder="Ex: Vérifier le connecteur de charge..."
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Submit */}
-      <div className="flex items-center justify-end gap-4 pt-4">
-        <button
-          type="button"
-          onClick={() => router.back()}
-          className="h-10 px-4 py-2 rounded-md border border-input bg-background text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
-        >
-          Annuler
-        </button>
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="h-10 px-4 py-2 inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors disabled:opacity-50"
-        >
-          {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
-          Créer le ticket
-        </button>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 }

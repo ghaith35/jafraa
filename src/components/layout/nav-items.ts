@@ -15,7 +15,7 @@ import { hasPermission, type Permission } from "@/lib/auth/permissions";
 
 export interface NavItem {
   href: string;
-  label: string;
+  labelKey: string;
   icon: LucideIcon;
   permission: Permission | null;
 }
@@ -23,55 +23,55 @@ export interface NavItem {
 const ALL_NAV_ITEMS: NavItem[] = [
   {
     href: "/dashboard",
-    label: "Tableau de bord",
+    labelKey: "dashboard",
     icon: LayoutDashboard,
     permission: null, // visible to all
   },
   {
     href: "/dashboard/pos",
-    label: "Caisse",
+    labelKey: "pos",
     icon: ShoppingCart,
     permission: "payments:manage",
   },
   {
     href: "/dashboard/repairs",
-    label: "Réparations",
+    labelKey: "repairs",
     icon: Wrench,
     permission: "tickets:view",
   },
   {
     href: "/dashboard/customers",
-    label: "Clients",
+    labelKey: "customers",
     icon: Users,
     permission: "customers:view",
   },
   {
     href: "/dashboard/inventory",
-    label: "Inventaire",
+    labelKey: "inventory",
     icon: Package,
     permission: "inventory:view",
   },
   {
     href: "/dashboard/suppliers",
-    label: "Fournisseurs",
+    labelKey: "suppliers",
     icon: Truck,
     permission: "inventory:manage",
   },
   {
     href: "/dashboard/reports",
-    label: "Rapports",
+    labelKey: "reports",
     icon: BarChart2,
     permission: "reports:view",
   },
   {
     href: "/dashboard/settings",
-    label: "Paramètres",
+    labelKey: "settings",
     icon: Settings,
     permission: "settings:manage",
   },
   {
     href: "/dashboard/settings/whatsapp",
-    label: "WhatsApp",
+    labelKey: "whatsapp",
     icon: MessageSquare,
     permission: "settings:manage",
   },

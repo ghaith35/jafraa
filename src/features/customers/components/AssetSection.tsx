@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Plus, Cpu } from "lucide-react";
 import { AssetCard } from "./AssetCard";
 import { AssetForm } from "./AssetForm";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 interface Asset {
   id: string;
@@ -46,6 +47,7 @@ export function AssetSection({
   companyId,
   storeId,
 }: Props) {
+  const { t } = useAppI18n();
   const [showForm, setShowForm] = useState(false);
 
   return (
@@ -54,7 +56,7 @@ export function AssetSection({
         <div className="flex items-center gap-2">
           <Cpu className="h-4 w-4 text-muted-foreground" />
           <h2 className="text-sm font-semibold text-foreground">
-            Appareils ({initialAssets.length})
+            {t("customers.asset.devices")} ({initialAssets.length})
           </h2>
         </div>
         {canManage && !showForm && (
@@ -63,7 +65,7 @@ export function AssetSection({
             className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-medium text-primary border border-primary/40 hover:bg-primary/10 transition-colors"
           >
             <Plus className="h-3.5 w-3.5" />
-            Ajouter un appareil
+            {t("customers.asset.add")}
           </button>
         )}
       </div>
@@ -84,13 +86,13 @@ export function AssetSection({
       {initialAssets.length === 0 && !showForm ? (
         <div className="rounded-lg border border-dashed border-border p-6 text-center">
           <Cpu className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
-          <p className="text-sm text-muted-foreground">Aucun appareil enregistré</p>
+          <p className="text-sm text-muted-foreground">{t("customers.asset.noAsset")}</p>
           {canManage && (
             <button
               onClick={() => setShowForm(true)}
               className="mt-3 text-sm text-primary hover:underline"
             >
-              Ajouter un appareil
+              {t("customers.asset.add")}
             </button>
           )}
         </div>

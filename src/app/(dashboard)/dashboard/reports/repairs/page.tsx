@@ -6,12 +6,14 @@ import { KpiGrid, KpiCard } from "@/features/reports/components/KpiGrid";
 import { Wrench, CheckCircle2, Clock, AlertCircle } from "lucide-react";
 import { parseISO, subDays } from "date-fns";
 import { cn } from "@/lib/utils";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export default async function RepairsReportPage({
   searchParams,
 }: {
   searchParams: Promise<{ start?: string; end?: string }>;
 }) {
+  const { t } = await getAppI18n();
   const params = await searchParams;
   const startDate = params.start ? parseISO(params.start) : subDays(new Date(), 30);
   const endDate = params.end ? parseISO(params.end) : new Date();
@@ -20,8 +22,8 @@ export default async function RepairsReportPage({
 
   return (
     <ReportShell
-      title="Rapport des Réparations"
-      description="Performance de l'atelier et suivi des tickets"
+      title={t("reports.repairs.title")}
+      description={t("reports.repairs.description")}
     >
       <KpiGrid>
         <KpiCard

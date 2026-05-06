@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { Search, Loader2, Plus, AlertTriangle } from "lucide-react";
 import { searchPartsForReservation, addReservedPartToTicket } from "../actions/reservation.actions";
+import { useRepairI18n } from "./RepairLanguageSwitcher";
 
 interface PartResult {
   id: string;
@@ -17,6 +18,7 @@ interface PartResult {
 
 export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onSuccess: () => void }) {
   const router = useRouter();
+  const { t, trMessage } = useRepairI18n();
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<PartResult[]>([]);
   const [searching, setSearching] = useState(false);
@@ -49,11 +51,11 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
   const handleSubmit = async () => {
     if (!selectedPart) return;
     if (quantity < 1) {
-      setError("La quantité doit être supérieure à 0");
+      setError(t("validation_quantityPositive"));
       return;
     }
     if (quantity > selectedPart.availableQty) {
-      setError(`Stock insuffisant. Disponible: ${selectedPart.availableQty}`);
+      setError(t("validation_insufficientStock", { available: selectedPart.availableQty }));
       return;
     }
 
@@ -61,7 +63,7 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
     setError(null);
     const res = await addReservedPartToTicket(ticketId, selectedPart.id, quantity, note || undefined);
     if ("error" in res) {
-      setError(res.error);
+      setError(trMessage(res.error));
       setSubmitting(false);
     } else {
       router.refresh();
@@ -78,11 +80,10 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
         </div>
       )}
 
-      {/* Search */}
       <div className="relative">
-        <label className="text-sm font-medium mb-1.5 block">Rechercher une pièce (nom, SKU, code-barres)</label>
+        <label className="text-sm font-medium mb-1.5 block">{t("parts_searchLabel")}</label>
         <div className="relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Search className="absolute start-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <input
             type="text"
             value={query}
@@ -90,13 +91,12 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
               handleSearch(e.target.value);
               if (selectedPart) setSelectedPart(null);
             }}
-            className="flex h-10 w-full rounded-md border border-input bg-transparent pl-10 pr-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-            placeholder="Rechercher..."
+            className="flex h-10 w-full rounded-md border border-input bg-transparent ps-10 pe-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+            placeholder={t("parts_searchPlaceholder")}
           />
-          {searching && <Loader2 className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 animate-spin text-muted-foreground" />}
+          {searching && <Loader2 className="absolute end-3 top-1/2 -translate-y-1/2 h-4 w-4 animate-spin text-muted-foreground" />}
         </div>
 
-        {/* Search Results Dropdown */}
         {results.length > 0 && !selectedPart && (
           <div className="absolute z-10 mt-1 w-full rounded-md border border-border bg-popover shadow-lg max-h-60 overflow-auto">
             {results.map((part) => (
@@ -104,16 +104,16 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
                 key={part.id}
                 type="button"
                 onClick={() => handleSelect(part)}
-                className="flex w-full items-center justify-between px-4 py-3 text-sm hover:bg-accent text-left border-b border-border last:border-0"
+                className="flex w-full items-center justify-between px-4 py-3 text-sm hover:bg-accent text-start border-b border-border last:border-0"
               >
                 <div>
                   <div className="font-medium">{part.name}</div>
                   <div className="text-xs text-muted-foreground">{part.sku}</div>
                 </div>
-                <div className="text-right text-xs">
+                <div className="text-end text-xs">
                   <div className="font-medium">{part.sellingPrice.toFixed(2)} DZD</div>
                   <div className={part.availableQty > 0 ? "text-emerald-600" : "text-destructive"}>
-                    Dispo: {part.availableQty} / {part.stockQty}
+                    {t("parts_availableShort", { available: part.availableQty, stock: part.stockQty })}
                   </div>
                 </div>
               </button>
@@ -122,7 +122,6 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
         )}
       </div>
 
-      {/* Selected Part Details */}
       {selectedPart && (
         <div className="rounded-lg border bg-muted/20 p-4 space-y-3">
           <div className="flex items-center justify-between">
@@ -137,21 +136,21 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
               }}
               className="text-xs text-muted-foreground hover:text-foreground"
             >
-              Changer
+              {t("change")}
             </button>
           </div>
 
           <div className="grid grid-cols-3 gap-3 text-center text-sm">
             <div className="rounded-md border bg-background p-2">
-              <div className="text-xs text-muted-foreground">Stock total</div>
+              <div className="text-xs text-muted-foreground">{t("parts_totalStock")}</div>
               <div className="font-bold text-lg">{selectedPart.stockQty}</div>
             </div>
             <div className="rounded-md border bg-background p-2">
-              <div className="text-xs text-muted-foreground">Réservé</div>
+              <div className="text-xs text-muted-foreground">{t("parts_reserved")}</div>
               <div className="font-bold text-lg text-amber-600">{selectedPart.reservedQty}</div>
             </div>
             <div className="rounded-md border bg-background p-2">
-              <div className="text-xs text-muted-foreground">Disponible</div>
+              <div className="text-xs text-muted-foreground">{t("parts_available")}</div>
               <div className={`font-bold text-lg ${selectedPart.availableQty > 0 ? "text-emerald-600" : "text-destructive"}`}>
                 {selectedPart.availableQty}
               </div>
@@ -161,7 +160,7 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
           {selectedPart.availableQty === 0 && (
             <div className="rounded-md bg-destructive/15 p-3 text-sm text-destructive flex items-center gap-2">
               <AlertTriangle className="h-4 w-4" />
-              Stock épuisé. Impossible de réserver cette pièce.
+              {t("parts_outOfStock")}
             </div>
           )}
 
@@ -169,7 +168,7 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
             <div className="space-y-3">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="text-sm font-medium mb-1 block">Quantité</label>
+                  <label className="text-sm font-medium mb-1 block">{t("quantityShort")}</label>
                   <input
                     type="number"
                     min={1}
@@ -180,13 +179,13 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
                   />
                 </div>
                 <div>
-                  <label className="text-sm font-medium mb-1 block">Note (optionnel)</label>
+                  <label className="text-sm font-medium mb-1 block">{t("parts_noteOptional")}</label>
                   <input
                     type="text"
                     value={note}
                     onChange={(e) => setNote(e.target.value)}
                     className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                    placeholder="Note..."
+                    placeholder={t("parts_notePlaceholder")}
                   />
                 </div>
               </div>
@@ -199,7 +198,7 @@ export function ReservePartForm({ ticketId, onSuccess }: { ticketId: string; onS
                   className="h-9 px-4 inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors disabled:opacity-50"
                 >
                   {submitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Plus className="h-4 w-4" />}
-                  Réserver
+                  {t("parts_reserve")}
                 </button>
               </div>
             </div>

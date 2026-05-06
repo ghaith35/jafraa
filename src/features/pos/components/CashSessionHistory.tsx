@@ -2,13 +2,15 @@
 
 import { cn } from "@/lib/utils";
 import { Printer } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function CashSessionHistory({ sessions }: { sessions: any[] }) {
+  const t = useTranslations("pos");
   if (sessions.length === 0) {
     return (
       <div className="rounded-xl border border-dashed border-border p-8 text-center bg-muted/20">
-        <p className="text-muted-foreground text-sm">Aucun historique de caisse disponible.</p>
+        <p className="text-muted-foreground text-sm">{t("noHistory")}</p>
       </div>
     );
   }
@@ -19,16 +21,16 @@ export function CashSessionHistory({ sessions }: { sessions: any[] }) {
         <table className="w-full text-sm text-left whitespace-nowrap">
           <thead className="bg-muted/30 text-xs uppercase text-muted-foreground border-b border-border">
             <tr>
-              <th className="px-4 py-3 font-medium">Statut</th>
-              <th className="px-4 py-3 font-medium">Ouverte par</th>
-              <th className="px-4 py-3 font-medium">Date d&apos;ouverture</th>
-              <th className="px-4 py-3 font-medium">Fermée par</th>
-              <th className="px-4 py-3 font-medium">Date de fermeture</th>
-              <th className="px-4 py-3 font-medium text-right">Espèces d&apos;ouverture</th>
-              <th className="px-4 py-3 font-medium text-right">Espèces attendues</th>
-              <th className="px-4 py-3 font-medium text-right">Espèces comptées</th>
-              <th className="px-4 py-3 font-medium text-right">Écart</th>
-              <th className="px-4 py-3 font-medium text-center">Action</th>
+              <th className="px-4 py-3 font-medium">{t("status")}</th>
+              <th className="px-4 py-3 font-medium">{t("openingBy")}</th>
+              <th className="px-4 py-3 font-medium">{t("openingDate")}</th>
+              <th className="px-4 py-3 font-medium">{t("closedBy")}</th>
+              <th className="px-4 py-3 font-medium">{t("closedDate")}</th>
+              <th className="px-4 py-3 font-medium text-right">{t("openingCashShort")}</th>
+              <th className="px-4 py-3 font-medium text-right">{t("expectedCash")}</th>
+              <th className="px-4 py-3 font-medium text-right">{t("countedCashShort")}</th>
+              <th className="px-4 py-3 font-medium text-right">{t("variance")}</th>
+              <th className="px-4 py-3 font-medium text-center">{t("action")}</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-border">
@@ -36,14 +38,14 @@ export function CashSessionHistory({ sessions }: { sessions: any[] }) {
             {sessions.map((session: any) => {
               const variance = session.varianceAmount !== null ? Number(session.varianceAmount) : null;
               
-              let statusLabel = "Ouverte";
+              let statusLabel = t("opened");
               let statusClass = "bg-emerald-100 text-emerald-800 border-emerald-200";
               
               if (session.status === "closed") {
-                statusLabel = "Fermée";
+                statusLabel = t("closed");
                 statusClass = "bg-gray-100 text-gray-800 border-gray-200";
               } else if (session.status === "force_closed") {
-                statusLabel = "Fermeture Forcée";
+                statusLabel = t("forcedClosed");
                 statusClass = "bg-red-100 text-red-800 border-red-200";
               }
 
@@ -79,7 +81,7 @@ export function CashSessionHistory({ sessions }: { sessions: any[] }) {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex h-8 w-8 items-center justify-center rounded-md border bg-white dark:bg-transparent text-muted-foreground hover:text-primary hover:bg-muted transition-colors"
-                      title="Imprimer le rapport Z"
+                      title={t("printZReport")}
                     >
                       <Printer className="h-4 w-4" />
                     </a>

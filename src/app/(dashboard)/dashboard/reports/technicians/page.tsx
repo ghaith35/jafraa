@@ -4,12 +4,14 @@ import { getTechnicianPerformance } from "@/features/reports/actions/report.acti
 import { ReportShell } from "@/features/reports/components/ReportShell";
 import { Users, TrendingUp } from "lucide-react";
 import { parseISO, subDays } from "date-fns";
+import { getAppI18n } from "@/lib/i18n/server";
 
 export default async function TechniciansReportPage({
   searchParams,
 }: {
   searchParams: Promise<{ start?: string; end?: string }>;
 }) {
+  const { t } = await getAppI18n();
   const params = await searchParams;
   const startDate = params.start ? parseISO(params.start) : subDays(new Date(), 30);
   const endDate = params.end ? parseISO(params.end) : new Date();
@@ -18,8 +20,8 @@ export default async function TechniciansReportPage({
 
   return (
     <ReportShell
-      title="Performance Techniciens"
-      description="Productivité et chiffre d'affaires par membre de l'équipe"
+      title={t("reports.technicians.title")}
+      description={t("reports.technicians.description")}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {data.map((tech) => {

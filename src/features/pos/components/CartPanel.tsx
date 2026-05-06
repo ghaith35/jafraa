@@ -2,6 +2,7 @@
 
 import { Minus, Plus, Trash2, ShoppingCart } from "lucide-react";
 import type { CartLine } from "../actions/pos-sale.actions";
+import { useTranslations } from "next-intl";
 
 interface CartPanelProps {
   lines: CartLine[];
@@ -16,6 +17,7 @@ export function CartPanel({
   onRemoveLine,
   onClearCart,
 }: CartPanelProps) {
+  const t = useTranslations("pos");
   const subtotal = lines.reduce(
     (sum, line) => sum + line.unitPrice * line.quantity,
     0
@@ -25,9 +27,9 @@ export function CartPanel({
     return (
       <div className="flex flex-col items-center justify-center py-12 text-center">
         <ShoppingCart className="h-10 w-10 text-muted-foreground/40 mb-3" />
-        <p className="text-sm text-muted-foreground">Panier vide</p>
+        <p className="text-sm text-muted-foreground">{t("cartEmpty")}</p>
         <p className="text-xs text-muted-foreground mt-1">
-          Recherchez et ajoutez des articles
+          {t("searchAndAdd")}
         </p>
       </div>
     );
@@ -38,13 +40,13 @@ export function CartPanel({
       {/* Header */}
       <div className="flex items-center justify-between mb-3 pb-3 border-b border-border">
         <h3 className="font-bold text-sm">
-          Panier ({lines.length} article{lines.length > 1 ? "s" : ""})
+          {t("cart", { count: String(lines.length), plural: lines.length > 1 ? "s" : "" })}
         </h3>
         <button
           onClick={onClearCart}
           className="text-xs text-destructive hover:underline font-medium"
         >
-          Vider
+          {t("clear")}
         </button>
       </div>
 
@@ -102,7 +104,7 @@ export function CartPanel({
       <div className="pt-3 mt-3 border-t border-border">
         <div className="flex items-center justify-between">
           <span className="text-sm font-medium text-muted-foreground">
-            Sous-total
+            {t("subtotal")}
           </span>
           <span className="text-lg font-bold">
             {subtotal.toFixed(2)} DZD

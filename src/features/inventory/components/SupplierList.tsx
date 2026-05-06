@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { archiveSupplier } from "../actions/supplier.actions";
 import type { UserRole } from "@prisma/client";
 import { hasPermission } from "@/lib/auth/permissions";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -44,6 +45,7 @@ function SupplierRow({
   supplier: Supplier;
   canManage: boolean;
 }) {
+  const { t } = useAppI18n();
   const [isPending, startTransition] = useTransition();
 
   function handleArchive() {
@@ -76,7 +78,7 @@ function SupplierRow({
           </Link>
           {supplier.isArchived && (
             <span className="text-xs text-muted-foreground border border-border rounded px-1.5 py-0.5">
-              Archivé
+              {t("customers.archived")}
             </span>
           )}
         </div>
@@ -99,7 +101,7 @@ function SupplierRow({
       {/* Balance */}
       <div className="flex items-center justify-between sm:flex-col sm:items-end gap-1 shrink-0 border-t border-border sm:border-0 pt-2 sm:pt-0 mt-2 sm:mt-0">
         <div className="flex flex-col sm:items-end gap-0.5">
-          <span className="text-xs text-muted-foreground uppercase tracking-wide font-medium">Solde dû</span>
+          <span className="text-xs text-muted-foreground uppercase tracking-wide font-medium">{t("suppliers.balanceDue")}</span>
           <span className={cn("text-sm font-semibold", hasDebt ? "text-destructive" : "text-foreground")}>
             {formatPrice(supplier.balance)}
           </span>
@@ -111,7 +113,7 @@ function SupplierRow({
             <Link
               href={`/dashboard/suppliers/${supplier.id}/edit`}
               className="rounded-md p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-              title="Modifier"
+              title={t("common.edit")}
             >
               <Pencil className="h-3.5 w-3.5" />
             </Link>
@@ -119,7 +121,7 @@ function SupplierRow({
               type="button"
               onClick={handleArchive}
               disabled={isPending}
-              title="Archiver ce fournisseur"
+              title={t("suppliers.archiveSupplier")}
               className="rounded-md p-1.5 text-muted-foreground hover:text-destructive hover:bg-destructive/10 disabled:opacity-50 transition-colors"
             >
               <Archive className="h-3.5 w-3.5" />
@@ -134,6 +136,7 @@ function SupplierRow({
 // ─── List ─────────────────────────────────────────────────────────────────────
 
 export function SupplierList({ suppliers, userRole }: Props) {
+  const { t } = useAppI18n();
   const canManage = hasPermission(userRole, "inventory:manage");
 
   if (suppliers.length === 0) {
@@ -142,9 +145,9 @@ export function SupplierList({ suppliers, userRole }: Props) {
         <div className="mb-4 rounded-full bg-muted p-3">
           <Building2 className="h-6 w-6 text-muted-foreground" />
         </div>
-        <p className="text-sm font-medium text-foreground">Aucun fournisseur</p>
+        <p className="text-sm font-medium text-foreground">{t("suppliers.noSuppliers")}</p>
         <p className="mt-1 text-sm text-muted-foreground max-w-sm">
-          Commencez par ajouter vos fournisseurs pour suivre vos achats et vos soldes.
+          {t("suppliers.emptyDescription")}
         </p>
       </div>
     );

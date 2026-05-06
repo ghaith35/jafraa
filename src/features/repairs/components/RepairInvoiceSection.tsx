@@ -9,39 +9,30 @@ import {
   Receipt,
   Clock,
   Printer,
-  MessageSquare,
+  RotateCcw,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { generateRepairInvoice, payRepairInvoice } from "../actions/invoice.actions";
 import type { InvoiceSummary, PaymentConfirmation } from "../actions/invoice.actions";
 import { RepairRefundForm } from "./RepairRefundForm";
-import { RotateCcw } from "lucide-react";
 import type { UserRole } from "@prisma/client";
-import { notifyCustomerWhatsApp } from "../../whatsapp/actions/whatsapp.actions";
+import { WhatsAppSendButton } from "../../whatsapp/components/WhatsAppSendButton";
+import { getInvoiceStatusLabel, getLineTypeLabel } from "../i18n";
+import { useRepairI18n } from "./RepairLanguageSwitcher";
 
-// ─── Type labels ──────────────────────────────────────────────────────────────
-
-const LINE_TYPE_LABELS: Record<string, string> = {
-  labor: "Main d'œuvre",
-  part: "Pièce",
-  service: "Service",
-  custom: "Personnalisé",
+const INVOICE_STATUS_CLASSES: Record<string, string> = {
+  unpaid: "bg-red-100 text-red-800 border-red-200 dark:bg-red-950/30 dark:text-red-300 dark:border-red-800",
+  partial: "bg-amber-100 text-amber-800 border-amber-200 dark:bg-amber-950/30 dark:text-amber-300 dark:border-amber-800",
+  paid: "bg-emerald-100 text-emerald-800 border-emerald-200 dark:bg-emerald-950/30 dark:text-emerald-300 dark:border-emerald-800",
+  cancelled: "bg-gray-100 text-gray-700 border-gray-200 dark:bg-muted dark:text-muted-foreground",
 };
-
-const STATUS_CONFIG: Record<string, { label: string; cls: string }> = {
-  unpaid: { label: "Non réglée", cls: "bg-red-100 text-red-800 border-red-200 dark:bg-red-950/30 dark:text-red-300 dark:border-red-800" },
-  partial: { label: "Partiellement réglée", cls: "bg-amber-100 text-amber-800 border-amber-200 dark:bg-amber-950/30 dark:text-amber-300 dark:border-amber-800" },
-  paid: { label: "Réglée", cls: "bg-emerald-100 text-emerald-800 border-emerald-200 dark:bg-emerald-950/30 dark:text-emerald-300 dark:border-emerald-800" },
-  cancelled: { label: "Annulée", cls: "bg-gray-100 text-gray-700 border-gray-200 dark:bg-muted dark:text-muted-foreground" },
-};
-
-// ─── Sub-components ───────────────────────────────────────────────────────────
 
 function StatusBadge({ status }: { status: string }) {
-  const cfg = STATUS_CONFIG[status] ?? STATUS_CONFIG.unpaid;
+  const { locale } = useRepairI18n();
+  const cls = INVOICE_STATUS_CLASSES[status] ?? INVOICE_STATUS_CLASSES.unpaid;
   return (
-    <span className={cn("inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold border", cfg.cls)}>
-      {cfg.label}
+    <span className={cn("inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold border", cls)}>
+      {getInvoiceStatusLabel(status, locale)}
     </span>
   );
 }
@@ -55,8 +46,6 @@ function MoneyRow({ label, value, bold }: { label: string; value: number; bold?:
   );
 }
 
-// ─── Payment form ─────────────────────────────────────────────────────────────
-
 function PaymentForm({
   invoice,
   isWalkin,
@@ -66,6 +55,7 @@ function PaymentForm({
   isWalkin: boolean;
   onSuccess: (confirmation: PaymentConfirmation) => void;
 }) {
+  const { t, trMessage } = useRepairI18n();
   const remaining = invoice.totalAmount - invoice.paidAmount;
   const [cashAmount, setCashAmount] = useState<number | "">(remaining);
   const [error, setError] = useState<string | null>(null);
@@ -79,15 +69,15 @@ function PaymentForm({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!cashAmount && cashAmount !== 0) {
-      setError("Entrez le montant reçu");
+      setError(t("invoice_cashReceived"));
       return;
     }
     if (cashAmount < 0) {
-      setError("Le montant ne peut pas être négatif");
+      setError(t("error_cashNegative"));
       return;
     }
     if (isWalkin && cashAmount < remaining) {
-      setError("Les clients de passage doivent payer la totalité en espèces");
+      setError(t("error_walkinFullCash"));
       return;
     }
 
@@ -95,7 +85,7 @@ function PaymentForm({
     startTransition(async () => {
       const result = await payRepairInvoice(invoice.id, Number(cashAmount));
       if ("error" in result) {
-        setError(result.error);
+        setError(trMessage(result.error));
       } else {
         onSuccess(result);
       }
@@ -104,7 +94,7 @@ function PaymentForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 pt-4 border-t border-border mt-4">
-      <h4 className="font-semibold text-sm">Encaissement</h4>
+      <h4 className="font-semibold text-sm">{t("invoice_payment")}</h4>
       {error && (
         <div className="rounded-md bg-destructive/15 p-2 text-xs text-destructive flex items-start gap-2">
           <AlertTriangle className="h-3.5 w-3.5 shrink-0 mt-0.5" />
@@ -114,7 +104,7 @@ function PaymentForm({
 
       <div className="grid grid-cols-2 gap-4">
         <div className="space-y-1">
-          <label className="text-xs font-medium">Montant reçu (DZD)</label>
+          <label className="text-xs font-medium">{t("invoice_cashReceived")}</label>
           <input
             type="number"
             step="0.01"
@@ -127,18 +117,17 @@ function PaymentForm({
           />
         </div>
         <div className="space-y-1">
-          <label className="text-xs font-medium text-muted-foreground">Reste à payer</label>
+          <label className="text-xs font-medium text-muted-foreground">{t("invoice_remaining")}</label>
           <div className="flex h-9 items-center px-3 bg-muted/50 rounded-md border text-sm font-bold text-red-600">
             {remaining.toFixed(2)} DZD
           </div>
         </div>
       </div>
 
-      {/* Debt preview */}
       {debtPreview > 0 && (
         <div className="rounded-md border border-amber-200 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-800 p-3">
           <p className="text-xs font-semibold text-amber-800 dark:text-amber-300">
-            Dette créée: {debtPreview.toFixed(2)} DZD sera enregistrée sur le compte client
+            {t("invoice_debtCreated", { amount: debtPreview.toFixed(2) })}
           </p>
         </div>
       )}
@@ -146,7 +135,7 @@ function PaymentForm({
       {isWalkin && (
         <div className="rounded-md border border-amber-200 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-800 p-3">
           <p className="text-xs text-amber-800 dark:text-amber-300">
-            Client de passage — paiement intégral requis ({remaining.toFixed(2)} DZD)
+            {t("invoice_walkinFullPayment", { amount: remaining.toFixed(2) })}
           </p>
         </div>
       )}
@@ -159,11 +148,11 @@ function PaymentForm({
         >
           {isPending && <Loader2 className="h-3.5 w-3.5 animate-spin" />}
           <Receipt className="h-4 w-4" />
-          Encaisser & Terminer
+          {t("invoice_payAndFinish")}
         </button>
         {!isWalkin && typeof cashAmount === "number" && cashAmount < remaining && (
           <p className="text-xs text-muted-foreground">
-            Paiement partiel — le reste sera enregistré comme dette
+            {t("invoice_partialPaymentHint")}
           </p>
         )}
       </div>
@@ -171,31 +160,40 @@ function PaymentForm({
   );
 }
 
-// ─── Payment confirmation card ────────────────────────────────────────────────
-
-function ConfirmationCard({ confirmation }: { confirmation: PaymentConfirmation }) {
+function ConfirmationCard({
+  confirmation,
+  ticketId,
+  storeId,
+  customerId,
+}: {
+  confirmation: PaymentConfirmation;
+  ticketId: string;
+  storeId: string;
+  customerId?: string;
+}) {
+  const { t } = useRepairI18n();
   return (
     <div className="rounded-xl border border-emerald-200 bg-emerald-50 dark:bg-emerald-950/20 dark:border-emerald-800 p-5 space-y-3">
       <div className="flex items-center gap-2">
         <CheckCircle2 className="h-5 w-5 text-emerald-600" />
         <h4 className="font-semibold text-emerald-800 dark:text-emerald-300">
-          Réparation terminée
+          {t("invoice_repairCompleted")}
         </h4>
       </div>
       <div className="space-y-1.5 text-sm">
         <div className="flex justify-between">
-          <span className="text-muted-foreground">Facture</span>
+          <span className="text-muted-foreground">{t("invoice_invoice")}</span>
           <span className="font-mono font-semibold">{confirmation.invoiceNumber}</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-muted-foreground">Espèces encaissées</span>
+          <span className="text-muted-foreground">{t("invoice_cashCollected")}</span>
           <span className="font-bold text-emerald-700 dark:text-emerald-400">
             {confirmation.cashReceived.toFixed(2)} DZD
           </span>
         </div>
         {confirmation.debtCreated > 0 && (
           <div className="flex justify-between">
-            <span className="text-muted-foreground">Dette enregistrée</span>
+            <span className="text-muted-foreground">{t("invoice_recordedDebt")}</span>
             <span className="font-bold text-amber-700 dark:text-amber-400">
               {confirmation.debtCreated.toFixed(2)} DZD
             </span>
@@ -210,24 +208,25 @@ function ConfirmationCard({ confirmation }: { confirmation: PaymentConfirmation 
           className="flex-1 inline-flex h-9 items-center justify-center gap-2 rounded-md border bg-white dark:bg-transparent text-sm font-medium hover:bg-muted transition-colors"
         >
           <Printer className="h-4 w-4" />
-          Imprimer la facture
+          {t("invoice_printInvoice")}
         </a>
-        <button
-          onClick={() => notifyCustomerWhatsApp(confirmation.invoiceId, "ready")}
-          className="flex-1 inline-flex h-9 items-center justify-center gap-2 rounded-md border border-emerald-200 bg-emerald-600 text-sm font-medium text-white hover:bg-emerald-700 transition-colors"
-        >
-          <MessageSquare className="h-4 w-4" />
-          WhatsApp
-        </button>
+        <WhatsAppSendButton
+          ticketId={ticketId}
+          storeId={storeId}
+          customerId={customerId}
+          type="ready"
+          variant="button"
+          label="WhatsApp"
+        />
       </div>
     </div>
   );
 }
 
-// ─── Main component ───────────────────────────────────────────────────────────
-
 interface RepairInvoiceSectionProps {
   ticketId: string;
+  storeId: string;
+  customerId?: string;
   ticketStatus: string;
   isWalkin: boolean;
   initialInvoice: InvoiceSummary | null;
@@ -236,11 +235,14 @@ interface RepairInvoiceSectionProps {
 
 export function RepairInvoiceSection({
   ticketId,
+  storeId,
+  customerId,
   ticketStatus,
   isWalkin,
   initialInvoice,
   userRole,
 }: RepairInvoiceSectionProps) {
+  const { locale, t, trMessage, formatDate } = useRepairI18n();
   const [invoice, setInvoice] = useState<InvoiceSummary | null>(initialInvoice);
   const [confirmation, setConfirmation] = useState<PaymentConfirmation | null>(null);
   const [generating, startGenerating] = useTransition();
@@ -257,10 +259,8 @@ export function RepairInvoiceSection({
     startGenerating(async () => {
       const result = await generateRepairInvoice(ticketId);
       if ("error" in result) {
-        setGenError(result.error);
+        setGenError(trMessage(result.error));
       } else {
-        // Reload invoice from server — page will revalidate
-        // For immediate feedback, refetch via action
         const inv = await import("../actions/invoice.actions").then(
           (m) => m.getRepairInvoice(ticketId)
         );
@@ -269,7 +269,6 @@ export function RepairInvoiceSection({
     });
   };
 
-  // No invoice yet
   if (!invoice) {
     return (
       <div className="space-y-4">
@@ -283,13 +282,13 @@ export function RepairInvoiceSection({
         {isCompleted ? (
           <div className="rounded-xl border border-dashed border-border bg-muted/20 p-6 text-center">
             <p className="text-sm text-muted-foreground">
-              Ticket terminé — aucune facture générée
+              {t("invoice_completedNoInvoice")}
             </p>
           </div>
         ) : canGenerate ? (
           <div className="rounded-xl border border-dashed border-border bg-muted/20 p-6 flex flex-col items-center gap-3">
             <FileText className="h-8 w-8 text-muted-foreground" />
-            <p className="text-sm text-muted-foreground">Aucune facture générée</p>
+            <p className="text-sm text-muted-foreground">{t("invoice_noInvoiceGenerated")}</p>
             <button
               onClick={handleGenerate}
               disabled={generating}
@@ -297,12 +296,12 @@ export function RepairInvoiceSection({
             >
               {generating && <Loader2 className="h-3.5 w-3.5 animate-spin" />}
               <FileText className="h-4 w-4" />
-              Générer la facture
+              {t("invoice_generateInvoice")}
             </button>
           </div>
         ) : (
           <div className="rounded-xl border border-dashed border-border bg-muted/20 p-5">
-            <p className="text-sm text-muted-foreground italic">Aucune facture disponible</p>
+            <p className="text-sm text-muted-foreground italic">{t("invoice_noInvoiceAvailable")}</p>
           </div>
         )}
       </div>
@@ -311,8 +310,7 @@ export function RepairInvoiceSection({
 
   return (
     <div className="space-y-4">
-      {/* Invoice header */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-3 flex-wrap">
         <div className="flex items-center gap-3">
           <span className="font-mono text-sm font-semibold bg-muted px-2 py-1 rounded">
             {invoice.invoiceNumber}
@@ -321,8 +319,8 @@ export function RepairInvoiceSection({
         </div>
         <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
           <Clock className="h-3.5 w-3.5" />
-          {new Date(invoice.createdAt).toLocaleDateString("fr-FR")}
-          <div className="ml-2 border-l pl-2 flex gap-2">
+          {formatDate(invoice.createdAt)}
+          <div className="ms-2 border-s ps-2 flex gap-2">
             <a
               href={`/dashboard/repairs/invoices/${invoice.id}/receipt`}
               target="_blank"
@@ -330,7 +328,7 @@ export function RepairInvoiceSection({
               className="hover:text-primary transition-colors flex items-center gap-1"
             >
               <Printer className="h-3 w-3" />
-              Facture
+              {t("invoice_invoice")}
             </a>
             <a
               href={`/dashboard/repairs/${ticketId}/ticket-receipt`}
@@ -339,75 +337,77 @@ export function RepairInvoiceSection({
               className="hover:text-primary transition-colors flex items-center gap-1"
             >
               <Printer className="h-3 w-3" />
-              Ticket
+              {t("invoice_ticket")}
             </a>
           </div>
         </div>
       </div>
 
-      {/* Lines table */}
       <div className="rounded-xl border border-border overflow-x-auto">
         <table className="w-full text-sm">
           <thead className="bg-muted/30 border-b border-border text-xs uppercase text-muted-foreground">
             <tr>
-              <th className="px-4 py-2.5 text-left font-medium">Description</th>
-              <th className="px-4 py-2.5 text-center font-medium">Qté</th>
-              <th className="px-4 py-2.5 text-right font-medium">P.U.</th>
-              <th className="px-4 py-2.5 text-right font-medium">Total</th>
+              <th className="px-4 py-2.5 text-start font-medium">{t("invoice_description")}</th>
+              <th className="px-4 py-2.5 text-center font-medium">{t("quantityShort")}</th>
+              <th className="px-4 py-2.5 text-end font-medium">{t("invoice_unitPrice")}</th>
+              <th className="px-4 py-2.5 text-end font-medium">{t("total")}</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-border">
             {invoice.lines.map((line) => (
               <tr key={line.id} className="bg-background">
                 <td className="px-4 py-3">
-                  <span className="text-xs text-muted-foreground mr-2">
-                    [{LINE_TYPE_LABELS[line.lineType] ?? line.lineType}]
+                  <span className="text-xs text-muted-foreground me-2">
+                    [{getLineTypeLabel(line.lineType, locale)}]
                   </span>
-                  {line.description}
+                  {line.description === "Main d’œuvre réparation" || line.description === "Main d'œuvre réparation" ? t("invoice_repairLaborDescription") : line.description}
                 </td>
                 <td className="px-4 py-3 text-center text-muted-foreground">{line.quantity}</td>
-                <td className="px-4 py-3 text-right text-muted-foreground">{line.unitPrice.toFixed(2)}</td>
-                <td className="px-4 py-3 text-right font-semibold">{line.totalPrice.toFixed(2)}</td>
+                <td className="px-4 py-3 text-end text-muted-foreground">{line.unitPrice.toFixed(2)}</td>
+                <td className="px-4 py-3 text-end font-semibold">{line.totalPrice.toFixed(2)}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      {/* Totals */}
       <div className="space-y-1.5 px-1">
-        <MoneyRow label="Sous-total" value={invoice.subtotalAmount} />
+        <MoneyRow label={t("subtotal")} value={invoice.subtotalAmount} />
         {invoice.discountAmount > 0 && (
-          <MoneyRow label="Remise" value={-invoice.discountAmount} />
+          <MoneyRow label={t("discount")} value={-invoice.discountAmount} />
         )}
         <div className="border-t border-border my-2" />
-        <MoneyRow label="Total" value={invoice.totalAmount} bold />
+        <MoneyRow label={t("total")} value={invoice.totalAmount} bold />
         {invoice.paidAmount > 0 && (
-          <MoneyRow label="Déjà payé" value={invoice.paidAmount} />
+          <MoneyRow label={t("invoice_alreadyPaid")} value={invoice.paidAmount} />
         )}
         {invoice.debtAmount > 0 && (
           <div className="flex justify-between text-sm font-semibold text-amber-700 dark:text-amber-400">
-            <span>Dette enregistrée</span>
+            <span>{t("invoice_recordedDebt")}</span>
             <span>{invoice.debtAmount.toFixed(2)} DZD</span>
           </div>
         )}
         {invoice.refundedAmount > 0 && (
           <div className="flex justify-between text-sm font-bold text-red-700 dark:text-red-400">
-            <span>Total remboursé</span>
+            <span>{t("invoice_totalRefunded")}</span>
             <span>-{invoice.refundedAmount.toFixed(2)} DZD</span>
           </div>
         )}
         {invoice.status !== "paid" && invoice.status !== "cancelled" && (
           <div className="flex justify-between text-sm font-bold text-red-700 dark:text-red-400">
-            <span>Reste à payer</span>
+            <span>{t("invoice_remainingToPay")}</span>
             <span>{(invoice.totalAmount - invoice.paidAmount).toFixed(2)} DZD</span>
           </div>
         )}
       </div>
 
-      {/* Confirmation or payment form */}
       {confirmation ? (
-        <ConfirmationCard confirmation={confirmation} />
+        <ConfirmationCard
+          confirmation={confirmation}
+          ticketId={ticketId}
+          storeId={storeId}
+          customerId={customerId}
+        />
       ) : invoice.status !== "paid" && invoice.status !== "cancelled" && canPay ? (
         <PaymentForm
           invoice={invoice}
@@ -432,7 +432,7 @@ export function RepairInvoiceSection({
             <div className="flex items-center gap-2 text-emerald-700 dark:text-emerald-400">
               <CheckCircle2 className="h-4 w-4" />
               <span className="text-sm font-semibold">
-                {invoice.status === "paid" ? "Facture entièrement réglée" : "Facture partiellement réglée"}
+                {invoice.status === "paid" ? t("invoice_fullyPaid") : t("invoice_partiallyPaid")}
               </span>
             </div>
             {!showRefundForm && !refundResult && canPay && invoice.paidAmount > invoice.refundedAmount && (
@@ -441,7 +441,7 @@ export function RepairInvoiceSection({
                 className="text-xs font-bold text-muted-foreground hover:text-amber-600 flex items-center gap-1 transition-colors"
               >
                 <RotateCcw className="h-3 w-3" />
-                Rembourser
+                {t("invoice_refund")}
               </button>
             )}
           </div>
@@ -462,10 +462,10 @@ export function RepairInvoiceSection({
             <div className="rounded-lg border border-amber-200 bg-amber-50 dark:bg-amber-950/20 p-4 text-sm animate-in zoom-in duration-300">
               <div className="flex items-center gap-2 text-amber-800 dark:text-amber-300 font-bold mb-1">
                 <CheckCircle2 className="h-4 w-4" />
-                Remboursement effectué
+                {t("invoice_refundDone")}
               </div>
               <p className="text-muted-foreground">
-                <span className="font-bold text-foreground">{refundResult.amount.toFixed(2)} DZD</span> remboursés sous le reçu <span className="font-mono font-bold text-foreground">{refundResult.number}</span>.
+                {t("invoice_refundSummary", { amount: refundResult.amount.toFixed(2), number: refundResult.number })}
               </p>
             </div>
           )}
