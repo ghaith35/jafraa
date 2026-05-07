@@ -2,9 +2,13 @@ import { Prisma } from "@prisma/client";
 
 /**
  * Safely generates a unique sequential document number for a store.
- * Format: {PREFIX}-REP-{YYYY}-{000001}
- * Example: ALG-REP-2026-000001
- * 
+ * Format: {PREFIX}-REP-{YYYYMM}-{000001}
+ * Example: ALG-REP-202605-000001
+ *
+ * The DocumentSequence key is monthly, so the generated number must also
+ * include the month. Otherwise every new month could restart at the same
+ * visible number and collide with the store-level unique ticket number.
+ *
  * Must be called within a Prisma transaction.
  */
 export async function generateTicketNumber(
@@ -15,6 +19,7 @@ export async function generateTicketNumber(
   const now = new Date();
   const year = now.getFullYear();
   const month = now.getMonth() + 1; // 1-12
+  const period = `${year}${String(month).padStart(2, "0")}`;
 
   // Upsert the sequence for this year/month combination
   const sequence = await tx.documentSequence.upsert({
@@ -38,8 +43,8 @@ export async function generateTicketNumber(
     },
   });
 
-  // Format: PREFIX-REP-YYYY-000001
+  // Format: PREFIX-REP-YYYYMM-000001
   // We use 6 digits for the sequence number.
   const formattedNumber = String(sequence.lastNumber).padStart(6, "0");
-  return `${storePrefix}-REP-${year}-${formattedNumber}`;
+  return `${storePrefix}-REP-${period}-${formattedNumber}`;
 }

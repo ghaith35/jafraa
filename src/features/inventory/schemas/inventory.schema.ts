@@ -49,8 +49,17 @@ export type UpdatePartInput = z.infer<typeof updatePartSchema>;
 
 export const createServiceSchema = z.object({
   name: z.string().trim().min(1, "Le nom est requis").max(200),
+  nameEn: z.string().trim().max(200).optional(),
+  nameAr: z.string().trim().max(200).optional(),
   sku: z.string().trim().max(60).optional(),
-  category: z.string().trim().max(120).optional(),
+  category: z.string().trim().max(220).optional(),
+  serviceCategoryId: z.string().trim().optional(),
+  deviceCategoryId: z.string().trim().optional(),
+  isPackage: z.boolean().optional(),
+  packageServiceIds: z.array(z.string().trim()).optional(),
+  packageDescription: z.string().trim().max(500).optional(),
+  basePrice: z.number().min(0).optional(),
+  costPrice: z.number().min(0).optional(),
   sellingPrice: z.number().min(0, "Le prix doit être ≥ 0"),
   estimatedDurationMinutes: z.number().int().min(0).optional(),
   notes: z.string().trim().max(500).optional(),

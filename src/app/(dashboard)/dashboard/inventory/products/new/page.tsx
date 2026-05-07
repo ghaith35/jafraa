@@ -5,6 +5,8 @@ import { prisma } from "@/lib/db";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { getAppI18n } from "@/lib/i18n/server";
 import { ProductForm } from "@/features/inventory/components/ProductForm";
+import { getStoreInventoryDeviceScopes } from "@/features/inventory/lib/device-scope.server";
+import { isInventoryCategoryAllowedByScope } from "@/features/inventory/lib/device-scope.server";
 
 export const metadata = { title: "Nouveau produit" };
 
@@ -12,16 +14,25 @@ export default async function NewProductPage() {
   const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
-  if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard/inventory?tab=products");
+  if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard/inventory/products");
 
   const storeId = session.storeIds[0];
-  if (!storeId) redirect("/dashboard/inventory?tab=products");
+  if (!storeId) redirect("/dashboard/inventory/products");
+  const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
 
-  const categories = await prisma.inventoryCategory.findMany({
-    where: { storeId, itemType: "product", isActive: true },
-    orderBy: { sortOrder: "asc" },
-    select: { id: true, name: true },
+  const categoriesRaw = await prisma.inventoryCategory.findMany({
+    where: { storeId, itemType: "product" },
+    orderBy: [{ sortOrder: "asc" }, { name: "asc" }],
+    select: { id: true, name: true, deviceCategory: { select: { key: true } } },
   });
+  const categories = allowedScopes.length
+    ? categoriesRaw.filter((category) =>
+        isInventoryCategoryAllowedByScope(
+          { name: category.name, deviceCategoryKey: category.deviceCategory?.key },
+          allowedScopes
+        )
+      )
+    : categoriesRaw;
 
   return (
     <>

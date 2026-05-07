@@ -85,10 +85,10 @@ export function RepairTileCard({
       disabled={disabled}
       onClick={onClick}
       className={cn(
-        "group relative w-full overflow-hidden rounded-2xl border bg-white text-start shadow-sm transition-all duration-200",
+        "group relative w-full overflow-hidden rounded-2xl border bg-card text-start shadow-sm transition-all duration-200",
         "hover:-translate-y-0.5 hover:border-primary/60 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40",
         density === "compact" ? "min-h-24 p-3" : "min-h-32 p-4",
-        selected && "border-primary bg-gradient-to-br from-primary/10 via-white to-white shadow-md ring-1 ring-primary/35",
+        selected && "border-primary bg-gradient-to-br from-primary/10 via-card to-card shadow-md ring-1 ring-primary/35",
         disabled && "cursor-not-allowed opacity-50 hover:translate-y-0 hover:shadow-sm"
       )}
     >
@@ -103,14 +103,14 @@ export function RepairTileCard({
       <div className="flex h-full flex-col items-center justify-center text-center">
         <div
           className={cn(
-            "mb-3 flex items-center justify-center rounded-2xl bg-slate-50 text-slate-500 shadow-inner transition-colors group-hover:bg-primary/10 group-hover:text-primary",
+            "mb-3 flex items-center justify-center rounded-2xl bg-muted/50 text-muted-foreground shadow-inner transition-colors group-hover:bg-primary/10 group-hover:text-primary",
             density === "compact" ? "h-10 w-10" : "h-14 w-14"
           )}
         >
           <Icon className={cn(density === "compact" ? "h-5 w-5" : "h-7 w-7")} />
         </div>
-        <div className="line-clamp-2 text-sm font-bold leading-snug text-slate-900">{title}</div>
-        {subtitle && <div className="mt-1 line-clamp-2 text-xs leading-snug text-slate-500">{subtitle}</div>}
+        <div className="line-clamp-2 text-sm font-bold leading-snug text-foreground">{title}</div>
+        {subtitle && <div className="mt-1 line-clamp-2 text-xs leading-snug text-muted-foreground">{subtitle}</div>}
         {stockStatus && (
           <div
             className={cn(

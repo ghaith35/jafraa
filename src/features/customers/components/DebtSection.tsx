@@ -96,7 +96,7 @@ function InlineForm({ type, customerId, currentBalance, onDone, onCancel }: Inli
         <div className="rounded-md bg-destructive/15 p-2 text-xs text-destructive">{error}</div>
       )}
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         <div className="space-y-1">
           <label className="text-xs font-medium">{t("customers.debt.amount")}</label>
           <input
@@ -138,7 +138,7 @@ function InlineForm({ type, customerId, currentBalance, onDone, onCancel }: Inli
           type="submit"
           disabled={isPending}
           className={cn(
-            "inline-flex h-9 items-center justify-center rounded-md px-4 text-sm font-medium text-white transition-colors disabled:opacity-50",
+            "inline-flex h-11 items-center justify-center rounded-md px-4 text-sm font-medium text-white transition-colors disabled:opacity-50",
             type === "correction" || type === "payment"
               ? "bg-emerald-600 hover:bg-emerald-700"
               : "bg-destructive hover:bg-destructive/90"

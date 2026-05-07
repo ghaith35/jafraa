@@ -5,6 +5,8 @@ import { prisma } from "@/lib/db";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { getAppI18n } from "@/lib/i18n/server";
 import { ProductForm } from "@/features/inventory/components/ProductForm";
+import { getStoreInventoryDeviceScopes } from "@/features/inventory/lib/device-scope.server";
+import { isInventoryCategoryAllowedByScope } from "@/features/inventory/lib/device-scope.server";
 
 export const metadata = { title: "Modifier le produit" };
 
@@ -16,23 +18,32 @@ export default async function EditProductPage({
   const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
-  if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard/inventory?tab=products");
+  if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard/inventory/products");
 
   const storeId = session.storeIds[0];
-  if (!storeId) redirect("/dashboard/inventory?tab=products");
+  if (!storeId) redirect("/dashboard/inventory/products");
+  const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
 
   const { id } = await params;
 
-  const [product, categories] = await Promise.all([
+  const [product, categoriesRaw] = await Promise.all([
     prisma.product.findFirst({
       where: { id, storeId, isArchived: false },
     }),
     prisma.inventoryCategory.findMany({
-      where: { storeId, itemType: "product", isActive: true },
-      orderBy: { sortOrder: "asc" },
-      select: { id: true, name: true },
+      where: { storeId, itemType: "product" },
+      orderBy: [{ sortOrder: "asc" }, { name: "asc" }],
+      select: { id: true, name: true, deviceCategory: { select: { key: true } } },
     }),
   ]);
+  const categories = allowedScopes.length
+    ? categoriesRaw.filter((category) =>
+        isInventoryCategoryAllowedByScope(
+          { name: category.name, deviceCategoryKey: category.deviceCategory?.key },
+          allowedScopes
+        )
+      )
+    : categoriesRaw;
 
   if (!product) notFound();
 

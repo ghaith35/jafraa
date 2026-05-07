@@ -109,7 +109,21 @@ export async function generateRepairInvoice(
           customer: { select: { id: true, name: true, customerType: true } },
           estimates: {
             where: { status: "accepted" },
-            include: { lines: { orderBy: { sortOrder: "asc" } } },
+            select: {
+              id: true,
+              discountAmount: true,
+              lines: {
+                select: {
+                  id: true,
+                  lineType: true,
+                  description: true,
+                  quantity: true,
+                  unitPrice: true,
+                  totalPrice: true,
+                },
+                orderBy: { sortOrder: "asc" },
+              },
+            },
             orderBy: { createdAt: "desc" },
             take: 1,
           },

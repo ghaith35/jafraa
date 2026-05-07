@@ -60,7 +60,7 @@ function Field({
   third?: boolean;
 }) {
   return (
-    <div className={half ? "" : third ? "" : "col-span-2 sm:col-span-2"}>
+    <div className={half ? "" : third ? "" : "col-span-1 md:col-span-2"}>
       <label className="block text-sm font-medium text-foreground mb-1.5">
         {label}
         {required && <span className="ms-0.5 text-destructive">*</span>}
@@ -114,14 +114,14 @@ export function ProductForm({ categories, product }: Props) {
         if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
-          router.push("/dashboard/inventory?tab=products");
+          router.push("/dashboard/inventory/products");
         }
       } else {
         const result = await createProduct(data);
         if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
-          router.push("/dashboard/inventory?tab=products");
+          router.push("/dashboard/inventory/products");
         }
       }
     });
@@ -129,7 +129,7 @@ export function ProductForm({ categories, product }: Props) {
 
   return (
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {/* Name */}
         <Field label={t("inventory.productName")} required error={errors.name?.message}>
           <input
@@ -155,6 +155,9 @@ export function ProductForm({ categories, product }: Props) {
               </option>
             ))}
           </select>
+          <p className="mt-1 text-xs text-muted-foreground">
+            {t("inventory.categoryFieldHint")}
+          </p>
         </Field>
 
         {/* Brand */}
@@ -169,14 +172,17 @@ export function ProductForm({ categories, product }: Props) {
         </Field>
 
         {/* Model Reference */}
-        <Field label={t("inventory.modelReference")} error={errors.modelReference?.message} half>
+        <Field label={t("inventory.specificationVariant")} error={errors.modelReference?.message} half>
           <input
             {...form.register("modelReference")}
             type="text"
-            placeholder="TA845XBEGWW…"
+            placeholder="1.5m, Cat6, USB-C, 256GB, A4, TN-760…"
             className={inputCls}
             disabled={isPending}
           />
+          <p className="mt-1 text-xs text-muted-foreground">
+            {t("inventory.specificationVariantHint")}
+          </p>
         </Field>
 
         {/* SKU */}
@@ -273,11 +279,11 @@ export function ProductForm({ categories, product }: Props) {
         </p>
       )}
 
-      <div className="flex items-center gap-3 pt-2">
+      <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center">
         <button
           type="submit"
           disabled={isPending}
-          className="rounded-md bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 disabled:opacity-50 transition-colors"
+          className="h-11 rounded-md bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 disabled:opacity-50 transition-colors"
         >
           {isPending
             ? isEdit
@@ -289,9 +295,9 @@ export function ProductForm({ categories, product }: Props) {
         </button>
         <button
           type="button"
-          onClick={() => router.push("/dashboard/inventory?tab=products")}
+          onClick={() => router.push("/dashboard/inventory/products")}
           disabled={isPending}
-          className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-50"
+          className="h-11 rounded-md border border-border px-4 text-sm text-muted-foreground hover:text-foreground disabled:opacity-50 sm:border-0 sm:px-0"
         >
           {t("common.cancel")}
         </button>

@@ -2,7 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useTransition, useState, useCallback } from "react";
+import { useTransition, useState, useCallback, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import {
@@ -15,18 +15,22 @@ import {
   listFamiliesByBrand,
 } from "@/features/catalog/actions/catalog.actions";
 import { useAppI18n } from "@/lib/i18n/ui";
+import { DEVICE_SCOPE_KEYWORDS } from "@/features/inventory/lib/device-scope";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 interface Category {
   id: string;
   name: string;
+  deviceCategoryKey?: string | null;
 }
 
 interface DeviceCategory {
   id: string;
   key: string;
   nameFr: string;
+  nameAr?: string | null;
+  nameEn?: string | null;
 }
 
 interface DeviceBrand {
@@ -63,12 +67,17 @@ interface Props {
   companyId: string;
   storeId: string | undefined;
   part?: PartData;
+  recoveredMode?: boolean;
 }
 
 // ─── Styles ──────────────────────────────────────────────────────────────────
 
 const inputCls =
   "w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring disabled:opacity-50";
+
+function normalizeText(value: string): string {
+  return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
 
 function Field({
   label,
@@ -95,7 +104,7 @@ function Field({
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
-    <p className="col-span-2 text-xs font-semibold text-muted-foreground uppercase tracking-wide pt-2 border-t border-border">
+    <p className="col-span-1 border-t border-border pt-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground md:col-span-2">
       {children}
     </p>
   );
@@ -109,8 +118,9 @@ export function PartForm({
   companyId,
   storeId,
   part,
+  recoveredMode = false,
 }: Props) {
-  const { t } = useAppI18n();
+  const { t, locale } = useAppI18n();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [serverError, setServerError] = useState<string | null>(null);
@@ -148,67 +158,146 @@ export function PartForm({
   });
 
   const errors = form.formState.errors;
+  const selectedDeviceCategoryId = form.watch("compatibleCategoryId");
+  const selectedDeviceBrandId = form.watch("compatibleBrandId");
+  const selectedPartCategoryId = form.watch("categoryId");
+
+  const selectedDeviceCategory = useMemo(
+    () => deviceCategories.find((c) => c.id === selectedDeviceCategoryId),
+    [deviceCategories, selectedDeviceCategoryId]
+  );
+
+  const selectedDeviceCategoryLabel = useMemo(() => {
+    if (!selectedDeviceCategory) return "";
+    if (locale === "ar") return selectedDeviceCategory.nameAr || selectedDeviceCategory.nameFr;
+    if (locale === "en") return selectedDeviceCategory.nameEn || selectedDeviceCategory.nameFr;
+    return selectedDeviceCategory.nameFr;
+  }, [locale, selectedDeviceCategory]);
+
+  const filteredPartCategories = useMemo(() => {
+    if (!selectedDeviceCategory) return categories;
+
+    const byFk = categories.filter((category) => category.deviceCategoryKey === selectedDeviceCategory.key);
+    if (byFk.length) return byFk;
+
+    const keywords = DEVICE_SCOPE_KEYWORDS[selectedDeviceCategory.key as keyof typeof DEVICE_SCOPE_KEYWORDS] ?? [];
+    if (!keywords.length) return categories;
+
+    const filtered = categories.filter((category) => {
+      const name = normalizeText(category.name);
+      return keywords.some((keyword) => name.includes(normalizeText(keyword)));
+    });
+
+    return filtered.length ? filtered : categories;
+  }, [categories, selectedDeviceCategory]);
 
   // ── Compatibility cascading ──────────────────────────────────────────────
 
   const handleDeviceCategoryChange = useCallback(
-    async (categoryId: string) => {
+    (categoryId: string) => {
       form.setValue("compatibleBrandId", undefined);
       form.setValue("compatibleFamilyId", undefined);
+      setDeviceBrands([]);
       setDeviceFamilies([]);
-      if (!categoryId) {
-        setDeviceBrands([]);
-        return;
-      }
-      setLoadingBrands(true);
-      try {
-        const data = await listBrandsByCategory(categoryId, { companyId, storeId });
-        setDeviceBrands(data);
-      } catch {
-        setDeviceBrands([]);
-      } finally {
-        setLoadingBrands(false);
-      }
     },
-    [companyId, storeId, form]
+    [form]
   );
 
   const handleDeviceBrandChange = useCallback(
-    async (brandId: string) => {
+    (brandId: string) => {
       form.setValue("compatibleFamilyId", undefined);
-      if (!brandId) {
+      setDeviceFamilies([]);
+    },
+    [form]
+  );
+
+  useEffect(() => {
+    let active = true;
+
+    async function loadBrands() {
+      if (!selectedDeviceCategoryId) {
+        setDeviceBrands([]);
+        return;
+      }
+
+      setLoadingBrands(true);
+      try {
+        const data = await listBrandsByCategory(selectedDeviceCategoryId, { companyId, storeId });
+        if (active) setDeviceBrands(data);
+      } catch {
+        if (active) setDeviceBrands([]);
+      } finally {
+        if (active) setLoadingBrands(false);
+      }
+    }
+
+    void loadBrands();
+    return () => {
+      active = false;
+    };
+  }, [selectedDeviceCategoryId, companyId, storeId]);
+
+  useEffect(() => {
+    let active = true;
+
+    async function loadFamilies() {
+      if (!selectedDeviceBrandId) {
         setDeviceFamilies([]);
         return;
       }
+
       setLoadingFamilies(true);
       try {
-        const data = await listFamiliesByBrand(brandId, { companyId, storeId });
-        setDeviceFamilies(data);
+        const data = await listFamiliesByBrand(selectedDeviceBrandId, { companyId, storeId });
+        if (active) setDeviceFamilies(data);
       } catch {
-        setDeviceFamilies([]);
+        if (active) setDeviceFamilies([]);
       } finally {
-        setLoadingFamilies(false);
+        if (active) setLoadingFamilies(false);
       }
-    },
-    [companyId, storeId, form]
-  );
+    }
+
+    void loadFamilies();
+    return () => {
+      active = false;
+    };
+  }, [selectedDeviceBrandId, companyId, storeId]);
+
+  useEffect(() => {
+    if (!selectedPartCategoryId) return;
+    const stillVisible = filteredPartCategories.some((category) => category.id === selectedPartCategoryId);
+    if (!stillVisible) {
+      form.setValue("categoryId", undefined);
+    }
+  }, [filteredPartCategories, selectedPartCategoryId, form]);
 
   function onSubmit(data: CreatePartInput) {
+    const payload = recoveredMode
+      ? {
+          ...data,
+          notes: data.notes?.toLowerCase().includes("recovered")
+            ? data.notes
+            : [data.notes?.trim(), "recovered"]
+                .filter(Boolean)
+                .join(" · "),
+        }
+      : data;
+
     setServerError(null);
     startTransition(async () => {
       if (isEdit && part) {
-        const result = await updatePart(part.id, data);
+        const result = await updatePart(part.id, payload);
         if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
-          router.push("/dashboard/inventory?tab=parts");
+          router.push(recoveredMode ? "/dashboard/inventory/recovered-parts" : "/dashboard/inventory/parts");
         }
       } else {
-        const result = await createPart(data);
+        const result = await createPart(payload);
         if (result && "error" in result && result.error) {
           setServerError(result.error);
         } else {
-          router.push("/dashboard/inventory?tab=parts");
+          router.push(recoveredMode ? "/dashboard/inventory/recovered-parts" : "/dashboard/inventory/parts");
         }
       }
     });
@@ -216,7 +305,26 @@ export function PartForm({
 
   return (
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <SectionTitle>{t("inventory.deviceCompatibilityOptional")}</SectionTitle>
+
+        <Field label={t("inventory.deviceType")} error={errors.compatibleCategoryId?.message}>
+          <select
+            {...form.register("compatibleCategoryId", {
+              onChange: (e) => handleDeviceCategoryChange(e.target.value),
+            })}
+            className={inputCls}
+            disabled={isPending}
+          >
+            <option value="">{t("inventory.all")}</option>
+            {deviceCategories.map((c) => (
+              <option key={c.id} value={c.id}>
+                {locale === "ar" ? c.nameAr || c.nameFr : locale === "en" ? c.nameEn || c.nameFr : c.nameFr}
+              </option>
+            ))}
+          </select>
+        </Field>
+
         {/* ── Part info ──────────────────────────────────────────────── */}
         <SectionTitle>{t("inventory.partInfo")}</SectionTitle>
 
@@ -234,15 +342,22 @@ export function PartForm({
           <select
             {...form.register("categoryId")}
             className={inputCls}
-            disabled={isPending}
+            disabled={isPending || !selectedDeviceCategoryId}
           >
-            <option value="">{t("inventory.noCategory")}</option>
-            {categories.map((c) => (
+            <option value="">
+              {selectedDeviceCategoryId ? t("inventory.noCategory") : t("inventory.selectDeviceTypeFirst")}
+            </option>
+            {filteredPartCategories.map((c) => (
               <option key={c.id} value={c.id}>
                 {c.name}
               </option>
             ))}
           </select>
+          <p className="mt-1 text-xs text-muted-foreground">
+            {selectedDeviceCategoryLabel
+              ? t("inventory.partCategoryFilteredHint", { category: selectedDeviceCategoryLabel })
+              : t("inventory.selectDeviceTypeFirstHint")}
+          </p>
         </Field>
 
         <Field label={t("inventory.supplierBrand")} error={errors.brand?.message}>
@@ -265,36 +380,20 @@ export function PartForm({
           />
         </Field>
 
-        {/* ── Compatibility ─────────────────────────────────────────── */}
-        <SectionTitle>{t("inventory.deviceCompatibilityOptional")}</SectionTitle>
-
-        <Field label={t("inventory.deviceType")} error={errors.compatibleCategoryId?.message}>
-          <select
-            {...form.register("compatibleCategoryId", {
-              onChange: (e) => handleDeviceCategoryChange(e.target.value),
-            })}
-            className={inputCls}
-            disabled={isPending}
-          >
-            <option value="">{t("inventory.all")}</option>
-            {deviceCategories.map((c) => (
-              <option key={c.id} value={c.id}>
-                {c.nameFr}
-              </option>
-            ))}
-          </select>
-        </Field>
-
         <Field label={t("inventory.deviceBrand")} error={errors.compatibleBrandId?.message}>
           <select
             {...form.register("compatibleBrandId", {
               onChange: (e) => handleDeviceBrandChange(e.target.value),
             })}
             className={inputCls}
-            disabled={isPending || loadingBrands}
+            disabled={isPending || loadingBrands || !selectedDeviceCategoryId}
           >
             <option value="">
-              {loadingBrands ? t("common.loading") : t("inventory.allBrands")}
+              {!selectedDeviceCategoryId
+                ? t("inventory.selectDeviceTypeFirst")
+                : loadingBrands
+                ? t("common.loading")
+                : t("inventory.allBrands")}
             </option>
             {deviceBrands.map((b) => (
               <option key={b.id} value={b.id}>
@@ -308,10 +407,14 @@ export function PartForm({
           <select
             {...form.register("compatibleFamilyId")}
             className={inputCls}
-            disabled={isPending || loadingFamilies}
+            disabled={isPending || loadingFamilies || !selectedDeviceBrandId}
           >
             <option value="">
-              {loadingFamilies ? t("common.loading") : t("inventory.allModels")}
+              {!selectedDeviceBrandId
+                ? t("inventory.selectBrandFirst")
+                : loadingFamilies
+                ? t("common.loading")
+                : t("inventory.allModels")}
             </option>
             {deviceFamilies.map((f) => (
               <option key={f.id} value={f.id}>
@@ -398,7 +501,7 @@ export function PartForm({
           <textarea
             {...form.register("notes")}
             rows={2}
-            placeholder="Qualité OEM, pré-assemblé, compatible uniquement LCD…"
+            placeholder={recoveredMode ? `${t("inventory.recoveredPartsHelp")} (${t("common.optional")})` : "Qualité OEM, pré-assemblé, compatible uniquement LCD…"}
             className={cn(inputCls, "resize-y")}
             disabled={isPending}
           />
@@ -411,11 +514,11 @@ export function PartForm({
         </p>
       )}
 
-      <div className="flex items-center gap-3 pt-2">
+      <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center">
         <button
           type="submit"
           disabled={isPending}
-          className="rounded-md bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 disabled:opacity-50 transition-colors"
+          className="h-11 rounded-md bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 disabled:opacity-50 transition-colors"
         >
           {isPending
             ? isEdit
@@ -427,9 +530,9 @@ export function PartForm({
         </button>
         <button
           type="button"
-          onClick={() => router.push("/dashboard/inventory?tab=parts")}
+          onClick={() => router.push(recoveredMode ? "/dashboard/inventory/recovered-parts" : "/dashboard/inventory/parts")}
           disabled={isPending}
-          className="text-sm text-muted-foreground hover:text-foreground disabled:opacity-50"
+          className="h-11 rounded-md border border-border px-4 text-sm text-muted-foreground hover:text-foreground disabled:opacity-50 sm:border-0 sm:px-0"
         >
           {t("common.cancel")}
         </button>

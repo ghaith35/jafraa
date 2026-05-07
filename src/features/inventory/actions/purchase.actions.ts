@@ -171,12 +171,17 @@ export async function listPurchaseInvoices(opts?: { storeId?: string }) {
   const storeId = opts?.storeId ?? session.storeIds[0];
   if (!storeId) return [];
 
-  return prisma.purchaseInvoice.findMany({
-    where: { storeId },
-    include: {
-      supplier: { select: { name: true } },
-      createdBy: { select: { name: true } },
-    },
-    orderBy: { createdAt: "desc" },
-  });
+  try {
+    return await prisma.purchaseInvoice.findMany({
+      where: { storeId },
+      include: {
+        supplier: { select: { name: true } },
+        createdBy: { select: { name: true } },
+      },
+      orderBy: { createdAt: "desc" },
+    });
+  } catch (error) {
+    console.warn("Purchase invoices skipped because the current database is missing purchase invoice tables/columns:", error);
+    return [];
+  }
 }

@@ -1,0 +1,2 @@
+-- RenameIndex
+ALTER INDEX "device_catalog_suggestions_companyId_storeId_status_createdAt_i" RENAME TO "device_catalog_suggestions_companyId_storeId_status_created_idx";

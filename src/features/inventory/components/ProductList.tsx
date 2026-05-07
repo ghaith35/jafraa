@@ -8,6 +8,7 @@ import { useAppI18n } from "@/lib/i18n/ui";
 import { archiveProduct } from "../actions/product.actions";
 import type { UserRole } from "@prisma/client";
 import { hasPermission } from "@/lib/auth/permissions";
+import { ProductThumb } from "./ProductThumb";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -17,6 +18,8 @@ interface Product {
   sku: string;
   barcode: string | null;
   brand: string | null;
+  modelReference?: string | null;
+  imageUrl?: string | null;
   sellingPrice: { toNumber: () => number } | number;
   stockQty: number;
   lowStockThreshold: number | null;
@@ -69,10 +72,7 @@ function ProductRow({
       "flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 transition-colors",
       product.isArchived ? "opacity-60" : "hover:bg-accent/30"
     )}>
-      {/* Icon */}
-      <div className="rounded-md bg-muted p-2 shrink-0">
-        <Package className="h-4 w-4 text-muted-foreground" />
-      </div>
+      <ProductThumb imageUrl={product.imageUrl} alt={product.name} className="h-10 w-10 shrink-0" />
 
       {/* Main info */}
       <div className="flex-1 min-w-0">
@@ -99,6 +99,7 @@ function ProductRow({
           <span className="font-mono">{product.sku}</span>
           {product.barcode && <span className="font-mono">{product.barcode}</span>}
           {product.brand && <span>{product.brand}</span>}
+          {product.modelReference && <span>{product.modelReference}</span>}
         </div>
       </div>
 
@@ -117,7 +118,7 @@ function ProductRow({
         <div className="flex items-center gap-1 shrink-0">
           <Link
             href={`/dashboard/inventory/products/${product.id}/edit`}
-            className="rounded-md p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
             title={t("common.edit")}
           >
             <Pencil className="h-3.5 w-3.5" />
@@ -127,7 +128,7 @@ function ProductRow({
             onClick={handleArchive}
             disabled={isPending}
             title={t("inventory.archiveProduct")}
-            className="rounded-md p-1.5 text-muted-foreground hover:text-destructive hover:bg-destructive/10 disabled:opacity-50 transition-colors"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground hover:text-destructive hover:bg-destructive/10 disabled:opacity-50 transition-colors"
           >
             <Archive className="h-3.5 w-3.5" />
           </button>

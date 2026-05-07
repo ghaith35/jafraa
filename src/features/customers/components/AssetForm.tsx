@@ -183,7 +183,7 @@ export function AssetForm({
     >
       <p className="text-sm font-semibold text-foreground">{t("customers.asset.add")}</p>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {/* Category (from catalog) */}
         <Field
           label={t("customers.asset.category")}

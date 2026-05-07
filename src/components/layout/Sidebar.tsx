@@ -79,27 +79,27 @@ export function Sidebar({ user, company, mobileOpen, onMobileClose, dir }: Props
                 RE<span className="text-[var(--sidebar-brand-accent)]">PAIRE</span>
               </div>
             </div>
+            <button
+              onClick={onMobileClose}
+              className="ms-auto inline-flex h-11 w-11 items-center justify-center rounded-md text-[var(--sidebar-muted-fg)] hover:text-[var(--sidebar-fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sidebar-accent)] lg:hidden"
+              aria-label={tCommon("close")}
+            >
+              <X className="h-5 w-5" />
+            </button>
           </div>
           <div className="mt-[14px] flex items-center gap-[7px] rounded-[calc(var(--radius)-1px)] border border-white/10 bg-[var(--sidebar-muted)] px-[9px] py-[7px]">
             <Store className="h-[13px] w-[13px] shrink-0 text-[var(--sidebar-muted-fg)]" />
             <span className="truncate text-[12px] font-medium text-[var(--sidebar-fg)]">{company.name}</span>
             <ChevronDown className="ms-auto h-[11px] w-[11px] shrink-0 text-[var(--sidebar-muted-fg)]" />
           </div>
-          <button
-            onClick={onMobileClose}
-            className="lg:hidden rounded-md p-1 text-[var(--sidebar-muted-fg)] hover:text-[var(--sidebar-fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sidebar-accent)]"
-            aria-label={tCommon("close")}
-          >
-            <X className="h-4 w-4" />
-          </button>
         </div>
 
         {/* Navigation */}
         <nav className="flex-1 overflow-y-auto px-2 py-1">
           {navSections.map((section) => (
-            <div key={section.title}>
+            <div key={section.titleKey}>
               <div className="px-1.5 pb-1 pt-3 text-[10px] font-semibold uppercase tracking-[0.07em] text-[var(--sidebar-muted-fg)]">
-                {section.title}
+                {t(section.titleKey) || section.fallbackTitle}
               </div>
               {section.items.map((item) => (
                 <NavItem key={item.href} item={item} onClick={onMobileClose} />

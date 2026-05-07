@@ -117,7 +117,7 @@ export function RepairForm({ customers, technicians }: any) {
             )}
 
             {!form.watch("customerDeviceId") && (
-              <div className="grid grid-cols-2 gap-3 p-4 bg-muted/30 rounded-lg border border-border">
+              <div className="grid grid-cols-1 gap-3 rounded-lg border border-border bg-muted/30 p-4 sm:grid-cols-2">
                 <div className="col-span-2">
                   <label className="text-sm font-medium mb-1.5 block">{t("form_brand")}</label>
                   <input

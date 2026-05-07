@@ -19,7 +19,8 @@ const selectedRepairPartSchema = z.object({
 });
 
 export const createRepairTicketSchema = z.object({
-  customerId: z.string().cuid("Sélectionnez un client"),
+  customerId: z.string().cuid("Sélectionnez un client").optional().or(z.literal("")),
+  walkInCustomer: z.boolean().optional().default(false),
   customerDeviceId: z.string().cuid().optional().or(z.literal("")),
   
   // Custom device fields (if customerDeviceId is empty)
@@ -59,6 +60,12 @@ export const createRepairTicketSchema = z.object({
 
   problems: z.array(repairTicketProblemSchema).min(1, "Veuillez ajouter au moins un problème"),
 }).refine(
+  (data) => Boolean(data.walkInCustomer || data.customerId),
+  {
+    message: "Sélectionnez un client ou utilisez le client anonyme",
+    path: ["customerId"],
+  }
+).refine(
   (data) => {
     // Must have either an existing device OR at least custom model/brand or category
     if (data.customerDeviceId) return true;

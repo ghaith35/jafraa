@@ -21,10 +21,10 @@ interface Part {
   stockQty: number;
   lowStockThreshold: number | null;
   isArchived: boolean;
-  category: { name: string } | null;
-  compatibleCategory: { nameFr: string } | null;
-  compatibleBrand: { name: string } | null;
-  compatibleFamily: { name: string } | null;
+  category?: { name: string } | null;
+  compatibleCategory?: { nameFr: string } | null;
+  compatibleBrand?: { name: string } | null;
+  compatibleFamily?: { name: string } | null;
 }
 
 interface Props {

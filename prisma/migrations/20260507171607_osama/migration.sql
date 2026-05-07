@@ -1,0 +1,2 @@
+-- RenameIndex
+ALTER INDEX "service_categories_storeId_deviceCategoryId_isActive_sortOrder_" RENAME TO "service_categories_storeId_deviceCategoryId_isActive_sortOr_idx";

@@ -23,7 +23,7 @@ import {
   Wrench,
 } from "lucide-react";
 import type { RepairStatus } from "@prisma/client";
-import { cn, formatCurrency } from "@/lib/utils";
+import { cn, formatCurrency, toSafeNumber } from "@/lib/utils";
 import { RepairStatusBadge } from "@/components/ui/repair-status-badge";
 import { PriorityBadge } from "@/components/ui/priority-badge";
 import { changeRepairTicketStatus, assignTechnician } from "../actions/repair.actions";
@@ -44,7 +44,7 @@ type ReservedPart = {
   id: string;
   quantity: number;
   status: string;
-  part: { name: string; sku: string; sellingPrice: { toNumber: () => number } | number };
+  part: { name: string; sku: string; sellingPrice: { toNumber: () => number } | number | string };
 };
 
 type EstimateSummary = {
@@ -218,10 +218,7 @@ export function RepairDetail({
                 <tbody>
                   {reservedParts.length ? (
                     reservedParts.map((reservation) => {
-                      const unitPrice =
-                        typeof reservation.part.sellingPrice === "number"
-                          ? reservation.part.sellingPrice
-                          : reservation.part.sellingPrice.toNumber();
+                      const unitPrice = toSafeNumber(reservation.part.sellingPrice);
                       return (
                         <tr key={reservation.id} className="border-b border-border last:border-b-0 text-[12px]">
                           <td className="py-2.5">

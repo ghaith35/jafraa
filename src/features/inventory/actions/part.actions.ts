@@ -10,6 +10,11 @@ import {
   type CreatePartInput,
 } from "../schemas/inventory.schema";
 import { generateSku } from "../lib/sku";
+import { getStoreInventoryDeviceScopes } from "../lib/device-scope.server";
+import {
+  isDeviceCategoryKeyInScopes,
+} from "../lib/device-scope";
+import { isInventoryCategoryAllowedByScope } from "../lib/device-scope.server";
 
 type ActionError = { error: string };
 
@@ -25,31 +30,59 @@ export async function listParts(opts?: {
   storeId?: string;
   q?: string;
   showArchived?: boolean;
+  recoveredOnly?: boolean;
 }) {
   const session = await getSession();
   if (!session) return [];
 
   const storeId = opts?.storeId ?? session.storeIds[0];
   if (!storeId) return [];
+  const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
+
+  const searchFilter: Prisma.PartWhereInput | undefined = opts?.q
+    ? {
+        OR: [
+          { name: { contains: opts.q, mode: "insensitive" as const } },
+          { sku: { contains: opts.q, mode: "insensitive" as const } },
+          { barcode: { contains: opts.q, mode: "insensitive" as const } },
+          { brand: { contains: opts.q, mode: "insensitive" as const } },
+          { notes: { contains: opts.q, mode: "insensitive" as const } },
+          { category: { name: { contains: opts.q, mode: "insensitive" as const } } },
+        ],
+      }
+    : undefined;
+
+  const recoveredFilter: Prisma.PartWhereInput | undefined = opts?.recoveredOnly
+    ? {
+        OR: [
+          { notes: { contains: "recovered", mode: "insensitive" as const } },
+          { notes: { contains: "récup", mode: "insensitive" as const } },
+          { notes: { contains: "recup", mode: "insensitive" as const } },
+          { notes: { contains: "used", mode: "insensitive" as const } },
+          { notes: { contains: "occasion", mode: "insensitive" as const } },
+          { notes: { contains: "مستعمل", mode: "insensitive" as const } },
+          { notes: { contains: "مسترجع", mode: "insensitive" as const } },
+          { category: { name: { contains: "recovered", mode: "insensitive" as const } } },
+          { category: { name: { contains: "récup", mode: "insensitive" as const } } },
+          { category: { name: { contains: "recup", mode: "insensitive" as const } } },
+          { category: { name: { contains: "occasion", mode: "insensitive" as const } } },
+        ],
+      }
+    : undefined;
+
+  const andFilters: Prisma.PartWhereInput[] = [];
+  if (searchFilter) andFilters.push(searchFilter);
+  if (recoveredFilter) andFilters.push(recoveredFilter);
 
   const parts = await prisma.part.findMany({
     where: {
       storeId,
       isArchived: opts?.showArchived ? undefined : false,
-      ...(opts?.q
-        ? {
-            OR: [
-              { name: { contains: opts.q, mode: "insensitive" } },
-              { sku: { contains: opts.q, mode: "insensitive" } },
-              { barcode: { contains: opts.q, mode: "insensitive" } },
-              { brand: { contains: opts.q, mode: "insensitive" } },
-            ],
-          }
-        : {}),
+      ...(andFilters.length ? { AND: andFilters } : {}),
     },
     include: {
       category: { select: { name: true } },
-      compatibleCategory: { select: { nameFr: true } },
+      compatibleCategory: { select: { nameFr: true, key: true } },
       compatibleBrand: { select: { name: true } },
       compatibleFamily: { select: { name: true } },
     },
@@ -57,10 +90,20 @@ export async function listParts(opts?: {
     take: 200,
   });
 
-  return parts.map(p => ({
+  const mapped = parts.map(p => ({
     ...p,
     sellingPrice: Number(p.sellingPrice),
   }));
+
+  if (!allowedScopes.length) return mapped;
+
+  return mapped.filter((part) => {
+    if (isDeviceCategoryKeyInScopes(part.compatibleCategory?.key, allowedScopes)) return true;
+    return isInventoryCategoryAllowedByScope(
+      { name: part.category?.name, deviceCategoryKey: null },
+      allowedScopes
+    );
+  });
 }
 
 // ─── Get one ──────────────────────────────────────────────────────────────────
@@ -111,6 +154,36 @@ export async function createPart(
   }
 
   const d = parsed.data;
+  const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
+  if (allowedScopes.length && !d.compatibleCategoryId) {
+    return { error: "Veuillez sélectionner le type d’appareil pour cette pièce" };
+  }
+  if (d.compatibleCategoryId) {
+    const compatibleCategory = await prisma.deviceCategory.findUnique({
+      where: { id: d.compatibleCategoryId },
+      select: { key: true },
+    });
+    if (!compatibleCategory) return { error: "Type d’appareil introuvable" };
+    if (allowedScopes.length && !isDeviceCategoryKeyInScopes(compatibleCategory.key, allowedScopes)) {
+      return { error: "Ce type d’appareil n’est pas autorisé pour cette boutique" };
+    }
+  }
+  if (d.categoryId) {
+    const category = await prisma.inventoryCategory.findFirst({
+      where: { id: d.categoryId, storeId, itemType: "part" },
+      select: { name: true, deviceCategory: { select: { key: true } } },
+    });
+    if (!category) return { error: "Catégorie pièce introuvable" };
+    if (
+      allowedScopes.length &&
+      !isInventoryCategoryAllowedByScope(
+        { name: category.name, deviceCategoryKey: category.deviceCategory?.key },
+        allowedScopes
+      )
+    ) {
+      return { error: "Cette catégorie n’est pas autorisée pour ce type de boutique" };
+    }
+  }
 
   let sku = d.sku?.trim() || "";
   if (!sku) {
@@ -177,6 +250,36 @@ export async function updatePart(
 
   const d = parsed.data;
   const sku = d.sku?.trim() || existing.sku;
+  const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
+  if (allowedScopes.length && !d.compatibleCategoryId) {
+    return { error: "Veuillez sélectionner le type d’appareil pour cette pièce" };
+  }
+  if (d.compatibleCategoryId) {
+    const compatibleCategory = await prisma.deviceCategory.findUnique({
+      where: { id: d.compatibleCategoryId },
+      select: { key: true },
+    });
+    if (!compatibleCategory) return { error: "Type d’appareil introuvable" };
+    if (allowedScopes.length && !isDeviceCategoryKeyInScopes(compatibleCategory.key, allowedScopes)) {
+      return { error: "Ce type d’appareil n’est pas autorisé pour cette boutique" };
+    }
+  }
+  if (d.categoryId) {
+    const category = await prisma.inventoryCategory.findFirst({
+      where: { id: d.categoryId, storeId, itemType: "part" },
+      select: { name: true, deviceCategory: { select: { key: true } } },
+    });
+    if (!category) return { error: "Catégorie pièce introuvable" };
+    if (
+      allowedScopes.length &&
+      !isInventoryCategoryAllowedByScope(
+        { name: category.name, deviceCategoryKey: category.deviceCategory?.key },
+        allowedScopes
+      )
+    ) {
+      return { error: "Cette catégorie n’est pas autorisée pour ce type de boutique" };
+    }
+  }
 
   try {
     await prisma.part.update({

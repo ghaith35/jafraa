@@ -5,6 +5,8 @@ import { prisma } from "@/lib/db";
 import { getDashboardStats } from "@/features/reports/actions/report.actions";
 import { hasPermission } from "@/lib/auth/permissions";
 import { listRepairTickets } from "@/features/repairs/actions/repair.actions";
+import { getAppI18n } from "@/lib/i18n/server";
+import { getIntlLocale, type AppTranslationKey } from "@/lib/i18n/ui-core";
 import {
   AlertTriangle,
   ArrowRight,
@@ -23,31 +25,23 @@ export const metadata = {
   title: "Tableau de bord",
 };
 
-const statusStyles: Record<RepairStatus, { label: string; bg: string; fg: string }> = {
-  received: { label: "Reçu", bg: "var(--s-received-bg)", fg: "var(--s-received-tx)" },
-  in_diagnosis: { label: "Diagnostic", bg: "var(--s-diagnosis-bg)", fg: "var(--s-diagnosis-tx)" },
-  waiting_customer_approval: { label: "Attente client", bg: "var(--s-waiting-bg)", fg: "var(--s-waiting-tx)" },
-  in_repair: { label: "En réparation", bg: "var(--s-inrepair-bg)", fg: "var(--s-inrepair-tx)" },
-  ready_for_pickup: { label: "Prêt à livrer", bg: "var(--s-ready-bg)", fg: "var(--s-ready-tx)" },
-  completed: { label: "Terminé", bg: "var(--s-received-bg)", fg: "var(--s-received-tx)" },
-  not_repaired: { label: "Non réparé", bg: "var(--s-norepair-bg)", fg: "var(--s-norepair-tx)" },
+const statusStyles: Record<RepairStatus, { labelKey: AppTranslationKey; bg: string; fg: string }> = {
+  received: { labelKey: "dashboard.status.received", bg: "var(--s-received-bg)", fg: "var(--s-received-tx)" },
+  in_diagnosis: { labelKey: "dashboard.status.inDiagnosis", bg: "var(--s-diagnosis-bg)", fg: "var(--s-diagnosis-tx)" },
+  waiting_customer_approval: { labelKey: "dashboard.status.waitingCustomer", bg: "var(--s-waiting-bg)", fg: "var(--s-waiting-tx)" },
+  in_repair: { labelKey: "dashboard.status.inRepair", bg: "var(--s-inrepair-bg)", fg: "var(--s-inrepair-tx)" },
+  ready_for_pickup: { labelKey: "dashboard.status.readyForPickup", bg: "var(--s-ready-bg)", fg: "var(--s-ready-tx)" },
+  completed: { labelKey: "dashboard.status.completed", bg: "var(--s-received-bg)", fg: "var(--s-received-tx)" },
+  not_repaired: { labelKey: "dashboard.status.notRepaired", bg: "var(--s-norepair-bg)", fg: "var(--s-norepair-tx)" },
 };
 
 type DashboardTicket = Awaited<ReturnType<typeof listRepairTickets>>[number];
 
-function formatCurrency(value: number) {
-  return `${value.toLocaleString("fr-DZ")} DZD`;
+function formatCurrency(value: number, locale: string) {
+  return `${Math.round(value).toLocaleString(getIntlLocale(locale))} DZD`;
 }
 
-function formatDate(value: Date) {
-  return new Intl.DateTimeFormat("fr-DZ", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric",
-  }).format(value);
-}
-
-function deviceName(ticket: DashboardTicket) {
+function deviceName(ticket: DashboardTicket, fallback: string) {
   return (
     [
       ticket.deviceBrand?.name ?? ticket.customerDevice?.customBrand,
@@ -56,7 +50,7 @@ function deviceName(ticket: DashboardTicket) {
       .filter(Boolean)
       .join(" ") ||
     ticket.customerDevice?.deviceTypeName ||
-    "Appareil"
+    fallback
   );
 }
 
@@ -91,7 +85,7 @@ function KpiCard({
   );
 }
 
-function StatusPill({ status }: { status: RepairStatus }) {
+function StatusPill({ status, label }: { status: RepairStatus; label: string }) {
   const cfg = statusStyles[status];
   return (
     <span
@@ -99,12 +93,13 @@ function StatusPill({ status }: { status: RepairStatus }) {
       style={{ backgroundColor: cfg.bg, color: cfg.fg }}
     >
       <span className="h-1.5 w-1.5 rounded-full bg-current opacity-80" />
-      {cfg.label}
+      {label}
     </span>
   );
 }
 
 export default async function DashboardPage() {
+  const { t, formatDate, locale } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
 
@@ -137,17 +132,17 @@ export default async function DashboardPage() {
   const activities = recentTickets.slice(0, 6).map((ticket, index) => ({
     id: ticket.id,
     icon: index % 3 === 0 ? FileText : index % 3 === 1 ? Clock3 : CheckCircle,
-    text: `${ticket.ticketNumber} · ${ticket.customer.name} · ${statusStyles[ticket.currentStatus].label}`,
-    time: index === 0 ? "il y a 10 min" : `il y a ${index + 1} h`,
+    text: `${ticket.ticketNumber} · ${ticket.customer.name} · ${t(statusStyles[ticket.currentStatus].labelKey)}`,
+    time: index === 0 ? t("dashboard.activity.justNow") : t("dashboard.activity.hoursAgo", { count: index + 1 }),
   }));
 
   return (
     <div className="min-h-[calc(100svh-88px)] bg-[var(--bg)] px-6 py-5 text-[var(--tx)]">
       <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-[22px] font-semibold tracking-tight">Tableau de bord</h1>
+          <h1 className="text-[22px] font-semibold tracking-tight">{t("nav.dashboard")}</h1>
           <p className="mt-1 text-[13px] text-[var(--tx2)]">
-            Bienvenue, {user?.name ?? "équipe REPAIRE"}
+            {t("dashboard.welcome")}, {user?.name ?? t("dashboard.repaireTeam")}
           </p>
         </div>
         <div className="text-[12px] font-medium text-[var(--tx3)]">{formatDate(today)}</div>
@@ -155,33 +150,33 @@ export default async function DashboardPage() {
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
         <KpiCard
-          label="Tickets actifs"
+          label={t("dashboard.kpi.activeTickets")}
           value={String(stats.openTickets)}
-          delta="+3 depuis hier"
+          delta={t("dashboard.kpi.activeTicketsDelta")}
           icon={<Wrench className="h-5 w-5" />}
           color="var(--primary)"
           bg="var(--accent)"
         />
         <KpiCard
-          label="Prêts à livrer"
+          label={t("dashboard.kpi.readyPickup")}
           value={String(readyCount)}
-          delta="À contacter aujourd’hui"
+          delta={t("dashboard.kpi.readyPickupDelta")}
           icon={<CheckCircle className="h-5 w-5" />}
           color="var(--s-ready-tx)"
           bg="var(--s-ready-bg)"
         />
         <KpiCard
-          label="Recettes aujourd’hui"
-          value={formatCurrency(stats.dailyRevenue)}
-          delta={activeSession ? "Caisse ouverte" : "Caisse fermée"}
+          label={t("dashboard.kpi.todayRevenue")}
+          value={formatCurrency(stats.dailyRevenue, locale)}
+          delta={activeSession ? t("dashboard.cashOpen") : t("dashboard.cashClosed")}
           icon={<CircleDollarSign className="h-5 w-5" />}
           color="var(--s-inrepair-tx)"
           bg="var(--s-inrepair-bg)"
         />
         <KpiCard
-          label="Stock critique"
+          label={t("dashboard.kpi.criticalStock")}
           value={String(stats.lowStock)}
-          delta="À réapprovisionner"
+          delta={t("dashboard.kpi.criticalStockDelta")}
           icon={<AlertTriangle className="h-5 w-5" />}
           color="var(--s-diagnosis-tx)"
           bg="var(--s-diagnosis-bg)"
@@ -191,21 +186,21 @@ export default async function DashboardPage() {
       <div className="mt-5 grid grid-cols-1 gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(320px,40%)]">
         <section className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]">
           <div className="flex items-center justify-between border-b border-[var(--border)] px-4 py-3">
-            <h2 className="text-[13px] font-semibold">Pipeline réparations</h2>
+            <h2 className="text-[13px] font-semibold">{t("dashboard.pipeline")}</h2>
             <Link href="/dashboard/repairs" className="inline-flex items-center gap-1 text-[12px] font-medium text-[var(--primary)]">
-              Voir tous <ArrowRight className="h-3.5 w-3.5" />
+              {t("dashboard.viewAll")} <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full table-fixed text-left text-[12px]">
               <thead>
                 <tr className="border-b border-[var(--border)] text-[10px] font-semibold uppercase tracking-[0.04em] text-[var(--tx3)]">
-                  <th className="w-[14%] px-4 py-2 text-start">Ticket</th>
-                  <th className="w-[20%] px-4 py-2 text-start">Client</th>
-                  <th className="w-[24%] px-4 py-2 text-start">Appareil</th>
-                  <th className="w-[18%] px-4 py-2 text-start">Statut</th>
-                  <th className="w-[14%] px-4 py-2 text-start">Technicien</th>
-                  <th className="w-[10%] px-4 py-2 text-start">Date</th>
+                  <th className="w-[14%] px-4 py-2 text-start">{t("dashboard.table.ticket")}</th>
+                  <th className="w-[20%] px-4 py-2 text-start">{t("dashboard.table.customer")}</th>
+                  <th className="w-[24%] px-4 py-2 text-start">{t("dashboard.table.device")}</th>
+                  <th className="w-[18%] px-4 py-2 text-start">{t("dashboard.table.status")}</th>
+                  <th className="w-[14%] px-4 py-2 text-start">{t("dashboard.table.technician")}</th>
+                  <th className="w-[10%] px-4 py-2 text-start">{t("common.date")}</th>
                 </tr>
               </thead>
               <tbody>
@@ -215,9 +210,9 @@ export default async function DashboardPage() {
                       <Link href={`/dashboard/repairs/${ticket.id}`}>{ticket.ticketNumber}</Link>
                     </td>
                     <td className="truncate px-4 py-3 font-medium">{ticket.customer.name}</td>
-                    <td className="truncate px-4 py-3 text-[var(--tx2)]">{deviceName(ticket)}</td>
-                    <td className="px-4 py-3"><StatusPill status={ticket.currentStatus} /></td>
-                    <td className="truncate px-4 py-3 text-[var(--tx2)]">{ticket.assignedTechnician?.name ?? "—"}</td>
+                    <td className="truncate px-4 py-3 text-[var(--tx2)]">{deviceName(ticket, t("dashboard.table.deviceFallback"))}</td>
+                    <td className="px-4 py-3"><StatusPill status={ticket.currentStatus} label={t(statusStyles[ticket.currentStatus].labelKey)} /></td>
+                    <td className="truncate px-4 py-3 text-[var(--tx2)]">{ticket.assignedTechnician?.name ?? t("common.none")}</td>
                     <td className="px-4 py-3 text-[var(--tx3)]">{formatDate(ticket.createdAt)}</td>
                   </tr>
                 ))}
@@ -228,7 +223,7 @@ export default async function DashboardPage() {
 
         <section className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]">
           <div className="border-b border-[var(--border)] px-4 py-3">
-            <h2 className="text-[13px] font-semibold">Activité récente</h2>
+            <h2 className="text-[13px] font-semibold">{t("dashboard.recentActivity")}</h2>
           </div>
           <div className="flex flex-col gap-0 px-4 py-3">
             {activities.length ? activities.map((activity) => {
@@ -245,7 +240,7 @@ export default async function DashboardPage() {
                 </div>
               );
             }) : (
-              <p className="text-[12px] text-[var(--tx2)]">Aucune activité récente.</p>
+              <p className="text-[12px] text-[var(--tx2)]">{t("dashboard.noRecentActivity")}</p>
             )}
           </div>
         </section>
@@ -256,31 +251,31 @@ export default async function DashboardPage() {
           <div className="flex items-center gap-3">
             <AlertTriangle className="h-5 w-5 shrink-0" />
             <div>
-              <p className="text-[13px] font-semibold">Stock critique</p>
+              <p className="text-[13px] font-semibold">{t("dashboard.kpi.criticalStock")}</p>
               <p className="text-[12px] opacity-80">
                 {stats.lowStock > 0
-                  ? `${stats.lowStock} article(s) sous le seuil de réapprovisionnement.`
-                  : "Aucun article critique pour le moment."}
+                  ? t("dashboard.criticalStockSummary", { count: stats.lowStock })
+                  : t("dashboard.criticalStockEmpty")}
               </p>
             </div>
           </div>
           <Link href="/dashboard/inventory/reorder" className="inline-flex items-center gap-1 text-[12px] font-semibold">
-            Commander <ArrowRight className="h-3.5 w-3.5" />
+            {t("dashboard.orderNow")} <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
           <Link href="/dashboard/repairs/new" className="inline-flex h-9 items-center gap-2 rounded-[var(--radius)] bg-[var(--primary)] px-3 text-[12px] font-medium text-[var(--primary-fg)] shadow-[var(--shadow-sm)]">
             <Plus className="h-4 w-4" />
-            Nouveau ticket
+            {t("repairs.newTicket")}
           </Link>
           <Link href="/dashboard/pos/cash-register" className="inline-flex h-9 items-center gap-2 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] px-3 text-[12px] font-medium shadow-[var(--shadow-sm)] hover:bg-[var(--muted)]">
             <ShoppingCart className="h-4 w-4" />
-            Ouvrir caisse
+            {t("dashboard.openCash")}
           </Link>
           <Link href="/dashboard/customers/new" className="inline-flex h-9 items-center gap-2 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] px-3 text-[12px] font-medium shadow-[var(--shadow-sm)] hover:bg-[var(--muted)]">
             <Users className="h-4 w-4" />
-            Nouveau client
+            {t("customers.new")}
           </Link>
         </div>
       </div>

@@ -37,7 +37,7 @@ async function nextPurchaseOrderNumber(storeId: string) {
   const prefix = store?.prefix ?? "PO";
   const now = new Date();
   const stamp = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, "0")}`;
-  const count = await prisma.purchaseOrder.count({ where: { storeId } });
+  const count = await safePurchaseOrderQuery(() => prisma.purchaseOrder.count({ where: { storeId } }), 0);
   return `${prefix}-PO-${stamp}-${String(count + 1).padStart(4, "0")}`;
 }
 
@@ -45,31 +45,39 @@ export async function listPurchaseOrders() {
   const session = await ensureInventoryManager();
   if (!session) return [];
 
-  return prisma.purchaseOrder.findMany({
-    where: { storeId: session.storeId },
-    orderBy: { createdAt: "desc" },
-    take: 100,
-    include: {
-      supplier: { select: { name: true, phone: true } },
-      createdBy: { select: { name: true } },
-      lines: true,
-    },
-  });
+  return safePurchaseOrderQuery(
+    () =>
+      prisma.purchaseOrder.findMany({
+        where: { storeId: session.storeId },
+        orderBy: { createdAt: "desc" },
+        take: 100,
+        include: {
+          supplier: { select: { name: true, phone: true } },
+          createdBy: { select: { name: true } },
+          lines: true,
+        },
+      }),
+    []
+  );
 }
 
 export async function getPurchaseOrder(orderId: string) {
   const session = await ensureInventoryManager();
   if (!session) return null;
 
-  return prisma.purchaseOrder.findFirst({
-    where: { id: orderId, storeId: session.storeId },
-    include: {
-      supplier: true,
-      store: true,
-      createdBy: { select: { name: true } },
-      lines: { include: { product: true, part: true }, orderBy: { createdAt: "asc" } },
-    },
-  });
+  return safePurchaseOrderQuery(
+    () =>
+      prisma.purchaseOrder.findFirst({
+        where: { id: orderId, storeId: session.storeId },
+        include: {
+          supplier: true,
+          store: true,
+          createdBy: { select: { name: true } },
+          lines: { include: { product: true, part: true }, orderBy: { createdAt: "asc" } },
+        },
+      }),
+    null
+  );
 }
 
 export async function createPurchaseOrder(input: CreatePurchaseOrderInput): Promise<ActionResult> {
@@ -90,7 +98,7 @@ export async function createPurchaseOrder(input: CreatePurchaseOrderInput): Prom
   const subtotal = cleaned.reduce((sum, line) => sum + line.quantity * Number(line.unitCost || 0), 0);
   const orderNumber = await nextPurchaseOrderNumber(session.storeId);
 
-  const po = await prisma.purchaseOrder.create({
+  const po = await safePurchaseOrderQuery(() => prisma.purchaseOrder.create({
     data: {
       companyId: session.companyId,
       storeId: session.storeId,
@@ -113,7 +121,11 @@ export async function createPurchaseOrder(input: CreatePurchaseOrderInput): Prom
         })),
       },
     },
-  });
+  }), null);
+
+  if (!po) {
+    return { error: "La table des commandes fournisseur n'existe pas encore dans votre base de données. Lancez vos migrations Prisma avant d'utiliser cette fonction." };
+  }
 
   revalidatePath("/dashboard/inventory/purchase-orders");
   revalidatePath("/dashboard/inventory/reorder");
@@ -160,19 +172,35 @@ export async function updatePurchaseOrderStatus(orderId: string, status: "draft"
   const session = await ensureInventoryManager();
   if (!session) return { error: "Non autorisé" };
 
-  const order = await prisma.purchaseOrder.findFirst({ where: { id: orderId, storeId: session.storeId }, select: { id: true } });
-  if (!order) return { error: "Commande introuvable" };
+  const order = await safePurchaseOrderQuery(() => prisma.purchaseOrder.findFirst({ where: { id: orderId, storeId: session.storeId }, select: { id: true } }), null);
+  if (!order) return { error: "Commande introuvable ou table des commandes fournisseur manquante" };
 
-  await prisma.purchaseOrder.update({
-    where: { id: orderId },
-    data: {
-      status,
-      sentAt: status === "sent" ? new Date() : undefined,
-      receivedAt: status === "received" ? new Date() : undefined,
-    },
-  });
+  const updated = await safePurchaseOrderQuery(
+    () =>
+      prisma.purchaseOrder.update({
+        where: { id: orderId },
+        data: {
+          status,
+          sentAt: status === "sent" ? new Date() : undefined,
+          receivedAt: status === "received" ? new Date() : undefined,
+        },
+      }),
+    null
+  );
+
+  if (!updated) return { error: "Impossible de mettre à jour cette commande fournisseur." };
 
   revalidatePath("/dashboard/inventory/purchase-orders");
   revalidatePath(`/dashboard/inventory/purchase-orders/${orderId}`);
   return { success: true };
+}
+
+
+async function safePurchaseOrderQuery<T>(query: () => Promise<T>, fallback: T): Promise<T> {
+  try {
+    return await query();
+  } catch (error) {
+    console.warn("Purchase order feature skipped because the current database is missing purchase order tables/columns:", error);
+    return fallback;
+  }
 }

@@ -5,6 +5,10 @@ import { Save, CheckCircle2, Building2, Wrench, ShoppingCart, AlertTriangle } fr
 import { cn } from "@/lib/utils";
 import { saveStoreProfile, saveStoreSettings } from "../actions/settings.actions";
 import type { StoreProfileData, StoreSettingsData } from "../actions/settings.actions";
+import {
+  INVENTORY_DEVICE_SCOPE_KEYS,
+  type InventoryDeviceScopeKey,
+} from "@/features/inventory/lib/device-scope";
 
 // ─── Section wrapper ──────────────────────────────────────────────────────────
 
@@ -54,6 +58,15 @@ function Field({
 
 const INPUT =
   "w-full h-9 rounded-md border border-input bg-background px-3 text-sm focus:outline-none focus:ring-1 focus:ring-ring disabled:opacity-50";
+
+const DEVICE_SCOPE_LABELS: Record<InventoryDeviceScopeKey, string> = {
+  phone: "Téléphone",
+  tablet: "Tablette / iPad",
+  laptop: "Laptop",
+  desktop: "Ordinateur bureau",
+  printer: "Imprimante",
+  console: "Console",
+};
 
 // ─── Store profile form ───────────────────────────────────────────────────────
 
@@ -171,6 +184,7 @@ function OperationalSettingsForm({
     lowStockDefaultThreshold: initial.lowStockDefaultThreshold,
     cashierDiscountThresholdPct: initial.cashierDiscountThresholdPct,
     refundApprovalThreshold: initial.refundApprovalThreshold,
+    inventoryDeviceScopes: initial.inventoryDeviceScopes,
   });
   const [saved, setSaved] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -193,6 +207,17 @@ function OperationalSettingsForm({
   const setNum =
     (key: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement>) =>
       setForm((f) => ({ ...f, [key]: Number(e.target.value) }));
+
+  const toggleScope = (scope: InventoryDeviceScopeKey) =>
+    setForm((prev) => {
+      const has = prev.inventoryDeviceScopes.includes(scope);
+      const next = has
+        ? prev.inventoryDeviceScopes.length === 1
+          ? prev.inventoryDeviceScopes
+          : prev.inventoryDeviceScopes.filter((item) => item !== scope)
+        : [...prev.inventoryDeviceScopes, scope];
+      return { ...prev, inventoryDeviceScopes: next };
+    });
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
@@ -306,6 +331,38 @@ function OperationalSettingsForm({
             />
             <span className="text-sm text-muted-foreground">unités</span>
           </div>
+        </Field>
+      </div>
+
+      <div className="h-px bg-border" />
+
+      <div className="space-y-4">
+        <p className="text-xs font-semibold uppercase text-muted-foreground tracking-wide flex items-center gap-1.5">
+          <Wrench className="h-3.5 w-3.5" /> Scope inventaire
+        </p>
+        <Field
+          label="Types d'appareils"
+          hint="Contrôle les catégories visibles dans Produits / Pièces selon le métier de la boutique."
+        >
+          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+            {INVENTORY_DEVICE_SCOPE_KEYS.map((scope) => (
+              <label
+                key={scope}
+                className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-sm"
+              >
+                <input
+                  type="checkbox"
+                  checked={form.inventoryDeviceScopes.includes(scope)}
+                  onChange={() => toggleScope(scope)}
+                  disabled={!canEdit}
+                />
+                <span>{DEVICE_SCOPE_LABELS[scope]}</span>
+              </label>
+            ))}
+          </div>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Cochez les familles que votre boutique traite. Au moins un type doit rester actif.
+          </p>
         </Field>
       </div>
 

@@ -54,7 +54,7 @@ export function RepairRefundForm({ invoice, onSuccess, onCancel }: RepairRefundF
       </h4>
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="space-y-1">
             <label className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-500">{t("refund_amount")}</label>
             <input

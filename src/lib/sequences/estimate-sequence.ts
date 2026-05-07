@@ -1,10 +1,14 @@
 import { Prisma } from "@prisma/client";
 
 /**
- * Safely generates a unique sequential document number for a store.
- * Format: {PREFIX}-DEV-{YYYY}-{000001}
- * Example: ALG-DEV-2026-000001
- * 
+ * Safely generates a unique sequential estimate number for a store.
+ * Format: {PREFIX}-DEV-{YYYYMM}-{000001}
+ * Example: ALG-DEV-202605-000001
+ *
+ * The DocumentSequence key is monthly, so the generated number must also
+ * include the month. Otherwise every new month could restart at the same
+ * visible number and collide with the store-level unique estimate number.
+ *
  * Must be called within a Prisma transaction.
  */
 export async function generateEstimateNumber(
@@ -15,6 +19,7 @@ export async function generateEstimateNumber(
   const now = new Date();
   const year = now.getFullYear();
   const month = now.getMonth() + 1; // 1-12
+  const period = `${year}${String(month).padStart(2, "0")}`;
 
   // Upsert the sequence for this year/month combination
   const sequence = await tx.documentSequence.upsert({
@@ -38,8 +43,8 @@ export async function generateEstimateNumber(
     },
   });
 
-  // Format: PREFIX-DEV-YYYY-000001
+  // Format: PREFIX-DEV-YYYYMM-000001
   // We use 6 digits for the sequence number.
   const formattedNumber = String(sequence.lastNumber).padStart(6, "0");
-  return `${storePrefix}-DEV-${year}-${formattedNumber}`;
+  return `${storePrefix}-DEV-${period}-${formattedNumber}`;
 }

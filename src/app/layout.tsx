@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-import { AutoTranslator } from "@/components/i18n/AutoTranslator";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -31,11 +30,10 @@ export default async function RootLayout({
       <body className="min-h-full bg-background text-foreground font-sans">
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{var t=localStorage.getItem("repaire-theme");var r=document.documentElement;if(t==="dark"){r.classList.add("dark");r.classList.remove("light")}else if(t==="light"){r.classList.add("light");r.classList.remove("dark")}}catch(e){}`,
+            __html: `try{var r=document.documentElement;var t=null;try{t=localStorage.getItem("repaire-theme")}catch(e){}var m=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var n=t==="dark"||t==="light"?t:m?"dark":"light";r.classList.toggle("dark",n==="dark");r.classList.toggle("light",n==="light");r.dataset.theme=n;r.style.colorScheme=n}catch(e){}`,
           }}
         />
         <NextIntlClientProvider messages={messages}>
-          <AutoTranslator />
           {children}
         </NextIntlClientProvider>
       </body>

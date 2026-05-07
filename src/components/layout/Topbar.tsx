@@ -4,6 +4,7 @@ import { Bell, Menu, Search } from "lucide-react";
 import type { UserRole } from "@prisma/client";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
+import { useAppI18n } from "@/lib/i18n/ui";
 
 interface Props {
   user: {
@@ -23,31 +24,33 @@ function userInitials(name: string): string {
 }
 
 export function Topbar({ user, onMobileMenuToggle }: Props) {
+  const { t } = useAppI18n();
+
   return (
-    <header className="sticky top-0 z-10 flex h-12 shrink-0 items-center gap-2 border-b border-[var(--border)] bg-[var(--surface)] px-5">
+    <header className="sticky top-0 z-10 flex min-h-14 shrink-0 items-center gap-1 border-b border-[var(--border)] bg-[var(--surface)] px-2 sm:gap-2 sm:px-4 lg:h-12 lg:min-h-12 lg:px-5">
       <button
         onClick={onMobileMenuToggle}
-        className="rounded-md p-1.5 text-[var(--tx2)] hover:bg-[var(--muted)] hover:text-[var(--tx)] lg:hidden"
-        aria-label="Ouvrir le menu"
+        className="inline-flex h-11 w-11 items-center justify-center rounded-md text-[var(--tx2)] hover:bg-[var(--muted)] hover:text-[var(--tx)] lg:hidden"
+        aria-label={t("topbar.openMenu")}
       >
         <Menu className="h-5 w-5" />
       </button>
 
-      <div className="text-sm font-semibold text-[var(--tx)]">Tableau de bord</div>
+      <div className="hidden text-sm font-semibold text-[var(--tx)] sm:block">{t("nav.dashboard")}</div>
 
-      <div className="ms-auto flex items-center gap-2">
+      <div className="ms-auto flex min-w-0 items-center gap-1 sm:gap-2">
         <button
           type="button"
-          className="inline-flex h-9 w-9 items-center justify-center rounded-md text-[var(--tx2)] hover:bg-[var(--muted)] hover:text-[var(--tx)]"
-          aria-label="Rechercher"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-md text-[var(--tx2)] hover:bg-[var(--muted)] hover:text-[var(--tx)] sm:h-9 sm:w-9"
+          aria-label={t("common.search")}
         >
           <Search className="h-4 w-4" />
         </button>
 
         <button
           type="button"
-          className="relative inline-flex h-9 w-9 items-center justify-center rounded-md text-[var(--tx2)] hover:bg-[var(--muted)] hover:text-[var(--tx)]"
-          aria-label="Notifications"
+          className="relative inline-flex h-11 w-11 items-center justify-center rounded-md text-[var(--tx2)] hover:bg-[var(--muted)] hover:text-[var(--tx)] sm:h-9 sm:w-9"
+          aria-label={t("topbar.notifications")}
         >
           <Bell className="h-4 w-4" />
           <span className="absolute end-2 top-2 h-2 w-2 rounded-full bg-[var(--destructive)]" />

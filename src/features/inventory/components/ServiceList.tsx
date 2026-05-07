@@ -2,10 +2,10 @@
 
 import { useTransition } from "react";
 import Link from "next/link";
-import { Zap, Clock, Archive, Pencil } from "lucide-react";
+import { Zap, Clock, Archive, Pencil, RotateCcw, Layers } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useAppI18n } from "@/lib/i18n/ui";
-import { archiveService } from "../actions/service.actions";
+import { archiveService, reactivateService } from "../actions/service.actions";
 import type { UserRole } from "@prisma/client";
 import { hasPermission } from "@/lib/auth/permissions";
 
@@ -16,9 +16,13 @@ interface Service {
   name: string;
   sku: string;
   category: string | null;
-  sellingPrice: { toNumber: () => number } | number;
+  sellingPrice: number;
+  basePrice: number | null;
+  costPrice: number | null;
   estimatedDurationMinutes: number | null;
   isArchived: boolean;
+  deviceCategory?: { nameFr: string; nameEn?: string | null; nameAr?: string | null } | null;
+  _count?: { packageItems: number };
 }
 
 interface Props {
@@ -28,13 +32,13 @@ interface Props {
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
-function formatPrice(v: { toNumber: () => number } | number): string {
-  const num = typeof v === "number" ? v : v.toNumber();
-  return new Intl.NumberFormat("fr-DZ", {
+function formatPrice(v: number, locale: string): string {
+  const intlLocale = locale === "ar" ? "ar-DZ" : locale === "en" ? "en-GB" : "fr-DZ";
+  return new Intl.NumberFormat(intlLocale, {
     style: "decimal",
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
-  }).format(num) + " DZD";
+  }).format(v) + (locale === "ar" ? " دج" : " DZD");
 }
 
 function formatDuration(minutes: number): string {
@@ -53,7 +57,7 @@ function ServiceRow({
   service: Service;
   canManage: boolean;
 }) {
-  const { t } = useAppI18n();
+  const { t, locale } = useAppI18n();
   const [isPending, startTransition] = useTransition();
 
   function handleArchive() {
@@ -61,6 +65,22 @@ function ServiceRow({
       await archiveService(service.id);
     });
   }
+  function handleReactivate() {
+    startTransition(async () => {
+      await reactivateService(service.id);
+    });
+  }
+
+  const cost = service.costPrice ?? 0;
+  const marginAmount = service.sellingPrice - cost;
+  const marginPercent = service.sellingPrice > 0 ? (marginAmount / service.sellingPrice) * 100 : 0;
+  const deviceName =
+    locale === "ar"
+      ? service.deviceCategory?.nameAr || service.deviceCategory?.nameFr
+      : locale === "en"
+        ? service.deviceCategory?.nameEn || service.deviceCategory?.nameFr
+        : service.deviceCategory?.nameFr;
+  const isPackage = (service._count?.packageItems ?? 0) > 0;
 
   return (
     <div className={cn(
@@ -81,6 +101,17 @@ function ServiceRow({
               {service.category}
             </span>
           )}
+          {deviceName ? (
+            <span className="text-xs text-muted-foreground bg-muted rounded px-1.5 py-0.5">
+              {deviceName}
+            </span>
+          ) : null}
+          {isPackage ? (
+            <span className="inline-flex items-center gap-1 text-xs text-muted-foreground bg-muted rounded px-1.5 py-0.5">
+              <Layers className="h-3 w-3" />
+              {t("services.isPackage")}
+            </span>
+          ) : null}
           {service.isArchived && (
             <span className="text-xs text-muted-foreground border border-border rounded px-1.5 py-0.5">
               {t("inventory.archived")}
@@ -101,30 +132,44 @@ function ServiceRow({
       {/* Price */}
       <div className="hidden sm:flex flex-col items-end gap-0.5 shrink-0">
         <span className="text-sm font-semibold text-foreground">
-          {formatPrice(service.sellingPrice)}
+          {formatPrice(service.sellingPrice, locale)}
         </span>
-        <span className="text-xs text-muted-foreground">{t("inventory.labor")}</span>
+        <span className="text-xs text-muted-foreground">
+          {t("services.margin")}: {formatPrice(marginAmount, locale)} ({marginPercent.toFixed(1)}%)
+        </span>
       </div>
 
       {/* Actions */}
-      {canManage && !service.isArchived && (
+      {canManage && (
         <div className="flex items-center gap-1 shrink-0">
           <Link
-            href={`/dashboard/inventory/services/${service.id}/edit`}
-            className="rounded-md p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+            href={`/dashboard/services/${service.id}/edit`}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
             title={t("common.edit")}
           >
             <Pencil className="h-3.5 w-3.5" />
           </Link>
-          <button
-            type="button"
-            onClick={handleArchive}
-            disabled={isPending}
-            title={t("inventory.archiveService")}
-            className="rounded-md p-1.5 text-muted-foreground hover:text-destructive hover:bg-destructive/10 disabled:opacity-50 transition-colors"
-          >
-            <Archive className="h-3.5 w-3.5" />
-          </button>
+          {service.isArchived ? (
+            <button
+              type="button"
+              onClick={handleReactivate}
+              disabled={isPending}
+              title={t("inventory.reactivateCategory")}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-muted disabled:opacity-50 transition-colors"
+            >
+              <RotateCcw className="h-3.5 w-3.5" />
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={handleArchive}
+              disabled={isPending}
+              title={t("inventory.archiveService")}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground hover:text-destructive hover:bg-destructive/10 disabled:opacity-50 transition-colors"
+            >
+              <Archive className="h-3.5 w-3.5" />
+            </button>
+          )}
         </div>
       )}
     </div>

@@ -31,13 +31,14 @@ export function InventoryTabs({ activeTab }: Props) {
   ];
 
   return (
-    <div className="flex gap-1 rounded-xl border border-border bg-muted p-1">
+    <div className="overflow-x-auto rounded-xl border border-border bg-muted p-1">
+      <div className="flex min-w-max gap-1">
       {tabs.map(({ key, label, icon: Icon }) => (
         <button
           key={key}
           onClick={() => selectTab(key)}
           className={cn(
-            "flex flex-1 items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
+            "flex min-h-11 min-w-[132px] items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
             activeTab === key
               ? "bg-background text-foreground shadow-sm"
               : "text-muted-foreground hover:text-foreground"
@@ -47,6 +48,7 @@ export function InventoryTabs({ activeTab }: Props) {
           {label}
         </button>
       ))}
+      </div>
     </div>
   );
 }

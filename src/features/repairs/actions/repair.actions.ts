@@ -10,9 +10,77 @@ import {
   type CreateRepairTicketInput,
   type UpdateRepairStatusInput,
 } from "../schemas/repair.schema";
-import type { RepairStatus } from "@prisma/client";
+import { Prisma, type RepairStatus } from "@prisma/client";
 
 type ActionError = { error: string };
+
+function normalizePhone(phone: string): string {
+  return phone.replace(/[\s\-\(\)\.]/g, "");
+}
+
+function isDuplicateRecordError(error: unknown): boolean {
+  return error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2002";
+}
+
+export async function quickCreateRepairCustomer(data: {
+  name: string;
+  phone?: string;
+  languagePreference?: "fr" | "ar" | "en";
+}): Promise<ActionError | { customer: { id: string; name: string; phones: Array<{ phoneNumber: string }>; assets: [] } }> {
+  const session = await getSession();
+  if (!session) return { error: "Non autorisé" };
+
+  const name = data.name.trim();
+  const phone = data.phone?.trim() ?? "";
+
+  if (!name) return { error: "Le nom du client est requis" };
+  if (name.length > 120) return { error: "Le nom est trop long" };
+  if (phone && !/^\+?[\d\s\-\(\)\.]{7,20}$/.test(phone)) {
+    return { error: "Format de numéro invalide" };
+  }
+
+  try {
+    const customer = await prisma.$transaction(async (tx) => {
+      const created = await tx.customer.create({
+        data: {
+          companyId: session.companyId,
+          customerType: "named",
+          name,
+          languagePreference: data.languagePreference ?? "fr",
+        },
+        select: { id: true, name: true },
+      });
+
+      if (phone) {
+        await tx.customerPhone.create({
+          data: {
+            companyId: session.companyId,
+            customerId: created.id,
+            phoneNumber: normalizePhone(phone),
+            isPrimary: true,
+          },
+        });
+      }
+
+      return {
+        id: created.id,
+        name: created.name,
+        phones: phone ? [{ phoneNumber: normalizePhone(phone) }] : [],
+        assets: [] as [],
+      };
+    });
+
+    revalidatePath("/dashboard/repairs/new");
+    revalidatePath("/dashboard/customers");
+    return { customer };
+  } catch (error) {
+    if (isDuplicateRecordError(error)) {
+      return { error: "Ce numéro est déjà associé à un autre client" };
+    }
+    console.error("quickCreateRepairCustomer:", error);
+    return { error: "Erreur lors de la création du client" };
+  }
+}
 
 // ─── List ─────────────────────────────────────────────────────────────────────
 
@@ -118,15 +186,22 @@ export async function createRepairTicket(
 
   const d = parsed.data;
 
-  const customer = await prisma.customer.findFirst({
-    where: { id: d.customerId, companyId: session.companyId, isArchived: false },
-    select: { id: true },
-  });
-  if (!customer) return { error: "Client introuvable" };
+  let validatedCustomerId = d.customerId || null;
+
+  if (validatedCustomerId) {
+    const customer = await prisma.customer.findFirst({
+      where: { id: validatedCustomerId, companyId: session.companyId, isArchived: false },
+      select: { id: true },
+    });
+    if (!customer) return { error: "Client introuvable" };
+  } else if (!d.walkInCustomer) {
+    return { error: "Sélectionnez un client ou utilisez le client anonyme" };
+  }
 
   if (d.customerDeviceId) {
+    if (!validatedCustomerId) return { error: "Un appareil enregistré nécessite un client" };
     const asset = await prisma.customerAsset.findFirst({
-      where: { id: d.customerDeviceId, customerId: d.customerId, isArchived: false },
+      where: { id: d.customerDeviceId, customerId: validatedCustomerId, isArchived: false },
       select: { id: true },
     });
     if (!asset) return { error: "Appareil client introuvable" };
@@ -145,9 +220,40 @@ export async function createRepairTicket(
       const ticketNumber = await generateTicketNumber(tx, storeId, store.prefix);
 
       let customerDeviceId = d.customerDeviceId || null;
+      let ticketCustomerId = validatedCustomerId;
 
-      // When the intake wizard creates a new device, save it as a customer asset
-      // so the next repair can be opened in one click.
+      if (!ticketCustomerId && d.walkInCustomer) {
+        const existingWalkInCustomer = await tx.customer.findFirst({
+          where: {
+            companyId: session.companyId,
+            customerType: "walkin",
+            isArchived: false,
+            name: { equals: "Client anonyme", mode: "insensitive" },
+          },
+          select: { id: true },
+        });
+
+        if (existingWalkInCustomer) {
+          ticketCustomerId = existingWalkInCustomer.id;
+        } else {
+          const walkInCustomer = await tx.customer.create({
+            data: {
+              companyId: session.companyId,
+              customerType: "walkin",
+              name: "Client anonyme",
+              languagePreference: "fr",
+            },
+            select: { id: true },
+          });
+          ticketCustomerId = walkInCustomer.id;
+        }
+      }
+
+      if (!ticketCustomerId) throw new Error("Client introuvable");
+
+      // When the intake wizard creates a new device for a named customer, save it
+      // as a customer asset so the next repair can be opened in one click.
+      // Walk-in / anonymous tickets keep the device details only on the ticket.
       let selectedCategoryKey: string | null = null;
       let selectedBrandName: string | null = null;
 
@@ -160,10 +266,10 @@ export async function createRepairTicket(
         selectedBrandName = brand?.name ?? null;
       }
 
-      if (!customerDeviceId && (d.deviceCategoryId || d.deviceBrandId || d.deviceFamilyId || d.customDeviceBrand || d.customDeviceModel || d.imeiSerial)) {
+      if (validatedCustomerId && !customerDeviceId && (d.deviceCategoryId || d.deviceBrandId || d.deviceFamilyId || d.customDeviceBrand || d.customDeviceModel || d.imeiSerial)) {
         const asset = await tx.customerAsset.create({
           data: {
-            customerId: d.customerId,
+            customerId: validatedCustomerId,
             deviceCategoryId: d.deviceCategoryId || null,
             deviceBrandId: d.deviceBrandId || null,
             deviceModelFamilyId: d.deviceFamilyId || null,
@@ -229,7 +335,7 @@ export async function createRepairTicket(
           companyId: session.companyId,
           storeId,
           ticketNumber,
-          customerId: d.customerId,
+          customerId: ticketCustomerId,
           customerDeviceId,
           deviceCategoryId: d.deviceCategoryId || null,
           deviceBrandId: d.deviceBrandId || null,

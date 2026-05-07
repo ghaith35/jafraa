@@ -4,6 +4,11 @@ import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { revalidatePath } from "next/cache";
+import {
+  INVENTORY_DEVICE_SCOPE_KEYS,
+  normalizeDeviceScopeKeys,
+  type InventoryDeviceScopeKey,
+} from "@/features/inventory/lib/device-scope";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -24,6 +29,7 @@ export interface StoreSettingsData {
   cashierDiscountThresholdPct: number;
   refundApprovalThreshold: number;
   whatsappPhone: string | null;
+  inventoryDeviceScopes: InventoryDeviceScopeKey[];
 }
 
 export interface FullStoreConfig {
@@ -43,7 +49,7 @@ export async function getStoreConfig(): Promise<FullStoreConfig | null> {
   const [store, settings] = await Promise.all([
     prisma.store.findUnique({
       where: { id: storeId },
-      select: { name: true, address: true, phone: true, email: true, prefix: true },
+      select: { name: true, address: true, phone: true, email: true, prefix: true, businessHoursJson: true },
     }),
     prisma.storeSettings.findUnique({
       where: { storeId },
@@ -51,6 +57,18 @@ export async function getStoreConfig(): Promise<FullStoreConfig | null> {
   ]);
 
   if (!store) return null;
+  const businessHoursJson =
+    store.businessHoursJson && typeof store.businessHoursJson === "object"
+      ? (store.businessHoursJson as Record<string, unknown>)
+      : {};
+  const rawScopes = Array.isArray(businessHoursJson.inventoryDeviceScopes)
+    ? businessHoursJson.inventoryDeviceScopes.filter((item): item is string => typeof item === "string")
+    : [];
+  const normalizedScopes = normalizeDeviceScopeKeys(rawScopes);
+  const inventoryDeviceScopes =
+    normalizedScopes.length && normalizedScopes.length < INVENTORY_DEVICE_SCOPE_KEYS.length
+      ? normalizedScopes
+      : [...INVENTORY_DEVICE_SCOPE_KEYS];
 
   return {
     profile: {
@@ -69,6 +87,7 @@ export async function getStoreConfig(): Promise<FullStoreConfig | null> {
       cashierDiscountThresholdPct: Number(settings?.cashierDiscountThresholdPct ?? 5),
       refundApprovalThreshold: Number(settings?.refundApprovalThreshold ?? 10000),
       whatsappPhone: settings?.whatsappPhone ?? null,
+      inventoryDeviceScopes,
     },
   };
 }
@@ -127,6 +146,32 @@ export async function saveStoreSettings(data: Partial<StoreSettingsData>) {
     updateData.refundApprovalThreshold = data.refundApprovalThreshold;
   if (data.whatsappPhone !== undefined)
     updateData.whatsappPhone = data.whatsappPhone || null;
+
+  if (data.inventoryDeviceScopes !== undefined) {
+    const incoming = normalizeDeviceScopeKeys(data.inventoryDeviceScopes);
+    const nextScopes =
+      incoming.length && incoming.length < INVENTORY_DEVICE_SCOPE_KEYS.length
+        ? incoming
+        : [...INVENTORY_DEVICE_SCOPE_KEYS];
+
+    const store = await prisma.store.findUnique({
+      where: { id: storeId },
+      select: { businessHoursJson: true },
+    });
+    const current =
+      store?.businessHoursJson && typeof store.businessHoursJson === "object"
+        ? (store.businessHoursJson as Record<string, unknown>)
+        : {};
+    await prisma.store.update({
+      where: { id: storeId },
+      data: {
+        businessHoursJson: {
+          ...current,
+          inventoryDeviceScopes: nextScopes,
+        },
+      },
+    });
+  }
 
   await prisma.storeSettings.upsert({
     where: { storeId },

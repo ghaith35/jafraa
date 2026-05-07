@@ -28,7 +28,7 @@ export function RepairBreadcrumb({
   onSelectStep?: (step: RepairWizardStep) => void;
 }) {
   return (
-    <div className="overflow-x-auto border-b border-slate-200 bg-white px-4 py-3">
+    <div className="overflow-x-auto border-b border-border bg-card px-4 py-3">
       <div className="flex min-w-max items-center gap-2">
         {steps.map((step, index) => {
           const completed = completedSteps.includes(step.key);
@@ -45,22 +45,22 @@ export function RepairBreadcrumb({
                   "inline-flex items-center gap-2 rounded-full px-3 py-2 text-xs font-bold transition-colors",
                   active && "bg-primary text-primary-foreground shadow-sm",
                   completed && !active && "bg-primary/10 text-primary hover:bg-primary/15",
-                  !completed && !active && "bg-slate-100 text-slate-500"
+                  !completed && !active && "bg-muted text-muted-foreground"
                 )}
               >
                 <span
                   className={cn(
                     "flex h-5 w-5 items-center justify-center rounded-full text-[11px]",
-                    active && "bg-white/20 text-primary-foreground",
+                    active && "bg-primary-foreground/20 text-primary-foreground",
                     completed && !active && "bg-primary text-primary-foreground",
-                    !completed && !active && "bg-white text-slate-500"
+                    !completed && !active && "bg-card text-muted-foreground"
                   )}
                 >
                   {completed ? <Check className="h-3 w-3" /> : index + 1}
                 </span>
                 {step.label}
               </button>
-              {index < steps.length - 1 && <span className="text-slate-300">›</span>}
+              {index < steps.length - 1 && <span className="text-muted-foreground">›</span>}
             </div>
           );
         })}

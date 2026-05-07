@@ -10,6 +10,12 @@ import {
   type CreateProductInput,
 } from "../schemas/inventory.schema";
 import { generateSku } from "../lib/sku";
+import type { ProductListFilters, ProductListItem } from "../lib/product-catalog";
+import { isInStock, isLowStock, isOutOfStock } from "../lib/product-catalog";
+import {
+  getStoreInventoryDeviceScopes,
+  isInventoryCategoryAllowedByScope,
+} from "../lib/device-scope.server";
 
 type ActionError = { error: string };
 
@@ -21,41 +27,157 @@ function isP2002(e: unknown): boolean {
 
 // ─── List ─────────────────────────────────────────────────────────────────────
 
-export async function listProducts(opts?: {
-  storeId?: string;
-  q?: string;
-  showArchived?: boolean;
-}) {
+export async function listProducts(opts?: ProductListFilters): Promise<ProductListItem[]> {
   const session = await getSession();
   if (!session) return [];
 
   const storeId = opts?.storeId ?? session.storeIds[0];
   if (!storeId) return [];
+  const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
+
+  const stockFilter = opts?.stock ?? (opts?.showArchived ? "archived" : "all");
+  const andFilters: Prisma.ProductWhereInput[] = [];
+
+  if (opts?.q) {
+    andFilters.push({
+      OR: [
+        { name: { contains: opts.q, mode: "insensitive" } },
+        { sku: { contains: opts.q, mode: "insensitive" } },
+        { barcode: { contains: opts.q, mode: "insensitive" } },
+        { brand: { contains: opts.q, mode: "insensitive" } },
+        { modelReference: { contains: opts.q, mode: "insensitive" } },
+      ],
+    });
+  }
+  if (opts?.category) {
+    andFilters.push({ categoryId: opts.category });
+  }
+  if (opts?.brand) {
+    andFilters.push({ brand: { equals: opts.brand, mode: "insensitive" } });
+  }
+  if (opts?.spec) {
+    andFilters.push({ modelReference: { contains: opts.spec, mode: "insensitive" } });
+  }
+
+  const orderBy: Prisma.ProductOrderByWithRelationInput[] = (() => {
+    switch (opts?.sort) {
+      case "newest":
+        return [{ createdAt: "desc" }, { name: "asc" }];
+      case "price_high":
+        return [{ sellingPrice: "desc" }, { name: "asc" }];
+      case "price_low":
+        return [{ sellingPrice: "asc" }, { name: "asc" }];
+      case "stock_low_first":
+        return [{ stockQty: "asc" }, { name: "asc" }];
+      case "name_asc":
+      default:
+        return [{ name: "asc" }];
+    }
+  })();
 
   const products = await prisma.product.findMany({
     where: {
       storeId,
-      isArchived: opts?.showArchived ? undefined : false,
-      ...(opts?.q
-        ? {
-            OR: [
-              { name: { contains: opts.q, mode: "insensitive" } },
-              { sku: { contains: opts.q, mode: "insensitive" } },
-              { barcode: { contains: opts.q, mode: "insensitive" } },
-              { brand: { contains: opts.q, mode: "insensitive" } },
-            ],
-          }
-        : {}),
+      isArchived:
+        stockFilter === "archived"
+          ? true
+          : stockFilter === "all"
+            ? undefined
+            : false,
+      ...(andFilters.length ? { AND: andFilters } : {}),
     },
-    include: { category: { select: { name: true } } },
-    orderBy: { name: "asc" },
-    take: 200,
+    include: { category: { select: { name: true, deviceCategory: { select: { key: true } } } } },
+    orderBy,
+    take: 500,
   });
 
-  return products.map(p => ({
+  const mapped = products.map((p) => ({
     ...p,
     sellingPrice: Number(p.sellingPrice),
+    modelReference: p.modelReference ?? null,
+    notes: p.notes ?? null,
+    imageUrl: p.imageUrl ?? null,
+    categoryId: p.categoryId ?? null,
   }));
+
+  const scoped = allowedScopes.length
+    ? mapped.filter((item) =>
+        isInventoryCategoryAllowedByScope(
+          {
+            name: item.category?.name,
+            deviceCategoryKey: item.category?.deviceCategory?.key,
+          },
+          allowedScopes
+        )
+      )
+    : mapped;
+
+  if (stockFilter === "low_stock") return scoped.filter((item) => isLowStock(item));
+  if (stockFilter === "out_of_stock") return scoped.filter((item) => isOutOfStock(item));
+  if (stockFilter === "in_stock") return scoped.filter((item) => isInStock(item) && !isLowStock(item));
+
+  return scoped;
+}
+
+export async function listProductFilterOptions(storeIdInput?: string) {
+  const session = await getSession();
+  if (!session) {
+    return { categories: [] as { id: string; name: string; isActive: boolean }[], brands: [] as string[] };
+  }
+
+  const storeId = storeIdInput ?? session.storeIds[0];
+  if (!storeId) {
+    return { categories: [] as { id: string; name: string; isActive: boolean }[], brands: [] as string[] };
+  }
+  const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
+
+  const [categories, productsForBrands] = await Promise.all([
+    prisma.inventoryCategory.findMany({
+      where: { storeId, itemType: "product" },
+      select: { id: true, name: true, isActive: true, sortOrder: true, deviceCategory: { select: { key: true } } },
+      orderBy: [{ sortOrder: "asc" }, { name: "asc" }],
+    }),
+    prisma.product.findMany({
+      where: { storeId, brand: { not: null }, isArchived: false },
+      select: { brand: true, category: { select: { name: true, deviceCategory: { select: { key: true } } } } },
+    }),
+  ]);
+
+  const scopedCategories = allowedScopes.length
+    ? categories.filter((category) =>
+        isInventoryCategoryAllowedByScope(
+          {
+            name: category.name,
+            deviceCategoryKey: category.deviceCategory?.key,
+          },
+          allowedScopes
+        )
+      )
+    : categories;
+
+  const brandsRaw = allowedScopes.length
+    ? productsForBrands.filter((item) =>
+        isInventoryCategoryAllowedByScope(
+          {
+            name: item.category?.name,
+            deviceCategoryKey: item.category?.deviceCategory?.key,
+          },
+          allowedScopes
+        )
+      )
+    : productsForBrands;
+  const uniqueBrands = Array.from(
+    new Set(
+      brandsRaw
+        .map((item) => item.brand?.trim() ?? "")
+        .filter(Boolean)
+    )
+  ).sort((a, b) => a.localeCompare(b));
+
+  return {
+    categories: scopedCategories.map((item) => ({ id: item.id, name: item.name, isActive: item.isActive })),
+    brands: uniqueBrands,
+  };
 }
 
 // ─── Get one ──────────────────────────────────────────────────────────────────
@@ -101,6 +223,26 @@ export async function createProduct(
   }
 
   const d = parsed.data;
+  const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
+  if (allowedScopes.length && !d.categoryId) {
+    return { error: "Veuillez sélectionner une catégorie liée à votre activité" };
+  }
+  if (d.categoryId) {
+    const category = await prisma.inventoryCategory.findFirst({
+      where: { id: d.categoryId, storeId, itemType: "product" },
+      select: { name: true, deviceCategory: { select: { key: true } } },
+    });
+    if (!category) return { error: "Catégorie produit introuvable" };
+    if (
+      allowedScopes.length &&
+      !isInventoryCategoryAllowedByScope(
+        { name: category.name, deviceCategoryKey: category.deviceCategory?.key },
+        allowedScopes
+      )
+    ) {
+      return { error: "Cette catégorie n’est pas autorisée pour ce type de boutique" };
+    }
+  }
 
   // Generate SKU if not provided
   let sku = d.sku?.trim() || "";
@@ -165,6 +307,26 @@ export async function updateProduct(
 
   const d = parsed.data;
   const sku = d.sku?.trim() || existing.sku;
+  const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
+  if (allowedScopes.length && !d.categoryId) {
+    return { error: "Veuillez sélectionner une catégorie liée à votre activité" };
+  }
+  if (d.categoryId) {
+    const category = await prisma.inventoryCategory.findFirst({
+      where: { id: d.categoryId, storeId, itemType: "product" },
+      select: { name: true, deviceCategory: { select: { key: true } } },
+    });
+    if (!category) return { error: "Catégorie produit introuvable" };
+    if (
+      allowedScopes.length &&
+      !isInventoryCategoryAllowedByScope(
+        { name: category.name, deviceCategoryKey: category.deviceCategory?.key },
+        allowedScopes
+      )
+    ) {
+      return { error: "Cette catégorie n’est pas autorisée pour ce type de boutique" };
+    }
+  }
 
   try {
     await prisma.product.update({

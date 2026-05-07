@@ -23,7 +23,7 @@ import {
 import type { Locale } from "@/i18n/routing";
 import { useAppI18n } from "@/lib/i18n/ui";
 import { cn } from "@/lib/utils";
-import { createRepairTicket } from "../../actions/repair.actions";
+import { createRepairTicket, quickCreateRepairCustomer } from "../../actions/repair.actions";
 import { listCompatiblePartsForRepair } from "@/features/inventory/actions/part.actions";
 import type { RepairCatalogBrand, RepairCatalogCategory, RepairCatalogFamily } from "../../lib/catalog-display";
 import { getBrandIconKey, getCategoryIconKey, getCategoryLabel, getDeviceIconKey } from "../../lib/catalog-display";
@@ -77,9 +77,19 @@ type CompatiblePart = {
 type SelectedPart = CompatiblePart & { quantity: number };
 
 type Copy = {
-  tabs: string[];
   customer: string;
   chooseCustomer: string;
+  namedCustomer: string;
+  anonymousCustomer: string;
+  anonymousHint: string;
+  addCustomer: string;
+  quickAddCustomer: string;
+  customerName: string;
+  customerPhone: string;
+  saveCustomer: string;
+  savingCustomer: string;
+  quickFlow: string;
+  intakeLabel: string;
   existingDevice: string;
   noExistingDevice: string;
   category: string;
@@ -178,9 +188,19 @@ type Copy = {
 
 const COPY: Record<Locale, Copy> = {
   fr: {
-    tabs: ["Réparations", "Déblocage", "Produits", "Reprise", "Divers"],
     customer: "Client",
     chooseCustomer: "Choisir un client",
+    namedCustomer: "Client connu",
+    anonymousCustomer: "Client anonyme",
+    anonymousHint: "Créer un ticket sans nom ni téléphone. Le client pourra être ajouté plus tard.",
+    addCustomer: "Ajouter",
+    quickAddCustomer: "Ajouter un client rapide",
+    customerName: "Nom du client",
+    customerPhone: "Téléphone (optionnel)",
+    saveCustomer: "Enregistrer client",
+    savingCustomer: "Enregistrement…",
+    quickFlow: "Parcours ticket",
+    intakeLabel: "Saisie réparation",
     existingDevice: "Appareil enregistré",
     noExistingDevice: "Nouvel appareil",
     category: "Catégorie",
@@ -277,9 +297,19 @@ const COPY: Record<Locale, Copy> = {
     currency: "DZD",
   },
   en: {
-    tabs: ["Repairs", "Unlocking", "Products", "Trade In", "Miscellaneous"],
     customer: "Customer",
     chooseCustomer: "Choose a customer",
+    namedCustomer: "Known customer",
+    anonymousCustomer: "Anonymous customer",
+    anonymousHint: "Create a ticket with no name or phone. The customer can be linked later.",
+    addCustomer: "Add",
+    quickAddCustomer: "Quick add customer",
+    customerName: "Customer name",
+    customerPhone: "Phone (optional)",
+    saveCustomer: "Save customer",
+    savingCustomer: "Saving…",
+    quickFlow: "Ticket flow",
+    intakeLabel: "Repair intake",
     existingDevice: "Saved device",
     noExistingDevice: "New device",
     category: "Category",
@@ -376,9 +406,19 @@ const COPY: Record<Locale, Copy> = {
     currency: "DZD",
   },
   ar: {
-    tabs: ["الإصلاحات", "فتح القفل", "المنتجات", "الاستبدال", "متفرقات"],
     customer: "العميل",
     chooseCustomer: "اختر العميل",
+    namedCustomer: "عميل معروف",
+    anonymousCustomer: "عميل مجهول",
+    anonymousHint: "أنشئ تذكرة بدون اسم أو رقم هاتف، ويمكن ربط العميل لاحقاً.",
+    addCustomer: "إضافة",
+    quickAddCustomer: "إضافة عميل سريعاً",
+    customerName: "اسم العميل",
+    customerPhone: "الهاتف (اختياري)",
+    saveCustomer: "حفظ العميل",
+    savingCustomer: "جاري الحفظ…",
+    quickFlow: "مسار التذكرة",
+    intakeLabel: "إدخال الإصلاح",
     existingDevice: "جهاز محفوظ",
     noExistingDevice: "جهاز جديد",
     category: "الفئة",
@@ -837,8 +877,15 @@ export function RepairIntakeWizard({
   const [partQuery, setPartQuery] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [customerOptions, setCustomerOptions] = useState(customers);
+  const [showQuickCustomerForm, setShowQuickCustomerForm] = useState(false);
+  const [quickCustomerName, setQuickCustomerName] = useState("");
+  const [quickCustomerPhone, setQuickCustomerPhone] = useState("");
+  const [isCreatingCustomer, setIsCreatingCustomer] = useState(false);
+  const [customerError, setCustomerError] = useState<string | null>(null);
 
   const [customerId, setCustomerId] = useState("");
+  const [useWalkInCustomer, setUseWalkInCustomer] = useState(false);
   const [existingAssetId, setExistingAssetId] = useState("");
   const [category, setCategory] = useState<RepairCatalogCategory | null>(null);
   const [printerType, setPrinterType] = useState<PrinterTypeKey | "">("");
@@ -873,8 +920,12 @@ export function RepairIntakeWizard({
   const [rushJob, setRushJob] = useState(false);
   const [initialStatus, setInitialStatus] = useState("received");
 
-  const selectedCustomer = customers.find((customer) => customer.id === customerId) ?? null;
-  const customerAssets = selectedCustomer?.assets ?? [];
+  useEffect(() => {
+    setCustomerOptions(customers);
+  }, [customers]);
+
+  const selectedCustomer = useWalkInCustomer ? null : customerOptions.find((customer) => customer.id === customerId) ?? null;
+  const customerAssets = useWalkInCustomer ? [] : selectedCustomer?.assets ?? [];
   const isLaptop = isLaptopCategory(category);
   const isPrinter = isPrinterCategory(category);
   const stepOrder = isLaptop ? LAPTOP_STEP_ORDER : isPrinter ? PRINTER_STEP_ORDER : DEFAULT_STEP_ORDER;
@@ -1178,9 +1229,47 @@ export function RepairIntakeWizard({
     if (index > 0) clearForward(stepOrder[index - 1]);
   }
 
+  async function createCustomerInline() {
+    setCustomerError(null);
+    const name = quickCustomerName.trim();
+    const phone = quickCustomerPhone.trim();
+
+    if (!name) {
+      setCustomerError(copy.customerName);
+      return;
+    }
+
+    setIsCreatingCustomer(true);
+    try {
+      const result = await quickCreateRepairCustomer({
+        name,
+        phone,
+        languagePreference: locale as "fr" | "ar" | "en",
+      });
+
+      if ("error" in result) {
+        setCustomerError(result.error);
+        return;
+      }
+
+      setCustomerOptions((current) => {
+        const withoutDuplicate = current.filter((customer) => customer.id !== result.customer.id);
+        return [result.customer, ...withoutDuplicate].sort((a, b) => a.name.localeCompare(b.name));
+      });
+      setUseWalkInCustomer(false);
+      setCustomerId(result.customer.id);
+      setExistingAssetId("");
+      setShowQuickCustomerForm(false);
+      setQuickCustomerName("");
+      setQuickCustomerPhone("");
+    } finally {
+      setIsCreatingCustomer(false);
+    }
+  }
+
   async function submitTicket() {
     setError(null);
-    if (!customerId) return setError(copy.errorCustomer);
+    if (!customerId && !useWalkInCustomer) return setError(copy.errorCustomer);
     if (!category && !existingAssetId) return setError(copy.errorCategory);
     if (!brand && !customBrand.trim() && !existingAssetId) return setError(copy.errorBrand);
     if (!family && !customModel.trim() && !existingAssetId) return setError(copy.errorDevice);
@@ -1194,8 +1283,9 @@ export function RepairIntakeWizard({
     setIsSubmitting(true);
     try {
       const result = await createRepairTicket({
-          customerId,
-          customerDeviceId: existingAssetId,
+          customerId: useWalkInCustomer ? "" : customerId,
+          walkInCustomer: useWalkInCustomer,
+          customerDeviceId: useWalkInCustomer ? "" : existingAssetId,
           deviceCategoryId: category?.id ?? "",
           deviceBrandId: brand?.id ?? "",
           deviceFamilyId: family?.id ?? "",
@@ -1242,7 +1332,7 @@ export function RepairIntakeWizard({
   }
 
   const selectedRows = [
-    { label: copy.customer, value: selectedCustomer?.name },
+    { label: copy.customer, value: useWalkInCustomer ? copy.anonymousCustomer : selectedCustomer?.name },
     { label: copy.category, value: category ? getCategoryLabel(category, locale) : null },
     ...(isPrinter ? [{ label: copy.printerType, value: printerType ? getPrinterTypeLabel(printerType, locale as Locale) : null }] : []),
     { label: copy.manufacturer, value: brand?.name || customBrand || null },
@@ -1301,16 +1391,16 @@ export function RepairIntakeWizard({
   const partsCount = selectedParts.reduce((sum, part) => sum + part.quantity, 0);
 
   return (
-    <div dir={dir} className="rounded-[2rem] bg-slate-100/80 p-2 shadow-inner sm:p-3">
+    <div dir={dir} className="rounded-[2rem] border border-border bg-muted/40 p-2 shadow-inner sm:p-3 xl:h-[calc(100vh-11rem)] xl:min-h-[680px]">
       {error && (
-        <div className="mb-3 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700 shadow-sm">
+        <div className="mb-3 rounded-2xl border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm font-semibold text-destructive shadow-sm">
           {error}
         </div>
       )}
 
-      <div className="grid gap-3 2xl:grid-cols-[320px_minmax(0,1fr)_320px]">
-        <aside className="space-y-3">
-          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+      <div className="grid h-full gap-3 xl:grid-cols-[300px_minmax(0,1fr)_300px] 2xl:grid-cols-[320px_minmax(0,1fr)_320px]">
+        <aside className="space-y-3 xl:overflow-y-auto xl:pe-1">
+          <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
             <div className="bg-gradient-to-br from-primary via-primary to-primary/80 p-4 text-white">
               <div className="flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-white ring-1 ring-white/20">
@@ -1318,34 +1408,108 @@ export function RepairIntakeWizard({
                 </div>
                 <div className="min-w-0">
                   <div className="text-xs font-bold uppercase tracking-wide text-white/70">{copy.customer}</div>
-                  <div className="truncate text-lg font-black">{selectedCustomer?.name ?? copy.chooseCustomer}</div>
+                  <div className="truncate text-lg font-black">{useWalkInCustomer ? copy.anonymousCustomer : selectedCustomer?.name ?? copy.chooseCustomer}</div>
                 </div>
               </div>
             </div>
             <div className="space-y-3 p-4">
-              <select
-                value={customerId}
-                onChange={(event) => {
-                  setCustomerId(event.target.value);
-                  setExistingAssetId("");
-                }}
-                className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
-              >
-                <option value="">{copy.chooseCustomer}</option>
-                {customers.map((customer) => (
-                  <option key={customer.id} value={customer.id}>
-                    {customer.name} {customer.phones?.[0]?.phoneNumber ? `(${customer.phones[0].phoneNumber})` : ""}
-                  </option>
-                ))}
-              </select>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setUseWalkInCustomer(false)}
+                  className={cn(
+                    "rounded-2xl border px-3 py-2 text-xs font-black transition",
+                    !useWalkInCustomer ? "border-primary bg-primary text-primary-foreground shadow-sm" : "border-border bg-muted/40 text-muted-foreground hover:bg-muted"
+                  )}
+                >
+                  {copy.namedCustomer}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setUseWalkInCustomer(true);
+                    setCustomerId("");
+                    setExistingAssetId("");
+                  }}
+                  className={cn(
+                    "rounded-2xl border px-3 py-2 text-xs font-black transition",
+                    useWalkInCustomer ? "border-primary bg-primary text-primary-foreground shadow-sm" : "border-border bg-muted/40 text-muted-foreground hover:bg-muted"
+                  )}
+                >
+                  {copy.anonymousCustomer}
+                </button>
+              </div>
+
+              {useWalkInCustomer ? (
+                <div className="rounded-2xl border border-dashed border-border bg-muted/40 p-3 text-xs font-semibold leading-relaxed text-muted-foreground">
+                  {copy.anonymousHint}
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  <div className="flex gap-2">
+                    <select
+                      value={customerId}
+                      onChange={(event) => {
+                        setUseWalkInCustomer(false);
+                        setCustomerId(event.target.value);
+                        setExistingAssetId("");
+                      }}
+                      className="h-11 min-w-0 flex-1 rounded-xl border border-border bg-background px-3 text-sm text-foreground outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+                    >
+                      <option value="">{copy.chooseCustomer}</option>
+                      {customerOptions.map((customer) => (
+                        <option key={customer.id} value={customer.id}>
+                          {customer.name} {customer.phones?.[0]?.phoneNumber ? `(${customer.phones[0].phoneNumber})` : ""}
+                        </option>
+                      ))}
+                    </select>
+                    <button
+                      type="button"
+                      onClick={() => setShowQuickCustomerForm((open) => !open)}
+                      className="inline-flex h-11 shrink-0 items-center justify-center gap-1.5 rounded-xl bg-primary px-3 text-xs font-black text-primary-foreground shadow-sm transition hover:bg-primary/90"
+                    >
+                      <Plus className="h-4 w-4" />
+                      {copy.addCustomer}
+                    </button>
+                  </div>
+
+                  {showQuickCustomerForm && (
+                    <div className="space-y-2 rounded-2xl border border-border bg-muted/40 p-3">
+                      <div className="text-xs font-black uppercase tracking-wide text-muted-foreground">{copy.quickAddCustomer}</div>
+                      <input
+                        value={quickCustomerName}
+                        onChange={(event) => setQuickCustomerName(event.target.value)}
+                        placeholder={copy.customerName}
+                        className="h-10 w-full rounded-xl border border-border bg-background px-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+                      />
+                      <input
+                        value={quickCustomerPhone}
+                        onChange={(event) => setQuickCustomerPhone(event.target.value)}
+                        placeholder={copy.customerPhone}
+                        className="h-10 w-full rounded-xl border border-border bg-background px-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+                      />
+                      {customerError && <div className="rounded-xl bg-destructive/10 px-3 py-2 text-xs font-semibold text-destructive">{customerError}</div>}
+                      <button
+                        type="button"
+                        onClick={createCustomerInline}
+                        disabled={isCreatingCustomer}
+                        className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-primary px-3 text-xs font-black text-primary-foreground shadow-sm transition hover:bg-primary/90 disabled:opacity-60"
+                      >
+                        {isCreatingCustomer ? <Loader2 className="h-4 w-4 animate-spin" /> : <Plus className="h-4 w-4" />}
+                        {isCreatingCustomer ? copy.savingCustomer : copy.saveCustomer}
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {customerAssets.length > 0 && (
                 <div>
-                  <label className="mb-1 block text-xs font-bold uppercase tracking-wide text-slate-400">{copy.existingDevice}</label>
+                  <label className="mb-1 block text-xs font-bold uppercase tracking-wide text-muted-foreground">{copy.existingDevice}</label>
                   <select
                     value={existingAssetId}
                     onChange={(event) => setExistingAssetId(event.target.value)}
-                    className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+                    className="h-11 w-full rounded-xl border border-border bg-card px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
                   >
                     <option value="">{copy.noExistingDevice}</option>
                     {customerAssets.map((asset) => (
@@ -1359,8 +1523,8 @@ export function RepairIntakeWizard({
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
-            <div className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-400">Fast intake</div>
+          <div className="rounded-3xl border border-border bg-card p-4 shadow-sm">
+            <div className="mb-3 text-xs font-bold uppercase tracking-wide text-muted-foreground">{copy.quickFlow}</div>
             <div className="space-y-2">
               {steps.map((item, index) => {
                 const active = item.key === step;
@@ -1375,7 +1539,7 @@ export function RepairIntakeWizard({
                       "flex w-full items-center gap-3 rounded-2xl px-3 py-2.5 text-start text-sm transition",
                       active && "bg-primary text-white shadow-sm",
                       done && !active && "bg-primary/10 text-primary hover:bg-primary/15",
-                      !done && !active && "bg-slate-50 text-slate-400"
+                      !done && !active && "bg-muted/50 text-muted-foreground"
                     )}
                   >
                     <span
@@ -1383,7 +1547,7 @@ export function RepairIntakeWizard({
                         "flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-black",
                         active && "bg-white/20 text-white",
                         done && !active && "bg-primary text-white",
-                        !done && !active && "bg-white text-slate-400"
+                        !done && !active && "bg-card text-muted-foreground"
                       )}
                     >
                       {done ? "✓" : index + 1}
@@ -1396,53 +1560,36 @@ export function RepairIntakeWizard({
           </div>
         </aside>
 
-        <section className="min-w-0 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-          <div className="border-b border-slate-200 bg-white px-4 pt-3">
-            <div className="flex flex-wrap items-center gap-1">
-              {copy.tabs.map((tab, index) => (
-                <button
-                  key={tab}
-                  type="button"
-                  className={cn(
-                    "rounded-t-2xl px-4 py-2.5 text-sm font-bold text-slate-500 transition-colors",
-                    index === 0 && "border-b-2 border-primary bg-primary/5 text-primary"
-                  )}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
-          </div>
-
+        <section className="flex min-w-0 flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
           <RepairBreadcrumb steps={steps} currentStep={step} completedSteps={completedSteps} onSelectStep={setStep} />
 
-          <div className="min-h-[620px] space-y-5 p-4 lg:p-5">
+          <div className="min-h-0 flex-1 space-y-5 overflow-y-auto p-4 lg:p-5">
             <div className="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
               <div className="min-w-0">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Repair intake</p>
-                <h2 className="mt-1 text-2xl font-black tracking-tight text-slate-950">{currentStepTitle}</h2>
-                <div className="mt-2 flex flex-wrap gap-2 text-xs text-slate-600">
-                  {category && <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 font-semibold">{copy.category}: {getCategoryLabel(category, locale)}</span>}
-                  {isPrinter && printerType && <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 font-semibold">{copy.printerType}: {getPrinterTypeLabel(printerType, locale as Locale)}</span>}
-                  {brand && <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 font-semibold">{copy.manufacturer}: {brand.name}</span>}
-                  {isLaptop && laptopSeries && <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 font-semibold">{copy.laptopSeries}: {laptopSeries}</span>}
-                  {isLaptop && laptopModelLine && <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 font-semibold">{copy.laptopModel}: {laptopModelLine}</span>}
-                  {family && <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 font-semibold">{isLaptop ? copy.laptopGeneration : copy.device}: {isLaptop ? laptopGeneration || family.name : isPrinter ? getPrinterFamilyDisplayName(family.name) : family.name}</span>}
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">{copy.intakeLabel}</p>
+                <h2 className="mt-1 text-2xl font-black tracking-tight text-foreground">{currentStepTitle}</h2>
+                <div className="mt-2 flex flex-wrap gap-2 text-xs text-muted-foreground">
+                  {category && <span className="rounded-full border border-border bg-muted/50 px-2.5 py-1 font-semibold">{copy.category}: {getCategoryLabel(category, locale)}</span>}
+                  {isPrinter && printerType && <span className="rounded-full border border-border bg-muted/50 px-2.5 py-1 font-semibold">{copy.printerType}: {getPrinterTypeLabel(printerType, locale as Locale)}</span>}
+                  {brand && <span className="rounded-full border border-border bg-muted/50 px-2.5 py-1 font-semibold">{copy.manufacturer}: {brand.name}</span>}
+                  {isLaptop && laptopSeries && <span className="rounded-full border border-border bg-muted/50 px-2.5 py-1 font-semibold">{copy.laptopSeries}: {laptopSeries}</span>}
+                  {isLaptop && laptopModelLine && <span className="rounded-full border border-border bg-muted/50 px-2.5 py-1 font-semibold">{copy.laptopModel}: {laptopModelLine}</span>}
+                  {family && <span className="rounded-full border border-border bg-muted/50 px-2.5 py-1 font-semibold">{isLaptop ? copy.laptopGeneration : copy.device}: {isLaptop ? laptopGeneration || family.name : isPrinter ? getPrinterFamilyDisplayName(family.name) : family.name}</span>}
                 </div>
               </div>
 
               {showSearch && (
                 <div className="flex w-full min-w-0 gap-2 xl:w-[460px]">
                   <div className="relative flex-1">
-                    <Search className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                    <Search className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                     <input
                       value={query}
                       onChange={(event) => setQuery(event.target.value)}
                       placeholder={searchPlaceholder}
-                      className="h-11 w-full rounded-xl border border-slate-200 bg-white px-10 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+                      className="h-11 w-full rounded-xl border border-border bg-card px-10 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
                     />
                   </div>
-                  <button type="button" className="inline-flex h-11 items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 text-sm font-bold text-slate-700 shadow-sm transition hover:bg-slate-50">
+                  <button type="button" className="inline-flex h-11 items-center gap-2 rounded-xl border border-border bg-card px-3 text-sm font-bold text-foreground shadow-sm transition hover:bg-muted/50">
                     <Filter className="h-4 w-4" /> {copy.filter}
                   </button>
                 </div>
@@ -1570,14 +1717,14 @@ export function RepairIntakeWizard({
             )}
 
             {step === "laptopSpecs" && isLaptop && (
-              <div className="rounded-3xl border border-slate-200 bg-slate-50/70 p-5">
+              <div className="rounded-3xl border border-border bg-muted/50 p-5">
                 <div className="mb-4 flex items-center gap-3">
                   <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                     <Cpu className="h-5 w-5" />
                   </div>
                   <div>
-                    <div className="font-black text-slate-950">{copy.optionalSpecs}</div>
-                    <div className="text-sm text-slate-500">{family?.name || customModel}</div>
+                    <div className="font-black text-foreground">{copy.optionalSpecs}</div>
+                    <div className="text-sm text-muted-foreground">{family?.name || customModel}</div>
                   </div>
                 </div>
                 <div className="grid gap-4 lg:grid-cols-2">
@@ -1622,14 +1769,14 @@ export function RepairIntakeWizard({
                     />
                   ))}
                 </div>
-                <div className="grid gap-3 rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-4 md:grid-cols-[1fr_auto]">
+                <div className="grid gap-3 rounded-3xl border border-dashed border-border bg-muted/50 p-4 md:grid-cols-[1fr_auto]">
                   <input
                     value={customProblem}
                     onChange={(event) => setCustomProblem(event.target.value)}
                     placeholder={copy.customProblem}
-                    className="h-11 rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+                    className="h-11 rounded-xl border border-border bg-card px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
                   />
-                  <button type="button" onClick={() => customProblem.trim() && setError(null)} className="h-11 rounded-xl border border-slate-200 bg-white px-4 text-sm font-bold text-slate-700 shadow-sm transition hover:bg-slate-50">
+                  <button type="button" onClick={() => customProblem.trim() && setError(null)} className="h-11 rounded-xl border border-border bg-card px-4 text-sm font-bold text-foreground shadow-sm transition hover:bg-muted/50">
                     <Plus className="me-2 inline h-4 w-4" />
                     {copy.addProblem}
                   </button>
@@ -1640,24 +1787,24 @@ export function RepairIntakeWizard({
             {step === "parts" && (
               <div className="space-y-4">
                 <div className="relative max-w-2xl">
-                  <Search className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                  <Search className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <input
                     value={partQuery}
                     onChange={(event) => setPartQuery(event.target.value)}
                     placeholder={copy.searchPart}
-                    className="h-11 w-full rounded-xl border border-slate-200 bg-white px-10 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+                    className="h-11 w-full rounded-xl border border-border bg-card px-10 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
                   />
                 </div>
                 {loadingParts ? (
-                  <div className="flex h-48 items-center justify-center text-slate-500">
+                  <div className="flex h-48 items-center justify-center text-muted-foreground">
                     <Loader2 className="me-2 h-5 w-5 animate-spin" />
                     {copy.selectParts}
                   </div>
                 ) : parts.length === 0 ? (
-                  <div className="rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-10 text-center">
-                    <Package className="mx-auto mb-3 h-10 w-10 text-slate-400" />
-                    <div className="font-black text-slate-900">{copy.noParts}</div>
-                    <div className="mt-1 text-sm text-slate-500">{copy.noPartsHint}</div>
+                  <div className="rounded-3xl border border-dashed border-border bg-muted/50 p-10 text-center">
+                    <Package className="mx-auto mb-3 h-10 w-10 text-muted-foreground" />
+                    <div className="font-black text-foreground">{copy.noParts}</div>
+                    <div className="mt-1 text-sm text-muted-foreground">{copy.noPartsHint}</div>
                   </div>
                 ) : (
                   <div className="grid grid-cols-1 gap-3 md:grid-cols-2 2xl:grid-cols-3">
@@ -1665,13 +1812,13 @@ export function RepairIntakeWizard({
                       const selected = selectedParts.find((item) => item.id === part.id);
                       const stockStatus = part.availableQty <= 0 ? "out" : part.availableQty <= 2 ? "low" : "ok";
                       return (
-                        <div key={part.id} className={cn("rounded-3xl border border-slate-200 bg-white p-4 shadow-sm transition", selected && "border-primary ring-1 ring-primary/40")}>
+                        <div key={part.id} className={cn("rounded-3xl border border-border bg-card p-4 shadow-sm transition", selected && "border-primary ring-1 ring-primary/40")}>
                           <div className="flex items-start gap-3">
                             <button type="button" onClick={() => togglePart(part)} className="flex-1 text-start">
-                              <div className="font-black text-slate-900">{part.name}</div>
-                              <div className="mt-1 text-xs text-slate-500">SKU: {part.sku}</div>
+                              <div className="font-black text-foreground">{part.name}</div>
+                              <div className="mt-1 text-xs text-muted-foreground">SKU: {part.sku}</div>
                               <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
-                                <span className="rounded-full bg-slate-50 px-2 py-1 font-semibold text-slate-600">{copy.available}: {part.availableQty}</span>
+                                <span className="rounded-full bg-muted/50 px-2 py-1 font-semibold text-muted-foreground">{copy.available}: {part.availableQty}</span>
                                 <span className={cn("rounded-full px-2 py-1 font-bold", stockStatus === "out" ? "bg-red-50 text-red-700" : stockStatus === "low" ? "bg-amber-50 text-amber-700" : "bg-emerald-50 text-emerald-700")}>{stockStatus === "out" ? copy.outOfStock : copy.stock}</span>
                               </div>
                               <div className="mt-3 font-black text-primary">{formatMoney(part.sellingPrice, locale, copy.currency)}</div>
@@ -1685,15 +1832,15 @@ export function RepairIntakeWizard({
                             />
                           </div>
                           {selected && (
-                            <div className="mt-3 flex items-center gap-2 border-t border-slate-100 pt-3">
-                              <label className="text-xs font-bold uppercase tracking-wide text-slate-400">{copy.quantity}</label>
+                            <div className="mt-3 flex items-center gap-2 border-t border-border/60 pt-3">
+                              <label className="text-xs font-bold uppercase tracking-wide text-muted-foreground">{copy.quantity}</label>
                               <input
                                 type="number"
                                 min={1}
                                 max={part.availableQty}
                                 value={selected.quantity}
                                 onChange={(event) => setPartQuantity(part.id, Number(event.target.value || 1))}
-                                className="h-9 w-20 rounded-xl border border-slate-200 bg-white px-2 text-sm outline-none focus:ring-4 focus:ring-primary/10"
+                                className="h-9 w-20 rounded-xl border border-border bg-card px-2 text-sm outline-none focus:ring-4 focus:ring-primary/10"
                               />
                             </div>
                           )}
@@ -1715,8 +1862,8 @@ export function RepairIntakeWizard({
                 <Field label={copy.warrantyDays} value={warrantyDays} onChange={setWarrantyDays} type="number" icon={<ShieldCheck className="h-4 w-4" />} />
                 <Field label={copy.dueAt} value={dueAt} onChange={setDueAt} type="datetime-local" icon={<CalendarClock className="h-4 w-4" />} />
                 <div>
-                  <label className="mb-1.5 block text-sm font-bold text-slate-800">{copy.assignedTo}</label>
-                  <select value={assignedTechnicianId} onChange={(event) => setAssignedTechnicianId(event.target.value)} className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10">
+                  <label className="mb-1.5 block text-sm font-bold text-foreground">{copy.assignedTo}</label>
+                  <select value={assignedTechnicianId} onChange={(event) => setAssignedTechnicianId(event.target.value)} className="h-11 w-full rounded-xl border border-border bg-card px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10">
                     <option value="">{copy.doNotAssign}</option>
                     {technicians.map((technician) => (
                       <option key={technician.id} value={technician.id}>{technician.name}</option>
@@ -1724,8 +1871,8 @@ export function RepairIntakeWizard({
                   </select>
                 </div>
                 <div>
-                  <label className="mb-1.5 block text-sm font-bold text-slate-800">{copy.initialStatus}</label>
-                  <select value={initialStatus} onChange={(event) => setInitialStatus(event.target.value)} className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10">
+                  <label className="mb-1.5 block text-sm font-bold text-foreground">{copy.initialStatus}</label>
+                  <select value={initialStatus} onChange={(event) => setInitialStatus(event.target.value)} className="h-11 w-full rounded-xl border border-border bg-card px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10">
                     <option value="received">{copy.received}</option>
                     <option value="in_diagnosis">{copy.inDiagnosis}</option>
                     <option value="waiting_customer_approval">{copy.waitingApproval}</option>
@@ -1733,7 +1880,7 @@ export function RepairIntakeWizard({
                     <option value="ready_for_pickup">{copy.readyPickup}</option>
                   </select>
                 </div>
-                <label className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-3 py-3 text-sm font-bold text-slate-800">
+                <label className="flex items-center gap-2 rounded-2xl border border-border bg-muted/50 px-3 py-3 text-sm font-bold text-foreground">
                   <input type="checkbox" checked={rushJob} onChange={(event) => setRushJob(event.target.checked)} className="h-4 w-4 accent-primary" />
                   {copy.rushJob}
                 </label>
@@ -1744,12 +1891,12 @@ export function RepairIntakeWizard({
             )}
           </div>
 
-          <div className="sticky bottom-0 z-10 grid gap-2 border-t border-slate-200 bg-white/95 p-3 backdrop-blur md:grid-cols-4 xl:grid-cols-8">
+          <div className="z-10 grid shrink-0 gap-2 border-t border-border bg-background/95 p-3 backdrop-blur md:grid-cols-4 xl:grid-cols-8">
             <FooterButton icon={<Ticket className="h-4 w-4" />} label={copy.viewTickets} onClick={() => router.push("/dashboard/repairs")} />
             <FooterButton icon={<ReceiptText className="h-4 w-4" />} label={copy.viewInvoices} disabled />
             <FooterButton icon={<ReceiptText className="h-4 w-4" />} label={copy.createEstimate} disabled />
             <FooterButton icon={<Wrench className="h-4 w-4" />} label={copy.moreActions} disabled />
-            <button type="button" onClick={goBack} disabled={step === "category"} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-3 text-sm font-bold text-slate-700 shadow-sm transition hover:bg-slate-50 disabled:opacity-40">
+            <button type="button" onClick={goBack} disabled={step === "category"} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-border bg-card px-3 text-sm font-bold text-foreground shadow-sm transition hover:bg-muted/50 disabled:opacity-40">
               <ArrowLeft className="h-4 w-4" /> {copy.back}
             </button>
             {step !== "details" ? (
@@ -1762,14 +1909,14 @@ export function RepairIntakeWizard({
                 {isSubmitting ? copy.creating : copy.createTicket}
               </button>
             )}
-            <button type="button" onClick={() => router.back()} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-red-50 px-3 text-sm font-bold text-red-600 transition hover:bg-red-100">
+            <button type="button" onClick={() => router.back()} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-destructive/10 px-3 text-sm font-bold text-destructive transition hover:bg-destructive/15">
               <X className="h-4 w-4" /> {copy.cancel}
             </button>
           </div>
         </section>
 
         <RepairSummaryPanel
-          className="self-start 2xl:sticky 2xl:top-4"
+          className="self-start xl:sticky xl:top-0 xl:max-h-full xl:overflow-y-auto"
           title={copy.repairSummary}
           rows={selectedRows}
           issuesCount={issueCount}
@@ -1804,18 +1951,18 @@ function CustomDeviceBox({
   onAdd: () => void;
 }) {
   return (
-    <div className="grid gap-3 rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-4 md:grid-cols-[1fr_1fr_auto]">
+    <div className="grid gap-3 rounded-3xl border border-dashed border-border bg-muted/50 p-4 md:grid-cols-[1fr_1fr_auto]">
       <input
         value={customBrand}
         onChange={(event) => onBrandChange(event.target.value)}
         placeholder={customBrandLabel}
-        className="h-11 rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+        className="h-11 rounded-xl border border-border bg-card px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
       />
       <input
         value={customModel}
         onChange={(event) => onModelChange(event.target.value)}
         placeholder={customModelLabel}
-        className="h-11 rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+        className="h-11 rounded-xl border border-border bg-card px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
       />
       <button type="button" onClick={onAdd} className="h-11 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-sm transition hover:bg-primary/90">
         {addLabel}
@@ -1838,12 +1985,12 @@ function CustomModelBox({
   onAdd: () => void;
 }) {
   return (
-    <div className="grid gap-3 rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-4 md:grid-cols-[1fr_auto]">
+    <div className="grid gap-3 rounded-3xl border border-dashed border-border bg-muted/50 p-4 md:grid-cols-[1fr_auto]">
       <input
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder={label}
-        className="h-11 rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+        className="h-11 rounded-xl border border-border bg-card px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
       />
       <button type="button" onClick={onAdd} className="h-11 rounded-xl bg-primary px-4 text-sm font-bold text-white shadow-sm transition hover:bg-primary/90">
         {addLabel}
@@ -1867,14 +2014,14 @@ function Field({
 }) {
   return (
     <div>
-      <label className="mb-1.5 block text-sm font-bold text-slate-800">{label}</label>
+      <label className="mb-1.5 block text-sm font-bold text-foreground">{label}</label>
       <div className="relative">
-        {icon && <span className="absolute start-3 top-1/2 -translate-y-1/2 text-slate-400">{icon}</span>}
+        {icon && <span className="absolute start-3 top-1/2 -translate-y-1/2 text-muted-foreground">{icon}</span>}
         <input
           type={type}
           value={value}
           onChange={(event) => onChange(event.target.value)}
-          className={cn("h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10", icon && "ps-9")}
+          className={cn("h-11 w-full rounded-xl border border-border bg-card px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10", icon && "ps-9")}
         />
       </div>
     </div>
@@ -1894,12 +2041,12 @@ function SelectField({
 }) {
   return (
     <div>
-      <label className="mb-1.5 block text-sm font-bold text-slate-800">{label}</label>
+      <label className="mb-1.5 block text-sm font-bold text-foreground">{label}</label>
       <input
         value={value}
         onChange={(event) => onChange(event.target.value)}
         list={`${label.replace(/\s+/g, "-").toLowerCase()}-options`}
-        className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+        className="h-11 w-full rounded-xl border border-border bg-card px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
       />
       <datalist id={`${label.replace(/\s+/g, "-").toLowerCase()}-options`}>
         {options.map((option) => (
@@ -1913,11 +2060,11 @@ function SelectField({
 function TextArea({ label, value, onChange }: { label: string; value: string; onChange: (value: string) => void }) {
   return (
     <div className="lg:col-span-2">
-      <label className="mb-1.5 block text-sm font-bold text-slate-800">{label}</label>
+      <label className="mb-1.5 block text-sm font-bold text-foreground">{label}</label>
       <textarea
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="min-h-24 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
+        className="min-h-24 w-full rounded-xl border border-border bg-card px-3 py-2 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
       />
     </div>
   );
@@ -1929,7 +2076,7 @@ function FooterButton({ icon, label, onClick, disabled }: { icon: ReactNode; lab
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-3 text-sm font-bold text-slate-700 shadow-sm transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
+      className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-border bg-card px-3 text-sm font-bold text-foreground shadow-sm transition hover:bg-muted/50 disabled:cursor-not-allowed disabled:opacity-50"
     >
       {icon}
       {label}
@@ -1939,7 +2086,7 @@ function FooterButton({ icon, label, onClick, disabled }: { icon: ReactNode; lab
 
 function EmptyGridMessage({ label }: { label: string }) {
   return (
-    <div className="col-span-full rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-10 text-center text-sm font-semibold text-slate-500">
+    <div className="col-span-full rounded-3xl border border-dashed border-border bg-muted/50 p-10 text-center text-sm font-semibold text-muted-foreground">
       {label}
     </div>
   );
