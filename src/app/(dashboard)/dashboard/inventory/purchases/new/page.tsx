@@ -18,7 +18,7 @@ export default async function NewPurchasePage() {
   if (!storeId) redirect("/dashboard");
 
   // Fetch lookups
-  const suppliers = await listSuppliers({ storeId, showArchived: false });
+  const { data: suppliers } = await listSuppliers({ storeId, showArchived: false });
   const products = await prisma.product.findMany({
     where: { storeId, isArchived: false },
     select: { id: true, name: true, sku: true },

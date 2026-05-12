@@ -5,6 +5,7 @@ import { Plus } from "lucide-react";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { PageHeader } from "@/components/shared/PageHeader";
+import { Pagination } from "@/components/shared/Pagination";
 import { InventorySearchBar } from "@/features/inventory/components/InventorySearchBar";
 import { ServiceList } from "@/features/inventory/components/ServiceList";
 import { ServiceFilters } from "@/features/inventory/components/ServiceFilters";
@@ -17,7 +18,7 @@ export const metadata = { title: "Services" };
 export default async function ServicesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; archived?: string; device?: string; serviceCategory?: string }>;
+  searchParams: Promise<{ q?: string; archived?: string; device?: string; serviceCategory?: string; page?: string }>;
 }) {
   const { t } = await getAppI18n();
   const session = await getSession();
@@ -28,13 +29,17 @@ export default async function ServicesPage({
   const q = sp.q?.trim() || undefined;
   const deviceCategoryId = sp.device?.trim() || undefined;
   const serviceCategoryId = sp.serviceCategory?.trim() || undefined;
-  const [services, categories, deviceCategories] = await Promise.all([
+  const page = Number(sp.page) || 1;
+  const perPage = 50;
+  const [result, categories, deviceCategories] = await Promise.all([
     listServices({
       storeId,
       q,
       showArchived: sp.archived === "1",
       deviceCategoryId,
       serviceCategoryId,
+      page,
+      perPage,
     }),
     listServiceCategories({ storeId, includeArchived: sp.archived === "1", deviceCategoryId }),
     listDeviceCategories(),
@@ -76,8 +81,9 @@ export default async function ServicesPage({
         }))}
       />
       <Suspense fallback={<div className="h-24 rounded-xl bg-muted animate-pulse" />}>
-        <ServiceList services={services} userRole={session.role} />
+        <ServiceList services={result.data} userRole={session.role} />
       </Suspense>
+      <Pagination page={result.page} totalPages={result.totalPages} total={result.total} perPage={result.perPage} />
     </div>
   );
 }

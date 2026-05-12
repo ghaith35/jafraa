@@ -6,7 +6,16 @@ import { Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useAppI18n } from "@/lib/i18n/ui";
 
-export function CustomerSearchBar() {
+interface GroupOption {
+  id: string;
+  name: string;
+}
+
+interface Props {
+  groups: GroupOption[];
+}
+
+export function CustomerSearchBar({ groups }: Props) {
   const { t } = useAppI18n();
   const router = useRouter();
   const pathname = usePathname();
@@ -14,7 +23,7 @@ export function CustomerSearchBar() {
   const timerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   const q = searchParams.get("q") ?? "";
-  const type = searchParams.get("type") ?? "";
+  const groupId = searchParams.get("groupId") ?? "";
   const archived = searchParams.get("archived") === "1";
 
   const push = useCallback(
@@ -37,15 +46,8 @@ export function CustomerSearchBar() {
     timerRef.current = setTimeout(() => push({ q: value || undefined }), 300);
   }
 
-  const typeFilters = [
-    { value: "", label: t("customers.all") },
-    { value: "named", label: t("customers.namedShort") },
-    { value: "walkin", label: t("customers.walkinShort") },
-  ] as const;
-
   return (
     <div className="flex flex-col gap-3 mb-5">
-      {/* Search input */}
       <div className="relative">
         <Search className="absolute start-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
         <input
@@ -57,20 +59,31 @@ export function CustomerSearchBar() {
         />
       </div>
 
-      {/* Type filter tabs */}
       <div className="flex items-center gap-2 flex-wrap">
-        {typeFilters.map((f) => (
+        <button
+          onClick={() => push({ groupId: undefined })}
+          className={cn(
+            "rounded-full px-3 py-1 text-xs font-medium transition-colors",
+            !groupId
+              ? "bg-primary text-primary-foreground"
+              : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+          )}
+        >
+          {t("customers.all")}
+        </button>
+
+        {groups.map((g) => (
           <button
-            key={f.value}
-            onClick={() => push({ type: f.value || undefined })}
+            key={g.id}
+            onClick={() => push({ groupId: g.id })}
             className={cn(
               "rounded-full px-3 py-1 text-xs font-medium transition-colors",
-              type === f.value
+              groupId === g.id
                 ? "bg-primary text-primary-foreground"
                 : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
             )}
           >
-            {f.label}
+            {g.name}
           </button>
         ))}
 

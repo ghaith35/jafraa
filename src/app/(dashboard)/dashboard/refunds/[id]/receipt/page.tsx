@@ -34,7 +34,7 @@ export default async function RefundReceiptPage({ params }: { params: { id: stri
         />
 
         <div className="my-8 p-4 rounded-xl border bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-900">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-amber-700 dark:text-amber-500 mb-1">Source du remboursement</p>
+          <p className="text-[12px] font-bold uppercase tracking-widest text-amber-700 dark:text-amber-500 mb-1">Source du remboursement</p>
           <p className="font-bold text-lg">{sourceNumber}</p>
           <p className="text-xs text-muted-foreground italic">Motif : {refund.reason}</p>
         </div>

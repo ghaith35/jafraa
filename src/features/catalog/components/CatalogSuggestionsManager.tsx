@@ -260,7 +260,7 @@ export function CatalogSuggestionsManager({ suggestions }: { suggestions: Sugges
                       <h3 className="text-base font-black text-slate-950">{suggestion.modelName}</h3>
                     </div>
                   </div>
-                  <span className={cn("rounded-full px-2.5 py-1 text-[11px] font-black ring-1", statusClasses[suggestion.status])}>
+                  <span className={cn("rounded-full px-2.5 py-1 text-[13px] font-black ring-1", statusClasses[suggestion.status])}>
                     {statusLabel(suggestion.status, copy)}
                   </span>
                 </div>

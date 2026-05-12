@@ -4,6 +4,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { ClipboardList, PackageCheck, Clock, AlertTriangle } from "lucide-react";
 import { PageHeader } from "@/components/shared/PageHeader";
+import { Pagination } from "@/components/shared/Pagination";
 import { getSession } from "@/lib/auth/session";
 import { listPurchaseOrders } from "@/features/inventory/actions/purchase-order.actions";
 import { GenerateLowStockPurchaseOrderButton } from "@/features/inventory/components/PurchaseOrderActions";
@@ -19,13 +20,19 @@ const STATUS: Record<string, { labelKey: AppTranslationKey; cls: string }> = {
   cancelled: { labelKey: "purchaseOrder.status.cancelled", cls: "bg-red-100 text-red-700 border-red-200" },
 };
 
-export default async function PurchaseOrdersPage() {
+export default async function PurchaseOrdersPage(props: {
+  searchParams: Promise<{ page?: string }>;
+}) {
   const { t, formatDate } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (session.role === "Technician") redirect("/dashboard");
 
-  const orders = await listPurchaseOrders();
+  const sp = await props.searchParams;
+  const page = Number(sp.page) || 1;
+  const perPage = 50;
+  const result = await listPurchaseOrders(page, perPage);
+  const orders = result.data;
   const openCount = orders.filter((o) => !["received", "cancelled"].includes(o.status)).length;
   const totalPending = orders
     .filter((o) => !["received", "cancelled"].includes(o.status))
@@ -40,7 +47,7 @@ export default async function PurchaseOrdersPage() {
       />
 
       <div className="grid gap-4 md:grid-cols-3">
-        <Metric icon={<ClipboardList className="h-5 w-5" />} label={t("purchaseOrder.metric.orders")} value={orders.length.toString()} />
+        <Metric icon={<ClipboardList className="h-5 w-5" />} label={t("purchaseOrder.metric.orders")} value={result.total.toString()} />
         <Metric icon={<Clock className="h-5 w-5" />} label={t("purchaseOrder.metric.open")} value={openCount.toString()} />
         <Metric icon={<PackageCheck className="h-5 w-5" />} label={t("purchaseOrder.metric.openAmount")} value={`${Math.round(totalPending).toLocaleString()} DZD`} />
       </div>
@@ -85,6 +92,7 @@ export default async function PurchaseOrdersPage() {
           </table>
         </div>
       </div>
+      <Pagination page={result.page} totalPages={result.totalPages} total={result.total} perPage={result.perPage} />
     </div>
   );
 }

@@ -76,7 +76,7 @@ export function ReservedPartsList({ parts, userRole }: { parts: any[]; userRole:
                       <div className="flex items-center gap-2">
                         <PackageCheck className="h-4 w-4 text-amber-500 shrink-0" />
                         <span className="font-medium">{part.part.name}</span>
-                        <span className={cn("inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold border", cfg.cls)}>
+                        <span className={cn("inline-flex items-center px-1.5 py-0.5 rounded text-[12px] font-semibold border", cfg.cls)}>
                           {cfg.label}
                         </span>
                       </div>
@@ -139,7 +139,7 @@ export function ReservedPartsList({ parts, userRole }: { parts: any[]; userRole:
                         <td className="px-4 py-2">{part.part.name}</td>
                         <td className="px-4 py-2 text-center">{part.quantity}</td>
                         <td className="px-4 py-2">
-                          <span className={cn("inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold border", cfg.cls)}>
+                          <span className={cn("inline-flex items-center px-1.5 py-0.5 rounded text-[12px] font-semibold border", cfg.cls)}>
                             {cfg.label}
                           </span>
                         </td>

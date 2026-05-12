@@ -172,8 +172,23 @@ export function RepairDetail({
                 <div className="rd-hattr-val">{deviceName}</div>
               </div>
               <div className="rd-hattr">
-                <div className="rd-hattr-label">Technicien</div>
-                <div className="rd-hattr-val blue">{ticket.assignedTechnician?.name ?? t("unassigned")}</div>
+                <div className="rd-hattr-label">Technicien(s)</div>
+                <div className="flex flex-wrap gap-1.5">
+                  {ticket.technicians && ticket.technicians.length > 0
+                    ? ticket.technicians.map((tt: { id: string; user: { id: string; name: string }; role: string }) => (
+                        <span key={tt.id} className="inline-flex items-center gap-1 rounded-md bg-primary/10 px-2 py-0.5 text-[13px] font-medium text-primary">
+                          {tt.user.name}
+                          {tt.role === "lead" && (
+                            <span className="text-[10px] font-semibold uppercase tracking-wider text-primary/60">Lead</span>
+                          )}
+                        </span>
+                      ))
+                    : ticket.assignedTechnician?.name ? (
+                      <span className="rd-hattr-val blue">{ticket.assignedTechnician.name}</span>
+                    ) : (
+                      <span className="rd-hattr-val">{t("unassigned")}</span>
+                    )}
+                </div>
               </div>
               <div className="rd-hattr">
                 <div className="rd-hattr-label">Date limite</div>
@@ -208,7 +223,7 @@ export function RepairDetail({
             <div className="px-4 pb-1">
               <table className="w-full table-fixed border-collapse">
                 <thead>
-                  <tr className="border-b border-border text-start text-[10px] font-semibold uppercase tracking-[0.04em] text-[#a1a1aa]">
+                  <tr className="border-b border-border text-start text-[12px] font-semibold uppercase tracking-[0.04em] text-[#a1a1aa]">
                     <th className="w-[55%] py-2 text-start">Pièce</th>
                     <th className="w-[10%] py-2 text-start">Qté</th>
                     <th className="w-[20%] py-2 text-start">Prix unit.</th>
@@ -220,16 +235,16 @@ export function RepairDetail({
                     reservedParts.map((reservation) => {
                       const unitPrice = toSafeNumber(reservation.part.sellingPrice);
                       return (
-                        <tr key={reservation.id} className="border-b border-border last:border-b-0 text-[12px]">
+                        <tr key={reservation.id} className="border-b border-border last:border-b-0 text-[14px]">
                           <td className="py-2.5">
                             <div className="font-medium text-foreground">
                               {reservation.part.name}
-                              <span className="ms-1 inline-flex items-center gap-1 rounded bg-[var(--status-inrepair-bg)] px-1.5 py-0.5 text-[10px] font-medium text-[var(--status-inrepair-fg)]">
+                              <span className="ms-1 inline-flex items-center gap-1 rounded bg-[var(--status-inrepair-bg)] px-1.5 py-0.5 text-[12px] font-medium text-[var(--status-inrepair-fg)]">
                                 <Lock className="h-2.5 w-2.5" />
                                 Réservé
                               </span>
                             </div>
-                            <div className="mt-0.5 text-[10px] text-[#a1a1aa]">{reservation.part.sku}</div>
+                            <div className="mt-0.5 text-[12px] text-[#a1a1aa]">{reservation.part.sku}</div>
                           </td>
                           <td className="py-2.5 text-[#52525b]">{reservation.quantity}</td>
                           <td className="py-2.5 text-[#52525b]">{formatCurrency(unitPrice)}</td>
@@ -239,7 +254,7 @@ export function RepairDetail({
                     })
                   ) : (
                     <tr>
-                      <td colSpan={4} className="py-4 text-[12px] text-muted-foreground">
+                      <td colSpan={4} className="py-4 text-[14px] text-muted-foreground">
                         Aucune pièce réservée.
                       </td>
                     </tr>
@@ -338,11 +353,11 @@ export function RepairDetail({
                 </div>
               </div>
               <div className="mt-2 flex gap-1.5">
-                <Link href={`/dashboard/customers/${ticket.customerId}`} className="rd-btn flex-1 px-2 text-[11px]">
+                <Link href={`/dashboard/customers/${ticket.customerId}`} className="rd-btn flex-1 px-2 text-[13px]">
                   <UserIcon className="h-3.5 w-3.5" />
                   Profil
                 </Link>
-                <Link href={`/dashboard/customers/${ticket.customerId}`} className="rd-btn flex-1 px-2 text-[11px]">
+                <Link href={`/dashboard/customers/${ticket.customerId}`} className="rd-btn flex-1 px-2 text-[13px]">
                   <History className="h-3.5 w-3.5" />
                   Historique
                 </Link>
@@ -385,22 +400,22 @@ export function RepairDetail({
               {acceptedEstimate ? (
                 <div className="rounded-md border border-border bg-muted p-3">
                   {acceptedEstimate.lines.slice(0, 3).map((line) => (
-                    <div key={line.id} className="flex justify-between py-0.5 text-[12px] text-[#52525b]">
+                    <div key={line.id} className="flex justify-between py-0.5 text-[14px] text-[#52525b]">
                       <span className="truncate pe-2">{line.description}</span>
                       <span className="shrink-0">{formatCurrency(line.totalPrice)}</span>
                     </div>
                   ))}
-                  <div className="mt-1 flex justify-between border-t border-border pt-2 text-[13px] font-bold">
+                  <div className="mt-1 flex justify-between border-t border-border pt-2 text-[15px] font-bold">
                     <span>Total</span>
                     <span>{formatCurrency(acceptedEstimate.totalAmount)}</span>
                   </div>
-                  <div className="mt-2 inline-flex items-center gap-1 rounded-full bg-[var(--status-inrepair-bg)] px-2 py-0.5 text-[10px] font-semibold text-[var(--status-inrepair-fg)]">
+                  <div className="mt-2 inline-flex items-center gap-1 rounded-full bg-[var(--status-inrepair-bg)] px-2 py-0.5 text-[12px] font-semibold text-[var(--status-inrepair-fg)]">
                     <Check className="h-2.5 w-2.5" />
                     {acceptedEstimate.status === "accepted" ? "Accepté" : acceptedEstimate.estimateNumber}
                   </div>
                 </div>
               ) : (
-                <div className="rounded-md border border-border bg-muted p-3 text-[12px] text-muted-foreground">
+                <div className="rounded-md border border-border bg-muted p-3 text-[14px] text-muted-foreground">
                   Aucun devis disponible.
                 </div>
               )}
@@ -438,7 +453,7 @@ export function RepairDetail({
                 <select
                   value={ticket.assignedTechnicianId || ""}
                   onChange={(event) => handleAssign(event.target.value)}
-                  className="h-9 w-full rounded-md border border-input bg-card px-3 text-[12px] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                  className="h-9 w-full rounded-md border border-input bg-card px-3 text-[14px] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
                   <option value="">{t("unassigned")}</option>
                   {technicians.map((technician) => (

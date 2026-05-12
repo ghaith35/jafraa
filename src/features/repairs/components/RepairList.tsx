@@ -50,8 +50,8 @@ export function RepairList({ tickets, userRole }: Props) {
     <div dir={dir} lang={locale} className="space-y-4">
       <div className="overflow-hidden rounded-md border border-border bg-card shadow-[var(--shadow-sm)]">
         <div className="overflow-x-auto">
-          <table className="w-full table-fixed text-start text-[12px]">
-            <thead className="bg-surface-sunken text-[10px] font-semibold uppercase tracking-[0.04em] text-muted-foreground">
+          <table className="w-full table-fixed text-start text-[14px]">
+            <thead className="bg-surface-sunken text-[12px] font-semibold uppercase tracking-[0.04em] text-muted-foreground">
               <tr>
                 <th className="w-[34%] px-4 py-3 text-start">{t("repairList_ticketDevice")}</th>
                 <th className="w-[20%] px-4 py-3 text-start">{t("customer")}</th>
@@ -83,7 +83,7 @@ export function RepairList({ tickets, userRole }: Props) {
                             {ticket.ticketNumber}
                           </Link>
                           <div className="mt-1 flex min-w-0 items-center gap-2">
-                            <span className="truncate text-[11px] text-muted-foreground">{deviceName}</span>
+                            <span className="truncate text-[13px] text-muted-foreground">{deviceName}</span>
                             {ticket.priority === "rush" && <PriorityBadge priority={ticket.priority} />}
                           </div>
                         </div>

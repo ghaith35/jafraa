@@ -18,6 +18,7 @@ export async function getCurrentCashSession() {
   return prisma.cashRegisterSession.findFirst({
     where: {
       storeId,
+      companyId: session.companyId,
       status: "opened",
     },
     include: {
@@ -39,6 +40,7 @@ export async function listCashSessions() {
   return prisma.cashRegisterSession.findMany({
     where: {
       storeId,
+      companyId: session.companyId,
     },
     include: {
       openedBy: { select: { name: true } },
@@ -74,7 +76,7 @@ export async function openCashSession(
     const result = await prisma.$transaction(async (tx) => {
       // Check for an existing open session
       const existingSession = await tx.cashRegisterSession.findFirst({
-        where: { storeId, status: "opened" },
+        where: { storeId, companyId: session.companyId, status: "opened" },
       });
 
       if (existingSession) {
@@ -127,7 +129,7 @@ export async function closeCashSession(
   try {
     const result = await prisma.$transaction(async (tx) => {
       const activeSession = await tx.cashRegisterSession.findFirst({
-        where: { id: sessionId, storeId },
+        where: { id: sessionId, storeId, companyId: session.companyId },
       });
 
       if (!activeSession) throw new Error("Session introuvable");
@@ -200,7 +202,7 @@ export async function forceCloseCashSession(
   try {
     const result = await prisma.$transaction(async (tx) => {
       const activeSession = await tx.cashRegisterSession.findFirst({
-        where: { id: sessionId, storeId },
+        where: { id: sessionId, storeId, companyId: session.companyId },
       });
 
       if (!activeSession) throw new Error("Session introuvable");

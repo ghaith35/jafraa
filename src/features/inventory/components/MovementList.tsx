@@ -77,7 +77,7 @@ export function MovementList({ movements }: Props) {
                     {formatDateTime(m.createdAt)}
                   </td>
                   <td className="px-4 py-3 whitespace-nowrap">
-                    <span className={cn("inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[10px] font-medium uppercase tracking-wider", cfg.cls)}>
+                    <span className={cn("inline-flex items-center gap-1 px-2 py-0.5 rounded border text-[12px] font-medium uppercase tracking-wider", cfg.cls)}>
                       <Icon className="h-3 w-3" />
                       {movementLabel}
                     </span>

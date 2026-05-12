@@ -20,7 +20,7 @@ export default async function ServiceCategoryPage({ searchParams }: { searchPara
   const sp = await searchParams;
   const storeId = session.storeIds[0];
   const q = sp.q?.trim() || undefined;
-  const services = await listServices({ storeId, q, showArchived: sp.archived === "1", category: "unlock" });
+  const result = await listServices({ storeId, q, showArchived: sp.archived === "1", category: "unlock" });
   const canManage = hasPermission(session.role, "inventory:manage");
-  return <div className="space-y-5"><PageHeader title={t("services.unlockingTitle")} description={t("services.unlockingDescription")} actions={canManage ? <Link href="/dashboard/services/new" className="inline-flex items-center gap-2 rounded-xl bg-primary px-3 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90"><Plus className="h-4 w-4" />{t("inventory.newService")}</Link> : null} /><InventorySearchBar placeholder={t("inventory.searchServices")} defaultValue={q ?? ""} /><Suspense fallback={<div className="h-24 rounded-xl bg-muted animate-pulse" />}><ServiceList services={services} userRole={session.role} /></Suspense></div>;
+  return <div className="space-y-5"><PageHeader title={t("services.unlockingTitle")} description={t("services.unlockingDescription")} actions={canManage ? <Link href="/dashboard/services/new" className="inline-flex items-center gap-2 rounded-xl bg-primary px-3 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90"><Plus className="h-4 w-4" />{t("inventory.newService")}</Link> : null} /><InventorySearchBar placeholder={t("inventory.searchServices")} defaultValue={q ?? ""} /><Suspense fallback={<div className="h-24 rounded-xl bg-muted animate-pulse" />}><ServiceList services={result.data} userRole={session.role} /></Suspense></div>;
 }

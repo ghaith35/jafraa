@@ -84,7 +84,7 @@ export function LanguageSwitcher({
               disabled={isPending}
               onClick={() => switchLocale(item.locale)}
               className={cn(
-                "rounded-[calc(var(--radius)-2px)] px-3 py-1.5 text-[12px] transition-[background,color] duration-150 disabled:opacity-60",
+                "rounded-[calc(var(--radius)-2px)] px-3 py-1.5 text-[14px] transition-[background,color] duration-150 disabled:opacity-60",
                 active
                   ? "bg-[var(--primary)] text-[var(--primary-fg)]"
                   : "text-[var(--tx2)] hover:bg-[var(--surface)] hover:text-[var(--tx)]"

@@ -19,8 +19,8 @@ export default async function ZReportPage({ params }: { params: { id: string } }
     time: new Date(m.createdAt).toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" }),
     type: (
       <div className="space-y-0.5">
-        <p className="font-bold uppercase text-[10px]">{m.movementType}</p>
-        <p className="text-[10px] text-muted-foreground">{m.note}</p>
+        <p className="font-bold uppercase text-[12px]">{m.movementType}</p>
+        <p className="text-[12px] text-muted-foreground">{m.note}</p>
       </div>
     ),
     in: m.direction === "in" ? Number(m.amount).toFixed(2) : "-",
@@ -59,15 +59,15 @@ export default async function ZReportPage({ params }: { params: { id: string } }
         <div className="rounded-xl border bg-muted/20 p-6 my-8">
           <div className="grid grid-cols-3 gap-8 text-center">
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Espèces attendues</p>
+              <p className="text-[12px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Espèces attendues</p>
               <p className="text-2xl font-black">{Number(data.expectedAmount).toFixed(2)} DZD</p>
             </div>
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Espèces déclarées</p>
+              <p className="text-[12px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Espèces déclarées</p>
               <p className="text-2xl font-black">{data.actualAmount ? Number(data.actualAmount).toFixed(2) : "-"} DZD</p>
             </div>
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Écart</p>
+              <p className="text-[12px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Écart</p>
               <p className={`text-2xl font-black ${Number(data.differenceAmount) < 0 ? "text-red-600" : "text-emerald-600"}`}>
                 {data.differenceAmount ? Number(data.differenceAmount).toFixed(2) : "0.00"} DZD
               </p>

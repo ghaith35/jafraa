@@ -5,6 +5,7 @@ import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { Prisma } from "@prisma/client";
+import { paginate, type PaginatedResult } from "@/lib/pagination";
 import {
   createPurchaseInvoiceSchema,
   type CreatePurchaseInvoiceInput,
@@ -163,25 +164,35 @@ export async function createPurchaseInvoice(
 
 // ─── List ─────────────────────────────────────────────────────────────────────
 
-export async function listPurchaseInvoices(opts?: { storeId?: string }) {
+export async function listPurchaseInvoices(opts?: { storeId?: string; page?: number; perPage?: number }) {
   const session = await getSession();
-  if (!session) return [];
-  if (!hasPermission(session.role, "inventory:manage")) return [];
+  if (!session) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
+  if (!hasPermission(session.role, "inventory:manage")) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
 
   const storeId = opts?.storeId ?? session.storeIds[0];
-  if (!storeId) return [];
+  if (!storeId) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
+
+  const page = opts?.page ?? 1;
+  const perPage = opts?.perPage ?? 50;
 
   try {
-    return await prisma.purchaseInvoice.findMany({
-      where: { storeId },
-      include: {
-        supplier: { select: { name: true } },
-        createdBy: { select: { name: true } },
-      },
-      orderBy: { createdAt: "desc" },
-    });
+    const where = { storeId };
+    const [data, total] = await Promise.all([
+      prisma.purchaseInvoice.findMany({
+        where,
+        skip: (page - 1) * perPage,
+        take: perPage,
+        include: {
+          supplier: { select: { name: true } },
+          createdBy: { select: { name: true } },
+        },
+        orderBy: { createdAt: "desc" },
+      }),
+      prisma.purchaseInvoice.count({ where }),
+    ]);
+    return paginate(data, total, page, perPage);
   } catch (error) {
     console.warn("Purchase invoices skipped because the current database is missing purchase invoice tables/columns:", error);
-    return [];
+    return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
   }
 }

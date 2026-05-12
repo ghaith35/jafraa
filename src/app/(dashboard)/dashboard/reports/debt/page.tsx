@@ -42,7 +42,7 @@ export default async function DebtReportPage() {
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-left">
-            <thead className="bg-muted/50 text-muted-foreground font-medium uppercase text-[10px] tracking-wider">
+            <thead className="bg-muted/50 text-muted-foreground font-medium uppercase text-[12px] tracking-wider">
               <tr>
                 <th className="px-6 py-3">Client</th>
                 <th className="px-6 py-3 text-right">Solde Dû</th>

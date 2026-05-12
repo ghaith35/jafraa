@@ -9,6 +9,7 @@ import { seedExpandedPhoneCatalog } from "./seed-phones-expanded";
 import { seedExpandedPrinterCatalog } from "./seed-printers-expanded";
 import { seedInventory } from "./seed-inventory";
 import { seedSuppliers } from "./seed-suppliers";
+import { seedExpenseCategories } from "./seed-expense-categories";
 
 // Prisma 7 requires an adapter — no implicit url from schema.prisma
 dotenv.config();
@@ -116,7 +117,7 @@ async function main() {
   console.log("  StoreSettings: created");
 
   // ─── Demo Users ───────────────────────────────────────────────────────────
-  const demoPassword = await bcrypt.hash("demo1234", SALT_ROUNDS);
+  const demoPassword = await bcrypt.hash("ghaith$", SALT_ROUNDS);
 
   const demoUsers: {
     id: string;
@@ -124,7 +125,7 @@ async function main() {
     name: string;
     role: UserRole;
   }[] = [
-    { id: "demo-user-admin", email: "admin@demo.repaire", name: "Amina Admin", role: "Admin" },
+    { id: "demo-user-admin", email: "gayethtayem@gmail.com", name: "Amina Admin", role: "Admin" },
     { id: "demo-user-manager", email: "manager@demo.repaire", name: "Mourad Manager", role: "Manager" },
     { id: "demo-user-cashier", email: "cashier@demo.repaire", name: "Chafia Caissier", role: "Cashier" },
     { id: "demo-user-tech", email: "tech@demo.repaire", name: "Tarek Technicien", role: "Technician" },
@@ -133,7 +134,7 @@ async function main() {
   for (const u of demoUsers) {
     const user = await prisma.user.upsert({
       where: { id: u.id },
-      update: { name: u.name, email: u.email, role: u.role },
+      update: { name: u.name, email: u.email, role: u.role, passwordHash: demoPassword },
       create: {
         id: u.id,
         companyId: demoCompany.id,
@@ -167,8 +168,11 @@ async function main() {
   // ─── Suppliers (Block 8) ─────────────────────────────────────────────────────
   await seedSuppliers(prisma);
 
+  // ─── Expense Categories (Block 18) ────────────────────────────────────────────
+  await seedExpenseCategories(prisma);
+
   console.log("\nSeed complete.");
-  console.log("\nDemo credentials (password: demo1234):");
+  console.log("\nDemo credentials (password: ghaith$):");
   for (const u of demoUsers) {
     console.log(`  ${u.role.padEnd(12)} ${u.email}`);
   }

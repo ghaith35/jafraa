@@ -53,13 +53,13 @@ export default async function PosReceiptPage(props: { params: Promise<{ id: stri
       <section className="receipt mx-auto w-[360px] rounded-2xl border border-slate-300 bg-white p-5 font-mono shadow-xl">
         <header className="text-center">
           <h1 className="text-xl font-black tracking-tight">{sale.store.name}</h1>
-          {sale.store.address && <p className="mt-1 text-[11px] leading-tight">{sale.store.address}</p>}
-          {sale.store.phone && <p className="text-[11px]">Tél: {sale.store.phone}</p>}
+          {sale.store.address && <p className="mt-1 text-[13px] leading-tight">{sale.store.address}</p>}
+          {sale.store.phone && <p className="text-[13px]">Tél: {sale.store.phone}</p>}
           <p className="mt-3 text-xs font-bold">TICKET DE CAISSE</p>
           <p className="text-lg font-black">{sale.saleNumber}</p>
         </header>
 
-        <div className="my-3 text-[11px]">
+        <div className="my-3 text-[13px]">
           <Line label="Date" value={new Intl.DateTimeFormat("fr-DZ", { dateStyle: "short", timeStyle: "short" }).format(sale.createdAt)} />
           <Line label="Caissier" value={sale.createdBy.name} />
           <Line label="Client" value={sale.customer?.name ?? "Client comptoir"} />
@@ -67,7 +67,7 @@ export default async function PosReceiptPage(props: { params: Promise<{ id: stri
         </div>
 
         <div className="cut py-2">
-          <table className="w-full text-[11px]">
+          <table className="w-full text-[13px]">
             <thead>
               <tr className="border-b border-slate-300 text-left">
                 <th className="py-1">Article</th>
@@ -78,7 +78,7 @@ export default async function PosReceiptPage(props: { params: Promise<{ id: stri
             <tbody>
               {sale.lines.map((line) => (
                 <tr key={line.id} className="align-top">
-                  <td className="py-1 pr-2"><div className="font-bold">{line.description}</div><div className="text-[10px] text-slate-500">{Number(line.unitPrice).toLocaleString()} DZD</div></td>
+                  <td className="py-1 pr-2"><div className="font-bold">{line.description}</div><div className="text-[12px] text-slate-500">{Number(line.unitPrice).toLocaleString()} DZD</div></td>
                   <td className="py-1 text-right">{line.quantity}</td>
                   <td className="py-1 text-right font-bold">{Number(line.totalPrice).toLocaleString()}</td>
                 </tr>
@@ -87,7 +87,7 @@ export default async function PosReceiptPage(props: { params: Promise<{ id: stri
           </table>
         </div>
 
-        <div className="cut py-3 text-[12px]">
+        <div className="cut py-3 text-[14px]">
           <Line label="Sous-total" value={`${subtotal.toLocaleString()} DZD`} />
           {discount > 0 && <Line label="Remise" value={`-${discount.toLocaleString()} DZD`} />}
           <div className="my-2 flex items-center justify-between text-base font-black"><span>TOTAL</span><span>{total.toLocaleString()} DZD</span></div>
@@ -98,7 +98,7 @@ export default async function PosReceiptPage(props: { params: Promise<{ id: stri
         <div className="my-3 flex h-12 items-end overflow-hidden px-1">
           {bars.map((w, i) => <span key={i} style={{ width: `${w}px`, height: `${i % 3 === 0 ? 42 : 34}px` }} className={i % 2 === 0 ? "bg-black" : "bg-white"} />)}
         </div>
-        <p className="text-center text-[10px] font-bold">Merci pour votre achat.</p>
+        <p className="text-center text-[12px] font-bold">Merci pour votre achat.</p>
         <p className="mt-1 text-center text-[9px] text-slate-500">Gardez ce reçu pour garantie, échange ou remboursement.</p>
       </section>
     </main>

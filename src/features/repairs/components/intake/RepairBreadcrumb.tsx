@@ -50,7 +50,7 @@ export function RepairBreadcrumb({
               >
                 <span
                   className={cn(
-                    "flex h-5 w-5 items-center justify-center rounded-full text-[11px]",
+                    "flex h-5 w-5 items-center justify-center rounded-full text-[13px]",
                     active && "bg-primary-foreground/20 text-primary-foreground",
                     completed && !active && "bg-primary text-primary-foreground",
                     !completed && !active && "bg-card text-muted-foreground"

@@ -5,6 +5,7 @@ import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
+import { paginate, type PaginatedResult } from "@/lib/pagination";
 import {
   createServiceSchema,
   type CreateServiceInput,
@@ -34,44 +35,55 @@ export async function listServices(opts?: {
   deviceCategoryId?: string;
   serviceCategoryId?: string;
   isPackage?: boolean;
+  page?: number;
+  perPage?: number;
 }) {
   const session = await getSession();
-  if (!session) return [];
+  if (!session) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
 
   const storeId = opts?.storeId ?? session.storeIds[0];
-  if (!storeId) return [];
+  if (!storeId) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
   const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
 
-  const services = await prisma.service.findMany({
-    where: {
-      storeId,
-      isArchived: opts?.showArchived ? undefined : false,
-      ...(opts?.deviceCategoryId ? { deviceCategoryId: opts.deviceCategoryId } : {}),
-      ...(opts?.serviceCategoryId ? { serviceCategoryId: opts.serviceCategoryId } : {}),
-      ...(opts?.isPackage === true ? { packageItems: { some: {} } } : {}),
-      ...(opts?.category
-        ? { category: { contains: opts.category, mode: "insensitive" } }
-        : {}),
-      ...(opts?.q
-        ? {
-            OR: [
-              { name: { contains: opts.q, mode: "insensitive" } },
-              { nameEn: { contains: opts.q, mode: "insensitive" } },
-              { nameAr: { contains: opts.q, mode: "insensitive" } },
-              { sku: { contains: opts.q, mode: "insensitive" } },
-              { category: { contains: opts.q, mode: "insensitive" } },
-            ],
-          }
-        : {}),
-    },
-    include: {
-      deviceCategory: { select: { key: true, nameFr: true, nameEn: true, nameAr: true } },
-      serviceCategory: { select: { id: true, namePath: true, deviceCategory: { select: { key: true } } } },
-      _count: { select: { packageItems: true } },
-    },
-    orderBy: { name: "asc" },
-    take: 200,
-  });
+  const page = opts?.page ?? 1;
+  const perPage = opts?.perPage ?? 50;
+
+  const where: Prisma.ServiceWhereInput = {
+    storeId,
+    isArchived: opts?.showArchived ? undefined : false,
+    ...(opts?.deviceCategoryId ? { deviceCategoryId: opts.deviceCategoryId } : {}),
+    ...(opts?.serviceCategoryId ? { serviceCategoryId: opts.serviceCategoryId } : {}),
+    ...(opts?.isPackage === true ? { packageItems: { some: {} } } : {}),
+    ...(opts?.category
+      ? { category: { contains: opts.category, mode: "insensitive" } }
+      : {}),
+    ...(opts?.q
+      ? {
+          OR: [
+            { name: { contains: opts.q, mode: "insensitive" as const } },
+            { nameEn: { contains: opts.q, mode: "insensitive" as const } },
+            { nameAr: { contains: opts.q, mode: "insensitive" as const } },
+            { sku: { contains: opts.q, mode: "insensitive" as const } },
+            { category: { contains: opts.q, mode: "insensitive" as const } },
+          ],
+        }
+      : {}),
+  };
+
+  const [services, total] = await Promise.all([
+    prisma.service.findMany({
+      where,
+      skip: (page - 1) * perPage,
+      take: perPage,
+      include: {
+        deviceCategory: { select: { key: true, nameFr: true, nameEn: true, nameAr: true } },
+        serviceCategory: { select: { id: true, namePath: true, deviceCategory: { select: { key: true } } } },
+        _count: { select: { packageItems: true } },
+      },
+      orderBy: { name: "asc" },
+    }),
+    prisma.service.count({ where }),
+  ]);
 
   const mapped = services.map(s => ({
     ...s,
@@ -80,16 +92,19 @@ export async function listServices(opts?: {
     costPrice: s.costPrice == null ? null : Number(s.costPrice),
   }));
 
-  if (!allowedScopes.length) return mapped;
-  return mapped.filter((service) =>
-    isInventoryCategoryAllowedByScope(
-      {
-        name: service.serviceCategory?.namePath ?? service.category,
-        deviceCategoryKey: service.deviceCategory?.key ?? service.serviceCategory?.deviceCategory?.key ?? null,
-      },
-      allowedScopes
-    )
-  );
+  const scoped = !allowedScopes.length
+    ? mapped
+    : mapped.filter((service) =>
+        isInventoryCategoryAllowedByScope(
+          {
+            name: service.serviceCategory?.namePath ?? service.category,
+            deviceCategoryKey: service.deviceCategory?.key ?? service.serviceCategory?.deviceCategory?.key ?? null,
+          },
+          allowedScopes
+        )
+      );
+
+  return paginate(scoped, total, page, perPage);
 }
 
 // ─── Get one ──────────────────────────────────────────────────────────────────
@@ -224,6 +239,19 @@ export async function createService(
         });
       }
     }
+
+    if (d.groupPrices?.length) {
+      await prisma.serviceGroupPrice.createMany({
+        data: d.groupPrices.map((gp) => ({
+          companyId: session.companyId,
+          serviceId: service.id,
+          groupId: gp.groupId,
+          price: gp.price,
+        })),
+        skipDuplicates: true,
+      });
+    }
+
     revalidatePath("/dashboard/services");
     revalidatePath("/dashboard/inventory");
     return { id: service.id };
@@ -314,6 +342,20 @@ export async function updateService(
     }
     console.error("updateService:", e);
     return { error: "Erreur lors de la mise à jour" };
+  }
+
+  if (d.groupPrices) {
+    await prisma.serviceGroupPrice.deleteMany({ where: { serviceId: id } });
+    if (d.groupPrices.length) {
+      await prisma.serviceGroupPrice.createMany({
+        data: d.groupPrices.map((gp) => ({
+          companyId: session.companyId,
+          serviceId: id,
+          groupId: gp.groupId,
+          price: gp.price,
+        })),
+      });
+    }
   }
 
   revalidatePath("/dashboard/services");

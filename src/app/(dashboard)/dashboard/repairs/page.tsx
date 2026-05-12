@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Plus } from "lucide-react";
 import { PageHeader } from "@/components/shared/PageHeader";
+import { Pagination } from "@/components/shared/Pagination";
 import { getAppI18n } from "@/lib/i18n/server";
 import { getSession } from "@/lib/auth/session";
 import { redirect } from "next/navigation";
@@ -11,16 +12,20 @@ import type { RepairStatus } from "@prisma/client";
 export const metadata = { title: "Réparations" };
 
 export default async function RepairsPage(props: {
-  searchParams: Promise<{ q?: string; status?: string }>;
+  searchParams: Promise<{ q?: string; status?: string; page?: string }>;
 }) {
   const { t } = await getAppI18n();
   const searchParams = await props.searchParams;
   const session = await getSession();
   if (!session) redirect("/login");
 
-  const tickets = await listRepairTickets({
+  const page = Number(searchParams.page) || 1;
+  const perPage = 50;
+  const result = await listRepairTickets({
     q: searchParams.q,
     status: searchParams.status as RepairStatus | undefined,
+    page,
+    perPage,
   });
 
   return (
@@ -39,7 +44,8 @@ export default async function RepairsPage(props: {
         </Link>
       </div>
 
-      <RepairList tickets={tickets} userRole={session.role} />
+      <RepairList tickets={result.data} userRole={session.role} />
+      <Pagination page={result.page} totalPages={result.totalPages} total={result.total} perPage={result.perPage} />
     </div>
   );
 }

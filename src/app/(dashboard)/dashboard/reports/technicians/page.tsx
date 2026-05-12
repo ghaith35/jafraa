@@ -42,11 +42,11 @@ export default async function TechniciansReportPage({
               <div className="p-6 flex-1 space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-1">
-                    <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">Réussite</p>
+                    <p className="text-[12px] uppercase tracking-wider text-muted-foreground font-semibold">Réussite</p>
                     <p className="text-xl font-bold text-emerald-600 dark:text-emerald-400">{successRate.toFixed(0)}%</p>
                   </div>
                   <div className="space-y-1 text-right">
-                    <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">Réparés</p>
+                    <p className="text-[12px] uppercase tracking-wider text-muted-foreground font-semibold">Réparés</p>
                     <p className="text-xl font-bold">{tech.completed}</p>
                   </div>
                 </div>

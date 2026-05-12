@@ -18,7 +18,9 @@ export type Permission =
   | "payments:view"
   | "reports:view"
   | "debt:manage"
-  | "debt:view";
+  | "debt:view"
+  | "expenses:manage"
+  | "expenses:view";
 
 const ROLE_PERMISSIONS: Record<UserRole, Permission[]> = {
   Admin: [
@@ -40,6 +42,8 @@ const ROLE_PERMISSIONS: Record<UserRole, Permission[]> = {
     "reports:view",
     "debt:manage",
     "debt:view",
+    "expenses:manage",
+    "expenses:view",
   ],
   Manager: [
     "users:view",
@@ -56,6 +60,8 @@ const ROLE_PERMISSIONS: Record<UserRole, Permission[]> = {
     "reports:view",
     "debt:manage",
     "debt:view",
+    "expenses:manage",
+    "expenses:view",
   ],
   Cashier: [
     "customers:view",

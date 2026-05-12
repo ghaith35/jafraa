@@ -267,6 +267,19 @@ export async function createProduct(
         imageUrl: d.imageUrl || undefined,
       },
     });
+
+    if (d.groupPrices?.length) {
+      await prisma.productGroupPrice.createMany({
+        data: d.groupPrices.map((gp) => ({
+          companyId: session.companyId,
+          productId: product.id,
+          groupId: gp.groupId,
+          price: gp.price,
+        })),
+        skipDuplicates: true,
+      });
+    }
+
     revalidatePath("/dashboard/inventory");
     return { id: product.id };
   } catch (e) {
@@ -351,6 +364,20 @@ export async function updateProduct(
     }
     console.error("updateProduct:", e);
     return { error: "Erreur lors de la mise à jour" };
+  }
+
+  if (d.groupPrices) {
+    await prisma.productGroupPrice.deleteMany({ where: { productId: id } });
+    if (d.groupPrices.length) {
+      await prisma.productGroupPrice.createMany({
+        data: d.groupPrices.map((gp) => ({
+          companyId: session.companyId,
+          productId: id,
+          groupId: gp.groupId,
+          price: gp.price,
+        })),
+      });
+    }
   }
 
   revalidatePath("/dashboard/inventory");

@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import type { UserRole, LanguagePreference } from "@prisma/client";
 import { Sidebar } from "./Sidebar";
 import { Topbar } from "./Topbar";
+import { cn } from "@/lib/utils";
 
 interface Props {
   children: React.ReactNode;
@@ -21,6 +22,7 @@ interface Props {
 
 export function DashboardShell({ children, user, company }: Props) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
   const locale = useLocale();
 
   const dir = locale === "ar" ? "rtl" : "ltr";
@@ -41,18 +43,25 @@ export function DashboardShell({ children, user, company }: Props) {
         user={user}
         company={company}
         mobileOpen={mobileOpen}
+        collapsed={collapsed}
         onMobileClose={() => setMobileOpen(false)}
+        onToggleCollapse={() => setCollapsed((c) => !c)}
         dir={dir}
       />
 
       {/* Main content — offset by sidebar width on desktop */}
-      <div className="flex flex-1 flex-col overflow-hidden lg:ms-[220px]">
+      <div
+        className={cn(
+          "flex flex-1 flex-col overflow-hidden transition-all duration-200 ease-in-out",
+          collapsed ? "lg:ms-[60px]" : "lg:ms-[220px]"
+        )}
+      >
         <Topbar
           user={user}
           company={company}
           onMobileMenuToggle={() => setMobileOpen((o) => !o)}
         />
-        <main className="flex-1 overflow-y-auto">
+        <main className="main-scroll flex-1 overflow-y-auto">
           <div className="p-4 md:p-5">{children}</div>
         </main>
       </div>

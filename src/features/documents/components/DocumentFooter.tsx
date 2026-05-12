@@ -27,7 +27,7 @@ export function DocumentFooter({ note, warrantyInfo, showBranding = true }: Docu
         {/* Signature Area */}
         <div className="flex flex-col items-end justify-end space-y-12">
           <div className="w-48 border-b border-muted-foreground/30 text-center pb-1">
-            <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Cachet et Signature</p>
+            <p className="text-[12px] uppercase tracking-widest text-muted-foreground">Cachet et Signature</p>
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@ export function DocumentFooter({ note, warrantyInfo, showBranding = true }: Docu
       {/* App Branding */}
       {showBranding && (
         <div className="text-center pt-8">
-          <p className="text-[10px] text-muted-foreground uppercase tracking-[0.2em]">
+          <p className="text-[12px] text-muted-foreground uppercase tracking-[0.2em]">
             Document généré par <span className="font-bold text-primary">REPAIRE</span>
           </p>
         </div>

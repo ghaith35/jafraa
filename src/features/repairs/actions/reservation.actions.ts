@@ -93,7 +93,14 @@ export async function listReservedPartsForTicket(ticketId: string) {
   // Technician: verify they are assigned
   if (isTechnician) {
     const ticket = await prisma.repairTicket.findFirst({
-      where: { id: ticketId, storeId, assignedTechnicianId: session.sub },
+      where: {
+        id: ticketId,
+        storeId,
+        OR: [
+          { assignedTechnicianId: session.sub },
+          { technicians: { some: { userId: session.sub } } },
+        ],
+      },
       select: { id: true },
     });
     if (!ticket) return [];
@@ -152,8 +159,15 @@ export async function addReservedPartToTicket(
   }
 
   // Technician: can only act on assigned tickets
-  if (session.role === "Technician" && ticket.assignedTechnicianId !== session.sub) {
-    return { error: "Vous n'êtes pas assigné à ce ticket" };
+  if (session.role === "Technician") {
+    const isAssigned = ticket.assignedTechnicianId === session.sub ||
+      (await prisma.repairTicketTechnician.findFirst({
+        where: { repairTicketId: ticketId, userId: session.sub },
+        select: { id: true },
+      }));
+    if (!isAssigned) {
+      return { error: "Vous n'êtes pas assigné à ce ticket" };
+    }
   }
 
   // Verify part
@@ -217,7 +231,7 @@ export async function releaseReservedPart(
 
   const reservation = await prisma.repairTicketPart.findFirst({
     where: { id: reservationId, storeId },
-    include: { repairTicket: { select: { assignedTechnicianId: true } } },
+    include: { repairTicket: { select: { id: true, assignedTechnicianId: true } } },
   });
 
   if (!reservation) return { error: "Réservation introuvable" };
@@ -225,8 +239,15 @@ export async function releaseReservedPart(
   if (reservation.status === "used") return { error: "Impossible de libérer une pièce déjà utilisée" };
 
   // Technician: can only release on assigned tickets
-  if (session.role === "Technician" && reservation.repairTicket.assignedTechnicianId !== session.sub) {
-    return { error: "Vous n'êtes pas assigné à ce ticket" };
+  if (session.role === "Technician") {
+    const isAssigned = reservation.repairTicket.assignedTechnicianId === session.sub ||
+      (await prisma.repairTicketTechnician.findFirst({
+        where: { repairTicketId: reservation.repairTicketId, userId: session.sub },
+        select: { id: true },
+      }));
+    if (!isAssigned) {
+      return { error: "Vous n'êtes pas assigné à ce ticket" };
+    }
   }
 
   try {

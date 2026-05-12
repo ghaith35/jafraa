@@ -94,8 +94,8 @@ export default async function ReportsIndexPage() {
             {executive.daily.map((d) => (
               <div key={d.date} className="group relative flex flex-1 flex-col items-center gap-1">
                 <div className="w-full rounded-t-md bg-primary/30 transition-all group-hover:bg-primary/60" style={{ height: `${Math.max(3, (d.revenue / maxDailyRevenue) * 100)}%` }} />
-                <span className="hidden text-[10px] text-muted-foreground sm:block">{new Date(d.date).getDate()}</span>
-                <div className="pointer-events-none absolute -top-12 hidden rounded-lg border bg-popover px-2 py-1 text-[10px] font-bold shadow group-hover:block">
+                <span className="hidden text-[12px] text-muted-foreground sm:block">{new Date(d.date).getDate()}</span>
+                <div className="pointer-events-none absolute -top-12 hidden rounded-lg border bg-popover px-2 py-1 text-[12px] font-bold shadow group-hover:block">
                   {Math.round(d.revenue).toLocaleString()} DZD · {d.repairs} tickets
                 </div>
               </div>

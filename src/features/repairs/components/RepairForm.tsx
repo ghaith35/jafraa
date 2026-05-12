@@ -210,15 +210,52 @@ export function RepairForm({ customers, technicians }: any) {
             <h3 className="font-semibold text-lg">{t("form_sectionTracking")}</h3>
             <div>
               <label className="text-sm font-medium mb-1.5 block">{t("form_assignTechnician")}</label>
-              <select
-                {...form.register("assignedTechnicianId")}
-                className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              >
-                <option value="">{t("form_doNotAssignNow")}</option>
-                {technicians.map((technician: { id: string, name: string }) => (
-                  <option key={technician.id} value={technician.id}>{technician.name}</option>
-                ))}
-              </select>
+              <div className="space-y-1 rounded-lg border border-input bg-transparent p-2">
+                {technicians.map((technician: { id: string, name: string }) => {
+                  const techIds = form.watch("technicianIds") ?? [];
+                  const leadId = form.watch("assignedTechnicianId");
+                  const isSelected = techIds.includes(technician.id);
+                  const isLead = leadId === technician.id;
+                  return (
+                    <label
+                      key={technician.id}
+                      className={`flex cursor-pointer items-center gap-2 rounded-md px-2.5 py-1.5 text-sm transition hover:bg-muted/60 ${isSelected ? "bg-primary/5 font-medium" : ""}`}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={isSelected}
+                        onChange={() => {
+                          const next = isSelected
+                            ? techIds.filter((id: string) => id !== technician.id)
+                            : [...techIds, technician.id];
+                          form.setValue("technicianIds", next);
+                          if (!isLead && !isSelected && !leadId) {
+                            form.setValue("assignedTechnicianId", technician.id);
+                          }
+                          if (isLead && isSelected) {
+                            const remaining = next.filter((id: string) => id !== technician.id);
+                            form.setValue("assignedTechnicianId", remaining[0] ?? "");
+                          }
+                        }}
+                        className="h-4 w-4 accent-primary rounded"
+                      />
+                      <span className="flex-1">{technician.name}</span>
+                      {isLead && (
+                        <span className="rounded-full bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold text-primary">Lead</span>
+                      )}
+                      {isSelected && !isLead && (
+                        <button
+                          type="button"
+                          onClick={(e) => { e.stopPropagation(); form.setValue("assignedTechnicianId", technician.id); }}
+                          className="text-[10px] font-medium text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          Définir lead
+                        </button>
+                      )}
+                    </label>
+                  );
+                })}
+              </div>
             </div>
             <div>
               <label className="text-sm font-medium mb-1.5 block">{t("form_priority")}</label>

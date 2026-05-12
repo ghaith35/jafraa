@@ -606,7 +606,7 @@ function ScopeBadge({ isGlobal, copy }: { isGlobal: boolean; copy: Copy }) {
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-bold",
+        "inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[12px] font-bold",
         isGlobal
           ? "bg-sky-50 text-sky-700 ring-1 ring-sky-100"
           : "bg-amber-50 text-amber-700 ring-1 ring-amber-100"
@@ -852,7 +852,7 @@ function LaptopCatalogPanel({
       <div className="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
         <div className="mb-3 flex items-center justify-between">
           <h3 className="text-sm font-black text-slate-950">{copy.chooseSeries}</h3>
-          <span className="rounded-full bg-slate-100 px-2 py-1 text-[11px] font-bold text-slate-500">{seriesGroups.length}</span>
+          <span className="rounded-full bg-slate-100 px-2 py-1 text-[13px] font-bold text-slate-500">{seriesGroups.length}</span>
         </div>
         <div className="space-y-1.5 max-h-[31rem] overflow-y-auto pe-1">
           <button
@@ -883,7 +883,7 @@ function LaptopCatalogPanel({
             >
               <div className="flex items-center justify-between gap-2">
                 <span className="truncate text-sm font-black">{group.series}</span>
-                <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-bold text-slate-500">{group.items.length}</span>
+                <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[13px] font-bold text-slate-500">{group.items.length}</span>
               </div>
             </button>
           ))}
@@ -1096,7 +1096,7 @@ function PhoneCatalogPanel({
       <div className="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
         <div className="mb-3 flex items-center justify-between">
           <h3 className="text-sm font-black text-slate-950">{copy.chooseSeries}</h3>
-          <span className="rounded-full bg-slate-100 px-2 py-1 text-[11px] font-bold text-slate-500">{seriesGroups.length}</span>
+          <span className="rounded-full bg-slate-100 px-2 py-1 text-[13px] font-bold text-slate-500">{seriesGroups.length}</span>
         </div>
         <div className="space-y-1.5 max-h-[31rem] overflow-y-auto pe-1">
           <button
@@ -1121,7 +1121,7 @@ function PhoneCatalogPanel({
             >
               <div className="flex items-center justify-between gap-2">
                 <span className="truncate text-sm font-black">{group.series}</span>
-                <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-bold text-slate-500">{group.items.length}</span>
+                <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[13px] font-bold text-slate-500">{group.items.length}</span>
               </div>
             </button>
           ))}
@@ -1155,8 +1155,8 @@ function PhoneCatalogPanel({
                   </div>
                   <p className="line-clamp-2 text-sm font-black text-slate-950">{stripBrandPrefix(family.name, brand.name)}</p>
                   <div className="mt-3 flex flex-wrap items-center gap-2">
-                    <span className="rounded-full bg-slate-100 px-2 py-1 text-[11px] font-bold text-slate-600">{series}</span>
-                    <span className="rounded-full bg-primary/10 px-2 py-1 text-[11px] font-bold text-primary">{brand.name}</span>
+                    <span className="rounded-full bg-slate-100 px-2 py-1 text-[13px] font-bold text-slate-600">{series}</span>
+                    <span className="rounded-full bg-primary/10 px-2 py-1 text-[13px] font-bold text-primary">{brand.name}</span>
                   </div>
                 </div>
               );
@@ -1308,7 +1308,7 @@ export function CatalogBrowser({
           <div className="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
             <div className="mb-3 flex items-center justify-between">
               <h3 className="text-sm font-black text-slate-950">{copy.categories}</h3>
-              <span className="rounded-full bg-slate-100 px-2 py-1 text-[11px] font-bold text-slate-500">{categories.length}</span>
+              <span className="rounded-full bg-slate-100 px-2 py-1 text-[13px] font-bold text-slate-500">{categories.length}</span>
             </div>
             <div className="space-y-1.5">
               {categories.map((category) => {

@@ -47,6 +47,7 @@ export const createRepairTicketSchema = z.object({
   priority: z.enum(["normal", "rush"]).default("normal"),
   initialStatus: repairInitialStatusSchema.optional(),
   assignedTechnicianId: z.string().cuid().optional().or(z.literal("")),
+  technicianIds: z.array(z.string().cuid()).optional(),
   
   diagnosisNote: z.string().trim().max(2000).optional().or(z.literal("")),
   internalNotes: z.string().trim().max(2000).optional().or(z.literal("")),

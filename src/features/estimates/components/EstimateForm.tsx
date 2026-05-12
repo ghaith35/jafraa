@@ -115,7 +115,7 @@ export function EstimateForm({ ticketId, onSuccess }: { ticketId: string, onSucc
                         placeholder="Description..."
                       />
                       {form.formState.errors.lines?.[index]?.description && (
-                        <p className="text-[10px] text-destructive mt-1">{form.formState.errors.lines[index]?.description?.message}</p>
+                        <p className="text-[12px] text-destructive mt-1">{form.formState.errors.lines[index]?.description?.message}</p>
                       )}
                     </td>
                     <td className="p-2">
@@ -174,7 +174,7 @@ export function EstimateForm({ ticketId, onSuccess }: { ticketId: string, onSucc
             </div>
           </div>
           {form.formState.errors.discountAmount && (
-            <p className="text-[10px] text-destructive text-right">{form.formState.errors.discountAmount.message}</p>
+            <p className="text-[12px] text-destructive text-right">{form.formState.errors.discountAmount.message}</p>
           )}
           <div className="flex justify-between border-t pt-3 font-bold text-base">
             <span>Total</span>

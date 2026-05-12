@@ -4,6 +4,7 @@ import { Plus } from "lucide-react";
 import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
+import { Pagination } from "@/components/shared/Pagination";
 import { listSuppliers } from "@/features/inventory/actions/supplier.actions";
 import { SupplierList } from "@/features/inventory/components/SupplierList";
 import { getAppI18n } from "@/lib/i18n/server";
@@ -11,18 +12,20 @@ import { getAppI18n } from "@/lib/i18n/server";
 export const metadata = { title: "Fournisseurs — REPAIRE" };
 
 export default async function SuppliersPage(props: {
-  searchParams: Promise<{ q?: string; archived?: string }>;
+  searchParams: Promise<{ q?: string; archived?: string; page?: string }>;
 }) {
   const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard");
 
-  const searchParams = await props.searchParams;
-  const q = searchParams.q;
-  const showArchived = searchParams.archived === "true";
+  const sp = await props.searchParams;
+  const q = sp.q;
+  const showArchived = sp.archived === "true";
+  const page = Number(sp.page) || 1;
+  const perPage = 50;
 
-  const suppliers = await listSuppliers({ q, showArchived });
+  const result = await listSuppliers({ q, showArchived, page, perPage });
 
   return (
     <div className="max-w-screen-xl mx-auto space-y-6">
@@ -45,8 +48,9 @@ export default async function SuppliersPage(props: {
       </div>
 
       <Suspense fallback={<div className="h-20 bg-muted animate-pulse rounded-md" />}>
-        <SupplierList suppliers={suppliers} userRole={session.role} />
+        <SupplierList suppliers={result.data} userRole={session.role} />
       </Suspense>
+      <Pagination page={result.page} totalPages={result.totalPages} total={result.total} perPage={result.perPage} />
     </div>
   );
 }

@@ -11,6 +11,7 @@ import {
   type UpdateRepairStatusInput,
 } from "../schemas/repair.schema";
 import { Prisma, type RepairStatus } from "@prisma/client";
+import { paginate } from "@/lib/pagination";
 
 type ActionError = { error: string };
 
@@ -88,43 +89,74 @@ export async function listRepairTickets(opts?: {
   storeId?: string;
   q?: string;
   status?: RepairStatus;
+  page?: number;
+  perPage?: number;
 }) {
   const session = await getSession();
-  if (!session) return [];
+  if (!session) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
 
   const storeId = opts?.storeId ?? session.storeIds[0];
-  if (!storeId) return [];
+  if (!storeId) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
+
+  const page = opts?.page ?? 1;
+  const perPage = opts?.perPage ?? 50;
 
   // Technician sees only assigned tickets (unless they created it and it's not assigned yet)
   // For simplicity: Technician only sees assigned tickets.
   const isTechnician = session.role === "Technician";
 
-  return prisma.repairTicket.findMany({
-    where: {
-      storeId,
-      ...(isTechnician ? { assignedTechnicianId: session.sub } : {}),
+  const where: Prisma.RepairTicketWhereInput = {
+    storeId,
+      ...(isTechnician
+        ? {
+            OR: [
+              { assignedTechnicianId: session.sub },
+              { technicians: { some: { userId: session.sub } } },
+            ],
+          }
+        : {}),
       ...(opts?.status ? { currentStatus: opts.status } : {}),
       ...(opts?.q
         ? {
             OR: [
-              { ticketNumber: { contains: opts.q, mode: "insensitive" } },
-              { customer: { name: { contains: opts.q, mode: "insensitive" } } },
+              { ticketNumber: { contains: opts.q, mode: "insensitive" as const } },
+              { customer: { name: { contains: opts.q, mode: "insensitive" as const } } },
               { customer: { phones: { some: { phoneNumber: { contains: opts.q } } } } },
             ],
           }
         : {}),
-    },
-    include: {
-      customer: { select: { name: true, phones: { select: { phoneNumber: true } } } },
-      customerDevice: { select: { customBrand: true, customModel: true, deviceTypeName: true } },
-      deviceCategory: { select: { nameFr: true } },
-      deviceBrand: { select: { name: true } },
-      deviceFamily: { select: { name: true } },
-      assignedTechnician: { select: { name: true } },
-      problems: { select: { problemText: true } },
-    },
-    orderBy: { createdAt: "desc" },
-  });
+  };
+
+  const [tickets, total] = await Promise.all([
+    prisma.repairTicket.findMany({
+      where,
+      skip: (page - 1) * perPage,
+      take: perPage,
+      include: {
+        customer: { select: { name: true, phones: { select: { phoneNumber: true } } } },
+        customerDevice: { select: { customBrand: true, customModel: true, deviceTypeName: true } },
+        deviceCategory: { select: { nameFr: true } },
+        deviceBrand: { select: { name: true } },
+        deviceFamily: { select: { name: true } },
+        assignedTechnician: { select: { id: true, name: true } },
+        technicians: { include: { user: { select: { id: true, name: true } } } },
+        problems: { select: { problemText: true } },
+      },
+      orderBy: { createdAt: "desc" },
+    }),
+    prisma.repairTicket.count({ where }),
+  ]);
+
+  return paginate(
+    tickets.map((t) => ({
+      ...t,
+      estimatedPrice: t.estimatedPrice ? Number(t.estimatedPrice) : null,
+      finalPrice: t.finalPrice ? Number(t.finalPrice) : null,
+    })),
+    total,
+    page,
+    perPage
+  );
 }
 
 // ─── Get one ──────────────────────────────────────────────────────────────────
@@ -138,11 +170,18 @@ export async function getRepairTicket(id: string) {
 
   const isTechnician = session.role === "Technician";
 
-  return prisma.repairTicket.findFirst({
+  const ticket = await prisma.repairTicket.findFirst({
     where: {
       id,
       storeId,
-      ...(isTechnician ? { assignedTechnicianId: session.sub } : {}),
+      ...(isTechnician
+        ? {
+            OR: [
+              { assignedTechnicianId: session.sub },
+              { technicians: { some: { userId: session.sub } } },
+            ],
+          }
+        : {}),
     },
     include: {
       customer: { select: { name: true, phones: { select: { phoneNumber: true } }, address: true, wilayaCode: true, customerType: true } },
@@ -151,6 +190,7 @@ export async function getRepairTicket(id: string) {
       deviceBrand: true,
       deviceFamily: true,
       assignedTechnician: { select: { id: true, name: true } },
+      technicians: { include: { user: { select: { id: true, name: true } } } },
       createdBy: { select: { name: true } },
       problems: true,
       statusHistory: {
@@ -159,6 +199,14 @@ export async function getRepairTicket(id: string) {
       },
     },
   });
+
+  if (!ticket) return null;
+
+  return {
+    ...ticket,
+    estimatedPrice: ticket.estimatedPrice ? Number(ticket.estimatedPrice) : null,
+    finalPrice: ticket.finalPrice ? Number(ticket.finalPrice) : null,
+  };
 }
 
 // ─── Create ───────────────────────────────────────────────────────────────────
@@ -186,7 +234,7 @@ export async function createRepairTicket(
 
   const d = parsed.data;
 
-  let validatedCustomerId = d.customerId || null;
+  const validatedCustomerId = d.customerId || null;
 
   if (validatedCustomerId) {
     const customer = await prisma.customer.findFirst({
@@ -363,6 +411,22 @@ export async function createRepairTicket(
         },
       });
 
+      // Sync junction table: lead tech + any extra technicians
+      const allTechnicianIds = new Set<string>();
+      if (assignedTechnicianId) allTechnicianIds.add(assignedTechnicianId);
+      for (const tid of d.technicianIds ?? []) {
+        if (tid) allTechnicianIds.add(tid);
+      }
+      for (const userId of allTechnicianIds) {
+        await tx.repairTicketTechnician.create({
+          data: {
+            repairTicketId: ticket.id,
+            userId,
+            role: userId === assignedTechnicianId ? "lead" : "support",
+          },
+        });
+      }
+
       for (const selectedPart of d.selectedParts ?? []) {
         const part = await tx.part.findFirst({
           where: { id: selectedPart.partId, storeId, isArchived: false },
@@ -438,7 +502,14 @@ export async function changeRepairTicketStatus(
     where: {
       id,
       storeId,
-      ...(isTechnician ? { assignedTechnicianId: session.sub } : {}),
+      ...(isTechnician
+        ? {
+            OR: [
+              { assignedTechnicianId: session.sub },
+              { technicians: { some: { userId: session.sub } } },
+            ],
+          }
+        : {}),
     },
     select: { id: true, currentStatus: true },
   });
@@ -502,9 +573,25 @@ export async function assignTechnician(
   if (!storeId) return { error: "Aucune boutique assignée" };
 
   try {
-    await prisma.repairTicket.update({
-      where: { id, storeId },
-      data: { assignedTechnicianId: technicianId },
+    await prisma.$transaction(async (tx) => {
+      await tx.repairTicket.update({
+        where: { id, storeId },
+        data: { assignedTechnicianId: technicianId },
+      });
+
+      // Sync junction table: upsert the lead tech, remove others
+      await tx.repairTicketTechnician.deleteMany({
+        where: { repairTicketId: id },
+      });
+      if (technicianId) {
+        await tx.repairTicketTechnician.create({
+          data: {
+            repairTicketId: id,
+            userId: technicianId,
+            role: "lead",
+          },
+        });
+      }
     });
     revalidatePath("/dashboard/repairs");
     revalidatePath(`/dashboard/repairs/${id}`);

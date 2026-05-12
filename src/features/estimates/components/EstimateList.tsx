@@ -188,7 +188,7 @@ export function EstimateList({ estimates, userRole, ticketId, storeId, customerI
                     <tr key={line.id}>
                       <td className="py-2">
                         {line.description}
-                        <span className="ml-2 text-[10px] text-muted-foreground uppercase px-1.5 py-0.5 bg-muted rounded">
+                        <span className="ml-2 text-[12px] text-muted-foreground uppercase px-1.5 py-0.5 bg-muted rounded">
                           {line.lineType}
                         </span>
                       </td>

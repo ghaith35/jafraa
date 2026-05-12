@@ -22,7 +22,7 @@ type DemoUser = {
 };
 
 const DEMO_USERS: DemoUser[] = [
-  { id: "demo-user-admin", email: "admin@demo.repaire", name: "Amina Admin", role: "Admin" },
+  { id: "demo-user-admin", email: "gayethtayem@gmail.com", name: "Amina Admin", role: "Admin" },
   { id: "demo-user-manager", email: "manager@demo.repaire", name: "Mourad Manager", role: "Manager" },
   { id: "demo-user-cashier", email: "cashier@demo.repaire", name: "Chafia Caissier", role: "Cashier" },
   { id: "demo-user-tech", email: "tech@demo.repaire", name: "Tarek Technicien", role: "Technician" },
@@ -122,7 +122,7 @@ const DEMO_SUPPLIERS = [
 ];
 
 async function ensureBase() {
-  const passwordHash = await bcrypt.hash("demo1234", SALT_ROUNDS);
+  const passwordHash = await bcrypt.hash("ghaith$", SALT_ROUNDS);
 
   const company = await prisma.company.upsert({
     where: { id: DEMO_COMPANY_ID },
@@ -157,6 +157,7 @@ async function ensureBase() {
         name: user.name,
         role: user.role,
         isActive: true,
+        passwordHash,
       },
       create: {
         id: user.id,
@@ -534,7 +535,7 @@ async function main() {
   await ensureRepairTickets(company.id, store.id);
 
   console.log("Demo showcase seed complete.");
-  console.log("Login credentials: admin@demo.repaire / demo1234");
+  console.log("Login credentials: gayethtayem@gmail.com / ghaith$");
 }
 
 main()

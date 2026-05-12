@@ -20,8 +20,8 @@ export default async function DebtStatementPage({ params }: { params: { id: stri
     date: new Date(t.createdAt).toLocaleDateString("fr-FR"),
     desc: (
       <div className="space-y-0.5">
-        <p className="font-bold uppercase text-[10px]">{t.type}</p>
-        <p className="text-[10px] text-muted-foreground">{t.note || "-"}</p>
+        <p className="font-bold uppercase text-[12px]">{t.type}</p>
+        <p className="text-[12px] text-muted-foreground">{t.note || "-"}</p>
       </div>
     ),
     debit: t.direction === "debit" ? Number(t.amount).toFixed(2) : "-",

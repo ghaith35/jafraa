@@ -2,6 +2,11 @@ import { z } from "zod";
 
 // ─── Product ──────────────────────────────────────────────────────────────────
 
+export const groupPriceEntry = z.object({
+  groupId: z.string(),
+  price: z.number().min(0),
+});
+
 export const createProductSchema = z.object({
   categoryId: z.string().trim().optional(),
   name: z.string().trim().min(1, "Le nom est requis").max(200),
@@ -14,6 +19,7 @@ export const createProductSchema = z.object({
   lowStockThreshold: z.number().int().min(0).optional(),
   notes: z.string().trim().max(500).optional(),
   imageUrl: z.string().url("URL invalide").optional().or(z.literal("")),
+  groupPrices: z.array(groupPriceEntry).optional(),
 });
 
 export const updateProductSchema = createProductSchema;
@@ -63,6 +69,7 @@ export const createServiceSchema = z.object({
   sellingPrice: z.number().min(0, "Le prix doit être ≥ 0"),
   estimatedDurationMinutes: z.number().int().min(0).optional(),
   notes: z.string().trim().max(500).optional(),
+  groupPrices: z.array(groupPriceEntry).optional(),
 });
 
 export const updateServiceSchema = createServiceSchema;

@@ -52,7 +52,7 @@ export function CashSessionHistory({ sessions }: { sessions: any[] }) {
               return (
                 <tr key={session.id} className="bg-background hover:bg-muted/30 transition-colors">
                   <td className="px-4 py-3">
-                    <span className={cn("inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold border", statusClass)}>
+                    <span className={cn("inline-flex items-center px-2 py-0.5 rounded text-[13px] font-semibold border", statusClass)}>
                       {statusLabel}
                     </span>
                   </td>

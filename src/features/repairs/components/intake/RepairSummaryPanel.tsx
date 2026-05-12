@@ -32,7 +32,7 @@ export function RepairSummaryPanel({
       <div className="space-y-4 p-4 text-sm">
         {rows.map((row) => (
           <div key={row.label} className="space-y-1">
-            <div className="text-[11px] font-bold uppercase tracking-wide text-muted-foreground">{row.label}</div>
+            <div className="text-[13px] font-bold uppercase tracking-wide text-muted-foreground">{row.label}</div>
             <div className="min-h-5 font-semibold text-foreground">{row.value || "—"}</div>
           </div>
         ))}

@@ -18,7 +18,7 @@ export default async function RepairInvoiceReceiptPage({ params }: { params: { i
     desc: (
       <div className="space-y-0.5">
         <p className="font-bold">{l.description}</p>
-        <p className="text-[10px] text-muted-foreground uppercase">{l.lineType}</p>
+        <p className="text-[12px] text-muted-foreground uppercase">{l.lineType}</p>
       </div>
     ),
     qty: Number(l.quantity),
@@ -43,12 +43,12 @@ export default async function RepairInvoiceReceiptPage({ params }: { params: { i
 
         <div className="grid grid-cols-2 gap-8 my-8 rounded-xl border bg-muted/20 p-4">
           <div className="space-y-1">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Appareil</p>
+            <p className="text-[12px] font-bold uppercase tracking-widest text-muted-foreground">Appareil</p>
             <p className="font-bold text-lg">{deviceName}</p>
             <p className="text-xs font-mono">{repairTicket.imeiSerial || "IMEI/SN non spécifié"}</p>
           </div>
           <div className="space-y-1">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Ticket Référence</p>
+            <p className="text-[12px] font-bold uppercase tracking-widest text-muted-foreground">Ticket Référence</p>
             <p className="font-bold text-lg">{repairTicket.ticketNumber}</p>
             <p className="text-xs text-muted-foreground italic">Technicien : {repairTicket.assignedTechnician?.name || "-"}</p>
           </div>

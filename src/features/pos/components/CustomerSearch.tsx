@@ -111,7 +111,7 @@ export function CustomerSearch({ onSelect, selectedCustomer }: CustomerSearchPro
                   <User className="h-4 w-4 text-muted-foreground shrink-0" />
                   <div className="min-w-0">
                     <p className="font-medium truncate">{customer.name}</p>
-                    <p className="text-[10px] text-muted-foreground truncate">
+                    <p className="text-[12px] text-muted-foreground truncate">
                       {customer.phone || "—"} • {t("debtLabel")}: {customer.totalDebt.toFixed(2)} DZD
                     </p>
                   </div>

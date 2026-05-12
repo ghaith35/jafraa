@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { MessageSquare, Phone, Save, Clock, CheckCircle2, FileText, Send, CreditCard } from "lucide-react";
+import { MessageSquare, Phone, Save, Clock, CheckCircle2, FileText, CreditCard } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { saveStoreWhatsAppPhone } from "../actions/whatsapp.actions";
 

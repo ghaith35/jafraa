@@ -232,7 +232,7 @@ export function PosRefundView({ hasOpenSession }: PosRefundViewProps) {
                           <td className="px-4 py-4 text-center">
                             {line.quantity}
                             {line.alreadyRefundedQty > 0 && (
-                              <p className="text-[10px] text-destructive font-bold">-{line.alreadyRefundedQty} {t("alreadyRefundedShort")}</p>
+                              <p className="text-[12px] text-destructive font-bold">-{line.alreadyRefundedQty} {t("alreadyRefundedShort")}</p>
                             )}
                           </td>
                           <td className="px-4 py-4 text-right font-mono">

@@ -232,7 +232,17 @@ export async function getDebtReport() {
 /**
  * 5. Dashboard Widgets (Optimized)
  */
-export async function getDashboardStats() {
+export interface DashboardStats {
+  dailyRevenue: number;
+  openTickets: number;
+  lowStock: number;
+  totalDebt: number;
+  weeklyRevenue: number[];
+  statusDistribution: { status: string; count: number }[];
+  technicianWorkload: { name: string; count: number }[];
+}
+
+export async function getDashboardStats(): Promise<DashboardStats | null> {
   const session = await getSession();
   if (!session) return null;
   const storeId = session.storeIds[0];
@@ -240,7 +250,9 @@ export async function getDashboardStats() {
   const todayStart = startOfDay(new Date());
   const todayEnd = endOfDay(new Date());
 
-  const [dailySales, openTickets, lowStock, totalDebt] = await Promise.all([
+  const sevenDaysAgo = subDays(new Date(), 6);
+
+  const [dailySales, openTickets, lowStock, totalDebt, weeklySales, statusCounts, techWorkload] = await Promise.all([
     prisma.posSale.aggregate({
       _sum: { totalAmount: true },
       where: { storeId, createdAt: { gte: todayStart, lte: todayEnd } }
@@ -254,14 +266,56 @@ export async function getDashboardStats() {
     prisma.customerDebtBalance.aggregate({
       _sum: { totalDebt: true },
       where: { customer: { companyId: session.companyId, isArchived: false } }
-    })
+    }),
+    prisma.posSale.findMany({
+      where: { storeId, createdAt: { gte: sevenDaysAgo, lte: todayEnd } },
+      select: { totalAmount: true, createdAt: true },
+    }),
+    prisma.repairTicket.groupBy({
+      by: ["currentStatus"],
+      where: { storeId, isArchived: false },
+      _count: true,
+    }),
+    prisma.repairTicket.groupBy({
+      by: ["assignedTechnicianId"],
+      where: { storeId, isArchived: false, assignedTechnicianId: { not: null } },
+      _count: true,
+    }),
   ]);
+
+  const weeklyRevenueMap = new Map<string, number>();
+  weeklySales.forEach(s => {
+    const d = format(s.createdAt, "yyyy-MM-dd");
+    weeklyRevenueMap.set(d, (weeklyRevenueMap.get(d) || 0) + Number(s.totalAmount));
+  });
+
+  const weeklyRevenue = eachDayOfInterval({ start: sevenDaysAgo, end: new Date() }).map(date => {
+    const d = format(date, "yyyy-MM-dd");
+    return weeklyRevenueMap.get(d) || 0;
+  });
+
+  let technicianWorkload: DashboardStats["technicianWorkload"] = [];
+  if (techWorkload.length > 0) {
+    const techIds = techWorkload.map(t => t.assignedTechnicianId).filter(Boolean) as string[];
+    const techUsers = await prisma.user.findMany({
+      where: { id: { in: techIds } },
+      select: { id: true, name: true },
+    });
+    const techMap = new Map(techUsers.map(t => [t.id, t.name]));
+    technicianWorkload = techWorkload.map(t => ({
+      name: techMap.get(t.assignedTechnicianId!) || "Inconnu",
+      count: t._count,
+    }));
+  }
 
   return {
     dailyRevenue: Number(dailySales._sum.totalAmount || 0),
     openTickets,
     lowStock,
     totalDebt: Number(totalDebt._sum.totalDebt || 0),
+    weeklyRevenue,
+    statusDistribution: statusCounts.map(s => ({ status: s.currentStatus, count: s._count })),
+    technicianWorkload,
   };
 }
 
@@ -275,7 +329,10 @@ export async function getTechnicianPerformance(filters: ReportFilters) {
   const tickets = await prisma.repairTicket.findMany({
     where: {
       storeId,
-      assignedTechnicianId: { not: null },
+      OR: [
+        { assignedTechnicianId: { not: null } },
+        { technicians: { some: {} } },
+      ],
       createdAt: {
         gte: startOfDay(filters.startDate),
         lte: endOfDay(filters.endDate),
@@ -288,6 +345,11 @@ export async function getTechnicianPerformance(filters: ReportFilters) {
           name: true,
         },
       },
+      technicians: {
+        include: {
+          user: { select: { id: true, name: true } },
+        },
+      },
       repairInvoices: {
         where: { status: { not: "cancelled" } },
         select: { totalAmount: true }
@@ -295,32 +357,52 @@ export async function getTechnicianPerformance(filters: ReportFilters) {
     },
   });
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const techMap = new Map<string, any>();
+  interface TechAccumulator {
+    id: string;
+    name: string;
+    total: number;
+    completed: number;
+    revenue: number;
+  }
+
+  const techMap = new Map<string, TechAccumulator>();
 
   tickets.forEach(t => {
-    if (!t.assignedTechnician) return;
-    
-    const tech = techMap.get(t.assignedTechnicianId!) || {
-      id: t.assignedTechnicianId,
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      name: (t as any).assignedTechnician.name,
-      total: 0,
-      completed: 0,
-      revenue: 0,
-    };
-
-    tech.total += 1;
-    if (t.currentStatus === "completed") {
-      tech.completed += 1;
+    const techIds = new Set<string>();
+    if (t.assignedTechnicianId) techIds.add(t.assignedTechnicianId);
+    for (const tt of t.technicians) {
+      techIds.add(tt.userId);
     }
 
-    // Sum revenue from repair invoices
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const revenue = (t as any).repairInvoices.reduce((acc: number, inv: any) => acc + Number(inv.totalAmount), 0);
-    tech.revenue += revenue;
+    const revenue = t.repairInvoices.reduce((acc, inv) => acc + Number(inv.totalAmount), 0);
 
-    techMap.set(t.assignedTechnicianId!, tech);
+    for (const techId of techIds) {
+      const tech = techMap.get(techId) || {
+        id: techId,
+        name: "",
+        total: 0,
+        completed: 0,
+        revenue: 0,
+      };
+
+      // Try to get name from assignedTechnician first, then from junction
+      if (!tech.name) {
+        if (t.assignedTechnician?.id === techId) {
+          tech.name = t.assignedTechnician.name;
+        } else {
+          const jt = t.technicians.find((tt) => tt.userId === techId);
+          if (jt) tech.name = jt.user.name;
+        }
+      }
+
+      tech.total += 1;
+      if (t.currentStatus === "completed") {
+        tech.completed += 1;
+      }
+      tech.revenue += revenue;
+
+      techMap.set(techId, tech);
+    }
   });
 
   return Array.from(techMap.values());

@@ -3,6 +3,7 @@ import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { getAppI18n } from "@/lib/i18n/server";
+import { prisma } from "@/lib/db";
 import { ServiceForm } from "@/features/inventory/components/ServiceForm";
 import { listServiceCategories, listServices } from "@/features/inventory/actions/service.actions";
 import { listDeviceCategories } from "@/features/catalog/actions/catalog.actions";
@@ -17,10 +18,15 @@ export default async function NewServicePage() {
   const storeId = session.storeIds[0];
   if (!storeId) redirect("/dashboard/services");
 
-  const [categories, deviceCategories, packageCandidates] = await Promise.all([
+  const [categories, deviceCategories, packageCandidates, groups] = await Promise.all([
     listServiceCategories({ storeId }),
     listDeviceCategories(),
-    listServices({ storeId }),
+    listServices({ storeId }).then(r => r.data),
+    prisma.customerGroup.findMany({
+      where: { companyId: session.companyId, isArchived: false },
+      orderBy: { name: "asc" },
+      select: { id: true, name: true },
+    }),
   ]);
 
   return (
@@ -29,6 +35,7 @@ export default async function NewServicePage() {
       <div className="max-w-2xl">
         <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
           <ServiceForm
+            groups={groups}
             categories={categories.map((category) => ({
               id: category.id,
               namePath: category.namePath,

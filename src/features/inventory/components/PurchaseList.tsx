@@ -69,7 +69,7 @@ export function PurchaseList({ purchases }: Props) {
                 <span className="text-sm font-semibold text-foreground">
                   {p.invoiceNumber}
                 </span>
-                <span className={cn("text-[10px] font-medium px-1.5 py-0.5 rounded border", s.cls)}>
+                <span className={cn("text-[12px] font-medium px-1.5 py-0.5 rounded border", s.cls)}>
                   {statusLabel}
                 </span>
               </div>

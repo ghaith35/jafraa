@@ -53,7 +53,7 @@ export default async function RepairLabelPage(props: { params: Promise<{ id: str
             <p className="text-xs font-black uppercase tracking-wide text-slate-500">{ticket.store.name}</p>
             <h1 className="font-mono text-2xl font-black">{ticket.ticketNumber}</h1>
           </div>
-          <div className="rounded-xl border border-slate-200 px-2 py-1 text-center text-[10px] font-black uppercase">
+          <div className="rounded-xl border border-slate-200 px-2 py-1 text-center text-[12px] font-black uppercase">
             Repair<br />Label
           </div>
         </div>
@@ -73,7 +73,7 @@ export default async function RepairLabelPage(props: { params: Promise<{ id: str
           <Row label="Échéance" value={ticket.dueAt ? new Intl.DateTimeFormat("fr-DZ", { dateStyle: "short" }).format(ticket.dueAt) : "—"} />
         </div>
 
-        <div className="mt-4 border-t border-slate-200 pt-3 text-center text-[11px] font-semibold text-slate-500">
+        <div className="mt-4 border-t border-slate-200 pt-3 text-center text-[13px] font-semibold text-slate-500">
           {ticket.store.phone ? `Boutique: ${ticket.store.phone} · ` : ""}Coller cette étiquette sur le sachet ou le bon de dépôt.
         </div>
       </section>

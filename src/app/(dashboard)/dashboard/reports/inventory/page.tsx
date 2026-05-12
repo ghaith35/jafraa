@@ -50,7 +50,7 @@ export default async function InventoryReportPage() {
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm text-left">
-            <thead className="bg-muted/50 text-muted-foreground font-medium uppercase text-[10px] tracking-wider">
+            <thead className="bg-muted/50 text-muted-foreground font-medium uppercase text-[12px] tracking-wider">
               <tr>
                 <th className="px-6 py-3">Type</th>
                 <th className="px-6 py-3">Article</th>
@@ -63,7 +63,7 @@ export default async function InventoryReportPage() {
               {data.lowStockItems.map((item) => (
                 <tr key={item.id} className="hover:bg-muted/30 transition-colors">
                   <td className="px-6 py-4">
-                    <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-muted border border-border">
+                    <span className="inline-flex items-center px-2 py-0.5 rounded text-[12px] font-medium bg-muted border border-border">
                       {item.type}
                     </span>
                   </td>
@@ -72,7 +72,7 @@ export default async function InventoryReportPage() {
                   <td className="px-6 py-4 text-right text-muted-foreground">{item.threshold}</td>
                   <td className="px-6 py-4 text-right">
                     <span className={cn(
-                      "inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold",
+                      "inline-flex items-center px-2 py-0.5 rounded-full text-[12px] font-bold",
                       item.qty === 0 ? "bg-destructive/10 text-destructive" : "bg-amber-100 text-amber-800"
                     )}>
                       {item.qty === 0 ? "RUPTURE" : "BAS"}

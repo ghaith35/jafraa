@@ -877,7 +877,13 @@ export function RepairIntakeWizard({
   const [partQuery, setPartQuery] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [customerOptions, setCustomerOptions] = useState(customers);
+  const [newCustomers, setNewCustomers] = useState<RepairWizardCustomer[]>([]);
+  const customerOptions = useMemo(() => {
+    const all = [...newCustomers, ...customers];
+    const seen = new Set<string>();
+    return all.filter(c => { if (seen.has(c.id)) return false; seen.add(c.id); return true; })
+      .sort((a, b) => a.name.localeCompare(b.name));
+  }, [customers, newCustomers]);
   const [showQuickCustomerForm, setShowQuickCustomerForm] = useState(false);
   const [quickCustomerName, setQuickCustomerName] = useState("");
   const [quickCustomerPhone, setQuickCustomerPhone] = useState("");
@@ -913,16 +919,13 @@ export function RepairIntakeWizard({
   const [warrantyDays, setWarrantyDays] = useState("90");
   const [dueAt, setDueAt] = useState("");
   const [assignedTechnicianId, setAssignedTechnicianId] = useState("");
+  const [technicianIds, setTechnicianIds] = useState<string[]>([]);
   const [diagnosisNote, setDiagnosisNote] = useState("");
   const [customerNotes, setCustomerNotes] = useState("");
   const [internalNotes, setInternalNotes] = useState("");
   const [repairCharges, setRepairCharges] = useState("");
   const [rushJob, setRushJob] = useState(false);
   const [initialStatus, setInitialStatus] = useState("received");
-
-  useEffect(() => {
-    setCustomerOptions(customers);
-  }, [customers]);
 
   const selectedCustomer = useWalkInCustomer ? null : customerOptions.find((customer) => customer.id === customerId) ?? null;
   const customerAssets = useWalkInCustomer ? [] : selectedCustomer?.assets ?? [];
@@ -1252,9 +1255,9 @@ export function RepairIntakeWizard({
         return;
       }
 
-      setCustomerOptions((current) => {
-        const withoutDuplicate = current.filter((customer) => customer.id !== result.customer.id);
-        return [result.customer, ...withoutDuplicate].sort((a, b) => a.name.localeCompare(b.name));
+      setNewCustomers((prev) => {
+        const withoutDuplicate = prev.filter((c) => c.id !== result.customer.id);
+        return [result.customer, ...withoutDuplicate];
       });
       setUseWalkInCustomer(false);
       setCustomerId(result.customer.id);
@@ -1304,6 +1307,7 @@ export function RepairIntakeWizard({
           laptopGpu: gpu.trim(),
           priority: rushJob ? "rush" : "normal",
           assignedTechnicianId,
+          technicianIds: technicianIds.filter(Boolean),
           diagnosisNote: diagnosisNote.trim(),
           internalNotes: [internalNotes.trim(), passcode.trim() ? `${copy.passcode}: ${passcode.trim()}` : ""].filter(Boolean).join("\n"),
           customerNotes: customerNotes.trim(),
@@ -1863,12 +1867,60 @@ export function RepairIntakeWizard({
                 <Field label={copy.dueAt} value={dueAt} onChange={setDueAt} type="datetime-local" icon={<CalendarClock className="h-4 w-4" />} />
                 <div>
                   <label className="mb-1.5 block text-sm font-bold text-foreground">{copy.assignedTo}</label>
-                  <select value={assignedTechnicianId} onChange={(event) => setAssignedTechnicianId(event.target.value)} className="h-11 w-full rounded-xl border border-border bg-card px-3 text-sm outline-none transition focus:border-primary/60 focus:ring-4 focus:ring-primary/10">
-                    <option value="">{copy.doNotAssign}</option>
-                    {technicians.map((technician) => (
-                      <option key={technician.id} value={technician.id}>{technician.name}</option>
-                    ))}
-                  </select>
+                  <div className="space-y-1.5 rounded-xl border border-border bg-card p-3">
+                    {technicians.length === 0 && (
+                      <p className="text-sm text-muted-foreground">Aucun technicien disponible</p>
+                    )}
+                    {technicians.map((technician) => {
+                      const isSelected = technicianIds.includes(technician.id);
+                      const isLead = assignedTechnicianId === technician.id;
+                      return (
+                        <div
+                          key={technician.id}
+                          className={`flex cursor-pointer items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition hover:bg-muted/60 ${isSelected ? "bg-primary/5 font-medium" : ""}`}
+                          onClick={() => {
+                            if (isSelected) {
+                              const next = technicianIds.filter((id) => id !== technician.id);
+                              setTechnicianIds(next);
+                              if (isLead) setAssignedTechnicianId(next[0] ?? "");
+                            } else {
+                              const next = [...technicianIds, technician.id];
+                              setTechnicianIds(next);
+                              if (!assignedTechnicianId) setAssignedTechnicianId(technician.id);
+                            }
+                          }}
+                        >
+                          <input
+                            type="checkbox"
+                            checked={isSelected}
+                            readOnly
+                            className="h-4 w-4 accent-primary rounded pointer-events-none"
+                          />
+                          <span className="flex-1">{technician.name}</span>
+                          {isLead && (
+                            <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-semibold text-primary">
+                              Lead
+                            </span>
+                          )}
+                          {isSelected && !isLead && (
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setAssignedTechnicianId(technician.id);
+                              }}
+                              className="rounded-full px-2 py-0.5 text-[11px] font-medium text-muted-foreground hover:bg-muted transition-colors"
+                            >
+                              Définir lead
+                            </button>
+                          )}
+                        </div>
+                      );
+                    })}
+                    {technicianIds.length === 0 && (
+                      <p className="text-[11px] text-muted-foreground">Aucun technicien sélectionné</p>
+                    )}
+                  </div>
                 </div>
                 <div>
                   <label className="mb-1.5 block text-sm font-bold text-foreground">{copy.initialStatus}</label>

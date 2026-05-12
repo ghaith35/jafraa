@@ -224,7 +224,7 @@ export function PurchaseForm({ suppliers, products, parts }: Props) {
                     </select>
                   )}
                   {form.formState.errors.lines?.[index]?.productId && (
-                     <p className="mt-1 text-[10px] text-destructive">{form.formState.errors.lines[index]?.productId?.message}</p>
+                     <p className="mt-1 text-[12px] text-destructive">{form.formState.errors.lines[index]?.productId?.message}</p>
                   )}
                 </div>
 

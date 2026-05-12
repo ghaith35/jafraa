@@ -54,12 +54,10 @@ function applyTheme(theme: Theme, persist = true, notify = true) {
 }
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>(resolveTheme);
 
   useEffect(() => {
-    const nextTheme = resolveTheme();
-    setTheme(nextTheme);
-    applyTheme(nextTheme, false, false);
+    applyTheme(theme, false, false);
 
     const media = window.matchMedia("(prefers-color-scheme: dark)");
 

@@ -4,19 +4,25 @@ import { Plus } from "lucide-react";
 import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
+import { Pagination } from "@/components/shared/Pagination";
 import { listPurchaseInvoices } from "@/features/inventory/actions/purchase.actions";
 import { PurchaseList } from "@/features/inventory/components/PurchaseList";
 import { getAppI18n } from "@/lib/i18n/server";
 
 export const metadata = { title: "Achats — REPAIRE" };
 
-export default async function PurchasesPage() {
+export default async function PurchasesPage(props: {
+  searchParams: Promise<{ page?: string }>;
+}) {
   const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "inventory:manage")) redirect("/dashboard");
 
-  const purchases = await listPurchaseInvoices();
+  const sp = await props.searchParams;
+  const page = Number(sp.page) || 1;
+  const perPage = 50;
+  const result = await listPurchaseInvoices({ page, perPage });
 
   return (
     <div className="max-w-screen-xl mx-auto space-y-6">
@@ -39,8 +45,9 @@ export default async function PurchasesPage() {
       </div>
 
       <Suspense fallback={<div className="h-20 bg-muted animate-pulse rounded-md" />}>
-        <PurchaseList purchases={purchases} />
+        <PurchaseList purchases={result.data} />
       </Suspense>
+      <Pagination page={result.page} totalPages={result.totalPages} total={result.total} perPage={result.perPage} />
     </div>
   );
 }

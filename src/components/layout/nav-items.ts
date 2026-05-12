@@ -12,12 +12,14 @@ import {
   PackageSearch,
   History,
   FileText,
+  Archive,
   Smartphone,
-  MonitorSmartphone,
   Sparkles,
   Laptop,
   UnlockKeyhole,
   Tags,
+  Wallet,
+  DollarSign,
   type LucideIcon,
 } from "lucide-react";
 import type { UserRole } from "@prisma/client";
@@ -59,15 +61,12 @@ const ALL_NAV_SECTIONS: NavSection[] = [
     items: [
       item("/dashboard", "nav.dashboard", "Tableau de bord", LayoutDashboard, null),
       item("/dashboard/pos", "nav.pos", "Point de vente", ShoppingCart, "payments:manage"),
-      item("/dashboard/repairs", "nav.repairs", "Réparations", Wrench, "tickets:view"),
-      item("/dashboard/customers", "nav.customers", "Clients", Users, "customers:view"),
-      item("/dashboard/devices", "nav.devices", "Appareils", MonitorSmartphone, "customers:view"),
-    ],
-  },
-  {
-    titleKey: "nav.section.inventory",
-    fallbackTitle: "Inventaire",
-    items: [
+      item("/dashboard/customers", "nav.customers", "Clients", Users, "customers:view", {
+        children: [
+          item("/dashboard/customers", "nav.customers.list", "Liste", Users, "customers:view"),
+          item("/dashboard/customers/groups", "nav.customers.groups", "الفئات", Tags, "customers:view"),
+        ],
+      }),
       item("/dashboard/inventory", "nav.inventory", "Inventaire", Package, "inventory:view", {
         children: [
           item("/dashboard/inventory", "nav.inventory.overview", "Vue d’ensemble", PackageSearch, "inventory:view"),
@@ -80,12 +79,6 @@ const ALL_NAV_SECTIONS: NavSection[] = [
           item("/dashboard/inventory/purchases", "nav.inventory.purchaseInvoices", "Factures d’achat", FileText, "inventory:manage"),
         ],
       }),
-    ],
-  },
-  {
-    titleKey: "nav.section.services",
-    fallbackTitle: "Services",
-    items: [
       item("/dashboard/services", "nav.services", "Services", Sparkles, "inventory:view", {
         children: [
           item("/dashboard/services", "nav.services.all", "Tous les services", Sparkles, "inventory:view"),
@@ -98,10 +91,27 @@ const ALL_NAV_SECTIONS: NavSection[] = [
     ],
   },
   {
+    titleKey: "nav.section.workshop",
+    fallbackTitle: "Workshop",
+    items: [
+      item("/dashboard/repairs", "nav.repairs", "Réparations", Wrench, "tickets:view"),
+      item("/dashboard/technician", "nav.technician", "Technicien", ClipboardList, "tickets:view"),
+      item("/dashboard/technician/archived", "nav.archived", "Archivé", Archive, "tickets:view"),
+    ],
+  },
+  {
+    titleKey: "nav.section.cash",
+    fallbackTitle: "Caisse",
+    items: [
+      item("/dashboard/pos/cash-register", "nav.cashRegister", "Caisse", DollarSign, "payments:manage"),
+    ],
+  },
+  {
     titleKey: "nav.section.admin",
     fallbackTitle: "Admin",
     items: [
       item("/dashboard/reports", "nav.reports", "Rapports", BarChart2, "reports:view"),
+      item("/dashboard/expenses", "nav.expenses", "Dépenses", Wallet, "expenses:view"),
       item("/dashboard/settings", "nav.settings", "Paramètres", Settings, "settings:manage"),
     ],
   },

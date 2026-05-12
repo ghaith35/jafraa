@@ -66,13 +66,13 @@ export default async function SalesReportPage({
                     className="w-full bg-primary/20 hover:bg-primary/40 transition-all rounded-t-sm"
                     style={{ height: `${height}%` }}
                   >
-                    <div className="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 -translate-x-1/2 bg-popover text-popover-foreground text-[10px] px-1.5 py-0.5 rounded border border-border shadow-md whitespace-nowrap z-10">
+                    <div className="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 -translate-x-1/2 bg-popover text-popover-foreground text-[12px] px-1.5 py-0.5 rounded border border-border shadow-md whitespace-nowrap z-10">
                       {d.value.toLocaleString()} DZD
                     </div>
                   </div>
                   {/* Show date for every 7th day or first/last */}
                   {(i % 7 === 0 || i === data.chartData.length - 1) && (
-                    <span className="text-[10px] text-muted-foreground rotate-45 mt-2 origin-left whitespace-nowrap">
+                    <span className="text-[12px] text-muted-foreground rotate-45 mt-2 origin-left whitespace-nowrap">
                       {format(parseISO(d.date), "dd/MM")}
                     </span>
                   )}

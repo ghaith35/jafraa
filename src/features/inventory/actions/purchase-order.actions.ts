@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
+import { paginate, type PaginatedResult } from "@/lib/pagination";
 
 export type PurchaseOrderLineInput = {
   itemType: "product" | "part" | "custom";
@@ -41,24 +42,33 @@ async function nextPurchaseOrderNumber(storeId: string) {
   return `${prefix}-PO-${stamp}-${String(count + 1).padStart(4, "0")}`;
 }
 
-export async function listPurchaseOrders() {
+export async function listPurchaseOrders(page = 1, perPage = 50) {
   const session = await ensureInventoryManager();
-  if (!session) return [];
+  if (!session) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
 
-  return safePurchaseOrderQuery(
-    () =>
-      prisma.purchaseOrder.findMany({
-        where: { storeId: session.storeId },
-        orderBy: { createdAt: "desc" },
-        take: 100,
-        include: {
-          supplier: { select: { name: true, phone: true } },
-          createdBy: { select: { name: true } },
-          lines: true,
-        },
-      }),
-    []
+  const result = await safePurchaseOrderQuery(
+    async () => {
+      const where = { storeId: session.storeId };
+      const [data, total] = await Promise.all([
+        prisma.purchaseOrder.findMany({
+          where,
+          skip: (page - 1) * perPage,
+          take: perPage,
+          orderBy: { createdAt: "desc" },
+          include: {
+            supplier: { select: { name: true, phone: true } },
+            createdBy: { select: { name: true } },
+            lines: true,
+          },
+        }),
+        prisma.purchaseOrder.count({ where }),
+      ]);
+      return { data, total };
+    },
+    { data: [], total: 0 }
   );
+
+  return paginate(result.data, result.total, page, perPage);
 }
 
 export async function getPurchaseOrder(orderId: string) {

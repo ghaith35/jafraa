@@ -338,7 +338,7 @@ export function InventoryCategoryManager({ categories, deviceCategories, canMana
                         <div className="flex items-center gap-2">
                           <span
                             className={cn(
-                              "rounded-full border px-2 py-0.5 text-[11px]",
+                              "rounded-full border px-2 py-0.5 text-[13px]",
                               category.isActive
                                 ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300"
                                 : "border-border bg-muted text-muted-foreground"
@@ -346,11 +346,11 @@ export function InventoryCategoryManager({ categories, deviceCategories, canMana
                           >
                             {category.isActive ? t("inventory.active") : t("inventory.inactive")}
                           </span>
-                          <span className="rounded-full bg-muted px-2 py-0.5 text-[11px] text-muted-foreground">
+                          <span className="rounded-full bg-muted px-2 py-0.5 text-[13px] text-muted-foreground">
                             {t("inventory.categoryAssignedCount", { count: assignedCount })}
                           </span>
                           {category.deviceCategoryNameFr ? (
-                            <span className="rounded-full bg-muted px-2 py-0.5 text-[11px] text-muted-foreground">
+                            <span className="rounded-full bg-muted px-2 py-0.5 text-[13px] text-muted-foreground">
                               {category.deviceCategoryNameFr}
                             </span>
                           ) : null}

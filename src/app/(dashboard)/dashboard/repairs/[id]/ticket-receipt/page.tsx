@@ -26,20 +26,20 @@ export default async function RepairTicketReceiptPage({ params }: { params: { id
         <div className="grid grid-cols-2 gap-8 my-10">
           <div className="space-y-4">
               <div>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Appareil</p>
+              <p className="text-[12px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Appareil</p>
               <p className="font-bold text-xl">{deviceName}</p>
               <p className="text-sm font-mono text-muted-foreground">{ticket.imeiSerial || "IMEI/SN non spécifié"}</p>
             </div>
             
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Détails</p>
+              <p className="text-[12px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Détails</p>
               <p className="text-sm">{ticket.deviceColor || ""} {ticket.deviceStorageRam || ""}</p>
             </div>
           </div>
 
           <div className="space-y-4">
             <div className="rounded-xl border p-4 bg-muted/20">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Problèmes signalés</p>
+              <p className="text-[12px] font-bold uppercase tracking-widest text-muted-foreground mb-1">Problèmes signalés</p>
               <ul className="list-disc list-inside text-sm space-y-1">
                 {ticket.problems.map((p, i) => (
                   <li key={i}>{p.problemText}</li>
@@ -48,7 +48,7 @@ export default async function RepairTicketReceiptPage({ params }: { params: { id
             </div>
 
             <div className="rounded-xl border p-4 border-amber-200 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-900">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-amber-700 dark:text-amber-500 mb-1">Note client</p>
+              <p className="text-[12px] font-bold uppercase tracking-widest text-amber-700 dark:text-amber-500 mb-1">Note client</p>
               <p className="text-xs italic">{ticket.customerNotes || "Aucune note particulière"}</p>
             </div>
           </div>

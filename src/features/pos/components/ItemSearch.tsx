@@ -117,7 +117,7 @@ export function ItemSearch({ onAddToCart, cartLines }: ItemSearchProps) {
                   <div className="flex items-center gap-2">
                     <p className="font-medium text-sm truncate">{item.name}</p>
                     <span
-                      className="inline-flex shrink-0 items-center rounded px-1.5 py-0.5 text-[10px] font-semibold"
+                      className="inline-flex shrink-0 items-center rounded px-1.5 py-0.5 text-[12px] font-semibold"
                       style={{ backgroundColor: config.bg, color: config.fg }}
                     >
                       {config.label}

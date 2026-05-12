@@ -5,6 +5,7 @@ import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
+import { paginate, type PaginatedResult } from "@/lib/pagination";
 import {
   createPartSchema,
   type CreatePartInput,
@@ -31,13 +32,18 @@ export async function listParts(opts?: {
   q?: string;
   showArchived?: boolean;
   recoveredOnly?: boolean;
+  page?: number;
+  perPage?: number;
 }) {
   const session = await getSession();
-  if (!session) return [];
+  if (!session) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
 
   const storeId = opts?.storeId ?? session.storeIds[0];
-  if (!storeId) return [];
+  if (!storeId) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
   const allowedScopes = await getStoreInventoryDeviceScopes(storeId);
+
+  const page = opts?.page ?? 1;
+  const perPage = opts?.perPage ?? 50;
 
   const searchFilter: Prisma.PartWhereInput | undefined = opts?.q
     ? {
@@ -74,36 +80,44 @@ export async function listParts(opts?: {
   if (searchFilter) andFilters.push(searchFilter);
   if (recoveredFilter) andFilters.push(recoveredFilter);
 
-  const parts = await prisma.part.findMany({
-    where: {
-      storeId,
-      isArchived: opts?.showArchived ? undefined : false,
-      ...(andFilters.length ? { AND: andFilters } : {}),
-    },
-    include: {
-      category: { select: { name: true } },
-      compatibleCategory: { select: { nameFr: true, key: true } },
-      compatibleBrand: { select: { name: true } },
-      compatibleFamily: { select: { name: true } },
-    },
-    orderBy: { name: "asc" },
-    take: 200,
-  });
+  const where: Prisma.PartWhereInput = {
+    storeId,
+    isArchived: opts?.showArchived ? undefined : false,
+    ...(andFilters.length ? { AND: andFilters } : {}),
+  };
+
+  const [parts, total] = await Promise.all([
+    prisma.part.findMany({
+      where,
+      skip: (page - 1) * perPage,
+      take: perPage,
+      include: {
+        category: { select: { name: true } },
+        compatibleCategory: { select: { nameFr: true, key: true } },
+        compatibleBrand: { select: { name: true } },
+        compatibleFamily: { select: { name: true } },
+      },
+      orderBy: { name: "asc" },
+    }),
+    prisma.part.count({ where }),
+  ]);
 
   const mapped = parts.map(p => ({
     ...p,
     sellingPrice: Number(p.sellingPrice),
   }));
 
-  if (!allowedScopes.length) return mapped;
+  const scoped = !allowedScopes.length
+    ? mapped
+    : mapped.filter((part) => {
+        if (isDeviceCategoryKeyInScopes(part.compatibleCategory?.key, allowedScopes)) return true;
+        return isInventoryCategoryAllowedByScope(
+          { name: part.category?.name, deviceCategoryKey: null },
+          allowedScopes
+        );
+      });
 
-  return mapped.filter((part) => {
-    if (isDeviceCategoryKeyInScopes(part.compatibleCategory?.key, allowedScopes)) return true;
-    return isInventoryCategoryAllowedByScope(
-      { name: part.category?.name, deviceCategoryKey: null },
-      allowedScopes
-    );
-  });
+  return paginate(scoped, total, page, perPage);
 }
 
 // ─── Get one ──────────────────────────────────────────────────────────────────

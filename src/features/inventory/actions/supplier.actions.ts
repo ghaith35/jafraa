@@ -1,9 +1,11 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
+import { paginate, type PaginatedResult } from "@/lib/pagination";
 import {
   createSupplierSchema,
   updateSupplierSchema,
@@ -19,34 +21,51 @@ export async function listSuppliers(opts?: {
   storeId?: string;
   q?: string;
   showArchived?: boolean;
+  page?: number;
+  perPage?: number;
 }) {
   const session = await getSession();
-  if (!session) return [];
-  if (!hasPermission(session.role, "inventory:manage")) return [];
+  if (!session) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
+  if (!hasPermission(session.role, "inventory:manage")) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
 
   const storeId = opts?.storeId ?? session.storeIds[0];
-  if (!storeId) return [];
+  if (!storeId) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
 
-  const suppliers = await prisma.supplier.findMany({
-    where: {
-      storeId,
-      isArchived: opts?.showArchived ? undefined : false,
-      ...(opts?.q
-        ? {
-            OR: [
-              { name: { contains: opts.q, mode: "insensitive" } },
-              { phone: { contains: opts.q, mode: "insensitive" } },
-            ],
-          }
-        : {}),
-    },
-    orderBy: { name: "asc" },
-  });
+  const page = opts?.page ?? 1;
+  const perPage = opts?.perPage ?? 50;
 
-  return suppliers.map(s => ({
-    ...s,
-    balance: Number(s.balance),
-  }));
+  const where: Prisma.SupplierWhereInput = {
+    storeId,
+    isArchived: opts?.showArchived ? undefined : false,
+    ...(opts?.q
+      ? {
+          OR: [
+            { name: { contains: opts.q, mode: "insensitive" as const } },
+            { phone: { contains: opts.q, mode: "insensitive" as const } },
+          ],
+        }
+      : {}),
+  };
+
+  const [suppliers, total] = await Promise.all([
+    prisma.supplier.findMany({
+      where,
+      skip: (page - 1) * perPage,
+      take: perPage,
+      orderBy: { name: "asc" },
+    }),
+    prisma.supplier.count({ where }),
+  ]);
+
+  return paginate(
+    suppliers.map(s => ({
+      ...s,
+      balance: Number(s.balance),
+    })),
+    total,
+    page,
+    perPage
+  );
 }
 
 // ─── Get one ──────────────────────────────────────────────────────────────────

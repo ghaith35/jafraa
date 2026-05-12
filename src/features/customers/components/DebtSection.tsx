@@ -360,7 +360,7 @@ export function DebtSection({
                       </td>
                       <td className="px-4 py-3">
                         <span className={cn(
-                          "inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold border",
+                          "inline-flex items-center px-2 py-0.5 rounded text-[13px] font-semibold border",
                           entry.direction === "debit"
                             ? "bg-red-50 text-red-800 border-red-200 dark:bg-red-950/30 dark:text-red-300 dark:border-red-800"
                             : "bg-emerald-50 text-emerald-800 border-emerald-200 dark:bg-emerald-950/30 dark:text-emerald-300 dark:border-emerald-800"

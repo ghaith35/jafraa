@@ -17,6 +17,7 @@ export async function getPosSaleDocument(saleId: string) {
     where: {
       id: saleId,
       storeId,
+      companyId: session.companyId,
     },
     include: {
       store: true,
@@ -55,6 +56,7 @@ export async function getRepairInvoiceDocument(invoiceId: string) {
     where: {
       id: invoiceId,
       storeId,
+      companyId: session.companyId,
     },
     include: {
       store: true,
@@ -91,6 +93,7 @@ export async function getRepairTicketDocument(ticketId: string) {
     where: {
       id: ticketId,
       storeId,
+      companyId: session.companyId,
     },
     include: {
       store: true,
@@ -122,6 +125,7 @@ export async function getEstimateDocument(estimateId: string) {
     where: {
       id: estimateId,
       storeId,
+      companyId: session.companyId,
     },
     select: {
       id: true,
@@ -170,6 +174,7 @@ export async function getRefundDocument(refundId: string) {
     where: {
       id: refundId,
       storeId,
+      companyId: session.companyId,
     },
     include: {
       store: true,
@@ -199,6 +204,7 @@ export async function getCashSessionDocument(sessionId: string) {
     where: {
       id: sessionId,
       storeId,
+      companyId: session.companyId,
     },
     include: {
       store: true,
