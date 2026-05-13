@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/shared/PageHeader";
 import {
   getCatalogPageData,
   listFamiliesByBrand,
+  listModelsByFamily,
 } from "@/features/catalog/actions/catalog.actions";
 import { CatalogBrowser } from "@/features/catalog/components/CatalogBrowser";
 import { getAppI18n } from "@/lib/i18n/server";
@@ -11,7 +12,7 @@ import { getAppI18n } from "@/lib/i18n/server";
 export const metadata = { title: "Catalogue des appareils" };
 
 export default async function CatalogPage(props: {
-  searchParams: Promise<{ category?: string; brand?: string }>;
+  searchParams: Promise<{ category?: string; brand?: string; family?: string }>;
 }) {
   const { t } = await getAppI18n();
   const session = await getSession();
@@ -23,9 +24,10 @@ export default async function CatalogPage(props: {
     { companyId: session.companyId, storeId: session.storeIds[0] }
   );
 
-  // Load families for selected brand if any
   let selectedBrand: (typeof brands)[number] | null = null;
   let families: Awaited<ReturnType<typeof listFamiliesByBrand>> = [];
+  let selectedFamily: (typeof families)[number] | null = null;
+  let models: Awaited<ReturnType<typeof listModelsByFamily>> = [];
 
   if (sp.brand) {
     selectedBrand = brands.find((b) => b.id === sp.brand) ?? null;
@@ -34,6 +36,12 @@ export default async function CatalogPage(props: {
         companyId: session.companyId,
         storeId: session.storeIds[0],
       });
+      if (sp.family) {
+        selectedFamily = families.find((f) => f.id === sp.family) ?? null;
+        if (selectedFamily) {
+          models = await listModelsByFamily(selectedFamily.id);
+        }
+      }
     }
   }
 
@@ -49,6 +57,8 @@ export default async function CatalogPage(props: {
         brands={brands}
         selectedBrandId={selectedBrand?.id ?? null}
         families={families}
+        selectedFamilyId={selectedFamily?.id ?? null}
+        models={models}
         userRole={session.role}
       />
     </>

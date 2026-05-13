@@ -157,7 +157,6 @@ export async function createPurchaseInvoice(
   }
 
   revalidatePath("/dashboard/inventory/purchases");
-  revalidatePath("/dashboard/inventory/stock-movements");
   revalidatePath("/dashboard/inventory");
   return { id: newInvoiceId };
 }

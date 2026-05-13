@@ -657,6 +657,7 @@ model DeviceModelFamily {
   updatedAt       DateTime @updatedAt
 
   brand          DeviceBrand     @relation(fields: [brandId], references: [id])
+  deviceModels   DeviceModel[]
   customerAssets CustomerAsset[]
   compatibleParts Part[]
   repairTickets  RepairTicket[]
@@ -665,6 +666,25 @@ model DeviceModelFamily {
   @@unique([brandId, companyId, storeId, name])
   @@index([brandId, isActive, sortOrder])
   @@map("device_model_families")
+}
+
+model DeviceModel {
+  id          String   @id @default(cuid())
+  familyId    String
+  name        String
+  releaseYear Int?
+  imageUrl    String?
+  specs       Json?    @default("{}")
+  variants    Json?    @default("[]")
+  sortOrder   Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  family DeviceModelFamily @relation(fields: [familyId], references: [id])
+
+  @@index([familyId, isActive])
+  @@map("device_models")
 }
 
 

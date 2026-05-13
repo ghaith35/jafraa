@@ -1,0 +1,2631 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "HP",
+      "logo_url": "https://logo.clearbit.com/hp.com",
+      "families": [
+        {
+          "name": "ProBook",
+          "models": [
+            {
+              "name": "HP ProBook 440 G8",
+              "release_year": 2021,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS, 1920×1080, anti-glare",
+                "processor": "Intel Core i5-1135G7 / Intel Core i5-1145G7 / Intel Core i7-1165G7",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "45 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.38 kg",
+                "dimensions": "32.19 × 21.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 440 G8 Intel Core i5-1135G7 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 440 G8 Intel Core i5-1135G7 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 440 G8 Intel Core i7-1165G7 32 GB 1 TB Asteroid Silver",
+                  "processor": "Intel Core i7-1165G7",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 440 G9",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS, 1920×1080, anti-glare",
+                "processor": "Intel Core i5-1235U / Intel Core i5-1245U / Intel Core i7-1255U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "45 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.38 kg",
+                "dimensions": "32.19 × 21.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 440 G9 Intel Core i5-1235U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 440 G9 Intel Core i5-1235U 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 440 G9 Intel Core i7-1255U 32 GB 1 TB Asteroid Silver",
+                  "processor": "Intel Core i7-1255U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 440 G10",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS, 1920×1080, anti-glare",
+                "processor": "Intel Core i5-1335U / Intel Core i5-1345U / Intel Core i7-1355U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "51 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.38 kg",
+                "dimensions": "32.19 × 21.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 440 G10 Intel Core i5-1335U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 440 G10 Intel Core i5-1335U 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 440 G10 Intel Core i7-1355U 32 GB 1 TB Asteroid Silver",
+                  "processor": "Intel Core i7-1355U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 440 G11",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "Intel Core Ultra 5 125U / Intel Core Ultra 7 155U / Intel Core Ultra 7 165U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.38 kg",
+                "dimensions": "32.19 × 21.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 440 G11 Intel Core Ultra 5 125U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 440 G11 Intel Core Ultra 5 125U 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 440 G11 Intel Core Ultra 7 165U 32 GB 1 TB Asteroid Silver",
+                  "processor": "Intel Core Ultra 7 165U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 450 G8",
+              "release_year": 2021,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" IPS, 1920×1080, anti-glare",
+                "processor": "Intel Core i5-1135G7 / Intel Core i5-1145G7 / Intel Core i7-1165G7",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "45 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.74 kg",
+                "dimensions": "35.94 × 23.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 450 G8 Intel Core i5-1135G7 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 450 G8 Intel Core i5-1135G7 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 450 G8 Intel Core i7-1165G7 32 GB 1 TB Asteroid Silver",
+                  "processor": "Intel Core i7-1165G7",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 450 G9",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" IPS, 1920×1080, anti-glare",
+                "processor": "Intel Core i5-1235U / Intel Core i5-1245U / Intel Core i7-1255U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "45 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.74 kg",
+                "dimensions": "35.94 × 23.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 450 G9 Intel Core i5-1235U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 450 G9 Intel Core i5-1235U 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 450 G9 Intel Core i7-1255U 32 GB 1 TB Asteroid Silver",
+                  "processor": "Intel Core i7-1255U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 450 G10",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" IPS, 1920×1080, anti-glare",
+                "processor": "Intel Core i5-1335U / Intel Core i5-1345U / Intel Core i7-1355U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "51 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.74 kg",
+                "dimensions": "35.94 × 23.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 450 G10 Intel Core i5-1335U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 450 G10 Intel Core i5-1335U 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 450 G10 Intel Core i7-1355U 32 GB 1 TB Asteroid Silver",
+                  "processor": "Intel Core i7-1355U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 450 G11",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" FHD IPS, 1920×1080, anti-glare",
+                "processor": "Intel Core Ultra 5 125U / Intel Core Ultra 7 155U / Intel Core Ultra 7 165U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.74 kg",
+                "dimensions": "35.94 × 23.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 450 G11 Intel Core Ultra 5 125U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 450 G11 Intel Core Ultra 5 125U 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 450 G11 Intel Core Ultra 7 165U 32 GB 1 TB Asteroid Silver",
+                  "processor": "Intel Core Ultra 7 165U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 445 G8",
+              "release_year": 2021,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS, 1920×1080, anti-glare",
+                "processor": "AMD Ryzen 5 5600U / AMD Ryzen 7 5800U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "45 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.38 kg",
+                "dimensions": "32.19 × 21.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 445 G8 AMD Ryzen 5 5600U 8 GB 256 GB Natural Silver",
+                  "processor": "AMD Ryzen 5 5600U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 445 G8 AMD Ryzen 5 5600U 8 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 5 5600U",
+                  "ram": "8 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                },
+                {
+                  "name": "HP ProBook 445 G8 AMD Ryzen 7 5800U 32 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 7 5800U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 445 G9",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS, 1920×1080, anti-glare",
+                "processor": "AMD Ryzen 5 5625U / AMD Ryzen 7 5825U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "45 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.38 kg",
+                "dimensions": "32.19 × 21.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 445 G9 AMD Ryzen 5 5625U 8 GB 256 GB Natural Silver",
+                  "processor": "AMD Ryzen 5 5625U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 445 G9 AMD Ryzen 5 5625U 8 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 5 5625U",
+                  "ram": "8 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                },
+                {
+                  "name": "HP ProBook 445 G9 AMD Ryzen 7 5825U 32 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 7 5825U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 445 G10",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS, 1920×1080, anti-glare",
+                "processor": "AMD Ryzen 5 7530U / AMD Ryzen 7 7730U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "51 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.38 kg",
+                "dimensions": "32.19 × 21.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 445 G10 AMD Ryzen 5 7530U 8 GB 256 GB Natural Silver",
+                  "processor": "AMD Ryzen 5 7530U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 445 G10 AMD Ryzen 5 7530U 8 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 5 7530U",
+                  "ram": "8 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                },
+                {
+                  "name": "HP ProBook 445 G10 AMD Ryzen 7 7730U 32 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 7 7730U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 445 G11",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS, 1920×1080, anti-glare",
+                "processor": "AMD Ryzen 5 8540U / AMD Ryzen 7 8840U / AMD Ryzen 7 8840HS",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.38 kg",
+                "dimensions": "32.19 × 21.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 445 G11 AMD Ryzen 5 8540U 8 GB 256 GB Natural Silver",
+                  "processor": "AMD Ryzen 5 8540U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 445 G11 AMD Ryzen 5 8540U 16 GB 512 GB Natural Silver",
+                  "processor": "AMD Ryzen 5 8540U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 445 G11 AMD Ryzen 7 8840HS 32 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 7 8840HS",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 455 G8",
+              "release_year": 2021,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" IPS, 1920×1080, anti-glare",
+                "processor": "AMD Ryzen 5 5600U / AMD Ryzen 7 5800U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "45 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.74 kg",
+                "dimensions": "35.94 × 23.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 455 G8 AMD Ryzen 5 5600U 8 GB 256 GB Natural Silver",
+                  "processor": "AMD Ryzen 5 5600U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 455 G8 AMD Ryzen 5 5600U 8 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 5 5600U",
+                  "ram": "8 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                },
+                {
+                  "name": "HP ProBook 455 G8 AMD Ryzen 7 5800U 32 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 7 5800U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 455 G9",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" IPS, 1920×1080, anti-glare",
+                "processor": "AMD Ryzen 5 5625U / AMD Ryzen 7 5825U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "45 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.74 kg",
+                "dimensions": "35.94 × 23.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 455 G9 AMD Ryzen 5 5625U 8 GB 256 GB Natural Silver",
+                  "processor": "AMD Ryzen 5 5625U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 455 G9 AMD Ryzen 5 5625U 8 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 5 5625U",
+                  "ram": "8 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                },
+                {
+                  "name": "HP ProBook 455 G9 AMD Ryzen 7 5825U 32 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 7 5825U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 455 G10",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" IPS, 1920×1080, anti-glare",
+                "processor": "AMD Ryzen 5 7530U / AMD Ryzen 7 7730U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "51 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.74 kg",
+                "dimensions": "35.94 × 23.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 455 G10 AMD Ryzen 5 7530U 8 GB 256 GB Natural Silver",
+                  "processor": "AMD Ryzen 5 7530U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 455 G10 AMD Ryzen 5 7530U 8 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 5 7530U",
+                  "ram": "8 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                },
+                {
+                  "name": "HP ProBook 455 G10 AMD Ryzen 7 7730U 32 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 7 7730U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP ProBook 455 G11",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" IPS, 1920×1080, anti-glare",
+                "processor": "AMD Ryzen 5 8540U / AMD Ryzen 7 8840U / AMD Ryzen 7 8840HS",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.74 kg",
+                "dimensions": "35.94 × 23.39 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP ProBook 455 G11 AMD Ryzen 5 8540U 8 GB 256 GB Natural Silver",
+                  "processor": "AMD Ryzen 5 8540U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 455 G11 AMD Ryzen 5 8540U 16 GB 512 GB Natural Silver",
+                  "processor": "AMD Ryzen 5 8540U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP ProBook 455 G11 AMD Ryzen 7 8840HS 32 GB 1 TB Asteroid Silver",
+                  "processor": "AMD Ryzen 7 8840HS",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Asteroid Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EliteBook",
+          "models": [
+            {
+              "name": "HP EliteBook 830 G8",
+              "release_year": 2021,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "13.3\" IPS, 1920×1080, anti-glare",
+                "processor": "Intel Core i5-1135G7 / Intel Core i5-1145G7 / Intel Core i7-1165G7",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "53 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.24 kg",
+                "dimensions": "30.78 × 20.46 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 830 G8 Intel Core i5-1135G7 8 GB 256 GB Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 830 G8 Intel Core i5-1135G7 32 GB 1 TB Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 830 G8 Intel Core i7-1165G7 32 GB 1 TB Silver",
+                  "processor": "Intel Core i7-1165G7",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 830 G9",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "13.3\" IPS, 1920×1200, anti-glare",
+                "processor": "Intel Core i5-1235U / Intel Core i5-1245U / Intel Core i7-1255U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "53 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.24 kg",
+                "dimensions": "30.78 × 20.46 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 830 G9 Intel Core i5-1235U 8 GB 256 GB Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 830 G9 Intel Core i5-1235U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 830 G9 Intel Core i7-1255U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i7-1255U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 830 G10",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "13.3\" IPS, 1920×1200, anti-glare",
+                "processor": "Intel Core i5-1335U / Intel Core i5-1345U / Intel Core i7-1355U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "53 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.24 kg",
+                "dimensions": "30.78 × 20.46 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 830 G10 Intel Core i5-1335U 8 GB 256 GB Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 830 G10 Intel Core i5-1335U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 830 G10 Intel Core i7-1355U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i7-1355U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 830 G11",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "13.3\" IPS, 1920×1200, anti-glare",
+                "processor": "Intel Core Ultra 5 125U / Intel Core Ultra 7 155U / Intel Core Ultra 7 165U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "53 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.24 kg",
+                "dimensions": "30.78 × 20.46 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 830 G11 Intel Core Ultra 5 125U 8 GB 256 GB Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 830 G11 Intel Core Ultra 5 125U 32 GB 1 TB Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 830 G11 Intel Core Ultra 7 165U 32 GB 1 TB Silver",
+                  "processor": "Intel Core Ultra 7 165U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 840 G8",
+              "release_year": 2021,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS, 1920×1080, anti-glare",
+                "processor": "Intel Core i5-1135G7 / Intel Core i5-1145G7 / Intel Core i7-1165G7",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "51 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.36 kg",
+                "dimensions": "31.56 × 22.43 × 1.92 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 840 G8 Intel Core i5-1135G7 8 GB 256 GB Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 840 G8 Intel Core i5-1135G7 32 GB 1 TB Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 840 G8 Intel Core i7-1165G7 32 GB 1 TB Silver",
+                  "processor": "Intel Core i7-1165G7",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 840 G9",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "Intel Core i5-1235U / Intel Core i5-1245U / Intel Core i7-1255U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "51 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.36 kg",
+                "dimensions": "31.56 × 22.43 × 1.92 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 840 G9 Intel Core i5-1235U 8 GB 256 GB Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 840 G9 Intel Core i5-1235U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 840 G9 Intel Core i7-1255U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i7-1255U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 840 G10",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "Intel Core i5-1335U / Intel Core i5-1345U / Intel Core i7-1355U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.36 kg",
+                "dimensions": "31.56 × 22.43 × 1.92 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 840 G10 Intel Core i5-1335U 8 GB 256 GB Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 840 G10 Intel Core i5-1335U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 840 G10 Intel Core i7-1355U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i7-1355U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 840 G11",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "Intel Core Ultra 5 125U / Intel Core Ultra 7 155U / Intel Core Ultra 7 165U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.418 kg",
+                "dimensions": "31.56 × 22.43 × 1.16 cm front / 1.89 cm rear"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 840 G11 Intel Core Ultra 5 125U 8 GB 256 GB Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 840 G11 Intel Core Ultra 5 125U 32 GB 1 TB Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 840 G11 Intel Core Ultra 7 165U 32 GB 1 TB Silver",
+                  "processor": "Intel Core Ultra 7 165U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 835 G8",
+              "release_year": 2021,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "13.3\" IPS, 1920×1080, anti-glare",
+                "processor": "AMD Ryzen 5 5600U / AMD Ryzen 7 5800U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "53 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.24 kg",
+                "dimensions": "30.78 × 20.46 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 835 G8 AMD Ryzen 5 5600U 8 GB 256 GB Silver",
+                  "processor": "AMD Ryzen 5 5600U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 835 G8 AMD Ryzen 5 5600U 16 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 5 5600U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 835 G8 AMD Ryzen 7 5800U 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 7 5800U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 835 G9",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "13.3\" IPS, 1920×1200, anti-glare",
+                "processor": "AMD Ryzen 5 5625U / AMD Ryzen 7 5825U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "53 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.24 kg",
+                "dimensions": "30.78 × 20.46 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 835 G9 AMD Ryzen 5 5625U 8 GB 256 GB Silver",
+                  "processor": "AMD Ryzen 5 5625U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 835 G9 AMD Ryzen 5 5625U 16 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 5 5625U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 835 G9 AMD Ryzen 7 5825U 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 7 5825U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 835 G10",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "13.3\" IPS, 1920×1200, anti-glare",
+                "processor": "AMD Ryzen 5 7530U / AMD Ryzen 7 7730U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "53 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.24 kg",
+                "dimensions": "30.78 × 20.46 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 835 G10 AMD Ryzen 5 7530U 8 GB 256 GB Silver",
+                  "processor": "AMD Ryzen 5 7530U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 835 G10 AMD Ryzen 5 7530U 16 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 5 7530U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 835 G10 AMD Ryzen 7 7730U 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 7 7730U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 845 G8",
+              "release_year": 2021,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS, 1920×1080, anti-glare",
+                "processor": "AMD Ryzen 5 5600U / AMD Ryzen 7 5800U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "51 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.36 kg",
+                "dimensions": "31.56 × 22.43 × 1.92 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 845 G8 AMD Ryzen 5 5600U 8 GB 256 GB Silver",
+                  "processor": "AMD Ryzen 5 5600U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 845 G8 AMD Ryzen 5 5600U 16 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 5 5600U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 845 G8 AMD Ryzen 7 5800U 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 7 5800U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 845 G9",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "AMD Ryzen 5 5625U / AMD Ryzen 7 5825U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "51 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.36 kg",
+                "dimensions": "31.56 × 22.43 × 1.92 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 845 G9 AMD Ryzen 5 5625U 8 GB 256 GB Silver",
+                  "processor": "AMD Ryzen 5 5625U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 845 G9 AMD Ryzen 5 5625U 16 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 5 5625U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 845 G9 AMD Ryzen 7 5825U 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 7 5825U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 845 G10",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "AMD Ryzen 5 7530U / AMD Ryzen 7 7730U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.36 kg",
+                "dimensions": "31.56 × 22.43 × 1.92 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 845 G10 AMD Ryzen 5 7530U 8 GB 256 GB Silver",
+                  "processor": "AMD Ryzen 5 7530U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 845 G10 AMD Ryzen 5 7530U 16 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 5 7530U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 845 G10 AMD Ryzen 7 7730U 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 7 7730U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 845 G11",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "AMD Ryzen 5 8540U / AMD Ryzen 7 8840U / AMD Ryzen 7 8840HS",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.418 kg",
+                "dimensions": "31.56 × 22.43 × 1.16 cm front / 1.89 cm rear"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 845 G11 AMD Ryzen 5 8540U 8 GB 256 GB Silver",
+                  "processor": "AMD Ryzen 5 8540U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 845 G11 AMD Ryzen 5 8540U 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 5 8540U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 845 G11 AMD Ryzen 7 8840HS 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 7 8840HS",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 860 G9",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "16.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "Intel Core i5-1235U / Intel Core i5-1245U / Intel Core i7-1255U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh / 76 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.75 kg",
+                "dimensions": "35.87 × 25.12 × 1.63 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 860 G9 Intel Core i5-1235U 8 GB 256 GB Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 860 G9 Intel Core i5-1235U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 860 G9 Intel Core i7-1255U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i7-1255U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 860 G10",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "16.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "Intel Core i5-1335U / Intel Core i5-1345U / Intel Core i7-1355U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh / 76 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.75 kg",
+                "dimensions": "35.87 × 25.12 × 1.63 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 860 G10 Intel Core i5-1335U 8 GB 256 GB Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 860 G10 Intel Core i5-1335U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 860 G10 Intel Core i7-1355U 32 GB 1 TB Silver",
+                  "processor": "Intel Core i7-1355U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 860 G11",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "16.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "Intel Core Ultra 5 125U / Intel Core Ultra 7 155U / Intel Core Ultra 7 165U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh / 76 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.75 kg",
+                "dimensions": "35.87 × 25.12 × 1.63 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 860 G11 Intel Core Ultra 5 125U 8 GB 256 GB Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 860 G11 Intel Core Ultra 5 125U 32 GB 1 TB Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 860 G11 Intel Core Ultra 7 165U 32 GB 1 TB Silver",
+                  "processor": "Intel Core Ultra 7 165U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 865 G9",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "16.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "AMD Ryzen 5 5625U / AMD Ryzen 7 5825U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh / 76 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.75 kg",
+                "dimensions": "35.87 × 25.12 × 1.63 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 865 G9 AMD Ryzen 5 5625U 8 GB 256 GB Silver",
+                  "processor": "AMD Ryzen 5 5625U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 865 G9 AMD Ryzen 5 5625U 16 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 5 5625U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 865 G9 AMD Ryzen 7 5825U 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 7 5825U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 865 G10",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "16.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "AMD Ryzen 5 7530U / AMD Ryzen 7 7730U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh / 76 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.75 kg",
+                "dimensions": "35.87 × 25.12 × 1.63 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 865 G10 AMD Ryzen 5 7530U 8 GB 256 GB Silver",
+                  "processor": "AMD Ryzen 5 7530U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 865 G10 AMD Ryzen 5 7530U 16 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 5 7530U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 865 G10 AMD Ryzen 7 7730U 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen 7 7730U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP EliteBook 865 G16",
+              "release_year": 2025,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "16.0\" WUXGA IPS, 1920×1200, anti-glare",
+                "processor": "AMD Ryzen AI 5 PRO 340 / AMD Ryzen AI 7 PRO 360 / AMD Ryzen AI 9 HX PRO 370",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "56 Wh / 76 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "Starting at 1.75 kg",
+                "dimensions": "35.87 × 25.12 × 1.63 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP EliteBook 865 G16 AMD Ryzen AI 5 PRO 340 8 GB 256 GB Silver",
+                  "processor": "AMD Ryzen AI 5 PRO 340",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 865 G16 AMD Ryzen AI 5 PRO 340 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen AI 5 PRO 340",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                },
+                {
+                  "name": "HP EliteBook 865 G16 AMD Ryzen AI 9 HX PRO 370 32 GB 1 TB Silver",
+                  "processor": "AMD Ryzen AI 9 HX PRO 370",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pavilion",
+          "models": [
+            {
+              "name": "HP Pavilion 14 series",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1920×1080 to 2880×1800",
+                "processor": "Intel Core i5-1335U / Intel Core 5 120U / Intel Core Ultra 5 125U",
+                "ram": "8/16 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "41 Wh / 68 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.41 kg",
+                "dimensions": "32.35 × 21.48 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Pavilion 14 series Intel Core i5-1335U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Pavilion 14 series Intel Core i5-1335U 8 GB 512 GB Warm Gold",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Warm Gold"
+                },
+                {
+                  "name": "HP Pavilion 14 series Intel Core Ultra 5 125U 16 GB 1 TB Warm Gold",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Warm Gold"
+                }
+              ]
+            },
+            {
+              "name": "HP Pavilion 15 series",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" IPS, 1920×1080",
+                "processor": "Intel Core i5-1335U / Intel Core i7-1355U / AMD Ryzen 7 7730U",
+                "ram": "8/16 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "41 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.59 kg",
+                "dimensions": "35.85 × 24.2 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Pavilion 15 series Intel Core i5-1335U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Pavilion 15 series Intel Core i5-1335U 8 GB 512 GB Warm Gold",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Warm Gold"
+                },
+                {
+                  "name": "HP Pavilion 15 series AMD Ryzen 7 7730U 16 GB 1 TB Warm Gold",
+                  "processor": "AMD Ryzen 7 7730U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Warm Gold"
+                }
+              ]
+            },
+            {
+              "name": "HP Pavilion 16 series",
+              "release_year": 2025,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 2560×1600",
+                "processor": "Intel Core Ultra 5 125U / Intel Core Ultra 7 155U / Intel Core 7 150U",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "59 Wh / 68 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.77 kg",
+                "dimensions": "35.77 × 25.53 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Pavilion 16 series Intel Core Ultra 5 125U 8 GB 512 GB Natural Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Pavilion 16 series Intel Core Ultra 5 125U 16 GB 512 GB Warm Gold",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Warm Gold"
+                },
+                {
+                  "name": "HP Pavilion 16 series Intel Core 7 150U 32 GB 1 TB Warm Gold",
+                  "processor": "Intel Core 7 150U",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Warm Gold"
+                }
+              ]
+            },
+            {
+              "name": "HP Pavilion Plus 14",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" OLED, 2880×1800, 120Hz",
+                "processor": "Intel Core Ultra 5 125H / Intel Core Ultra 7 155H / AMD Ryzen 7 8845HS",
+                "ram": "16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "68 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.44 kg",
+                "dimensions": "31.4 × 22.7 × 1.75 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Pavilion Plus 14 Intel Core Ultra 5 125H 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core Ultra 5 125H",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Pavilion Plus 14 Intel Core Ultra 5 125H 16 GB 1 TB Warm Gold",
+                  "processor": "Intel Core Ultra 5 125H",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Warm Gold"
+                },
+                {
+                  "name": "HP Pavilion Plus 14 AMD Ryzen 7 8845HS 32 GB 1 TB Warm Gold",
+                  "processor": "AMD Ryzen 7 8845HS",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Warm Gold"
+                }
+              ]
+            },
+            {
+              "name": "HP Pavilion Plus 15",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" IPS/OLED, 1920×1080 to 2880×1620",
+                "processor": "Intel Core i5-13500H / Intel Core i7-13700H / AMD Ryzen 7 7840U",
+                "ram": "16 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "68 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.79 kg",
+                "dimensions": "35.76 × 22.9 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Pavilion Plus 15 Intel Core i5-13500H 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core i5-13500H",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Pavilion Plus 15 Intel Core i5-13500H 16 GB 512 GB Warm Gold",
+                  "processor": "Intel Core i5-13500H",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Warm Gold"
+                },
+                {
+                  "name": "HP Pavilion Plus 15 AMD Ryzen 7 7840U 16 GB 1 TB Warm Gold",
+                  "processor": "AMD Ryzen 7 7840U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Warm Gold"
+                }
+              ]
+            },
+            {
+              "name": "HP Pavilion x360 14",
+              "release_year": 2025,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" FHD touch IPS, 1920×1080, 360° hinge",
+                "processor": "Intel Core 5 120U / Intel Core 7 150U / Intel Core Ultra 5 125U",
+                "ram": "8/16 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "43 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.51 kg",
+                "dimensions": "32.2 × 21.0 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Pavilion x360 14 Intel Core 5 120U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core 5 120U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Pavilion x360 14 Intel Core 5 120U 8 GB 512 GB Warm Gold",
+                  "processor": "Intel Core 5 120U",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Warm Gold"
+                },
+                {
+                  "name": "HP Pavilion x360 14 Intel Core Ultra 5 125U 16 GB 1 TB Warm Gold",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Warm Gold"
+                }
+              ]
+            },
+            {
+              "name": "HP Pavilion x360 15",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_9.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" FHD touch IPS, 1920×1080, 360° hinge",
+                "processor": "Intel Core i5-1235U / Intel Core i7-1255U / Intel Core i5-1335U",
+                "ram": "8/16 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB"
+                ],
+                "battery": "43 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.89 kg",
+                "dimensions": "35.7 × 22.9 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Pavilion x360 15 Intel Core i5-1235U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Pavilion x360 15 Intel Core i5-1235U 8 GB 512 GB Warm Gold",
+                  "processor": "Intel Core i5-1235U",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Warm Gold"
+                },
+                {
+                  "name": "HP Pavilion x360 15 Intel Core i5-1335U 16 GB 512 GB Warm Gold",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Warm Gold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Envy",
+          "models": [
+            {
+              "name": "HP Envy 13-ba",
+              "release_year": 2020,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "13.3\" IPS/OLED, 1920×1080 to 3840×2160",
+                "processor": "Intel Core i5-1135G7 / Intel Core i7-1165G7 / Intel Core i7-1195G7",
+                "ram": "8/16 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "51 Wh",
+                "os": "Windows 10 Home / Windows 11 Home",
+                "weight": "Starting at 1.30 kg",
+                "dimensions": "30.65 × 19.46 × 1.69 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Envy 13-ba Intel Core i5-1135G7 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Envy 13-ba Intel Core i5-1135G7 8 GB 512 GB Space Blue",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Space Blue"
+                },
+                {
+                  "name": "HP Envy 13-ba Intel Core i7-1195G7 16 GB 1 TB Space Blue",
+                  "processor": "Intel Core i7-1195G7",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Space Blue"
+                }
+              ]
+            },
+            {
+              "name": "HP Envy 14-eb",
+              "release_year": 2021,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" IPS, 1920×1200, 16:10",
+                "processor": "Intel Core i5-1135G7 / Intel Core i7-1165G7",
+                "ram": "8/16 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "63.3 Wh",
+                "os": "Windows 10 Home / Windows 11 Home",
+                "weight": "Starting at 1.49 kg",
+                "dimensions": "31.36 × 22.46 × 1.79 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Envy 14-eb Intel Core i5-1135G7 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Envy 14-eb Intel Core i5-1135G7 8 GB 512 GB Natural Silver",
+                  "processor": "Intel Core i5-1135G7",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Envy 14-eb Intel Core i7-1165G7 16 GB 1 TB Space Blue",
+                  "processor": "Intel Core i7-1165G7",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Space Blue"
+                }
+              ]
+            },
+            {
+              "name": "HP Envy 15-ep",
+              "release_year": 2020,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" IPS/OLED, 1920×1080 to 3840×2160",
+                "processor": "Intel Core i7-10750H / Intel Core i7-11800H / Intel Core i9-11900H",
+                "ram": "16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "83 Wh",
+                "os": "Windows 10 Home / Windows 11 Home",
+                "weight": "Starting at 2.14 kg",
+                "dimensions": "35.79 × 23.68 × 1.84 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Envy 15-ep Intel Core i7-10750H 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core i7-10750H",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Envy 15-ep Intel Core i7-10750H 16 GB 1 TB Space Blue",
+                  "processor": "Intel Core i7-10750H",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Space Blue"
+                },
+                {
+                  "name": "HP Envy 15-ep Intel Core i9-11900H 32 GB 2 TB Space Blue",
+                  "processor": "Intel Core i9-11900H",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Space Blue"
+                }
+              ]
+            },
+            {
+              "name": "HP Envy 16-h",
+              "release_year": 2022,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 2560×1600 to 3840×2400",
+                "processor": "Intel Core i7-12700H / Intel Core i9-12900H / Intel Core i7-13700H",
+                "ram": "16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "83 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 2.32 kg",
+                "dimensions": "35.74 × 24.84 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Envy 16-h Intel Core i7-12700H 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core i7-12700H",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Envy 16-h Intel Core i7-12700H 16 GB 1 TB Space Blue",
+                  "processor": "Intel Core i7-12700H",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Space Blue"
+                },
+                {
+                  "name": "HP Envy 16-h Intel Core i7-13700H 32 GB 2 TB Space Blue",
+                  "processor": "Intel Core i7-13700H",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Space Blue"
+                }
+              ]
+            },
+            {
+              "name": "HP Envy x360 13",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "13.3\" touch IPS/OLED, 1920×1200 to 2880×1800",
+                "processor": "Intel Core i5-1230U / Intel Core i7-1250U / AMD Ryzen 7 7730U",
+                "ram": "8/16 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "66 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.30 kg",
+                "dimensions": "29.83 × 21.49 × 1.61 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Envy x360 13 Intel Core i5-1230U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1230U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Envy x360 13 Intel Core i5-1230U 8 GB 512 GB Space Blue",
+                  "processor": "Intel Core i5-1230U",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Space Blue"
+                },
+                {
+                  "name": "HP Envy x360 13 AMD Ryzen 7 7730U 16 GB 1 TB Space Blue",
+                  "processor": "AMD Ryzen 7 7730U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Space Blue"
+                }
+              ]
+            },
+            {
+              "name": "HP Envy x360 15",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "15.6\" FHD touch IPS/OLED, 1920×1080",
+                "processor": "Intel Core i5-1335U / Intel Core i7-1355U / AMD Ryzen 7 7730U",
+                "ram": "8/16 GB",
+                "storage": [
+                  "256 GB",
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "55 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.77 kg",
+                "dimensions": "35.86 × 22.92 × 1.83 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Envy x360 15 Intel Core i5-1335U 8 GB 256 GB Natural Silver",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "256 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Envy x360 15 Intel Core i5-1335U 8 GB 512 GB Space Blue",
+                  "processor": "Intel Core i5-1335U",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Space Blue"
+                },
+                {
+                  "name": "HP Envy x360 15 AMD Ryzen 7 7730U 16 GB 1 TB Space Blue",
+                  "processor": "AMD Ryzen 7 7730U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Space Blue"
+                }
+              ]
+            },
+            {
+              "name": "HP Envy x360 16",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "16.0\" touch IPS/OLED, 1920×1200 to 2880×1800",
+                "processor": "Intel Core Ultra 5 125U / Intel Core Ultra 7 155U / AMD Ryzen 7 8840HS",
+                "ram": "16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "68 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.87 kg",
+                "dimensions": "35.67 × 24.55 × 1.83 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Envy x360 16 Intel Core Ultra 5 125U 16 GB 512 GB Natural Silver",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Natural Silver"
+                },
+                {
+                  "name": "HP Envy x360 16 Intel Core Ultra 5 125U 16 GB 1 TB Space Blue",
+                  "processor": "Intel Core Ultra 5 125U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Space Blue"
+                },
+                {
+                  "name": "HP Envy x360 16 AMD Ryzen 7 8840HS 32 GB 2 TB Space Blue",
+                  "processor": "AMD Ryzen 7 8840HS",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Space Blue"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Spectre",
+          "models": [
+            {
+              "name": "HP Spectre x360 14",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "14.0\" OLED touch, 2880×1800, 120Hz, 360° hinge",
+                "processor": "Intel Core Ultra 5 125H / Intel Core Ultra 7 155H",
+                "ram": "16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "68 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.45 kg",
+                "dimensions": "31.37 × 22.04 × 1.70 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Spectre x360 14 Intel Core Ultra 5 125H 16 GB 512 GB Nightfall Black",
+                  "processor": "Intel Core Ultra 5 125H",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Nightfall Black"
+                },
+                {
+                  "name": "HP Spectre x360 14 Intel Core Ultra 5 125H 16 GB 1 TB Nightfall Black",
+                  "processor": "Intel Core Ultra 5 125H",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Nightfall Black"
+                },
+                {
+                  "name": "HP Spectre x360 14 Intel Core Ultra 7 155H 32 GB 2 TB Natural Silver",
+                  "processor": "Intel Core Ultra 7 155H",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Natural Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP Spectre x360 16",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "16.0\" OLED touch, 2880×1800 or UHD+ 3840×2400, 120Hz, 360° hinge",
+                "processor": "Intel Core Ultra 7 155H / Intel Core Ultra 9 185H",
+                "ram": "16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "83 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 1.95 kg",
+                "dimensions": "35.8 × 24.53 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Spectre x360 16 Intel Core Ultra 7 155H 16 GB 512 GB Nightfall Black",
+                  "processor": "Intel Core Ultra 7 155H",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Nightfall Black"
+                },
+                {
+                  "name": "HP Spectre x360 16 Intel Core Ultra 7 155H 16 GB 1 TB Nightfall Black",
+                  "processor": "Intel Core Ultra 7 155H",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Nightfall Black"
+                },
+                {
+                  "name": "HP Spectre x360 16 Intel Core Ultra 9 185H 32 GB 2 TB Natural Silver",
+                  "processor": "Intel Core Ultra 9 185H",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Natural Silver"
+                }
+              ]
+            },
+            {
+              "name": "HP Spectre Foldable PC",
+              "release_year": 2023,
+              "image_url": "https://www.hp.com/fr-fr/shop/media/catalog/product/c/0/c08955258.png?auto=avif&bg-color=ffffff&fit=bounds&format=jpg&image-type=image&quality=100&store=fr-fr&type=image-product&width=960",
+              "specs": {
+                "display": "17.0\" foldable OLED touch, 2560×1920",
+                "processor": "Intel Core i7-1250U",
+                "ram": "16 GB",
+                "storage": [
+                  "1 TB"
+                ],
+                "battery": "94.3 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.35 kg tablet / 1.62 kg with keyboard",
+                "dimensions": "27.74 × 19.16 × 0.84 cm folded"
+              },
+              "variants": [
+                {
+                  "name": "HP Spectre Foldable PC Intel Core i7-1250U 16 GB 1 TB Nightfall Black",
+                  "processor": "Intel Core i7-1250U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Nightfall Black"
+                },
+                {
+                  "name": "HP Spectre Foldable PC Intel Core i7-1250U 16 GB 1 TB Natural Silver",
+                  "processor": "Intel Core i7-1250U",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Natural Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Omen",
+          "models": [
+            {
+              "name": "HP Omen 15",
+              "release_year": 2021,
+              "image_url": "https://www.hp.com/content/dam/sites/omen/worldwide/laptops/2023-omen-transcend14-intel/Power-Header-Image%402x.jpg",
+              "specs": {
+                "display": "15.6\" IPS, 1920×1080, 144Hz",
+                "processor": "AMD Ryzen 5 5600H / AMD Ryzen 7 5800H / Intel Core i7-11800H",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "70.9 Wh",
+                "os": "Windows 10 Home / Windows 11 Home",
+                "weight": "Starting at 2.09 kg",
+                "dimensions": "35.79 × 23.97 × 2.29 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Omen 15 AMD Ryzen 5 5600H 8 GB 512 GB Shadow Black",
+                  "processor": "AMD Ryzen 5 5600H",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Shadow Black"
+                },
+                {
+                  "name": "HP Omen 15 AMD Ryzen 5 5600H 32 GB 512 GB Shadow Black",
+                  "processor": "AMD Ryzen 5 5600H",
+                  "ram": "32 GB",
+                  "storage": "512 GB",
+                  "color": "Shadow Black"
+                },
+                {
+                  "name": "HP Omen 15 Intel Core i7-11800H 32 GB 1 TB Ceramic White",
+                  "processor": "Intel Core i7-11800H",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Ceramic White"
+                }
+              ]
+            },
+            {
+              "name": "HP Omen 16",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/content/dam/sites/omen/worldwide/laptops/2023-omen-transcend14-intel/Power-Header-Image%402x.jpg",
+              "specs": {
+                "display": "16.1\" IPS/QHD, 1920×1080 to 2560×1440, 165Hz",
+                "processor": "Intel Core i7-13700HX / Intel Core i7-14700HX / AMD Ryzen 9 7940HS",
+                "ram": "16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "83 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 2.35 kg",
+                "dimensions": "36.9 × 25.94 × 2.35 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Omen 16 Intel Core i7-13700HX 16 GB 512 GB Shadow Black",
+                  "processor": "Intel Core i7-13700HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Shadow Black"
+                },
+                {
+                  "name": "HP Omen 16 Intel Core i7-13700HX 16 GB 2 TB Ceramic White",
+                  "processor": "Intel Core i7-13700HX",
+                  "ram": "16 GB",
+                  "storage": "2 TB",
+                  "color": "Ceramic White"
+                },
+                {
+                  "name": "HP Omen 16 AMD Ryzen 9 7940HS 32 GB 2 TB Ceramic White",
+                  "processor": "AMD Ryzen 9 7940HS",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Ceramic White"
+                }
+              ]
+            },
+            {
+              "name": "HP Omen 17",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/content/dam/sites/omen/worldwide/laptops/2023-omen-transcend14-intel/Power-Header-Image%402x.jpg",
+              "specs": {
+                "display": "17.3\" IPS/QHD, 1920×1080 to 2560×1440, 165Hz",
+                "processor": "Intel Core i7-13700HX / Intel Core i9-13900HX / Intel Core i9-14900HX",
+                "ram": "16/32 GB",
+                "storage": [
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "83 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 2.78 kg",
+                "dimensions": "39.71 × 26.2 × 2.7 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Omen 17 Intel Core i7-13700HX 16 GB 1 TB Shadow Black",
+                  "processor": "Intel Core i7-13700HX",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Shadow Black"
+                },
+                {
+                  "name": "HP Omen 17 Intel Core i7-13700HX 32 GB 1 TB Ceramic White",
+                  "processor": "Intel Core i7-13700HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Ceramic White"
+                },
+                {
+                  "name": "HP Omen 17 Intel Core i9-14900HX 32 GB 2 TB Ceramic White",
+                  "processor": "Intel Core i9-14900HX",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Ceramic White"
+                }
+              ]
+            },
+            {
+              "name": "HP Omen Transcend 14",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/content/dam/sites/omen/worldwide/laptops/2023-omen-transcend14-intel/hero-image-merged-desktop%402x.jpg",
+              "specs": {
+                "display": "14.0\" OLED, 2880×1800, 120Hz",
+                "processor": "Intel Core Ultra 7 155H / Intel Core Ultra 9 185H",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "71 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.637 kg",
+                "dimensions": "31.4 × 22.0 × 1.78 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Omen Transcend 14 Intel Core Ultra 7 155H 16 GB 512 GB Shadow Black",
+                  "processor": "Intel Core Ultra 7 155H",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Shadow Black"
+                },
+                {
+                  "name": "HP Omen Transcend 14 Intel Core Ultra 7 155H 16 GB 2 TB Ceramic White",
+                  "processor": "Intel Core Ultra 7 155H",
+                  "ram": "16 GB",
+                  "storage": "2 TB",
+                  "color": "Ceramic White"
+                },
+                {
+                  "name": "HP Omen Transcend 14 Intel Core Ultra 9 185H 64 GB 2 TB Ceramic White",
+                  "processor": "Intel Core Ultra 9 185H",
+                  "ram": "64 GB",
+                  "storage": "2 TB",
+                  "color": "Ceramic White"
+                }
+              ]
+            },
+            {
+              "name": "HP Omen Transcend 16",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/content/dam/sites/omen/worldwide/laptops/2023-omen-transcend14-intel/hero-image-merged-desktop%402x.jpg",
+              "specs": {
+                "display": "16.1\" IPS/Mini-LED, 2560×1600, 240Hz",
+                "processor": "Intel Core i7-13700HX / Intel Core i9-13900HX / Intel Core Ultra 9 185H",
+                "ram": "16/32 GB",
+                "storage": [
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "97 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 2.17 kg",
+                "dimensions": "35.65 × 26.9 × 1.99 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Omen Transcend 16 Intel Core i7-13700HX 16 GB 1 TB Shadow Black",
+                  "processor": "Intel Core i7-13700HX",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Shadow Black"
+                },
+                {
+                  "name": "HP Omen Transcend 16 Intel Core i7-13700HX 32 GB 1 TB Ceramic White",
+                  "processor": "Intel Core i7-13700HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Ceramic White"
+                },
+                {
+                  "name": "HP Omen Transcend 16 Intel Core Ultra 9 185H 32 GB 2 TB Ceramic White",
+                  "processor": "Intel Core Ultra 9 185H",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Ceramic White"
+                }
+              ]
+            },
+            {
+              "name": "HP Omen Max 16",
+              "release_year": 2025,
+              "image_url": "https://www.hp.com/content/dam/sites/omen/worldwide/laptops/2023-omen-transcend14-intel/Power-Header-Image%402x.jpg",
+              "specs": {
+                "display": "16.0\" OLED/IPS, 2560×1600, up to 240Hz",
+                "processor": "Intel Core Ultra 7 255HX / Intel Core Ultra 9 275HX",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "83 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 2.63 kg",
+                "dimensions": "35.7 × 26.9 × 2.35 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Omen Max 16 Intel Core Ultra 7 255HX 16 GB 1 TB Shadow Black",
+                  "processor": "Intel Core Ultra 7 255HX",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Shadow Black"
+                },
+                {
+                  "name": "HP Omen Max 16 Intel Core Ultra 7 255HX 32 GB 1 TB Ceramic White",
+                  "processor": "Intel Core Ultra 7 255HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Ceramic White"
+                },
+                {
+                  "name": "HP Omen Max 16 Intel Core Ultra 9 275HX 64 GB 2 TB Ceramic White",
+                  "processor": "Intel Core Ultra 9 275HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB",
+                  "color": "Ceramic White"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Victus",
+          "models": [
+            {
+              "name": "HP Victus 15",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/content/dam/sites/omen/worldwide/laptops/2023-omen-transcend14-intel/hero-image-merged-desktop%402x.jpg",
+              "specs": {
+                "display": "15.6\" IPS, 1920×1080, 144Hz",
+                "processor": "Intel Core i5-13420H / Intel Core i7-13620H / AMD Ryzen 5 7535HS",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "52.5 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 2.29 kg",
+                "dimensions": "35.79 × 25.5 × 2.35 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Victus 15 Intel Core i5-13420H 8 GB 512 GB Mica Silver",
+                  "processor": "Intel Core i5-13420H",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Mica Silver"
+                },
+                {
+                  "name": "HP Victus 15 Intel Core i5-13420H 16 GB 512 GB Ceramic White",
+                  "processor": "Intel Core i5-13420H",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Ceramic White"
+                },
+                {
+                  "name": "HP Victus 15 AMD Ryzen 5 7535HS 32 GB 1 TB Ceramic White",
+                  "processor": "AMD Ryzen 5 7535HS",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Ceramic White"
+                }
+              ]
+            },
+            {
+              "name": "HP Victus 16",
+              "release_year": 2024,
+              "image_url": "https://www.hp.com/content/dam/sites/omen/worldwide/laptops/2023-omen-transcend14-intel/hero-image-merged-desktop%402x.jpg",
+              "specs": {
+                "display": "16.1\" IPS, 1920×1080 to 2560×1440, 144Hz/165Hz",
+                "processor": "Intel Core i5-13500H / Intel Core i7-13700H / AMD Ryzen 7 8845HS",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB"
+                ],
+                "battery": "70 Wh / 83 Wh",
+                "os": "Windows 11 Home",
+                "weight": "Starting at 2.31 kg",
+                "dimensions": "36.9 × 25.93 × 2.29 cm"
+              },
+              "variants": [
+                {
+                  "name": "HP Victus 16 Intel Core i5-13500H 8 GB 512 GB Mica Silver",
+                  "processor": "Intel Core i5-13500H",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Mica Silver"
+                },
+                {
+                  "name": "HP Victus 16 Intel Core i5-13500H 16 GB 512 GB Ceramic White",
+                  "processor": "Intel Core i5-13500H",
+                  "ram": "16 GB",
+                  "storage": "512 GB",
+                  "color": "Ceramic White"
+                },
+                {
+                  "name": "HP Victus 16 AMD Ryzen 7 8845HS 32 GB 1 TB Ceramic White",
+                  "processor": "AMD Ryzen 7 8845HS",
+                  "ram": "32 GB",
+                  "storage": "1 TB",
+                  "color": "Ceramic White"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "models": 103,
+  "variants": 612,
+  "families": {
+    "Galaxy S": 18,
+    "Galaxy A": 44,
+    "Galaxy Z Fold": 6,
+    "Galaxy Z Flip": 4,
+    "Galaxy Note": 4,
+    "Galaxy M": 13,
+    "Galaxy J": 10,
+    "Galaxy XCover": 4
+  },
+  "validation_errors": [],
+  "validation_error_count": 0
+}

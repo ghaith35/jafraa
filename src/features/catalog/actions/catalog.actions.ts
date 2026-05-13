@@ -79,6 +79,16 @@ export async function listFamiliesByBrand(
   });
 }
 
+/**
+ * List device models for a family.
+ */
+export async function listModelsByFamily(familyId: string) {
+  return prisma.deviceModel.findMany({
+    where: { familyId, isActive: true },
+    orderBy: { sortOrder: "asc" },
+  });
+}
+
 /** Search brands across all categories (for autocomplete/search) */
 export async function searchCatalog(
   query: string,

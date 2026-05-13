@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState, useTransition, type FormEvent } from "react";
+import { Dialog } from "@/components/ui/dialog";
 import {
   BadgeCheck,
   Boxes,
@@ -61,12 +62,23 @@ interface Family {
   brandId: string;
 }
 
+interface DeviceModel {
+  id: string;
+  name: string;
+  releaseYear: number | null;
+  imageUrl: string | null;
+  specs: Record<string, unknown> | null;
+  variants: Record<string, unknown>[] | null;
+}
+
 interface Props {
   categories: Category[];
   selectedCategoryKey: string | null;
   brands: Brand[];
   selectedBrandId: string | null;
   families: Family[];
+  selectedFamilyId?: string | null;
+  models?: DeviceModel[];
   userRole: UserRole;
 }
 
@@ -1227,6 +1239,8 @@ export function CatalogBrowser({
   brands,
   selectedBrandId,
   families,
+  selectedFamilyId,
+  models = [],
   userRole,
 }: Props) {
   const router = useRouter();
@@ -1240,8 +1254,10 @@ export function CatalogBrowser({
   const [showAddFamily, setShowAddFamily] = useState(false);
   const [brandSectionCollapsed, setBrandSectionCollapsed] = useState(false);
   const [query, setQuery] = useState("");
+  const [familySearch, setFamilySearch] = useState("");
   const [printerType, setPrinterType] = useState<PrinterTypeKey | "all">("all");
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [variantModel, setVariantModel] = useState<DeviceModel | null>(null);
 
   const selectedCategory = categories.find((category) => category.key === selectedCategoryKey) ?? null;
   const selectedBrand = brands.find((brand) => brand.id === selectedBrandId) ?? null;
@@ -1267,10 +1283,17 @@ export function CatalogBrowser({
   function selectBrand(id: string) {
     const params = new URLSearchParams(searchParams.toString());
     params.set("brand", id);
+    params.delete("family");
     router.push(`/dashboard/settings/catalog?${params.toString()}`);
     setShowAddFamily(false);
     setSidebarCollapsed(true);
     setBrandSectionCollapsed(true);
+  }
+
+  function selectFamily(id: string) {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("family", id);
+    router.push(`/dashboard/settings/catalog?${params.toString()}`);
   }
 
   async function handleAddBrand(name: string) {
@@ -1484,28 +1507,126 @@ export function CatalogBrowser({
                       />
                     )}
 
-                    <div className="flex flex-col flex-1 gap-3">
-                      {canManage && !showAddFamily && (
-                        <div className="flex items-center justify-end">
+                    {/* Family sidebar + models */}
+                    {families.length > 0 ? (
+                      <div className="flex gap-4 flex-1" style={{ minHeight: 0 }}>
+                        {/* Family sidebar */}
+                        <div className="w-[200px] shrink-0 flex flex-col gap-3" style={{ minHeight: 0 }}>
                           <button
-                            onClick={() => setShowAddFamily(true)}
-                            className="inline-flex items-center gap-1.5 rounded-lg border border-dashed border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-xs font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--primary)] transition-all"
+                            onClick={() => { const p = new URLSearchParams(searchParams.toString()); p.delete("family"); router.push(`/dashboard/settings/catalog?${p.toString()}`); }}
+                            className="flex h-8 w-full items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors shrink-0"
                           >
-                            <Plus className="h-3.5 w-3.5" />
-                            {copy.addModel}
+                            <Layers3 className="h-4 w-4" />
                           </button>
+
+                          {/* Search */}
+                          <div className="relative shrink-0">
+                            <Search className="pointer-events-none absolute start-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-[var(--text-tertiary)]" />
+                            <input
+                              value={familySearch}
+                              onChange={(e) => setFamilySearch(e.target.value)}
+                              placeholder={copy.search}
+                              className="w-full rounded-lg border border-[var(--border)] bg-[var(--surface)] px-2 py-1.5 ps-7 text-xs text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] outline-none focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)]/20 transition-all"
+                            />
+                          </div>
+
+                          {/* Family list */}
+                          <div className="flex-1 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-2 shadow-sm overflow-y-auto">
+                            <div className="space-y-0.5">
+                              {families.filter((f) => !familySearch || f.name.toLowerCase().includes(familySearch.toLowerCase())).map((f) => (
+                                <button
+                                  key={f.id}
+                                  onClick={() => selectFamily(f.id)}
+                                  className={cn(
+                                    "w-full rounded-lg px-2 py-2 text-start text-xs font-bold transition",
+                                    selectedFamilyId === f.id
+                                      ? "bg-primary text-primary-foreground"
+                                      : "text-[var(--text-secondary)] hover:bg-[var(--muted)] hover:text-[var(--text-primary)]"
+                                  )}
+                                  title={f.name}
+                                >
+                                  <span className="truncate block">{f.name}</span>
+                                </button>
+                              ))}
+                            </div>
+                          </div>
                         </div>
-                      )}
-                      {isLaptop ? (
-                        <LaptopCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
-                      ) : isPrinter ? (
-                        <PrinterCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
-                      ) : isPhone ? (
-                        <PhoneCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
-                      ) : (
-                        <SimpleModelPanel copy={copy} categoryKey={selectedCategory.key} brand={selectedBrand} families={families} query={query} />
-                      )}
-                    </div>
+
+                        {/* Content area */}
+                        <div className="flex-1 min-w-0 flex flex-col">
+                          {selectedFamilyId && models.length > 0 ? (
+                            <>
+                              <div className="flex-1 overflow-y-auto">
+                                <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+                                  {models.map((model) => (
+                                    <div key={model.id} className="rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all overflow-hidden flex flex-col" style={{ height: "400px" }}>
+                                      <div className="h-[180px] bg-[var(--muted)] flex items-center justify-center shrink-0">
+                                        {model.imageUrl ? (
+                                          <img src={model.imageUrl} alt={model.name} className="h-full w-full object-contain p-3" loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                                        ) : (
+                                          <div className="text-xs text-[var(--text-tertiary)]">Pas d'image</div>
+                                        )}
+                                      </div>
+                                      <div className="flex-1 p-3 flex flex-col gap-1 overflow-hidden">
+                                        <p className="text-sm font-bold text-[var(--text-primary)] truncate">{model.name}</p>
+                                        {model.releaseYear && <p className="text-xs text-[var(--text-tertiary)]">{model.releaseYear}</p>}
+                                        {model.specs && (
+                                          <div className="flex-1 space-y-0.5 text-xs text-[var(--text-secondary)] overflow-hidden">
+                                            {model.specs.processor && <p className="truncate">CPU: {model.specs.processor as string}</p>}
+                                            {model.specs.ram && <p>RAM: {model.specs.ram as string}</p>}
+                                            {model.specs.battery && <p>Batterie: {model.specs.battery as string}</p>}
+                                            {model.specs.storage && Array.isArray(model.specs.storage) && <p className="truncate">Stockage: {(model.specs.storage as string[]).join(" / ")}</p>}
+                                          </div>
+                                        )}
+                                        {model.variants && model.variants.length > 0 && (
+                                          <button onClick={() => setVariantModel(model)} className="mt-auto text-xs font-medium text-[var(--primary)] hover:underline text-start">
+                                            {model.variants.length} variantes
+                                          </button>
+                                        )}
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+
+                              <Dialog open={!!variantModel} onClose={() => setVariantModel(null)} title={variantModel?.name ?? ""} className="max-w-lg">
+                                {variantModel?.variants && (
+                                  <div className="space-y-1.5 max-h-80 overflow-y-auto">
+                                    {variantModel.variants.map((v, i) => (
+                                      <div key={i} className="flex items-center gap-3 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-sm">
+                                        <span className="flex-1 font-medium text-[var(--text-primary)]">{(v as Record<string, unknown>).name as string}</span>
+                                        {(v as Record<string, unknown>).storage && <span className="text-xs text-[var(--text-tertiary)]">{(v as Record<string, unknown>).storage as string}</span>}
+                                        {(v as Record<string, unknown>).color && <span className="text-xs text-[var(--text-tertiary)]">{(v as Record<string, unknown>).color as string}</span>}
+                                      </div>
+                                    ))}
+                                  </div>
+                                )}
+                              </Dialog>
+                            </>
+                          ) : selectedFamilyId && models.length === 0 ? (
+                            <div className="flex-1 flex items-center justify-center p-8 text-sm text-[var(--text-secondary)]">Aucun modèle pour cette famille</div>
+                          ) : (
+                            <div className="flex-1 flex items-center justify-center p-8 text-sm text-[var(--text-tertiary)]">Sélectionnez une famille pour voir les modèles</div>
+                          )}
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="flex flex-col flex-1 gap-3 mt-3">
+                        {canManage && !showAddFamily && (
+                          <div className="flex items-center justify-end">
+                            <button onClick={() => setShowAddFamily(true)}
+                              className="inline-flex items-center gap-1.5 rounded-lg border border-dashed border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-xs font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--primary)] transition-all"
+                            >
+                              <Plus className="h-3.5 w-3.5" />{copy.addModel}
+                            </button>
+                          </div>
+                        )}
+                        {isLaptop ? <LaptopCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
+                         : isPrinter ? <PrinterCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
+                         : isPhone ? <PhoneCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
+                         : <SimpleModelPanel copy={copy} categoryKey={selectedCategory.key} brand={selectedBrand} families={families} query={query} />}
+                      </div>
+                    )}
                   </>
                 )}
               </section>
