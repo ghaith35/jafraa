@@ -1,0 +1,4820 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "LG",
+      "logo_url": "https://logo.clearbit.com/lg.com",
+      "families": [
+        {
+          "name": "Gram",
+          "models": [
+            {
+              "name": "LG gram 13 13Z940",
+              "release_year": 2015,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–15.6\" FHD IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–8 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "34–60 Wh",
+                "os": "Windows 8.1 / Windows 10",
+                "weight": "0.98–1.39 kg",
+                "dimensions": "varies by early gram/UltraBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 13 13Z940 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 13 13Z940 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 13 13Z940 256 GB SSD Black Alt",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 13 13Z950",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 13 13Z950 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 13 13Z950 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 13 13Z950 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 14Z950",
+              "release_year": 2015,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–15.6\" FHD IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–8 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "34–60 Wh",
+                "os": "Windows 8.1 / Windows 10",
+                "weight": "0.98–1.39 kg",
+                "dimensions": "varies by early gram/UltraBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 14Z950 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 14Z950 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 14Z950 256 GB SSD Black Alt",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 14Z960",
+              "release_year": 2016,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 14Z960 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 14Z960 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 14Z960 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15 15Z960",
+              "release_year": 2016,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15 15Z960 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15 15Z960 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15 15Z960 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 14Z970",
+              "release_year": 2017,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 14Z970 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 14Z970 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 14Z970 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15 15Z970",
+              "release_year": 2017,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15 15Z970 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15 15Z970 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15 15Z970 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 14Z980",
+              "release_year": 2018,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 14Z980 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 14Z980 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 14Z980 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15 15Z980",
+              "release_year": 2018,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15 15Z980 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15 15Z980 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15 15Z980 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 14Z990",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 14Z990 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 14Z990 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 14Z990 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15 15Z990",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15 15Z990 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15 15Z990 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15 15Z990 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 17 17Z990",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 17 17Z990 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 17 17Z990 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 17 17Z990 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 14Z90N",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 14Z90N 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 14Z90N 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 14Z90N 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15 15Z90N",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15 15Z90N 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15 15Z90N 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15 15Z90N 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 17 17Z90N",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 17 17Z90N 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 17 17Z90N 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 17 17Z90N 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 14Z90P",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 14Z90P 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 14Z90P 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 14Z90P 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15 15Z90P",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15 15Z90P 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15 15Z90P 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15 15Z90P 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 16Z90P",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 16Z90P 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 16Z90P 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 16Z90P 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 17 17Z90P",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 17 17Z90P 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 17 17Z90P 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 17 17Z90P 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 14Z90Q",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 14Z90Q 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 14Z90Q 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 14Z90Q 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15 15Z90Q",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15 15Z90Q 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15 15Z90Q 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15 15Z90Q 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 16Z90Q",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 16Z90Q 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 16Z90Q 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 16Z90Q 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 17 17Z90Q",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 17 17Z90Q 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 17 17Z90Q 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 17 17Z90Q 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 14Z90R",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 14Z90R 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 14Z90R 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 14Z90R 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15 15Z90R",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15 15Z90R 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15 15Z90R 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15 15Z90R 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 16Z90R",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 16Z90R 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 16Z90R 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 16Z90R 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 17 17Z90R",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 17 17Z90R 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 17 17Z90R 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 17 17Z90R 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 14Z90S",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 14Z90S 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 14Z90S 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 14Z90S 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15 15Z90S",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15 15Z90S 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15 15Z90S 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15 15Z90S 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 16Z90S",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 16Z90S 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 16Z90S 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 16Z90S 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 17 17Z90S",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 17 17Z90S 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 17 17Z90S 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 17 17Z90S 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15 15Z90T 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15 15Z90T 2025 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15 15Z90T 2025 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15 15Z90T 2025 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 16Z90T 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 16Z90T 2025 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 16Z90T 2025 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 16Z90T 2025 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 17 17Z90T 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 17 17Z90T 2025 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 17 17Z90T 2025 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 17 17Z90T 2025 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 2026",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, FHD+ to WQXGA, lightweight chassis",
+                "processor": "Intel Core Ultra / AMD Ryzen AI",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "0.99–1.45 kg",
+                "dimensions": "varies by gram 14/15/16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 2026 512 GB SSD White",
+                  "processor": "Intel Core Ultra",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 2026 1 TB SSD Black",
+                  "processor": "Intel Core Ultra",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 2026 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 15.6 2026",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, FHD+ to WQXGA, lightweight chassis",
+                "processor": "Intel Core Ultra / AMD Ryzen AI",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "0.99–1.45 kg",
+                "dimensions": "varies by gram 14/15/16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 15.6 2026 512 GB SSD White",
+                  "processor": "Intel Core Ultra",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 15.6 2026 1 TB SSD Black",
+                  "processor": "Intel Core Ultra",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 15.6 2026 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 2026",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, FHD+ to WQXGA, lightweight chassis",
+                "processor": "Intel Core Ultra / AMD Ryzen AI",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "0.99–1.45 kg",
+                "dimensions": "varies by gram 14/15/16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 2026 512 GB SSD White",
+                  "processor": "Intel Core Ultra",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 2026 1 TB SSD Black",
+                  "processor": "Intel Core Ultra",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 2026 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 17 2026",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, FHD+ to WQXGA, lightweight chassis",
+                "processor": "Intel Core Ultra / AMD Ryzen AI",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "0.99–1.45 kg",
+                "dimensions": "varies by gram 14/15/16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 17 2026 512 GB SSD White",
+                  "processor": "Intel Core Ultra",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 17 2026 1 TB SSD Black",
+                  "processor": "Intel Core Ultra",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 17 2026 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 14 2-in-1 14T90P",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–17\" FHD/WQXGA IPS display",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "4–16 GB DDR3/DDR4",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "34–72 Wh",
+                "os": "Windows 10",
+                "weight": "0.86–1.34 kg",
+                "dimensions": "varies by early gram chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 14 2-in-1 14T90P 128 GB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 14 2-in-1 14T90P 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 14 2-in-1 14T90P 512 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 2-in-1 16T90P",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 2-in-1 16T90P 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 2-in-1 16T90P 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 2-in-1 16T90P 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 2-in-1 16T90Q",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 2-in-1 16T90Q 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 2-in-1 16T90Q 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 2-in-1 16T90Q 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 2-in-1 16T90R",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 2-in-1 16T90R 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 2-in-1 16T90R 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 2-in-1 16T90R 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 2-in-1 16T90S",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, WUXGA/WQXGA, 16:10",
+                "processor": "Intel Core i5/i7 11th–13th Gen / Intel Core Ultra / AMD Ryzen",
+                "ram": "8–32 GB LPDDR4X/LPDDR5X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "0.99–1.35 kg",
+                "dimensions": "varies by gram generation"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 2-in-1 16T90S 256 GB SSD White",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "2 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 2-in-1 16T90S 512 GB SSD Black",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 2-in-1 16T90S 1 TB SSD Silver",
+                  "processor": "Intel Core i5/i7 11th–13th Gen",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram 16 2-in-1 2026",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Gram%2017%20%282018%29.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–17\" IPS/OLED, FHD+ to WQXGA, lightweight chassis",
+                "processor": "Intel Core Ultra / AMD Ryzen AI",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "72–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "0.99–1.45 kg",
+                "dimensions": "varies by gram 14/15/16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram 16 2-in-1 2026 512 GB SSD White",
+                  "processor": "Intel Core Ultra",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram 16 2-in-1 2026 1 TB SSD Black",
+                  "processor": "Intel Core Ultra",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram 16 2-in-1 2026 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gram Pro",
+          "models": [
+            {
+              "name": "LG gram Pro 16 16Z90SP 2024",
+              "release_year": 2024,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/17z90tr-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-gram-pro-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16–17\" OLED/IPS, WQXGA/WQXGA+, 144Hz on select models",
+                "processor": "Intel Core Ultra 5/7/9",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "77–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.2–1.5 kg",
+                "dimensions": "varies by gram Pro 16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Pro 16 16Z90SP 2024 512 GB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Pro 16 16Z90SP 2024 1 TB SSD Black",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Pro 16 16Z90SP 2024 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Pro 17 17Z90SP 2024",
+              "release_year": 2024,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/17z90tr-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-gram-pro-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16–17\" OLED/IPS, WQXGA/WQXGA+, 144Hz on select models",
+                "processor": "Intel Core Ultra 5/7/9",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "77–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.2–1.5 kg",
+                "dimensions": "varies by gram Pro 16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Pro 17 17Z90SP 2024 512 GB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Pro 17 17Z90SP 2024 1 TB SSD Black",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Pro 17 17Z90SP 2024 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Pro 16 16Z90TR 2025",
+              "release_year": 2025,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/17z90tr-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-gram-pro-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16–17\" OLED/IPS, WQXGA/WQXGA+, 144Hz on select models",
+                "processor": "Intel Core Ultra 5/7/9",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "77–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.2–1.5 kg",
+                "dimensions": "varies by gram Pro 16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Pro 16 16Z90TR 2025 512 GB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Pro 16 16Z90TR 2025 1 TB SSD Black",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Pro 16 16Z90TR 2025 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Pro 17 17Z90TR 2025",
+              "release_year": 2025,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/17z90tr-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-gram-pro-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16–17\" OLED/IPS, WQXGA/WQXGA+, 144Hz on select models",
+                "processor": "Intel Core Ultra 5/7/9",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "77–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.2–1.5 kg",
+                "dimensions": "varies by gram Pro 16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Pro 17 17Z90TR 2025 512 GB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Pro 17 17Z90TR 2025 1 TB SSD Black",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Pro 17 17Z90TR 2025 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Pro 16 2-in-1 16T90SP 2024",
+              "release_year": 2024,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/17z90tr-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-gram-pro-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16–17\" OLED/IPS, WQXGA/WQXGA+, 144Hz on select models",
+                "processor": "Intel Core Ultra 5/7/9",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "77–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.2–1.5 kg",
+                "dimensions": "varies by gram Pro 16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Pro 16 2-in-1 16T90SP 2024 512 GB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Pro 16 2-in-1 16T90SP 2024 1 TB SSD Black",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Pro 16 2-in-1 16T90SP 2024 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Pro 16 2-in-1 16T90TP 2025",
+              "release_year": 2025,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/17z90tr-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-gram-pro-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16–17\" OLED/IPS, WQXGA/WQXGA+, 144Hz on select models",
+                "processor": "Intel Core Ultra 5/7/9",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "77–90 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.2–1.5 kg",
+                "dimensions": "varies by gram Pro 16/17 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Pro 16 2-in-1 16T90TP 2025 512 GB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Pro 16 2-in-1 16T90TP 2025 1 TB SSD Black",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Pro 16 2-in-1 16T90TP 2025 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Pro 16 16Z90U 2026",
+              "release_year": 2026,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/17z90tr-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-gram-pro-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16–17\" OLED/IPS, 2560×1600 to 2880×1800, 120Hz",
+                "processor": "Intel Core Ultra 7 / Intel Core Ultra 9 next-gen",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "77–90 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.2–1.5 kg",
+                "dimensions": "varies by 16/17-inch gram Pro chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Pro 16 16Z90U 2026 512 GB SSD White",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Pro 16 16Z90U 2026 1 TB SSD Black",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Pro 16 16Z90U 2026 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Pro 17 17Z90UR 2026",
+              "release_year": 2026,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/17z90tr-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-gram-pro-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16–17\" OLED/IPS, 2560×1600 to 2880×1800, 120Hz",
+                "processor": "Intel Core Ultra 7 / Intel Core Ultra 9 next-gen",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "77–90 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.2–1.5 kg",
+                "dimensions": "varies by 16/17-inch gram Pro chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Pro 17 17Z90UR 2026 512 GB SSD White",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Pro 17 17Z90UR 2026 1 TB SSD Black",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Pro 17 17Z90UR 2026 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Pro 16 2-in-1 2026",
+              "release_year": 2026,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/17z90tr-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-gram-pro-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16–17\" OLED/IPS, 2560×1600 to 2880×1800, 120Hz",
+                "processor": "Intel Core Ultra 7 / Intel Core Ultra 9 next-gen",
+                "ram": "16–32 GB LPDDR5X",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "77–90 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.2–1.5 kg",
+                "dimensions": "varies by 16/17-inch gram Pro chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Pro 16 2-in-1 2026 512 GB SSD White",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Pro 16 2-in-1 2026 1 TB SSD Black",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Pro 16 2-in-1 2026 2 TB SSD Silver",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gram Style",
+          "models": [
+            {
+              "name": "LG gram Style 14 14Z90RS 2023",
+              "release_year": 2023,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16z90rs-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" OLED, 2880×1800 or 3200×2000, 120Hz",
+                "processor": "Intel Core i5/i7 13th Gen",
+                "ram": "16–32 GB LPDDR5",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 11 Home",
+                "weight": "0.99–1.23 kg",
+                "dimensions": "varies by gram Style 14/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Style 14 14Z90RS 2023 512 GB SSD White",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Style 14 14Z90RS 2023 1 TB SSD Black",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Style 14 14Z90RS 2023 1 TB SSD Black Alt",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Style 16 16Z90RS 2023",
+              "release_year": 2023,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16z90rs-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" OLED, 2880×1800 or 3200×2000, 120Hz",
+                "processor": "Intel Core i5/i7 13th Gen",
+                "ram": "16–32 GB LPDDR5",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 11 Home",
+                "weight": "0.99–1.23 kg",
+                "dimensions": "varies by gram Style 14/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Style 16 16Z90RS 2023 512 GB SSD White",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Style 16 16Z90RS 2023 1 TB SSD Black",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Style 16 16Z90RS 2023 1 TB SSD Black Alt",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Style 14 OLED",
+              "release_year": 2020,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16z90rs-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" OLED, 2880×1800 or 3200×2000, 120Hz",
+                "processor": "Intel Core i5/i7 13th Gen",
+                "ram": "16–32 GB LPDDR5",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 11 Home",
+                "weight": "0.99–1.23 kg",
+                "dimensions": "varies by gram Style 14/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Style 14 OLED 512 GB SSD White",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Style 14 OLED 1 TB SSD Black",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Style 14 OLED 1 TB SSD Black Alt",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                }
+              ]
+            },
+            {
+              "name": "LG gram Style 16 OLED",
+              "release_year": 2020,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16z90rs-k.adb9u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" OLED, 2880×1800 or 3200×2000, 120Hz",
+                "processor": "Intel Core i5/i7 13th Gen",
+                "ram": "16–32 GB LPDDR5",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "72–80 Wh",
+                "os": "Windows 11 Home",
+                "weight": "0.99–1.23 kg",
+                "dimensions": "varies by gram Style 14/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG gram Style 16 OLED 512 GB SSD White",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "1 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG gram Style 16 OLED 1 TB SSD Black",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG gram Style 16 OLED 1 TB SSD Black Alt",
+                  "processor": "Intel Core i5/i7 13th Gen",
+                  "ram": "2 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Black"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "UltraPC",
+          "models": [
+            {
+              "name": "LG UltraPC 13U70P",
+              "release_year": 2020,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–15.6\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40–72 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC generation"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 13U70P 128 GB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 13U70P 256 GB SSD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 13U70P 512 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 14U70P",
+              "release_year": 2020,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–15.6\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40–72 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC generation"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 14U70P 128 GB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 14U70P 256 GB SSD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 14U70P 512 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 15U70P",
+              "release_year": 2020,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–15.6\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40–72 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC generation"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 15U70P 128 GB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 15U70P 256 GB SSD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 15U70P 512 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 16U70Q 2022",
+              "release_year": 2022,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–15.6\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40–72 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC generation"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 16U70Q 2022 128 GB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 16U70Q 2022 256 GB SSD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 16U70Q 2022 512 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 14U70R 2023",
+              "release_year": 2023,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" IPS, FHD/WUXGA, 16:10 on select models",
+                "processor": "AMD Ryzen 5/7 5000/7000 series or Intel Core i5/i7",
+                "ram": "8–16 GB DDR4/LPDDR4X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "49–72 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 14U70R 2023 256 GB SSD White",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "1 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 14U70R 2023 512 GB SSD Black",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 14U70R 2023 1 TB SSD Silver",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 16U70R 2023",
+              "release_year": 2023,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" IPS, FHD/WUXGA, 16:10 on select models",
+                "processor": "AMD Ryzen 5/7 5000/7000 series or Intel Core i5/i7",
+                "ram": "8–16 GB DDR4/LPDDR4X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "49–72 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 16U70R 2023 256 GB SSD White",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "1 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 16U70R 2023 512 GB SSD Black",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 16U70R 2023 1 TB SSD Silver",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 14U70S 2024",
+              "release_year": 2024,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" IPS, FHD/WUXGA, 16:10 on select models",
+                "processor": "AMD Ryzen 5/7 5000/7000 series or Intel Core i5/i7",
+                "ram": "8–16 GB DDR4/LPDDR4X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "49–72 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 14U70S 2024 256 GB SSD White",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "1 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 14U70S 2024 512 GB SSD Black",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 14U70S 2024 1 TB SSD Silver",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 16U70S 2024",
+              "release_year": 2024,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" IPS, FHD/WUXGA, 16:10 on select models",
+                "processor": "AMD Ryzen 5/7 5000/7000 series or Intel Core i5/i7",
+                "ram": "8–16 GB DDR4/LPDDR4X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "49–72 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 16U70S 2024 256 GB SSD White",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "1 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 16U70S 2024 512 GB SSD Black",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 16U70S 2024 1 TB SSD Silver",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 14U70T 2025",
+              "release_year": 2025,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" IPS, FHD/WUXGA, 16:10 on select models",
+                "processor": "AMD Ryzen 5/7 5000/7000 series or Intel Core i5/i7",
+                "ram": "8–16 GB DDR4/LPDDR4X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "49–72 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 14U70T 2025 256 GB SSD White",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "1 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 14U70T 2025 512 GB SSD Black",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 14U70T 2025 1 TB SSD Silver",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 16U70T 2025",
+              "release_year": 2025,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" IPS, FHD/WUXGA, 16:10 on select models",
+                "processor": "AMD Ryzen 5/7 5000/7000 series or Intel Core i5/i7",
+                "ram": "8–16 GB DDR4/LPDDR4X",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "49–72 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 16U70T 2025 256 GB SSD White",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "1 GB",
+                  "storage": "256 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 16U70T 2025 512 GB SSD Black",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "4 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 16U70T 2025 1 TB SSD Silver",
+                  "processor": "AMD Ryzen 5/7 5000/7000 series",
+                  "ram": "8 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 13U70G",
+              "release_year": 2020,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–15.6\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40–72 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC generation"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 13U70G 128 GB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 13U70G 256 GB SSD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 13U70G 512 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 15U50P",
+              "release_year": 2020,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–15.6\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40–72 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC generation"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 15U50P 128 GB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 15U50P 256 GB SSD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 15U50P 512 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 15U50Q",
+              "release_year": 2020,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–15.6\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40–72 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC generation"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 15U50Q 128 GB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 15U50Q 256 GB SSD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 15U50Q 512 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG UltraPC 15U50R",
+              "release_year": 2020,
+              "image_url": "https://www.lg.com/content/dam/channel/wcms/us/images/laptops/16u70r-n.apc5u1/gallery/DZ_01.jpg",
+              "source_url": "https://www.lg.com/us/lg-ultrapc-notebook-laptops",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.3–15.6\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40–72 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3–1.9 kg",
+                "dimensions": "varies by UltraPC generation"
+              },
+              "variants": [
+                {
+                  "name": "LG UltraPC 15U50R 128 GB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "1 GB",
+                  "storage": "128 GB SSD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG UltraPC 15U50R 256 GB SSD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG UltraPC 15U50R 512 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Xnote",
+          "models": [
+            {
+              "name": "LG Xnote X110",
+              "release_year": 2009,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.1–15.6\" netbook/notebook display",
+                "processor": "Intel Atom / Intel Core 2 Duo / Intel Core i3/i5",
+                "ram": "1–4 GB DDR2/DDR3",
+                "storage": [
+                  "160 GB HDD",
+                  "250 GB HDD",
+                  "320 GB HDD"
+                ],
+                "battery": "30–48 Wh",
+                "os": "Windows XP / Windows 7",
+                "weight": "1.2–2.7 kg",
+                "dimensions": "varies by legacy LG notebook chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote X110 160 GB HDD White",
+                  "processor": "Intel Atom",
+                  "ram": "1 GB",
+                  "storage": "160 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote X110 250 GB HDD Black",
+                  "processor": "Intel Atom",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote X110 320 GB HDD Silver",
+                  "processor": "Intel Atom",
+                  "ram": "4 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote X120",
+              "release_year": 2009,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.1–15.6\" netbook/notebook display",
+                "processor": "Intel Atom / Intel Core 2 Duo / Intel Core i3/i5",
+                "ram": "1–4 GB DDR2/DDR3",
+                "storage": [
+                  "160 GB HDD",
+                  "250 GB HDD",
+                  "320 GB HDD"
+                ],
+                "battery": "30–48 Wh",
+                "os": "Windows XP / Windows 7",
+                "weight": "1.2–2.7 kg",
+                "dimensions": "varies by legacy LG notebook chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote X120 160 GB HDD White",
+                  "processor": "Intel Atom",
+                  "ram": "1 GB",
+                  "storage": "160 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote X120 250 GB HDD Black",
+                  "processor": "Intel Atom",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote X120 320 GB HDD Silver",
+                  "processor": "Intel Atom",
+                  "ram": "4 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote X130",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote X130 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote X130 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote X130 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote X140",
+              "release_year": 2009,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.1–15.6\" netbook/notebook display",
+                "processor": "Intel Atom / Intel Core 2 Duo / Intel Core i3/i5",
+                "ram": "1–4 GB DDR2/DDR3",
+                "storage": [
+                  "160 GB HDD",
+                  "250 GB HDD",
+                  "320 GB HDD"
+                ],
+                "battery": "30–48 Wh",
+                "os": "Windows XP / Windows 7",
+                "weight": "1.2–2.7 kg",
+                "dimensions": "varies by legacy LG notebook chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote X140 160 GB HDD White",
+                  "processor": "Intel Atom",
+                  "ram": "1 GB",
+                  "storage": "160 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote X140 250 GB HDD Black",
+                  "processor": "Intel Atom",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote X140 320 GB HDD Silver",
+                  "processor": "Intel Atom",
+                  "ram": "4 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote R510",
+              "release_year": 2009,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.1–15.6\" netbook/notebook display",
+                "processor": "Intel Atom / Intel Core 2 Duo / Intel Core i3/i5",
+                "ram": "1–4 GB DDR2/DDR3",
+                "storage": [
+                  "160 GB HDD",
+                  "250 GB HDD",
+                  "320 GB HDD"
+                ],
+                "battery": "30–48 Wh",
+                "os": "Windows XP / Windows 7",
+                "weight": "1.2–2.7 kg",
+                "dimensions": "varies by legacy LG notebook chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote R510 160 GB HDD White",
+                  "processor": "Intel Atom",
+                  "ram": "1 GB",
+                  "storage": "160 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote R510 250 GB HDD Black",
+                  "processor": "Intel Atom",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote R510 320 GB HDD Silver",
+                  "processor": "Intel Atom",
+                  "ram": "4 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote R580",
+              "release_year": 2009,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.1–15.6\" netbook/notebook display",
+                "processor": "Intel Atom / Intel Core 2 Duo / Intel Core i3/i5",
+                "ram": "1–4 GB DDR2/DDR3",
+                "storage": [
+                  "160 GB HDD",
+                  "250 GB HDD",
+                  "320 GB HDD"
+                ],
+                "battery": "30–48 Wh",
+                "os": "Windows XP / Windows 7",
+                "weight": "1.2–2.7 kg",
+                "dimensions": "varies by legacy LG notebook chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote R580 160 GB HDD White",
+                  "processor": "Intel Atom",
+                  "ram": "1 GB",
+                  "storage": "160 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote R580 250 GB HDD Black",
+                  "processor": "Intel Atom",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote R580 320 GB HDD Silver",
+                  "processor": "Intel Atom",
+                  "ram": "4 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote P210",
+              "release_year": 2011,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote P210 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote P210 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote P210 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote P220",
+              "release_year": 2011,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote P220 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote P220 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote P220 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote P330",
+              "release_year": 2011,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote P330 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote P330 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote P330 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote P420",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote P420 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote P420 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote P420 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote P430",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote P430 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote P430 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote P430 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote P530",
+              "release_year": 2009,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.1–15.6\" netbook/notebook display",
+                "processor": "Intel Atom / Intel Core 2 Duo / Intel Core i3/i5",
+                "ram": "1–4 GB DDR2/DDR3",
+                "storage": [
+                  "160 GB HDD",
+                  "250 GB HDD",
+                  "320 GB HDD"
+                ],
+                "battery": "30–48 Wh",
+                "os": "Windows XP / Windows 7",
+                "weight": "1.2–2.7 kg",
+                "dimensions": "varies by legacy LG notebook chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote P530 160 GB HDD White",
+                  "processor": "Intel Atom",
+                  "ram": "1 GB",
+                  "storage": "160 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote P530 250 GB HDD Black",
+                  "processor": "Intel Atom",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote P530 320 GB HDD Silver",
+                  "processor": "Intel Atom",
+                  "ram": "4 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote P535",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote P535 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote P535 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote P535 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote S430",
+              "release_year": 2011,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote S430 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote S430 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote S430 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote S530",
+              "release_year": 2011,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote S530 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote S530 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote S530 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote A520",
+              "release_year": 2013,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote A520 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote A520 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote A520 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote A530",
+              "release_year": 2011,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote A530 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote A530 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote A530 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote A540",
+              "release_year": 2013,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote A540 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote A540 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote A540 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote Z330",
+              "release_year": 2011,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote Z330 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote Z330 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote Z330 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote Z360",
+              "release_year": 2013,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote Z360 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote Z360 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote Z360 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote U560",
+              "release_year": 2012,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote U560 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote U560 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote U560 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote N450",
+              "release_year": 2012,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote N450 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote N450 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote N450 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote N550",
+              "release_year": 2012,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote N550 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote N550 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote N550 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote T280",
+              "release_year": 2011,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote T280 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote T280 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote T280 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote T380",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote T380 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote T380 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote T380 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG Xnote T580",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG Xnote T580 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG Xnote T580 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG Xnote T580 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Legacy",
+          "models": [
+            {
+              "name": "LG LW20 Express",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG LW20 Express 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG LW20 Express 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG LW20 Express 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG LW25 Express",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG LW25 Express 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG LW25 Express 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG LW25 Express 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG LS50 Express",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG LS50 Express 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG LS50 Express 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG LS50 Express 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG LE50 Express",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG LE50 Express 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG LE50 Express 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG LE50 Express 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG R200",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG R200 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG R200 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG R200 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG R400",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG R400 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG R400 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG R400 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG R405",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG R405 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG R405 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG R405 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG R500",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG R500 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG R500 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG R500 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG E200",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG E200 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG E200 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG E200 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG E300",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG E300 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG E300 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG E300 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "LG E500",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LG%20Xnote%20P210.jpg",
+              "source_url": "https://www.notebookcheck.net/LG-X-Series.19405.0.html",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.5–15.6\" HD/FHD LG Xnote display",
+                "processor": "Intel Core i3/i5/i7 or Intel Atom",
+                "ram": "2–8 GB DDR3",
+                "storage": [
+                  "320 GB HDD",
+                  "500 GB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "40–60 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.2–2.4 kg",
+                "dimensions": "varies by LG Xnote P/N/U/Z series chassis"
+              },
+              "variants": [
+                {
+                  "name": "LG E500 320 GB HDD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "2 GB",
+                  "storage": "320 GB HDD",
+                  "color": "White"
+                },
+                {
+                  "name": "LG E500 500 GB HDD Black",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "LG E500 128 GB SSD Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "catalog_scope_note": "LG model-line complete repair-shop catalog seed; not SKU/region/retailer complete.",
+  "generated_at": "2026-05-13T08:34:01.418495+00:00"
+}

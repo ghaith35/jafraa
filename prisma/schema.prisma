@@ -336,6 +336,8 @@ model Store {
   carts                   Cart[]
   stockAdjustments        StockAdjustment[]
   tradeinPurchases        TradeinPurchase[]
+  accessoryCategories     AccessoryCategory[]
+  accessoryItems          AccessoryItem[]
 
   @@unique([companyId, prefix])
   @@index([companyId])
@@ -887,6 +889,53 @@ model InventoryCategory {
   @@index([storeId, itemType, isActive])
   @@index([storeId, itemType, deviceCategoryId])
   @@map("inventory_categories")
+}
+
+// ─── Accessories Catalog ──────────────────────────────────────────────────────
+
+model AccessoryCategory {
+  id        String   @id @default(cuid())
+  storeId   String
+  parentId  String?
+  name      String
+  sortOrder Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  parent   AccessoryCategory?  @relation("AccessoryTree", fields: [parentId], references: [id])
+  children AccessoryCategory[] @relation("AccessoryTree")
+  items    AccessoryItem[]
+  store    Store               @relation(fields: [storeId], references: [id])
+
+  @@unique([storeId, parentId, name])
+  @@index([storeId, parentId])
+  @@map("accessory_categories")
+}
+
+model AccessoryItem {
+  id                String   @id @default(cuid())
+  storeId           String
+  categoryId        String
+  name              String
+  sku               String
+  brand             String?
+  reference         String?
+  sellingPrice      Decimal  @db.Decimal(12, 2)
+  stockQty          Int      @default(0)
+  lowStockThreshold Int?
+  imageUrl          String?
+  notes             String?
+  isArchived        Boolean  @default(false)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  category AccessoryCategory @relation(fields: [categoryId], references: [id])
+  store    Store             @relation(fields: [storeId], references: [id])
+
+  @@unique([storeId, sku])
+  @@index([storeId, categoryId])
+  @@index([name])
+  @@map("accessory_items")
 }
 
 // Sellable product — chargers, cables, cases, accessories, etc.

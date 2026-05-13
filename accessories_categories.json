@@ -1,0 +1,6127 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "Accessories categories for REPAIRE repair shop management",
+  "categories": [
+    {
+      "name": "Câbles",
+      "children": [
+        {
+          "name": "Audio",
+          "children": [
+            {
+              "name": "Jack 3,5mm",
+              "children": [
+                {
+                  "name": "Mâle-Mâle",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                },
+                {
+                  "name": "Mâle-Femelle",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                },
+                {
+                  "name": "Femelle-Femelle",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Jack 6,35mm",
+              "children": [
+                {
+                  "name": "Mâle-Mâle",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                },
+                {
+                  "name": "Mâle-Femelle",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RCA",
+              "children": [
+                {
+                  "name": "2 RCA vers 2 RCA",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                },
+                {
+                  "name": "Jack 3,5mm vers RCA",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                },
+                {
+                  "name": "RCA vidéo composite",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Optique",
+              "children": [
+                {
+                  "name": "Toslink",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                },
+                {
+                  "name": "Mini-Toslink vers Toslink",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "XLR",
+              "children": [
+                {
+                  "name": "XLR mâle vers femelle",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                },
+                {
+                  "name": "XLR mâle vers jack 6,35mm",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "USB",
+          "children": [
+            {
+              "name": "USB-A vers USB-B",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "USB-A vers Micro USB",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "USB-A vers Mini USB",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "USB-A vers USB-C",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "USB-C vers USB-C",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "USB-C vers Lightning",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "USB-C vers HDMI",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "USB-C vers VGA",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "USB-C vers Ethernet",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "USB-C vers USB-A OTG",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "Rallonge USB 3.0",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            },
+            {
+              "name": "Rallonge USB 2.0",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Réseau",
+          "children": [
+            {
+              "name": "Câbles RJ45",
+              "children": [
+                {
+                  "name": "Cat5e UTP",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "2m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    },
+                    {
+                      "name": "20m"
+                    },
+                    {
+                      "name": "30m"
+                    }
+                  ]
+                },
+                {
+                  "name": "Cat5e STP",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "2m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    },
+                    {
+                      "name": "20m"
+                    },
+                    {
+                      "name": "30m"
+                    }
+                  ]
+                },
+                {
+                  "name": "Cat6 UTP",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "2m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    },
+                    {
+                      "name": "20m"
+                    },
+                    {
+                      "name": "30m"
+                    }
+                  ]
+                },
+                {
+                  "name": "Cat6 STP",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "2m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    },
+                    {
+                      "name": "20m"
+                    },
+                    {
+                      "name": "30m"
+                    }
+                  ]
+                },
+                {
+                  "name": "Cat7 STP",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "2m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    },
+                    {
+                      "name": "20m"
+                    },
+                    {
+                      "name": "30m"
+                    }
+                  ]
+                },
+                {
+                  "name": "Cat8 STP",
+                  "children": [
+                    {
+                      "name": "0,5m"
+                    },
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "2m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    },
+                    {
+                      "name": "10m"
+                    },
+                    {
+                      "name": "20m"
+                    },
+                    {
+                      "name": "30m"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Connectique RJ45",
+              "children": [
+                {
+                  "name": "Coupleur RJ45",
+                  "children": [
+                    {
+                      "name": "Cat5e"
+                    },
+                    {
+                      "name": "Cat6"
+                    },
+                    {
+                      "name": "Cat6A"
+                    }
+                  ]
+                },
+                {
+                  "name": "Keystone RJ45",
+                  "children": [
+                    {
+                      "name": "Cat5e"
+                    },
+                    {
+                      "name": "Cat6"
+                    },
+                    {
+                      "name": "Cat6A"
+                    }
+                  ]
+                },
+                {
+                  "name": "Connecteurs RJ45",
+                  "children": [
+                    {
+                      "name": "Standard"
+                    },
+                    {
+                      "name": "Pass-through"
+                    },
+                    {
+                      "name": "Blindé"
+                    }
+                  ]
+                },
+                {
+                  "name": "Manchons RJ45",
+                  "children": [
+                    {
+                      "name": "Boot court"
+                    },
+                    {
+                      "name": "Boot long"
+                    },
+                    {
+                      "name": "Boot anti-pliure"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vidéo",
+          "children": [
+            {
+              "name": "HDMI 2.0",
+              "children": [
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                },
+                {
+                  "name": "10m"
+                }
+              ]
+            },
+            {
+              "name": "HDMI 2.1",
+              "children": [
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                },
+                {
+                  "name": "10m"
+                }
+              ]
+            },
+            {
+              "name": "DisplayPort",
+              "children": [
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                },
+                {
+                  "name": "10m"
+                }
+              ]
+            },
+            {
+              "name": "VGA",
+              "children": [
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                },
+                {
+                  "name": "10m"
+                }
+              ]
+            },
+            {
+              "name": "DVI",
+              "children": [
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                },
+                {
+                  "name": "10m"
+                }
+              ]
+            },
+            {
+              "name": "Mini DisplayPort",
+              "children": [
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                },
+                {
+                  "name": "10m"
+                }
+              ]
+            },
+            {
+              "name": "Thunderbolt 4",
+              "children": [
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                },
+                {
+                  "name": "10m"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Alimentation",
+          "children": [
+            {
+              "name": "Câbles secteur",
+              "children": [
+                {
+                  "name": "C5 Mickey Mouse",
+                  "children": [
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    }
+                  ]
+                },
+                {
+                  "name": "C7 Figure 8",
+                  "children": [
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    }
+                  ]
+                },
+                {
+                  "name": "C13 Kettle",
+                  "children": [
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    }
+                  ]
+                },
+                {
+                  "name": "C19",
+                  "children": [
+                    {
+                      "name": "1m"
+                    },
+                    {
+                      "name": "1,5m"
+                    },
+                    {
+                      "name": "3m"
+                    },
+                    {
+                      "name": "5m"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Rallonges électriques",
+              "children": [
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                },
+                {
+                  "name": "10m"
+                },
+                {
+                  "name": "20m"
+                }
+              ]
+            },
+            {
+              "name": "Multiprises",
+              "children": [
+                {
+                  "name": "3 prises"
+                },
+                {
+                  "name": "4 prises"
+                },
+                {
+                  "name": "5 prises"
+                },
+                {
+                  "name": "6 prises"
+                },
+                {
+                  "name": "Avec interrupteur"
+                },
+                {
+                  "name": "Avec parafoudre"
+                },
+                {
+                  "name": "Avec USB"
+                },
+                {
+                  "name": "Avec câble 1,5m"
+                },
+                {
+                  "name": "Avec câble 3m"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Adaptateurs audio/vidéo",
+          "children": [
+            {
+              "name": "HDMI vers VGA"
+            },
+            {
+              "name": "VGA vers HDMI"
+            },
+            {
+              "name": "DisplayPort vers HDMI"
+            },
+            {
+              "name": "USB-C vers HDMI"
+            },
+            {
+              "name": "USB-C vers jack 3,5mm"
+            },
+            {
+              "name": "Lightning vers jack 3,5mm"
+            },
+            {
+              "name": "Hub USB-C multiport"
+            }
+          ]
+        },
+        {
+          "name": "Spécialisés",
+          "children": [
+            {
+              "name": "Coaxial",
+              "children": [
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "3m"
+                },
+                {
+                  "name": "5m"
+                },
+                {
+                  "name": "10m"
+                },
+                {
+                  "name": "20m"
+                }
+              ]
+            },
+            {
+              "name": "Câble enceinte",
+              "children": [
+                {
+                  "name": "2x0,75mm²"
+                },
+                {
+                  "name": "2x1,5mm²"
+                },
+                {
+                  "name": "2x2,5mm²"
+                },
+                {
+                  "name": "10m"
+                },
+                {
+                  "name": "20m"
+                },
+                {
+                  "name": "50m"
+                }
+              ]
+            },
+            {
+              "name": "Nappe IDC / ribbon laptop",
+              "children": [
+                {
+                  "name": "20 broches"
+                },
+                {
+                  "name": "30 broches"
+                },
+                {
+                  "name": "40 broches"
+                },
+                {
+                  "name": "50 broches"
+                },
+                {
+                  "name": "FFC 0,5mm"
+                },
+                {
+                  "name": "FFC 1,0mm"
+                }
+              ]
+            },
+            {
+              "name": "SATA data",
+              "children": [
+                {
+                  "name": "30cm"
+                },
+                {
+                  "name": "50cm"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "Coudé"
+                }
+              ]
+            },
+            {
+              "name": "SATA power",
+              "children": [
+                {
+                  "name": "Simple"
+                },
+                {
+                  "name": "Double"
+                },
+                {
+                  "name": "Molex vers SATA"
+                },
+                {
+                  "name": "Splitter SATA"
+                }
+              ]
+            },
+            {
+              "name": "Molex",
+              "children": [
+                {
+                  "name": "Molex vers SATA"
+                },
+                {
+                  "name": "Molex vers 2 ventilateurs"
+                },
+                {
+                  "name": "Rallonge Molex"
+                }
+              ]
+            },
+            {
+              "name": "eSATA",
+              "children": [
+                {
+                  "name": "0,5m"
+                },
+                {
+                  "name": "1m"
+                },
+                {
+                  "name": "2m"
+                }
+              ]
+            },
+            {
+              "name": "M.2",
+              "children": [
+                {
+                  "name": "Rallonge M.2 NVMe"
+                },
+                {
+                  "name": "Adaptateur nappe M.2"
+                },
+                {
+                  "name": "Câble U.2 vers M.2"
+                }
+              ]
+            },
+            {
+              "name": "Antenne WiFi laptop",
+              "children": [
+                {
+                  "name": "IPEX MHF4"
+                },
+                {
+                  "name": "IPEX U.FL"
+                },
+                {
+                  "name": "Double antenne"
+                },
+                {
+                  "name": "Antenne interne avec câble"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chargeurs",
+      "children": [
+        {
+          "name": "Téléphone",
+          "children": [
+            {
+              "name": "USB-A simple",
+              "children": [
+                {
+                  "name": "5W"
+                },
+                {
+                  "name": "10W"
+                },
+                {
+                  "name": "18W"
+                }
+              ]
+            },
+            {
+              "name": "USB-C simple",
+              "children": [
+                {
+                  "name": "20W"
+                },
+                {
+                  "name": "30W"
+                },
+                {
+                  "name": "40W"
+                }
+              ]
+            },
+            {
+              "name": "Double port",
+              "children": [
+                {
+                  "name": "2x USB-A"
+                },
+                {
+                  "name": "USB-A + USB-C 20W"
+                },
+                {
+                  "name": "USB-A + USB-C 30W"
+                },
+                {
+                  "name": "2x USB-C 35W"
+                },
+                {
+                  "name": "2x USB-C 45W"
+                }
+              ]
+            },
+            {
+              "name": "Multiport GaN",
+              "children": [
+                {
+                  "name": "65W"
+                },
+                {
+                  "name": "100W"
+                },
+                {
+                  "name": "120W"
+                },
+                {
+                  "name": "150W"
+                },
+                {
+                  "name": "200W"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ordinateur portable",
+          "children": [
+            {
+              "name": "Dell",
+              "children": [
+                {
+                  "name": "45W"
+                },
+                {
+                  "name": "65W"
+                },
+                {
+                  "name": "90W"
+                },
+                {
+                  "name": "130W"
+                },
+                {
+                  "name": "180W"
+                },
+                {
+                  "name": "240W"
+                }
+              ]
+            },
+            {
+              "name": "HP",
+              "children": [
+                {
+                  "name": "45W"
+                },
+                {
+                  "name": "65W"
+                },
+                {
+                  "name": "90W"
+                },
+                {
+                  "name": "120W"
+                },
+                {
+                  "name": "150W"
+                },
+                {
+                  "name": "200W"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo",
+              "children": [
+                {
+                  "name": "45W"
+                },
+                {
+                  "name": "65W"
+                },
+                {
+                  "name": "90W"
+                },
+                {
+                  "name": "120W"
+                },
+                {
+                  "name": "135W"
+                },
+                {
+                  "name": "170W"
+                },
+                {
+                  "name": "230W"
+                }
+              ]
+            },
+            {
+              "name": "Apple MagSafe 1",
+              "children": [
+                {
+                  "name": "45W"
+                },
+                {
+                  "name": "60W"
+                },
+                {
+                  "name": "85W"
+                }
+              ]
+            },
+            {
+              "name": "Apple MagSafe 2",
+              "children": [
+                {
+                  "name": "45W"
+                },
+                {
+                  "name": "60W"
+                },
+                {
+                  "name": "85W"
+                }
+              ]
+            },
+            {
+              "name": "Apple MagSafe 3",
+              "children": [
+                {
+                  "name": "70W"
+                },
+                {
+                  "name": "96W"
+                },
+                {
+                  "name": "140W"
+                }
+              ]
+            },
+            {
+              "name": "Apple USB-C",
+              "children": [
+                {
+                  "name": "30W"
+                },
+                {
+                  "name": "67W"
+                },
+                {
+                  "name": "87W"
+                },
+                {
+                  "name": "96W"
+                },
+                {
+                  "name": "140W"
+                }
+              ]
+            },
+            {
+              "name": "Asus",
+              "children": [
+                {
+                  "name": "45W"
+                },
+                {
+                  "name": "65W"
+                },
+                {
+                  "name": "90W"
+                },
+                {
+                  "name": "120W"
+                },
+                {
+                  "name": "150W"
+                },
+                {
+                  "name": "180W"
+                },
+                {
+                  "name": "230W"
+                }
+              ]
+            },
+            {
+              "name": "Acer",
+              "children": [
+                {
+                  "name": "45W"
+                },
+                {
+                  "name": "65W"
+                },
+                {
+                  "name": "90W"
+                },
+                {
+                  "name": "135W"
+                },
+                {
+                  "name": "180W"
+                }
+              ]
+            },
+            {
+              "name": "MSI",
+              "children": [
+                {
+                  "name": "90W"
+                },
+                {
+                  "name": "120W"
+                },
+                {
+                  "name": "150W"
+                },
+                {
+                  "name": "180W"
+                },
+                {
+                  "name": "230W"
+                },
+                {
+                  "name": "280W"
+                }
+              ]
+            },
+            {
+              "name": "Samsung",
+              "children": [
+                {
+                  "name": "45W"
+                },
+                {
+                  "name": "65W"
+                },
+                {
+                  "name": "90W"
+                }
+              ]
+            },
+            {
+              "name": "Huawei",
+              "children": [
+                {
+                  "name": "65W"
+                },
+                {
+                  "name": "90W"
+                },
+                {
+                  "name": "135W"
+                }
+              ]
+            },
+            {
+              "name": "Universel USB-C",
+              "children": [
+                {
+                  "name": "65W"
+                },
+                {
+                  "name": "100W"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Voiture",
+          "children": [
+            {
+              "name": "USB-A simple",
+              "children": [
+                {
+                  "name": "12W"
+                },
+                {
+                  "name": "18W QC3.0"
+                }
+              ]
+            },
+            {
+              "name": "USB-C simple",
+              "children": [
+                {
+                  "name": "20W PD"
+                },
+                {
+                  "name": "30W PD"
+                },
+                {
+                  "name": "45W PD"
+                }
+              ]
+            },
+            {
+              "name": "Double USB-A",
+              "children": [
+                {
+                  "name": "12W"
+                },
+                {
+                  "name": "24W"
+                },
+                {
+                  "name": "QC3.0"
+                }
+              ]
+            },
+            {
+              "name": "USB-A + USB-C",
+              "children": [
+                {
+                  "name": "30W"
+                },
+                {
+                  "name": "45W"
+                },
+                {
+                  "name": "65W"
+                }
+              ]
+            },
+            {
+              "name": "Fast charge QC3.0 / PD",
+              "children": [
+                {
+                  "name": "QC3.0"
+                },
+                {
+                  "name": "PD 20W"
+                },
+                {
+                  "name": "PD 30W"
+                },
+                {
+                  "name": "PD 65W"
+                }
+              ]
+            },
+            {
+              "name": "Multi-ports",
+              "children": [
+                {
+                  "name": "3 ports"
+                },
+                {
+                  "name": "4 ports"
+                },
+                {
+                  "name": "Avec câble intégré"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sans fil",
+          "children": [
+            {
+              "name": "Pad simple",
+              "children": [
+                {
+                  "name": "5W"
+                },
+                {
+                  "name": "10W"
+                },
+                {
+                  "name": "15W"
+                },
+                {
+                  "name": "25W"
+                }
+              ]
+            },
+            {
+              "name": "Pad duo",
+              "children": [
+                {
+                  "name": "10W"
+                },
+                {
+                  "name": "15W"
+                }
+              ]
+            },
+            {
+              "name": "Support simple",
+              "children": [
+                {
+                  "name": "10W"
+                },
+                {
+                  "name": "15W"
+                },
+                {
+                  "name": "25W"
+                }
+              ]
+            },
+            {
+              "name": "Support duo",
+              "children": [
+                {
+                  "name": "15W"
+                },
+                {
+                  "name": "25W"
+                }
+              ]
+            },
+            {
+              "name": "Support voiture",
+              "children": [
+                {
+                  "name": "10W"
+                },
+                {
+                  "name": "15W"
+                },
+                {
+                  "name": "25W"
+                }
+              ]
+            },
+            {
+              "name": "3-en-1",
+              "children": [
+                {
+                  "name": "15W"
+                },
+                {
+                  "name": "25W"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Batteries externes",
+          "children": [
+            {
+              "name": "5000mAh",
+              "children": [
+                {
+                  "name": "Standard"
+                },
+                {
+                  "name": "USB-C PD"
+                },
+                {
+                  "name": "Sans fil"
+                }
+              ]
+            },
+            {
+              "name": "10000mAh",
+              "children": [
+                {
+                  "name": "Standard"
+                },
+                {
+                  "name": "USB-C PD"
+                },
+                {
+                  "name": "Sans fil"
+                },
+                {
+                  "name": "Avec écran"
+                }
+              ]
+            },
+            {
+              "name": "20000mAh",
+              "children": [
+                {
+                  "name": "Standard"
+                },
+                {
+                  "name": "USB-C PD"
+                },
+                {
+                  "name": "Sans fil"
+                },
+                {
+                  "name": "Avec écran"
+                }
+              ]
+            },
+            {
+              "name": "30000mAh",
+              "children": [
+                {
+                  "name": "Standard"
+                },
+                {
+                  "name": "USB-C PD"
+                },
+                {
+                  "name": "Avec écran"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Batteries",
+      "children": [
+        {
+          "name": "Téléphone",
+          "children": [
+            {
+              "name": "iPhone",
+              "children": [
+                {
+                  "name": "Séries 5/SE/6/7/8"
+                },
+                {
+                  "name": "Séries X/XS/XR/11"
+                },
+                {
+                  "name": "Série 12"
+                },
+                {
+                  "name": "Série 13"
+                },
+                {
+                  "name": "Série 14"
+                },
+                {
+                  "name": "Série 15"
+                },
+                {
+                  "name": "Série 16"
+                }
+              ]
+            },
+            {
+              "name": "Samsung Galaxy",
+              "children": [
+                {
+                  "name": "Série S"
+                },
+                {
+                  "name": "Série A"
+                },
+                {
+                  "name": "Série Note"
+                },
+                {
+                  "name": "Série J"
+                }
+              ]
+            },
+            {
+              "name": "Xiaomi / Redmi / POCO",
+              "children": [
+                {
+                  "name": "Redmi Note"
+                },
+                {
+                  "name": "Redmi"
+                },
+                {
+                  "name": "Mi / Xiaomi"
+                },
+                {
+                  "name": "POCO"
+                }
+              ]
+            },
+            {
+              "name": "Huawei",
+              "children": [
+                {
+                  "name": "Série P"
+                },
+                {
+                  "name": "Série Mate"
+                },
+                {
+                  "name": "Série Y"
+                },
+                {
+                  "name": "Série Nova"
+                }
+              ]
+            },
+            {
+              "name": "Oppo",
+              "children": [
+                {
+                  "name": "Série A"
+                },
+                {
+                  "name": "Série Reno"
+                },
+                {
+                  "name": "Série Find"
+                }
+              ]
+            },
+            {
+              "name": "Realme",
+              "children": [
+                {
+                  "name": "Série C"
+                },
+                {
+                  "name": "Série numérique"
+                },
+                {
+                  "name": "Série GT"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ordinateur portable",
+          "children": [
+            {
+              "name": "Dell",
+              "children": [
+                {
+                  "name": "Latitude"
+                },
+                {
+                  "name": "Inspiron"
+                },
+                {
+                  "name": "XPS"
+                },
+                {
+                  "name": "Precision"
+                }
+              ]
+            },
+            {
+              "name": "HP",
+              "children": [
+                {
+                  "name": "ProBook"
+                },
+                {
+                  "name": "EliteBook"
+                },
+                {
+                  "name": "Pavilion"
+                },
+                {
+                  "name": "Envy"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo",
+              "children": [
+                {
+                  "name": "ThinkPad T"
+                },
+                {
+                  "name": "ThinkPad X"
+                },
+                {
+                  "name": "ThinkPad L"
+                },
+                {
+                  "name": "ThinkPad E"
+                },
+                {
+                  "name": "IdeaPad"
+                }
+              ]
+            },
+            {
+              "name": "Apple MacBook",
+              "children": [
+                {
+                  "name": "MacBook Air 11\""
+                },
+                {
+                  "name": "MacBook Air 13\""
+                },
+                {
+                  "name": "MacBook Pro 13\""
+                },
+                {
+                  "name": "MacBook Pro 15\""
+                },
+                {
+                  "name": "MacBook Pro 16\""
+                },
+                {
+                  "name": "MacBook Retina 12\""
+                },
+                {
+                  "name": "MacBook Apple Silicon"
+                }
+              ]
+            },
+            {
+              "name": "Asus",
+              "children": [
+                {
+                  "name": "VivoBook"
+                },
+                {
+                  "name": "ZenBook"
+                },
+                {
+                  "name": "ROG"
+                },
+                {
+                  "name": "TUF"
+                }
+              ]
+            },
+            {
+              "name": "Acer",
+              "children": [
+                {
+                  "name": "Aspire"
+                },
+                {
+                  "name": "Swift"
+                },
+                {
+                  "name": "TravelMate"
+                },
+                {
+                  "name": "Nitro"
+                }
+              ]
+            },
+            {
+              "name": "MSI",
+              "children": [
+                {
+                  "name": "Modern"
+                },
+                {
+                  "name": "Prestige"
+                },
+                {
+                  "name": "GF"
+                },
+                {
+                  "name": "GS"
+                },
+                {
+                  "name": "GE"
+                }
+              ]
+            },
+            {
+              "name": "Samsung",
+              "children": [
+                {
+                  "name": "Galaxy Book"
+                },
+                {
+                  "name": "Notebook 9"
+                }
+              ]
+            },
+            {
+              "name": "Huawei",
+              "children": [
+                {
+                  "name": "MateBook D"
+                },
+                {
+                  "name": "MateBook X"
+                },
+                {
+                  "name": "MateBook 14"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface",
+              "children": [
+                {
+                  "name": "Surface Pro"
+                },
+                {
+                  "name": "Surface Laptop"
+                },
+                {
+                  "name": "Surface Book"
+                },
+                {
+                  "name": "Surface Go"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Autres",
+          "children": [
+            {
+              "name": "Batteries UPS",
+              "children": [
+                {
+                  "name": "12V 7Ah"
+                },
+                {
+                  "name": "12V 9Ah"
+                },
+                {
+                  "name": "12V 18Ah"
+                },
+                {
+                  "name": "12V 26Ah"
+                }
+              ]
+            },
+            {
+              "name": "Piles bouton CMOS",
+              "children": [
+                {
+                  "name": "CR2032"
+                },
+                {
+                  "name": "CR2016"
+                },
+                {
+                  "name": "CR2025"
+                }
+              ]
+            },
+            {
+              "name": "Cellules lithium-ion",
+              "children": [
+                {
+                  "name": "18650"
+                },
+                {
+                  "name": "21700"
+                }
+              ]
+            },
+            {
+              "name": "Rechargeables NiMH",
+              "children": [
+                {
+                  "name": "AA"
+                },
+                {
+                  "name": "AAA"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Protections d'écran",
+      "children": [
+        {
+          "name": "Verre trempé",
+          "children": [
+            {
+              "name": "iPhone",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "Samsung Galaxy A",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "Samsung Galaxy Note",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "Samsung Galaxy J",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "Xiaomi / Redmi / POCO",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "Huawei",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "Oppo",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "Realme",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "iPad",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "Samsung Tab",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MatePad",
+              "children": [
+                {
+                  "name": "Transparent"
+                },
+                {
+                  "name": "Confidentialité"
+                },
+                {
+                  "name": "Mat"
+                },
+                {
+                  "name": "Anti-lumière bleue"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Films",
+          "children": [
+            {
+              "name": "TPU",
+              "children": [
+                {
+                  "name": "iPhone"
+                },
+                {
+                  "name": "Samsung Galaxy S"
+                },
+                {
+                  "name": "Samsung Galaxy A"
+                },
+                {
+                  "name": "Samsung Galaxy Note"
+                },
+                {
+                  "name": "Samsung Galaxy J"
+                },
+                {
+                  "name": "Xiaomi / Redmi / POCO"
+                },
+                {
+                  "name": "Huawei"
+                },
+                {
+                  "name": "Oppo"
+                },
+                {
+                  "name": "Realme"
+                },
+                {
+                  "name": "iPad"
+                },
+                {
+                  "name": "Samsung Tab"
+                },
+                {
+                  "name": "Huawei MatePad"
+                }
+              ]
+            },
+            {
+              "name": "Hydrogel",
+              "children": [
+                {
+                  "name": "iPhone"
+                },
+                {
+                  "name": "Samsung Galaxy S"
+                },
+                {
+                  "name": "Samsung Galaxy A"
+                },
+                {
+                  "name": "Samsung Galaxy Note"
+                },
+                {
+                  "name": "Samsung Galaxy J"
+                },
+                {
+                  "name": "Xiaomi / Redmi / POCO"
+                },
+                {
+                  "name": "Huawei"
+                },
+                {
+                  "name": "Oppo"
+                },
+                {
+                  "name": "Realme"
+                },
+                {
+                  "name": "iPad"
+                },
+                {
+                  "name": "Samsung Tab"
+                },
+                {
+                  "name": "Huawei MatePad"
+                }
+              ]
+            },
+            {
+              "name": "PET",
+              "children": [
+                {
+                  "name": "iPhone"
+                },
+                {
+                  "name": "Samsung Galaxy S"
+                },
+                {
+                  "name": "Samsung Galaxy A"
+                },
+                {
+                  "name": "Samsung Galaxy Note"
+                },
+                {
+                  "name": "Samsung Galaxy J"
+                },
+                {
+                  "name": "Xiaomi / Redmi / POCO"
+                },
+                {
+                  "name": "Huawei"
+                },
+                {
+                  "name": "Oppo"
+                },
+                {
+                  "name": "Realme"
+                },
+                {
+                  "name": "iPad"
+                },
+                {
+                  "name": "Samsung Tab"
+                },
+                {
+                  "name": "Huawei MatePad"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Coques et housses",
+      "children": [
+        {
+          "name": "Coques téléphone",
+          "children": [
+            {
+              "name": "Silicone",
+              "children": [
+                {
+                  "name": "iPhone"
+                },
+                {
+                  "name": "Samsung Galaxy"
+                },
+                {
+                  "name": "Xiaomi / Redmi / POCO"
+                },
+                {
+                  "name": "Huawei"
+                },
+                {
+                  "name": "Oppo"
+                },
+                {
+                  "name": "Realme"
+                }
+              ]
+            },
+            {
+              "name": "TPU",
+              "children": [
+                {
+                  "name": "iPhone"
+                },
+                {
+                  "name": "Samsung Galaxy"
+                },
+                {
+                  "name": "Xiaomi / Redmi / POCO"
+                },
+                {
+                  "name": "Huawei"
+                },
+                {
+                  "name": "Oppo"
+                },
+                {
+                  "name": "Realme"
+                }
+              ]
+            },
+            {
+              "name": "Hard plastic",
+              "children": [
+                {
+                  "name": "iPhone"
+                },
+                {
+                  "name": "Samsung Galaxy"
+                },
+                {
+                  "name": "Xiaomi / Redmi / POCO"
+                },
+                {
+                  "name": "Huawei"
+                },
+                {
+                  "name": "Oppo"
+                },
+                {
+                  "name": "Realme"
+                }
+              ]
+            },
+            {
+              "name": "Cuir",
+              "children": [
+                {
+                  "name": "iPhone"
+                },
+                {
+                  "name": "Samsung Galaxy"
+                },
+                {
+                  "name": "Xiaomi / Redmi / POCO"
+                },
+                {
+                  "name": "Huawei"
+                },
+                {
+                  "name": "Oppo"
+                },
+                {
+                  "name": "Realme"
+                }
+              ]
+            },
+            {
+              "name": "Portefeuille",
+              "children": [
+                {
+                  "name": "iPhone"
+                },
+                {
+                  "name": "Samsung Galaxy"
+                },
+                {
+                  "name": "Xiaomi / Redmi / POCO"
+                },
+                {
+                  "name": "Huawei"
+                },
+                {
+                  "name": "Oppo"
+                },
+                {
+                  "name": "Realme"
+                }
+              ]
+            },
+            {
+              "name": "Rugged / Armor",
+              "children": [
+                {
+                  "name": "iPhone"
+                },
+                {
+                  "name": "Samsung Galaxy"
+                },
+                {
+                  "name": "Xiaomi / Redmi / POCO"
+                },
+                {
+                  "name": "Huawei"
+                },
+                {
+                  "name": "Oppo"
+                },
+                {
+                  "name": "Realme"
+                }
+              ]
+            },
+            {
+              "name": "Clear",
+              "children": [
+                {
+                  "name": "iPhone"
+                },
+                {
+                  "name": "Samsung Galaxy"
+                },
+                {
+                  "name": "Xiaomi / Redmi / POCO"
+                },
+                {
+                  "name": "Huawei"
+                },
+                {
+                  "name": "Oppo"
+                },
+                {
+                  "name": "Realme"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Housses laptop",
+          "children": [
+            {
+              "name": "11,6\"",
+              "children": [
+                {
+                  "name": "Néoprène"
+                },
+                {
+                  "name": "Cuir"
+                },
+                {
+                  "name": "Rembourré"
+                }
+              ]
+            },
+            {
+              "name": "13,3\"",
+              "children": [
+                {
+                  "name": "Néoprène"
+                },
+                {
+                  "name": "Cuir"
+                },
+                {
+                  "name": "Rembourré"
+                }
+              ]
+            },
+            {
+              "name": "14\"",
+              "children": [
+                {
+                  "name": "Néoprène"
+                },
+                {
+                  "name": "Cuir"
+                },
+                {
+                  "name": "Rembourré"
+                }
+              ]
+            },
+            {
+              "name": "15,6\"",
+              "children": [
+                {
+                  "name": "Néoprène"
+                },
+                {
+                  "name": "Cuir"
+                },
+                {
+                  "name": "Rembourré"
+                }
+              ]
+            },
+            {
+              "name": "16\"",
+              "children": [
+                {
+                  "name": "Néoprène"
+                },
+                {
+                  "name": "Cuir"
+                },
+                {
+                  "name": "Rembourré"
+                }
+              ]
+            },
+            {
+              "name": "17,3\"",
+              "children": [
+                {
+                  "name": "Néoprène"
+                },
+                {
+                  "name": "Cuir"
+                },
+                {
+                  "name": "Rembourré"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Étuis tablette",
+          "children": [
+            {
+              "name": "iPad",
+              "children": [
+                {
+                  "name": "Folio"
+                },
+                {
+                  "name": "Clavier"
+                },
+                {
+                  "name": "Rugged"
+                }
+              ]
+            },
+            {
+              "name": "Samsung Tab",
+              "children": [
+                {
+                  "name": "Folio"
+                },
+                {
+                  "name": "Clavier"
+                },
+                {
+                  "name": "Rugged"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MatePad",
+              "children": [
+                {
+                  "name": "Folio"
+                },
+                {
+                  "name": "Clavier"
+                },
+                {
+                  "name": "Rugged"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Filtres confidentialité laptop",
+          "children": [
+            {
+              "name": "13,3\""
+            },
+            {
+              "name": "14\""
+            },
+            {
+              "name": "15,6\""
+            },
+            {
+              "name": "16\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "children": [
+        {
+          "name": "Écouteurs filaires",
+          "children": [
+            {
+              "name": "Intra-auriculaires",
+              "children": [
+                {
+                  "name": "Jack 3,5mm"
+                },
+                {
+                  "name": "USB-C"
+                },
+                {
+                  "name": "Lightning"
+                }
+              ]
+            },
+            {
+              "name": "Supra-auriculaires",
+              "children": [
+                {
+                  "name": "Jack 3,5mm"
+                },
+                {
+                  "name": "USB-C"
+                },
+                {
+                  "name": "Lightning"
+                }
+              ]
+            },
+            {
+              "name": "Circum-auriculaires",
+              "children": [
+                {
+                  "name": "Jack 3,5mm"
+                },
+                {
+                  "name": "USB-C"
+                },
+                {
+                  "name": "Lightning"
+                }
+              ]
+            },
+            {
+              "name": "Écouteurs boutons",
+              "children": [
+                {
+                  "name": "Jack 3,5mm"
+                },
+                {
+                  "name": "USB-C"
+                },
+                {
+                  "name": "Lightning"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Écouteurs sans fil",
+          "children": [
+            {
+              "name": "TWS"
+            },
+            {
+              "name": "Neckband"
+            },
+            {
+              "name": "Casque Bluetooth"
+            }
+          ]
+        },
+        {
+          "name": "Enceintes",
+          "children": [
+            {
+              "name": "Bluetooth portable"
+            },
+            {
+              "name": "PC 2.0"
+            },
+            {
+              "name": "PC 2.1"
+            },
+            {
+              "name": "Soundbar"
+            },
+            {
+              "name": "Enceinte connectée"
+            }
+          ]
+        },
+        {
+          "name": "Microphones",
+          "children": [
+            {
+              "name": "Lavalier"
+            },
+            {
+              "name": "USB condensateur"
+            },
+            {
+              "name": "Dynamique"
+            },
+            {
+              "name": "Casque-micro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Périphériques d'entrée",
+      "children": [
+        {
+          "name": "Souris",
+          "children": [
+            {
+              "name": "USB filaire"
+            },
+            {
+              "name": "USB-C filaire"
+            },
+            {
+              "name": "Sans fil 2,4GHz"
+            },
+            {
+              "name": "Bluetooth"
+            },
+            {
+              "name": "Bluetooth + 2,4GHz"
+            },
+            {
+              "name": "Ergonomique"
+            },
+            {
+              "name": "Verticale"
+            },
+            {
+              "name": "Gaming"
+            }
+          ]
+        },
+        {
+          "name": "Claviers",
+          "children": [
+            {
+              "name": "USB filaire"
+            },
+            {
+              "name": "Sans fil 2,4GHz"
+            },
+            {
+              "name": "Bluetooth"
+            },
+            {
+              "name": "Bluetooth + 2,4GHz"
+            },
+            {
+              "name": "Mécanique"
+            },
+            {
+              "name": "Membrane"
+            },
+            {
+              "name": "Ergonomique"
+            },
+            {
+              "name": "Gaming"
+            },
+            {
+              "name": "Pavé numérique"
+            },
+            {
+              "name": "Combo clavier + souris"
+            }
+          ]
+        },
+        {
+          "name": "Tapis de souris",
+          "children": [
+            {
+              "name": "Standard"
+            },
+            {
+              "name": "XXL bureau"
+            },
+            {
+              "name": "Gaming"
+            },
+            {
+              "name": "Avec repose-poignet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stockage",
+      "children": [
+        {
+          "name": "Clés USB",
+          "children": [
+            {
+              "name": "USB-A",
+              "children": [
+                {
+                  "name": "8GB"
+                },
+                {
+                  "name": "16GB"
+                },
+                {
+                  "name": "32GB"
+                },
+                {
+                  "name": "64GB"
+                },
+                {
+                  "name": "128GB"
+                },
+                {
+                  "name": "256GB"
+                },
+                {
+                  "name": "512GB"
+                },
+                {
+                  "name": "1TB"
+                }
+              ]
+            },
+            {
+              "name": "USB-C",
+              "children": [
+                {
+                  "name": "8GB"
+                },
+                {
+                  "name": "16GB"
+                },
+                {
+                  "name": "32GB"
+                },
+                {
+                  "name": "64GB"
+                },
+                {
+                  "name": "128GB"
+                },
+                {
+                  "name": "256GB"
+                },
+                {
+                  "name": "512GB"
+                },
+                {
+                  "name": "1TB"
+                }
+              ]
+            },
+            {
+              "name": "Double USB-A + USB-C",
+              "children": [
+                {
+                  "name": "8GB"
+                },
+                {
+                  "name": "16GB"
+                },
+                {
+                  "name": "32GB"
+                },
+                {
+                  "name": "64GB"
+                },
+                {
+                  "name": "128GB"
+                },
+                {
+                  "name": "256GB"
+                },
+                {
+                  "name": "512GB"
+                },
+                {
+                  "name": "1TB"
+                }
+              ]
+            },
+            {
+              "name": "OTG",
+              "children": [
+                {
+                  "name": "8GB"
+                },
+                {
+                  "name": "16GB"
+                },
+                {
+                  "name": "32GB"
+                },
+                {
+                  "name": "64GB"
+                },
+                {
+                  "name": "128GB"
+                },
+                {
+                  "name": "256GB"
+                },
+                {
+                  "name": "512GB"
+                },
+                {
+                  "name": "1TB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cartes mémoire",
+          "children": [
+            {
+              "name": "MicroSD",
+              "children": [
+                {
+                  "name": "Classes",
+                  "children": [
+                    {
+                      "name": "Class 10"
+                    },
+                    {
+                      "name": "U1"
+                    },
+                    {
+                      "name": "U3"
+                    },
+                    {
+                      "name": "V30"
+                    },
+                    {
+                      "name": "V60"
+                    },
+                    {
+                      "name": "V90"
+                    }
+                  ]
+                },
+                {
+                  "name": "Capacités",
+                  "children": [
+                    {
+                      "name": "16GB"
+                    },
+                    {
+                      "name": "32GB"
+                    },
+                    {
+                      "name": "64GB"
+                    },
+                    {
+                      "name": "128GB"
+                    },
+                    {
+                      "name": "256GB"
+                    },
+                    {
+                      "name": "512GB"
+                    },
+                    {
+                      "name": "1TB"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "SD",
+              "children": [
+                {
+                  "name": "Formats",
+                  "children": [
+                    {
+                      "name": "Standard"
+                    },
+                    {
+                      "name": "HC"
+                    },
+                    {
+                      "name": "XC"
+                    }
+                  ]
+                },
+                {
+                  "name": "Capacités",
+                  "children": [
+                    {
+                      "name": "16GB"
+                    },
+                    {
+                      "name": "32GB"
+                    },
+                    {
+                      "name": "64GB"
+                    },
+                    {
+                      "name": "128GB"
+                    },
+                    {
+                      "name": "256GB"
+                    },
+                    {
+                      "name": "512GB"
+                    },
+                    {
+                      "name": "1TB"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CF",
+              "children": [
+                {
+                  "name": "16GB"
+                },
+                {
+                  "name": "32GB"
+                },
+                {
+                  "name": "64GB"
+                },
+                {
+                  "name": "128GB"
+                },
+                {
+                  "name": "256GB"
+                }
+              ]
+            },
+            {
+              "name": "CFexpress",
+              "children": [
+                {
+                  "name": "128GB"
+                },
+                {
+                  "name": "256GB"
+                },
+                {
+                  "name": "512GB"
+                },
+                {
+                  "name": "1TB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SSD",
+          "children": [
+            {
+              "name": "SATA III 2,5\"",
+              "children": [
+                {
+                  "name": "120GB"
+                },
+                {
+                  "name": "240GB"
+                },
+                {
+                  "name": "480GB"
+                },
+                {
+                  "name": "500GB"
+                },
+                {
+                  "name": "1TB"
+                },
+                {
+                  "name": "2TB"
+                },
+                {
+                  "name": "4TB"
+                }
+              ]
+            },
+            {
+              "name": "M.2 SATA",
+              "children": [
+                {
+                  "name": "120GB"
+                },
+                {
+                  "name": "240GB"
+                },
+                {
+                  "name": "480GB"
+                },
+                {
+                  "name": "500GB"
+                },
+                {
+                  "name": "1TB"
+                },
+                {
+                  "name": "2TB"
+                },
+                {
+                  "name": "4TB"
+                }
+              ]
+            },
+            {
+              "name": "M.2 NVMe",
+              "children": [
+                {
+                  "name": "120GB"
+                },
+                {
+                  "name": "240GB"
+                },
+                {
+                  "name": "480GB"
+                },
+                {
+                  "name": "500GB"
+                },
+                {
+                  "name": "1TB"
+                },
+                {
+                  "name": "2TB"
+                },
+                {
+                  "name": "4TB"
+                }
+              ]
+            },
+            {
+              "name": "Externe USB-C",
+              "children": [
+                {
+                  "name": "120GB"
+                },
+                {
+                  "name": "240GB"
+                },
+                {
+                  "name": "480GB"
+                },
+                {
+                  "name": "500GB"
+                },
+                {
+                  "name": "1TB"
+                },
+                {
+                  "name": "2TB"
+                },
+                {
+                  "name": "4TB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SSD NVMe par génération",
+          "children": [
+            {
+              "name": "PCIe 3.0",
+              "children": [
+                {
+                  "name": "500GB"
+                },
+                {
+                  "name": "1TB"
+                },
+                {
+                  "name": "2TB"
+                }
+              ]
+            },
+            {
+              "name": "PCIe 4.0",
+              "children": [
+                {
+                  "name": "500GB"
+                },
+                {
+                  "name": "1TB"
+                },
+                {
+                  "name": "2TB"
+                },
+                {
+                  "name": "4TB"
+                }
+              ]
+            },
+            {
+              "name": "PCIe 5.0",
+              "children": [
+                {
+                  "name": "1TB"
+                },
+                {
+                  "name": "2TB"
+                },
+                {
+                  "name": "4TB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HDD",
+          "children": [
+            {
+              "name": "2,5\" portable",
+              "children": [
+                {
+                  "name": "500GB"
+                },
+                {
+                  "name": "1TB"
+                },
+                {
+                  "name": "2TB"
+                },
+                {
+                  "name": "4TB"
+                },
+                {
+                  "name": "5TB"
+                }
+              ]
+            },
+            {
+              "name": "3,5\" desktop",
+              "children": [
+                {
+                  "name": "1TB"
+                },
+                {
+                  "name": "2TB"
+                },
+                {
+                  "name": "4TB"
+                },
+                {
+                  "name": "6TB"
+                },
+                {
+                  "name": "8TB"
+                },
+                {
+                  "name": "10TB"
+                }
+              ]
+            },
+            {
+              "name": "Externe desktop",
+              "children": [
+                {
+                  "name": "2TB"
+                },
+                {
+                  "name": "4TB"
+                },
+                {
+                  "name": "6TB"
+                },
+                {
+                  "name": "8TB"
+                },
+                {
+                  "name": "10TB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boîtiers SSD/HDD",
+          "children": [
+            {
+              "name": "SATA vers USB-C"
+            },
+            {
+              "name": "NVMe vers USB-C"
+            },
+            {
+              "name": "Double SATA + NVMe"
+            },
+            {
+              "name": "2 baies"
+            },
+            {
+              "name": "RAID"
+            }
+          ]
+        },
+        {
+          "name": "Lecteurs cartes",
+          "children": [
+            {
+              "name": "USB-A"
+            },
+            {
+              "name": "USB-C"
+            },
+            {
+              "name": "Multi-cartes"
+            },
+            {
+              "name": "Universel"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Réseau",
+      "children": [
+        {
+          "name": "Routeurs",
+          "children": [
+            {
+              "name": "WiFi 5 AC"
+            },
+            {
+              "name": "WiFi 6 AX"
+            },
+            {
+              "name": "WiFi 6E"
+            },
+            {
+              "name": "WiFi 7"
+            },
+            {
+              "name": "4G mobile"
+            },
+            {
+              "name": "5G mobile"
+            },
+            {
+              "name": "Voyage"
+            }
+          ]
+        },
+        {
+          "name": "Switches",
+          "children": [
+            {
+              "name": "Non géré",
+              "children": [
+                {
+                  "name": "5 ports"
+                },
+                {
+                  "name": "8 ports"
+                },
+                {
+                  "name": "16 ports"
+                },
+                {
+                  "name": "24 ports"
+                }
+              ]
+            },
+            {
+              "name": "Géré / Smart",
+              "children": [
+                {
+                  "name": "5 ports"
+                },
+                {
+                  "name": "8 ports"
+                },
+                {
+                  "name": "16 ports"
+                },
+                {
+                  "name": "24 ports"
+                }
+              ]
+            },
+            {
+              "name": "PoE",
+              "children": [
+                {
+                  "name": "5 ports"
+                },
+                {
+                  "name": "8 ports"
+                },
+                {
+                  "name": "16 ports"
+                },
+                {
+                  "name": "24 ports"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Points d'accès",
+          "children": [
+            {
+              "name": "Mural"
+            },
+            {
+              "name": "Plafond"
+            },
+            {
+              "name": "Extérieur"
+            },
+            {
+              "name": "Mesh"
+            },
+            {
+              "name": "WiFi 6"
+            },
+            {
+              "name": "WiFi 6E"
+            }
+          ]
+        },
+        {
+          "name": "Adaptateurs",
+          "children": [
+            {
+              "name": "USB WiFi",
+              "children": [
+                {
+                  "name": "AC"
+                },
+                {
+                  "name": "AX"
+                }
+              ]
+            },
+            {
+              "name": "USB Bluetooth",
+              "children": [
+                {
+                  "name": "4.0"
+                },
+                {
+                  "name": "5.0"
+                },
+                {
+                  "name": "5.1"
+                },
+                {
+                  "name": "5.2"
+                },
+                {
+                  "name": "5.3"
+                }
+              ]
+            },
+            {
+              "name": "USB Ethernet",
+              "children": [
+                {
+                  "name": "100Mbps"
+                },
+                {
+                  "name": "Gigabit"
+                },
+                {
+                  "name": "2,5G"
+                }
+              ]
+            },
+            {
+              "name": "CPL",
+              "children": [
+                {
+                  "name": "500Mbps"
+                },
+                {
+                  "name": "1Gbps"
+                },
+                {
+                  "name": "2Gbps"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Outils réseau",
+          "children": [
+            {
+              "name": "Pince à sertir RJ45"
+            },
+            {
+              "name": "Testeur câble simple"
+            },
+            {
+              "name": "Testeur câble professionnel"
+            },
+            {
+              "name": "Outil punch-down"
+            },
+            {
+              "name": "Prise RJ45"
+            },
+            {
+              "name": "Keystone"
+            },
+            {
+              "name": "Faceplate"
+            },
+            {
+              "name": "Panneau de brassage"
+            },
+            {
+              "name": "Testeur loopback réseau"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Consommables imprimante",
+      "children": [
+        {
+          "name": "Toners",
+          "children": [
+            {
+              "name": "HP",
+              "children": [
+                {
+                  "name": "LaserJet"
+                },
+                {
+                  "name": "LaserJet Pro"
+                },
+                {
+                  "name": "Neverstop"
+                }
+              ]
+            },
+            {
+              "name": "Canon",
+              "children": [
+                {
+                  "name": "i-SENSYS"
+                },
+                {
+                  "name": "imageCLASS"
+                }
+              ]
+            },
+            {
+              "name": "Samsung",
+              "children": [
+                {
+                  "name": "Xpress"
+                },
+                {
+                  "name": "ProXpress"
+                }
+              ]
+            },
+            {
+              "name": "Brother",
+              "children": [
+                {
+                  "name": "HL"
+                },
+                {
+                  "name": "DCP"
+                },
+                {
+                  "name": "MFC"
+                }
+              ]
+            },
+            {
+              "name": "Xerox",
+              "children": [
+                {
+                  "name": "Par référence"
+                }
+              ]
+            },
+            {
+              "name": "Ricoh",
+              "children": [
+                {
+                  "name": "Par référence"
+                }
+              ]
+            },
+            {
+              "name": "Kyocera",
+              "children": [
+                {
+                  "name": "Par référence"
+                }
+              ]
+            },
+            {
+              "name": "Pantum",
+              "children": [
+                {
+                  "name": "Par référence"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cartouches d'encre",
+          "children": [
+            {
+              "name": "HP",
+              "children": [
+                {
+                  "name": "DeskJet"
+                },
+                {
+                  "name": "OfficeJet"
+                },
+                {
+                  "name": "ENVY"
+                }
+              ]
+            },
+            {
+              "name": "Canon",
+              "children": [
+                {
+                  "name": "PIXMA"
+                },
+                {
+                  "name": "MAXIFY"
+                }
+              ]
+            },
+            {
+              "name": "Epson",
+              "children": [
+                {
+                  "name": "Expression"
+                },
+                {
+                  "name": "WorkForce"
+                }
+              ]
+            },
+            {
+              "name": "Brother",
+              "children": [
+                {
+                  "name": "MFC"
+                },
+                {
+                  "name": "DCP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bouteilles d'encre",
+          "children": [
+            {
+              "name": "Epson EcoTank",
+              "children": [
+                {
+                  "name": "Noir"
+                },
+                {
+                  "name": "Cyan"
+                },
+                {
+                  "name": "Magenta"
+                },
+                {
+                  "name": "Jaune"
+                }
+              ]
+            },
+            {
+              "name": "Canon MegaTank",
+              "children": [
+                {
+                  "name": "Noir"
+                },
+                {
+                  "name": "Cyan"
+                },
+                {
+                  "name": "Magenta"
+                },
+                {
+                  "name": "Jaune"
+                }
+              ]
+            },
+            {
+              "name": "HP Smart Tank",
+              "children": [
+                {
+                  "name": "Noir"
+                },
+                {
+                  "name": "Cyan"
+                },
+                {
+                  "name": "Magenta"
+                },
+                {
+                  "name": "Jaune"
+                }
+              ]
+            },
+            {
+              "name": "Brother INKvestment",
+              "children": [
+                {
+                  "name": "Noir"
+                },
+                {
+                  "name": "Cyan"
+                },
+                {
+                  "name": "Magenta"
+                },
+                {
+                  "name": "Jaune"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tambours",
+          "children": [
+            {
+              "name": "Brother"
+            },
+            {
+              "name": "HP"
+            },
+            {
+              "name": "Samsung"
+            },
+            {
+              "name": "Canon"
+            }
+          ]
+        },
+        {
+          "name": "Fusers",
+          "children": [
+            {
+              "name": "HP"
+            },
+            {
+              "name": "Brother"
+            },
+            {
+              "name": "Canon"
+            }
+          ]
+        },
+        {
+          "name": "Kits maintenance",
+          "children": [
+            {
+              "name": "HP"
+            },
+            {
+              "name": "Brother"
+            },
+            {
+              "name": "Canon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Composants PC",
+      "children": [
+        {
+          "name": "RAM",
+          "children": [
+            {
+              "name": "DDR3",
+              "children": [
+                {
+                  "name": "SODIMM laptop",
+                  "children": [
+                    {
+                      "name": "4GB"
+                    },
+                    {
+                      "name": "8GB"
+                    }
+                  ]
+                },
+                {
+                  "name": "UDIMM desktop",
+                  "children": [
+                    {
+                      "name": "4GB"
+                    },
+                    {
+                      "name": "8GB"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "DDR3L",
+              "children": [
+                {
+                  "name": "SODIMM laptop",
+                  "children": [
+                    {
+                      "name": "4GB"
+                    },
+                    {
+                      "name": "8GB"
+                    }
+                  ]
+                },
+                {
+                  "name": "UDIMM desktop",
+                  "children": [
+                    {
+                      "name": "4GB"
+                    },
+                    {
+                      "name": "8GB"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "DDR4",
+              "children": [
+                {
+                  "name": "SODIMM laptop",
+                  "children": [
+                    {
+                      "name": "4GB"
+                    },
+                    {
+                      "name": "8GB"
+                    },
+                    {
+                      "name": "16GB"
+                    },
+                    {
+                      "name": "32GB"
+                    },
+                    {
+                      "name": "64GB"
+                    }
+                  ]
+                },
+                {
+                  "name": "UDIMM desktop",
+                  "children": [
+                    {
+                      "name": "4GB"
+                    },
+                    {
+                      "name": "8GB"
+                    },
+                    {
+                      "name": "16GB"
+                    },
+                    {
+                      "name": "32GB"
+                    },
+                    {
+                      "name": "64GB"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "DDR5",
+              "children": [
+                {
+                  "name": "SODIMM laptop",
+                  "children": [
+                    {
+                      "name": "8GB"
+                    },
+                    {
+                      "name": "16GB"
+                    },
+                    {
+                      "name": "32GB"
+                    },
+                    {
+                      "name": "64GB"
+                    }
+                  ]
+                },
+                {
+                  "name": "UDIMM desktop",
+                  "children": [
+                    {
+                      "name": "8GB"
+                    },
+                    {
+                      "name": "16GB"
+                    },
+                    {
+                      "name": "32GB"
+                    },
+                    {
+                      "name": "64GB"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Processeurs",
+          "children": [
+            {
+              "name": "Intel Core",
+              "children": [
+                {
+                  "name": "12e génération",
+                  "children": [
+                    {
+                      "name": "i3"
+                    },
+                    {
+                      "name": "i5"
+                    },
+                    {
+                      "name": "i7"
+                    },
+                    {
+                      "name": "i9"
+                    }
+                  ]
+                },
+                {
+                  "name": "13e génération",
+                  "children": [
+                    {
+                      "name": "i3"
+                    },
+                    {
+                      "name": "i5"
+                    },
+                    {
+                      "name": "i7"
+                    },
+                    {
+                      "name": "i9"
+                    }
+                  ]
+                },
+                {
+                  "name": "14e génération",
+                  "children": [
+                    {
+                      "name": "i3"
+                    },
+                    {
+                      "name": "i5"
+                    },
+                    {
+                      "name": "i7"
+                    },
+                    {
+                      "name": "i9"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Intel Celeron / N",
+              "children": [
+                {
+                  "name": "Celeron"
+                },
+                {
+                  "name": "N100"
+                }
+              ]
+            },
+            {
+              "name": "AMD Ryzen",
+              "children": [
+                {
+                  "name": "5000 series",
+                  "children": [
+                    {
+                      "name": "Ryzen 3"
+                    },
+                    {
+                      "name": "Ryzen 5"
+                    },
+                    {
+                      "name": "Ryzen 7"
+                    },
+                    {
+                      "name": "Ryzen 9"
+                    }
+                  ]
+                },
+                {
+                  "name": "7000 series",
+                  "children": [
+                    {
+                      "name": "Ryzen 3"
+                    },
+                    {
+                      "name": "Ryzen 5"
+                    },
+                    {
+                      "name": "Ryzen 7"
+                    },
+                    {
+                      "name": "Ryzen 9"
+                    }
+                  ]
+                },
+                {
+                  "name": "9000 series",
+                  "children": [
+                    {
+                      "name": "Ryzen 3"
+                    },
+                    {
+                      "name": "Ryzen 5"
+                    },
+                    {
+                      "name": "Ryzen 7"
+                    },
+                    {
+                      "name": "Ryzen 9"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Conditionnement",
+              "children": [
+                {
+                  "name": "OEM tray"
+                },
+                {
+                  "name": "Box"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cartes mères",
+          "children": [
+            {
+              "name": "LGA1700",
+              "children": [
+                {
+                  "name": "Chipsets",
+                  "children": [
+                    {
+                      "name": "H610"
+                    },
+                    {
+                      "name": "B660"
+                    },
+                    {
+                      "name": "B760"
+                    },
+                    {
+                      "name": "Z790"
+                    }
+                  ]
+                },
+                {
+                  "name": "Formats",
+                  "children": [
+                    {
+                      "name": "ATX"
+                    },
+                    {
+                      "name": "M-ATX"
+                    },
+                    {
+                      "name": "ITX"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LGA1851",
+              "children": [
+                {
+                  "name": "Chipsets",
+                  "children": [
+                    {
+                      "name": "B860"
+                    },
+                    {
+                      "name": "Z890"
+                    }
+                  ]
+                },
+                {
+                  "name": "Formats",
+                  "children": [
+                    {
+                      "name": "ATX"
+                    },
+                    {
+                      "name": "M-ATX"
+                    },
+                    {
+                      "name": "ITX"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "AM4",
+              "children": [
+                {
+                  "name": "Chipsets",
+                  "children": [
+                    {
+                      "name": "A520"
+                    },
+                    {
+                      "name": "B450"
+                    },
+                    {
+                      "name": "B550"
+                    },
+                    {
+                      "name": "X570"
+                    }
+                  ]
+                },
+                {
+                  "name": "Formats",
+                  "children": [
+                    {
+                      "name": "ATX"
+                    },
+                    {
+                      "name": "M-ATX"
+                    },
+                    {
+                      "name": "ITX"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "AM5",
+              "children": [
+                {
+                  "name": "Chipsets",
+                  "children": [
+                    {
+                      "name": "A620"
+                    },
+                    {
+                      "name": "B650"
+                    },
+                    {
+                      "name": "X670"
+                    },
+                    {
+                      "name": "X870"
+                    }
+                  ]
+                },
+                {
+                  "name": "Formats",
+                  "children": [
+                    {
+                      "name": "ATX"
+                    },
+                    {
+                      "name": "M-ATX"
+                    },
+                    {
+                      "name": "ITX"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Alimentations",
+          "children": [
+            {
+              "name": "Puissance",
+              "children": [
+                {
+                  "name": "400W"
+                },
+                {
+                  "name": "500W"
+                },
+                {
+                  "name": "550W"
+                },
+                {
+                  "name": "650W"
+                },
+                {
+                  "name": "750W"
+                },
+                {
+                  "name": "850W"
+                },
+                {
+                  "name": "1000W"
+                },
+                {
+                  "name": "1200W"
+                }
+              ]
+            },
+            {
+              "name": "Certification",
+              "children": [
+                {
+                  "name": "80+ White"
+                },
+                {
+                  "name": "80+ Bronze"
+                },
+                {
+                  "name": "80+ Gold"
+                },
+                {
+                  "name": "80+ Platinum"
+                },
+                {
+                  "name": "80+ Titanium"
+                }
+              ]
+            },
+            {
+              "name": "Câblage",
+              "children": [
+                {
+                  "name": "Non-modulaire"
+                },
+                {
+                  "name": "Semi-modulaire"
+                },
+                {
+                  "name": "Modulaire"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Refroidissement",
+          "children": [
+            {
+              "name": "Ventirad CPU",
+              "children": [
+                {
+                  "name": "Standard"
+                },
+                {
+                  "name": "Tour 120mm"
+                },
+                {
+                  "name": "Low profile"
+                }
+              ]
+            },
+            {
+              "name": "Watercooling AIO",
+              "children": [
+                {
+                  "name": "120mm"
+                },
+                {
+                  "name": "240mm"
+                },
+                {
+                  "name": "360mm"
+                },
+                {
+                  "name": "420mm"
+                }
+              ]
+            },
+            {
+              "name": "Ventilateur boîtier",
+              "children": [
+                {
+                  "name": "120mm"
+                },
+                {
+                  "name": "140mm"
+                }
+              ]
+            },
+            {
+              "name": "Pâte thermique",
+              "children": [
+                {
+                  "name": "Standard"
+                },
+                {
+                  "name": "Haute performance"
+                },
+                {
+                  "name": "Métal liquide"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cartes graphiques",
+          "children": [
+            {
+              "name": "NVIDIA RTX 30 series",
+              "children": [
+                {
+                  "name": "8GB"
+                },
+                {
+                  "name": "10GB"
+                },
+                {
+                  "name": "12GB"
+                },
+                {
+                  "name": "24GB"
+                }
+              ]
+            },
+            {
+              "name": "NVIDIA RTX 40 series",
+              "children": [
+                {
+                  "name": "8GB"
+                },
+                {
+                  "name": "12GB"
+                },
+                {
+                  "name": "16GB"
+                },
+                {
+                  "name": "24GB"
+                }
+              ]
+            },
+            {
+              "name": "NVIDIA RTX 50 series",
+              "children": [
+                {
+                  "name": "12GB"
+                },
+                {
+                  "name": "16GB"
+                },
+                {
+                  "name": "32GB"
+                }
+              ]
+            },
+            {
+              "name": "AMD RX 6000 series",
+              "children": [
+                {
+                  "name": "8GB"
+                },
+                {
+                  "name": "12GB"
+                },
+                {
+                  "name": "16GB"
+                }
+              ]
+            },
+            {
+              "name": "AMD RX 7000 series",
+              "children": [
+                {
+                  "name": "8GB"
+                },
+                {
+                  "name": "12GB"
+                },
+                {
+                  "name": "16GB"
+                },
+                {
+                  "name": "20GB"
+                },
+                {
+                  "name": "24GB"
+                }
+              ]
+            },
+            {
+              "name": "AMD RX 9000 series",
+              "children": [
+                {
+                  "name": "8GB"
+                },
+                {
+                  "name": "16GB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boîtiers PC",
+          "children": [
+            {
+              "name": "Formats",
+              "children": [
+                {
+                  "name": "ATX"
+                },
+                {
+                  "name": "M-ATX"
+                },
+                {
+                  "name": "ITX"
+                },
+                {
+                  "name": "Full tower"
+                },
+                {
+                  "name": "Mid tower"
+                },
+                {
+                  "name": "Mini tower"
+                },
+                {
+                  "name": "SFF"
+                }
+              ]
+            },
+            {
+              "name": "Options",
+              "children": [
+                {
+                  "name": "Avec vitre"
+                },
+                {
+                  "name": "Sans vitre"
+                },
+                {
+                  "name": "Avec ventilateurs"
+                },
+                {
+                  "name": "Sans ventilateurs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Composants laptop",
+          "children": [
+            {
+              "name": "RAM",
+              "children": [
+                {
+                  "name": "DDR3 SODIMM"
+                },
+                {
+                  "name": "DDR4 SODIMM"
+                },
+                {
+                  "name": "DDR5 SODIMM"
+                }
+              ]
+            },
+            {
+              "name": "SSD",
+              "children": [
+                {
+                  "name": "M.2 SATA"
+                },
+                {
+                  "name": "M.2 NVMe"
+                },
+                {
+                  "name": "2,5\" SATA"
+                }
+              ]
+            },
+            {
+              "name": "Clavier",
+              "children": [
+                {
+                  "name": "Dell"
+                },
+                {
+                  "name": "HP"
+                },
+                {
+                  "name": "Lenovo"
+                },
+                {
+                  "name": "Asus"
+                },
+                {
+                  "name": "Acer"
+                }
+              ]
+            },
+            {
+              "name": "Ventilateur",
+              "children": [
+                {
+                  "name": "Dell"
+                },
+                {
+                  "name": "HP"
+                },
+                {
+                  "name": "Lenovo"
+                },
+                {
+                  "name": "Asus"
+                },
+                {
+                  "name": "Acer"
+                }
+              ]
+            },
+            {
+              "name": "Dalle écran",
+              "children": [
+                {
+                  "name": "Taille",
+                  "children": [
+                    {
+                      "name": "11,6\""
+                    },
+                    {
+                      "name": "13,3\""
+                    },
+                    {
+                      "name": "14\""
+                    },
+                    {
+                      "name": "15,6\""
+                    },
+                    {
+                      "name": "16\""
+                    },
+                    {
+                      "name": "17,3\""
+                    }
+                  ]
+                },
+                {
+                  "name": "Résolution",
+                  "children": [
+                    {
+                      "name": "HD"
+                    },
+                    {
+                      "name": "FHD"
+                    },
+                    {
+                      "name": "WUXGA"
+                    }
+                  ]
+                },
+                {
+                  "name": "Connecteur",
+                  "children": [
+                    {
+                      "name": "30 pin"
+                    },
+                    {
+                      "name": "40 pin"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Pièces châssis",
+              "children": [
+                {
+                  "name": "Charnière"
+                },
+                {
+                  "name": "DC jack"
+                },
+                {
+                  "name": "Touchpad"
+                },
+                {
+                  "name": "Haut-parleur"
+                },
+                {
+                  "name": "Webcam"
+                }
+              ]
+            },
+            {
+              "name": "Carte WiFi",
+              "children": [
+                {
+                  "name": "Mini PCIe"
+                },
+                {
+                  "name": "M.2 2230"
+                },
+                {
+                  "name": "WiFi 5"
+                },
+                {
+                  "name": "WiFi 6"
+                },
+                {
+                  "name": "WiFi 6E"
+                },
+                {
+                  "name": "WiFi 7"
+                }
+              ]
+            },
+            {
+              "name": "Pile CMOS",
+              "children": [
+                {
+                  "name": "CR2032 avec câble"
+                },
+                {
+                  "name": "CR2016 avec câble"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Outils",
+      "children": [
+        {
+          "name": "Tournevis",
+          "children": [
+            {
+              "name": "Kit précision"
+            },
+            {
+              "name": "Pentalobe"
+            },
+            {
+              "name": "Phillips"
+            },
+            {
+              "name": "Plat"
+            },
+            {
+              "name": "Torx"
+            },
+            {
+              "name": "Tri-wing"
+            },
+            {
+              "name": "Standoff"
+            },
+            {
+              "name": "Tapis magnétique"
+            },
+            {
+              "name": "Multi-embouts"
+            },
+            {
+              "name": "Clés Allen"
+            },
+            {
+              "name": "Clés Torx"
+            }
+          ]
+        },
+        {
+          "name": "Ouverture",
+          "children": [
+            {
+              "name": "Spudgers plastique"
+            },
+            {
+              "name": "Spudger métal"
+            },
+            {
+              "name": "Ventouse"
+            },
+            {
+              "name": "Médiators"
+            },
+            {
+              "name": "Leviers"
+            },
+            {
+              "name": "iSesamo"
+            },
+            {
+              "name": "Jimmy"
+            }
+          ]
+        },
+        {
+          "name": "Soudure",
+          "children": [
+            {
+              "name": "Fer réglable"
+            },
+            {
+              "name": "Station"
+            },
+            {
+              "name": "Fil étain"
+            },
+            {
+              "name": "Flux"
+            },
+            {
+              "name": "Tresse"
+            },
+            {
+              "name": "Pannes"
+            },
+            {
+              "name": "Troisième main"
+            },
+            {
+              "name": "Loupe"
+            },
+            {
+              "name": "Extracteur fumée"
+            },
+            {
+              "name": "Hot air"
+            },
+            {
+              "name": "Plaque préchauffage"
+            },
+            {
+              "name": "BGA"
+            },
+            {
+              "name": "Pâte à souder"
+            },
+            {
+              "name": "Stencil"
+            },
+            {
+              "name": "Pinces ESD"
+            },
+            {
+              "name": "Pinces de coupe/dénudage/sertissage"
+            }
+          ]
+        },
+        {
+          "name": "Nettoyage",
+          "children": [
+            {
+              "name": "Alcool isopropylique 99%"
+            },
+            {
+              "name": "Alcool isopropylique 70%"
+            },
+            {
+              "name": "Spray contact"
+            },
+            {
+              "name": "Dégraissant"
+            },
+            {
+              "name": "Brosse ESD"
+            },
+            {
+              "name": "Air comprimé"
+            },
+            {
+              "name": "Chiffons non-tissé"
+            },
+            {
+              "name": "Bac ultrason"
+            },
+            {
+              "name": "Lampe UV"
+            }
+          ]
+        },
+        {
+          "name": "Adhésifs",
+          "children": [
+            {
+              "name": "Tesa 61395"
+            },
+            {
+              "name": "B7000"
+            },
+            {
+              "name": "T-7000"
+            },
+            {
+              "name": "E8000"
+            },
+            {
+              "name": "UV"
+            },
+            {
+              "name": "LOCA"
+            },
+            {
+              "name": "Double-face"
+            },
+            {
+              "name": "Pré-découpés"
+            },
+            {
+              "name": "Thermique"
+            },
+            {
+              "name": "Kapton"
+            },
+            {
+              "name": "Électrique"
+            }
+          ]
+        },
+        {
+          "name": "Test",
+          "children": [
+            {
+              "name": "Multimètre"
+            },
+            {
+              "name": "Testeur USB"
+            },
+            {
+              "name": "Testeur batterie"
+            },
+            {
+              "name": "Alimentation labo"
+            },
+            {
+              "name": "Oscilloscope"
+            },
+            {
+              "name": "Analyseur logique"
+            },
+            {
+              "name": "Générateur signal"
+            },
+            {
+              "name": "Testeur composants"
+            },
+            {
+              "name": "ESR mètre"
+            }
+          ]
+        },
+        {
+          "name": "Tapis réparation",
+          "children": [
+            {
+              "name": "Silicone"
+            },
+            {
+              "name": "ESD"
+            },
+            {
+              "name": "Magnétique avec plan vis"
+            },
+            {
+              "name": "Résistant chaleur"
+            }
+          ]
+        },
+        {
+          "name": "Divers atelier",
+          "children": [
+            {
+              "name": "Outil SIM"
+            },
+            {
+              "name": "Bracelet ESD"
+            },
+            {
+              "name": "Sac anti-statique"
+            },
+            {
+              "name": "Serre-câble"
+            },
+            {
+              "name": "Gaine thermo"
+            },
+            {
+              "name": "Dissipateur"
+            },
+            {
+              "name": "Pad thermique"
+            },
+            {
+              "name": "Vis M.2"
+            },
+            {
+              "name": "Kit vis laptop"
+            },
+            {
+              "name": "Entretoise"
+            },
+            {
+              "name": "Cavalier"
+            },
+            {
+              "name": "Platine essai"
+            },
+            {
+              "name": "Fils Dupont"
+            },
+            {
+              "name": "Header GPIO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Divers",
+      "children": [
+        {
+          "name": "Webcams",
+          "children": [
+            {
+              "name": "USB 720p"
+            },
+            {
+              "name": "USB 1080p"
+            },
+            {
+              "name": "USB 4K"
+            },
+            {
+              "name": "Avec cache"
+            },
+            {
+              "name": "Avec anneau lumineux"
+            },
+            {
+              "name": "Conférence"
+            }
+          ]
+        },
+        {
+          "name": "Supports",
+          "children": [
+            {
+              "name": "Téléphone",
+              "children": [
+                {
+                  "name": "Bureau"
+                },
+                {
+                  "name": "Voiture"
+                },
+                {
+                  "name": "Pliable"
+                }
+              ]
+            },
+            {
+              "name": "Tablette",
+              "children": [
+                {
+                  "name": "Bureau"
+                },
+                {
+                  "name": "Pliable"
+                },
+                {
+                  "name": "Mural"
+                }
+              ]
+            },
+            {
+              "name": "Laptop",
+              "children": [
+                {
+                  "name": "Réglable"
+                },
+                {
+                  "name": "Fixe"
+                },
+                {
+                  "name": "Pliant"
+                },
+                {
+                  "name": "Aluminium"
+                }
+              ]
+            },
+            {
+              "name": "Bras monitor",
+              "children": [
+                {
+                  "name": "Simple"
+                },
+                {
+                  "name": "Double"
+                },
+                {
+                  "name": "Triple"
+                }
+              ]
+            },
+            {
+              "name": "Support TV",
+              "children": [
+                {
+                  "name": "Fixe"
+                },
+                {
+                  "name": "Inclinable"
+                },
+                {
+                  "name": "Mobile"
+                },
+                {
+                  "name": "Plafond"
+                }
+              ]
+            },
+            {
+              "name": "Support projecteur",
+              "children": [
+                {
+                  "name": "Plafond"
+                },
+                {
+                  "name": "Mural"
+                },
+                {
+                  "name": "Trépied"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gestion câbles",
+          "children": [
+            {
+              "name": "Gaine"
+            },
+            {
+              "name": "Enveloppe"
+            },
+            {
+              "name": "Clip"
+            },
+            {
+              "name": "Boîte range-câbles"
+            },
+            {
+              "name": "Velcro"
+            },
+            {
+              "name": "Rilsan"
+            },
+            {
+              "name": "Goulotte"
+            },
+            {
+              "name": "Étiqueteuse"
+            },
+            {
+              "name": "Passe-câble"
+            },
+            {
+              "name": "Plateau bureau"
+            },
+            {
+              "name": "Panier sous-bureau"
+            },
+            {
+              "name": "Multiprise parafoudre"
+            }
+          ]
+        },
+        {
+          "name": "Périphériques ordinateur",
+          "children": [
+            {
+              "name": "Hub USB",
+              "children": [
+                {
+                  "name": "USB 2.0"
+                },
+                {
+                  "name": "USB 3.0"
+                },
+                {
+                  "name": "USB-C"
+                },
+                {
+                  "name": "Multi-port"
+                },
+                {
+                  "name": "Alimenté"
+                },
+                {
+                  "name": "Non alimenté"
+                }
+              ]
+            },
+            {
+              "name": "Station d'accueil",
+              "children": [
+                {
+                  "name": "USB-C"
+                },
+                {
+                  "name": "Thunderbolt 3"
+                },
+                {
+                  "name": "Thunderbolt 4"
+                },
+                {
+                  "name": "Dell"
+                },
+                {
+                  "name": "HP"
+                },
+                {
+                  "name": "Lenovo"
+                }
+              ]
+            },
+            {
+              "name": "KVM switch",
+              "children": [
+                {
+                  "name": "2 ports"
+                },
+                {
+                  "name": "4 ports"
+                },
+                {
+                  "name": "HDMI"
+                },
+                {
+                  "name": "DisplayPort"
+                },
+                {
+                  "name": "USB 3.0"
+                }
+              ]
+            },
+            {
+              "name": "Capture / vidéo",
+              "children": [
+                {
+                  "name": "Carte capture HDMI"
+                },
+                {
+                  "name": "Convertisseur vidéo"
+                },
+                {
+                  "name": "Splitter HDMI"
+                },
+                {
+                  "name": "Commutateur HDMI"
+                },
+                {
+                  "name": "Splitter DP"
+                },
+                {
+                  "name": "Splitter VGA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Adaptateurs",
+          "children": [
+            {
+              "name": "USB-C vers HDMI/VGA/DP"
+            },
+            {
+              "name": "USB-C vers audio/Ethernet/SATA/NVMe"
+            },
+            {
+              "name": "USB-A vers RJ45/RS232"
+            },
+            {
+              "name": "M.2 vers PCIe/SATA"
+            },
+            {
+              "name": "SATA vers USB-C"
+            },
+            {
+              "name": "VGA/HDMI/DP/Mini DP"
+            },
+            {
+              "name": "Lightning vers USB/3,5mm/HDMI"
+            },
+            {
+              "name": "Micro USB vers USB-C"
+            }
+          ]
+        },
+        {
+          "name": "Équipement serveur/rack",
+          "children": [
+            {
+              "name": "Baies",
+              "children": [
+                {
+                  "name": "Murale 6U"
+                },
+                {
+                  "name": "Murale 9U"
+                },
+                {
+                  "name": "Murale 12U"
+                },
+                {
+                  "name": "Sol 22U"
+                },
+                {
+                  "name": "Sol 42U"
+                }
+              ]
+            },
+            {
+              "name": "Accessoires rack",
+              "children": [
+                {
+                  "name": "Plateau"
+                },
+                {
+                  "name": "PDU"
+                },
+                {
+                  "name": "Panneau ventilé"
+                },
+                {
+                  "name": "Passe-câbles"
+                },
+                {
+                  "name": "Rails serveur"
+                }
+              ]
+            },
+            {
+              "name": "Onduleurs",
+              "children": [
+                {
+                  "name": "Rack 1000VA"
+                },
+                {
+                  "name": "Rack 3000VA"
+                },
+                {
+                  "name": "Tour 600VA"
+                },
+                {
+                  "name": "Tour 3000VA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Télécom / VoIP",
+          "children": [
+            {
+              "name": "Téléphone IP"
+            },
+            {
+              "name": "ATA"
+            },
+            {
+              "name": "Passerelle SIP"
+            },
+            {
+              "name": "Passerelle FXO"
+            },
+            {
+              "name": "Passerelle GSM"
+            },
+            {
+              "name": "PBX VoIP"
+            },
+            {
+              "name": "Base DECT"
+            },
+            {
+              "name": "Combiné DECT"
+            },
+            {
+              "name": "Casque IP"
+            }
+          ]
+        },
+        {
+          "name": "Maison connectée",
+          "children": [
+            {
+              "name": "Énergie",
+              "children": [
+                {
+                  "name": "Prise"
+                },
+                {
+                  "name": "Ampoule"
+                },
+                {
+                  "name": "Interrupteur"
+                }
+              ]
+            },
+            {
+              "name": "Capteurs",
+              "children": [
+                {
+                  "name": "Mouvement"
+                },
+                {
+                  "name": "Porte/fenêtre"
+                },
+                {
+                  "name": "Température"
+                },
+                {
+                  "name": "Gaz"
+                },
+                {
+                  "name": "Fumée"
+                },
+                {
+                  "name": "Eau"
+                }
+              ]
+            },
+            {
+              "name": "Caméras",
+              "children": [
+                {
+                  "name": "Intérieur"
+                },
+                {
+                  "name": "Extérieur"
+                },
+                {
+                  "name": "PTZ"
+                },
+                {
+                  "name": "Fixe"
+                }
+              ]
+            },
+            {
+              "name": "Accès",
+              "children": [
+                {
+                  "name": "Sonnette"
+                },
+                {
+                  "name": "Serrure"
+                }
+              ]
+            },
+            {
+              "name": "Contrôle",
+              "children": [
+                {
+                  "name": "Thermostat"
+                },
+                {
+                  "name": "Volet roulant"
+                },
+                {
+                  "name": "IR/RF"
+                },
+                {
+                  "name": "Hub"
+                },
+                {
+                  "name": "Zigbee"
+                },
+                {
+                  "name": "Z-Wave"
+                },
+                {
+                  "name": "Matter"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Électronique grand public",
+          "children": [
+            {
+              "name": "Streaming",
+              "children": [
+                {
+                  "name": "Google TV"
+                },
+                {
+                  "name": "Fire Stick"
+                },
+                {
+                  "name": "Apple TV"
+                },
+                {
+                  "name": "Mi Box"
+                }
+              ]
+            },
+            {
+              "name": "Liseuses",
+              "children": [
+                {
+                  "name": "Kindle"
+                },
+                {
+                  "name": "Kobo"
+                },
+                {
+                  "name": "PocketBook"
+                }
+              ]
+            },
+            {
+              "name": "Communication",
+              "children": [
+                {
+                  "name": "Talkie-walkie"
+                },
+                {
+                  "name": "Radio DAB+"
+                },
+                {
+                  "name": "Radio FM/AM"
+                }
+              ]
+            },
+            {
+              "name": "GPS",
+              "children": [
+                {
+                  "name": "Voiture"
+                },
+                {
+                  "name": "Randonnée"
+                },
+                {
+                  "name": "Marin"
+                }
+              ]
+            },
+            {
+              "name": "Dashcam",
+              "children": [
+                {
+                  "name": "1080p"
+                },
+                {
+                  "name": "2K"
+                },
+                {
+                  "name": "4K"
+                },
+                {
+                  "name": "Avant + arrière"
+                }
+              ]
+            },
+            {
+              "name": "Action cam",
+              "children": [
+                {
+                  "name": "Standard"
+                },
+                {
+                  "name": "4K"
+                },
+                {
+                  "name": "360°"
+                }
+              ]
+            },
+            {
+              "name": "Drone",
+              "children": [
+                {
+                  "name": "DJI Mini"
+                },
+                {
+                  "name": "DJI Air"
+                },
+                {
+                  "name": "DJI Mavic"
+                },
+                {
+                  "name": "FPV"
+                },
+                {
+                  "name": "Accessoires drone"
+                }
+              ]
+            },
+            {
+              "name": "Gaming",
+              "children": [
+                {
+                  "name": "PS4"
+                },
+                {
+                  "name": "PS5"
+                },
+                {
+                  "name": "Xbox"
+                },
+                {
+                  "name": "Switch"
+                },
+                {
+                  "name": "PC"
+                },
+                {
+                  "name": "Volant"
+                },
+                {
+                  "name": "Joystick"
+                },
+                {
+                  "name": "VR"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Impression et documents",
+      "children": [
+        {
+          "name": "Papier",
+          "children": [
+            {
+              "name": "A4 80g"
+            },
+            {
+              "name": "A4 90g"
+            },
+            {
+              "name": "A4 100g"
+            },
+            {
+              "name": "A4 120g"
+            },
+            {
+              "name": "A3 80g"
+            },
+            {
+              "name": "Photo brillant A4"
+            },
+            {
+              "name": "Photo mat A4"
+            },
+            {
+              "name": "Photo brillant 10x15cm"
+            },
+            {
+              "name": "Thermique 57mm"
+            },
+            {
+              "name": "Thermique 80mm"
+            },
+            {
+              "name": "Étiquettes thermiques"
+            },
+            {
+              "name": "Étiquettes Avery"
+            },
+            {
+              "name": "Carte"
+            },
+            {
+              "name": "Kraft"
+            }
+          ]
+        },
+        {
+          "name": "Plastification",
+          "children": [
+            {
+              "name": "Machines",
+              "children": [
+                {
+                  "name": "A3"
+                },
+                {
+                  "name": "A4"
+                },
+                {
+                  "name": "A6"
+                }
+              ]
+            },
+            {
+              "name": "Pochettes",
+              "children": [
+                {
+                  "name": "A3",
+                  "children": [
+                    {
+                      "name": "80 mic"
+                    },
+                    {
+                      "name": "100 mic"
+                    },
+                    {
+                      "name": "125 mic"
+                    },
+                    {
+                      "name": "175 mic"
+                    },
+                    {
+                      "name": "250 mic"
+                    }
+                  ]
+                },
+                {
+                  "name": "A4",
+                  "children": [
+                    {
+                      "name": "80 mic"
+                    },
+                    {
+                      "name": "100 mic"
+                    },
+                    {
+                      "name": "125 mic"
+                    },
+                    {
+                      "name": "175 mic"
+                    },
+                    {
+                      "name": "250 mic"
+                    }
+                  ]
+                },
+                {
+                  "name": "A5",
+                  "children": [
+                    {
+                      "name": "80 mic"
+                    },
+                    {
+                      "name": "100 mic"
+                    },
+                    {
+                      "name": "125 mic"
+                    },
+                    {
+                      "name": "175 mic"
+                    },
+                    {
+                      "name": "250 mic"
+                    }
+                  ]
+                },
+                {
+                  "name": "A6",
+                  "children": [
+                    {
+                      "name": "80 mic"
+                    },
+                    {
+                      "name": "100 mic"
+                    },
+                    {
+                      "name": "125 mic"
+                    },
+                    {
+                      "name": "175 mic"
+                    },
+                    {
+                      "name": "250 mic"
+                    }
+                  ]
+                },
+                {
+                  "name": "Carte ID",
+                  "children": [
+                    {
+                      "name": "80 mic"
+                    },
+                    {
+                      "name": "100 mic"
+                    },
+                    {
+                      "name": "125 mic"
+                    },
+                    {
+                      "name": "175 mic"
+                    },
+                    {
+                      "name": "250 mic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reliure",
+          "children": [
+            {
+              "name": "Machines",
+              "children": [
+                {
+                  "name": "Peigne"
+                },
+                {
+                  "name": "Spirale"
+                },
+                {
+                  "name": "Thermique"
+                }
+              ]
+            },
+            {
+              "name": "Peignes",
+              "children": [
+                {
+                  "name": "6mm"
+                },
+                {
+                  "name": "8mm"
+                },
+                {
+                  "name": "10mm"
+                },
+                {
+                  "name": "12mm"
+                },
+                {
+                  "name": "16mm"
+                },
+                {
+                  "name": "20mm"
+                },
+                {
+                  "name": "25mm"
+                }
+              ]
+            },
+            {
+              "name": "Spirales",
+              "children": [
+                {
+                  "name": "6mm"
+                },
+                {
+                  "name": "8mm"
+                },
+                {
+                  "name": "10mm"
+                },
+                {
+                  "name": "12mm"
+                },
+                {
+                  "name": "16mm"
+                },
+                {
+                  "name": "20mm"
+                }
+              ]
+            },
+            {
+              "name": "Couvertures thermiques",
+              "children": [
+                {
+                  "name": "1mm"
+                },
+                {
+                  "name": "3mm"
+                },
+                {
+                  "name": "6mm"
+                },
+                {
+                  "name": "9mm"
+                },
+                {
+                  "name": "12mm"
+                }
+              ]
+            },
+            {
+              "name": "Couvertures",
+              "children": [
+                {
+                  "name": "Transparentes"
+                },
+                {
+                  "name": "Cartonnées"
+                },
+                {
+                  "name": "PVC"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

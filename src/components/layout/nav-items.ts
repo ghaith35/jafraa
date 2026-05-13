@@ -65,7 +65,7 @@ const ALL_NAV_SECTIONS: NavSection[] = [
       item("/dashboard/inventory", "nav.inventory", "Inventaire", Package, "inventory:view", {
         children: [
           item("/dashboard/inventory", "nav.inventory.overview", "Vue d’ensemble", PackageSearch, "inventory:view"),
-          item("/dashboard/inventory/products", "nav.inventory.products", "Produits", Package, "inventory:view"),
+          item("/dashboard/inventory/accessories", "nav.inventory.accessories", "Accessoires", Package, "inventory:view"),
           item("/dashboard/inventory/parts", "nav.inventory.parts", "Pièces détachées", Wrench, "inventory:view"),
           item("/dashboard/inventory/recovered-parts", "nav.inventory.recoveredParts", "Pièces récupérées", Boxes, "inventory:view"),
           item("/dashboard/inventory/purchases", "nav.inventory.purchaseInvoices", "Factures d’achat", FileText, "inventory:manage"),
