@@ -19,14 +19,7 @@ export async function listCustomerGroups() {
   return prisma.customerGroup.findMany({
     where: { companyId: session.companyId, isArchived: false },
     orderBy: { name: "asc" },
-    select: {
-      id: true,
-      name: true,
-      debtAlertLimit: true,
-      defaultDiscountPercent: true,
-      sellingPrice: true,
-      _count: { select: { customers: true } },
-    },
+    include: { _count: { select: { customers: true } } },
   });
 }
 
@@ -53,29 +46,26 @@ export async function getCustomerGroup(id: string) {
 
 export async function createCustomerGroup(
   data: CreateCustomerGroupInput
-): Promise<ActionError | { id: string }> {
+): Promise<ActionError | { id: string; name: string }> {
   const session = await getSession();
   if (!session) return { error: "Non autorisé" };
 
   const parsed = createCustomerGroupSchema.safeParse(data);
   if (!parsed.success) return { error: parsed.error.errors[0]?.message || "Données invalides" };
 
-  const { name, debtAlertLimit, defaultDiscountPercent, sellingPrice } = parsed.data;
-
   const group = await prisma.customerGroup.create({
     data: {
       companyId: session.companyId,
-      name,
-      debtAlertLimit: debtAlertLimit ?? null,
-      defaultDiscountPercent: defaultDiscountPercent ?? 0,
-      sellingPrice: sellingPrice ?? null,
+      name: parsed.data.name,
+      defaultDiscountPercent: 0,
     },
+    select: { id: true, name: true },
   });
 
   revalidatePath("/dashboard/customers");
   revalidatePath("/dashboard/customers/groups");
 
-  return { id: group.id };
+  return group;
 }
 
 export async function updateCustomerGroup(
@@ -93,16 +83,9 @@ export async function updateCustomerGroup(
   });
   if (!existing) return { error: "Groupe introuvable" };
 
-  const { name, debtAlertLimit, defaultDiscountPercent, sellingPrice } = parsed.data;
-
   await prisma.customerGroup.update({
     where: { id },
-    data: {
-      name,
-      debtAlertLimit: debtAlertLimit ?? null,
-      defaultDiscountPercent: defaultDiscountPercent ?? 0,
-      sellingPrice: sellingPrice ?? null,
-    },
+    data: { name: parsed.data.name },
   });
 
   revalidatePath("/dashboard/customers");

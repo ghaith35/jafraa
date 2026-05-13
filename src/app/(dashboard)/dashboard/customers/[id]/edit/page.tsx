@@ -29,6 +29,7 @@ export default async function EditCustomerPage({
       id: true,
       name: true,
       languagePreference: true,
+      address: true,
       notes: true,
       customerGroupId: true,
       customerType: true,
@@ -60,14 +61,15 @@ export default async function EditCustomerPage({
         description={customer.name}
       />
 
-      <div className="max-w-xl">
-        <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <div className="max-w-xl min-h-[calc(100svh-14rem)] flex flex-col">
+        <div className="flex-1 rounded-xl border border-border bg-card p-6 shadow-sm">
           <CustomerForm
             mode="edit"
             defaultValues={{
               id: customer.id,
               name: customer.name,
               languagePreference: customer.languagePreference,
+              address: customer.address,
               notes: customer.notes,
               customerGroupId: customer.customerGroupId,
             }}

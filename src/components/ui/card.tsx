@@ -1,12 +1,16 @@
 import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
 
-const Card = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
-  ({ className, ...props }, ref) => (
+const Card = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement> & { variant?: "default" | "elevated" | "bordered" | "glass" }>(
+  ({ className, variant = "default", ...props }, ref) => (
     <div
       ref={ref}
       className={cn(
-        "rounded-[var(--radius)] border border-border bg-card text-card-foreground shadow-[var(--shadow-sm)] transition-all duration-200 hover:shadow-[var(--shadow-md)]",
+        "rounded-xl transition-all duration-200",
+        variant === "default" && "border border-border bg-card text-card-foreground shadow-[var(--shadow-xs)] hover:shadow-[var(--shadow-md)]",
+        variant === "elevated" && "bg-surface-raised text-foreground shadow-[var(--shadow-md)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5",
+        variant === "bordered" && "border border-border bg-card text-card-foreground",
+        variant === "glass" && "glass text-foreground",
         className
       )}
       {...props}
@@ -30,7 +34,7 @@ const CardTitle = forwardRef<HTMLHeadingElement, React.HTMLAttributes<HTMLHeadin
   ({ className, ...props }, ref) => (
     <h3
       ref={ref}
-      className={cn("text-[15px] font-semibold tracking-tight text-foreground", className)}
+      className={cn("text-sm font-semibold tracking-tight text-foreground", className)}
       {...props}
     />
   )
@@ -41,7 +45,7 @@ const CardDescription = forwardRef<HTMLParagraphElement, React.HTMLAttributes<HT
   ({ className, ...props }, ref) => (
     <p
       ref={ref}
-      className={cn("text-[13px] text-muted-foreground", className)}
+      className={cn("text-xs text-muted-foreground", className)}
       {...props}
     />
   )

@@ -4,6 +4,7 @@ import { hasPermission } from "@/lib/auth/permissions";
 import { prisma } from "@/lib/db";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { getAppI18n } from "@/lib/i18n/server";
+import { localizedCategoryName } from "@/lib/i18n/expense-categories";
 import { ExpenseForm } from "@/features/expenses/components/ExpenseForm";
 
 export const metadata = { title: "Modifier la dépense" };
@@ -13,7 +14,7 @@ export default async function EditExpensePage({
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const { t } = await getAppI18n();
+  const { t, locale } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "expenses:manage")) redirect("/dashboard/expenses");
@@ -30,13 +31,17 @@ export default async function EditExpensePage({
     prisma.expenseCategory.findMany({
       where: {
         OR: [
+          { isDefault: true },
           { storeId, companyId: session.companyId },
-          { storeId: null, companyId: null },
         ],
       },
-      orderBy: { name: "asc" },
-      select: { id: true, name: true },
-    }),
+      orderBy: [{ isDefault: "desc" }, { name: "asc" }],
+      select: { id: true, name: true, nameFr: true, nameAr: true, nameEn: true, isDefault: true },
+    }).then((cats) => cats.map((c) => ({
+      id: c.id,
+      name: localizedCategoryName(c, locale),
+      isDefault: c.isDefault,
+    }))),
   ]);
 
   if (!expense) notFound();

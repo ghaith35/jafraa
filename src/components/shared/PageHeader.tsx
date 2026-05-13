@@ -13,10 +13,14 @@ export function PageHeader({ title, description, actions, className }: Props) {
       <div className="min-w-0">
         <h1 className="text-xl font-bold text-foreground tracking-tight">{title}</h1>
         {description && (
-          <p className="mt-1 text-sm text-muted-foreground sm:max-w-3xl">{description}</p>
+          <p className="mt-1 text-sm text-muted-foreground">{description}</p>
         )}
       </div>
-      {actions && <div className="flex w-full flex-wrap items-center gap-2 sm:w-auto sm:shrink-0 sm:justify-end">{actions}</div>}
+      {actions && (
+        <div className="flex w-full flex-wrap items-center gap-2 sm:w-auto sm:shrink-0 sm:justify-end">
+          {actions}
+        </div>
+      )}
     </div>
   );
 }

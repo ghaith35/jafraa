@@ -24,8 +24,8 @@ export default async function NewCustomerPage() {
         title={t("customers.new")}
         description={t("customers.createDescription")}
       />
-      <div className="max-w-xl">
-        <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <div className="max-w-xl min-h-[calc(100svh-14rem)] flex flex-col">
+        <div className="flex-1 rounded-xl border border-border bg-card p-6 shadow-sm">
           <CustomerForm mode="create" groups={groups} />
         </div>
       </div>

@@ -13,18 +13,14 @@ import {
 import { createCustomerGroup, updateCustomerGroup } from "../actions/customer-group.actions";
 
 interface GroupFormProps {
-  defaultValues?: {
-    id: string;
-    name: string;
-    debtAlertLimit: number | null;
-    defaultDiscountPercent: number;
-    sellingPrice: number | null;
-  };
+  group?: { id: string; name: string };
+  onSaved?: () => void;
 }
 
-export function GroupForm({ defaultValues }: GroupFormProps) {
+export function GroupForm({ group, onSaved }: GroupFormProps) {
   const { t } = useAppI18n();
   const router = useRouter();
+  const isEdit = !!group;
 
   const {
     register,
@@ -32,17 +28,12 @@ export function GroupForm({ defaultValues }: GroupFormProps) {
     formState: { errors, isSubmitting },
   } = useForm<CreateCustomerGroupInput>({
     resolver: zodResolver(createCustomerGroupSchema),
-    defaultValues: {
-      name: defaultValues?.name ?? "",
-      debtAlertLimit: defaultValues?.debtAlertLimit ?? undefined,
-      defaultDiscountPercent: defaultValues?.defaultDiscountPercent ?? 0,
-      sellingPrice: defaultValues?.sellingPrice ?? undefined,
-    },
+    defaultValues: { name: group?.name ?? "" },
   });
 
   async function onSubmit(data: CreateCustomerGroupInput) {
-    if (defaultValues) {
-      const result = await updateCustomerGroup(defaultValues.id, data);
+    if (isEdit) {
+      const result = await updateCustomerGroup(group!.id, data);
       if (result && "error" in result) {
         alert(result.error);
         return;
@@ -54,85 +45,38 @@ export function GroupForm({ defaultValues }: GroupFormProps) {
         return;
       }
     }
-    router.push("/dashboard/customers/groups");
+    onSaved?.();
     router.refresh();
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
       <div>
-        <label className="mb-1 block text-sm font-medium">{t("customers.groupName")}</label>
+        <label className="mb-1.5 block text-sm font-medium text-foreground">
+          {t("customers.groupName") || "Nom du groupe"}
+        </label>
         <input
           {...register("name")}
+          autoFocus
+          placeholder={t("customers.groupNamePlaceholder") || "Ex: Professionnels, Particuliers..."}
           className={cn(
-            "w-full rounded-xl border bg-background px-3 py-2 text-sm outline-none transition-colors",
-            "focus:border-primary focus:ring-1 focus:ring-primary",
+            "w-full rounded-lg border border-input bg-background px-3 py-2 text-sm outline-none transition-all duration-200",
+            "placeholder:text-muted-foreground/60",
+            "focus:border-primary focus:ring-2 focus:ring-primary/20",
             errors.name && "border-destructive"
           )}
         />
         {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name.message}</p>}
       </div>
 
-      <div>
-        <label className="mb-1 block text-sm font-medium">{t("customers.groupSellingPrice")}</label>
-        <input
-          {...register("sellingPrice", { valueAsNumber: true })}
-          type="number"
-          min={0}
-          step={1}
-          className={cn(
-            "w-full rounded-xl border bg-background px-3 py-2 text-sm outline-none transition-colors",
-            "focus:border-primary focus:ring-1 focus:ring-primary"
-          )}
-        />
-        <p className="mt-1 text-[11px] text-muted-foreground">{t("customers.groupSellingPriceHint")}</p>
-      </div>
-
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div>
-          <label className="mb-1 block text-sm font-medium">{t("customers.debtAlertLimit")}</label>
-          <input
-            {...register("debtAlertLimit", { valueAsNumber: true })}
-            type="number"
-            min={0}
-            step={1}
-            className={cn(
-              "w-full rounded-xl border bg-background px-3 py-2 text-sm outline-none transition-colors",
-              "focus:border-primary focus:ring-1 focus:ring-primary"
-            )}
-          />
-        </div>
-        <div>
-          <label className="mb-1 block text-sm font-medium">{t("customers.defaultDiscountPercent")}</label>
-          <input
-            {...register("defaultDiscountPercent", { valueAsNumber: true })}
-            type="number"
-            min={0}
-            max={100}
-            step={0.5}
-            className={cn(
-              "w-full rounded-xl border bg-background px-3 py-2 text-sm outline-none transition-colors",
-              "focus:border-primary focus:ring-1 focus:ring-primary"
-            )}
-          />
-        </div>
-      </div>
-
-      <div className="flex items-center gap-3 pt-2">
+      <div className="flex items-center gap-2 pt-1">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="inline-flex items-center gap-2 rounded-xl bg-primary px-4 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90 disabled:opacity-50"
+          className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-xs)] hover:brightness-110 active:scale-95 disabled:opacity-50 transition-all duration-200"
         >
           {isSubmitting && <Loader2 className="h-4 w-4 animate-spin" />}
-          {defaultValues ? t("customers.editGroup") : t("customers.newGroup")}
-        </button>
-        <button
-          type="button"
-          onClick={() => router.push("/dashboard/customers/groups")}
-          className="rounded-xl px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-        >
-          {t("customers.cancel")}
+          {isEdit ? (t("common.save") || "Enregistrer") : (t("common.create") || "Créer")}
         </button>
       </div>
     </form>

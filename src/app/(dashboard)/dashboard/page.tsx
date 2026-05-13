@@ -17,25 +17,31 @@ import {
   FileText,
   Plus,
   ShoppingCart,
+  TrendingUp,
   Users,
   Wrench,
 } from "lucide-react";
 import type { RepairStatus } from "@prisma/client";
 import { Sparkline, DonutChart, BarChart } from "@/components/ui/charts";
 
-export const metadata = {
-  title: "Tableau de bord",
-};
+export const metadata = { title: "Tableau de bord" };
 
 const statusStyles: Record<RepairStatus, { labelKey: AppTranslationKey; bg: string; fg: string }> = {
-  received: { labelKey: "dashboard.status.received", bg: "var(--s-received-bg)", fg: "var(--s-received-tx)" },
-  in_diagnosis: { labelKey: "dashboard.status.inDiagnosis", bg: "var(--s-diagnosis-bg)", fg: "var(--s-diagnosis-tx)" },
-  waiting_customer_approval: { labelKey: "dashboard.status.waitingCustomer", bg: "var(--s-waiting-bg)", fg: "var(--s-waiting-tx)" },
-  in_repair: { labelKey: "dashboard.status.inRepair", bg: "var(--s-inrepair-bg)", fg: "var(--s-inrepair-tx)" },
-  ready_for_pickup: { labelKey: "dashboard.status.readyForPickup", bg: "var(--s-ready-bg)", fg: "var(--s-ready-tx)" },
-  completed: { labelKey: "dashboard.status.completed", bg: "var(--s-received-bg)", fg: "var(--s-received-tx)" },
-  not_repaired: { labelKey: "dashboard.status.notRepaired", bg: "var(--s-norepair-bg)", fg: "var(--s-norepair-tx)" },
+  received: { labelKey: "dashboard.status.received", bg: "var(--status-received-bg)", fg: "var(--status-received-fg)" },
+  in_diagnosis: { labelKey: "dashboard.status.inDiagnosis", bg: "var(--status-diagnosis-bg)", fg: "var(--status-diagnosis-fg)" },
+  waiting_customer_approval: { labelKey: "dashboard.status.waitingCustomer", bg: "var(--status-waiting-bg)", fg: "var(--status-waiting-fg)" },
+  in_repair: { labelKey: "dashboard.status.inRepair", bg: "var(--status-inrepair-bg)", fg: "var(--status-inrepair-fg)" },
+  ready_for_pickup: { labelKey: "dashboard.status.readyForPickup", bg: "var(--status-ready-bg)", fg: "var(--status-ready-fg)" },
+  completed: { labelKey: "dashboard.status.completed", bg: "var(--status-received-bg)", fg: "var(--status-received-tx)" },
+  not_repaired: { labelKey: "dashboard.status.notRepaired", bg: "var(--status-norepair-bg)", fg: "var(--status-norepair-fg)" },
 };
+
+const kpiConfigs = [
+  { key: "activeTickets" as const, icon: Wrench, color: "var(--kpi-revenue-fg)", bg: "var(--kpi-revenue-bg)", glowColor: "rgba(99,102,241,0.15)" },
+  { key: "readyPickup" as const, icon: CheckCircle, color: "var(--s-ready-tx)", bg: "var(--s-ready-bg)", glowColor: "rgba(22,163,74,0.15)" },
+  { key: "todayRevenue" as const, icon: CircleDollarSign, color: "var(--s-inrepair-tx)", bg: "var(--s-inrepair-bg)", glowColor: "rgba(21,128,61,0.15)" },
+  { key: "criticalStock" as const, icon: AlertTriangle, color: "var(--s-diagnosis-tx)", bg: "var(--s-diagnosis-bg)", glowColor: "rgba(161,98,7,0.15)" },
+];
 
 type DashboardTicket = Awaited<ReturnType<typeof listRepairTickets>>["data"][number];
 
@@ -56,34 +62,37 @@ function deviceName(ticket: DashboardTicket, fallback: string) {
   );
 }
 
-function KpiCard({
-  label,
-  value,
-  delta,
-  icon,
-  color,
-  bg,
-}: {
+function KpiCard({ label, value, delta, Icon, color, bg }: {
   label: string;
   value: string;
   delta: string;
-  icon: React.ReactNode;
+  Icon: React.ElementType;
   color: string;
   bg: string;
 }) {
   return (
-    <div className="group relative rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] p-4 shadow-[var(--shadow-sm)] transition-all duration-200 hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5">
-      <div className="absolute inset-0 rounded-[var(--radius)] opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none" style={{ background: `linear-gradient(135deg, ${bg}10, transparent 60%)` }} />
+    <div className="group relative rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-sm)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-lg)]">
+      {/* Gradient overlay on hover */}
+      <div
+        className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+        style={{ background: `linear-gradient(135deg, ${bg}, transparent 70%)` }}
+      />
       <div className="relative flex items-start justify-between gap-3">
         <div>
-          <p className="text-[13px] font-medium text-[var(--tx2)]">{label}</p>
-          <p className="mt-2 text-[24px] font-semibold tracking-tight text-[var(--tx)]">{value}</p>
+          <p className="text-xs font-medium text-[var(--text-tertiary)] uppercase tracking-wider">{label}</p>
+          <p className="mt-2 text-[28px] font-bold tracking-tight text-[var(--text-primary)]">{value}</p>
         </div>
-        <div className="flex h-10 w-10 items-center justify-center rounded-full" style={{ backgroundColor: bg, color }}>
-          {icon}
+        <div
+          className="flex h-11 w-11 items-center justify-center rounded-xl shadow-[var(--shadow-sm)] transition-transform duration-200 group-hover:scale-110"
+          style={{ backgroundColor: bg, color }}
+        >
+          <Icon className="h-5 w-5" />
         </div>
       </div>
-      <p className="relative mt-3 text-[13px] font-medium text-[var(--tx3)]">{delta}</p>
+      <div className="relative mt-3 flex items-center gap-1.5 text-xs font-medium text-[var(--text-tertiary)]">
+        <TrendingUp className="h-3 w-3" />
+        {delta}
+      </div>
     </div>
   );
 }
@@ -92,7 +101,7 @@ function StatusPill({ status, label }: { status: RepairStatus; label: string }) 
   const cfg = statusStyles[status];
   return (
     <span
-      className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[13px] font-medium"
+      className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium"
       style={{ backgroundColor: cfg.bg, color: cfg.fg }}
     >
       <span className="h-1.5 w-1.5 rounded-full bg-current opacity-80" />
@@ -132,6 +141,19 @@ export default async function DashboardPage() {
   const readyCount = tickets.filter((ticket) => ticket.currentStatus === "ready_for_pickup").length;
   const today = new Date();
 
+  const kpiValues: Record<string, string> = {
+    activeTickets: String(stats.openTickets),
+    readyPickup: String(readyCount),
+    todayRevenue: formatCurrency(stats.dailyRevenue, locale),
+    criticalStock: String(stats.lowStock),
+  };
+  const kpiDeltas: Record<string, string> = {
+    activeTickets: t("dashboard.kpi.activeTicketsDelta"),
+    readyPickup: t("dashboard.kpi.readyPickupDelta"),
+    todayRevenue: activeSession ? t("dashboard.cashOpen") : t("dashboard.cashClosed"),
+    criticalStock: t("dashboard.kpi.criticalStockDelta"),
+  };
+
   const activities = recentTickets.slice(0, 6).map((ticket, index) => ({
     id: ticket.id,
     icon: index % 3 === 0 ? FileText : index % 3 === 1 ? Clock3 : CheckCircle,
@@ -140,138 +162,128 @@ export default async function DashboardPage() {
   }));
 
   return (
-    <div className="min-h-[calc(100svh-88px)] bg-[var(--bg)] px-6 py-5 text-[var(--tx)]">
-      <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+    <div className="page-enter space-y-6">
+      {/* Header */}
+      <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-[24px] font-semibold tracking-tight">{t("nav.dashboard")}</h1>
-          <p className="mt-1 text-[15px] text-[var(--tx2)]">
+          <h1 className="text-2xl font-bold tracking-tight text-[var(--text-primary)]">{t("nav.dashboard")}</h1>
+          <p className="mt-0.5 text-sm text-[var(--text-secondary)]">
             {t("dashboard.welcome")}, {user?.name ?? t("dashboard.repaireTeam")}
           </p>
         </div>
-        <div className="text-[14px] font-medium text-[var(--tx3)]">{formatDate(today)}</div>
+        <div className="text-sm text-[var(--text-tertiary)]">{formatDate(today)}</div>
       </div>
 
+      {/* KPI Cards */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <KpiCard
-          label={t("dashboard.kpi.activeTickets")}
-          value={String(stats.openTickets)}
-          delta={t("dashboard.kpi.activeTicketsDelta")}
-          icon={<Wrench className="h-5 w-5" />}
-          color="var(--primary)"
-          bg="var(--accent)"
-        />
-        <KpiCard
-          label={t("dashboard.kpi.readyPickup")}
-          value={String(readyCount)}
-          delta={t("dashboard.kpi.readyPickupDelta")}
-          icon={<CheckCircle className="h-5 w-5" />}
-          color="var(--s-ready-tx)"
-          bg="var(--s-ready-bg)"
-        />
-        <KpiCard
-          label={t("dashboard.kpi.todayRevenue")}
-          value={formatCurrency(stats.dailyRevenue, locale)}
-          delta={activeSession ? t("dashboard.cashOpen") : t("dashboard.cashClosed")}
-          icon={<CircleDollarSign className="h-5 w-5" />}
-          color="var(--s-inrepair-tx)"
-          bg="var(--s-inrepair-bg)"
-        />
-        <KpiCard
-          label={t("dashboard.kpi.criticalStock")}
-          value={String(stats.lowStock)}
-          delta={t("dashboard.kpi.criticalStockDelta")}
-          icon={<AlertTriangle className="h-5 w-5" />}
-          color="var(--s-diagnosis-tx)"
-          bg="var(--s-diagnosis-bg)"
-        />
+        {kpiConfigs.map((config) => (
+          <KpiCard
+            key={config.key}
+            label={t(`dashboard.kpi.${config.key}` as AppTranslationKey)}
+            value={kpiValues[config.key]}
+            delta={kpiDeltas[config.key]}
+            Icon={config.icon}
+            color={config.color}
+            bg={config.bg}
+          />
+        ))}
       </div>
 
       {/* Charts row */}
-      <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <div className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] p-4 shadow-[var(--shadow-sm)]">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+        {/* Revenue sparkline */}
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-shadow duration-200">
           <div className="flex items-center justify-between mb-3">
-            <p className="text-[13px] font-medium text-[var(--tx2)]">Revenu 7 jours</p>
-            <BarChart3 className="h-4 w-4 text-[var(--tx3)]" />
+            <p className="text-xs font-semibold uppercase tracking-wider text-[var(--text-tertiary)]">Revenu 7 jours</p>
+            <BarChart3 className="h-4 w-4 text-[var(--text-tertiary)]" />
           </div>
-          <Sparkline data={stats.weeklyRevenue} color="var(--primary)" width={200} height={36} />
-          <div className="mt-2 flex justify-between text-[11px] text-[var(--tx3)]">
+          <Sparkline data={stats.weeklyRevenue} color="var(--primary)" width={200} height={40} />
+          <div className="mt-2 flex justify-between text-[11px] text-[var(--text-tertiary)]">
             <span>{formatDate(new Date(Date.now() - 6 * 86400000))}</span>
             <span>{formatDate(new Date())}</span>
           </div>
         </div>
 
-        <div className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] p-4 shadow-[var(--shadow-sm)]">
-          <p className="text-[13px] font-medium text-[var(--tx2)] mb-3">Statut des réparations</p>
+        {/* Status donut */}
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-shadow duration-200">
+          <p className="text-xs font-semibold uppercase tracking-wider text-[var(--text-tertiary)] mb-3">Statut des réparations</p>
           {stats.statusDistribution.length > 0 ? (
             <div className="flex items-center gap-4">
               <DonutChart
-                segments={stats.statusDistribution.map((s) => ({
-                  value: s.count,
-                  color: `var(--${s.status === "received" ? "s-received" : s.status === "in_diagnosis" ? "s-diagnosis" : s.status === "waiting_customer_approval" ? "s-waiting" : s.status === "in_repair" ? "s-inrepair" : s.status === "ready_for_pickup" ? "s-ready" : "s-norepair"}-tx)`,
-                  label: s.status,
-                }))}
-                size={80}
-                strokeWidth={14}
+                segments={stats.statusDistribution.map((s) => {
+                  const statusKey = s.status.replace(/_/g, "-") as keyof typeof statusStyles;
+                  const cfg = Object.entries(statusStyles).find(([k]) => k === s.status)?.[1];
+                  return {
+                    value: s.count,
+                    color: cfg?.fg ?? "var(--primary)",
+                    label: s.status,
+                  };
+                })}
+                size={84}
+                strokeWidth={12}
               />
               <div className="flex flex-col gap-1">
                 {stats.statusDistribution.slice(0, 4).map((s) => (
-                  <span key={s.status} className="text-[11px] text-[var(--tx2)]">{s.status.replace(/_/g, " ")}: {s.count}</span>
+                  <span key={s.status} className="text-[11px] text-[var(--text-secondary)]">{s.status.replace(/_/g, " ")}: {s.count}</span>
                 ))}
               </div>
             </div>
           ) : (
-            <p className="text-[13px] text-[var(--tx3)]">{t("common.none")}</p>
+            <p className="text-sm text-[var(--text-tertiary)]">{t("common.none")}</p>
           )}
         </div>
 
-        <div className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] p-4 shadow-[var(--shadow-sm)]">
-          <p className="text-[13px] font-medium text-[var(--tx2)] mb-3">Charge techniciens</p>
+        {/* Technician workload */}
+        <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-shadow duration-200">
+          <p className="text-xs font-semibold uppercase tracking-wider text-[var(--text-tertiary)] mb-3">Charge techniciens</p>
           {stats.technicianWorkload.length > 0 ? (
             <BarChart
               data={stats.technicianWorkload.map((t, i) => ({
                 label: t.name,
                 value: t.count,
-                color: i === 0 ? "var(--primary)" : "var(--tx3)",
+                color: i === 0 ? "var(--primary)" : "var(--text-tertiary)",
               }))}
-              height={60}
+              height={64}
             />
           ) : (
-            <p className="text-[13px] text-[var(--tx3)]">{t("common.none")}</p>
+            <p className="text-sm text-[var(--text-tertiary)]">{t("common.none")}</p>
           )}
         </div>
       </div>
 
-      <div className="mt-5 grid grid-cols-1 gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(320px,40%)]">
-        <section className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]">
-          <div className="flex items-center justify-between border-b border-[var(--border)] px-4 py-3">
-            <h2 className="text-[15px] font-semibold">{t("dashboard.pipeline")}</h2>
-            <Link href="/dashboard/repairs" className="inline-flex items-center gap-1 text-[14px] font-medium text-[var(--primary)]">
-              {t("dashboard.viewAll")} <ArrowRight className="h-3.5 w-3.5" />
+      {/* Table + Activity */}
+      <div className="grid grid-cols-1 gap-5 xl:grid-cols-[minmax(0,1fr)_310px]">
+        {/* Pipeline table */}
+        <section className="rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)] overflow-hidden">
+          <div className="flex items-center justify-between border-b border-[var(--border)] px-5 py-3.5">
+            <h2 className="text-sm font-semibold text-[var(--text-primary)]">{t("dashboard.pipeline")}</h2>
+            <Link href="/dashboard/repairs" className="inline-flex items-center gap-1 text-xs font-semibold text-[var(--primary)] hover:underline">
+              {t("dashboard.viewAll")} <ArrowRight className="h-3 w-3" />
             </Link>
           </div>
           <div className="overflow-x-auto">
-            <table className="w-full table-fixed text-left text-[14px]">
+            <table className="w-full text-left">
               <thead>
-                <tr className="border-b border-[var(--border)] text-[12px] font-semibold uppercase tracking-[0.04em] text-[var(--tx3)]">
-                  <th className="w-[14%] px-4 py-2 text-start">{t("dashboard.table.ticket")}</th>
-                  <th className="w-[20%] px-4 py-2 text-start">{t("dashboard.table.customer")}</th>
-                  <th className="w-[24%] px-4 py-2 text-start">{t("dashboard.table.device")}</th>
-                  <th className="w-[18%] px-4 py-2 text-start">{t("dashboard.table.status")}</th>
-                  <th className="w-[14%] px-4 py-2 text-start">{t("dashboard.table.technician")}</th>
-                  <th className="w-[10%] px-4 py-2 text-start">{t("common.date")}</th>
+                <tr className="border-b border-[var(--border)] text-[11px] font-semibold uppercase tracking-wider text-[var(--text-tertiary)]">
+                  <th className="w-[15%] px-5 py-2.5">{t("dashboard.table.ticket")}</th>
+                  <th className="w-[20%] px-5 py-2.5">{t("dashboard.table.customer")}</th>
+                  <th className="w-[23%] px-5 py-2.5">{t("dashboard.table.device")}</th>
+                  <th className="w-[18%] px-5 py-2.5">{t("dashboard.table.status")}</th>
+                  <th className="w-[14%] px-5 py-2.5">{t("dashboard.table.technician")}</th>
+                  <th className="w-[10%] px-5 py-2.5">{t("common.date")}</th>
                 </tr>
               </thead>
               <tbody>
                 {recentTickets.map((ticket) => (
-                  <tr key={ticket.id} className="border-b border-[var(--border)] last:border-b-0 hover:bg-[var(--muted)]">
-                    <td className="px-4 py-3 font-semibold text-[var(--primary)]">
-                      <Link href={`/dashboard/repairs/${ticket.id}`}>{ticket.ticketNumber}</Link>
+                  <tr key={ticket.id} className="border-b border-[var(--border)] last:border-b-0 hover:bg-[var(--muted)]/50 transition-colors">
+                    <td className="px-5 py-3 font-semibold text-[var(--primary)]">
+                      <Link href={`/dashboard/repairs/${ticket.id}`} className="hover:underline">{ticket.ticketNumber}</Link>
                     </td>
-                    <td className="truncate px-4 py-3 font-medium">{ticket.customer.name}</td>
-                    <td className="truncate px-4 py-3 text-[var(--tx2)]">{deviceName(ticket, t("dashboard.table.deviceFallback"))}</td>
-                    <td className="px-4 py-3"><StatusPill status={ticket.currentStatus} label={t(statusStyles[ticket.currentStatus].labelKey)} /></td>
-                    <td className="truncate px-4 py-3 text-[var(--tx2)]">{ticket.assignedTechnician?.name ?? t("common.none")}</td>
-                    <td className="px-4 py-3 text-[var(--tx3)]">{formatDate(ticket.createdAt)}</td>
+                    <td className="truncate px-5 py-3 text-sm font-medium text-[var(--text-primary)]">{ticket.customer.name}</td>
+                    <td className="truncate px-5 py-3 text-sm text-[var(--text-secondary)]">{deviceName(ticket, t("dashboard.table.deviceFallback"))}</td>
+                    <td className="px-5 py-3"><StatusPill status={ticket.currentStatus} label={t(statusStyles[ticket.currentStatus].labelKey)} /></td>
+                    <td className="truncate px-5 py-3 text-sm text-[var(--text-secondary)]">{ticket.assignedTechnician?.name ?? t("common.none")}</td>
+                    <td className="truncate px-5 py-3 text-xs text-[var(--text-tertiary)]">{formatDate(ticket.createdAt)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -279,59 +291,76 @@ export default async function DashboardPage() {
           </div>
         </section>
 
-        <section className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]">
-          <div className="border-b border-[var(--border)] px-4 py-3">
-            <h2 className="text-[15px] font-semibold">{t("dashboard.recentActivity")}</h2>
+        {/* Activity feed */}
+        <section className="rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]">
+          <div className="border-b border-[var(--border)] px-5 py-3.5">
+            <h2 className="text-sm font-semibold text-[var(--text-primary)]">{t("dashboard.recentActivity")}</h2>
           </div>
-          <div className="flex flex-col gap-0 px-4 py-3">
-            {activities.length ? activities.map((activity) => {
+          <div className="flex flex-col gap-0 px-5 py-3.5">
+            {activities.length ? activities.map((activity, i) => {
               const Icon = activity.icon;
               return (
                 <div key={activity.id} className="relative flex gap-3 pb-4 last:pb-0">
-                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--surface)] text-[var(--tx3)]">
-                    <Icon className="h-3.5 w-3.5" />
+                  {/* Connector line */}
+                  {i < activities.length - 1 && (
+                    <div className="absolute start-[13px] top-7 bottom-0 w-px bg-[var(--border)]" />
+                  )}
+                  <div className="flex h-[26px] w-[26px] shrink-0 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--surface)] text-[var(--text-tertiary)] z-10">
+                    <Icon className="h-3 w-3" />
                   </div>
                   <div className="min-w-0 pt-0.5">
-                    <p className="truncate text-[14px] font-medium text-[var(--tx)]">{activity.text}</p>
-                    <p className="mt-0.5 text-[13px] text-[var(--tx3)]">{activity.time}</p>
+                    <p className="truncate text-sm font-medium text-[var(--text-primary)]">{activity.text}</p>
+                    <p className="mt-0.5 text-xs text-[var(--text-tertiary)]">{activity.time}</p>
                   </div>
                 </div>
               );
             }) : (
-              <p className="text-[14px] text-[var(--tx2)]">{t("dashboard.noRecentActivity")}</p>
+              <p className="text-sm text-[var(--text-secondary)]">{t("dashboard.noRecentActivity")}</p>
             )}
           </div>
         </section>
       </div>
 
-      <div className="mt-5 grid grid-cols-1 gap-4 xl:grid-cols-[minmax(0,1fr)_auto]">
-        <div className="flex flex-col gap-3 rounded-[var(--radius)] border border-[var(--s-diagnosis-bg)] bg-[var(--s-diagnosis-bg)] p-4 text-[var(--s-diagnosis-tx)] shadow-[var(--shadow-sm)] sm:flex-row sm:items-center sm:justify-between">
+      {/* Bottom actions */}
+      <div className="grid grid-cols-1 gap-4 xl:grid-cols-[minmax(0,1fr)_auto]">
+        {/* Critical stock alert */}
+        <div className="flex flex-col gap-3 rounded-xl border border-[var(--s-diagnosis-border)] bg-[var(--s-diagnosis-bg)]/50 p-4 text-[var(--s-diagnosis-tx)] sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
-            <AlertTriangle className="h-5 w-5 shrink-0" />
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[var(--s-diagnosis-bg)]">
+              <AlertTriangle className="h-4 w-4" />
+            </div>
             <div>
-              <p className="text-[15px] font-semibold">{t("dashboard.kpi.criticalStock")}</p>
-              <p className="text-[14px] opacity-80">
+              <p className="text-sm font-semibold">{t("dashboard.kpi.criticalStock")}</p>
+              <p className="text-xs opacity-80">
                 {stats.lowStock > 0
                   ? t("dashboard.criticalStockSummary", { count: stats.lowStock })
                   : t("dashboard.criticalStockEmpty")}
               </p>
             </div>
           </div>
-          <Link href="/dashboard/inventory/reorder" className="inline-flex items-center gap-1 text-[14px] font-semibold">
-            {t("dashboard.orderNow")} <ArrowRight className="h-3.5 w-3.5" />
+          <Link href="/dashboard/inventory/reorder" className="inline-flex items-center gap-1.5 text-xs font-semibold hover:underline">
+            {t("dashboard.orderNow")} <ArrowRight className="h-3 w-3" />
           </Link>
         </div>
 
+        {/* Quick actions */}
         <div className="flex flex-wrap items-center gap-2">
-          <Link href="/dashboard/repairs/new" className="inline-flex h-9 items-center gap-2 rounded-[var(--radius)] bg-[var(--primary)] px-3 text-[14px] font-medium text-[var(--primary-fg)] shadow-[var(--shadow-sm)]">
+          <Link
+            href="/dashboard/repairs/new"
+            className="inline-flex h-10 items-center gap-2 rounded-lg px-4 text-sm font-semibold text-white transition-all duration-200 hover:brightness-110 active:scale-95"
+            style={{
+              background: "linear-gradient(135deg, #6366f1, #4f46e5)",
+              boxShadow: "0 0 0 1px rgba(99,102,241,0.3), 0 2px 8px rgba(99,102,241,0.25)",
+            }}
+          >
             <Plus className="h-4 w-4" />
             {t("repairs.newTicket")}
           </Link>
-          <Link href="/dashboard/pos/cash-register" className="inline-flex h-9 items-center gap-2 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] px-3 text-[14px] font-medium shadow-[var(--shadow-sm)] hover:bg-[var(--muted)]">
+          <Link href="/dashboard/pos/cash-register" className="inline-flex h-10 items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-4 text-sm font-medium shadow-[var(--shadow-xs)] hover:bg-[var(--muted)] transition-colors">
             <ShoppingCart className="h-4 w-4" />
             {t("dashboard.openCash")}
           </Link>
-          <Link href="/dashboard/customers/new" className="inline-flex h-9 items-center gap-2 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)] px-3 text-[14px] font-medium shadow-[var(--shadow-sm)] hover:bg-[var(--muted)]">
+          <Link href="/dashboard/customers/new" className="inline-flex h-10 items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-4 text-sm font-medium shadow-[var(--shadow-xs)] hover:bg-[var(--muted)] transition-colors">
             <Users className="h-4 w-4" />
             {t("customers.new")}
           </Link>

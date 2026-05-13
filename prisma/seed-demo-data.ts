@@ -522,6 +522,85 @@ async function ensureRepairTickets(companyId: string, storeId: string) {
   }
 }
 
+async function ensureDemoExpenses(companyId: string, storeId: string, userId: string) {
+  const categoryIds = [
+    "seed-expense-cat-electricite",
+    "seed-expense-cat-loyer",
+    "seed-expense-cat-eau",
+    "seed-expense-cat-entretien",
+    "seed-expense-cat-transport",
+  ];
+
+  const now = new Date();
+
+  const expenses: Array<{
+    categoryId: string;
+    amount: number;
+    expenseDate: Date;
+    note: string;
+  }> = [
+    // Électricité — monthly bills
+    { categoryId: categoryIds[0], amount: 8500, expenseDate: daysAgo(now, 28), note: "Facture d'électricité avril" },
+    { categoryId: categoryIds[0], amount: 7900, expenseDate: daysAgo(now, 21), note: "Facture d'électricité mai" },
+    { categoryId: categoryIds[0], amount: 8200, expenseDate: daysAgo(now, 14), note: "Facture d'électricité juin" },
+    { categoryId: categoryIds[0], amount: 9100, expenseDate: daysAgo(now, 7), note: "Facture d'électricité juillet" },
+    { categoryId: categoryIds[0], amount: 10500, expenseDate: daysAgo(now, 2), note: "Facture d'électricité août (climatisation)" },
+
+    // Loyer — monthly
+    { categoryId: categoryIds[1], amount: 45000, expenseDate: daysAgo(now, 30), note: "Loyer local commercial — mai" },
+    { categoryId: categoryIds[1], amount: 45000, expenseDate: daysAgo(now, 23), note: "Loyer local commercial — juin" },
+    { categoryId: categoryIds[1], amount: 45000, expenseDate: daysAgo(now, 16), note: "Loyer local commercial — juillet" },
+    { categoryId: categoryIds[1], amount: 45000, expenseDate: daysAgo(now, 9), note: "Loyer local commercial — août" },
+    { categoryId: categoryIds[1], amount: 45000, expenseDate: daysAgo(now, 2), note: "Loyer local commercial — septembre" },
+
+    // Eau — small monthly
+    { categoryId: categoryIds[2], amount: 1800, expenseDate: daysAgo(now, 25), note: "Facture d'eau mai" },
+    { categoryId: categoryIds[2], amount: 2100, expenseDate: daysAgo(now, 18), note: "Facture d'eau juin" },
+    { categoryId: categoryIds[2], amount: 1900, expenseDate: daysAgo(now, 11), note: "Facture d'eau juillet" },
+    { categoryId: categoryIds[2], amount: 2400, expenseDate: daysAgo(now, 4), note: "Facture d'eau août" },
+
+    // Entretien & Réparation — occasional
+    { categoryId: categoryIds[3], amount: 3500, expenseDate: daysAgo(now, 26), note: "Réparation porte vitrée" },
+    { categoryId: categoryIds[3], amount: 12000, expenseDate: daysAgo(now, 19), note: "Réparation climatisation" },
+    { categoryId: categoryIds[3], amount: 2800, expenseDate: daysAgo(now, 12), note: "Changement ampoules LED" },
+    { categoryId: categoryIds[3], amount: 7500, expenseDate: daysAgo(now, 5), note: "Entretien étagères magasin" },
+    { categoryId: categoryIds[3], amount: 1500, expenseDate: daysAgo(now, 1), note: "Petites réparations divers" },
+
+    // Transport — weekly
+    { categoryId: categoryIds[4], amount: 2500, expenseDate: daysAgo(now, 29), note: "Carburant livraison" },
+    { categoryId: categoryIds[4], amount: 1800, expenseDate: daysAgo(now, 24), note: "Transport pièces détachées" },
+    { categoryId: categoryIds[4], amount: 3200, expenseDate: daysAgo(now, 17), note: "Carburant + péage" },
+    { categoryId: categoryIds[4], amount: 2100, expenseDate: daysAgo(now, 10), note: "Livraison client" },
+    { categoryId: categoryIds[4], amount: 2800, expenseDate: daysAgo(now, 3), note: "Carburant semaine" },
+  ];
+
+  for (const exp of expenses) {
+    await prisma.expense.upsert({
+      where: { id: `demo-expense-${exp.expenseDate.getTime()}-${exp.categoryId.slice(-8)}` },
+      update: { amount: exp.amount },
+      create: {
+        id: `demo-expense-${exp.expenseDate.getTime()}-${exp.categoryId.slice(-8)}`,
+        companyId,
+        storeId,
+        categoryId: exp.categoryId,
+        amount: exp.amount,
+        expenseDate: exp.expenseDate,
+        note: exp.note,
+        createdByUserId: userId,
+      },
+    });
+  }
+
+  console.log(`  DemoExpenses: ${expenses.length} expenses across 5 categories`);
+}
+
+function daysAgo(from: Date, days: number): Date {
+  const d = new Date(from);
+  d.setDate(d.getDate() - days);
+  d.setHours(10, 0, 0, 0);
+  return d;
+}
+
 async function main() {
   console.log("Seeding demo showcase data...");
 
@@ -533,6 +612,7 @@ async function main() {
   await ensureSuppliers(company.id, store.id);
   await ensurePurchaseOrders(company.id, store.id);
   await ensureRepairTickets(company.id, store.id);
+  await ensureDemoExpenses(company.id, store.id, "demo-user-admin");
 
   console.log("Demo showcase seed complete.");
   console.log("Login credentials: gayethtayem@gmail.com / ghaith$");

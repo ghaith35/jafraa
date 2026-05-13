@@ -1,22 +1,22 @@
 "use client";
 
 import { useTransition } from "react";
-import Link from "next/link";
-import { Building2, Archive, Pencil, MapPin, Phone } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Building2, Archive, Pencil, MapPin, Phone, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { archiveSupplier } from "../actions/supplier.actions";
 import type { UserRole } from "@prisma/client";
 import { hasPermission } from "@/lib/auth/permissions";
 import { useAppI18n } from "@/lib/i18n/ui";
 
-// ─── Types ───────────────────────────────────────────────────────────────────
-
 interface Supplier {
   id: string;
   name: string;
-  phone: string | null;
+  phones: string;
+  nif: string | null;
+  nis: string | null;
   address: string | null;
-  balance: { toNumber: () => number } | number;
+  balance: number;
   isArchived: boolean;
 }
 
@@ -25,69 +25,53 @@ interface Props {
   userRole: UserRole;
 }
 
-// ─── Helpers ─────────────────────────────────────────────────────────────────
-
-function formatPrice(v: { toNumber: () => number } | number): string {
-  const num = typeof v === "number" ? v : v.toNumber();
-  return new Intl.NumberFormat("fr-DZ", {
-    style: "decimal",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(num) + " DZD";
-}
-
-// ─── Row ─────────────────────────────────────────────────────────────────────
-
-function SupplierRow({
-  supplier,
-  canManage,
-}: {
-  supplier: Supplier;
-  canManage: boolean;
-}) {
+function SupplierRow({ supplier, canManage }: { supplier: Supplier; canManage: boolean }) {
   const { t } = useAppI18n();
+  const router = useRouter();
   const [isPending, startTransition] = useTransition();
+  const phoneList = supplier.phones ? supplier.phones.split(",").map(p => p.trim()).filter(Boolean) : [];
 
   function handleArchive() {
     startTransition(async () => {
-      await archiveSupplier(supplier.id);
+      const result = await archiveSupplier(supplier.id);
+      if (result && "redirect" in result && result.redirect) {
+        router.push(result.redirect);
+        router.refresh();
+      }
     });
   }
 
-  const bal = typeof supplier.balance === "number" ? supplier.balance : supplier.balance.toNumber();
-  const hasDebt = bal > 0;
-
   return (
     <div className={cn(
-      "flex flex-col sm:flex-row gap-3 rounded-xl border border-border bg-card px-4 py-3 transition-colors",
-      supplier.isArchived ? "opacity-60" : "hover:bg-accent/30"
+      "flex items-center gap-3 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 shadow-[var(--shadow-xs)] hover:shadow-[var(--shadow-md)] transition-all duration-200",
+      supplier.isArchived ? "opacity-60" : ""
     )}>
-      {/* Icon */}
-      <div className="hidden sm:flex rounded-md bg-muted p-2 shrink-0 items-start">
-        <Building2 className="h-4 w-4 text-muted-foreground" />
+      <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[var(--muted)] shrink-0">
+        <Building2 className="h-4 w-4 text-[var(--text-secondary)]" />
       </div>
 
-      {/* Main info */}
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
-          <Link
-            href={`/dashboard/suppliers/${supplier.id}`}
-            className="text-sm font-medium text-foreground hover:underline truncate"
-          >
-            {supplier.name}
-          </Link>
+          <span className="text-sm font-semibold text-[var(--text-primary)]">{supplier.name}</span>
           {supplier.isArchived && (
-            <span className="text-xs text-muted-foreground border border-border rounded px-1.5 py-0.5">
-              {t("customers.archived")}
-            </span>
+            <span className="text-[11px] text-[var(--text-tertiary)] border border-[var(--border)] rounded-full px-2 py-0.5">{t("customers.archived")}</span>
           )}
         </div>
-        <div className="flex flex-wrap gap-x-4 gap-y-1 mt-1 text-xs text-muted-foreground">
-          {supplier.phone && (
+        <div className="flex flex-wrap gap-x-4 gap-y-0.5 mt-0.5 text-xs text-[var(--text-secondary)]">
+          {phoneList.length > 0 && (
             <span className="flex items-center gap-1">
               <Phone className="h-3 w-3" />
-              {supplier.phone}
+              {phoneList.join(", ")}
             </span>
+          )}
+          {supplier.nif && (
+            <span className="flex items-center gap-1">
+              <FileText className="h-3 w-3" />
+              NIF: {supplier.nif}
+            </span>
+          )}
+          {supplier.nis && (
+            <span>NIS: {supplier.nis}</span>
           )}
           {supplier.address && (
             <span className="flex items-center gap-1 truncate max-w-[200px]">
@@ -98,42 +82,30 @@ function SupplierRow({
         </div>
       </div>
 
-      {/* Balance */}
-      <div className="flex items-center justify-between sm:flex-col sm:items-end gap-1 shrink-0 border-t border-border sm:border-0 pt-2 sm:pt-0 mt-2 sm:mt-0">
-        <div className="flex flex-col sm:items-end gap-0.5">
-          <span className="text-xs text-muted-foreground uppercase tracking-wide font-medium">{t("suppliers.balanceDue")}</span>
-          <span className={cn("text-sm font-semibold", hasDebt ? "text-destructive" : "text-foreground")}>
-            {formatPrice(supplier.balance)}
-          </span>
-        </div>
-
-        {/* Actions */}
+      <div className="flex items-center gap-1 shrink-0">
         {canManage && !supplier.isArchived && (
-          <div className="flex items-center gap-1 shrink-0">
-            <Link
-              href={`/dashboard/suppliers/${supplier.id}/edit`}
-              className="rounded-md p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+          <>
+            <button
+              onClick={() => router.push(`/dashboard/suppliers/${supplier.id}/edit`)}
+              className="p-1.5 text-[var(--text-tertiary)] hover:text-[var(--text-primary)] rounded-md hover:bg-[var(--muted)] transition-colors"
               title={t("common.edit")}
             >
               <Pencil className="h-3.5 w-3.5" />
-            </Link>
+            </button>
             <button
-              type="button"
               onClick={handleArchive}
               disabled={isPending}
-              title={t("suppliers.archiveSupplier")}
-              className="rounded-md p-1.5 text-muted-foreground hover:text-destructive hover:bg-destructive/10 disabled:opacity-50 transition-colors"
+              className="p-1.5 text-[var(--text-tertiary)] hover:text-destructive rounded-md hover:bg-destructive/10 transition-colors"
+              title={t("common.archive")}
             >
               <Archive className="h-3.5 w-3.5" />
             </button>
-          </div>
+          </>
         )}
       </div>
     </div>
   );
 }
-
-// ─── List ─────────────────────────────────────────────────────────────────────
 
 export function SupplierList({ suppliers, userRole }: Props) {
   const { t } = useAppI18n();
@@ -141,20 +113,18 @@ export function SupplierList({ suppliers, userRole }: Props) {
 
   if (suppliers.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-border bg-card p-10 text-center">
-        <div className="mb-4 rounded-full bg-muted p-3">
-          <Building2 className="h-6 w-6 text-muted-foreground" />
+      <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-[var(--border)] bg-[var(--surface)]/50 py-10 text-center">
+        <div className="mb-4 rounded-full bg-[var(--muted)] p-3">
+          <Building2 className="h-6 w-6 text-[var(--text-tertiary)]" />
         </div>
-        <p className="text-sm font-medium text-foreground">{t("suppliers.noSuppliers")}</p>
-        <p className="mt-1 text-sm text-muted-foreground max-w-sm">
-          {t("suppliers.emptyDescription")}
-        </p>
+        <p className="text-sm font-medium text-[var(--text-primary)]">{t("suppliers.noSuppliers")}</p>
+        <p className="mt-1 text-sm text-[var(--text-secondary)] max-w-sm">{t("suppliers.emptyDescription")}</p>
       </div>
     );
   }
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-1.5">
       {suppliers.map((s) => (
         <SupplierRow key={s.id} supplier={s} canManage={canManage} />
       ))}

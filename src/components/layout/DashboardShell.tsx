@@ -52,8 +52,8 @@ export function DashboardShell({ children, user, company }: Props) {
       {/* Main content — offset by sidebar width on desktop */}
       <div
         className={cn(
-          "flex flex-1 flex-col overflow-hidden transition-all duration-200 ease-in-out",
-          collapsed ? "lg:ms-[60px]" : "lg:ms-[220px]"
+          "flex flex-1 flex-col overflow-hidden transition-all duration-300 ease-in-out",
+          collapsed ? "lg:ms-[64px]" : "lg:ms-[232px]"
         )}
       >
         <Topbar
@@ -62,7 +62,7 @@ export function DashboardShell({ children, user, company }: Props) {
           onMobileMenuToggle={() => setMobileOpen((o) => !o)}
         />
         <main className="main-scroll flex-1 overflow-y-auto">
-          <div className="p-4 md:p-5">{children}</div>
+          <div className="p-5 md:p-6">{children}</div>
         </main>
       </div>
     </div>

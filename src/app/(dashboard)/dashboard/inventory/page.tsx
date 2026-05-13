@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { AlertTriangle, Boxes, ClipboardList, FileText, History, Package, Plus, Truck, Wrench } from "lucide-react";
+import { AlertTriangle, Boxes, FileText, Package, Plus, Truck, Wrench } from "lucide-react";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { prisma } from "@/lib/db";
@@ -19,14 +19,12 @@ export default async function InventoryOverviewPage() {
   if (!storeId) redirect("/dashboard");
   const canManage = hasPermission(session.role, "inventory:manage");
 
-  const [productCount, partCount, lowProducts, lowParts, movementCount, supplierCount, purchaseOrderCount, purchaseInvoiceCount] = await Promise.all([
+  const [productCount, partCount, lowProducts, lowParts, supplierCount, purchaseInvoiceCount] = await Promise.all([
     safeCount(() => prisma.product.count({ where: { storeId, isArchived: false } })),
     safeCount(() => prisma.part.count({ where: { storeId, isArchived: false } })),
     safeList(() => prisma.product.findMany({ where: { storeId, isArchived: false, lowStockThreshold: { not: null } }, select: { stockQty: true, lowStockThreshold: true } })),
     safeList(() => prisma.part.findMany({ where: { storeId, isArchived: false, lowStockThreshold: { not: null } }, select: { stockQty: true, lowStockThreshold: true } })),
-    safeCount(() => prisma.stockMovement.count({ where: { storeId } })),
     safeCount(() => prisma.supplier.count({ where: { storeId, isArchived: false } })),
-    safeCount(() => prisma.purchaseOrder.count({ where: { storeId } })),
     safeCount(() => prisma.purchaseInvoice.count({ where: { storeId } })),
   ]);
 
@@ -36,9 +34,7 @@ export default async function InventoryOverviewPage() {
     { href: "/dashboard/inventory/products", title: t("inventory.products"), desc: t("inventory.productsDescription"), icon: Package, count: productCount },
     { href: "/dashboard/inventory/parts", title: t("inventory.spareParts"), desc: t("inventory.partsDescription"), icon: Wrench, count: partCount },
     { href: "/dashboard/inventory/recovered-parts", title: t("inventory.recoveredParts"), desc: t("inventory.recoveredPartsDescription"), icon: Boxes, count: undefined },
-    { href: "/dashboard/inventory/stock-movements", title: t("inventory.stockMovements"), desc: t("inventory.stockMovementsDescription"), icon: History, count: movementCount },
     { href: "/dashboard/suppliers", title: t("suppliers.title"), desc: t("inventory.suppliersDescription"), icon: Truck, count: supplierCount },
-    { href: "/dashboard/inventory/purchase-orders", title: t("inventory.purchaseOrders"), desc: t("inventory.purchaseOrdersDescription"), icon: ClipboardList, count: purchaseOrderCount },
     { href: "/dashboard/inventory/purchases", title: t("inventory.purchaseInvoices"), desc: t("inventory.purchaseInvoicesDescription"), icon: FileText, count: purchaseInvoiceCount },
   ];
 

@@ -67,8 +67,20 @@ export default async function SupplierDetailPage(props: { params: Promise<{ id: 
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4 shrink-0 mt-0.5" />
-                <span>{supplier.phone || t("suppliers.notProvided")}</span>
+                <span>{supplier.phones ? supplier.phones.split(",").map(p => p.trim()).filter(Boolean).join(", ") : t("suppliers.notProvided")}</span>
               </div>
+              {supplier.nif && (
+                <div className="flex items-start gap-2 text-muted-foreground">
+                  <FileText className="h-4 w-4 shrink-0 mt-0.5" />
+                  <span>NIF: {supplier.nif}</span>
+                </div>
+              )}
+              {supplier.nis && (
+                <div className="flex items-start gap-2 text-muted-foreground">
+                  <FileText className="h-4 w-4 shrink-0 mt-0.5" />
+                  <span>NIS: {supplier.nis}</span>
+                </div>
+              )}
               <div className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
                 <span>{supplier.address || t("suppliers.notProvided")}</span>

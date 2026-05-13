@@ -48,6 +48,7 @@ interface Category {
 interface Brand {
   id: string;
   name: string;
+  logoUrl?: string | null;
   isGlobalDefault: boolean;
   categoryId: string;
   _count?: { modelFamilies?: number };
@@ -298,6 +299,9 @@ const CATEGORY_ICONS: Record<string, LucideIcon> = {
   laptop: Laptop,
   desktop: Monitor,
   printer: Printer,
+  printer_laser: Printer,
+  printer_cartridge: Printer,
+  printer_risograph: Printer,
   console: Gamepad2,
   other: HelpCircle,
 };
@@ -317,10 +321,10 @@ const PRINTER_TYPE_LABELS: Record<PrinterTypeKey, Record<Locale, string>> = {
 };
 
 const inputCls =
-  "w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 shadow-sm outline-none transition focus:border-primary/50 focus:ring-4 focus:ring-primary/10 disabled:opacity-50";
+  "w-full rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3 py-2.5 text-sm text-[var(--text-primary)] placeholder:text-slate-400 shadow-sm outline-none transition focus:border-primary/50 focus:ring-4 focus:ring-primary/10 disabled:opacity-50";
 
 const ghostButton =
-  "rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-primary/30 hover:bg-primary/5 disabled:opacity-50";
+  "rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-sm font-semibold text-[var(--text-secondary)] shadow-sm transition hover:border-primary/30 hover:bg-primary/5 disabled:opacity-50";
 
 const primaryButton =
   "rounded-xl bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition hover:bg-primary/90 disabled:opacity-50";
@@ -600,6 +604,26 @@ function familyScopeLabel(family: Family, copy: Copy) {
   return family.isGlobalDefault ? copy.global : copy.custom;
 }
 
+function BrandLogo({ brand, size = 16 }: { brand: { name: string; logoUrl?: string | null }; size?: number }) {
+  const [imgError, setImgError] = useState(false);
+  if (brand.logoUrl && !imgError) {
+    return (
+      <img
+        src={brand.logoUrl}
+        alt={brand.name}
+        className="shrink-0 rounded"
+        style={{ width: size, height: size, objectFit: "contain" }}
+        onError={() => setImgError(true)}
+      />
+    );
+  }
+  return (
+    <div className="shrink-0 flex items-center justify-center rounded font-bold" style={{ width: size, height: size, fontSize: size * 0.45 }}>
+      {brand.name[0]?.toUpperCase() ?? "?"}
+    </div>
+  );
+}
+
 // ─── Small UI pieces ─────────────────────────────────────────────────────────
 
 function ScopeBadge({ isGlobal, copy }: { isGlobal: boolean; copy: Copy }) {
@@ -620,14 +644,14 @@ function ScopeBadge({ isGlobal, copy }: { isGlobal: boolean; copy: Copy }) {
 
 function StatCard({ icon: Icon, label, value }: { icon: LucideIcon; label: string; value: string | number }) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+    <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm">
       <div className="flex items-center gap-3">
         <div className="rounded-xl bg-primary/10 p-2 text-primary">
           <Icon className="h-5 w-5" />
         </div>
         <div>
-          <p className="text-xs font-medium text-slate-500">{label}</p>
-          <p className="text-xl font-black tracking-tight text-slate-950">{value}</p>
+          <p className="text-xs font-medium text-[var(--text-secondary)]">{label}</p>
+          <p className="text-xl font-black tracking-tight text-[var(--text-primary)]">{value}</p>
         </div>
       </div>
     </div>
@@ -636,9 +660,9 @@ function StatCard({ icon: Icon, label, value }: { icon: LucideIcon; label: strin
 
 function EmptyState({ text }: { text: string }) {
   return (
-    <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/70 p-8 text-center">
+    <div className="rounded-2xl border border-dashed border-[var(--border)] bg-[var(--muted)]/70 p-8 text-center">
       <HelpCircle className="mx-auto mb-3 h-8 w-8 text-slate-300" />
-      <p className="text-sm font-medium text-slate-500">{text}</p>
+      <p className="text-sm font-medium text-[var(--text-secondary)]">{text}</p>
     </div>
   );
 }
@@ -699,7 +723,6 @@ function AddModelForm({
   copy,
   categoryKey,
   brand,
-  selectedPrinterType,
   locale,
   onSubmit,
   onCancel,
@@ -707,7 +730,6 @@ function AddModelForm({
   copy: Copy;
   categoryKey: string;
   brand: Brand;
-  selectedPrinterType: PrinterTypeKey | "all";
   locale: Locale;
   onSubmit: (name: string) => Promise<void>;
   onCancel: () => void;
@@ -716,22 +738,16 @@ function AddModelForm({
   const [series, setSeries] = useState("");
   const [modelLine, setModelLine] = useState("");
   const [generation, setGeneration] = useState("");
-  const [printerType, setPrinterType] = useState<PrinterTypeKey>(selectedPrinterType === "all" ? "laser" : selectedPrinterType);
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
 
   const isLaptop = categoryKey === "laptop";
-  const isPrinter = categoryKey === "printer";
+  const isPrinter = categoryKey?.startsWith("printer") ?? false;
 
   function buildName() {
     if (isLaptop) {
       const pieces = [brand.name, series, modelLine, generation].map((part) => part.trim()).filter(Boolean);
       return pieces.join(" ").replace(/\s+/g, " ");
-    }
-    if (isPrinter) {
-      const model = genericName.trim();
-      const prefixed = `${PRINTER_PREFIXES[printerType]} | ${model}`;
-      return prefixed.replace(/\s+/g, " ");
     }
     return genericName.trim().replace(/\s+/g, " ");
   }
@@ -757,15 +773,15 @@ function AddModelForm({
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/5 to-white p-4 shadow-sm">
+    <form onSubmit={handleSubmit} className="rounded-xl border border-primary/20 bg-gradient-to-br from-primary/5 to-white p-4 shadow-sm">
       <div className="mb-3 flex items-start justify-between gap-3">
         <div>
-          <h3 className="text-sm font-black text-slate-950">
-            {isLaptop ? copy.addLaptopModel : isPrinter ? copy.addPrinterModel : copy.addModel}
+          <h3 className="text-sm font-black text-[var(--text-primary)]">
+            {isLaptop ? copy.addLaptopModel : copy.addModel}
           </h3>
-          <p className="mt-1 text-xs text-slate-500">{copy.alreadyExistsHint}</p>
+          <p className="mt-1 text-xs text-[var(--text-secondary)]">{copy.alreadyExistsHint}</p>
         </div>
-        <button type="button" onClick={onCancel} className="text-xs font-semibold text-slate-500 hover:text-slate-900">
+        <button type="button" onClick={onCancel} className="text-xs font-semibold text-[var(--text-secondary)] hover:text-[var(--text-primary)]">
           {copy.cancel}
         </button>
       </div>
@@ -776,23 +792,14 @@ function AddModelForm({
           <input value={modelLine} onChange={(e) => setModelLine(e.target.value)} placeholder={copy.modelLine} className={inputCls} disabled={isPending} />
           <input value={generation} onChange={(e) => setGeneration(e.target.value)} placeholder={copy.optionalGeneration} className={inputCls} disabled={isPending} />
         </div>
-      ) : isPrinter ? (
-        <div className="grid gap-3 md:grid-cols-[220px_1fr]">
-          <select value={printerType} onChange={(e) => setPrinterType(e.target.value as PrinterTypeKey)} className={inputCls} disabled={isPending}>
-            {(Object.keys(PRINTER_PREFIXES) as PrinterTypeKey[]).map((key) => (
-              <option key={key} value={key}>{PRINTER_TYPE_LABELS[key][locale]}</option>
-            ))}
-          </select>
-          <input value={genericName} onChange={(e) => setGenericName(e.target.value)} placeholder={copy.printerModelName} className={inputCls} disabled={isPending} />
-        </div>
       ) : (
         <input value={genericName} onChange={(e) => setGenericName(e.target.value)} placeholder={copy.familyPlaceholder} className={inputCls} disabled={isPending} />
       )}
 
-      {isLaptop && <p className="mt-2 text-xs font-medium text-slate-500">{copy.notSavedSpecs}</p>}
+      {isLaptop && <p className="mt-2 text-xs font-medium text-[var(--text-secondary)]">{copy.notSavedSpecs}</p>}
 
       <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <div className="min-h-8 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-600">
+        <div className="min-h-8 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-xs font-semibold text-[var(--text-secondary)]">
           {preview || copy.familyPlaceholder}
         </div>
         <button type="submit" disabled={isPending || !canSave} className={primaryButton}>
@@ -820,6 +827,8 @@ function LaptopCatalogPanel({
   const options = useMemo(() => buildLaptopOptions(brand, families).filter((item) => familyMatchesQuery(item.family, query, brand)), [brand, families, query]);
   const [selectedSeries, setSelectedSeries] = useState<string | "all">("all");
   const [selectedModelLine, setSelectedModelLine] = useState<string | null>(null);
+  const [seriesCollapsed, setSeriesCollapsed] = useState(false);
+  const [modelsCollapsed, setModelsCollapsed] = useState(false);
 
   const seriesGroups = useMemo(() => {
     const map = new Map<string, LaptopCatalogOption[]>();
@@ -847,207 +856,192 @@ function LaptopCatalogPanel({
     ? modelGroups.find((group) => group.modelLine === selectedModelLine) ?? null
     : modelGroups[0] ?? null;
 
+  function selectModelLine(line: string) {
+    setSelectedModelLine(line === selectedModelLine ? null : line);
+    if (line !== selectedModelLine) setModelsCollapsed(true);
+  }
+
+  function selectSeries(series: string) {
+    setSelectedSeries(series);
+    setSelectedModelLine(null);
+    if (series !== "all") setSeriesCollapsed(true);
+  }
+
   return (
-    <div className="grid gap-4 xl:grid-cols-[280px_1fr]">
-      <div className="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
-        <div className="mb-3 flex items-center justify-between">
-          <h3 className="text-sm font-black text-slate-950">{copy.chooseSeries}</h3>
-          <span className="rounded-full bg-slate-100 px-2 py-1 text-[13px] font-bold text-slate-500">{seriesGroups.length}</span>
-        </div>
-        <div className="space-y-1.5 max-h-[31rem] overflow-y-auto pe-1">
-          <button
-            onClick={() => {
-              setSelectedSeries("all");
-              setSelectedModelLine(null);
-            }}
-            className={cn(
-              "w-full rounded-xl px-3 py-2.5 text-start text-sm font-semibold transition",
-              selectedSeries === "all" ? "bg-primary text-primary-foreground shadow-sm" : "hover:bg-slate-50"
-            )}
-          >
-            {copy.allSeries}
-          </button>
-          {seriesGroups.length === 0 ? (
-            <p className="px-3 py-6 text-center text-sm text-slate-500">{copy.noSeriesFound}</p>
-          ) : seriesGroups.map((group) => (
-            <button
-              key={group.series}
-              onClick={() => {
-                setSelectedSeries(group.series);
-                setSelectedModelLine(null);
-              }}
-              className={cn(
-                "w-full rounded-xl px-3 py-2.5 text-start transition",
-                selectedSeries === group.series ? "bg-primary/10 text-primary ring-1 ring-primary/20" : "hover:bg-slate-50"
-              )}
-            >
-              <div className="flex items-center justify-between gap-2">
-                <span className="truncate text-sm font-black">{group.series}</span>
-                <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[13px] font-bold text-slate-500">{group.items.length}</span>
-              </div>
-            </button>
-          ))}
-        </div>
+    <div className="flex gap-4 flex-1">
+      <div className={cn("shrink-0 transition-all duration-300 flex flex-col", seriesCollapsed ? "w-[100px]" : "w-[280px]")}>
+        <button
+          onClick={() => setSeriesCollapsed(!seriesCollapsed)}
+          className="flex h-8 w-full items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors mb-3"
+        >
+          <ChevronRight className={cn("h-4 w-4 transition-transform", seriesCollapsed ? "" : "rotate-180")} />
+        </button>
+
+        {seriesCollapsed ? (
+          /* Thin series list — categories sidebar style */
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-2 shadow-sm">
+            <div className="space-y-0.5">
+              <button onClick={() => selectSeries("all")}
+                className={cn(
+                  "w-full rounded-lg px-2 py-2 text-start text-xs font-bold transition",
+                  selectedSeries === "all" ? "bg-primary text-primary-foreground" : "text-[var(--text-secondary)] hover:bg-[var(--muted)] hover:text-[var(--text-primary)]"
+                )}
+              >{copy.allSeries}</button>
+              {seriesGroups.map((group) => (
+                <button key={group.series} onClick={() => selectSeries(group.series)}
+                  className={cn(
+                    "w-full rounded-lg px-2 py-2 text-start text-xs font-bold transition",
+                    selectedSeries === group.series ? "bg-primary text-primary-foreground" : "text-[var(--text-secondary)] hover:bg-[var(--muted)] hover:text-[var(--text-primary)]"
+                  )}
+                  title={group.series}
+                >
+                  {group.series}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          /* Full series list */
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3 shadow-sm">
+            <div className="space-y-1.5 max-h-[31rem] overflow-y-auto pe-1">
+              <button onClick={() => selectSeries("all")}
+                className={cn(
+                  "w-full rounded-xl px-3 py-2.5 text-start text-sm font-semibold transition",
+                  selectedSeries === "all" ? "bg-primary text-primary-foreground shadow-sm" : "hover:bg-[var(--muted)]"
+                )}
+              >{copy.allSeries}</button>
+              {seriesGroups.length === 0 ? (
+                <p className="px-3 py-6 text-center text-sm text-[var(--text-secondary)]">{copy.noSeriesFound}</p>
+              ) : seriesGroups.map((group) => (
+                <button key={group.series} onClick={() => selectSeries(group.series)}
+                  className={cn(
+                    "w-full rounded-xl px-3 py-2.5 text-start transition",
+                    selectedSeries === group.series ? "bg-primary/10 text-primary ring-1 ring-primary/20" : "hover:bg-[var(--muted)]"
+                  )}
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="truncate text-sm font-black">{group.series}</span>
+                    <span className="rounded-full bg-[var(--muted)] px-2 py-0.5 text-[13px] font-bold text-[var(--text-secondary)]">{group.items.length}</span>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
-      <div className="space-y-4">
-        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <div>
-              <h3 className="text-sm font-black text-slate-950">{copy.chooseModelLine}</h3>
-              <p className="mt-1 text-xs text-slate-500">{copy.laptopSpecsNote}</p>
-            </div>
-            <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
-              {visibleOptions.length} {copy.models}
-            </span>
-          </div>
+      {/* Model lines sidebar */}
+      <div className={cn("shrink-0 transition-all duration-300 flex flex-col", modelsCollapsed ? "w-[100px]" : "flex-1 min-w-0")}>
+        <button
+          onClick={() => setModelsCollapsed(!modelsCollapsed)}
+          className={cn(
+            "flex h-8 w-full items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors mb-3",
+            modelsCollapsed ? "" : "self-start"
+          )}
+          style={modelsCollapsed ? undefined : { width: "auto", padding: "0 12px" }}
+        >
+          <ChevronRight className={cn("h-4 w-4 transition-transform", modelsCollapsed ? "" : "rotate-180")} />
+        </button>
 
-          {modelGroups.length === 0 ? (
-            <EmptyState text={copy.noModelsForFilter} />
-          ) : (
-            <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-              {modelGroups.slice(0, 72).map((group) => {
+        {modelsCollapsed ? (
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-2 shadow-sm">
+            <div className="space-y-0.5">
+              {modelGroups.map((group) => {
                 const selected = selectedModel?.modelLine === group.modelLine;
-                const generations = group.items.map((item) => item.generation).filter(Boolean);
                 return (
-                  <button
-                    key={group.modelLine}
-                    onClick={() => setSelectedModelLine(group.modelLine)}
-                    className={cn(
-                      "rounded-2xl border bg-white p-4 text-start shadow-sm transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md",
-                      selected ? "border-primary ring-4 ring-primary/10" : "border-slate-200"
-                    )}
+                  <button key={group.modelLine} onClick={() => selectModelLine(group.modelLine)}
+                    className={cn("w-full rounded-lg px-2 py-2 text-start text-xs font-bold transition", selected ? "bg-primary text-primary-foreground" : "text-[var(--text-secondary)] hover:bg-[var(--muted)] hover:text-[var(--text-primary)]")}
+                    title={group.modelLine}
                   >
-                    <div className="mb-3 flex items-center justify-between gap-2">
-                      <div className="rounded-xl bg-slate-100 p-2 text-slate-600">
-                        <Laptop className="h-5 w-5" />
-                      </div>
-                      <ScopeBadge isGlobal={group.items.every((item) => item.family.isGlobalDefault)} copy={copy} />
-                    </div>
-                    <p className="line-clamp-2 text-sm font-black text-slate-950">{group.modelLine}</p>
-                    <p className="mt-1 text-xs font-medium text-slate-500">{group.items[0]?.series}</p>
-                    <p className="mt-3 text-xs font-bold text-primary">
-                      {generations.length > 0 ? `${generations.length} ${copy.generation}` : copy.optionalGeneration}
-                    </p>
+                    {group.modelLine}
                   </button>
                 );
               })}
             </div>
-          )}
-        </div>
+          </div>
+        ) : (
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm">
+            <span className="mb-3 inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
+              {visibleOptions.length} {copy.models}
+            </span>
+            {modelGroups.length === 0 ? (
+              <EmptyState text={copy.noModelsForFilter} />
+            ) : (
+              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+                {modelGroups.slice(0, 72).map((group) => {
+                  const selected = selectedModel?.modelLine === group.modelLine;
+                  const generations = group.items.map((item) => item.generation).filter(Boolean);
+                  return (
+                    <button key={group.modelLine} onClick={() => selectModelLine(group.modelLine)}
+                      className={cn("rounded-xl border bg-[var(--surface)] p-4 text-start shadow-sm transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md", selected ? "border-primary ring-4 ring-primary/10" : "border-[var(--border)]")}
+                    >
+                      <div className="mb-3 flex items-center justify-between gap-2">
+                        <div className="rounded-xl bg-[var(--muted)] p-2 text-[var(--text-secondary)]"><Laptop className="h-5 w-5" /></div>
+                        <ScopeBadge isGlobal={group.items.every((item) => item.family.isGlobalDefault)} copy={copy} />
+                      </div>
+                      <p className="line-clamp-2 text-sm font-black text-[var(--text-primary)]">{group.modelLine}</p>
+                      <p className="mt-1 text-xs font-medium text-[var(--text-secondary)]">{group.items[0]?.series}</p>
+                      <p className="mt-3 text-xs font-bold text-primary">{generations.length > 0 ? `${generations.length} ${copy.generation}` : copy.optionalGeneration}</p>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
 
-        {selectedModel && (
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-            <h3 className="text-sm font-black text-slate-950">{copy.availableGenerations}</h3>
-            <div className="mt-3 flex flex-wrap gap-2">
+      {/* Rightmost: generations / main display */}
+      {selectedModel && modelsCollapsed && (
+        <div className="flex-1 min-w-0">
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm">
+            <h3 className="text-xs font-bold text-[var(--text-primary)] mb-3">{copy.availableGenerations}</h3>
+            <div className="flex flex-wrap gap-2">
               {selectedModel.items.map((item) => (
-                <span key={item.family.id} className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-bold text-slate-700">
+                <span key={item.family.id} className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--muted)] px-3 py-2 text-xs font-bold text-[var(--text-secondary)]">
                   {item.generation || item.modelLine}
                   <ScopeBadge isGlobal={item.family.isGlobalDefault} copy={copy} />
                 </span>
               ))}
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
 
 function PrinterCatalogPanel({
   copy,
-  locale,
   brand,
   families,
   query,
-  selectedType,
-  onSelectedTypeChange,
 }: {
   copy: Copy;
-  locale: Locale;
   brand: Brand;
   families: Family[];
   query: string;
-  selectedType: PrinterTypeKey | "all";
-  onSelectedTypeChange: (type: PrinterTypeKey | "all") => void;
 }) {
-  const typeCounts = useMemo(() => {
-    const counts: Record<PrinterTypeKey, number> = { laser: 0, ink_tank: 0, ink_cartridge: 0, risograph: 0 };
-    for (const family of families) {
-      const type = printerTypeFromFamilyName(family.name);
-      if (type) counts[type]++;
-    }
-    return counts;
-  }, [families]);
-
-  const filteredFamilies = families.filter((family) => {
-    const type = printerTypeFromFamilyName(family.name);
-    const matchesType = selectedType === "all" || type === selectedType;
-    return matchesType && familyMatchesQuery(family, query, brand);
-  });
+  const filteredFamilies = families.filter((family) => familyMatchesQuery(family, query, brand));
 
   return (
-    <div className="space-y-4">
-      <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-        <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-          <div>
-            <h3 className="text-sm font-black text-slate-950">{copy.typeSummary}</h3>
-            <p className="mt-1 text-xs text-slate-500">{copy.printerFlow}</p>
-          </div>
-          <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
-            {filteredFamilies.length} {copy.filtered}
-          </span>
-        </div>
-        <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-5">
-          <button
-            onClick={() => onSelectedTypeChange("all")}
-            className={cn(
-              "rounded-2xl border p-4 text-start shadow-sm transition hover:border-primary/40",
-              selectedType === "all" ? "border-primary bg-primary text-primary-foreground" : "border-slate-200 bg-white"
-            )}
-          >
-            <Boxes className="mb-2 h-5 w-5" />
-            <p className="text-sm font-black">{copy.allTypes}</p>
-            <p className="mt-1 text-xs opacity-80">{families.length} {copy.models}</p>
-          </button>
-          {(Object.keys(PRINTER_PREFIXES) as PrinterTypeKey[]).map((key) => (
-            <button
-              key={key}
-              onClick={() => onSelectedTypeChange(key)}
-              className={cn(
-                "rounded-2xl border p-4 text-start shadow-sm transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md",
-                selectedType === key ? "border-primary bg-primary text-primary-foreground" : "border-slate-200 bg-white"
-              )}
-            >
-              <Printer className="mb-2 h-5 w-5" />
-              <p className="text-sm font-black">{PRINTER_TYPE_LABELS[key][locale]}</p>
-              <p className="mt-1 text-xs opacity-80">{typeCounts[key]} {copy.models}</p>
-            </button>
+    <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm">
+      {filteredFamilies.length === 0 ? (
+        <EmptyState text={copy.noModel} />
+      ) : (
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+          {filteredFamilies.slice(0, 120).map((family) => (
+            <div key={family.id} className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm transition hover:border-primary/40 hover:shadow-md">
+              <div className="mb-3 flex items-center justify-between gap-2">
+                <div className="rounded-xl bg-[var(--muted)] p-2 text-[var(--text-secondary)]"><Printer className="h-5 w-5" /></div>
+                <ScopeBadge isGlobal={family.isGlobalDefault} copy={copy} />
+              </div>
+              <p className="line-clamp-2 text-sm font-black text-[var(--text-primary)]">{family.name}</p>
+              <p className="mt-2 text-xs font-bold text-[var(--text-secondary)]">{brand.name}</p>
+            </div>
           ))}
         </div>
-      </div>
-
-      <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-        {filteredFamilies.length === 0 ? (
-          <EmptyState text={copy.noModel} />
-        ) : (
-          <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-            {filteredFamilies.slice(0, 120).map((family) => {
-              const type = printerTypeFromFamilyName(family.name);
-              return (
-                <div key={family.id} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-primary/40 hover:shadow-md">
-                  <div className="mb-3 flex items-center justify-between gap-2">
-                    <div className="rounded-xl bg-slate-100 p-2 text-slate-600"><Printer className="h-5 w-5" /></div>
-                    <ScopeBadge isGlobal={family.isGlobalDefault} copy={copy} />
-                  </div>
-                  <p className="line-clamp-2 text-sm font-black text-slate-950">{printerDisplayName(family.name)}</p>
-                  <p className="mt-2 text-xs font-bold text-primary">{type ? PRINTER_TYPE_LABELS[type][locale] : copy.printerType}</p>
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </div>
+      )}
     </div>
   );
 }
@@ -1091,48 +1085,67 @@ function PhoneCatalogPanel({
     ? filteredFamilies
     : filteredFamilies.filter((family) => detectPhoneSeries(family.name, brand.name) === selectedSeries);
 
+  const [seriesCollapsed, setSeriesCollapsed] = useState(false);
+
+  function selectSeries(series: string) {
+    setSelectedSeries(series);
+    if (series !== "all") setSeriesCollapsed(true);
+  }
+
   return (
-    <div className="grid gap-4 xl:grid-cols-[280px_1fr]">
-      <div className="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
-        <div className="mb-3 flex items-center justify-between">
-          <h3 className="text-sm font-black text-slate-950">{copy.chooseSeries}</h3>
-          <span className="rounded-full bg-slate-100 px-2 py-1 text-[13px] font-bold text-slate-500">{seriesGroups.length}</span>
-        </div>
-        <div className="space-y-1.5 max-h-[31rem] overflow-y-auto pe-1">
-          <button
-            onClick={() => setSelectedSeries("all")}
-            className={cn(
-              "w-full rounded-xl px-3 py-2.5 text-start text-sm font-semibold transition",
-              selectedSeries === "all" ? "bg-primary text-primary-foreground shadow-sm" : "hover:bg-slate-50"
-            )}
-          >
-            {copy.allSeries}
-          </button>
-          {seriesGroups.length === 0 ? (
-            <p className="px-3 py-6 text-center text-sm text-slate-500">{copy.noSeriesFound}</p>
-          ) : seriesGroups.map((group) => (
-            <button
-              key={group.series}
-              onClick={() => setSelectedSeries(group.series)}
-              className={cn(
-                "w-full rounded-xl px-3 py-2.5 text-start transition",
-                selectedSeries === group.series ? "bg-primary/10 text-primary ring-1 ring-primary/20" : "hover:bg-slate-50"
-              )}
-            >
-              <div className="flex items-center justify-between gap-2">
-                <span className="truncate text-sm font-black">{group.series}</span>
-                <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[13px] font-bold text-slate-500">{group.items.length}</span>
-              </div>
-            </button>
-          ))}
-        </div>
+    <div className="flex gap-4 flex-1">
+      <div className={cn("shrink-0 transition-all duration-300 flex flex-col", seriesCollapsed ? "w-[100px]" : "w-[280px]")}>
+        <button
+          onClick={() => setSeriesCollapsed(!seriesCollapsed)}
+          className="flex h-8 w-full items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors mb-3"
+        >
+          <ChevronRight className={cn("h-4 w-4 transition-transform", seriesCollapsed ? "" : "rotate-180")} />
+        </button>
+
+        {seriesCollapsed ? (
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-2 shadow-sm">
+            <div className="space-y-0.5">
+              <button onClick={() => selectSeries("all")}
+                className={cn("w-full rounded-lg px-2 py-2 text-start text-xs font-bold transition", selectedSeries === "all" ? "bg-primary text-primary-foreground" : "text-[var(--text-secondary)] hover:bg-[var(--muted)] hover:text-[var(--text-primary)]")}
+              >{copy.allSeries}</button>
+              {seriesGroups.map((group) => (
+                <button key={group.series} onClick={() => selectSeries(group.series)}
+                  className={cn("w-full rounded-lg px-2 py-2 text-start text-xs font-bold transition", selectedSeries === group.series ? "bg-primary text-primary-foreground" : "text-[var(--text-secondary)] hover:bg-[var(--muted)] hover:text-[var(--text-primary)]")}
+                  title={group.series}
+                >
+                  {group.series}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3 shadow-sm">
+            <div className="space-y-1.5 max-h-[31rem] overflow-y-auto pe-1">
+              <button onClick={() => selectSeries("all")}
+                className={cn("w-full rounded-xl px-3 py-2.5 text-start text-sm font-semibold transition", selectedSeries === "all" ? "bg-primary text-primary-foreground shadow-sm" : "hover:bg-[var(--muted)]")}
+              >{copy.allSeries}</button>
+              {seriesGroups.length === 0 ? (
+                <p className="px-3 py-6 text-center text-sm text-[var(--text-secondary)]">{copy.noSeriesFound}</p>
+              ) : seriesGroups.map((group) => (
+                <button key={group.series} onClick={() => selectSeries(group.series)}
+                  className={cn("w-full rounded-xl px-3 py-2.5 text-start transition", selectedSeries === group.series ? "bg-primary/10 text-primary ring-1 ring-primary/20" : "hover:bg-[var(--muted)]")}
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="truncate text-sm font-black">{group.series}</span>
+                    <span className="rounded-full bg-[var(--muted)] px-2 py-0.5 text-[13px] font-bold text-[var(--text-secondary)]">{group.items.length}</span>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
-      <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+      <div className="flex-1 min-w-0 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm">
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <div>
-            <h3 className="text-sm font-black text-slate-950">{copy.models}</h3>
-            <p className="mt-1 text-xs text-slate-500">
+            <h3 className="text-sm font-black text-[var(--text-primary)]">{copy.models}</h3>
+            <p className="mt-1 text-xs text-[var(--text-secondary)]">
               {selectedSeries === "all" ? `${brand.name} · ${visibleFamilies.length} ${copy.models}` : `${brand.name} · ${selectedSeries}`}
             </p>
           </div>
@@ -1148,14 +1161,14 @@ function PhoneCatalogPanel({
             {visibleFamilies.map((family) => {
               const series = detectPhoneSeries(family.name, brand.name);
               return (
-                <div key={family.id} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md">
+                <div key={family.id} className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md">
                   <div className="mb-3 flex items-center justify-between gap-2">
-                    <div className="rounded-xl bg-slate-100 p-2 text-slate-600"><Smartphone className="h-5 w-5" /></div>
+                    <div className="rounded-xl bg-[var(--muted)] p-2 text-[var(--text-secondary)]"><Smartphone className="h-5 w-5" /></div>
                     <ScopeBadge isGlobal={family.isGlobalDefault} copy={copy} />
                   </div>
-                  <p className="line-clamp-2 text-sm font-black text-slate-950">{stripBrandPrefix(family.name, brand.name)}</p>
+                  <p className="line-clamp-2 text-sm font-black text-[var(--text-primary)]">{stripBrandPrefix(family.name, brand.name)}</p>
                   <div className="mt-3 flex flex-wrap items-center gap-2">
-                    <span className="rounded-full bg-slate-100 px-2 py-1 text-[13px] font-bold text-slate-600">{series}</span>
+                    <span className="rounded-full bg-[var(--muted)] px-2 py-1 text-[13px] font-bold text-[var(--text-secondary)]">{series}</span>
                     <span className="rounded-full bg-primary/10 px-2 py-1 text-[13px] font-bold text-primary">{brand.name}</span>
                   </div>
                 </div>
@@ -1185,19 +1198,19 @@ function SimpleModelPanel({
   const filteredFamilies = families.filter((family) => familyMatchesQuery(family, query, brand));
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+    <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm">
       {filteredFamilies.length === 0 ? (
         <EmptyState text={copy.noModel} />
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {filteredFamilies.slice(0, 180).map((family) => (
-            <div key={family.id} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-primary/40 hover:shadow-md">
+            <div key={family.id} className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm transition hover:border-primary/40 hover:shadow-md">
               <div className="mb-3 flex items-center justify-between gap-2">
-                <div className="rounded-xl bg-slate-100 p-2 text-slate-600"><Icon className="h-5 w-5" /></div>
+                <div className="rounded-xl bg-[var(--muted)] p-2 text-[var(--text-secondary)]"><Icon className="h-5 w-5" /></div>
                 <ScopeBadge isGlobal={family.isGlobalDefault} copy={copy} />
               </div>
-              <p className="line-clamp-2 text-sm font-black text-slate-950">{family.name}</p>
-              <p className="mt-2 text-xs font-semibold text-slate-500">{brand.name}</p>
+              <p className="line-clamp-2 text-sm font-black text-[var(--text-primary)]">{family.name}</p>
+              <p className="mt-2 text-xs font-semibold text-[var(--text-secondary)]">{brand.name}</p>
             </div>
           ))}
         </div>
@@ -1225,14 +1238,16 @@ export function CatalogBrowser({
 
   const [showAddBrand, setShowAddBrand] = useState(false);
   const [showAddFamily, setShowAddFamily] = useState(false);
+  const [brandSectionCollapsed, setBrandSectionCollapsed] = useState(false);
   const [query, setQuery] = useState("");
   const [printerType, setPrinterType] = useState<PrinterTypeKey | "all">("all");
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   const selectedCategory = categories.find((category) => category.key === selectedCategoryKey) ?? null;
   const selectedBrand = brands.find((brand) => brand.id === selectedBrandId) ?? null;
   const isPhone = selectedCategory?.key === "phone";
   const isLaptop = selectedCategory?.key === "laptop";
-  const isPrinter = selectedCategory?.key === "printer";
+  const isPrinter = selectedCategory?.key?.startsWith("printer") ?? false;
 
   const totalBrandCount = brands.length;
   const totalModelCount = families.length;
@@ -1246,6 +1261,7 @@ export function CatalogBrowser({
     setShowAddBrand(false);
     setShowAddFamily(false);
     setPrinterType("all");
+    setSidebarCollapsed(true);
   }
 
   function selectBrand(id: string) {
@@ -1253,6 +1269,8 @@ export function CatalogBrowser({
     params.set("brand", id);
     router.push(`/dashboard/settings/catalog?${params.toString()}`);
     setShowAddFamily(false);
+    setSidebarCollapsed(true);
+    setBrandSectionCollapsed(true);
   }
 
   async function handleAddBrand(name: string) {
@@ -1271,46 +1289,47 @@ export function CatalogBrowser({
     router.refresh();
   }
 
-  const phoneFlowText = locale === "ar"
-    ? "هاتف → علامة → سلسلة → موديل دقيق → مشاكل"
-    : locale === "en"
-      ? "Phone → Brand → Series → Exact model → Problems"
-      : "Téléphone → Marque → Série → Modèle précis → Problèmes";
-  const flowText = isLaptop ? copy.laptopFlow : isPrinter ? copy.printerFlow : isPhone ? phoneFlowText : copy.defaultFlow;
+
 
   return (
-    <div dir={locale === "ar" ? "rtl" : "ltr"} className="space-y-6">
-      <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 p-5 text-white shadow-sm">
-        <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-white/80 ring-1 ring-white/10">
-              <Database className="h-3.5 w-3.5" />
-              {copy.usedByRepairWizard}
-            </div>
-            <h2 className="text-2xl font-black tracking-tight">{copy.overview}</h2>
-            <p className="mt-2 max-w-3xl text-sm leading-6 text-white/70">{copy.databaseReadyDesc}</p>
-          </div>
-          <div className="rounded-2xl border border-white/10 bg-white/10 p-3 text-sm font-bold text-white/90 shadow-inner">
-            <div className="mb-1 flex items-center gap-2 text-white/60"><Wrench className="h-4 w-4" />{copy.repairFlow}</div>
-            {flowText}
-          </div>
+    <div dir={locale === "ar" ? "rtl" : "ltr"} className="flex flex-col gap-4" style={{ height: "calc(100svh - 10rem)" }}>
+      {/* Compact header with search */}
+      <div className="flex items-center gap-3 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-2.5 shadow-[var(--shadow-sm)]">
+        <BadgeCheck className="h-5 w-5 shrink-0 text-[var(--primary)]" />
+        <span className="hidden sm:inline rounded-full bg-[var(--muted)] px-2 py-0.5 text-[11px] font-semibold text-[var(--text-secondary)] shrink-0">
+          {totalBrandCount} {copy.totalBrands} · {totalModelCount} {copy.totalModels}
+        </span>
+        <div className="relative flex-1 max-w-md">
+          <Search className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--text-tertiary)]" />
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={copy.searchPlaceholder}
+            className="w-full rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-2 ps-10 text-sm text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] outline-none focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)]/20 transition-all"
+          />
         </div>
       </div>
 
-      <div className="grid gap-3 md:grid-cols-3">
-        <StatCard icon={Globe} label={copy.totalBrands} value={totalBrandCount} />
-        <StatCard icon={Layers3} label={copy.totalModels} value={totalModelCount} />
-        <StatCard icon={BadgeCheck} label={copy.customFallback} value={canManage ? copy.add : "—"} />
-      </div>
+      {/* Main area: sidebar + scrollable data */}
+      <div className="flex gap-4 flex-1 overflow-hidden">
+        <aside className={cn("shrink-0 space-y-3 overflow-y-auto transition-all duration-300", sidebarCollapsed ? "w-[56px]" : "w-[240px]")}>
+          {/* Collapse toggle */}
+          <button
+            onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
+            className="flex h-8 w-full items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+            title={sidebarCollapsed ? copy.search : copy.categories}
+          >
+            <ChevronRight className={cn("h-4 w-4 transition-transform", sidebarCollapsed ? "" : "rotate-180")} />
+          </button>
 
-      <div className="grid gap-4 xl:grid-cols-[280px_1fr]">
-        <aside className="space-y-4">
-          <div className="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
-            <div className="mb-3 flex items-center justify-between">
-              <h3 className="text-sm font-black text-slate-950">{copy.categories}</h3>
-              <span className="rounded-full bg-slate-100 px-2 py-1 text-[13px] font-bold text-slate-500">{categories.length}</span>
-            </div>
-            <div className="space-y-1.5">
+          <div className={cn("rounded-xl border border-[var(--border)] bg-[var(--surface)] p-2 shadow-sm")}>
+            {!sidebarCollapsed && (
+              <div className="mb-2 flex items-center justify-between px-1">
+                <h3 className="text-xs font-bold text-[var(--text-primary)]">{copy.categories}</h3>
+                <span className="rounded-full bg-[var(--muted)] px-2 py-0.5 text-[11px] font-bold text-[var(--text-secondary)]">{categories.length}</span>
+              </div>
+            )}
+            <div className="space-y-0.5">
               {categories.map((category) => {
                 const Icon = CATEGORY_ICONS[category.key] ?? HelpCircle;
                 const active = category.key === selectedCategoryKey;
@@ -1319,144 +1338,174 @@ export function CatalogBrowser({
                     key={category.key}
                     onClick={() => selectCategory(category.key)}
                     className={cn(
-                      "w-full rounded-2xl px-3 py-3 text-start transition",
-                      active ? "bg-primary text-primary-foreground shadow-sm" : "hover:bg-slate-50"
+                      "group relative flex w-full items-center gap-2.5 rounded-lg px-2 py-2 text-start transition",
+                      active
+                        ? "bg-primary text-primary-foreground"
+                        : "text-[var(--text-secondary)] hover:bg-[var(--muted)] hover:text-[var(--text-primary)]"
                     )}
+                    title={sidebarCollapsed ? categoryLabel(category, locale) : undefined}
                   >
-                    <div className="flex items-center gap-3">
-                      <div className={cn("rounded-xl p-2", active ? "bg-white/15" : "bg-slate-100 text-slate-600")}>
-                        <Icon className="h-4 w-4" />
-                      </div>
-                      <span className="text-sm font-black">{categoryLabel(category, locale)}</span>
+                    <div className={cn("rounded-lg p-1.5 shrink-0", active ? "bg-white/15" : "bg-[var(--muted)]")}>
+                      <Icon className="h-4 w-4" />
                     </div>
+                    {!sidebarCollapsed && (
+                      <span className="text-xs font-bold truncate">{categoryLabel(category, locale)}</span>
+                    )}
+                    {sidebarCollapsed && (
+                      <span className="absolute start-full ms-2 top-1/2 -translate-y-1/2 z-50 hidden group-hover:block rounded-lg border border-[var(--border)] bg-[var(--popover)] px-2 py-1 text-xs font-medium text-[var(--popover-foreground)] shadow-[var(--shadow-lg)] whitespace-nowrap">
+                        {categoryLabel(category, locale)}
+                      </span>
+                    )}
                   </button>
                 );
               })}
             </div>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-            <div className="flex items-start gap-3">
-              <div className="rounded-xl bg-emerald-50 p-2 text-emerald-600"><BadgeCheck className="h-5 w-5" /></div>
-              <div>
-                <h3 className="text-sm font-black text-slate-950">{copy.customFallback}</h3>
-                <p className="mt-1 text-xs leading-5 text-slate-500">{copy.customFallbackDesc}</p>
-              </div>
+          <div className={cn("rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3 shadow-sm")}>
+            <div className="flex items-start gap-2.5">
+              <div className="rounded-lg bg-emerald-50 p-1.5 text-emerald-600 shrink-0"><BadgeCheck className="h-4 w-4" /></div>
+              {!sidebarCollapsed && (
+                <div>
+                  <h3 className="text-sm font-bold text-[var(--text-primary)]">{copy.customFallback}</h3>
+                  <p className="mt-0.5 text-xs text-[var(--text-secondary)]">{copy.customFallbackDesc}</p>
+                </div>
+              )}
             </div>
           </div>
         </aside>
 
-        <main className="space-y-4">
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-            <div className="relative">
-              <Search className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-              <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder={copy.searchPlaceholder} className={cn(inputCls, "ps-9")} />
-            </div>
-          </div>
-
+        <main className="flex flex-col overflow-y-auto">
           {!selectedCategory ? (
             <EmptyState text={copy.selectCategory} />
           ) : (
-            <div className="grid gap-4 lg:grid-cols-[320px_1fr]">
-              <section className="space-y-3">
-                <div className="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
-                  <div className="mb-3 flex items-center justify-between gap-3">
-                    <div>
-                      <h3 className="text-sm font-black text-slate-950">{copy.brands}</h3>
-                      <p className="text-xs text-slate-500">{categoryLabel(selectedCategory, locale)}</p>
+            <div className="flex gap-4 flex-1" style={{ minHeight: 0 }}>
+              <section className={cn("shrink-0 transition-all duration-300 flex flex-col", brandSectionCollapsed ? "w-[100px]" : "w-[320px]")}>
+                {/* Collapse toggle — consistent with categories sidebar */}
+                <button
+                  onClick={() => setBrandSectionCollapsed(!brandSectionCollapsed)}
+                  className="flex h-8 w-full items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors mb-3"
+                >
+                  <ChevronRight className={cn("h-4 w-4 transition-transform", brandSectionCollapsed ? "" : "rotate-180")} />
+                </button>
+
+                {brandSectionCollapsed ? (
+                  /* Thin brand list — categories sidebar style */
+                  <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-2 shadow-sm">
+                    <div className="space-y-0.5">
+                      {visibleBrands.length === 0 ? (
+                        <p className="px-2 py-4 text-center text-xs text-[var(--text-secondary)]">{copy.noBrand}</p>
+                      ) : visibleBrands.map((brand) => (
+                        <button
+                          key={brand.id}
+                          onClick={() => selectBrand(brand.id)}
+                          className={cn(
+                            "group relative flex w-full items-center gap-2.5 rounded-lg px-2 py-2 text-start text-xs transition",
+                            brand.id === selectedBrandId
+                              ? "bg-primary text-primary-foreground"
+                              : "text-[var(--text-secondary)] hover:bg-[var(--muted)] hover:text-[var(--text-primary)]"
+                          )}
+                          title={brand.name}
+                        >
+                          <BrandLogo brand={brand} size={16} />
+                          <span className="truncate font-bold">{brand.name}</span>
+                          {brand.id === selectedBrandId && (
+                            <span className="ms-auto text-[10px] opacity-70 font-medium">{brand._count?.modelFamilies ?? 0}</span>
+                          )}
+                        </button>
+                      ))}
                     </div>
-                    {canManage && !showAddBrand && (
-                      <button onClick={() => setShowAddBrand(true)} className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-bold text-primary hover:bg-primary/15">
-                        <Plus className="h-3.5 w-3.5" />{copy.add}
-                      </button>
-                    )}
                   </div>
-                  <div className="space-y-1.5 max-h-[34rem] overflow-y-auto pe-1">
-                    {visibleBrands.length === 0 ? (
-                      <p className="px-3 py-6 text-center text-sm text-slate-500">{copy.noBrand}</p>
-                    ) : visibleBrands.map((brand) => (
-                      <button
-                        key={brand.id}
-                        onClick={() => selectBrand(brand.id)}
-                        className={cn(
-                          "w-full rounded-2xl border p-3 text-start transition hover:border-primary/30 hover:bg-primary/5",
-                          brand.id === selectedBrandId ? "border-primary bg-primary/10 ring-4 ring-primary/10" : "border-transparent"
-                        )}
-                      >
-                        <div className="flex items-center justify-between gap-3">
-                          <div className="min-w-0">
-                            <p className="truncate text-sm font-black text-slate-950">{brand.name}</p>
-                            <p className="mt-1 text-xs font-medium text-slate-500">
-                              {brand._count?.modelFamilies ?? 0} {copy.models}
-                            </p>
+                ) : (
+                  /* Full brand list */
+                  <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3 shadow-sm">
+                    <div className="mb-3 flex items-center justify-between gap-3">
+                      <div>
+                        <h3 className="text-sm font-black text-[var(--text-primary)]">{copy.brands}</h3>
+                        <p className="text-xs text-[var(--text-secondary)]">{categoryLabel(selectedCategory, locale)}</p>
+                      </div>
+                      {canManage && !showAddBrand && (
+                        <button onClick={() => setShowAddBrand(true)} className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-bold text-primary hover:bg-primary/15">
+                          <Plus className="h-3.5 w-3.5" />{copy.add}
+                        </button>
+                      )}
+                    </div>
+                    <div className="space-y-1.5 max-h-[34rem] overflow-y-auto pe-1">
+                      {visibleBrands.length === 0 ? (
+                        <p className="px-3 py-6 text-center text-sm text-[var(--text-secondary)]">{copy.noBrand}</p>
+                      ) : visibleBrands.map((brand) => (
+                        <button
+                          key={brand.id}
+                          onClick={() => selectBrand(brand.id)}
+                          className={cn(
+                            "w-full rounded-xl border p-3 text-start transition hover:border-primary/30 hover:bg-primary/5",
+                            brand.id === selectedBrandId ? "border-primary bg-primary/10 ring-2 ring-primary/10" : "border-transparent"
+                          )}
+                        >
+                          <div className="flex items-center justify-between gap-3">
+                        <div className="flex items-center gap-2.5 min-w-0">
+                            <BrandLogo brand={brand} size={20} />
+                            <div className="min-w-0">
+                              <p className="truncate text-sm font-black text-[var(--text-primary)]">{brand.name}</p>
+                              <p className="mt-0.5 text-xs font-medium text-[var(--text-secondary)]">
+                                {brand._count?.modelFamilies ?? 0} {copy.models}
+                              </p>
+                            </div>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <ScopeBadge isGlobal={brand.isGlobalDefault} copy={copy} />
-                            <ChevronRight className="h-4 w-4 text-slate-400" />
+                            <div className="flex items-center gap-2">
+                              <ScopeBadge isGlobal={brand.isGlobalDefault} copy={copy} />
+                              <ChevronRight className="h-4 w-4 text-[var(--text-tertiary)]" />
+                            </div>
                           </div>
-                        </div>
-                      </button>
-                    ))}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
 
                 {showAddBrand && (
                   <InlineAddBrandForm copy={copy} onSubmit={handleAddBrand} onCancel={() => setShowAddBrand(false)} />
                 )}
               </section>
 
-              <section className="space-y-4">
+              <section className="flex-1 min-w-0 flex flex-col">
                 {!selectedBrand ? (
                   <EmptyState text={copy.selectBrand} />
                 ) : (
                   <>
-                    <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                      <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-                        <div>
-                          <h2 className="text-lg font-black tracking-tight text-slate-950">{selectedBrand.name}</h2>
-                          <p className="mt-1 text-sm text-slate-500">{flowText}</p>
-                        </div>
-                        <div className="flex flex-wrap gap-2">
-                          <ScopeBadge isGlobal={selectedBrand.isGlobalDefault} copy={copy} />
-                          <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-600">{families.length} {copy.models}</span>
-                          {canManage && !showAddFamily && (
-                            <button onClick={() => setShowAddFamily(true)} className="inline-flex items-center gap-1 rounded-full bg-primary px-3 py-1 text-xs font-bold text-primary-foreground shadow-sm hover:bg-primary/90">
-                              <Plus className="h-3.5 w-3.5" />{copy.addModel}
-                            </button>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-
                     {showAddFamily && (
                       <AddModelForm
                         copy={copy}
                         categoryKey={selectedCategory.key}
                         brand={selectedBrand}
-                        selectedPrinterType={printerType}
                         locale={locale}
                         onSubmit={handleAddFamily}
                         onCancel={() => setShowAddFamily(false)}
                       />
                     )}
 
-                    {isLaptop ? (
-                      <LaptopCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
-                    ) : isPrinter ? (
-                      <PrinterCatalogPanel
-                        copy={copy}
-                        locale={locale}
-                        brand={selectedBrand}
-                        families={families}
-                        query={query}
-                        selectedType={printerType}
-                        onSelectedTypeChange={setPrinterType}
-                      />
-                    ) : isPhone ? (
-                      <PhoneCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
-                    ) : (
-                      <SimpleModelPanel copy={copy} categoryKey={selectedCategory.key} brand={selectedBrand} families={families} query={query} />
-                    )}
+                    <div className="flex flex-col flex-1 gap-3">
+                      {canManage && !showAddFamily && (
+                        <div className="flex items-center justify-end">
+                          <button
+                            onClick={() => setShowAddFamily(true)}
+                            className="inline-flex items-center gap-1.5 rounded-lg border border-dashed border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-xs font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--primary)] transition-all"
+                          >
+                            <Plus className="h-3.5 w-3.5" />
+                            {copy.addModel}
+                          </button>
+                        </div>
+                      )}
+                      {isLaptop ? (
+                        <LaptopCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
+                      ) : isPrinter ? (
+                        <PrinterCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
+                      ) : isPhone ? (
+                        <PhoneCatalogPanel copy={copy} brand={selectedBrand} families={families} query={query} />
+                      ) : (
+                        <SimpleModelPanel copy={copy} categoryKey={selectedCategory.key} brand={selectedBrand} families={families} query={query} />
+                      )}
+                    </div>
                   </>
                 )}
               </section>

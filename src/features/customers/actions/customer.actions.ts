@@ -1,6 +1,5 @@
 "use server";
 
-import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
@@ -14,6 +13,7 @@ import {
 } from "../schemas/customer.schema";
 
 type ActionError = { error: string };
+type ActionSuccess = { success: true; redirect?: string };
 
 function normalizePhone(p: string): string {
   return p.replace(/[\s\-\(\)\.]/g, "");
@@ -27,7 +27,7 @@ function isP2002(e: unknown): boolean {
 
 export async function createCustomer(
   data: CreateCustomerInput
-): Promise<ActionError | void> {
+): Promise<ActionError | ActionSuccess> {
   const session = await getSession();
   if (!session) return { error: "Non autorisé" };
 
@@ -37,7 +37,7 @@ export async function createCustomer(
     return { error: first ?? "Données invalides" };
   }
 
-  const { customerType, name, phone, languagePreference, notes, customerGroupId } =
+  const { name, phone, languagePreference, address, notes, customerGroupId } =
     parsed.data;
 
   let newId: string;
@@ -46,9 +46,10 @@ export async function createCustomer(
       const c = await tx.customer.create({
         data: {
           companyId: session.companyId,
-          customerType,
+          customerType: "named",
           name,
           languagePreference: languagePreference ?? "fr",
+          address: address ?? undefined,
           notes: notes ?? undefined,
           customerGroupId: customerGroupId ?? undefined,
         },
@@ -77,13 +78,13 @@ export async function createCustomer(
   }
 
   revalidatePath("/dashboard/customers");
-  redirect(`/dashboard/customers/${newId}`);
+  return { success: true, redirect: `/dashboard/customers/${newId}` };
 }
 
 export async function updateCustomer(
   id: string,
   data: UpdateCustomerInput
-): Promise<ActionError | void> {
+): Promise<ActionError | ActionSuccess> {
   const session = await getSession();
   if (!session) return { error: "Non autorisé" };
 
@@ -93,14 +94,13 @@ export async function updateCustomer(
     return { error: first ?? "Données invalides" };
   }
 
-  // Verify ownership
   const existing = await prisma.customer.findFirst({
     where: { id, companyId: session.companyId, isArchived: false },
     select: { id: true },
   });
   if (!existing) return { error: "Client introuvable" };
 
-  const { name, languagePreference, notes, customerGroupId } = parsed.data;
+  const { name, languagePreference, address, notes, customerGroupId } = parsed.data;
 
   try {
     await prisma.customer.update({
@@ -108,6 +108,7 @@ export async function updateCustomer(
       data: {
         name,
         languagePreference,
+        address: address ?? undefined,
         notes: notes ?? undefined,
         customerGroupId: customerGroupId ?? undefined,
       },
@@ -119,10 +120,10 @@ export async function updateCustomer(
 
   revalidatePath(`/dashboard/customers/${id}`);
   revalidatePath("/dashboard/customers");
-  redirect(`/dashboard/customers/${id}`);
+  return { success: true, redirect: `/dashboard/customers/${id}` };
 }
 
-export async function archiveCustomer(id: string): Promise<ActionError | void> {
+export async function archiveCustomer(id: string): Promise<ActionError | ActionSuccess> {
   const session = await getSession();
   if (!session) return { error: "Non autorisé" };
 
@@ -147,14 +148,14 @@ export async function archiveCustomer(id: string): Promise<ActionError | void> {
   }
 
   revalidatePath("/dashboard/customers");
-  redirect("/dashboard/customers");
+  return { success: true, redirect: "/dashboard/customers" };
 }
 
 export async function addPhone(
   customerId: string,
   phoneNumber: string,
   isPrimary: boolean = false
-): Promise<ActionError | void> {
+): Promise<ActionError | { success: true }> {
   const session = await getSession();
   if (!session) return { error: "Non autorisé" };
 
@@ -201,12 +202,13 @@ export async function addPhone(
   }
 
   revalidatePath(`/dashboard/customers/${customerId}`);
+  return { success: true };
 }
 
 export async function removePhone(
   phoneId: string,
   customerId: string
-): Promise<ActionError | void> {
+): Promise<ActionError | { success: true }> {
   const session = await getSession();
   if (!session) return { error: "Non autorisé" };
 
@@ -227,4 +229,5 @@ export async function removePhone(
   }
 
   revalidatePath(`/dashboard/customers/${customerId}`);
+  return { success: true };
 }

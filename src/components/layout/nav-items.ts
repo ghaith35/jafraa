@@ -10,7 +10,6 @@ import {
   ClipboardList,
   Boxes,
   PackageSearch,
-  History,
   FileText,
   Archive,
   Smartphone,
@@ -61,21 +60,14 @@ const ALL_NAV_SECTIONS: NavSection[] = [
     items: [
       item("/dashboard", "nav.dashboard", "Tableau de bord", LayoutDashboard, null),
       item("/dashboard/pos", "nav.pos", "Point de vente", ShoppingCart, "payments:manage"),
-      item("/dashboard/customers", "nav.customers", "Clients", Users, "customers:view", {
-        children: [
-          item("/dashboard/customers", "nav.customers.list", "Liste", Users, "customers:view"),
-          item("/dashboard/customers/groups", "nav.customers.groups", "الفئات", Tags, "customers:view"),
-        ],
-      }),
+      item("/dashboard/customers", "nav.customers", "Clients", Users, "customers:view"),
+      item("/dashboard/suppliers", "nav.inventory.suppliers", "Fournisseurs", Truck, "inventory:manage"),
       item("/dashboard/inventory", "nav.inventory", "Inventaire", Package, "inventory:view", {
         children: [
           item("/dashboard/inventory", "nav.inventory.overview", "Vue d’ensemble", PackageSearch, "inventory:view"),
           item("/dashboard/inventory/products", "nav.inventory.products", "Produits", Package, "inventory:view"),
           item("/dashboard/inventory/parts", "nav.inventory.parts", "Pièces détachées", Wrench, "inventory:view"),
           item("/dashboard/inventory/recovered-parts", "nav.inventory.recoveredParts", "Pièces récupérées", Boxes, "inventory:view"),
-          item("/dashboard/inventory/stock-movements", "nav.inventory.stockMovements", "Mouvements de stock", History, "inventory:manage"),
-          item("/dashboard/suppliers", "nav.inventory.suppliers", "Fournisseurs", Truck, "inventory:manage"),
-          item("/dashboard/inventory/purchase-orders", "nav.inventory.purchaseOrders", "Bons de commande", ClipboardList, "inventory:manage"),
           item("/dashboard/inventory/purchases", "nav.inventory.purchaseInvoices", "Factures d’achat", FileText, "inventory:manage"),
         ],
       }),

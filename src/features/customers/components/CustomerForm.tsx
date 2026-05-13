@@ -1,9 +1,10 @@
 "use client";
 
-import { useForm, useWatch, Controller, type Resolver } from "react-hook-form";
+import { useForm, Controller, type Resolver } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTransition, useState } from "react";
 import { useRouter } from "next/navigation";
+import { Plus, Loader2, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useAppI18n } from "@/lib/i18n/ui";
 import {
@@ -11,6 +12,8 @@ import {
   updateCustomerSchema,
 } from "../schemas/customer.schema";
 import { createCustomer, updateCustomer } from "../actions/customer.actions";
+import { createCustomerGroup } from "../actions/customer-group.actions";
+import { ManageGroupsDialog } from "./ManageGroupsDialog";
 
 interface CustomerGroup {
   id: string;
@@ -21,6 +24,7 @@ interface EditValues {
   id: string;
   name: string;
   languagePreference: "fr" | "ar" | "en";
+  address?: string | null;
   notes?: string | null;
   customerGroupId?: string | null;
 }
@@ -31,12 +35,11 @@ interface Props {
   groups?: CustomerGroup[];
 }
 
-// Superset of both create and edit fields so one useForm covers both modes
 type CustomerFormValues = {
-  customerType: "named" | "walkin";
   name: string;
   phone?: string;
   languagePreference: "fr" | "ar" | "en";
+  address?: string;
   notes?: string;
   customerGroupId?: string;
 };
@@ -73,36 +76,55 @@ function Field({
 const inputCls =
   "w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring disabled:opacity-50";
 
-export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
+export function CustomerForm({ mode, defaultValues, groups: initialGroups = [] }: Props) {
   const { t } = useAppI18n();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [serverError, setServerError] = useState<string | null>(null);
+  const [groups, setGroups] = useState(initialGroups);
+  const [showNewGroup, setShowNewGroup] = useState(false);
+  const [newGroupName, setNewGroupName] = useState("");
+  const [creatingGroup, setCreatingGroup] = useState(false);
 
   const schema = mode === "create" ? createCustomerSchema : updateCustomerSchema;
+
+  async function handleCreateGroup() {
+    if (!newGroupName.trim()) return;
+    setCreatingGroup(true);
+    const result = await createCustomerGroup({ name: newGroupName.trim() });
+    setCreatingGroup(false);
+    if (result && "error" in result) {
+      alert(result.error);
+      return;
+    }
+    if ("id" in result && "name" in result) {
+      setGroups((prev) => [...prev, { id: result.id, name: result.name }]);
+      form.setValue("customerGroupId", result.id);
+    }
+    setNewGroupName("");
+    setShowNewGroup(false);
+  }
 
   const form = useForm<CustomerFormValues>({
     resolver: zodResolver(schema) as Resolver<CustomerFormValues>,
     defaultValues:
       mode === "create"
         ? {
-            customerType: "named",
             name: "",
             phone: "",
             languagePreference: "fr",
+            address: "",
             notes: "",
             customerGroupId: "",
           }
         : {
-            customerType: "named",
             name: defaultValues?.name ?? "",
             languagePreference: defaultValues?.languagePreference ?? "fr",
+            address: defaultValues?.address ?? "",
             notes: defaultValues?.notes ?? "",
             customerGroupId: defaultValues?.customerGroupId ?? "",
           },
   });
-
-  const customerType = useWatch({ control: form.control, name: "customerType" });
 
   function onSubmit(data: CustomerFormValues) {
     setServerError(null);
@@ -110,7 +132,6 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
       const result =
         mode === "create"
           ? await createCustomer({
-              customerType: data.customerType,
               name: data.name,
               phone: data.phone,
               languagePreference: data.languagePreference,
@@ -126,53 +147,21 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
 
       if (result && "error" in result && result.error) {
         setServerError(result.error);
+      } else if (result && "redirect" in result && result.redirect) {
+        router.push(result.redirect);
+        router.refresh();
       }
-      // On success: redirect() was called inside the server action
     });
   }
 
   return (
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
-      {/* Customer type toggle — create mode only */}
-      {mode === "create" && (
-        <Field label={t("customers.customerType")} required>
-          <Controller
-            name="customerType"
-            control={form.control}
-            render={({ field }) => (
-              <div className="flex gap-0 rounded-md border border-input overflow-hidden">
-                {(
-                  [
-                    { value: "named", label: t("customers.named") },
-                    { value: "walkin", label: t("customers.walkin") },
-                  ] as const
-                ).map(({ value, label }) => (
-                  <button
-                    key={value}
-                    type="button"
-                    onClick={() => field.onChange(value)}
-                    className={cn(
-                      "flex-1 py-2 text-sm font-medium transition-colors",
-                      field.value === value
-                        ? "bg-primary text-primary-foreground"
-                        : "bg-background text-muted-foreground hover:bg-secondary"
-                    )}
-                  >
-                    {label}
-                  </button>
-                ))}
-              </div>
-            )}
-          />
-        </Field>
-      )}
-
       {/* Name */}
       <Field label={t("customers.name")} required error={form.formState.errors.name?.message}>
         <input
           {...form.register("name")}
           type="text"
-          placeholder={customerType === "walkin" ? t("customers.walkinName") : t("customers.customerNamePlaceholder")}
+          placeholder={t("customers.customerNamePlaceholder")}
           className={inputCls}
           disabled={isPending}
         />
@@ -182,27 +171,34 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
       {mode === "create" && (
         <Field
           label={t("customers.phone")}
-          required={customerType === "named"}
+          required
           error={form.formState.errors.phone?.message}
         >
           <input
             {...form.register("phone")}
             type="tel"
-            placeholder="0555 123 456"
+            maxLength={10}
+            placeholder="0555123456"
             className={inputCls}
             disabled={isPending}
           />
-          {customerType === "walkin" && (
-            <p className="mt-1 text-xs text-muted-foreground">
-              {t("customers.phoneOptionalWalkin")}
-            </p>
-          )}
         </Field>
       )}
 
+      {/* Address */}
+      <Field label={t("customers.address")} error={form.formState.errors.address?.message}>
+        <input
+          {...form.register("address")}
+          type="text"
+          placeholder={t("customers.addressPlaceholder")}
+          className={inputCls}
+          disabled={isPending}
+        />
+      </Field>
+
       {/* Language */}
       <Field
-        label={t("customers.preferredLanguage")}
+        label={t("customers.conversationLanguage")}
         error={form.formState.errors.languagePreference?.message}
       >
         <select {...form.register("languagePreference")} className={inputCls} disabled={isPending}>
@@ -215,11 +211,11 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
       </Field>
 
       {/* Customer group */}
-      {groups.length > 0 && (
-        <Field label={t("customers.customerGroup")}>
+      <Field label={t("customers.customerGroup")}>
+        <div className="flex gap-2">
           <select
             {...form.register("customerGroupId")}
-            className={inputCls}
+            className={cn(inputCls, "flex-1")}
             disabled={isPending}
           >
             <option value="">{t("customers.noGroup")}</option>
@@ -229,8 +225,57 @@ export function CustomerForm({ mode, defaultValues, groups = [] }: Props) {
               </option>
             ))}
           </select>
-        </Field>
-      )}
+          <button
+            type="button"
+            onClick={() => setShowNewGroup(true)}
+            disabled={isPending}
+            className="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-md border border-input bg-background text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors disabled:opacity-50"
+            title={t("customers.newGroup")}
+          >
+            <Plus className="h-4 w-4" />
+          </button>
+          <ManageGroupsDialog
+            groups={groups}
+            onUpdated={(updated) => setGroups(updated)}
+          />
+        </div>
+        {/* Inline new group form */}
+        {showNewGroup && (
+          <div className="mt-2 flex gap-2 items-center rounded-md border border-input bg-background p-2">
+            <input
+              value={newGroupName}
+              onChange={(e) => setNewGroupName(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleCreateGroup();
+                if (e.key === "Escape") {
+                  setShowNewGroup(false);
+                  setNewGroupName("");
+                }
+              }}
+              placeholder={t("customers.groupName")}
+              className="flex-1 bg-transparent px-2 py-1 text-sm outline-none placeholder:text-muted-foreground/60"
+              autoFocus
+              disabled={creatingGroup}
+            />
+            <button
+              type="button"
+              onClick={handleCreateGroup}
+              disabled={creatingGroup || !newGroupName.trim()}
+              className="inline-flex items-center gap-1 rounded-md bg-primary px-2.5 py-1.5 text-xs font-semibold text-primary-foreground hover:brightness-110 disabled:opacity-50 transition-all"
+            >
+              {creatingGroup && <Loader2 className="h-3 w-3 animate-spin" />}
+              {t("common.create")}
+            </button>
+            <button
+              type="button"
+              onClick={() => { setShowNewGroup(false); setNewGroupName(""); }}
+              className="text-xs text-muted-foreground hover:text-foreground px-1.5 py-1"
+            >
+              {t("common.cancel")}
+            </button>
+          </div>
+        )}
+      </Field>
 
       {/* Notes */}
       <Field label={t("common.notes")} error={form.formState.errors.notes?.message}>

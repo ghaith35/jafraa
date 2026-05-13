@@ -21,7 +21,10 @@
     "currency": "DZD",
     "language": "Language",
     "changeLanguage": "Change language",
-    "openMenu": "Open menu"
+    "openMenu": "Open menu",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "none": "None"
   },
   "nav": {
     "dashboard": "Dashboard",
@@ -127,6 +130,7 @@
     "checkout": "Checkout",
     "checkoutWithDebt": "Checkout (Credit: {amount})",
     "checkoutAmount": "Checkout {amount} DZD",
+    "resumeCart": "Resume cart",
     "newSale": "New sale",
     "saleDone": "Sale completed!",
     "items": "Items",

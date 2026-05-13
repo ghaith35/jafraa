@@ -32,11 +32,11 @@ export async function listExpenseCategories(storeId: string) {
   return prisma.expenseCategory.findMany({
     where: {
       OR: [
+        { isDefault: true },
         { storeId, companyId: session.companyId },
-        { storeId: null, companyId: null },
       ],
     },
-    orderBy: { name: "asc" },
+    orderBy: [{ isDefault: "desc" }, { name: "asc" as const }],
     include: { _count: { select: { expenses: true } } },
   });
 }
@@ -63,7 +63,7 @@ export async function createExpenseCategory(
     const category = await prisma.expenseCategory.create({
       data: { companyId: session.companyId, storeId, name: parsed.data.name },
     });
-    revalidatePath("/dashboard/expenses/categories");
+    revalidatePath("/dashboard/expenses");
     return { id: category.id };
   } catch (e) {
     if (isP2002(e)) {
@@ -98,7 +98,7 @@ export async function deleteExpenseCategory(
 
   try {
     await prisma.expenseCategory.delete({ where: { id } });
-    revalidatePath("/dashboard/expenses/categories");
+    revalidatePath("/dashboard/expenses");
   } catch (e) {
     console.error("deleteExpenseCategory:", e);
     return { error: "Erreur lors de la suppression" };
@@ -107,25 +107,21 @@ export async function deleteExpenseCategory(
 
 // ─── Expense Actions ──────────────────────────────────────────────────────────
 
-export async function listExpenses(storeId: string, period?: string, page = 1, perPage = 50) {
+export async function listExpenses(storeId: string, month?: string, day?: string, page = 1, perPage = 50) {
   const session = await getSession();
   if (!session) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
 
   const where: Prisma.ExpenseWhereInput = { storeId, companyId: session.companyId };
 
-  if (period && period !== "forever") {
-    const now = new Date();
-    let start: Date;
-    if (period === "daily") {
-      start = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    } else if (period === "monthly") {
-      start = new Date(now.getFullYear(), now.getMonth(), 1);
-    } else if (period === "yearly") {
-      start = new Date(now.getFullYear(), 0, 1);
-    } else {
-      start = new Date(0);
-    }
-    where.expenseDate = { gte: start };
+  if (day) {
+    const d = new Date(day + "T00:00:00");
+    const next = new Date(d);
+    next.setDate(next.getDate() + 1);
+    where.expenseDate = { gte: d, lt: next };
+  } else if (month) {
+    const d = new Date(month + "-01T00:00:00");
+    const next = new Date(d.getFullYear(), d.getMonth() + 1, 1);
+    where.expenseDate = { gte: d, lt: next };
   }
 
   const [expenses, total] = await Promise.all([
@@ -133,7 +129,7 @@ export async function listExpenses(storeId: string, period?: string, page = 1, p
       where,
       skip: (page - 1) * perPage,
       take: perPage,
-      include: { category: { select: { name: true } } },
+      include: { category: { select: { name: true, nameFr: true, nameAr: true, nameEn: true } } },
       orderBy: { expenseDate: "desc" },
     }),
     prisma.expense.count({ where }),
@@ -146,6 +142,9 @@ export async function listExpenses(storeId: string, period?: string, page = 1, p
       expenseDate: e.expenseDate,
       note: e.note,
       categoryName: e.category.name,
+      categoryNameFr: e.category.nameFr,
+      categoryNameAr: e.category.nameAr,
+      categoryNameEn: e.category.nameEn,
       categoryId: e.categoryId,
       createdAt: e.createdAt,
     })),
@@ -201,8 +200,8 @@ export async function createExpense(
     where: {
       id: d.categoryId,
       OR: [
+        { isDefault: true },
         { storeId, companyId: session.companyId },
-        { storeId: null, companyId: null },
       ],
     },
   });

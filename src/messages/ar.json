@@ -21,7 +21,10 @@
     "currency": "دج",
     "language": "اللغة",
     "changeLanguage": "تغيير اللغة",
-    "openMenu": "فتح القائمة"
+    "openMenu": "فتح القائمة",
+    "collapse": "طي",
+    "expand": "توسيع",
+    "none": "لا شيء"
   },
   "nav": {
     "dashboard": "لوحة التحكم",
@@ -127,6 +130,7 @@
     "checkout": "تحصيل",
     "checkoutWithDebt": "تحصيل (دين: {amount})",
     "checkoutAmount": "تحصيل {amount} دج",
+    "resumeCart": "استئناف السلة",
     "newSale": "بيع جديد",
     "saleDone": "تمت عملية البيع!",
     "items": "العناصر",

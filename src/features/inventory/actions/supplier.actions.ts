@@ -5,7 +5,7 @@ import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
-import { paginate, type PaginatedResult } from "@/lib/pagination";
+import { paginate } from "@/lib/pagination";
 import {
   createSupplierSchema,
   updateSupplierSchema,
@@ -14,8 +14,7 @@ import {
 } from "../schemas/supplier.schema";
 
 type ActionError = { error: string };
-
-// ─── List ─────────────────────────────────────────────────────────────────────
+type ActionSuccess = { success: true; redirect?: string };
 
 export async function listSuppliers(opts?: {
   storeId?: string;
@@ -58,17 +57,12 @@ export async function listSuppliers(opts?: {
   ]);
 
   return paginate(
-    suppliers.map(s => ({
-      ...s,
-      balance: Number(s.balance),
-    })),
+    suppliers.map(s => ({ ...s, balance: Number(s.balance) })),
     total,
     page,
     perPage
   );
 }
-
-// ─── Get one ──────────────────────────────────────────────────────────────────
 
 export async function getSupplier(id: string) {
   const session = await getSession();
@@ -83,18 +77,12 @@ export async function getSupplier(id: string) {
   });
 
   if (!supplier) return null;
-
-  return {
-    ...supplier,
-    balance: Number(supplier.balance),
-  };
+  return { ...supplier, balance: Number(supplier.balance) };
 }
-
-// ─── Create ───────────────────────────────────────────────────────────────────
 
 export async function createSupplier(
   data: CreateSupplierInput
-): Promise<ActionError | { id: string }> {
+): Promise<ActionError | ActionSuccess> {
   const session = await getSession();
   if (!session) return { error: "Non autorisé" };
   if (!hasPermission(session.role, "inventory:manage")) {
@@ -118,25 +106,25 @@ export async function createSupplier(
         companyId: session.companyId,
         storeId,
         name: d.name,
-        phone: d.phone || undefined,
+        phones: d.phones || "",
+        nif: d.nif || null,
+        nis: d.nis || null,
         address: d.address || undefined,
         notes: d.notes || undefined,
       },
     });
     revalidatePath("/dashboard/suppliers");
-    return { id: supplier.id };
+    return { success: true, redirect: `/dashboard/suppliers/${supplier.id}` };
   } catch (e) {
     console.error("createSupplier:", e);
     return { error: "Erreur lors de la création du fournisseur" };
   }
 }
 
-// ─── Update ───────────────────────────────────────────────────────────────────
-
 export async function updateSupplier(
   id: string,
   data: UpdateSupplierInput
-): Promise<ActionError | void> {
+): Promise<ActionError | ActionSuccess> {
   const session = await getSession();
   if (!session) return { error: "Non autorisé" };
   if (!hasPermission(session.role, "inventory:manage")) {
@@ -165,7 +153,9 @@ export async function updateSupplier(
       where: { id },
       data: {
         name: d.name,
-        phone: d.phone || null,
+        phones: d.phones || "",
+        nif: d.nif || null,
+        nis: d.nis || null,
         address: d.address || null,
         notes: d.notes || null,
       },
@@ -177,18 +167,12 @@ export async function updateSupplier(
 
   revalidatePath("/dashboard/suppliers");
   revalidatePath(`/dashboard/suppliers/${id}`);
+  return { success: true, redirect: `/dashboard/suppliers/${id}` };
 }
 
-// ─── Archive ──────────────────────────────────────────────────────────────────
-
-export async function archiveSupplier(
-  id: string
-): Promise<ActionError | void> {
+export async function archiveSupplier(id: string): Promise<ActionError | ActionSuccess> {
   const session = await getSession();
   if (!session) return { error: "Non autorisé" };
-  if (!hasPermission(session.role, "inventory:manage")) {
-    return { error: "Permission insuffisante" };
-  }
 
   const storeId = session.storeIds[0];
   const existing = await prisma.supplier.findFirst({
@@ -205,4 +189,5 @@ export async function archiveSupplier(
   }
 
   revalidatePath("/dashboard/suppliers");
+  return { success: true, redirect: "/dashboard/suppliers" };
 }

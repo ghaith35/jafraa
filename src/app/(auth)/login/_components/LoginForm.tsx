@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { Loader2, LogIn } from "lucide-react";
 
 export function LoginForm() {
   const t = useTranslations("auth");
@@ -42,11 +43,12 @@ export function LoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-4">
+      {/* Email */}
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-foreground mb-1.5"
+          className="block text-sm font-medium text-slate-300 mb-1.5"
         >
           {t("emailAddress")}
         </label>
@@ -57,16 +59,17 @@ export function LoginForm() {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent disabled:opacity-50"
+          className="w-full rounded-lg border border-white/[0.08] bg-white/[0.04] px-3.5 py-2.5 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]/50 focus:border-transparent transition-all duration-200 disabled:opacity-50"
           placeholder="admin@example.com"
           disabled={loading}
         />
       </div>
 
+      {/* Password */}
       <div>
         <label
           htmlFor="password"
-          className="block text-sm font-medium text-foreground mb-1.5"
+          className="block text-sm font-medium text-slate-300 mb-1.5"
         >
           {t("password")}
         </label>
@@ -77,24 +80,40 @@ export function LoginForm() {
           required
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent disabled:opacity-50"
+          className="w-full rounded-lg border border-white/[0.08] bg-white/[0.04] px-3.5 py-2.5 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#6366f1]/50 focus:border-transparent transition-all duration-200 disabled:opacity-50"
           placeholder="••••••••"
           disabled={loading}
         />
       </div>
 
+      {/* Error */}
       {error && (
-        <p className="text-sm text-destructive bg-destructive/10 rounded-md px-3 py-2">
+        <div className="rounded-lg bg-red-500/10 border border-red-500/20 px-3.5 py-2.5 text-sm text-red-400">
           {error}
-        </p>
+        </div>
       )}
 
+      {/* Submit */}
       <button
         type="submit"
         disabled={loading}
-        className="w-full rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+        className="w-full rounded-lg flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#6366f1]/50 focus:ring-offset-2 focus:ring-offset-[#0c1226] disabled:opacity-50 disabled:cursor-not-allowed hover:brightness-110 active:scale-[0.98]"
+        style={{
+          background: "linear-gradient(135deg, #6366f1, #4f46e5)",
+          boxShadow: "0 0 0 1px rgba(99, 102, 241, 0.3), 0 2px 8px rgba(99, 102, 241, 0.3)",
+        }}
       >
-        {loading ? t("loggingIn") : t("signIn")}
+        {loading ? (
+          <>
+            <Loader2 className="h-4 w-4 animate-spin" />
+            {t("loggingIn")}
+          </>
+        ) : (
+          <>
+            <LogIn className="h-4 w-4" />
+            {t("signIn")}
+          </>
+        )}
       </button>
     </form>
   );

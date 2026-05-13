@@ -28,85 +28,110 @@ export function Sidebar({ user, company, mobileOpen, collapsed, onMobileClose, o
   const { t } = useAppI18n();
 
   return (
-    <>
-      {/* Sidebar panel */}
-      <aside
-        className={cn(
-          "fixed inset-y-0 start-0 z-30 flex flex-col",
-          "bg-[var(--sidebar-bg)] border-e border-[var(--sidebar-border)]",
-          "transition-all duration-200 ease-in-out",
-          collapsed ? "w-[60px]" : "w-[220px]",
-          // Desktop: always visible regardless of mobile state
-          "lg:translate-x-0",
-          // Mobile: slide in or out based on open state and direction
-          mobileOpen
-            ? "translate-x-0"
-            : dir === "rtl"
-            ? "translate-x-full"
-            : "-translate-x-full"
-        )}
-      >
-        {/* Header: Logo + collapse toggle */}
-        <div className={cn("shrink-0", collapsed ? "px-3 pb-2 pt-3" : "px-[14px] pb-3 pt-4")}>
-          <div className={cn("flex items-center", collapsed ? "justify-center" : "gap-2")}>
-            <div className="h-[30px] w-[30px] rounded-md bg-[var(--sidebar-logo-icon-bg)] flex items-center justify-center shrink-0 text-[var(--sidebar-logo-icon-fg)]">
-              <Wrench className="h-4 w-4" />
-            </div>
-            {!collapsed && (
-              <>
-                <div className="min-w-0">
-                  <div className="text-[17px] font-semibold tracking-[-0.3px] text-[var(--sidebar-fg)]">
-                    RE<span className="text-[var(--sidebar-brand-accent)]">PAIRE</span>
-                  </div>
-                </div>
-                <button
-                  onClick={onMobileClose}
-                  className="ms-auto inline-flex h-11 w-11 items-center justify-center rounded-md text-[var(--sidebar-muted-fg)] hover:text-[var(--sidebar-fg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sidebar-accent)] lg:hidden"
-                  aria-label={tCommon("close")}
-                >
-                  <X className="h-5 w-5" />
-                </button>
-              </>
-            )}
+    <aside
+      className={cn(
+        "fixed inset-y-0 start-0 z-30 flex flex-col",
+        "transition-all duration-300 ease-in-out",
+        collapsed ? "w-[64px]" : "w-[232px]",
+        "lg:translate-x-0",
+        mobileOpen
+          ? "translate-x-0"
+          : dir === "rtl"
+          ? "translate-x-full"
+          : "-translate-x-full"
+      )}
+      style={{
+        background: `linear-gradient(180deg, var(--sidebar-bg-start) 0%, var(--sidebar-bg-end) 100%)`,
+        borderRight: `1px solid var(--sidebar-border)`,
+      }}
+    >
+      {/* Brand header */}
+      <div className={cn("shrink-0", collapsed ? "px-2 pt-4 pb-2" : "px-4 pt-5 pb-3")}>
+        <div className={cn("flex items-center", collapsed ? "justify-center" : "gap-3")}>
+          {/* Logo mark */}
+          <div
+            className="h-8 w-8 rounded-lg flex items-center justify-center shrink-0 shadow-[var(--shadow-sm)]"
+            style={{
+              background: "linear-gradient(135deg, #6366f1, #4f46e5)",
+            }}
+          >
+            <Wrench className="h-4 w-4 text-white" />
           </div>
 
-          {/* Collapse toggle — desktop only */}
-          <button
-            onClick={onToggleCollapse}
-            className={cn(
-              "hidden lg:inline-flex items-center justify-center rounded-md text-[var(--sidebar-muted-fg)] hover:text-[var(--sidebar-fg)] hover:bg-[var(--sidebar-hover-bg)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--sidebar-accent)]",
-              collapsed ? "mt-3 h-8 w-full" : "mt-[14px] h-8 w-full"
-            )}
-            aria-label={collapsed ? tCommon("expand") : tCommon("collapse")}
-          >
-            {collapsed ? <PanelLeft className="h-4 w-4" /> : <PanelLeftClose className="h-4 w-4" />}
-          </button>
-
           {!collapsed && (
-            <div className="mt-[14px] flex items-center gap-[7px] rounded-[calc(var(--radius)-1px)] border border-white/10 bg-[var(--sidebar-muted)] px-[9px] py-[7px]">
-              <Store className="h-[13px] w-[13px] shrink-0 text-[var(--sidebar-muted-fg)]" />
-              <span className="truncate text-[14px] font-medium text-[var(--sidebar-fg)]">{company.name}</span>
-              <ChevronDown className="ms-auto h-[11px] w-[11px] shrink-0 text-[var(--sidebar-muted-fg)]" />
-            </div>
+            <>
+              <div className="min-w-0">
+                <div className="text-lg font-bold tracking-tight">
+                  <span className="text-[var(--sidebar-fg)]">RE</span>
+                  <span className="gradient-text">PAIRE</span>
+                </div>
+              </div>
+              {/* Mobile close */}
+              <button
+                onClick={onMobileClose}
+                className="ms-auto inline-flex h-8 w-8 items-center justify-center rounded-md text-[var(--sidebar-muted-fg)] hover:text-[var(--sidebar-fg)] hover:bg-[var(--sidebar-hover-bg)] transition-colors lg:hidden"
+                aria-label={tCommon("close")}
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </>
           )}
         </div>
 
-        {/* Navigation */}
-        <nav className="sidebar-scroll flex-1 overflow-y-auto px-2 py-1">
-          {navSections.map((section) => (
-            <div key={section.titleKey}>
-              {!collapsed && (
-                <div className="px-1.5 pb-1 pt-3 text-[12px] font-semibold uppercase tracking-[0.07em] text-[var(--sidebar-muted-fg)]">
-                  {t(section.titleKey) || section.fallbackTitle}
-                </div>
-              )}
-              {section.items.map((item) => (
-                <NavItem key={item.href} item={item} onClick={onMobileClose} collapsed={collapsed} />
-              ))}
+        {/* Collapse toggle */}
+        <button
+          onClick={onToggleCollapse}
+          className={cn(
+            "hidden lg:inline-flex items-center justify-center rounded-lg text-[var(--sidebar-muted-fg)] hover:text-[var(--sidebar-fg)] hover:bg-[var(--sidebar-hover-bg)] transition-all duration-200",
+            collapsed ? "mt-3 h-8 w-full" : "mt-4 h-8 w-full"
+          )}
+          aria-label={collapsed ? tCommon("expand") : tCommon("collapse")}
+        >
+          {collapsed ? <PanelLeft className="h-4 w-4" /> : <PanelLeftClose className="h-4 w-4" />}
+        </button>
+
+        {/* Store selector */}
+        {!collapsed && (
+          <div className="mt-4 flex items-center gap-2 rounded-lg border border-white/5 bg-white/[0.04] px-3 py-2 transition-colors hover:bg-white/[0.07] cursor-pointer">
+            <Store className="h-3.5 w-3.5 shrink-0 text-[var(--sidebar-muted-fg)]" />
+            <span className="truncate text-xs font-medium text-[var(--sidebar-fg)]">{company.name}</span>
+            <ChevronDown className="ms-auto h-3 w-3 shrink-0 text-[var(--sidebar-muted-fg)]" />
+          </div>
+        )}
+      </div>
+
+      {/* Navigation */}
+      <nav className="sidebar-scroll flex-1 overflow-y-auto px-2 py-1">
+        {navSections.map((section) => (
+          <div key={section.titleKey} className="mb-1">
+            {!collapsed && (
+              <div className="px-2.5 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-[var(--sidebar-section-fg)]">
+                {t(section.titleKey) || section.fallbackTitle}
+              </div>
+            )}
+            {section.items.map((item) => (
+              <NavItem key={item.href} item={item} onClick={onMobileClose} collapsed={collapsed} />
+            ))}
+          </div>
+        ))}
+      </nav>
+
+      {/* Footer: user */}
+      {!collapsed && (
+        <div className="shrink-0 border-t border-[var(--sidebar-footer-border)] px-4 py-3">
+          <div className="flex items-center gap-2.5">
+            <div className="h-7 w-7 rounded-full flex items-center justify-center shrink-0" style={{ background: "linear-gradient(135deg, #6366f1, #818cf8)" }}>
+              <span className="text-[11px] font-semibold text-white">
+                {user.name.split(" ").slice(0, 2).map(w => w[0]?.toUpperCase()).join("")}
+              </span>
             </div>
-          ))}
-        </nav>
-      </aside>
-    </>
+            <div className="min-w-0">
+              <p className="truncate text-xs font-medium text-[var(--sidebar-fg)]">{user.name}</p>
+              <p className="truncate text-[11px] text-[var(--sidebar-muted-fg)]">{user.role}</p>
+            </div>
+          </div>
+        </div>
+      )}
+    </aside>
   );
 }

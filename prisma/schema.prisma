@@ -621,6 +621,7 @@ model DeviceBrand {
   companyId       String?
   storeId         String?
   name            String
+  logoUrl         String?
   sortOrder       Int      @default(0)
   isGlobalDefault Boolean  @default(false)
   isActive        Boolean  @default(true)
@@ -1090,6 +1091,9 @@ model Supplier {
   storeId    String
   name       String
   phone      String?
+  phones     String   @default("")
+  nif        String?
+  nis        String?
   address    String?
   notes      String?
   balance    Decimal  @db.Decimal(12, 2) @default(0)
@@ -1878,6 +1882,9 @@ model ExpenseCategory {
   companyId String?
   storeId   String?   // null for global
   name      String
+  nameFr    String?
+  nameAr    String?
+  nameEn    String?
   isDefault Boolean   @default(false)
   expenses  Expense[]
   company   Company?  @relation(fields: [companyId], references: [id])
