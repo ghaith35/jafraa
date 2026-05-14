@@ -14,11 +14,10 @@ type CatalogManagerAuth =
 
 // ─── Read queries ────────────────────────────────────────────────────────────
 
-/** List all active device categories, ordered by sortOrder */
+/** List all device categories, ordered by sortOrder */
 export async function listDeviceCategories() {
   return prisma.deviceCategory.findMany({
-    where: { isActive: true },
-    orderBy: { sortOrder: "asc" },
+    orderBy: [{ sortOrder: "asc" }, { nameFr: "asc" }],
   });
 }
 
@@ -33,7 +32,6 @@ export async function listBrandsByCategory(
   return prisma.deviceBrand.findMany({
     where: {
       categoryId,
-      isActive: true,
       OR: [
         // Global defaults
         { isGlobalDefault: true },
@@ -49,7 +47,7 @@ export async function listBrandsByCategory(
     include: {
       _count: { select: { modelFamilies: true } },
     },
-    orderBy: { sortOrder: "asc" },
+    orderBy: [{ sortOrder: "asc" }, { name: "asc" }],
   });
 }
 
@@ -61,10 +59,9 @@ export async function listFamiliesByBrand(
   brandId: string,
   opts?: { companyId?: string; storeId?: string }
 ) {
-  return prisma.deviceModelFamily.findMany({
+  const families = await prisma.deviceModelFamily.findMany({
     where: {
       brandId,
-      isActive: true,
       OR: [
         { isGlobalDefault: true },
         ...(opts?.companyId
@@ -75,7 +72,19 @@ export async function listFamiliesByBrand(
           : []),
       ],
     },
-    orderBy: { sortOrder: "asc" },
+  });
+
+  const maxYears = await prisma.deviceModel.groupBy({
+    by: ["familyId"],
+    where: { familyId: { in: families.map((f) => f.id) } },
+    _max: { releaseYear: true },
+  });
+  const yearMap = new Map(maxYears.map((y) => [y.familyId, y._max.releaseYear]));
+
+  return families.sort((a, b) => {
+    const ya = yearMap.get(a.id) ?? -1;
+    const yb = yearMap.get(b.id) ?? -1;
+    return yb - ya || a.sortOrder - b.sortOrder || a.name.localeCompare(b.name);
   });
 }
 
@@ -84,8 +93,8 @@ export async function listFamiliesByBrand(
  */
 export async function listModelsByFamily(familyId: string) {
   return prisma.deviceModel.findMany({
-    where: { familyId, isActive: true },
-    orderBy: { sortOrder: "asc" },
+    where: { familyId },
+    orderBy: [{ releaseYear: { sort: "desc", nulls: "last" } }, { sortOrder: "asc" }, { name: "asc" }],
   });
 }
 

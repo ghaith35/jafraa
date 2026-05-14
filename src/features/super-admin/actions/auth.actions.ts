@@ -28,7 +28,7 @@ export async function superAdminLogin(email: string, password: string) {
   });
 
   await setSuperAdminCookie(token);
-  redirect("/super-admin/companies");
+  redirect("/super-admin/dashboard");
 }
 
 export async function superAdminLogout() {

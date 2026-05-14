@@ -6,7 +6,7 @@ export const metadata = { title: "Super Admin — Connexion" };
 
 export default async function SuperAdminLoginPage() {
   const session = await getSuperAdminSession();
-  if (session) redirect("/super-admin/companies");
+  if (session) redirect("/super-admin/dashboard");
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-muted/30 p-4">

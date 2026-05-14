@@ -2,6 +2,7 @@
 
 import { ChevronDown, PanelLeftClose, PanelLeft, Store, Wrench, X } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useAppI18n } from "@/lib/i18n/ui";
 import { cn } from "@/lib/utils";
 import { NavItem } from "./NavItem";
@@ -105,9 +106,13 @@ export function Sidebar({ user, company, mobileOpen, collapsed, onMobileClose, o
         {navSections.map((section) => (
           <div key={section.titleKey} className="mb-1">
             {!collapsed && (
-              <div className="px-2.5 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-[var(--sidebar-section-fg)]">
+              <Link
+                href={section.href}
+                onClick={onMobileClose}
+                className="block px-2.5 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-[var(--sidebar-section-fg)] hover:text-[var(--sidebar-active-fg)] transition-colors"
+              >
                 {t(section.titleKey) || section.fallbackTitle}
-              </div>
+              </Link>
             )}
             {section.items.map((item) => (
               <NavItem key={item.href} item={item} onClick={onMobileClose} collapsed={collapsed} />

@@ -19,6 +19,7 @@ import {
   Tags,
   Wallet,
   DollarSign,
+  Cpu,
   type LucideIcon,
 } from "lucide-react";
 import type { UserRole } from "@prisma/client";
@@ -39,6 +40,7 @@ export interface NavItem {
 export interface NavSection {
   titleKey: AppTranslationKey;
   fallbackTitle: string;
+  href: string;
   items: NavItem[];
 }
 
@@ -55,8 +57,17 @@ function item(
 
 const ALL_NAV_SECTIONS: NavSection[] = [
   {
+    titleKey: "nav.section.catalog" as AppTranslationKey,
+    fallbackTitle: "Catalogue",
+    href: "/dashboard/settings/catalog",
+    items: [
+      item("/dashboard/settings/catalog", "nav.catalog" as AppTranslationKey, "Catalogue", Cpu, "inventory:view"),
+    ],
+  },
+  {
     titleKey: "nav.section.main",
     fallbackTitle: "Principal",
+    href: "/dashboard",
     items: [
       item("/dashboard", "nav.dashboard", "Tableau de bord", LayoutDashboard, null),
       item("/dashboard/pos", "nav.pos", "Point de vente", ShoppingCart, "payments:manage"),
@@ -85,6 +96,7 @@ const ALL_NAV_SECTIONS: NavSection[] = [
   {
     titleKey: "nav.section.workshop",
     fallbackTitle: "Workshop",
+    href: "/dashboard/repairs",
     items: [
       item("/dashboard/repairs", "nav.repairs", "Réparations", Wrench, "tickets:view"),
       item("/dashboard/technician", "nav.technician", "Technicien", ClipboardList, "tickets:view"),
@@ -94,6 +106,7 @@ const ALL_NAV_SECTIONS: NavSection[] = [
   {
     titleKey: "nav.section.cash",
     fallbackTitle: "Caisse",
+    href: "/dashboard/pos/cash-register",
     items: [
       item("/dashboard/pos/cash-register", "nav.cashRegister", "Caisse", DollarSign, "payments:manage"),
     ],
@@ -101,6 +114,7 @@ const ALL_NAV_SECTIONS: NavSection[] = [
   {
     titleKey: "nav.section.admin",
     fallbackTitle: "Admin",
+    href: "/dashboard/settings",
     items: [
       item("/dashboard/reports", "nav.reports", "Rapports", BarChart2, "reports:view"),
       item("/dashboard/expenses", "nav.expenses", "Dépenses", Wallet, "expenses:view"),

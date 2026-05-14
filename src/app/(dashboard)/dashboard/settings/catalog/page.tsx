@@ -1,6 +1,5 @@
 import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth/session";
-import { PageHeader } from "@/components/shared/PageHeader";
 import {
   getCatalogPageData,
   listFamiliesByBrand,
@@ -47,10 +46,6 @@ export default async function CatalogPage(props: {
 
   return (
     <>
-      <PageHeader
-        title={t("settings.catalogTitle")}
-        description={t("settings.catalogDescription")}
-      />
       <CatalogBrowser
         categories={categories}
         selectedCategoryKey={selectedCategory?.key ?? null}

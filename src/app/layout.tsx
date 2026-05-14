@@ -46,7 +46,7 @@ export default async function RootLayout({
     >
       <body className="min-h-full bg-background text-foreground font-sans">
         <Script id="theme-script" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: `try{var r=document.documentElement;var t=null;try{t=localStorage.getItem("repaire-theme")}catch(e){}var m=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var n=t==="dark"||t==="light"?t:m?"dark":"light";r.classList.toggle("dark",n==="dark");r.classList.toggle("light",n==="light");r.dataset.theme=n;r.style.colorScheme=n}catch(e){}` }} />
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>
