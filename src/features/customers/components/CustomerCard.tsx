@@ -189,7 +189,7 @@ function InfoTab({ c, formatDate }: { c: CustomerData; formatDate: any }) {
       <div className="grid grid-cols-3 gap-2">
         <div className="rounded-lg border border-border bg-surface p-3 text-center">
           <p className="text-lg font-bold text-foreground">{c._count.repairTickets}</p>
-          <p className="text-[10px] text-muted-foreground">{t("customers.title")}</p>
+          <p className="text-[10px] text-muted-foreground">Tickets</p>
         </div>
         <div className="rounded-lg border border-border bg-surface p-3 text-center">
           <p className="text-lg font-bold text-foreground">{c._count.assets}</p>
