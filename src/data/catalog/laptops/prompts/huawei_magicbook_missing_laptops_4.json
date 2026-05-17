@@ -1,0 +1,197 @@
+[
+  {
+    "modelName": "Huawei MagicBook 14",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD IPS, 1920 × 1080, 16:9, anti-glare, up to 300 nits depending on generation",
+      "processor": "AMD Ryzen 5 3500U / Ryzen 5 4500U / Ryzen 5 5500U / Intel Core i5-1135G7 / Intel Core i5-12500H depending on generation",
+      "ram": "8–16 GB DDR4/LPDDR4x/LPDDR5 depending on generation",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "42 Wh on early 2021 model; 56 Wh on 2019/2020 AMD model; 75 Wh on later 2022/2023 models",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "about 1.38–1.52 kg",
+      "dimensions": "approx. 322.5 × 214.8 × 15.9 mm on early models; 307.51 × 227.56 × 16.9 mm on 2023 model"
+    },
+    "variants": [
+      {
+        "name": "Huawei MagicBook 14 Ryzen 5 3500U/8GB/256GB Space Gray",
+        "processor": "AMD Ryzen 5 3500U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Huawei MagicBook 14 Ryzen 5 4500U/8GB/512GB Mystic Silver",
+        "processor": "AMD Ryzen 5 4500U",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Mystic Silver"
+      },
+      {
+        "name": "Huawei MagicBook 14 Core i5-1135G7/16GB/512GB Space Gray",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Huawei MagicBook 14 Core i5-12500H/16GB/512GB Space Gray",
+        "processor": "Intel Core i5-12500H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Space Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "Huawei MagicBook 15",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS, 1920 × 1080, 16:9, anti-glare, 87% screen-to-body on common models",
+      "processor": "AMD Ryzen 5 3500U / Ryzen 5 4500U / Ryzen 5 5500U / Intel Core i3-10110U / Core i5-1135G7 depending on generation",
+      "ram": "8–16 GB DDR4/LPDDR4x depending on generation",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "42 Wh on 2019/2020 AMD model; 56 Wh on 2021 model",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "about 1.53–1.56 kg",
+      "dimensions": "357.8 × 229.9 × 16.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Huawei MagicBook 15 Ryzen 5 3500U/8GB/256GB Space Gray",
+        "processor": "AMD Ryzen 5 3500U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Huawei MagicBook 15 Ryzen 5 4500U/8GB/512GB Mystic Silver",
+        "processor": "AMD Ryzen 5 4500U",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Mystic Silver"
+      },
+      {
+        "name": "Huawei MagicBook 15 Core i5-1135G7/8GB/512GB Space Gray",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Huawei MagicBook 15 Ryzen 5 5500U/16GB/512GB Space Gray",
+        "processor": "AMD Ryzen 5 5500U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Space Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "Huawei MagicBook 16",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.1\" FHD IPS, 1920 × 1080, 16:9, anti-glare, 100% sRGB, TÜV Rheinland low blue light/flicker-free on common models",
+      "processor": "AMD Ryzen 5 5600H / AMD Ryzen 7 5800H / Intel Core i5-12450H / Core i7-12700H depending on generation",
+      "ram": "16 GB DDR4/LPDDR5 depending on generation",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "56 Wh on original Ryzen model; 60 Wh class on later Intel refreshes depending on region",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "about 1.84–1.87 kg",
+      "dimensions": "approx. 368 × 236 × 18.2 mm"
+    },
+    "variants": [
+      {
+        "name": "Huawei MagicBook 16 Ryzen 5 5600H/16GB/512GB Space Gray",
+        "processor": "AMD Ryzen 5 5600H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Huawei MagicBook 16 Ryzen 7 5800H/16GB/512GB Space Gray",
+        "processor": "AMD Ryzen 7 5800H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Huawei MagicBook 16 Core i5-12450H/16GB/512GB Space Gray",
+        "processor": "Intel Core i5-12450H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Huawei MagicBook 16 Core i7-12700H/16GB/1TB Space Gray",
+        "processor": "Intel Core i7-12700H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Space Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "Huawei MagicBook Pro",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.1\" FHD IPS, 1920 × 1080, 16:9, anti-glare, 100% sRGB on common Ryzen 2020 models",
+      "processor": "Intel Core i5-8265U / Core i7-8565U / AMD Ryzen 5 4600H / Ryzen 7 4800H depending on generation",
+      "ram": "8–16 GB DDR4 depending on generation",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "56 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "about 1.7 kg",
+      "dimensions": "approx. 369 × 234 × 16.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Huawei MagicBook Pro Core i5-8265U/8GB/512GB Space Gray",
+        "processor": "Intel Core i5-8265U",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Huawei MagicBook Pro Core i7-8565U/16GB/512GB Space Gray",
+        "processor": "Intel Core i7-8565U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Huawei MagicBook Pro Ryzen 5 4600H/16GB/512GB Space Gray",
+        "processor": "AMD Ryzen 5 4600H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Huawei MagicBook Pro Ryzen 7 4800H/16GB/512GB Mystic Silver",
+        "processor": "AMD Ryzen 7 4800H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Mystic Silver"
+      }
+    ]
+  }
+]

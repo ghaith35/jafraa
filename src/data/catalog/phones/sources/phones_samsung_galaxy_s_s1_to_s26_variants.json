@@ -1,0 +1,4792 @@
+{
+  "category": "phone",
+  "brands": [
+    {
+      "name": "Samsung",
+      "logo_url": "https://logo.clearbit.com/samsung.com",
+      "families": [
+        {
+          "name": "Galaxy S",
+          "models": [
+            {
+              "name": "Samsung Galaxy S",
+              "aliases": [
+                "Samsung GT-I9000",
+                "Samsung Captivate",
+                "Samsung Vibrant",
+                "Samsung Epic 4G",
+                "Samsung Fascinate",
+                "Samsung Mesmerize",
+                "Samsung Showcase"
+              ],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": "4.0-inch Super AMOLED 480 x 800",
+                "processor": "Samsung Hummingbird S5PC110",
+                "ram": "512MB",
+                "storage": [
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": "1500 mAh",
+                "os": "Android 2.1",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "512MB",
+                      "storage": "8GB"
+                    },
+                    {
+                      "ram": "512MB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black",
+                    "White"
+                  ],
+                  "model_numbers": [
+                    "GT-I9000",
+                    "GT-I9000M",
+                    "SGH-I897",
+                    "SGH-T959",
+                    "SPH-D700",
+                    "SCH-I500",
+                    "SCH-I400",
+                    "SC-02B"
+                  ],
+                  "connectivity": "3G/EVDO/WiMAX by market",
+                  "markets": [
+                    "Global",
+                    "North America",
+                    "Japan"
+                  ],
+                  "notes": "Major public carrier variants are listed as aliases/model numbers; minor carrier firmware SKUs not expanded."
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S 4G",
+              "aliases": [
+                "Samsung SGH-T959V"
+              ],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": "4.0-inch Super AMOLED 480 x 800",
+                "processor": "Samsung Hummingbird S5PC110",
+                "ram": "512MB",
+                "storage": [
+                  "1GB"
+                ],
+                "battery": "1650 mAh",
+                "os": "Android 2.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "512MB",
+                      "storage": "1GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black"
+                  ],
+                  "model_numbers": [
+                    "SGH-T959V"
+                  ],
+                  "connectivity": "3G/HSPA+",
+                  "markets": [
+                    "T-Mobile US"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%204G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S Plus",
+              "aliases": [
+                "Samsung GT-I9001"
+              ],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": "4.0-inch Super AMOLED 480 x 800",
+                "processor": "Qualcomm Snapdragon S2 MSM8255T",
+                "ram": "512MB",
+                "storage": [
+                  "8GB"
+                ],
+                "battery": "1650 mAh",
+                "os": "Android 2.3",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "512MB",
+                      "storage": "8GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black",
+                    "White"
+                  ],
+                  "model_numbers": [
+                    "GT-I9001"
+                  ],
+                  "connectivity": "3G",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20Plus"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy SL",
+              "aliases": [
+                "Samsung GT-I9003"
+              ],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": "4.0-inch SC-LCD 480 x 800",
+                "processor": "TI OMAP 3630",
+                "ram": "478MB",
+                "storage": [
+                  "4GB",
+                  "16GB"
+                ],
+                "battery": "1650 mAh",
+                "os": "Android 2.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "478MB",
+                      "storage": "4GB"
+                    },
+                    {
+                      "ram": "478MB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black"
+                  ],
+                  "model_numbers": [
+                    "GT-I9003"
+                  ],
+                  "connectivity": "3G",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20SL"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S Advance",
+              "aliases": [
+                "Samsung GT-I9070"
+              ],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": "4.0-inch Super AMOLED 480 x 800",
+                "processor": "ST-Ericsson NovaThor U8500",
+                "ram": "768MB",
+                "storage": [
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": "1500 mAh",
+                "os": "Android 2.3",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "768MB",
+                      "storage": "8GB"
+                    },
+                    {
+                      "ram": "768MB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black",
+                    "White"
+                  ],
+                  "model_numbers": [
+                    "GT-I9070",
+                    "GT-I9070P"
+                  ],
+                  "connectivity": "3G",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": "GT-I9070P adds NFC in some markets."
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20Advance"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S Duos",
+              "aliases": [
+                "Samsung GT-S7562"
+              ],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": "4.0-inch TFT 480 x 800",
+                "processor": "Qualcomm MSM7227A Snapdragon S1",
+                "ram": "768MB",
+                "storage": [
+                  "4GB"
+                ],
+                "battery": "1500 mAh",
+                "os": "Android 4.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "768MB",
+                      "storage": "4GB"
+                    }
+                  ],
+                  "colors": [
+                    "White",
+                    "Black",
+                    "La Fleur"
+                  ],
+                  "model_numbers": [
+                    "GT-S7562"
+                  ],
+                  "connectivity": "3G Dual SIM",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20Duos"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S Duos 2",
+              "aliases": [
+                "Samsung GT-S7582"
+              ],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": "4.0-inch TFT 480 x 800",
+                "processor": "Broadcom BCM21664T",
+                "ram": "768MB",
+                "storage": [
+                  "4GB"
+                ],
+                "battery": "1500 mAh",
+                "os": "Android 4.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "768MB",
+                      "storage": "4GB"
+                    }
+                  ],
+                  "colors": [
+                    "White",
+                    "Black"
+                  ],
+                  "model_numbers": [
+                    "GT-S7582"
+                  ],
+                  "connectivity": "3G Dual SIM",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20Duos%202"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S Duos 3",
+              "aliases": [
+                "Samsung SM-G313HU"
+              ],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": "4.0-inch TFT 480 x 800",
+                "processor": "Dual-core 1.0 GHz",
+                "ram": "512MB",
+                "storage": [
+                  "4GB"
+                ],
+                "battery": "1500 mAh",
+                "os": "Android 4.4",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "512MB",
+                      "storage": "4GB"
+                    }
+                  ],
+                  "colors": [
+                    "White",
+                    "Black"
+                  ],
+                  "model_numbers": [
+                    "SM-G313HU",
+                    "SM-G316HU"
+                  ],
+                  "connectivity": "3G Dual SIM",
+                  "markets": [
+                    "India",
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20Duos%203"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S II",
+              "aliases": [
+                "Samsung GT-I9100",
+                "Samsung Galaxy S II Epic 4G Touch"
+              ],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": "4.3-inch Super AMOLED Plus 480 x 800",
+                "processor": "Exynos 4210 / TI OMAP4430 / Snapdragon S3 by variant",
+                "ram": "1GB",
+                "storage": [
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": "1650 mAh / 1800 mAh by variant",
+                "os": "Android 2.3",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1GB",
+                      "storage": "16GB"
+                    },
+                    {
+                      "ram": "1GB",
+                      "storage": "32GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black",
+                    "White",
+                    "Pink"
+                  ],
+                  "model_numbers": [
+                    "GT-I9100",
+                    "GT-I9100G",
+                    "GT-I9100M",
+                    "GT-I9100P",
+                    "GT-I9100T",
+                    "SGH-I777",
+                    "SPH-D710",
+                    "SC-02C",
+                    "SHW-M250K",
+                    "SHW-M250L",
+                    "SHW-M250S"
+                  ],
+                  "connectivity": "3G/HSPA+/CDMA/WiMAX by market",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "Japan"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20II"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S II LTE",
+              "aliases": [
+                "Samsung GT-I9210"
+              ],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": "4.5-inch Super AMOLED Plus 480 x 800",
+                "processor": "Qualcomm Snapdragon S3",
+                "ram": "1GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "1850 mAh",
+                "os": "Android 2.3",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black",
+                    "White"
+                  ],
+                  "model_numbers": [
+                    "GT-I9210",
+                    "GT-I9210T"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "Canada",
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20II%20LTE"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S II Skyrocket",
+              "aliases": [
+                "Samsung SGH-I727"
+              ],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": "4.5-inch Super AMOLED Plus 480 x 800",
+                "processor": "Qualcomm Snapdragon S3",
+                "ram": "1GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "1850 mAh",
+                "os": "Android 2.3",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black",
+                    "White"
+                  ],
+                  "model_numbers": [
+                    "SGH-I727",
+                    "SGH-I727R"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "AT&T US",
+                    "Rogers Canada"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20II%20Skyrocket"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S II HD LTE",
+              "aliases": [
+                "Samsung SHV-E120S",
+                "Samsung SGH-I757M"
+              ],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": "4.65-inch Super AMOLED 720 x 1280",
+                "processor": "Qualcomm Snapdragon S3",
+                "ram": "1GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "1850 mAh",
+                "os": "Android 2.3",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black",
+                    "White"
+                  ],
+                  "model_numbers": [
+                    "SHV-E120S",
+                    "SHV-E120K",
+                    "SHV-E120L",
+                    "SGH-I757M"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Korea",
+                    "Canada"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20II%20HD%20LTE"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S II Plus",
+              "aliases": [
+                "Samsung GT-I9105"
+              ],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": "4.3-inch Super AMOLED Plus 480 x 800",
+                "processor": "Broadcom BC28155",
+                "ram": "1GB",
+                "storage": [
+                  "8GB"
+                ],
+                "battery": "1650 mAh",
+                "os": "Android 4.1.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1GB",
+                      "storage": "8GB"
+                    }
+                  ],
+                  "colors": [
+                    "Chic White",
+                    "Dark Blue"
+                  ],
+                  "model_numbers": [
+                    "GT-I9105",
+                    "GT-I9105P"
+                  ],
+                  "connectivity": "3G",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": "GT-I9105P adds NFC."
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20II%20Plus"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S III",
+              "aliases": [
+                "Samsung GT-I9300",
+                "Samsung Galaxy S3"
+              ],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": "4.8-inch Super AMOLED 720 x 1280",
+                "processor": "Exynos 4412 Quad / Snapdragon S4 by market",
+                "ram": "1GB/2GB",
+                "storage": [
+                  "16GB",
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": "2100 mAh",
+                "os": "Android 4.0.4",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1GB",
+                      "storage": "16GB"
+                    },
+                    {
+                      "ram": "1GB",
+                      "storage": "32GB"
+                    },
+                    {
+                      "ram": "1GB",
+                      "storage": "64GB"
+                    }
+                  ],
+                  "colors": [
+                    "Pebble Blue",
+                    "Marble White",
+                    "Amber Brown",
+                    "Garnet Red",
+                    "Sapphire Black",
+                    "Titanium Grey",
+                    "La Fleur"
+                  ],
+                  "model_numbers": [
+                    "GT-I9300",
+                    "GT-I9300T",
+                    "GT-I9308",
+                    "SHW-M440S"
+                  ],
+                  "connectivity": "3G",
+                  "markets": [
+                    "Global",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                },
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    },
+                    {
+                      "ram": "2GB",
+                      "storage": "32GB"
+                    }
+                  ],
+                  "colors": [
+                    "Pebble Blue",
+                    "Marble White",
+                    "Titanium Grey"
+                  ],
+                  "model_numbers": [
+                    "GT-I9305",
+                    "SGH-I747",
+                    "SGH-T999",
+                    "SPH-L710",
+                    "SCH-I535",
+                    "SCH-R530",
+                    "SC-06D"
+                  ],
+                  "connectivity": "4G LTE/CDMA by market",
+                  "markets": [
+                    "Global LTE",
+                    "US",
+                    "Canada",
+                    "Japan"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20III"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S III LTE",
+              "aliases": [
+                "Samsung GT-I9305"
+              ],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": "4.8-inch Super AMOLED 720 x 1280",
+                "processor": "Exynos 4412 Quad / Snapdragon S4 by market",
+                "ram": "2GB",
+                "storage": [
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": "2100 mAh",
+                "os": "Android 4.1",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    },
+                    {
+                      "ram": "2GB",
+                      "storage": "32GB"
+                    }
+                  ],
+                  "colors": [
+                    "Pebble Blue",
+                    "Marble White",
+                    "Titanium Grey"
+                  ],
+                  "model_numbers": [
+                    "GT-I9305",
+                    "GT-I9305T",
+                    "SHV-E210S",
+                    "SHV-E210K",
+                    "SHV-E210L"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20III%20LTE"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S III mini",
+              "aliases": [
+                "Samsung GT-I8190"
+              ],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": "4.0-inch Super AMOLED 480 x 800",
+                "processor": "ST-Ericsson NovaThor U8420",
+                "ram": "1GB",
+                "storage": [
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": "1500 mAh",
+                "os": "Android 4.1",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1GB",
+                      "storage": "8GB"
+                    },
+                    {
+                      "ram": "1GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "White",
+                    "Blue",
+                    "Titan Gray",
+                    "Garnet Red",
+                    "Onyx Black"
+                  ],
+                  "model_numbers": [
+                    "GT-I8190",
+                    "GT-I8190N",
+                    "GT-I8190L"
+                  ],
+                  "connectivity": "3G",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": "GT-I8190N adds NFC."
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20III%20mini"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S III mini VE",
+              "aliases": [
+                "Samsung GT-I8200"
+              ],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": "4.0-inch Super AMOLED 480 x 800",
+                "processor": "Dual-core 1.2 GHz",
+                "ram": "1GB",
+                "storage": [
+                  "8GB"
+                ],
+                "battery": "1500 mAh",
+                "os": "Android 4.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1GB",
+                      "storage": "8GB"
+                    }
+                  ],
+                  "colors": [
+                    "White",
+                    "Blue"
+                  ],
+                  "model_numbers": [
+                    "GT-I8200",
+                    "GT-I8200N",
+                    "GT-I8200L"
+                  ],
+                  "connectivity": "3G",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20III%20mini%20VE"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S III Neo",
+              "aliases": [
+                "Samsung GT-I9300I"
+              ],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": "4.8-inch Super AMOLED 720 x 1280",
+                "processor": "Qualcomm Snapdragon 400",
+                "ram": "1.5GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "2100 mAh",
+                "os": "Android 4.3",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1.5GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "White",
+                    "Blue"
+                  ],
+                  "model_numbers": [
+                    "GT-I9300I",
+                    "GT-I9301I"
+                  ],
+                  "connectivity": "3G Dual SIM / Single SIM by model",
+                  "markets": [
+                    "Global",
+                    "India"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S%20III%20Neo"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S4",
+              "aliases": [
+                "Samsung GT-I9500",
+                "Samsung GT-I9505"
+              ],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": "5.0-inch Super AMOLED 1080 x 1920",
+                "processor": "Exynos 5410 / Snapdragon 600 by market",
+                "ram": "2GB",
+                "storage": [
+                  "16GB",
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": "2600 mAh",
+                "os": "Android 4.2.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    },
+                    {
+                      "ram": "2GB",
+                      "storage": "32GB"
+                    },
+                    {
+                      "ram": "2GB",
+                      "storage": "64GB"
+                    }
+                  ],
+                  "colors": [
+                    "White Frost",
+                    "Black Mist",
+                    "Arctic Blue",
+                    "Black Edition",
+                    "Purple Mirage",
+                    "Red Aurora",
+                    "Brown Autumn",
+                    "Pink Twilight"
+                  ],
+                  "model_numbers": [
+                    "GT-I9500",
+                    "GT-I9505",
+                    "GT-I9505G",
+                    "GT-I9502",
+                    "GT-I9506",
+                    "SGH-I337",
+                    "SGH-M919",
+                    "SCH-I545",
+                    "SPH-L720",
+                    "SC-04E"
+                  ],
+                  "connectivity": "3G/4G LTE by model",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Japan",
+                    "China"
+                  ],
+                  "notes": "Includes major chipset and carrier variants; S4 LTE-A and Value Edition are also listed separately."
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S4"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S4 LTE-A",
+              "aliases": [
+                "Samsung SHV-E330S"
+              ],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": "5.0-inch Super AMOLED 1080 x 1920",
+                "processor": "Qualcomm Snapdragon 800",
+                "ram": "2GB",
+                "storage": [
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": "2600 mAh",
+                "os": "Android 4.2.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    },
+                    {
+                      "ram": "2GB",
+                      "storage": "32GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black Mist",
+                    "White Frost",
+                    "Rose Gold"
+                  ],
+                  "model_numbers": [
+                    "SHV-E330S",
+                    "SHV-E330K",
+                    "SHV-E330L",
+                    "GT-I9506"
+                  ],
+                  "connectivity": "4G LTE-A",
+                  "markets": [
+                    "Korea",
+                    "Europe"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S4%20LTE-A"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S4 Active",
+              "aliases": [
+                "Samsung GT-I9295"
+              ],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": "5.0-inch TFT 1080 x 1920",
+                "processor": "Qualcomm Snapdragon 600",
+                "ram": "2GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "2600 mAh",
+                "os": "Android 4.2.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Urban Gray",
+                    "Dive Blue",
+                    "Orange Flare"
+                  ],
+                  "model_numbers": [
+                    "GT-I9295",
+                    "SGH-I537"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "AT&T US"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S4%20Active"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S4 Active LTE-A",
+              "aliases": [
+                "Samsung SHV-E470S"
+              ],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": "5.0-inch TFT 1080 x 1920",
+                "processor": "Qualcomm Snapdragon 800",
+                "ram": "2GB",
+                "storage": [
+                  "32GB"
+                ],
+                "battery": "2600 mAh",
+                "os": "Android 4.2.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "32GB"
+                    }
+                  ],
+                  "colors": [
+                    "Gray"
+                  ],
+                  "model_numbers": [
+                    "SHV-E470S"
+                  ],
+                  "connectivity": "4G LTE-A",
+                  "markets": [
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S4%20Active%20LTE-A"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S4 mini",
+              "aliases": [
+                "Samsung GT-I9190"
+              ],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": "4.3-inch Super AMOLED 540 x 960",
+                "processor": "Qualcomm Snapdragon 400",
+                "ram": "1.5GB",
+                "storage": [
+                  "8GB"
+                ],
+                "battery": "1900 mAh",
+                "os": "Android 4.2.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1.5GB",
+                      "storage": "8GB"
+                    }
+                  ],
+                  "colors": [
+                    "White Frost",
+                    "Black Mist",
+                    "Blue",
+                    "Pink",
+                    "Orange"
+                  ],
+                  "model_numbers": [
+                    "GT-I9190",
+                    "GT-I9192",
+                    "GT-I9195",
+                    "GT-I9197",
+                    "SCH-I435",
+                    "SGH-I257M"
+                  ],
+                  "connectivity": "3G/4G LTE / Dual SIM by model",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S4%20mini"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S4 zoom",
+              "aliases": [
+                "Samsung SM-C101"
+              ],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": "4.3-inch Super AMOLED 540 x 960",
+                "processor": "Pega-Dual +XMM6262",
+                "ram": "1.5GB",
+                "storage": [
+                  "8GB"
+                ],
+                "battery": "2330 mAh",
+                "os": "Android 4.2.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1.5GB",
+                      "storage": "8GB"
+                    }
+                  ],
+                  "colors": [
+                    "White",
+                    "Black"
+                  ],
+                  "model_numbers": [
+                    "SM-C101",
+                    "SM-C105"
+                  ],
+                  "connectivity": "3G/4G LTE by model",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S4%20zoom"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S4 Value Edition",
+              "aliases": [
+                "Samsung GT-I9515"
+              ],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": "5.0-inch Super AMOLED 1080 x 1920",
+                "processor": "Qualcomm Snapdragon 600",
+                "ram": "2GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "2600 mAh",
+                "os": "Android 4.4",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black",
+                    "White"
+                  ],
+                  "model_numbers": [
+                    "GT-I9515",
+                    "GT-I9515L"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S4%20Value%20Edition"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S5",
+              "aliases": [
+                "Samsung SM-G900F"
+              ],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1080 x 1920",
+                "processor": "Qualcomm Snapdragon 801 / Exynos 5422 by market",
+                "ram": "2GB",
+                "storage": [
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": "2800 mAh",
+                "os": "Android 4.4.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    },
+                    {
+                      "ram": "2GB",
+                      "storage": "32GB"
+                    }
+                  ],
+                  "colors": [
+                    "Charcoal Black",
+                    "Shimmery White",
+                    "Electric Blue",
+                    "Copper Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-G900F",
+                    "SM-G900H",
+                    "SM-G900I",
+                    "SM-G900M",
+                    "SM-G900A",
+                    "SM-G900T",
+                    "SM-G900V",
+                    "SM-G900P",
+                    "SM-G900R4",
+                    "SM-G900K",
+                    "SM-G900L",
+                    "SM-G900S"
+                  ],
+                  "connectivity": "3G/4G LTE/CDMA by model",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Korea",
+                    "Latin America"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S5"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S5 LTE-A",
+              "aliases": [
+                "Samsung SM-G906S"
+              ],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1440 x 2560",
+                "processor": "Qualcomm Snapdragon 805",
+                "ram": "3GB",
+                "storage": [
+                  "32GB"
+                ],
+                "battery": "2800 mAh",
+                "os": "Android 4.4.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "3GB",
+                      "storage": "32GB"
+                    }
+                  ],
+                  "colors": [
+                    "Charcoal Black",
+                    "Shimmery White",
+                    "Electric Blue",
+                    "Copper Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-G906S",
+                    "SM-G906K",
+                    "SM-G906L"
+                  ],
+                  "connectivity": "4G LTE-A",
+                  "markets": [
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S5%20LTE-A"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S5 Plus",
+              "aliases": [
+                "Samsung SM-G901F"
+              ],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1080 x 1920",
+                "processor": "Qualcomm Snapdragon 805",
+                "ram": "2GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "2800 mAh",
+                "os": "Android 4.4.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Charcoal Black",
+                    "Shimmery White",
+                    "Electric Blue",
+                    "Copper Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-G901F"
+                  ],
+                  "connectivity": "4G LTE-A",
+                  "markets": [
+                    "Europe"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S5%20Plus"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S5 Active",
+              "aliases": [
+                "Samsung SM-G870A"
+              ],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1080 x 1920",
+                "processor": "Qualcomm Snapdragon 801",
+                "ram": "2GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "2800 mAh",
+                "os": "Android 4.4.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Camo Green",
+                    "Titanium Gray",
+                    "Ruby Red"
+                  ],
+                  "model_numbers": [
+                    "SM-G870A",
+                    "SM-G870W"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "AT&T US",
+                    "Canada"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S5%20Active"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S5 Sport",
+              "aliases": [
+                "Samsung SM-G860P"
+              ],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1080 x 1920",
+                "processor": "Qualcomm Snapdragon 801",
+                "ram": "2GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "2800 mAh",
+                "os": "Android 4.4.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Electric Blue",
+                    "Cherry Red"
+                  ],
+                  "model_numbers": [
+                    "SM-G860P"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Sprint US"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S5%20Sport"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S5 mini",
+              "aliases": [
+                "Samsung SM-G800F"
+              ],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": "4.5-inch Super AMOLED 720 x 1280",
+                "processor": "Exynos 3470 Quad / Snapdragon 400 by model",
+                "ram": "1.5GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "2100 mAh",
+                "os": "Android 4.4.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "1.5GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Charcoal Black",
+                    "Shimmery White",
+                    "Electric Blue",
+                    "Copper Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-G800F",
+                    "SM-G800H",
+                    "SM-G800Y",
+                    "SM-G800A"
+                  ],
+                  "connectivity": "3G/4G LTE by model",
+                  "markets": [
+                    "Global",
+                    "US"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S5%20mini"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S5 Neo",
+              "aliases": [
+                "Samsung SM-G903F"
+              ],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1080 x 1920",
+                "processor": "Exynos 7580 Octa",
+                "ram": "2GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": "2800 mAh",
+                "os": "Android 5.1.1",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "2GB",
+                      "storage": "16GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black",
+                    "White",
+                    "Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-G903F",
+                    "SM-G903W"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "Canada"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S5%20Neo"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S6",
+              "aliases": [
+                "Samsung SM-G920F"
+              ],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1440 x 2560",
+                "processor": "Exynos 7420 Octa",
+                "ram": "3GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": "2550 mAh",
+                "os": "Android 5.0.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "3GB",
+                      "storage": "32GB"
+                    },
+                    {
+                      "ram": "3GB",
+                      "storage": "64GB"
+                    },
+                    {
+                      "ram": "3GB",
+                      "storage": "128GB"
+                    }
+                  ],
+                  "colors": [
+                    "White Pearl",
+                    "Black Sapphire",
+                    "Gold Platinum",
+                    "Blue Topaz"
+                  ],
+                  "model_numbers": [
+                    "SM-G920F",
+                    "SM-G920I",
+                    "SM-G920A",
+                    "SM-G920T",
+                    "SM-G920V",
+                    "SM-G920P",
+                    "SM-G920R4",
+                    "SM-G920W8",
+                    "SM-G920K",
+                    "SM-G920L",
+                    "SM-G920S"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S6"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S6 edge",
+              "aliases": [
+                "Samsung SM-G925F"
+              ],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1440 x 2560",
+                "processor": "Exynos 7420 Octa",
+                "ram": "3GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": "2600 mAh",
+                "os": "Android 5.0.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "3GB",
+                      "storage": "32GB"
+                    },
+                    {
+                      "ram": "3GB",
+                      "storage": "64GB"
+                    },
+                    {
+                      "ram": "3GB",
+                      "storage": "128GB"
+                    }
+                  ],
+                  "colors": [
+                    "White Pearl",
+                    "Black Sapphire",
+                    "Gold Platinum",
+                    "Green Emerald"
+                  ],
+                  "model_numbers": [
+                    "SM-G925F",
+                    "SM-G925I",
+                    "SM-G925A",
+                    "SM-G925T",
+                    "SM-G925V",
+                    "SM-G925P",
+                    "SM-G925R4",
+                    "SM-G925W8",
+                    "SM-G925K",
+                    "SM-G925L",
+                    "SM-G925S"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S6%20edge"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S6 edge+",
+              "aliases": [
+                "Samsung SM-G928F"
+              ],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": "5.7-inch Super AMOLED 1440 x 2560",
+                "processor": "Exynos 7420 Octa",
+                "ram": "4GB",
+                "storage": [
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": "3000 mAh",
+                "os": "Android 5.1.1",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "4GB",
+                      "storage": "32GB"
+                    },
+                    {
+                      "ram": "4GB",
+                      "storage": "64GB"
+                    }
+                  ],
+                  "colors": [
+                    "White Pearl",
+                    "Black Sapphire",
+                    "Gold Platinum",
+                    "Silver Titanium"
+                  ],
+                  "model_numbers": [
+                    "SM-G928F",
+                    "SM-G928A",
+                    "SM-G928T",
+                    "SM-G928V",
+                    "SM-G928P",
+                    "SM-G928I",
+                    "SM-G928C",
+                    "SM-G928G",
+                    "SM-G928W8",
+                    "SM-G928K",
+                    "SM-G928L",
+                    "SM-G928S"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S6%20edge%2B"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S6 active",
+              "aliases": [
+                "Samsung SM-G890A"
+              ],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1440 x 2560",
+                "processor": "Exynos 7420 Octa",
+                "ram": "3GB",
+                "storage": [
+                  "32GB"
+                ],
+                "battery": "3500 mAh",
+                "os": "Android 5.0.2",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "3GB",
+                      "storage": "32GB"
+                    }
+                  ],
+                  "colors": [
+                    "White",
+                    "Gray",
+                    "Camo Blue"
+                  ],
+                  "model_numbers": [
+                    "SM-G890A"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "AT&T US"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S6%20active"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S7",
+              "aliases": [
+                "Samsung SM-G930F"
+              ],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1440 x 2560",
+                "processor": "Exynos 8890 / Snapdragon 820 by market",
+                "ram": "4GB",
+                "storage": [
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": "3000 mAh",
+                "os": "Android 6.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "4GB",
+                      "storage": "32GB"
+                    },
+                    {
+                      "ram": "4GB",
+                      "storage": "64GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black Onyx",
+                    "Gold Platinum",
+                    "Silver Titanium",
+                    "White Pearl",
+                    "Pink Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-G930F",
+                    "SM-G930FD",
+                    "SM-G930W8",
+                    "SM-G930A",
+                    "SM-G930T",
+                    "SM-G930V",
+                    "SM-G930P",
+                    "SM-G930R4",
+                    "SM-G930K",
+                    "SM-G930L",
+                    "SM-G930S"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S7"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S7 edge",
+              "aliases": [
+                "Samsung SM-G935F"
+              ],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": "5.5-inch Super AMOLED 1440 x 2560",
+                "processor": "Exynos 8890 / Snapdragon 820 by market",
+                "ram": "4GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": "3600 mAh",
+                "os": "Android 6.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "4GB",
+                      "storage": "32GB"
+                    },
+                    {
+                      "ram": "4GB",
+                      "storage": "64GB"
+                    },
+                    {
+                      "ram": "4GB",
+                      "storage": "128GB"
+                    }
+                  ],
+                  "colors": [
+                    "Black Onyx",
+                    "Gold Platinum",
+                    "Silver Titanium",
+                    "White Pearl",
+                    "Pink Gold",
+                    "Blue Coral",
+                    "Black Pearl"
+                  ],
+                  "model_numbers": [
+                    "SM-G935F",
+                    "SM-G935FD",
+                    "SM-G935W8",
+                    "SM-G935A",
+                    "SM-G935T",
+                    "SM-G935V",
+                    "SM-G935P",
+                    "SM-G935R4",
+                    "SM-G935K",
+                    "SM-G935L",
+                    "SM-G935S"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S7%20edge"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S7 active",
+              "aliases": [
+                "Samsung SM-G891A"
+              ],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": "5.1-inch Super AMOLED 1440 x 2560",
+                "processor": "Qualcomm Snapdragon 820",
+                "ram": "4GB",
+                "storage": [
+                  "32GB"
+                ],
+                "battery": "4000 mAh",
+                "os": "Android 6.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "4GB",
+                      "storage": "32GB"
+                    }
+                  ],
+                  "colors": [
+                    "Sandy Gold",
+                    "Titanium Gray",
+                    "Camo Green"
+                  ],
+                  "model_numbers": [
+                    "SM-G891A"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "AT&T US"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S7%20active"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S8",
+              "aliases": [
+                "Samsung SM-G950F"
+              ],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": "5.8-inch Super AMOLED 1440 x 2960",
+                "processor": "Exynos 8895 / Snapdragon 835 by market",
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": "3000 mAh",
+                "os": "Android 7.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "4GB",
+                      "storage": "64GB"
+                    }
+                  ],
+                  "colors": [
+                    "Midnight Black",
+                    "Orchid Gray",
+                    "Arctic Silver",
+                    "Coral Blue",
+                    "Maple Gold",
+                    "Rose Pink",
+                    "Burgundy Red"
+                  ],
+                  "model_numbers": [
+                    "SM-G950F",
+                    "SM-G950FD",
+                    "SM-G950U",
+                    "SM-G950U1",
+                    "SM-G950W",
+                    "SM-G950N",
+                    "SM-G9500"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S8"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S8+",
+              "aliases": [
+                "Samsung SM-G955F"
+              ],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": "6.2-inch Super AMOLED 1440 x 2960",
+                "processor": "Exynos 8895 / Snapdragon 835 by market",
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": "3500 mAh",
+                "os": "Android 7.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "4GB",
+                      "storage": "64GB"
+                    },
+                    {
+                      "ram": "6GB",
+                      "storage": "128GB"
+                    }
+                  ],
+                  "colors": [
+                    "Midnight Black",
+                    "Orchid Gray",
+                    "Arctic Silver",
+                    "Coral Blue",
+                    "Maple Gold",
+                    "Rose Pink",
+                    "Burgundy Red"
+                  ],
+                  "model_numbers": [
+                    "SM-G955F",
+                    "SM-G955FD",
+                    "SM-G955U",
+                    "SM-G955U1",
+                    "SM-G955W",
+                    "SM-G955N",
+                    "SM-G9550"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S8%2B"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S8 Active",
+              "aliases": [
+                "Samsung SM-G892A"
+              ],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": "5.8-inch Super AMOLED 1440 x 2960",
+                "processor": "Qualcomm Snapdragon 835",
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": "4000 mAh",
+                "os": "Android 7.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "4GB",
+                      "storage": "64GB"
+                    }
+                  ],
+                  "colors": [
+                    "Meteor Gray",
+                    "Titanium Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-G892A",
+                    "SM-G892U"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "AT&T US",
+                    "T-Mobile US"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S8%20Active"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S9",
+              "aliases": [
+                "Samsung SM-G960F"
+              ],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": "5.8-inch Super AMOLED 1440 x 2960",
+                "processor": "Exynos 9810 / Snapdragon 845 by market",
+                "ram": "4GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "3000 mAh",
+                "os": "Android 8.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "4GB",
+                      "storage": "64GB"
+                    },
+                    {
+                      "ram": "4GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "4GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "Midnight Black",
+                    "Coral Blue",
+                    "Lilac Purple",
+                    "Titanium Gray",
+                    "Sunrise Gold",
+                    "Burgundy Red",
+                    "Ice Blue",
+                    "Polaris Blue"
+                  ],
+                  "model_numbers": [
+                    "SM-G960F",
+                    "SM-G960FD",
+                    "SM-G960U",
+                    "SM-G960U1",
+                    "SM-G960W",
+                    "SM-G960N",
+                    "SM-G9600"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S9"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S9+",
+              "aliases": [
+                "Samsung SM-G965F"
+              ],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": "6.2-inch Super AMOLED 1440 x 2960",
+                "processor": "Exynos 9810 / Snapdragon 845 by market",
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "3500 mAh",
+                "os": "Android 8.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "6GB",
+                      "storage": "64GB"
+                    },
+                    {
+                      "ram": "6GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "6GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "Midnight Black",
+                    "Coral Blue",
+                    "Lilac Purple",
+                    "Titanium Gray",
+                    "Sunrise Gold",
+                    "Burgundy Red",
+                    "Ice Blue",
+                    "Polaris Blue"
+                  ],
+                  "model_numbers": [
+                    "SM-G965F",
+                    "SM-G965FD",
+                    "SM-G965U",
+                    "SM-G965U1",
+                    "SM-G965W",
+                    "SM-G965N",
+                    "SM-G9650"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S9%2B"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S10e",
+              "aliases": [
+                "Samsung SM-G970F"
+              ],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": "5.8-inch Dynamic AMOLED 1080 x 2280",
+                "processor": "Exynos 9820 / Snapdragon 855 by market",
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "3100 mAh",
+                "os": "Android 9.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "6GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "Prism White",
+                    "Prism Black",
+                    "Prism Green",
+                    "Prism Blue",
+                    "Canary Yellow",
+                    "Flamingo Pink",
+                    "Cardinal Red"
+                  ],
+                  "model_numbers": [
+                    "SM-G970F",
+                    "SM-G970U",
+                    "SM-G970U1",
+                    "SM-G970W",
+                    "SM-G970N",
+                    "SM-G9700"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S10e"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S10",
+              "aliases": [
+                "Samsung SM-G973F"
+              ],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": "6.1-inch Dynamic AMOLED 1440 x 3040",
+                "processor": "Exynos 9820 / Snapdragon 855 by market",
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "512GB"
+                ],
+                "battery": "3400 mAh",
+                "os": "Android 9.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Prism White",
+                    "Prism Black",
+                    "Prism Green",
+                    "Prism Blue",
+                    "Canary Yellow",
+                    "Flamingo Pink",
+                    "Cardinal Red"
+                  ],
+                  "model_numbers": [
+                    "SM-G973F",
+                    "SM-G973U",
+                    "SM-G973U1",
+                    "SM-G973W",
+                    "SM-G973N",
+                    "SM-G9730"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S10"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S10+",
+              "aliases": [
+                "Samsung SM-G975F"
+              ],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": "6.4-inch Dynamic AMOLED 1440 x 3040",
+                "processor": "Exynos 9820 / Snapdragon 855 by market",
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": "4100 mAh",
+                "os": "Android 9.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "512GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "1TB"
+                    }
+                  ],
+                  "colors": [
+                    "Prism White",
+                    "Prism Black",
+                    "Prism Green",
+                    "Prism Blue",
+                    "Canary Yellow",
+                    "Flamingo Pink",
+                    "Ceramic Black",
+                    "Ceramic White"
+                  ],
+                  "model_numbers": [
+                    "SM-G975F",
+                    "SM-G975U",
+                    "SM-G975U1",
+                    "SM-G975W",
+                    "SM-G975N",
+                    "SM-G9750"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S10%2B"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S10 5G",
+              "aliases": [
+                "Samsung SM-G977B"
+              ],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Dynamic AMOLED 1440 x 3040",
+                "processor": "Exynos 9820 / Snapdragon 855 by market",
+                "ram": "8GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4500 mAh",
+                "os": "Android 9.0",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Crown Silver",
+                    "Majestic Black",
+                    "Royal Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-G977B",
+                    "SM-G977U",
+                    "SM-G977N",
+                    "SM-G977P"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S10%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S10 Lite",
+              "aliases": [
+                "Samsung SM-G770F"
+              ],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Super AMOLED Plus 1080 x 2400",
+                "processor": "Qualcomm Snapdragon 855",
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "512GB"
+                ],
+                "battery": "4500 mAh",
+                "os": "Android 10",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "6GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Prism White",
+                    "Prism Black",
+                    "Prism Blue"
+                  ],
+                  "model_numbers": [
+                    "SM-G770F",
+                    "SM-G770U1"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global",
+                    "US"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S10%20Lite"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S20",
+              "aliases": [
+                "Samsung SM-G980F"
+              ],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": "6.2-inch Dynamic AMOLED 2X 1440 x 3200",
+                "processor": "Exynos 990 / Snapdragon 865 by market",
+                "ram": "8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": "4000 mAh",
+                "os": "Android 10",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cosmic Grey",
+                    "Cloud Blue",
+                    "Cloud Pink"
+                  ],
+                  "model_numbers": [
+                    "SM-G980F",
+                    "SM-G980F/DS"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S20"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S20 5G",
+              "aliases": [
+                "Samsung SM-G981B"
+              ],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": "6.2-inch Dynamic AMOLED 2X 1440 x 3200",
+                "processor": "Exynos 990 / Snapdragon 865 by market",
+                "ram": "12GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": "4000 mAh",
+                "os": "Android 10",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "128GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cosmic Grey",
+                    "Cloud Blue",
+                    "Cloud Pink"
+                  ],
+                  "model_numbers": [
+                    "SM-G981B",
+                    "SM-G981U",
+                    "SM-G981U1",
+                    "SM-G981W",
+                    "SM-G981N",
+                    "SM-G9810"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S20%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S20+",
+              "aliases": [
+                "Samsung SM-G985F"
+              ],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Dynamic AMOLED 2X 1440 x 3200",
+                "processor": "Exynos 990 / Snapdragon 865 by market",
+                "ram": "8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": "4500 mAh",
+                "os": "Android 10",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cosmic Black",
+                    "Cosmic Grey",
+                    "Cloud Blue",
+                    "Aura Blue",
+                    "Aura Red"
+                  ],
+                  "model_numbers": [
+                    "SM-G985F",
+                    "SM-G985F/DS"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S20%2B"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S20+ 5G",
+              "aliases": [
+                "Samsung SM-G986B"
+              ],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Dynamic AMOLED 2X 1440 x 3200",
+                "processor": "Exynos 990 / Snapdragon 865 by market",
+                "ram": "12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4500 mAh",
+                "os": "Android 10",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cosmic Black",
+                    "Cosmic Grey",
+                    "Cloud Blue",
+                    "Aura Blue",
+                    "Aura Red"
+                  ],
+                  "model_numbers": [
+                    "SM-G986B",
+                    "SM-G986U",
+                    "SM-G986U1",
+                    "SM-G986W",
+                    "SM-G986N",
+                    "SM-G9860"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S20%2B%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S20 Ultra",
+              "aliases": [
+                "Samsung SM-G988B LTE"
+              ],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": "6.9-inch Dynamic AMOLED 2X 1440 x 3200",
+                "processor": "Exynos 990 / Snapdragon 865 by market",
+                "ram": "12GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": "5000 mAh",
+                "os": "Android 10",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "128GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cosmic Grey",
+                    "Cosmic Black"
+                  ],
+                  "model_numbers": [
+                    "SM-G988B LTE variants by market"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Selected markets"
+                  ],
+                  "notes": "LTE-only Ultra availability varied by market."
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S20%20Ultra"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S20 Ultra 5G",
+              "aliases": [
+                "Samsung SM-G988B"
+              ],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": "6.9-inch Dynamic AMOLED 2X 1440 x 3200",
+                "processor": "Exynos 990 / Snapdragon 865 by market",
+                "ram": "12GB/16GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "5000 mAh",
+                "os": "Android 10",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "16GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cosmic Grey",
+                    "Cosmic Black",
+                    "Cloud White"
+                  ],
+                  "model_numbers": [
+                    "SM-G988B",
+                    "SM-G988U",
+                    "SM-G988U1",
+                    "SM-G988W",
+                    "SM-G988N",
+                    "SM-G9880"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S20%20Ultra%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S20 FE",
+              "aliases": [
+                "Samsung SM-G780F"
+              ],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": "6.5-inch Super AMOLED 1080 x 2400",
+                "processor": "Exynos 990 / Snapdragon 865 by market",
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "4500 mAh",
+                "os": "Android 10",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "6GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cloud Lavender",
+                    "Cloud Mint",
+                    "Cloud Navy",
+                    "Cloud White",
+                    "Cloud Red",
+                    "Cloud Orange"
+                  ],
+                  "model_numbers": [
+                    "SM-G780F",
+                    "SM-G780G"
+                  ],
+                  "connectivity": "4G LTE",
+                  "markets": [
+                    "Global"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S20%20FE"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S20 FE 5G",
+              "aliases": [
+                "Samsung SM-G781B"
+              ],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": "6.5-inch Super AMOLED 1080 x 2400",
+                "processor": "Qualcomm Snapdragon 865",
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "4500 mAh",
+                "os": "Android 10",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "6GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cloud Lavender",
+                    "Cloud Mint",
+                    "Cloud Navy",
+                    "Cloud White",
+                    "Cloud Red",
+                    "Cloud Orange"
+                  ],
+                  "model_numbers": [
+                    "SM-G781B",
+                    "SM-G781U",
+                    "SM-G781U1",
+                    "SM-G781W",
+                    "SM-G7810"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S20%20FE%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S20 FE 2022",
+              "aliases": [
+                "Samsung SM-G781NK"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": "6.5-inch Super AMOLED 1080 x 2400",
+                "processor": "Qualcomm Snapdragon 865",
+                "ram": "6GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": "4500 mAh",
+                "os": "Android 12",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "6GB",
+                      "storage": "128GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cloud White",
+                    "Cloud Lavender",
+                    "Cloud Navy"
+                  ],
+                  "model_numbers": [
+                    "SM-G781NK"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Korea"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S20%20FE%202022"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S21 5G",
+              "aliases": [
+                "Samsung SM-G991B"
+              ],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": "6.2-inch Dynamic AMOLED 2X 1080 x 2400",
+                "processor": "Exynos 2100 / Snapdragon 888 by market",
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "4000 mAh",
+                "os": "Android 11",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "Phantom Gray",
+                    "Phantom White",
+                    "Phantom Violet",
+                    "Phantom Pink"
+                  ],
+                  "model_numbers": [
+                    "SM-G991B",
+                    "SM-G991U",
+                    "SM-G991U1",
+                    "SM-G991W",
+                    "SM-G991N",
+                    "SM-G9910"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S21%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S21+ 5G",
+              "aliases": [
+                "Samsung SM-G996B"
+              ],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Dynamic AMOLED 2X 1080 x 2400",
+                "processor": "Exynos 2100 / Snapdragon 888 by market",
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "4800 mAh",
+                "os": "Android 11",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "Phantom Black",
+                    "Phantom Silver",
+                    "Phantom Violet",
+                    "Phantom Gold",
+                    "Phantom Red"
+                  ],
+                  "model_numbers": [
+                    "SM-G996B",
+                    "SM-G996U",
+                    "SM-G996U1",
+                    "SM-G996W",
+                    "SM-G996N",
+                    "SM-G9960"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S21%2B%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S21 Ultra 5G",
+              "aliases": [
+                "Samsung SM-G998B"
+              ],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": "6.8-inch Dynamic AMOLED 2X 1440 x 3200",
+                "processor": "Exynos 2100 / Snapdragon 888 by market",
+                "ram": "12GB/16GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "5000 mAh",
+                "os": "Android 11",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "16GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Phantom Black",
+                    "Phantom Silver",
+                    "Phantom Titanium",
+                    "Phantom Navy",
+                    "Phantom Brown"
+                  ],
+                  "model_numbers": [
+                    "SM-G998B",
+                    "SM-G998U",
+                    "SM-G998U1",
+                    "SM-G998W",
+                    "SM-G998N",
+                    "SM-G9980"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S21%20Ultra%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S21 FE 5G",
+              "aliases": [
+                "Samsung SM-G990B"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": "6.4-inch Dynamic AMOLED 2X 1080 x 2340",
+                "processor": "Exynos 2100 / Snapdragon 888 by market",
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "4500 mAh",
+                "os": "Android 12",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "6GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "White",
+                    "Graphite",
+                    "Lavender",
+                    "Olive"
+                  ],
+                  "model_numbers": [
+                    "SM-G990B",
+                    "SM-G990B2",
+                    "SM-G990E",
+                    "SM-G990U",
+                    "SM-G990U1",
+                    "SM-G990W",
+                    "SM-G9900"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S21%20FE%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S22 5G",
+              "aliases": [
+                "Samsung SM-S901B"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": "6.1-inch Dynamic AMOLED 2X 1080 x 2340",
+                "processor": "Exynos 2200 / Snapdragon 8 Gen 1 by market",
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "3700 mAh",
+                "os": "Android 12",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "Phantom Black",
+                    "White",
+                    "Pink Gold",
+                    "Green",
+                    "Graphite",
+                    "Cream",
+                    "Sky Blue",
+                    "Violet"
+                  ],
+                  "model_numbers": [
+                    "SM-S901B",
+                    "SM-S901U",
+                    "SM-S901U1",
+                    "SM-S901W",
+                    "SM-S901N",
+                    "SM-S9010",
+                    "SM-S901E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S22%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S22+ 5G",
+              "aliases": [
+                "Samsung SM-S906B"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": "6.6-inch Dynamic AMOLED 2X 1080 x 2340",
+                "processor": "Exynos 2200 / Snapdragon 8 Gen 1 by market",
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "4500 mAh",
+                "os": "Android 12",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "Phantom Black",
+                    "White",
+                    "Pink Gold",
+                    "Green",
+                    "Graphite",
+                    "Cream",
+                    "Sky Blue",
+                    "Violet"
+                  ],
+                  "model_numbers": [
+                    "SM-S906B",
+                    "SM-S906U",
+                    "SM-S906U1",
+                    "SM-S906W",
+                    "SM-S906N",
+                    "SM-S9060",
+                    "SM-S906E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S22%2B%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S22 Ultra 5G",
+              "aliases": [
+                "Samsung SM-S908B"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": "6.8-inch Dynamic AMOLED 2X 1440 x 3088",
+                "processor": "Exynos 2200 / Snapdragon 8 Gen 1 by market",
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": "5000 mAh",
+                "os": "Android 12",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "1TB"
+                    }
+                  ],
+                  "colors": [
+                    "Burgundy",
+                    "Phantom Black",
+                    "Phantom White",
+                    "Green",
+                    "Graphite",
+                    "Red",
+                    "Sky Blue"
+                  ],
+                  "model_numbers": [
+                    "SM-S908B",
+                    "SM-S908U",
+                    "SM-S908U1",
+                    "SM-S908W",
+                    "SM-S908N",
+                    "SM-S9080",
+                    "SM-S908E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S22%20Ultra%205G"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S23",
+              "aliases": [
+                "Samsung SM-S911B"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": "6.1-inch Dynamic AMOLED 2X 1080 x 2340",
+                "processor": "Snapdragon 8 Gen 2 for Galaxy",
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "3900 mAh",
+                "os": "Android 13",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Phantom Black",
+                    "Cream",
+                    "Green",
+                    "Lavender",
+                    "Graphite",
+                    "Lime"
+                  ],
+                  "model_numbers": [
+                    "SM-S911B",
+                    "SM-S911U",
+                    "SM-S911U1",
+                    "SM-S911W",
+                    "SM-S911N",
+                    "SM-S9110",
+                    "SM-S911E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S23"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S23+",
+              "aliases": [
+                "Samsung SM-S916B"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": "6.6-inch Dynamic AMOLED 2X 1080 x 2340",
+                "processor": "Snapdragon 8 Gen 2 for Galaxy",
+                "ram": "8GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4700 mAh",
+                "os": "Android 13",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Phantom Black",
+                    "Cream",
+                    "Green",
+                    "Lavender",
+                    "Graphite",
+                    "Lime"
+                  ],
+                  "model_numbers": [
+                    "SM-S916B",
+                    "SM-S916U",
+                    "SM-S916U1",
+                    "SM-S916W",
+                    "SM-S916N",
+                    "SM-S9160",
+                    "SM-S916E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S23%2B"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S23 Ultra",
+              "aliases": [
+                "Samsung SM-S918B"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": "6.8-inch Dynamic AMOLED 2X 1440 x 3088",
+                "processor": "Snapdragon 8 Gen 2 for Galaxy",
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": "5000 mAh",
+                "os": "Android 13",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "1TB"
+                    }
+                  ],
+                  "colors": [
+                    "Phantom Black",
+                    "Green",
+                    "Cream",
+                    "Lavender",
+                    "Graphite",
+                    "Lime",
+                    "Sky Blue",
+                    "Red"
+                  ],
+                  "model_numbers": [
+                    "SM-S918B",
+                    "SM-S918U",
+                    "SM-S918U1",
+                    "SM-S918W",
+                    "SM-S918N",
+                    "SM-S9180",
+                    "SM-S918E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S23%20Ultra"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S23 FE",
+              "aliases": [
+                "Samsung SM-S711B"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": "6.4-inch Dynamic AMOLED 2X 1080 x 2340",
+                "processor": "Exynos 2200 / Snapdragon 8 Gen 1 by market",
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": "4500 mAh",
+                "os": "Android 13",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    }
+                  ],
+                  "colors": [
+                    "Mint",
+                    "Graphite",
+                    "Cream",
+                    "Purple",
+                    "Indigo",
+                    "Tangerine"
+                  ],
+                  "model_numbers": [
+                    "SM-S711B",
+                    "SM-S711U",
+                    "SM-S711U1",
+                    "SM-S711W",
+                    "SM-S711N",
+                    "SM-S7110"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S23%20FE"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S24",
+              "aliases": [
+                "Samsung SM-S921B"
+              ],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": "6.2-inch Dynamic AMOLED 2X 1080 x 2340",
+                "processor": "Exynos 2400 / Snapdragon 8 Gen 3 for Galaxy by market",
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4000 mAh",
+                "os": "Android 14",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "512GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Onyx Black",
+                    "Marble Gray",
+                    "Cobalt Violet",
+                    "Amber Yellow",
+                    "Jade Green",
+                    "Sandstone Orange",
+                    "Sapphire Blue"
+                  ],
+                  "model_numbers": [
+                    "SM-S921B",
+                    "SM-S921U",
+                    "SM-S921U1",
+                    "SM-S921W",
+                    "SM-S921N",
+                    "SM-S9210",
+                    "SM-S921E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": "12GB configurations are market-dependent."
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S24"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S24+",
+              "aliases": [
+                "Samsung SM-S926B"
+              ],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Dynamic AMOLED 2X 1440 x 3120",
+                "processor": "Exynos 2400 / Snapdragon 8 Gen 3 for Galaxy by market",
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4900 mAh",
+                "os": "Android 14",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Onyx Black",
+                    "Marble Gray",
+                    "Cobalt Violet",
+                    "Amber Yellow",
+                    "Jade Green",
+                    "Sandstone Orange",
+                    "Sapphire Blue"
+                  ],
+                  "model_numbers": [
+                    "SM-S926B",
+                    "SM-S926U",
+                    "SM-S926U1",
+                    "SM-S926W",
+                    "SM-S926N",
+                    "SM-S9260",
+                    "SM-S926E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S24%2B"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S24 Ultra",
+              "aliases": [
+                "Samsung SM-S928B"
+              ],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": "6.8-inch Dynamic AMOLED 2X 1440 x 3120",
+                "processor": "Snapdragon 8 Gen 3 for Galaxy",
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": "5000 mAh",
+                "os": "Android 14",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "1TB"
+                    }
+                  ],
+                  "colors": [
+                    "Titanium Gray",
+                    "Titanium Black",
+                    "Titanium Violet",
+                    "Titanium Yellow",
+                    "Titanium Blue",
+                    "Titanium Green",
+                    "Titanium Orange"
+                  ],
+                  "model_numbers": [
+                    "SM-S928B",
+                    "SM-S928U",
+                    "SM-S928U1",
+                    "SM-S928W",
+                    "SM-S928N",
+                    "SM-S9280",
+                    "SM-S928E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S24%20Ultra"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S24 FE",
+              "aliases": [
+                "Samsung SM-S721B"
+              ],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Dynamic AMOLED 2X 1080 x 2340",
+                "processor": "Exynos 2400e",
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4700 mAh",
+                "os": "Android 14",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Blue",
+                    "Graphite",
+                    "Gray",
+                    "Mint",
+                    "Yellow"
+                  ],
+                  "model_numbers": [
+                    "SM-S721B",
+                    "SM-S721U",
+                    "SM-S721U1",
+                    "SM-S721W",
+                    "SM-S721N"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea"
+                  ],
+                  "notes": "512GB availability is market-dependent."
+                }
+              ],
+              "sources": [
+                "https://www.samsung.com/uk/smartphones/galaxy-s/galaxy-s24-fe-blue-128gb-sm-s721blbdeub/",
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S24%20FE"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S25",
+              "aliases": [
+                "Samsung SM-S931B"
+              ],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": "6.2-inch Dynamic LTPO AMOLED 2X 1080 x 2340",
+                "processor": "Snapdragon 8 Elite for Galaxy",
+                "ram": "12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4000 mAh",
+                "os": "Android 15",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Icyblue",
+                    "Mint",
+                    "Navy",
+                    "Silver Shadow",
+                    "Blueblack",
+                    "Pinkgold",
+                    "Coralred"
+                  ],
+                  "model_numbers": [
+                    "SM-S931B",
+                    "SM-S931U",
+                    "SM-S931U1",
+                    "SM-S931W",
+                    "SM-S931N",
+                    "SM-S9310",
+                    "SM-S931E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": "128GB availability varies by market."
+                }
+              ],
+              "sources": [
+                "https://www.samsung.com/us/smartphones/galaxy-s25/",
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S25"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S25+",
+              "aliases": [
+                "Samsung SM-S936B"
+              ],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Dynamic LTPO AMOLED 2X 1440 x 3120",
+                "processor": "Snapdragon 8 Elite for Galaxy",
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4900 mAh",
+                "os": "Android 15",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Icyblue",
+                    "Mint",
+                    "Navy",
+                    "Silver Shadow",
+                    "Blueblack",
+                    "Pinkgold",
+                    "Coralred"
+                  ],
+                  "model_numbers": [
+                    "SM-S936B",
+                    "SM-S936U",
+                    "SM-S936U1",
+                    "SM-S936W",
+                    "SM-S936N",
+                    "SM-S9360",
+                    "SM-S936E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.samsung.com/us/smartphones/galaxy-s25/",
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S25%2B"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S25 Ultra",
+              "aliases": [
+                "Samsung SM-S938B"
+              ],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": "6.9-inch Dynamic LTPO AMOLED 2X 1440 x 3120",
+                "processor": "Snapdragon 8 Elite for Galaxy",
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": "5000 mAh",
+                "os": "Android 15",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "1TB"
+                    },
+                    {
+                      "ram": "16GB",
+                      "storage": "1TB"
+                    }
+                  ],
+                  "colors": [
+                    "Titanium Silverblue",
+                    "Titanium Black",
+                    "Titanium Whitesilver",
+                    "Titanium Gray",
+                    "Titanium Jadegreen",
+                    "Titanium Jetblack",
+                    "Titanium Pinkgold"
+                  ],
+                  "model_numbers": [
+                    "SM-S938B",
+                    "SM-S938U",
+                    "SM-S938U1",
+                    "SM-S938W",
+                    "SM-S938N",
+                    "SM-S9380",
+                    "SM-S938E"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China",
+                    "Latin America"
+                  ],
+                  "notes": "16GB/1TB is region-dependent."
+                }
+              ],
+              "sources": [
+                "https://www.samsung.com/us/smartphones/galaxy-s25-ultra/",
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S25%20Ultra"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S25 Edge",
+              "aliases": [
+                "Samsung SM-S937B"
+              ],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Dynamic LTPO AMOLED 2X 1440 x 3120",
+                "processor": "Snapdragon 8 Elite for Galaxy",
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "3900 mAh",
+                "os": "Android 15",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Titanium Silver",
+                    "Titanium Icyblue",
+                    "Titanium Jetblack"
+                  ],
+                  "model_numbers": [
+                    "SM-S937B",
+                    "SM-S937U",
+                    "SM-S937U1",
+                    "SM-S937W",
+                    "SM-S937N",
+                    "SM-S9370"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea",
+                    "China"
+                  ],
+                  "notes": null
+                }
+              ],
+              "sources": [
+                "https://www.samsung.com/us/smartphones/galaxy-s25-edge/",
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S25%20Edge"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S25 FE",
+              "aliases": [
+                "Samsung SM-S731B"
+              ],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Dynamic AMOLED 2X 1080 x 2340",
+                "processor": "Exynos 2400",
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4900 mAh",
+                "os": "Android 16",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "8GB",
+                      "storage": "128GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "8GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Icyblue",
+                    "Jetblack",
+                    "Navy",
+                    "White",
+                    "Blue"
+                  ],
+                  "model_numbers": [
+                    "SM-S731B",
+                    "SM-S731U",
+                    "SM-S731U1",
+                    "SM-S731W",
+                    "SM-S731N"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "Global",
+                    "US",
+                    "Canada",
+                    "Korea"
+                  ],
+                  "notes": "Included because it is listed as released in public Galaxy S25 lineup sources; verify local availability before importing for a specific market."
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Samsung_Galaxy_S25",
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S25%20FE"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S26",
+              "aliases": [
+                "Samsung SM-S942"
+              ],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": "6.3-inch Dynamic AMOLED 2X",
+                "processor": "Snapdragon 8 Elite Gen 5 for Galaxy",
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4300 mAh",
+                "os": "Android 16",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cobalt Violet",
+                    "Sky Blue",
+                    "Black",
+                    "White",
+                    "Silver Shadow",
+                    "Pink Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-S942U",
+                    "SM-S942U1"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "US",
+                    "Global availability varies"
+                  ],
+                  "notes": "Samsung.com-only colors: Silver Shadow, Pink Gold."
+                }
+              ],
+              "sources": [
+                "https://www.samsung.com/us/smartphones/galaxy-s26/",
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S26"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S26+",
+              "aliases": [
+                "Samsung SM-S947"
+              ],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": "6.7-inch Dynamic AMOLED 2X",
+                "processor": "Snapdragon 8 Elite Gen 5 for Galaxy",
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": "4900 mAh",
+                "os": "Android 16",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    }
+                  ],
+                  "colors": [
+                    "Cobalt Violet",
+                    "Sky Blue",
+                    "Black",
+                    "White",
+                    "Silver Shadow",
+                    "Pink Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-S947U",
+                    "SM-S947U1"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "US",
+                    "Global availability varies"
+                  ],
+                  "notes": "Samsung.com-only colors: Silver Shadow, Pink Gold."
+                }
+              ],
+              "sources": [
+                "https://www.samsung.com/us/smartphones/galaxy-s26/",
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S26%2B"
+              ]
+            },
+            {
+              "name": "Samsung Galaxy S26 Ultra",
+              "aliases": [
+                "Samsung SM-S948"
+              ],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": "6.9-inch Dynamic AMOLED 2X",
+                "processor": "Snapdragon 8 Elite Gen 5 for Galaxy",
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": "5000 mAh",
+                "os": "Android 16",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "storage_ram": [
+                    {
+                      "ram": "12GB",
+                      "storage": "256GB"
+                    },
+                    {
+                      "ram": "12GB",
+                      "storage": "512GB"
+                    },
+                    {
+                      "ram": "16GB",
+                      "storage": "1TB"
+                    }
+                  ],
+                  "colors": [
+                    "Cobalt Violet",
+                    "Sky Blue",
+                    "Black",
+                    "White",
+                    "Silver Shadow",
+                    "Pink Gold"
+                  ],
+                  "model_numbers": [
+                    "SM-S948U",
+                    "SM-S948U1"
+                  ],
+                  "connectivity": "5G",
+                  "markets": [
+                    "US",
+                    "Global availability varies"
+                  ],
+                  "notes": "Samsung.com-only colors: Silver Shadow, Pink Gold."
+                }
+              ],
+              "sources": [
+                "https://www.samsung.com/us/smartphones/galaxy-s26-ultra/",
+                "https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=Samsung%20Galaxy%20S26%20Ultra"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

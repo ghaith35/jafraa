@@ -1,0 +1,3053 @@
+{
+  "name": "Thomson",
+  "sortOrder": 19,
+  "aliases": [],
+  "families": [
+    {
+      "name": "Neo",
+      "models": [
+        {
+          "name": "Thomson NEO 10",
+          "releaseYear": 2017,
+          "imageUrl": "https://i5.walmartimages.com/asr/9d0c57c9-07d3-4598-9b4b-a835f651970e.395aa3f4c0a6d47ea7d6c4d3054dc5ae.jpeg",
+          "specs": {
+            "display": "10.1–11.6\" HD touchscreen or clamshell display",
+            "processor": "Intel Atom x5 / Intel Celeron N-series",
+            "ram": "2–4 GB",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "approx. 1.0–1.3 kg",
+            "dimensions": "varies by Thomson NEO 10/11 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 10 32 GB eMMC Silver",
+              "processor": "Intel Atom x5",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 10 64 GB eMMC Black",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 10 128 GB SSD White",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 11",
+          "releaseYear": 2021,
+          "imageUrl": "https://i5.walmartimages.com/asr/9d0c57c9-07d3-4598-9b4b-a835f651970e.395aa3f4c0a6d47ea7d6c4d3054dc5ae.jpeg",
+          "specs": {
+            "display": "10.1–11.6\" HD touchscreen or clamshell display",
+            "processor": "Intel Atom x5 / Intel Celeron N-series",
+            "ram": "2–4 GB",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "approx. 1.0–1.3 kg",
+            "dimensions": "varies by Thomson NEO 10/11 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 11 32 GB eMMC Silver",
+              "processor": "Intel Atom x5",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 11 64 GB eMMC Black",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 11 128 GB SSD White",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 10 Atom",
+          "releaseYear": 2017,
+          "imageUrl": "https://i5.walmartimages.com/asr/9d0c57c9-07d3-4598-9b4b-a835f651970e.395aa3f4c0a6d47ea7d6c4d3054dc5ae.jpeg",
+          "specs": {
+            "display": "10.1–11.6\" HD touchscreen or clamshell display",
+            "processor": "Intel Atom x5 / Intel Celeron N-series",
+            "ram": "2–4 GB",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "approx. 1.0–1.3 kg",
+            "dimensions": "varies by Thomson NEO 10/11 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 10 Atom 32 GB eMMC Silver",
+              "processor": "Intel Atom x5",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 10 Atom 64 GB eMMC Black",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 10 Atom 128 GB SSD White",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 10.1 Windows 10",
+          "releaseYear": 2017,
+          "imageUrl": "https://i5.walmartimages.com/asr/9d0c57c9-07d3-4598-9b4b-a835f651970e.395aa3f4c0a6d47ea7d6c4d3054dc5ae.jpeg",
+          "specs": {
+            "display": "10.1–11.6\" HD touchscreen or clamshell display",
+            "processor": "Intel Atom x5 / Intel Celeron N-series",
+            "ram": "2–4 GB",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "approx. 1.0–1.3 kg",
+            "dimensions": "varies by Thomson NEO 10/11 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 10.1 Windows 10 32 GB eMMC Silver",
+              "processor": "Intel Atom x5",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 10.1 Windows 10 64 GB eMMC Black",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 10.1 Windows 10 128 GB SSD White",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 11.6",
+          "releaseYear": 2021,
+          "imageUrl": "https://i5.walmartimages.com/asr/9d0c57c9-07d3-4598-9b4b-a835f651970e.395aa3f4c0a6d47ea7d6c4d3054dc5ae.jpeg",
+          "specs": {
+            "display": "10.1–11.6\" HD touchscreen or clamshell display",
+            "processor": "Intel Atom x5 / Intel Celeron N-series",
+            "ram": "2–4 GB",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "approx. 1.0–1.3 kg",
+            "dimensions": "varies by Thomson NEO 10/11 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 11.6 32 GB eMMC Silver",
+              "processor": "Intel Atom x5",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 11.6 64 GB eMMC Black",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 11.6 128 GB SSD White",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 11C",
+          "releaseYear": 2021,
+          "imageUrl": "https://i5.walmartimages.com/asr/9d0c57c9-07d3-4598-9b4b-a835f651970e.395aa3f4c0a6d47ea7d6c4d3054dc5ae.jpeg",
+          "specs": {
+            "display": "10.1–11.6\" HD touchscreen or clamshell display",
+            "processor": "Intel Atom x5 / Intel Celeron N-series",
+            "ram": "2–4 GB",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "approx. 1.0–1.3 kg",
+            "dimensions": "varies by Thomson NEO 10/11 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 11C 32 GB eMMC Silver",
+              "processor": "Intel Atom x5",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 11C 64 GB eMMC Black",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 11C 128 GB SSD White",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 11A",
+          "releaseYear": 2021,
+          "imageUrl": "https://i5.walmartimages.com/asr/9d0c57c9-07d3-4598-9b4b-a835f651970e.395aa3f4c0a6d47ea7d6c4d3054dc5ae.jpeg",
+          "specs": {
+            "display": "10.1–11.6\" HD touchscreen or clamshell display",
+            "processor": "Intel Atom x5 / Intel Celeron N-series",
+            "ram": "2–4 GB",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "approx. 1.0–1.3 kg",
+            "dimensions": "varies by Thomson NEO 10/11 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 11A 32 GB eMMC Silver",
+              "processor": "Intel Atom x5",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 11A 64 GB eMMC Black",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 11A 128 GB SSD White",
+              "processor": "Intel Atom x5",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 Atom",
+          "releaseYear": 2017,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 Atom 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 Atom 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 Atom 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14A",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14A 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14A 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14A 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 N14C4WH64",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 N14C4WH64 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 N14C4WH64 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 N14C4WH64 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 N14C4SL64",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 N14C4SL64 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 N14C4SL64 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 N14C4SL64 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 N14C4WH128",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 N14C4WH128 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 N14C4WH128 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 N14C4WH128 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 N14C4SL128",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 N14C4SL128 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 N14C4SL128 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 N14C4SL128 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 N14C4WH256",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 N14C4WH256 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 N14C4WH256 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 N14C4WH256 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 N14C8SL256",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 N14C8SL256 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 N14C8SL256 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 N14C8SL256 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 N14C8SL512",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 N14C8SL512 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 N14C8SL512 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 N14C8SL512 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 Intel Celeron N4020",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 Intel Celeron N4020 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 Intel Celeron N4020 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 Intel Celeron N4020 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 Intel Core i3",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Celeron N4020 / Intel Core i3 12th Gen / Intel Core i5",
+            "ram": "4–16 GB LPDDR4/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 11 Home / Windows 11 S Mode",
+            "weight": "approx. 1.2–1.35 kg",
+            "dimensions": "approx. 326 × 220 × 20 mm, varies by SKU"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 Intel Core i3 128 GB SSD Silver",
+              "processor": "Intel Celeron N4020",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 Intel Core i3 256 GB SSD Black",
+              "processor": "Intel Celeron N4020",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 Intel Core i3 512 GB SSD White",
+              "processor": "Intel Celeron N4020",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 Intel Core i5",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Celeron N4020 / Intel Core i3 12th Gen / Intel Core i5",
+            "ram": "4–16 GB LPDDR4/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 11 Home / Windows 11 S Mode",
+            "weight": "approx. 1.2–1.35 kg",
+            "dimensions": "approx. 326 × 220 × 20 mm, varies by SKU"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 Intel Core i5 128 GB SSD Silver",
+              "processor": "Intel Celeron N4020",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 Intel Core i5 256 GB SSD Black",
+              "processor": "Intel Celeron N4020",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 Intel Core i5 512 GB SSD White",
+              "processor": "Intel Celeron N4020",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 IN-N14C",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Atom / Intel Celeron N3350 / Intel Celeron N4020",
+            "ram": "2–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC",
+              "128 GB SSD",
+              "256 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.35 kg",
+            "dimensions": "varies by NEO 14 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 IN-N14C 32 GB eMMC Silver",
+              "processor": "Intel Atom",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 IN-N14C 64 GB eMMC Black",
+              "processor": "Intel Atom",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 IN-N14C 128 GB SSD White",
+              "processor": "Intel Atom",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 IN-N14I",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Celeron N4020 / Intel Core i3 12th Gen / Intel Core i5",
+            "ram": "4–16 GB LPDDR4/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 11 Home / Windows 11 S Mode",
+            "weight": "approx. 1.2–1.35 kg",
+            "dimensions": "approx. 326 × 220 × 20 mm, varies by SKU"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 IN-N14I 128 GB SSD Silver",
+              "processor": "Intel Celeron N4020",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 IN-N14I 256 GB SSD Black",
+              "processor": "Intel Celeron N4020",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 IN-N14I 512 GB SSD White",
+              "processor": "Intel Celeron N4020",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 14 Core 12th Gen",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-14-n14c4wh64-n14c4wh64-white-77966-1.jpg",
+          "specs": {
+            "display": "14.1\" HD/FHD IPS display",
+            "processor": "Intel Celeron N4020 / Intel Core i3 12th Gen / Intel Core i5",
+            "ram": "4–16 GB LPDDR4/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "8000 mAh 7.6 V / up to 5–14 hours depending SKU",
+            "os": "Windows 11 Home / Windows 11 S Mode",
+            "weight": "approx. 1.2–1.35 kg",
+            "dimensions": "approx. 326 × 220 × 20 mm, varies by SKU"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 14 Core 12th Gen 128 GB SSD Silver",
+              "processor": "Intel Celeron N4020",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 14 Core 12th Gen 256 GB SSD Black",
+              "processor": "Intel Celeron N4020",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 14 Core 12th Gen 512 GB SSD White",
+              "processor": "Intel Celeron N4020",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 N15C4SL128",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 N15C4SL128 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 N15C4SL128 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 N15C4SL128 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 N15C4WH128",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 N15C4WH128 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 N15C4WH128 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 N15C4WH128 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 N15C4SL256",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 N15C4SL256 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 N15C4SL256 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 N15C4SL256 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 N15C8SL256",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 N15C8SL256 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 N15C8SL256 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 N15C8SL256 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 N15C8SL512",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 N15C8SL512 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 N15C8SL512 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 N15C8SL512 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 Intel Celeron N3350",
+          "releaseYear": 2017,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 Intel Celeron N3350 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Celeron N3350 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Celeron N3350 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 Intel Celeron N4020",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 Intel Celeron N4020 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Celeron N4020 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Celeron N4020 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 Intel Celeron N5100",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD IPS display",
+            "processor": "Intel Celeron N5100",
+            "ram": "8 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "approx. 1.65–1.85 kg",
+            "dimensions": "varies by NEO 15 Jasper Lake chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 Intel Celeron N5100 256 GB SSD Silver",
+              "processor": "Intel Celeron N5100",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Celeron N5100 512 GB SSD Black",
+              "processor": "Intel Celeron N5100",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Celeron N5100 512 GB SSD Black Alt",
+              "processor": "Intel Celeron N5100",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 Intel Core i3",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 Intel Core i3 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Core i3 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Core i3 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 Intel Core i5",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 Intel Core i5 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Core i5 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Core i5 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 Intel Core i7",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 Intel Core i7 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Core i7 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Core i7 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 Intel Core 8th Gen",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 Intel Core 8th Gen 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Core 8th Gen 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Core 8th Gen 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 Intel Core 12th Gen",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD IPS display",
+            "processor": "Intel Core i3/i5/i7 12th Gen",
+            "ram": "8–16 GB LPDDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "approx. 1.65–1.85 kg",
+            "dimensions": "varies by NEO 15 Core chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 Intel Core 12th Gen 256 GB SSD Silver",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Core 12th Gen 512 GB SSD Black",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 Intel Core 12th Gen 512 GB SSD Black Alt",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 IN-N15V2C",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD display, 1920×1080",
+            "processor": "Intel Celeron N3350 / Intel Celeron N4020 / Intel Core i3/i5",
+            "ram": "4–8 GB DDR3/DDR4/LPDDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–6 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home / Windows 11 S Mode",
+            "weight": "1.65–1.93 kg",
+            "dimensions": "varies by NEO 15 generation"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 IN-N15V2C 128 GB SSD Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 IN-N15V2C 256 GB SSD Black",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 IN-N15V2C 512 GB SSD White",
+              "processor": "Intel Celeron N3350",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 IN-N15I312",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD IPS display",
+            "processor": "Intel Core i3/i5/i7 12th Gen",
+            "ram": "8–16 GB LPDDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "approx. 1.65–1.85 kg",
+            "dimensions": "varies by NEO 15 Core chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 IN-N15I312 256 GB SSD Silver",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 IN-N15I312 512 GB SSD Black",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 IN-N15I312 512 GB SSD Black Alt",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 IN-N15I512",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD IPS display",
+            "processor": "Intel Core i3/i5/i7 12th Gen",
+            "ram": "8–16 GB LPDDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "approx. 1.65–1.85 kg",
+            "dimensions": "varies by NEO 15 Core chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 IN-N15I512 256 GB SSD Silver",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 IN-N15I512 512 GB SSD Black",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 IN-N15I512 512 GB SSD Black Alt",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 15 IN-N15I712",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6\" FHD IPS display",
+            "processor": "Intel Core i3/i5/i7 12th Gen",
+            "ram": "8–16 GB LPDDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "approx. 1.65–1.85 kg",
+            "dimensions": "varies by NEO 15 Core chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 15 IN-N15I712 256 GB SSD Silver",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 15 IN-N15I712 512 GB SSD Black",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 15 IN-N15I712 512 GB SSD Black Alt",
+              "processor": "Intel Core i3/i5/i7 12th Gen",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 17",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "17.3\" HD+/FHD notebook display",
+            "processor": "Intel Celeron / Intel Core i3/i5",
+            "ram": "4–16 GB DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home",
+            "weight": "approx. 2.1–2.4 kg",
+            "dimensions": "varies by NEO 17 regional chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 17 128 GB SSD Silver",
+              "processor": "Intel Celeron",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 17 256 GB SSD Black",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 17 512 GB SSD White",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 17.3",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "17.3\" HD+/FHD notebook display",
+            "processor": "Intel Celeron / Intel Core i3/i5",
+            "ram": "4–16 GB DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home",
+            "weight": "approx. 2.1–2.4 kg",
+            "dimensions": "varies by NEO 17 regional chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 17.3 128 GB SSD Silver",
+              "processor": "Intel Celeron",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 17.3 256 GB SSD Black",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 17.3 512 GB SSD White",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 17 N17C",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "17.3\" HD+/FHD notebook display",
+            "processor": "Intel Celeron / Intel Core i3/i5",
+            "ram": "4–16 GB DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home",
+            "weight": "approx. 2.1–2.4 kg",
+            "dimensions": "varies by NEO 17 regional chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 17 N17C 128 GB SSD Silver",
+              "processor": "Intel Celeron",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 17 N17C 256 GB SSD Black",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 17 N17C 512 GB SSD White",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 17 N17I",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "17.3\" HD+/FHD notebook display",
+            "processor": "Intel Celeron / Intel Core i3/i5",
+            "ram": "4–16 GB DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home",
+            "weight": "approx. 2.1–2.4 kg",
+            "dimensions": "varies by NEO 17 regional chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 17 N17I 128 GB SSD Silver",
+              "processor": "Intel Celeron",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 17 N17I 256 GB SSD Black",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 17 N17I 512 GB SSD White",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 17 Core i3",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "17.3\" HD+/FHD notebook display",
+            "processor": "Intel Celeron / Intel Core i3/i5",
+            "ram": "4–16 GB DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home",
+            "weight": "approx. 2.1–2.4 kg",
+            "dimensions": "varies by NEO 17 regional chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 17 Core i3 128 GB SSD Silver",
+              "processor": "Intel Celeron",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 17 Core i3 256 GB SSD Black",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 17 Core i3 512 GB SSD White",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 17 Core i5",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "17.3\" HD+/FHD notebook display",
+            "processor": "Intel Celeron / Intel Core i3/i5",
+            "ram": "4–16 GB DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home",
+            "weight": "approx. 2.1–2.4 kg",
+            "dimensions": "varies by NEO 17 regional chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 17 Core i5 128 GB SSD Silver",
+              "processor": "Intel Celeron",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 17 Core i5 256 GB SSD Black",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 17 Core i5 512 GB SSD White",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO 17 Windows 11",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "17.3\" HD+/FHD notebook display",
+            "processor": "Intel Celeron / Intel Core i3/i5",
+            "ram": "4–16 GB DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11 Home",
+            "weight": "approx. 2.1–2.4 kg",
+            "dimensions": "varies by NEO 17 regional chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO 17 Windows 11 128 GB SSD Silver",
+              "processor": "Intel Celeron",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO 17 Windows 11 256 GB SSD Black",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO 17 Windows 11 512 GB SSD White",
+              "processor": "Intel Celeron",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO Core 14 Intel Core i3 12th Gen",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "14.1–15.6\" HD/FHD thin-and-light display",
+            "processor": "Intel Core i3 1215U / Intel Core i5 12th Gen / Intel Core i7 12th Gen",
+            "ram": "8–16 GB",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "1.35–1.65 kg",
+            "dimensions": "varies by NEO Core N14/N15 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO Core 14 Intel Core i3 12th Gen 256 GB SSD Silver",
+              "processor": "Intel Core i3 1215U",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO Core 14 Intel Core i3 12th Gen 512 GB SSD Black",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO Core 14 Intel Core i3 12th Gen 512 GB SSD Black Alt",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO Core 14 Intel Core i5 12th Gen",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "14.1–15.6\" HD/FHD thin-and-light display",
+            "processor": "Intel Core i3 1215U / Intel Core i5 12th Gen / Intel Core i7 12th Gen",
+            "ram": "8–16 GB",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "1.35–1.65 kg",
+            "dimensions": "varies by NEO Core N14/N15 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO Core 14 Intel Core i5 12th Gen 256 GB SSD Silver",
+              "processor": "Intel Core i3 1215U",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO Core 14 Intel Core i5 12th Gen 512 GB SSD Black",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO Core 14 Intel Core i5 12th Gen 512 GB SSD Black Alt",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO Core 15 Intel Core i3 12th Gen",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "14.1–15.6\" HD/FHD thin-and-light display",
+            "processor": "Intel Core i3 1215U / Intel Core i5 12th Gen / Intel Core i7 12th Gen",
+            "ram": "8–16 GB",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "1.35–1.65 kg",
+            "dimensions": "varies by NEO Core N14/N15 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO Core 15 Intel Core i3 12th Gen 256 GB SSD Silver",
+              "processor": "Intel Core i3 1215U",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO Core 15 Intel Core i3 12th Gen 512 GB SSD Black",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO Core 15 Intel Core i3 12th Gen 512 GB SSD Black Alt",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO Core 15 Intel Core i5 12th Gen",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "14.1–15.6\" HD/FHD thin-and-light display",
+            "processor": "Intel Core i3 1215U / Intel Core i5 12th Gen / Intel Core i7 12th Gen",
+            "ram": "8–16 GB",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "1.35–1.65 kg",
+            "dimensions": "varies by NEO Core N14/N15 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO Core 15 Intel Core i5 12th Gen 256 GB SSD Silver",
+              "processor": "Intel Core i3 1215U",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO Core 15 Intel Core i5 12th Gen 512 GB SSD Black",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO Core 15 Intel Core i5 12th Gen 512 GB SSD Black Alt",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO Core 15 Intel Core i7 12th Gen",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "14.1–15.6\" HD/FHD thin-and-light display",
+            "processor": "Intel Core i3 1215U / Intel Core i5 12th Gen / Intel Core i7 12th Gen",
+            "ram": "8–16 GB",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "1.35–1.65 kg",
+            "dimensions": "varies by NEO Core N14/N15 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO Core 15 Intel Core i7 12th Gen 256 GB SSD Silver",
+              "processor": "Intel Core i3 1215U",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO Core 15 Intel Core i7 12th Gen 512 GB SSD Black",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO Core 15 Intel Core i7 12th Gen 512 GB SSD Black Alt",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO Core Series IN-N14I",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "14.1–15.6\" HD/FHD thin-and-light display",
+            "processor": "Intel Core i3 1215U / Intel Core i5 12th Gen / Intel Core i7 12th Gen",
+            "ram": "8–16 GB",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "1.35–1.65 kg",
+            "dimensions": "varies by NEO Core N14/N15 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO Core Series IN-N14I 256 GB SSD Silver",
+              "processor": "Intel Core i3 1215U",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO Core Series IN-N14I 512 GB SSD Black",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO Core Series IN-N14I 512 GB SSD Black Alt",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO Core Series IN-N15I",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "14.1–15.6\" HD/FHD thin-and-light display",
+            "processor": "Intel Core i3 1215U / Intel Core i5 12th Gen / Intel Core i7 12th Gen",
+            "ram": "8–16 GB",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "1.35–1.65 kg",
+            "dimensions": "varies by NEO Core N14/N15 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO Core Series IN-N15I 256 GB SSD Silver",
+              "processor": "Intel Core i3 1215U",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO Core Series IN-N15I 512 GB SSD Black",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO Core Series IN-N15I 512 GB SSD Black Alt",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO Core Series IN-N15I312-8GR512",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "14.1–15.6\" HD/FHD thin-and-light display",
+            "processor": "Intel Core i3 1215U / Intel Core i5 12th Gen / Intel Core i7 12th Gen",
+            "ram": "8–16 GB",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "1.35–1.65 kg",
+            "dimensions": "varies by NEO Core N14/N15 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO Core Series IN-N15I312-8GR512 256 GB SSD Silver",
+              "processor": "Intel Core i3 1215U",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO Core Series IN-N15I312-8GR512 512 GB SSD Black",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO Core Series IN-N15I312-8GR512 512 GB SSD Black Alt",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson NEO Core Series IN-N15I512-16GR512",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "14.1–15.6\" HD/FHD thin-and-light display",
+            "processor": "Intel Core i3 1215U / Intel Core i5 12th Gen / Intel Core i7 12th Gen",
+            "ram": "8–16 GB",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 5–8 hours, Wh not consistently disclosed",
+            "os": "Windows 11 Home",
+            "weight": "1.35–1.65 kg",
+            "dimensions": "varies by NEO Core N14/N15 chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson NEO Core Series IN-N15I512-16GR512 256 GB SSD Silver",
+              "processor": "Intel Core i3 1215U",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson NEO Core Series IN-N15I512-16GR512 512 GB SSD Black",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson NEO Core Series IN-N15I512-16GR512 512 GB SSD Black Alt",
+              "processor": "Intel Core i3 1215U",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "models": [
+        {
+          "name": "Thomson Hero 10",
+          "releaseYear": 2016,
+          "imageUrl": null,
+          "specs": {
+            "display": "10.1\" IPS touch display, 1280×800",
+            "processor": "Intel Atom Z3735F quad-core, 1.33 GHz base / 1.83 GHz burst",
+            "ram": "2 GB DDR3",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC"
+            ],
+            "battery": "5000 mAh Li-ion",
+            "os": "Windows 10",
+            "weight": "about 0.60 kg tablet / about 1.0 kg with keyboard dock",
+            "dimensions": "tablet about 258 × 173 × 10 mm; 2-in-1 chassis varies by keyboard bundle"
+          },
+          "variants": [
+            {
+              "name": "Thomson Hero 10 Atom Z3735F/2GB/32GB Grey",
+              "processor": "Intel Atom Z3735F",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Grey"
+            },
+            {
+              "name": "Thomson Hero 10 Atom Z3735F/2GB/64GB Grey",
+              "processor": "Intel Atom Z3735F",
+              "ram": "2 GB",
+              "storage": "64 GB eMMC",
+              "color": "Grey"
+            },
+            {
+              "name": "Thomson Hero 10 Atom Z3735F/2GB/32GB Black",
+              "processor": "Intel Atom Z3735F",
+              "ram": "2 GB",
+              "storage": "32 GB eMMC",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Hero 13",
+          "releaseYear": 2018,
+          "imageUrl": null,
+          "specs": {
+            "display": "13.3\" IPS touch display, 2560×1440 / FHD-class regional variants",
+            "processor": "Intel Celeron N4000 dual-core, 1.1 GHz base / 2.6 GHz burst",
+            "ram": "4 GB LPDDR4 / DDR3L depending on variant",
+            "storage": [
+              "32 GB eMMC",
+              "64 GB eMMC"
+            ],
+            "battery": "11000 mAh",
+            "os": "Windows 10 Home",
+            "weight": "0.85 kg tablet; higher with keyboard cover",
+            "dimensions": "314 × 189 × 10.6 mm"
+          },
+          "variants": [
+            {
+              "name": "Thomson Hero 13 Celeron N4000/4GB/32GB Black",
+              "processor": "Intel Celeron N4000",
+              "ram": "4 GB",
+              "storage": "32 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Hero 13 Celeron N4000/4GB/64GB Black",
+              "processor": "Intel Celeron N4000",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Hero 13 Celeron N4000/4GB/32GB Grey",
+              "processor": "Intel Celeron N4000",
+              "ram": "4 GB",
+              "storage": "32 GB eMMC",
+              "color": "Grey"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Hero 14",
+          "releaseYear": 2018,
+          "imageUrl": null,
+          "specs": {
+            "display": "14.0\" HD (1366×768) / 14.1\" HD (1366×768) TN or LCD display depending on regional Hero/Neo 14 configuration",
+            "processor": "Intel Atom x5-Z8350 / Intel Celeron N3350 / Intel Core i3 regional variants",
+            "ram": "4 GB DDR3L",
+            "storage": [
+              "64 GB eMMC",
+              "128 GB SSD"
+            ],
+            "battery": "about 37 Wh / regional capacity varies",
+            "os": "Windows 10 S / Windows 10 Home",
+            "weight": "1.35 kg",
+            "dimensions": "347 × 230 × 18 mm"
+          },
+          "variants": [
+            {
+              "name": "Thomson Hero 14 Atom x5/4GB/64GB White",
+              "processor": "Intel Atom x5-Z8350",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "White"
+            },
+            {
+              "name": "Thomson Hero 14 Celeron N3350/4GB/64GB Silver",
+              "processor": "Intel Celeron N3350",
+              "ram": "4 GB",
+              "storage": "64 GB eMMC",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Hero 14 Core i3/4GB/128GB Silver",
+              "processor": "Intel Core i3",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Hero 15",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6–17.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8–16 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "gaming notebook battery, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.7 kg",
+            "dimensions": "varies by Thomson Hero/gaming chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Hero 15 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Hero 15 512 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Hero 15 1 TB HDD + 256 GB SSD White",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Hero 17",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6–17.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8–16 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "gaming notebook battery, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.7 kg",
+            "dimensions": "varies by Thomson Hero/gaming chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Hero 17 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Hero 17 512 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Hero 17 1 TB HDD + 256 GB SSD White",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Hero Gaming 15",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6–17.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8–16 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "gaming notebook battery, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.7 kg",
+            "dimensions": "varies by Thomson Hero/gaming chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Hero Gaming 15 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Hero Gaming 15 512 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Hero Gaming 15 1 TB HDD + 256 GB SSD White",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Hero Gaming 17",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6–17.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8–16 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "gaming notebook battery, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.7 kg",
+            "dimensions": "varies by Thomson Hero/gaming chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Hero Gaming 17 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Hero Gaming 17 512 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Hero Gaming 17 1 TB HDD + 256 GB SSD White",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Gaming 15 GTX",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6–17.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8–16 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "gaming notebook battery, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.7 kg",
+            "dimensions": "varies by Thomson Hero/gaming chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Gaming 15 GTX 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Gaming 15 GTX 512 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Gaming 15 GTX 1 TB HDD + 256 GB SSD White",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Gaming 17 GTX",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6–17.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8–16 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "gaming notebook battery, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.7 kg",
+            "dimensions": "varies by Thomson Hero/gaming chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Gaming 17 GTX 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Gaming 17 GTX 512 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Gaming 17 GTX 1 TB HDD + 256 GB SSD White",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Hero Core i5",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6–17.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8–16 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "gaming notebook battery, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.7 kg",
+            "dimensions": "varies by Thomson Hero/gaming chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Hero Core i5 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Hero Core i5 512 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Hero Core i5 1 TB HDD + 256 GB SSD White",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Hero Core i7",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "15.6–17.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8–16 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "gaming notebook battery, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.7 kg",
+            "dimensions": "varies by Thomson Hero/gaming chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Hero Core i7 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Hero Core i7 512 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Hero Core i7 1 TB HDD + 256 GB SSD White",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "White"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Prestige",
+      "models": [
+        {
+          "name": "Thomson Prestige 13",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "13.3–15.6\" FHD ultrabook display",
+            "processor": "Intel Core i3/i5/i7 U-series",
+            "ram": "4–16 GB",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 6–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.8 kg",
+            "dimensions": "varies by Thomson X / Prestige chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Prestige 13 128 GB SSD Silver",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Prestige 13 256 GB SSD Black",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Prestige 13 512 GB SSD White",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Prestige 14",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "13.3–15.6\" FHD ultrabook display",
+            "processor": "Intel Core i3/i5/i7 U-series",
+            "ram": "4–16 GB",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 6–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.8 kg",
+            "dimensions": "varies by Thomson X / Prestige chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Prestige 14 128 GB SSD Silver",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Prestige 14 256 GB SSD Black",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Prestige 14 512 GB SSD White",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        },
+        {
+          "name": "Thomson Prestige 15",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "13.3–15.6\" FHD ultrabook display",
+            "processor": "Intel Core i3/i5/i7 U-series",
+            "ram": "4–16 GB",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 6–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.8 kg",
+            "dimensions": "varies by Thomson X / Prestige chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson Prestige 15 128 GB SSD Silver",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson Prestige 15 256 GB SSD Black",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson Prestige 15 512 GB SSD White",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Thomson X15 Gaming",
+      "models": [
+        {
+          "name": "Thomson X15",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.laptoparena.net/images/thomson/notebook-thomson-neo-15-n15c4sl128-n15c4sl128-silver-77967-1.jpg",
+          "specs": {
+            "display": "13.3–15.6\" FHD ultrabook display",
+            "processor": "Intel Core i3/i5/i7 U-series",
+            "ram": "4–16 GB",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "up to 6–8 hours, Wh not consistently disclosed",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.2–1.8 kg",
+            "dimensions": "varies by Thomson X / Prestige chassis"
+          },
+          "variants": [
+            {
+              "name": "Thomson X15 128 GB SSD Silver",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "4 GB",
+              "storage": "128 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "Thomson X15 256 GB SSD Black",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Thomson X15 512 GB SSD White",
+              "processor": "Intel Core i3/i5/i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "White"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

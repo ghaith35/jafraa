@@ -4,13 +4,380 @@ import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/db";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
+import { EXPANDED_LAPTOP_CATALOG } from "../../../../prisma/catalog/laptop-catalog-expanded";
+import { EXPANDED_PHONE_CATALOG } from "../../../../prisma/catalog/phone-catalog-expanded";
+import { APPLE_ENRICHED_CATALOG } from "../../../../prisma/catalog/apple-catalog-enriched";
+import { SAMSUNG_ENRICHED_CATALOG } from "../../../../prisma/catalog/samsung-catalog-enriched";
 
-// ─── Types ───────────────────────────────────────────────────────────────────
+import brandAcer from "../../../data/catalog/laptops/brands/acer.json";
+import brandApple from "../../../data/catalog/laptops/brands/apple.json";
+import brandAsus from "../../../data/catalog/laptops/brands/asus.json";
+import brandChuwi from "../../../data/catalog/laptops/brands/chuwi.json";
+import brandCondor from "../../../data/catalog/laptops/brands/condor.json";
+import brandDell from "../../../data/catalog/laptops/brands/dell.json";
+import brandFujitsu from "../../../data/catalog/laptops/brands/fujitsu.json";
+import brandGigabyteAorus from "../../../data/catalog/laptops/brands/gigabyte---aorus.json";
+import brandHp from "../../../data/catalog/laptops/brands/hp.json";
+import brandHonor from "../../../data/catalog/laptops/brands/honor.json";
+import brandHuawei from "../../../data/catalog/laptops/brands/huawei.json";
+import brandLenovo from "../../../data/catalog/laptops/brands/lenovo.json";
+import brandLg from "../../../data/catalog/laptops/brands/lg.json";
+import brandMedion from "../../../data/catalog/laptops/brands/medion.json";
+import brandMicrosoftSurface from "../../../data/catalog/laptops/brands/microsoft-surface.json";
+import brandMsi from "../../../data/catalog/laptops/brands/msi.json";
+import brandRazer from "../../../data/catalog/laptops/brands/razer.json";
+import brandSamsung from "../../../data/catalog/laptops/brands/samsung.json";
+import brandSonyVaio from "../../../data/catalog/laptops/brands/sony---vaio.json";
+import brandThomson from "../../../data/catalog/laptops/brands/thomson.json";
+import brandToshibaDynabook from "../../../data/catalog/laptops/brands/toshiba---dynabook.json";
+
+// ─── Types ────────────────────────────────────────────────────────────────────
 
 type ActionError = { error: string };
 type CatalogManagerAuth =
   | { ok: false; error: string }
   | { ok: true; session: NonNullable<Awaited<ReturnType<typeof getSession>>> };
+
+const VIRTUAL_LAPTOP_FAMILY_PREFIX = "virtual:laptop-family:";
+const VIRTUAL_LAPTOP_MODEL_PREFIX = "virtual:laptop-model:";
+const VIRTUAL_PHONE_FAMILY_PREFIX = "virtual:phone-family:";
+const VIRTUAL_PHONE_MODEL_PREFIX = "virtual:phone-model:";
+
+type BrandCatalogModel = {
+  name: string;
+  releaseYear: number | null;
+  imageUrl: string | null;
+  specs: Record<string, unknown> | null;
+  variants: unknown[] | null;
+};
+
+type BrandCatalogFamily = {
+  name: string;
+  models: BrandCatalogModel[];
+};
+
+type BrandCatalog = {
+  name: string;
+  sortOrder: number;
+  aliases: string[];
+  families: BrandCatalogFamily[];
+};
+
+const BRAND_CATALOGS: BrandCatalog[] = [
+  brandAcer,
+  brandApple,
+  brandAsus,
+  brandChuwi,
+  brandCondor,
+  brandDell,
+  brandFujitsu,
+  brandGigabyteAorus,
+  brandHp,
+  brandHonor,
+  brandHuawei,
+  brandLenovo,
+  brandLg,
+  brandMedion,
+  brandMicrosoftSurface,
+  brandMsi,
+  brandRazer,
+  brandSamsung,
+  brandSonyVaio,
+  brandThomson,
+  brandToshibaDynabook,
+];
+
+const BRAND_CATALOG_BY_NAME = new Map<string, BrandCatalog>(
+  BRAND_CATALOGS.flatMap((cat) => {
+    const entries: [string, BrandCatalog][] = [[normalizeCatalogName(cat.name), cat]];
+    for (const alias of cat.aliases) {
+      entries.push([normalizeCatalogName(alias), cat]);
+    }
+    return entries;
+  }),
+);
+
+function normalizeCatalogName(value: string) {
+  return value.trim().replace(/\s+/g, " ").toLowerCase();
+}
+
+function makeVirtualLaptopFamilyId(brandId: string, familyName: string) {
+  return `${VIRTUAL_LAPTOP_FAMILY_PREFIX}${brandId}:${encodeURIComponent(familyName)}`;
+}
+
+function makeVirtualPhoneFamilyId(brandId: string, familyName: string) {
+  return `${VIRTUAL_PHONE_FAMILY_PREFIX}${brandId}:${encodeURIComponent(familyName)}`;
+}
+
+function parseVirtualLaptopFamilyId(id: string) {
+  if (!id.startsWith(VIRTUAL_LAPTOP_FAMILY_PREFIX)) return null;
+  const rest = id.slice(VIRTUAL_LAPTOP_FAMILY_PREFIX.length);
+  const separator = rest.indexOf(":");
+  if (separator === -1) return null;
+  return {
+    brandId: rest.slice(0, separator),
+    familyName: decodeURIComponent(rest.slice(separator + 1)),
+  };
+}
+
+function parseVirtualPhoneFamilyId(id: string) {
+  if (!id.startsWith(VIRTUAL_PHONE_FAMILY_PREFIX)) return null;
+  const rest = id.slice(VIRTUAL_PHONE_FAMILY_PREFIX.length);
+  const separator = rest.indexOf(":");
+  if (separator === -1) return null;
+  return {
+    brandId: rest.slice(0, separator),
+    familyName: decodeURIComponent(rest.slice(separator + 1)),
+  };
+}
+
+function laptopBrandDef(brandName: string) {
+  const normalized = normalizeCatalogName(brandName);
+  return EXPANDED_LAPTOP_CATALOG.find(
+    (brand) =>
+      normalizeCatalogName(brand.name) === normalized ||
+      (brand.aliases ?? []).some((a) => normalizeCatalogName(a) === normalized),
+  ) ?? null;
+}
+
+function phoneBrandDef(brandName: string) {
+  const normalized = normalizeCatalogName(brandName);
+  return EXPANDED_PHONE_CATALOG.find(
+    (brand) => normalizeCatalogName(brand.name) === normalized,
+  ) ?? null;
+}
+
+function appleEnrichedBrandDef(brandName: string) {
+  return normalizeCatalogName(brandName) === normalizeCatalogName(APPLE_ENRICHED_CATALOG.brandName)
+    ? APPLE_ENRICHED_CATALOG
+    : null;
+}
+
+function phoneEnrichedBrandDef(brandName: string) {
+  const normalized = normalizeCatalogName(brandName);
+  if (normalized === normalizeCatalogName(APPLE_ENRICHED_CATALOG.brandName)) return APPLE_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(SAMSUNG_ENRICHED_CATALOG.brandName)) return SAMSUNG_ENRICHED_CATALOG;
+  return null;
+}
+
+function phoneFamilyDef(brandName: string, familyName: string) {
+  const brandDef = phoneBrandDef(brandName);
+  const normalizedFamily = normalizeCatalogName(familyName);
+  return brandDef?.families.find((family) => normalizeCatalogName(family.name) === normalizedFamily) ?? null;
+}
+
+function appleEnrichedModelsForFamily(brandName: string, familyName: string) {
+  const brandDef = phoneEnrichedBrandDef(brandName);
+  const normalizedFamily = normalizeCatalogName(familyName);
+  return brandDef?.families.find((family) => normalizeCatalogName(family.name) === normalizedFamily)?.models ?? [];
+}
+
+function isMeaningfulRecord(value: unknown) {
+  return !!value && typeof value === "object" && !Array.isArray(value) && Object.keys(value).length > 0;
+}
+
+function isNonEmptyArray(value: unknown): value is unknown[] {
+  return Array.isArray(value) && value.length > 0;
+}
+
+function familyNameMatches(sourceFamily: string, normalizedFamily: string, strippedFamily: string): boolean {
+  if (sourceFamily === normalizedFamily) return true;
+  if (sourceFamily.startsWith(normalizedFamily + " ")) return true;
+  if (normalizedFamily.startsWith(sourceFamily + " ")) return true;
+  if (sourceFamily === strippedFamily) return true;
+  if (sourceFamily.startsWith(strippedFamily + " ")) return true;
+  if (strippedFamily.startsWith(sourceFamily + " ")) return true;
+  return false;
+}
+
+function getBrandCatalog(brandName: string): BrandCatalog | null {
+  return BRAND_CATALOG_BY_NAME.get(normalizeCatalogName(brandName)) ?? null;
+}
+
+function getBrandCatalogModelsForFamily(brandName: string, familyName: string): BrandCatalogModel[] {
+  const catalog = getBrandCatalog(brandName);
+  if (!catalog) return [];
+
+  const normalizedFamily = normalizeCatalogName(familyName);
+  const brandPrefix = normalizeCatalogName(catalog.name) + " ";
+  const strippedFamily = normalizedFamily.startsWith(brandPrefix)
+    ? normalizedFamily.slice(brandPrefix.length)
+    : normalizedFamily;
+
+  const models: BrandCatalogModel[] = [];
+
+  for (const family of catalog.families) {
+    const sourceFamily = normalizeCatalogName(family.name);
+    if (!familyNameMatches(sourceFamily, normalizedFamily, strippedFamily)) continue;
+
+    for (const model of family.models) {
+      const key = normalizeCatalogName(model.name);
+      if (!models.some((m) => normalizeCatalogName(m.name) === key)) {
+        models.push(model);
+      }
+    }
+  }
+
+  return models;
+}
+
+function laptopFallbackModelsForFamily(familyId: string, brandName: string, familyName: string) {
+  const brandDef = laptopBrandDef(brandName);
+  const catalogModels = getBrandCatalogModelsForFamily(brandName, familyName);
+  const now = new Date(0);
+
+  if (catalogModels.length > 0 && brandDef) {
+    const expandedFamily = brandDef.families.find(
+      (f) => normalizeCatalogName(f.name) === normalizeCatalogName(familyName),
+    );
+
+    if (expandedFamily && expandedFamily.models.length > 0) {
+      const catalogByName = new Map<string, BrandCatalogModel>();
+      for (const cm of catalogModels) {
+        catalogByName.set(normalizeCatalogName(cm.name), cm);
+      }
+
+      const seen = new Set<string>();
+      const results: Array<{
+        id: string;
+        familyId: string;
+        name: string;
+        releaseYear: number | null;
+        imageUrl: string | null;
+        specs: Record<string, unknown>;
+        variants: unknown[];
+        sortOrder: number;
+        isActive: boolean;
+        createdAt: Date;
+        updatedAt: Date;
+      }> = [];
+
+      for (let i = 0; i < expandedFamily.models.length; i++) {
+        const modelName = expandedFamily.models[i];
+        const key = normalizeCatalogName(modelName);
+        if (seen.has(key)) continue;
+        seen.add(key);
+
+        const catalogMatch = catalogByName.get(key)
+          ?? [...catalogByName.entries()].find(([k]) => k.startsWith(key) || key.startsWith(k))?.[1];
+
+        if (catalogMatch) {
+          results.push({
+            id: `${VIRTUAL_LAPTOP_MODEL_PREFIX}${familyId}:${encodeURIComponent(catalogMatch.name)}`,
+            familyId,
+            name: catalogMatch.name,
+            releaseYear: catalogMatch.releaseYear,
+            imageUrl: catalogMatch.imageUrl,
+            specs: catalogMatch.specs ?? {},
+            variants: Array.isArray(catalogMatch.variants) ? catalogMatch.variants : [],
+            sortOrder: i + 1,
+            isActive: true,
+            createdAt: now,
+            updatedAt: now,
+          });
+        } else {
+          results.push({
+            id: `${VIRTUAL_LAPTOP_MODEL_PREFIX}${familyId}:${encodeURIComponent(modelName)}`,
+            familyId,
+            name: modelName,
+            releaseYear: null,
+            imageUrl: null,
+            specs: {},
+            variants: [],
+            sortOrder: i + 1,
+            isActive: true,
+            createdAt: now,
+            updatedAt: now,
+          });
+        }
+      }
+
+      for (const cm of catalogModels) {
+        const key = normalizeCatalogName(cm.name);
+        if (seen.has(key)) continue;
+        seen.add(key);
+        results.push({
+          id: `${VIRTUAL_LAPTOP_MODEL_PREFIX}${familyId}:${encodeURIComponent(cm.name)}`,
+          familyId,
+          name: cm.name,
+          releaseYear: cm.releaseYear,
+          imageUrl: cm.imageUrl,
+          specs: cm.specs ?? {},
+          variants: Array.isArray(cm.variants) ? cm.variants : [],
+          sortOrder: results.length + 1,
+          isActive: true,
+          createdAt: now,
+          updatedAt: now,
+        });
+      }
+
+      return results;
+    }
+
+    return catalogModels.map((model, index) => ({
+      id: `${VIRTUAL_LAPTOP_MODEL_PREFIX}${familyId}:${encodeURIComponent(model.name)}`,
+      familyId,
+      name: model.name,
+      releaseYear: model.releaseYear,
+      imageUrl: model.imageUrl,
+      specs: model.specs ?? {},
+      variants: Array.isArray(model.variants) ? model.variants : [],
+      sortOrder: index + 1,
+      isActive: true,
+      createdAt: now,
+      updatedAt: now,
+    }));
+  }
+
+  if (brandDef) {
+    const expandedFamily = brandDef.families.find(
+      (f) => normalizeCatalogName(f.name) === normalizeCatalogName(familyName),
+    );
+    if (expandedFamily) {
+      return expandedFamily.models.map((modelName, index) => ({
+        id: `${VIRTUAL_LAPTOP_MODEL_PREFIX}${familyId}:${encodeURIComponent(modelName)}`,
+        familyId,
+        name: modelName,
+        releaseYear: null,
+        imageUrl: null,
+        specs: {},
+        variants: [],
+        sortOrder: index + 1,
+        isActive: true,
+        createdAt: now,
+        updatedAt: now,
+      }));
+    }
+  }
+
+  return [];
+}
+
+function phoneFallbackModelsForFamily(familyId: string, brandName: string, familyName: string) {
+  const familyDef = phoneFamilyDef(brandName, familyName);
+  const enrichedModels = appleEnrichedModelsForFamily(brandName, familyName);
+  const enrichedByName = new Map(enrichedModels.map((model) => [normalizeCatalogName(model.name), model]));
+  const now = new Date(0);
+
+  if (!familyDef) return [];
+
+  return familyDef.models.map((modelName, index) => {
+    const enriched = enrichedByName.get(normalizeCatalogName(modelName));
+    return {
+      id: `${VIRTUAL_PHONE_MODEL_PREFIX}${familyId}:${encodeURIComponent(modelName)}`,
+      familyId,
+      name: enriched?.name ?? modelName,
+      releaseYear: enriched?.releaseYear ?? null,
+      imageUrl: enriched?.imageUrl ?? null,
+      specs: enriched?.specs ?? {},
+      variants: enriched?.variants ?? [],
+      sortOrder: index + 1,
+      isActive: true,
+      createdAt: now,
+      updatedAt: now,
+    };
+  });
+}
 
 // ─── Read queries ────────────────────────────────────────────────────────────
 
@@ -32,6 +399,7 @@ export async function listBrandsByCategory(
   return prisma.deviceBrand.findMany({
     where: {
       categoryId,
+      isActive: true,
       OR: [
         // Global defaults
         { isGlobalDefault: true },
@@ -57,22 +425,97 @@ export async function listBrandsByCategory(
  */
 export async function listFamiliesByBrand(
   brandId: string,
-  opts?: { companyId?: string; storeId?: string }
+  opts?: { companyId?: string; storeId?: string; includeLaptopModelFallback?: boolean }
 ) {
-  const families = await prisma.deviceModelFamily.findMany({
-    where: {
-      brandId,
-      OR: [
-        { isGlobalDefault: true },
-        ...(opts?.companyId
-          ? [{ companyId: opts.companyId, storeId: opts.storeId ?? null }]
-          : []),
-        ...(opts?.companyId
-          ? [{ companyId: opts.companyId, storeId: null }]
-          : []),
-      ],
-    },
-  });
+  const scopeWhere = [
+    { isGlobalDefault: true },
+    ...(opts?.companyId
+      ? [{ companyId: opts.companyId, storeId: opts.storeId ?? null }]
+      : []),
+    ...(opts?.companyId
+      ? [{ companyId: opts.companyId, storeId: null }]
+      : []),
+  ];
+
+  const [brand, dbFamilies] = await Promise.all([
+    prisma.deviceBrand.findUnique({
+      where: { id: brandId },
+      select: { id: true, name: true, category: { select: { key: true } } },
+    }),
+    prisma.deviceModelFamily.findMany({
+      where: {
+        brandId,
+        isActive: true,
+        OR: scopeWhere,
+      },
+    }),
+  ]);
+
+  let families = dbFamilies;
+
+  if (brand?.category.key === "laptop" && opts?.includeLaptopModelFallback) {
+    const brandDef = laptopBrandDef(brand.name);
+    if (brandDef) {
+      const properFamilyNames = new Set(brandDef.families.map((family) => normalizeCatalogName(family.name)));
+      const existingFamilyNames = new Set(families.map((family) => normalizeCatalogName(family.name)));
+
+      families = families.filter((family) => {
+        if (!family.isGlobalDefault) return true;
+        return properFamilyNames.has(normalizeCatalogName(family.name));
+      });
+
+      const now = new Date(0);
+      const virtualFamilies = brandDef.families
+        .filter((family) => !existingFamilyNames.has(normalizeCatalogName(family.name)))
+        .map((family, index) => ({
+          id: makeVirtualLaptopFamilyId(brand.id, family.name),
+          brandId: brand.id,
+          companyId: null,
+          storeId: null,
+          name: family.name,
+          sortOrder: index + 1,
+          isGlobalDefault: true,
+          isActive: true,
+          createdAt: now,
+          updatedAt: now,
+        }));
+
+      families = [...families, ...virtualFamilies];
+    }
+  }
+
+  if (brand?.category.key === "phone") {
+    const brandDef = phoneBrandDef(brand.name);
+    if (brandDef) {
+      const properFamilyNames = new Set(brandDef.families.map((family) => normalizeCatalogName(family.name)));
+
+      families = families.filter((family) => {
+        if (!family.isGlobalDefault) return true;
+        return properFamilyNames.has(normalizeCatalogName(family.name));
+      });
+
+      if (opts?.includeLaptopModelFallback) {
+        const existingFamilyNames = new Set(families.map((family) => normalizeCatalogName(family.name)));
+        const now = new Date(0);
+        const virtualFamilies = brandDef.families
+          .filter((family) => !existingFamilyNames.has(normalizeCatalogName(family.name)))
+          .map((family, index) => ({
+            id: makeVirtualPhoneFamilyId(brand.id, family.name),
+            brandId: brand.id,
+            companyId: null,
+            storeId: null,
+            name: family.name,
+            sortOrder: index + 1,
+            isGlobalDefault: true,
+            isActive: true,
+            createdAt: now,
+            updatedAt: now,
+          }));
+
+        families = [...families, ...virtualFamilies];
+      }
+    }
+  }
 
   const maxYears = await prisma.deviceModel.groupBy({
     by: ["familyId"],
@@ -92,10 +535,79 @@ export async function listFamiliesByBrand(
  * List device models for a family.
  */
 export async function listModelsByFamily(familyId: string) {
-  return prisma.deviceModel.findMany({
-    where: { familyId },
+  const virtualLaptopFamily = parseVirtualLaptopFamilyId(familyId);
+  if (virtualLaptopFamily) {
+    const brand = await prisma.deviceBrand.findUnique({
+      where: { id: virtualLaptopFamily.brandId },
+      select: { name: true },
+    });
+    if (!brand) return [];
+    return laptopFallbackModelsForFamily(familyId, brand.name, virtualLaptopFamily.familyName);
+  }
+
+  const virtualPhoneFamily = parseVirtualPhoneFamilyId(familyId);
+  if (virtualPhoneFamily) {
+    const brand = await prisma.deviceBrand.findUnique({
+      where: { id: virtualPhoneFamily.brandId },
+      select: { name: true },
+    });
+    if (!brand) return [];
+    return phoneFallbackModelsForFamily(familyId, brand.name, virtualPhoneFamily.familyName);
+  }
+
+  const models = await prisma.deviceModel.findMany({
+    where: { familyId, isActive: true },
     orderBy: [{ releaseYear: { sort: "desc", nulls: "last" } }, { sortOrder: "asc" }, { name: "asc" }],
   });
+
+  const family = await prisma.deviceModelFamily.findUnique({
+    where: { id: familyId },
+    select: {
+      name: true,
+      brand: {
+        select: {
+          name: true,
+          category: { select: { key: true } },
+        },
+      },
+    },
+  });
+
+  if (family?.brand.category.key === "phone") {
+    const fallbackModels = phoneFallbackModelsForFamily(familyId, family.brand.name, family.name);
+    if (fallbackModels.length === 0) return models;
+
+    const allowedModelNames = new Set(fallbackModels.map((model) => normalizeCatalogName(model.name)));
+    const fallbackByName = new Map(fallbackModels.map((model) => [normalizeCatalogName(model.name), model]));
+    const mergedModels = models
+      .filter((model) => allowedModelNames.has(normalizeCatalogName(model.name)))
+      .map((model) => {
+        const fallback = fallbackByName.get(normalizeCatalogName(model.name));
+        if (!fallback) return model;
+        return {
+          ...model,
+          releaseYear: model.releaseYear ?? fallback.releaseYear,
+          imageUrl: model.imageUrl ?? fallback.imageUrl,
+          specs: isMeaningfulRecord(model.specs) ? model.specs : fallback.specs,
+          variants: isNonEmptyArray(model.variants) ? model.variants : fallback.variants,
+        };
+      });
+
+    const existingModelNames = new Set(mergedModels.map((model) => normalizeCatalogName(model.name)));
+    const missingFallbackModels = fallbackModels.filter((model) => !existingModelNames.has(normalizeCatalogName(model.name)));
+
+    return [...mergedModels, ...missingFallbackModels].sort((a, b) => a.sortOrder - b.sortOrder || a.name.localeCompare(b.name));
+  }
+
+  if (family?.brand.category.key !== "laptop") return models;
+
+  const fallbackModels = laptopFallbackModelsForFamily(familyId, family.brand.name, family.name);
+  if (fallbackModels.length === 0) return models;
+
+  const existingModelNames = new Set(models.map((model) => normalizeCatalogName(model.name)));
+  const missingFallbackModels = fallbackModels.filter((model) => !existingModelNames.has(normalizeCatalogName(model.name)));
+
+  return [...models, ...missingFallbackModels].sort((a, b) => a.sortOrder - b.sortOrder || a.name.localeCompare(b.name));
 }
 
 /** Search brands across all categories (for autocomplete/search) */
@@ -343,6 +855,7 @@ export async function createCatalogSuggestion(
       modelName: { equals: modelName, mode: "insensitive" },
       ...(input.categoryId ? { categoryId: input.categoryId } : {}),
       ...(input.brandId ? { brandId: input.brandId } : {}),
+      ...(input.familyId ? { familyId: input.familyId } : {}),
     },
     select: { id: true },
   });
@@ -471,34 +984,105 @@ export async function approveCatalogSuggestion(id: string): Promise<ActionError 
           },
           select: { id: true },
         })).id;
+      } else {
+        const targetBrand = await tx.deviceBrand.findFirst({
+          where: {
+            id: brandId,
+            categoryId,
+            OR: [
+              { isGlobalDefault: true },
+              { companyId: session.companyId, storeId },
+              { companyId: session.companyId, storeId: null },
+            ],
+          },
+          select: { id: true },
+        });
+        if (!targetBrand) throw new Error("Marque introuvable");
       }
 
-      const existingFamily = await tx.deviceModelFamily.findFirst({
-        where: {
-          brandId,
-          name: { equals: modelName, mode: "insensitive" },
-          OR: [{ isGlobalDefault: true }, { companyId: session.companyId, storeId }, { companyId: session.companyId, storeId: null }],
-        },
+      let familyId: string;
+      let familyExisted: boolean;
+
+      if (suggestion.familyId) {
+        const targetFamily = await tx.deviceModelFamily.findFirst({
+          where: {
+            id: suggestion.familyId,
+            brandId,
+            OR: [
+              { isGlobalDefault: true },
+              { companyId: session.companyId, storeId },
+              { companyId: session.companyId, storeId: null },
+            ],
+          },
+          select: { id: true, name: true },
+        });
+        if (!targetFamily) throw new Error("Famille introuvable");
+        familyId = targetFamily.id;
+        familyExisted = true;
+      } else {
+        const familyName = suggestion.seriesName?.trim()
+          || suggestion.modelLine?.trim()
+          || suggestion.generation?.trim()
+          || modelName;
+
+        const existingFamily = await tx.deviceModelFamily.findFirst({
+          where: {
+            brandId,
+            name: { equals: familyName, mode: "insensitive" },
+            OR: [{ isGlobalDefault: true }, { companyId: session.companyId, storeId }, { companyId: session.companyId, storeId: null }],
+          },
+          select: { id: true },
+        });
+
+        familyExisted = !!existingFamily;
+
+        familyId = existingFamily?.id ?? (await tx.deviceModelFamily.create({
+          data: {
+            brandId,
+            companyId: session.companyId,
+            storeId,
+            name: familyName,
+            sortOrder: 50,
+            isGlobalDefault: false,
+            isActive: true,
+          },
+          select: { id: true },
+        })).id;
+      }
+
+      const specs: Record<string, string> = {};
+      if (suggestion.processor) specs.processor = suggestion.processor.trim();
+      if (suggestion.ram) specs.ram = suggestion.ram.trim();
+      if (suggestion.storage) specs.storage = suggestion.storage.trim();
+      if (suggestion.gpu) specs.gpu = suggestion.gpu.trim();
+
+      const existingModel = await tx.deviceModel.findFirst({
+        where: { familyId, name: { equals: modelName, mode: "insensitive" } },
         select: { id: true },
       });
 
-      const familyId = existingFamily?.id ?? (await tx.deviceModelFamily.create({
-        data: {
-          brandId,
-          companyId: session.companyId,
-          storeId,
-          name: modelName,
-          sortOrder: 50,
-          isGlobalDefault: false,
-          isActive: true,
-        },
-        select: { id: true },
-      })).id;
+      const existingModelId = existingModel?.id ?? null;
+
+      if (!existingModelId) {
+        await tx.deviceModel.create({
+          data: {
+            familyId,
+            name: modelName,
+            specs: Object.keys(specs).length > 0 ? specs : undefined,
+            sortOrder: 50,
+            isActive: true,
+          },
+        });
+      }
+
+      const status = familyExisted
+        ? (existingModelId ? "merged" : "approved")
+        : "approved";
 
       await tx.deviceCatalogSuggestion.update({
         where: { id },
         data: {
-          status: existingFamily ? "merged" : "approved",
+          status,
           approvedFamilyId: familyId,
           reviewedAt: new Date(),
           reviewedByUserId: session.sub,

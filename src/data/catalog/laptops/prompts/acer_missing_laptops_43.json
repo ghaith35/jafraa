@@ -1,0 +1,1806 @@
+[
+  {
+    "modelName": "Acer Aspire ES15",
+    "releaseYear": 2015,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366×768) LED-backlit display",
+      "processor": "Intel Celeron N3050/N3160, Pentium N3700, or Intel Core i3/i5 U-series",
+      "ram": "2–8 GB DDR3L",
+      "storage": [
+        "500 GB HDD",
+        "1 TB HDD",
+        "128 GB SSD"
+      ],
+      "battery": "36–37 Wh, 3-cell Li-ion",
+      "os": "Windows 8.1 / Windows 10",
+      "weight": "2.4 kg",
+      "dimensions": "381.6 × 258 × 24.6 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire ES15 Celeron/4GB/500GB Black",
+        "processor": "Intel Celeron N3050",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire ES15 Pentium/4GB/1TB Black",
+        "processor": "Intel Pentium N3700",
+        "ram": "4 GB",
+        "storage": "1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire ES15 i3/8GB/128GB Black",
+        "processor": "Intel Core i3-5005U",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire V7",
+    "releaseYear": 2013,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" or 15.6\" HD/FHD IPS touchscreen display",
+      "processor": "Intel Core i5-3337U / i7-3537U / i5-4200U / i7-4500U",
+      "ram": "4–12 GB DDR3L",
+      "storage": [
+        "500 GB HDD",
+        "1 TB HDD",
+        "128 GB SSD",
+        "256 GB SSD"
+      ],
+      "battery": "53 Wh, 4-cell Li-polymer",
+      "os": "Windows 8 / Windows 8.1",
+      "weight": "1.95–2.3 kg",
+      "dimensions": "approx. 340 × 240 × 20.7 mm (14\") / 381 × 255 × 20.75 mm (15.6\")"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire V7 i5/4GB/500GB Silver",
+        "processor": "Intel Core i5-3337U",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Silver"
+      },
+      {
+        "name": "Acer Aspire V7 i7/8GB/1TB Silver",
+        "processor": "Intel Core i7-4500U",
+        "ram": "8 GB",
+        "storage": "1 TB HDD",
+        "color": "Silver"
+      },
+      {
+        "name": "Acer Aspire V7 i5/8GB/256GB Silver",
+        "processor": "Intel Core i5-4200U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire VN7 Nitro Black Edition",
+    "releaseYear": 2014,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" or 17.3\" FHD IPS, optional UHD IPS on select 15.6\" models",
+      "processor": "Intel Core i5-4210H / i7-4710HQ / i7-4720HQ / i7-6700HQ",
+      "ram": "8–16 GB DDR3L/DDR4 depending generation",
+      "storage": [
+        "128 GB SSD + 1 TB HDD",
+        "256 GB SSD + 1 TB HDD",
+        "512 GB SSD"
+      ],
+      "battery": "52–59 Wh Li-ion",
+      "os": "Windows 8.1 / Windows 10",
+      "weight": "2.4–3.0 kg",
+      "dimensions": "approx. 389 × 257 × 23.9 mm (15.6\") / 423 × 296 × 25.4 mm (17.3\")"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire VN7 Nitro Black Edition i7/8GB/1TB Black",
+        "processor": "Intel Core i7-4710HQ",
+        "ram": "8 GB",
+        "storage": "1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire VN7 Nitro Black Edition i7/16GB/256GB+1TB Black",
+        "processor": "Intel Core i7-6700HQ",
+        "ram": "16 GB",
+        "storage": "256 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire VN7 Nitro Black Edition i5/8GB/128GB+1TB Black",
+        "processor": "Intel Core i5-4210H",
+        "ram": "8 GB",
+        "storage": "128 GB SSD + 1 TB HDD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire R3",
+    "releaseYear": 2015,
+    "imageUrl": null,
+    "specs": {
+      "display": "11.6\" HD (1366×768) IPS 10-point touchscreen, 360° convertible",
+      "processor": "Intel Celeron N3050 / Pentium N3700",
+      "ram": "2–8 GB DDR3L",
+      "storage": [
+        "32 GB eMMC",
+        "500 GB HDD"
+      ],
+      "battery": "48 Wh, 4-cell Li-ion",
+      "os": "Windows 8.1 / Windows 10",
+      "weight": "1.58 kg",
+      "dimensions": "298 × 211 × 20.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire R3 Celeron/2GB/32GB Sky Blue",
+        "processor": "Intel Celeron N3050",
+        "ram": "2 GB",
+        "storage": "32 GB eMMC",
+        "color": "Sky Blue"
+      },
+      {
+        "name": "Acer Aspire R3 Pentium/4GB/500GB Sky Blue",
+        "processor": "Intel Pentium N3700",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Sky Blue"
+      },
+      {
+        "name": "Acer Aspire R3 Celeron/4GB/500GB White",
+        "processor": "Intel Celeron N3050",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "White"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire R5",
+    "releaseYear": 2015,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" or 15.6\" FHD IPS 10-point touchscreen, 360° convertible",
+      "processor": "Intel Core i3-6100U / i5-6200U / i7-6500U",
+      "ram": "4–8 GB DDR3L",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "52 Wh, 4-cell Li-ion",
+      "os": "Windows 10",
+      "weight": "1.6–2.2 kg",
+      "dimensions": "approx. 326 × 228 × 18.5 mm (13.3\") / 381 × 256 × 20.3 mm (15.6\")"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire R5 i3/4GB/128GB Steel Gray",
+        "processor": "Intel Core i3-6100U",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Steel Gray"
+      },
+      {
+        "name": "Acer Aspire R5 i5/8GB/256GB Steel Gray",
+        "processor": "Intel Core i5-6200U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Steel Gray"
+      },
+      {
+        "name": "Acer Aspire R5 i7/8GB/1TB Steel Gray",
+        "processor": "Intel Core i7-6500U",
+        "ram": "8 GB",
+        "storage": "1 TB HDD",
+        "color": "Steel Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire Switch 12",
+    "releaseYear": 2014,
+    "imageUrl": null,
+    "specs": {
+      "display": "12.5\" FHD (1920×1080) IPS touchscreen detachable 2-in-1",
+      "processor": "Intel Core M-5Y10a / Core M-5Y10c",
+      "ram": "4 GB LPDDR3",
+      "storage": [
+        "60 GB SSD",
+        "128 GB SSD"
+      ],
+      "battery": "36 Wh, 2-cell Li-polymer",
+      "os": "Windows 8.1",
+      "weight": "1.4 kg with keyboard",
+      "dimensions": "317 × 216 × 16.5 mm with keyboard"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire Switch 12 Core M/4GB/60GB Silver",
+        "processor": "Intel Core M-5Y10a",
+        "ram": "4 GB",
+        "storage": "60 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Acer Aspire Switch 12 Core M/4GB/128GB Silver",
+        "processor": "Intel Core M-5Y10c",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire A114",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" HD (1366×768) or FHD (1920×1080) ComfyView display",
+      "processor": "Intel Celeron N3350/N4000/N4020 or Pentium N4200/N5000 Silver",
+      "ram": "4–8 GB DDR3L/DDR4",
+      "storage": [
+        "32 GB eMMC",
+        "64 GB eMMC",
+        "128 GB SSD",
+        "256 GB SSD"
+      ],
+      "battery": "37 Wh, 2-cell Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "1.65–1.9 kg",
+      "dimensions": "343 × 245 × 17.95–20.95 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire A114 Celeron/4GB/64GB Black",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire A114 Pentium/4GB/128GB Black",
+        "processor": "Intel Pentium Silver N5000",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire A114 Celeron/8GB/256GB Black",
+        "processor": "Intel Celeron N4500",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire A115",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366×768) or FHD (1920×1080) ComfyView display",
+      "processor": "Intel Celeron N4020/N4500, Pentium Silver N5030/N6000, or Intel Core i3-1005G1/i3-1115G4",
+      "ram": "4–12 GB DDR4",
+      "storage": [
+        "64 GB eMMC",
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD"
+      ],
+      "battery": "36–37 Wh, 2-cell Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "1.9–2.1 kg",
+      "dimensions": "363.4 × 250.5 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire A115 Celeron/4GB/128GB Black",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire A115 Pentium/8GB/256GB Black",
+        "processor": "Intel Pentium Silver N5030",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire A115 i3/8GB/512GB Black",
+        "processor": "Intel Core i3-1115G4",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire A314",
+    "releaseYear": 2018,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" HD (1366×768) or FHD (1920×1080) ComfyView display",
+      "processor": "Intel Core i3-1005G1/i3-1115G4/i5-1135G7 or AMD Ryzen 3 3250U/Ryzen 5 3500U",
+      "ram": "4–20 GB DDR4",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "36–48 Wh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "1.5–1.7 kg",
+      "dimensions": "328 × 236 × 17.95–19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire A314 i3/4GB/256GB Pure Silver",
+        "processor": "Intel Core i3-1115G4",
+        "ram": "4 GB",
+        "storage": "256 GB SSD",
+        "color": "Pure Silver"
+      },
+      {
+        "name": "Acer Aspire A314 i5/8GB/512GB Pure Silver",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Pure Silver"
+      },
+      {
+        "name": "Acer Aspire A314 Ryzen 5/8GB/512GB Charcoal Black",
+        "processor": "AMD Ryzen 5 3500U",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Charcoal Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire A315",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366×768), FHD (1920×1080) TN/IPS, optional touchscreen on select models",
+      "processor": "Intel Core i3/i5/i7 U-series 7th–13th Gen or AMD Ryzen 3/5/7 3000–7000 series",
+      "ram": "4–32 GB DDR4/LPDDR5 depending generation",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "36–50 Wh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "1.7–1.9 kg",
+      "dimensions": "362.9 × 237.5 × 17.9–19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire A315 i3/8GB/256GB Pure Silver",
+        "processor": "Intel Core i3-1115G4",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Pure Silver"
+      },
+      {
+        "name": "Acer Aspire A315 i5/8GB/512GB Steel Gray",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Steel Gray"
+      },
+      {
+        "name": "Acer Aspire A315 Ryzen 5/16GB/512GB Pure Silver",
+        "processor": "AMD Ryzen 5 7520U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Pure Silver"
+      },
+      {
+        "name": "Acer Aspire A315 i7/16GB/1TB Steel Gray",
+        "processor": "Intel Core i7-1255U",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Steel Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire A317",
+    "releaseYear": 2018,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" HD+ (1600×900) or FHD (1920×1080) ComfyView display",
+      "processor": "Intel Core i3-1005G1/i5-1035G1/i5-1135G7/i7-1165G7 or AMD Ryzen 3/5",
+      "ram": "4–20 GB DDR4",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "36–48 Wh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.6–2.8 kg",
+      "dimensions": "403.5 × 263.7 × 19.9–24.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire A317 i3/8GB/256GB Black",
+        "processor": "Intel Core i3-1005G1",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire A317 i5/8GB/512GB Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire A317 Ryzen 5/16GB/1TB Silver",
+        "processor": "AMD Ryzen 5 5500U",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire A514",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" FHD (1920×1080) IPS ComfyView display",
+      "processor": "Intel Core i3-1005G1/i5-1035G1/i5-1135G7/i7-1165G7 or AMD Ryzen 3/5/7",
+      "ram": "4–24 GB DDR4/LPDDR4X depending generation",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "48–50 Wh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "1.45–1.7 kg",
+      "dimensions": "328 × 223 × 17.9–18 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire A514 i3/8GB/256GB Pure Silver",
+        "processor": "Intel Core i3-1115G4",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Pure Silver"
+      },
+      {
+        "name": "Acer Aspire A514 i5/8GB/512GB Safari Gold",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Safari Gold"
+      },
+      {
+        "name": "Acer Aspire A514 Ryzen 5/16GB/512GB Charcoal Black",
+        "processor": "AMD Ryzen 5 5500U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Charcoal Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire A515",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD (1920×1080) IPS or TN ComfyView, optional touchscreen on select models",
+      "processor": "Intel Core i3/i5/i7 U-series 8th–13th Gen or AMD Ryzen 3/5/7 3000–7000 series",
+      "ram": "4–32 GB DDR4/LPDDR5 depending generation",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "36–50 Wh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "1.65–1.9 kg",
+      "dimensions": "362.9 × 237.8 × 17.9–18.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire A515 i3/8GB/256GB Pure Silver",
+        "processor": "Intel Core i3-1115G4",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Pure Silver"
+      },
+      {
+        "name": "Acer Aspire A515 i5/8GB/512GB Steel Gray",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Steel Gray"
+      },
+      {
+        "name": "Acer Aspire A515 Ryzen 5/16GB/512GB Charcoal Black",
+        "processor": "AMD Ryzen 5 7520U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Charcoal Black"
+      },
+      {
+        "name": "Acer Aspire A515 i7/16GB/1TB Steel Gray",
+        "processor": "Intel Core i7-1255U",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Steel Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire A517",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD (1920×1080) IPS/ComfyView display",
+      "processor": "Intel Core i3/i5/i7 U-series 8th–12th Gen or AMD Ryzen 5/7",
+      "ram": "4–20 GB DDR4",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "36–48 Wh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.2–2.6 kg",
+      "dimensions": "403.5 × 263.7 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire A517 i3/8GB/256GB Silver",
+        "processor": "Intel Core i3-1115G4",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Acer Aspire A517 i5/8GB/512GB Silver",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Acer Aspire A517 Ryzen 7/16GB/1TB Black",
+        "processor": "AMD Ryzen 7 5700U",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire A715",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD (1920×1080) IPS ComfyView display",
+      "processor": "Intel Core i5-7300HQ/i7-7700HQ, i5-8300H/i7-8750H, or i5-9300H/i7-9750H",
+      "ram": "8–32 GB DDR4",
+      "storage": [
+        "128 GB SSD + 1 TB HDD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "48–50 Wh Li-ion",
+      "os": "Windows 10",
+      "weight": "2.35–2.4 kg",
+      "dimensions": "381.6 × 262.8 × 24.0 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire A715 i5/8GB/1TB Black",
+        "processor": "Intel Core i5-7300HQ",
+        "ram": "8 GB",
+        "storage": "1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire A715 i5/8GB/256GB+1TB Black",
+        "processor": "Intel Core i5-8300H",
+        "ram": "8 GB",
+        "storage": "256 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire A715 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-8750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Aspire A717",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD (1920×1080) IPS ComfyView display",
+      "processor": "Intel Core i5-7300HQ/i7-7700HQ or i5-8300H/i7-8750H",
+      "ram": "8–32 GB DDR4",
+      "storage": [
+        "128 GB SSD + 1 TB HDD",
+        "256 GB SSD + 1 TB HDD",
+        "512 GB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "48 Wh Li-ion",
+      "os": "Windows 10",
+      "weight": "3.0 kg",
+      "dimensions": "423.3 × 289.9 × 28.2 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Aspire A717 i5/8GB/1TB Black",
+        "processor": "Intel Core i5-7300HQ",
+        "ram": "8 GB",
+        "storage": "1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire A717 i7/16GB/256GB+1TB Black",
+        "processor": "Intel Core i7-7700HQ",
+        "ram": "16 GB",
+        "storage": "256 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Aspire A717 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-8750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Chromebook 14",
+    "releaseYear": 2016,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" HD (1366×768) or FHD (1920×1080) IPS display",
+      "processor": "Intel Celeron N3160 / N3060",
+      "ram": "2–4 GB LPDDR3",
+      "storage": [
+        "16 GB eMMC",
+        "32 GB eMMC"
+      ],
+      "battery": "45 Wh Li-ion, up to 12 hours",
+      "os": "ChromeOS",
+      "weight": "1.55 kg",
+      "dimensions": "341 × 236.6 × 17 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Chromebook 14 Celeron/2GB/16GB Silver",
+        "processor": "Intel Celeron N3060",
+        "ram": "2 GB",
+        "storage": "16 GB eMMC",
+        "color": "Silver"
+      },
+      {
+        "name": "Acer Chromebook 14 Celeron/4GB/32GB Silver",
+        "processor": "Intel Celeron N3160",
+        "ram": "4 GB",
+        "storage": "32 GB eMMC",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Chromebook Spin 311",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "11.6\" HD (1366×768) IPS touchscreen, 360° convertible, optional antimicrobial Corning Gorilla Glass",
+      "processor": "Intel Celeron N4000/N4020 or MediaTek MT8183",
+      "ram": "4 GB LPDDR4/LPDDR4X",
+      "storage": [
+        "32 GB eMMC",
+        "64 GB eMMC"
+      ],
+      "battery": "36–45 Wh, up to 10–15 hours depending platform",
+      "os": "ChromeOS",
+      "weight": "1.05–1.25 kg",
+      "dimensions": "290 × 206 × 18.8–20.3 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Chromebook Spin 311 Celeron/4GB/32GB Pure Silver",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "32 GB eMMC",
+        "color": "Pure Silver"
+      },
+      {
+        "name": "Acer Chromebook Spin 311 Celeron/4GB/64GB Pure Silver",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Pure Silver"
+      },
+      {
+        "name": "Acer Chromebook Spin 311 MediaTek/4GB/64GB Silver",
+        "processor": "MediaTek MT8183",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Chromebook Spin 513",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" FHD (1920×1080) IPS touchscreen, 360° convertible",
+      "processor": "Qualcomm Snapdragon 7c / MediaTek Kompanio 1380",
+      "ram": "4–8 GB LPDDR4X",
+      "storage": [
+        "64 GB eMMC",
+        "128 GB eMMC",
+        "128 GB SSD"
+      ],
+      "battery": "36–48 Wh, up to 13.5 hours",
+      "os": "ChromeOS",
+      "weight": "1.2–1.3 kg",
+      "dimensions": "310 × 209.4 × 15.55–16.8 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Chromebook Spin 513 Snapdragon/4GB/64GB Steel Gray",
+        "processor": "Qualcomm Snapdragon 7c",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Steel Gray"
+      },
+      {
+        "name": "Acer Chromebook Spin 513 Snapdragon/8GB/128GB Steel Gray",
+        "processor": "Qualcomm Snapdragon 7c",
+        "ram": "8 GB",
+        "storage": "128 GB eMMC",
+        "color": "Steel Gray"
+      },
+      {
+        "name": "Acer Chromebook Spin 513 Kompanio/8GB/128GB VertiView Green",
+        "processor": "MediaTek Kompanio 1380",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "color": "VertiView Green"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Extensa 215",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366×768) or FHD (1920×1080) ComfyView display",
+      "processor": "Intel Celeron N4020/N4500, Pentium Silver N5030, Core i3-1005G1/i3-1115G4, Core i5-1035G1/i5-1135G7",
+      "ram": "4–20 GB DDR4",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "36–37 Wh Li-ion",
+      "os": "Windows 10 / Windows 11 / Linux on select SKUs",
+      "weight": "1.9 kg",
+      "dimensions": "363.4 × 250.5 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Extensa 215 Celeron/4GB/128GB Black",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Extensa 215 i3/8GB/256GB Black",
+        "processor": "Intel Core i3-1115G4",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Extensa 215 i5/8GB/512GB Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Extensa 2519",
+    "releaseYear": 2015,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366×768) Acer ComfyView display",
+      "processor": "Intel Celeron N3050 / N3060 or Pentium N3700",
+      "ram": "2–8 GB DDR3L",
+      "storage": [
+        "500 GB HDD",
+        "1 TB HDD",
+        "128 GB SSD"
+      ],
+      "battery": "37 Wh, 3-cell Li-ion",
+      "os": "Windows 8.1 / Windows 10 / Linux on select SKUs",
+      "weight": "2.4 kg",
+      "dimensions": "381.6 × 258 × 26.1 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Extensa 2519 Celeron/2GB/500GB Black",
+        "processor": "Intel Celeron N3050",
+        "ram": "2 GB",
+        "storage": "500 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Extensa 2519 Celeron/4GB/500GB Black",
+        "processor": "Intel Celeron N3060",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Extensa 2519 Pentium/4GB/1TB Black",
+        "processor": "Intel Pentium N3700",
+        "ram": "4 GB",
+        "storage": "1 TB HDD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Extensa 2540",
+    "releaseYear": 2016,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366×768) or FHD (1920×1080) ComfyView display",
+      "processor": "Intel Core i3-6006U / i5-6200U / i5-7200U",
+      "ram": "4–16 GB DDR4",
+      "storage": [
+        "500 GB HDD",
+        "1 TB HDD",
+        "128 GB SSD",
+        "256 GB SSD"
+      ],
+      "battery": "37 Wh, 4-cell Li-ion",
+      "os": "Windows 10 / Linux on select SKUs",
+      "weight": "2.4 kg",
+      "dimensions": "381.6 × 258 × 24.6 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Extensa 2540 i3/4GB/500GB Black",
+        "processor": "Intel Core i3-6006U",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Extensa 2540 i5/4GB/1TB Black",
+        "processor": "Intel Core i5-6200U",
+        "ram": "4 GB",
+        "storage": "1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Extensa 2540 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-7200U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Extensa 2550",
+    "releaseYear": 2014,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366×768) CineCrystal/ComfyView display",
+      "processor": "Intel Celeron 2957U, Core i3-4030U, Core i5-4210U",
+      "ram": "2–16 GB DDR3L",
+      "storage": [
+        "320 GB HDD",
+        "500 GB HDD",
+        "1 TB HDD",
+        "128 GB SSD"
+      ],
+      "battery": "37 Wh, 4-cell Li-ion",
+      "os": "Windows 8.1 / Windows 10 / Linux on select SKUs",
+      "weight": "2.5 kg",
+      "dimensions": "381.6 × 256 × 25.3 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Extensa 2550 Celeron/2GB/320GB Black",
+        "processor": "Intel Celeron 2957U",
+        "ram": "2 GB",
+        "storage": "320 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Extensa 2550 i3/4GB/500GB Black",
+        "processor": "Intel Core i3-4030U",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Extensa 2550 i5/8GB/1TB Black",
+        "processor": "Intel Core i5-4210U",
+        "ram": "8 GB",
+        "storage": "1 TB HDD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Nitro AN515",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 60/120/144/165 Hz, later models optional QHD 165 Hz",
+      "processor": "Intel Core i5/i7 H-series 7th–14th Gen or AMD Ryzen 5/7 H-series",
+      "ram": "8–32 GB DDR4/DDR5",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD",
+        "128 GB SSD + 1 TB HDD",
+        "256 GB SSD + 1 TB HDD"
+      ],
+      "battery": "48–57.5 Wh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.2–2.5 kg",
+      "dimensions": "363.4 × 255 × 23.9–26.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Nitro AN515 i5/8GB/512GB Obsidian Black",
+        "processor": "Intel Core i5-9300H",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Obsidian Black"
+      },
+      {
+        "name": "Acer Nitro AN515 Ryzen 5/16GB/512GB Shale Black",
+        "processor": "AMD Ryzen 5 5600H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Shale Black"
+      },
+      {
+        "name": "Acer Nitro AN515 i7/16GB/1TB Obsidian Black",
+        "processor": "Intel Core i7-12700H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Obsidian Black"
+      },
+      {
+        "name": "Acer Nitro AN515 i5/16GB/512GB Obsidian Black",
+        "processor": "Intel Core i5-13420H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Obsidian Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Nitro AN517",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS 60/120/144/165 Hz display",
+      "processor": "Intel Core i5/i7 H-series 9th–13th Gen or AMD Ryzen 5/7 H-series",
+      "ram": "8–32 GB DDR4/DDR5",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "256 GB SSD + 1 TB HDD"
+      ],
+      "battery": "48–57.5 Wh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.7–3.0 kg",
+      "dimensions": "403.5 × 280 × 24.9–27.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Nitro AN517 i5/8GB/512GB Obsidian Black",
+        "processor": "Intel Core i5-9300H",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Obsidian Black"
+      },
+      {
+        "name": "Acer Nitro AN517 i7/16GB/1TB Obsidian Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Obsidian Black"
+      },
+      {
+        "name": "Acer Nitro AN517 Ryzen 7/16GB/1TB Shale Black",
+        "processor": "AMD Ryzen 7 6800H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Shale Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Predator Helios 300",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" or 17.3\" FHD IPS 60/144/240 Hz, later models optional QHD 165 Hz",
+      "processor": "Intel Core i7-7700HQ through Core i7-12700H / i9-12900H, select AMD Ryzen 7 5800H models",
+      "ram": "16–32 GB DDR4/DDR5",
+      "storage": [
+        "256 GB SSD + 1 TB HDD",
+        "512 GB SSD",
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "48–90 Wh Li-ion depending generation",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.5–3.0 kg",
+      "dimensions": "approx. 363 × 255 × 22.9–26.9 mm (15.6\")"
+    },
+    "variants": [
+      {
+        "name": "Acer Predator Helios 300 i7/16GB/256GB+1TB Black",
+        "processor": "Intel Core i7-7700HQ",
+        "ram": "16 GB",
+        "storage": "256 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Predator Helios 300 i7/16GB/512GB Abyssal Black",
+        "processor": "Intel Core i7-10750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Abyssal Black"
+      },
+      {
+        "name": "Acer Predator Helios 300 i7/16GB/1TB Abyssal Black",
+        "processor": "Intel Core i7-12700H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Abyssal Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Predator Helios Neo 16",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "16\" WUXGA (1920×1200) 165 Hz IPS or WQXGA (2560×1600) 165/240 Hz IPS, later OLED options",
+      "processor": "Intel Core i5-13500HX / i7-13700HX / i7-14700HX / i9-14900HX / Core Ultra HX on newer models",
+      "ram": "16–64 GB DDR5",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "90 Wh, 4-cell Li-ion",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "2.6–2.8 kg",
+      "dimensions": "360.1 × 279.9 × 26.55–28.25 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Predator Helios Neo 16 i5/16GB/512GB Obsidian Black",
+        "processor": "Intel Core i5-13500HX",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Obsidian Black"
+      },
+      {
+        "name": "Acer Predator Helios Neo 16 i7/16GB/1TB Obsidian Black",
+        "processor": "Intel Core i7-13700HX",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Obsidian Black"
+      },
+      {
+        "name": "Acer Predator Helios Neo 16 i9/32GB/1TB Obsidian Black",
+        "processor": "Intel Core i9-14900HX",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Obsidian Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Predator Helios Neo 18",
+    "releaseYear": 2025,
+    "imageUrl": null,
+    "specs": {
+      "display": "18\" WUXGA (1920×1200) IPS, WQXGA 240 Hz OLED, or WQXGA 250 Hz Mini LED depending SKU",
+      "processor": "Intel Core Ultra 7 255HX / Core Ultra 9 275HX",
+      "ram": "16–64 GB DDR5",
+      "storage": [
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "90 Wh Li-ion",
+      "os": "Windows 11 Home",
+      "weight": "approx. 3.3 kg",
+      "dimensions": "approx. 404 × 307 × 29 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Predator Helios Neo 18 Ultra 7/16GB/1TB Obsidian Black",
+        "processor": "Intel Core Ultra 7 255HX",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Obsidian Black"
+      },
+      {
+        "name": "Acer Predator Helios Neo 18 Ultra 9/32GB/2TB Obsidian Black",
+        "processor": "Intel Core Ultra 9 275HX",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Obsidian Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Predator Helios 16",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "16\" WQXGA (2560×1600) IPS 165/240 Hz or Mini LED 250 Hz display",
+      "processor": "Intel Core i7-13700HX / i9-13900HX / i9-14900HX",
+      "ram": "16–32 GB DDR5, up to 32/64 GB depending SKU",
+      "storage": [
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "90 Wh Li-ion",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "2.6–2.7 kg",
+      "dimensions": "357.8 × 278.7 × 24.9–26.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Predator Helios 16 i7/16GB/1TB Abyssal Black",
+        "processor": "Intel Core i7-13700HX",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Abyssal Black"
+      },
+      {
+        "name": "Acer Predator Helios 16 i9/32GB/1TB Abyssal Black",
+        "processor": "Intel Core i9-13900HX",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Abyssal Black"
+      },
+      {
+        "name": "Acer Predator Helios 16 i9/32GB/2TB Abyssal Black",
+        "processor": "Intel Core i9-14900HX",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Abyssal Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Predator Helios 18",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "18\" WUXGA (1920×1200) 165 Hz, WQXGA (2560×1600) 165/240 Hz, or Mini LED 250 Hz display",
+      "processor": "Intel Core i7-13700HX / i9-13900HX / i9-14900HX",
+      "ram": "16–32 GB DDR5, up to 64 GB on select models",
+      "storage": [
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "90 Wh Li-ion",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "3.25 kg",
+      "dimensions": "405 × 311.6 × 26.9–29.15 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Predator Helios 18 i7/16GB/1TB Abyssal Black",
+        "processor": "Intel Core i7-13700HX",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Abyssal Black"
+      },
+      {
+        "name": "Acer Predator Helios 18 i9/32GB/1TB Abyssal Black",
+        "processor": "Intel Core i9-13900HX",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Abyssal Black"
+      },
+      {
+        "name": "Acer Predator Helios 18 i9/32GB/2TB Abyssal Black",
+        "processor": "Intel Core i9-14900HX",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Abyssal Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Predator Triton 300",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 144/240 Hz or QHD 165 Hz display",
+      "processor": "Intel Core i5-9300H / i7-9750H / i7-10750H / i7-11800H",
+      "ram": "8–32 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "256 GB SSD + 1 TB HDD"
+      ],
+      "battery": "57.5–60 Wh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.3–2.5 kg",
+      "dimensions": "363.4 × 259 × 19.9–22.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Predator Triton 300 i5/8GB/512GB Abyssal Black",
+        "processor": "Intel Core i5-9300H",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Abyssal Black"
+      },
+      {
+        "name": "Acer Predator Triton 300 i7/16GB/1TB Abyssal Black",
+        "processor": "Intel Core i7-10750H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Abyssal Black"
+      },
+      {
+        "name": "Acer Predator Triton 300 i7/16GB/512GB Abyssal Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Abyssal Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Predator Triton 500",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 144/300 Hz or QHD 165 Hz display",
+      "processor": "Intel Core i7-8750H / i7-9750H / i7-10750H / i7-11800H",
+      "ram": "16–32 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "82–84 Wh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.0–2.1 kg",
+      "dimensions": "358.5 × 255 × 17.9–19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Predator Triton 500 i7/16GB/512GB Abyssal Black",
+        "processor": "Intel Core i7-8750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Abyssal Black"
+      },
+      {
+        "name": "Acer Predator Triton 500 i7/32GB/1TB Abyssal Black",
+        "processor": "Intel Core i7-10750H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Abyssal Black"
+      },
+      {
+        "name": "Acer Predator Triton 500 i7/32GB/2TB Abyssal Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Abyssal Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Predator Triton 700",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD (1920×1080) IPS 120 Hz G-SYNC display",
+      "processor": "Intel Core i7-7700HQ",
+      "ram": "16–32 GB DDR4",
+      "storage": [
+        "512 GB SSD RAID 0",
+        "1 TB SSD RAID 0"
+      ],
+      "battery": "54 Wh Li-ion",
+      "os": "Windows 10",
+      "weight": "2.6 kg",
+      "dimensions": "393 × 266 × 18.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Predator Triton 700 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-7700HQ",
+        "ram": "16 GB",
+        "storage": "512 GB SSD RAID 0",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Predator Triton 700 i7/32GB/1TB Black",
+        "processor": "Intel Core i7-7700HQ",
+        "ram": "32 GB",
+        "storage": "1 TB SSD RAID 0",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Predator 21 X",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "21\" curved WFHD (2560×1080) IPS 120 Hz G-SYNC display",
+      "processor": "Intel Core i7-7820HK",
+      "ram": "64 GB DDR4",
+      "storage": [
+        "512 GB SSD RAID 0 + 1 TB HDD",
+        "1 TB SSD RAID 0 + 1 TB HDD"
+      ],
+      "battery": "88 Wh Li-ion",
+      "os": "Windows 10",
+      "weight": "8.5 kg",
+      "dimensions": "568 × 314.5 × 83.25 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Predator 21 X i7/64GB/512GB+1TB Black",
+        "processor": "Intel Core i7-7820HK",
+        "ram": "64 GB",
+        "storage": "512 GB SSD RAID 0 + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer Predator 21 X i7/64GB/1TB+1TB Black",
+        "processor": "Intel Core i7-7820HK",
+        "ram": "64 GB",
+        "storage": "1 TB SSD RAID 0 + 1 TB HDD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Spin 311",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "11.6\" HD (1366×768) IPS touchscreen, 360° convertible",
+      "processor": "Intel Celeron N4000/N4020 or MediaTek MT8183",
+      "ram": "4 GB LPDDR4/LPDDR4X",
+      "storage": [
+        "32 GB eMMC",
+        "64 GB eMMC"
+      ],
+      "battery": "36–45 Wh Li-ion",
+      "os": "ChromeOS",
+      "weight": "1.05–1.25 kg",
+      "dimensions": "290 × 206 × 18.8–20.3 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Spin 311 Celeron/4GB/32GB Pure Silver",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "32 GB eMMC",
+        "color": "Pure Silver"
+      },
+      {
+        "name": "Acer Spin 311 Celeron/4GB/64GB Pure Silver",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Pure Silver"
+      },
+      {
+        "name": "Acer Spin 311 MediaTek/4GB/64GB Silver",
+        "processor": "MediaTek MT8183",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Spin 513",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" FHD (1920×1080) IPS touchscreen, 360° convertible",
+      "processor": "Qualcomm Snapdragon 7c or MediaTek Kompanio 1380",
+      "ram": "4–8 GB LPDDR4X",
+      "storage": [
+        "64 GB eMMC",
+        "128 GB eMMC",
+        "128 GB SSD"
+      ],
+      "battery": "36–48 Wh Li-ion",
+      "os": "ChromeOS",
+      "weight": "1.2–1.3 kg",
+      "dimensions": "310 × 209.4 × 15.55–16.8 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Spin 513 Snapdragon/4GB/64GB Steel Gray",
+        "processor": "Qualcomm Snapdragon 7c",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Steel Gray"
+      },
+      {
+        "name": "Acer Spin 513 Snapdragon/8GB/128GB Steel Gray",
+        "processor": "Qualcomm Snapdragon 7c",
+        "ram": "8 GB",
+        "storage": "128 GB eMMC",
+        "color": "Steel Gray"
+      },
+      {
+        "name": "Acer Spin 513 Kompanio/8GB/128GB VertiView Green",
+        "processor": "MediaTek Kompanio 1380",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "color": "VertiView Green"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer Spin 713",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.5\" 2K VertiView (2256×1504) IPS touchscreen, 3:2 aspect ratio, 360° convertible",
+      "processor": "Intel Core i3-10110U / i5-10210U / i5-1135G7 / i7-1165G7",
+      "ram": "4–16 GB DDR4/LPDDR4X",
+      "storage": [
+        "64 GB eMMC",
+        "128 GB SSD",
+        "256 GB SSD"
+      ],
+      "battery": "48–56 Wh Li-ion",
+      "os": "ChromeOS",
+      "weight": "1.37–1.45 kg",
+      "dimensions": "300.6 × 235 × 16.8 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer Spin 713 i3/4GB/64GB Steel Gray",
+        "processor": "Intel Core i3-10110U",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Steel Gray"
+      },
+      {
+        "name": "Acer Spin 713 i5/8GB/128GB Steel Gray",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "color": "Steel Gray"
+      },
+      {
+        "name": "Acer Spin 713 i5/8GB/256GB Steel Gray",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Steel Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer TravelMate X3",
+    "releaseYear": 2016,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" FHD (1920×1080) IPS ComfyView display",
+      "processor": "Intel Core i5-6200U / i7-6500U / i5-7200U / i7-7500U",
+      "ram": "4–8 GB DDR3L/DDR4 depending SKU",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD"
+      ],
+      "battery": "48 Wh Li-ion",
+      "os": "Windows 10 Pro",
+      "weight": "1.53 kg",
+      "dimensions": "341 × 236 × 18 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer TravelMate X3 i5/4GB/128GB Black",
+        "processor": "Intel Core i5-6200U",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer TravelMate X3 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-7200U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer TravelMate X3 i7/8GB/512GB Black",
+        "processor": "Intel Core i7-7500U",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer TravelMate X5",
+    "releaseYear": 2018,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" FHD (1920×1080) IPS ComfyView display",
+      "processor": "Intel Core i5-8265U / i7-8565U",
+      "ram": "8–16 GB LPDDR3",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "36–48 Wh Li-ion",
+      "os": "Windows 10 Pro",
+      "weight": "0.98 kg",
+      "dimensions": "329 × 229 × 14.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer TravelMate X5 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-8265U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer TravelMate X5 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-8565U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer TravelMate X5 i7/16GB/1TB Black",
+        "processor": "Intel Core i7-8565U",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer TravelMate P214",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" HD (1366×768) or FHD (1920×1080) IPS/ComfyView display",
+      "processor": "Intel Core i3-10110U/i5-10210U/i7-10510U, later i3-1115G4/i5-1135G7/i7-1165G7",
+      "ram": "4–32 GB DDR4",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "48 Wh Li-ion",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "1.5–1.65 kg",
+      "dimensions": "328 × 236 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer TravelMate P214 i3/4GB/128GB Black",
+        "processor": "Intel Core i3-10110U",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer TravelMate P214 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer TravelMate P214 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer TravelMate P215",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366×768) or FHD (1920×1080) IPS/ComfyView display",
+      "processor": "Intel Core i3-10110U/i5-10210U/i7-10510U, later i3-1115G4/i5-1135G7/i7-1165G7",
+      "ram": "4–32 GB DDR4",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "48 Wh Li-ion",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "1.8–1.9 kg",
+      "dimensions": "363.4 × 254.5 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer TravelMate P215 i3/4GB/128GB Black",
+        "processor": "Intel Core i3-10110U",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer TravelMate P215 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer TravelMate P215 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer TravelMate P414",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" FHD (1920×1080) IPS ComfyView, optional touchscreen",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7, later i5-1240P / i7-1260P",
+      "ram": "8–32 GB DDR4/LPDDR4X",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "50–56 Wh Li-ion",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "1.45–1.55 kg",
+      "dimensions": "325 × 236 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer TravelMate P414 i5/8GB/256GB Slate Blue",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Slate Blue"
+      },
+      {
+        "name": "Acer TravelMate P414 i7/16GB/512GB Slate Blue",
+        "processor": "Intel Core i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Slate Blue"
+      },
+      {
+        "name": "Acer TravelMate P414 i7/16GB/1TB Slate Blue",
+        "processor": "Intel Core i7-1260P",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Slate Blue"
+      }
+    ]
+  },
+  {
+    "modelName": "Acer TravelMate P614",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" FHD (1920×1080) IPS ComfyView, optional touchscreen/privacy panel",
+      "processor": "Intel Core i5-8265U/i7-8565U, later i5-1135G7/i7-1165G7/i7-1260P",
+      "ram": "8–32 GB LPDDR3/LPDDR4X/LPDDR5 depending generation",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "45–56 Wh Li-ion",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "1.0–1.2 kg",
+      "dimensions": "325 × 230 × 16.6–16.8 mm"
+    },
+    "variants": [
+      {
+        "name": "Acer TravelMate P614 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-8265U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer TravelMate P614 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Acer TravelMate P614 i7/32GB/1TB Black",
+        "processor": "Intel Core i7-1260P",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  }
+]

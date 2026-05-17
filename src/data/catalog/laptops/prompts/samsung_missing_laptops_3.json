@@ -1,0 +1,150 @@
+[
+  {
+    "modelName": "Samsung Notebook 5",
+    "releaseYear": 2018,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD (1920×1080) anti-glare LED display",
+      "processor": "AMD Ryzen 5 2500U / Intel 8th Gen Core i5 or Core i7 U-series depending on region",
+      "ram": "8–16 GB DDR4",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD",
+        "256 GB SSD + 1 TB HDD"
+      ],
+      "battery": "43 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro",
+      "weight": "1.95–1.97 kg",
+      "dimensions": "377.4 × 248.6 × 19.6–19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Samsung Notebook 5 Ryzen 5/8GB/1TB Light Titan",
+        "processor": "AMD Ryzen 5 2500U",
+        "ram": "8 GB",
+        "storage": "1 TB HDD",
+        "color": "Light Titan"
+      },
+      {
+        "name": "Samsung Notebook 5 Core i5/8GB/256GB Light Titan",
+        "processor": "Intel Core i5-8250U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Light Titan"
+      },
+      {
+        "name": "Samsung Notebook 5 Core i7/16GB/512GB Light Titan",
+        "processor": "Intel Core i7-8550U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Light Titan"
+      },
+      {
+        "name": "Samsung Notebook 5 Core i5/8GB/256GB+1TB Light Titan",
+        "processor": "Intel Core i5-8250U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD + 1 TB HDD",
+        "color": "Light Titan"
+      }
+    ]
+  },
+  {
+    "modelName": "Samsung Notebook Odyssey",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD (1920×1080) IPS / 15.6\" FHD 144 Hz G-Sync display depending on generation",
+      "processor": "Intel Core i7-7700HQ / Intel Core i7 8th Gen H-series / Intel Core i7 9th Gen H-series depending on generation",
+      "ram": "8–16 GB DDR4, dual memory slots",
+      "storage": [
+        "256 GB NVMe SSD",
+        "512 GB NVMe SSD",
+        "1 TB HDD",
+        "256 GB NVMe SSD + 1 TB HDD"
+      ],
+      "battery": "54 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro",
+      "weight": "2.40–2.50 kg",
+      "dimensions": "357.6 × 270.5 × 19.9 mm for 2019 chassis; older 15.6\" chassis about 378 × 260 × 23.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Samsung Notebook Odyssey i7-7700HQ/8GB/1TB Black",
+        "processor": "Intel Core i7-7700HQ",
+        "ram": "8 GB",
+        "storage": "1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Samsung Notebook Odyssey i7-7700HQ/16GB/1TB Black",
+        "processor": "Intel Core i7-7700HQ",
+        "ram": "16 GB",
+        "storage": "1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Samsung Notebook Odyssey i7/16GB/256GB+1TB Black",
+        "processor": "Intel Core i7 H-series",
+        "ram": "16 GB",
+        "storage": "256 GB NVMe SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Samsung Notebook Odyssey RTX 2080 i7/16GB/512GB Black",
+        "processor": "Intel Core i7 H-series",
+        "ram": "16 GB",
+        "storage": "512 GB NVMe SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Samsung Notebook Flash",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" FHD (1920×1080) anti-glare display",
+      "processor": "Intel Celeron N4000 / Intel Pentium Silver N5000",
+      "ram": "4 GB LPDDR4",
+      "storage": [
+        "64 GB eMMC",
+        "64 GB UFS / eUFS"
+      ],
+      "battery": "39 Wh",
+      "os": "Windows 10 Home",
+      "weight": "1.37 kg",
+      "dimensions": "322.2 × 219.5 × 16.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Samsung Notebook Flash Celeron/4GB/64GB Twill Charcoal",
+        "processor": "Intel Celeron N4000",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Twill Charcoal"
+      },
+      {
+        "name": "Samsung Notebook Flash Pentium/4GB/64GB Linen White",
+        "processor": "Intel Pentium Silver N5000",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Linen White"
+      },
+      {
+        "name": "Samsung Notebook Flash Pentium/4GB/64GB Soft Coral",
+        "processor": "Intel Pentium Silver N5000",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Soft Coral"
+      },
+      {
+        "name": "Samsung Notebook Flash Celeron/4GB/64GB Linen White",
+        "processor": "Intel Celeron N4000",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Linen White"
+      }
+    ]
+  }
+]

@@ -48,22 +48,23 @@ const PART_CATEGORIES = [
 // ─── Sample services ──────────────────────────────────────────────────────────
 
 interface ServiceDef {
-  name: string;
-  category: string;
+  nameFr: string;
+  nameEn: string;
+  nameAr: string;
   skuSuffix: string;
   sellingPrice: number;
   estimatedDurationMinutes: number;
 }
 
 const SAMPLE_SERVICES: ServiceDef[] = [
-  { name: "Diagnostic",                     category: "Diagnostic",    skuSuffix: "DIAG",  sellingPrice: 500,   estimatedDurationMinutes: 30 },
-  { name: "Remplacement écran (main-d'œuvre)", category: "Réparation", skuSuffix: "ECRAN", sellingPrice: 1500,  estimatedDurationMinutes: 45 },
-  { name: "Remplacement batterie (main-d'œuvre)", category: "Réparation", skuSuffix: "BATT", sellingPrice: 800,  estimatedDurationMinutes: 30 },
-  { name: "Réparation port de charge",       category: "Réparation",   skuSuffix: "PORT",  sellingPrice: 1200,  estimatedDurationMinutes: 60 },
-  { name: "Installation logiciel",           category: "Logiciel",     skuSuffix: "SOFT",  sellingPrice: 600,   estimatedDurationMinutes: 30 },
-  { name: "Nettoyage / dépoussiérage",       category: "Entretien",    skuSuffix: "NETT",  sellingPrice: 400,   estimatedDurationMinutes: 20 },
-  { name: "Sauvegarde données",              category: "Logiciel",     skuSuffix: "SAVE",  sellingPrice: 700,   estimatedDurationMinutes: 45 },
-  { name: "Maintenance imprimante",          category: "Entretien",    skuSuffix: "PRINT", sellingPrice: 1000,  estimatedDurationMinutes: 60 },
+  { nameFr: "Diagnostic",                           nameEn: "Diagnostic",               nameAr: "تشخيص",                    skuSuffix: "DIAG",  sellingPrice: 500,  estimatedDurationMinutes: 30 },
+  { nameFr: "Remplacement écran (main-d'œuvre)",    nameEn: "Screen replacement (labor)",nameAr: "تغيير الشاشة (أجرة)",      skuSuffix: "ECRAN", sellingPrice: 1500, estimatedDurationMinutes: 45 },
+  { nameFr: "Remplacement batterie (main-d'œuvre)", nameEn: "Battery replacement (labor)",nameAr: "تغيير البطارية (أجرة)",    skuSuffix: "BATT",  sellingPrice: 800,  estimatedDurationMinutes: 30 },
+  { nameFr: "Réparation port de charge",            nameEn: "Charging port repair",      nameAr: "إصلاح منفذ الشحن",         skuSuffix: "PORT",  sellingPrice: 1200, estimatedDurationMinutes: 60 },
+  { nameFr: "Installation logiciel",                nameEn: "Software installation",     nameAr: "تثبيت البرامج",             skuSuffix: "SOFT",  sellingPrice: 600,  estimatedDurationMinutes: 30 },
+  { nameFr: "Nettoyage / dépoussiérage",            nameEn: "Cleaning / dust removal",   nameAr: "تنظيف / إزالة الغبار",     skuSuffix: "NETT",  sellingPrice: 400,  estimatedDurationMinutes: 20 },
+  { nameFr: "Sauvegarde données",                   nameEn: "Data backup",               nameAr: "نسخ احتياطي للبيانات",     skuSuffix: "SAVE",  sellingPrice: 700,  estimatedDurationMinutes: 45 },
+  { nameFr: "Maintenance imprimante",               nameEn: "Printer maintenance",        nameAr: "صيانة الطابعة",            skuSuffix: "PRINT", sellingPrice: 1000, estimatedDurationMinutes: 60 },
 ];
 
 // ─── Seed function ────────────────────────────────────────────────────────────
@@ -114,16 +115,20 @@ export async function seedInventory(prisma: PrismaClient) {
   let serviceCount = 0;
   for (const svc of SAMPLE_SERVICES) {
     const sku = `SRV-DEMO-${svc.skuSuffix}`;
-    const existing = await prisma.service.findFirst({
-      where: { storeId, sku },
-    });
-    if (!existing) {
+    const existing = await prisma.service.findFirst({ where: { storeId, sku }, select: { id: true } });
+    if (existing) {
+      await prisma.service.update({
+        where: { id: existing.id },
+        data: { nameFr: svc.nameFr, nameEn: svc.nameEn, nameAr: svc.nameAr },
+      });
+    } else {
       await prisma.service.create({
         data: {
           storeId,
-          name: svc.name,
+          nameFr: svc.nameFr,
+          nameEn: svc.nameEn,
+          nameAr: svc.nameAr,
           sku,
-          category: svc.category,
           sellingPrice: svc.sellingPrice,
           estimatedDurationMinutes: svc.estimatedDurationMinutes,
           notes: "Exemple de service — à adapter selon vos tarifs.",
@@ -132,7 +137,7 @@ export async function seedInventory(prisma: PrismaClient) {
       serviceCount++;
     }
   }
-  console.log(`    ✓ ${serviceCount} sample services`);
+  console.log(`    ✓ ${serviceCount} new sample services (existing records updated)`);
 
   // 4. Seed practical demo parts with device compatibility for the repair intake wizard
   const partCategories = await prisma.inventoryCategory.findMany({

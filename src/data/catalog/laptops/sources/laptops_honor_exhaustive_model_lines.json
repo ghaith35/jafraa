@@ -1,0 +1,2608 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "Honor",
+      "logo_url": "https://logo.clearbit.com/honor.com",
+      "families": [
+        {
+          "name": "MagicBook Art",
+          "models": [
+            {
+              "name": "Honor MagicBook Art 14",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-art-14-2025/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14.6\" OLED, 3120×2080, 3:2, 120Hz, touch",
+                "processor": "Intel Core Ultra 5 / Intel Core Ultra 7",
+                "ram": "16–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "60 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.03 kg",
+                "dimensions": "approx. 316.8 × 223.6 × 11.5 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Art 14 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Art 14 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Art 14 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Art 14 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-art-14-2025/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14.6\" OLED, 3120×2080, 3:2, 120Hz, touch, 100% DCI-P3",
+                "processor": "Intel Core Ultra 5 / Intel Core Ultra 7",
+                "ram": "16–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "60 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.03 kg",
+                "dimensions": "approx. 316.8 × 223.6 × 11.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Art 14 2025 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Art 14 2025 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Art 14 2025 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Art 14 Snapdragon",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-art-14-2025/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14.6\" OLED, 3120×2080, 3:2, 120Hz, touch",
+                "processor": "Snapdragon X Elite",
+                "ram": "16–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "60 Wh",
+                "os": "Windows 11 on Arm",
+                "weight": "approx. 1.03 kg",
+                "dimensions": "approx. 316.8 × 223.6 × 11.5 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Art 14 Snapdragon 1 TB SSD Space Gray",
+                  "processor": "Snapdragon X Elite",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Art 14 Snapdragon 2 TB SSD Mystic Silver",
+                  "processor": "Snapdragon X Elite",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Art 14 Snapdragon 2 TB SSD Mystic Silver Alt",
+                  "processor": "Snapdragon X Elite",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Art 14 2026 Candidate",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-art-14-2025/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14.6\" OLED, 3120×2080, 3:2, 120Hz, touch, 100% DCI-P3",
+                "processor": "Intel Core Ultra 5 / Intel Core Ultra 7",
+                "ram": "16–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "60 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.03 kg",
+                "dimensions": "approx. 316.8 × 223.6 × 11.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Art 14 2026 Candidate 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Art 14 2026 Candidate 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Art 14 2026 Candidate 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MagicBook Pro",
+          "models": [
+            {
+              "name": "Honor MagicBook Pro",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 10",
+                "weight": "1.7 kg",
+                "dimensions": "369 × 234 × 16.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro 2019",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 10",
+                "weight": "1.7 kg",
+                "dimensions": "369 × 234 × 16.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro 2019 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro 2019 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro 2019 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro 2020",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 10",
+                "weight": "1.7 kg",
+                "dimensions": "369 × 234 × 16.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro 2020 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro 2020 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro 2020 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "16.1\" FHD IPS display, 144Hz on select models",
+                "processor": "AMD Ryzen 5 / Ryzen 7 H-series or Intel Core i5/i7",
+                "ram": "16 GB DDR4",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–75 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.7–1.87 kg",
+                "dimensions": "varies by MagicBook Pro 16 generation"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro 2021 512 GB SSD Space Gray",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro 2021 1 TB SSD Mystic Silver",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro 2021 1 TB SSD Mystic Silver Alt",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro 16",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16\" 3072×1920 high-refresh display, 165Hz",
+                "processor": "Intel Core Ultra 7 / Intel Core Ultra 9",
+                "ram": "24–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.79–1.86 kg",
+                "dimensions": "354 × 242 × 19.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro 16 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "24 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro 16 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro 16 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro 16 2024",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16\" 3072×1920 high-refresh display, 165Hz",
+                "processor": "Intel Core Ultra 7 / Intel Core Ultra 9",
+                "ram": "24–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.79–1.86 kg",
+                "dimensions": "354 × 242 × 19.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro 16 2024 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "24 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro 16 2024 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro 16 2024 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro 16 HUNTER 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16\" 3072×1920 IPS/OLED-class high-refresh display, 165Hz",
+                "processor": "Intel Core Ultra 9 / Intel Core Ultra 7",
+                "ram": "24–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.86–1.9 kg",
+                "dimensions": "approx. 354 × 242 × 19.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro 16 HUNTER 2025 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 9",
+                  "ram": "24 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro 16 HUNTER 2025 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 9",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro 16 HUNTER 2025 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 9",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro 14",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56 Wh",
+                "os": "Windows 10",
+                "weight": "1.7 kg",
+                "dimensions": "369 × 234 × 16.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro 14 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro 14 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro 14 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro 14 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16\" 3072×1920 high-refresh display, 165Hz",
+                "processor": "Intel Core Ultra 7 / Intel Core Ultra 9",
+                "ram": "24–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.79–1.86 kg",
+                "dimensions": "354 × 242 × 19.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro 14 2025 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "24 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro 14 2025 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro 14 2025 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro 16 2026 Candidate",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-pro-16/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "16\" 3072×1920 high-refresh display, 165Hz",
+                "processor": "Intel Core Ultra 7 / Intel Core Ultra 9",
+                "ram": "24–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "approx. 1.79–1.86 kg",
+                "dimensions": "354 × 242 × 19.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro 16 2026 Candidate 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "24 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro 16 2026 Candidate 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro 16 2026 Candidate 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MagicBook N",
+          "models": [
+            {
+              "name": "Honor MagicBook",
+              "release_year": 2018,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 14",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 14 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 14 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 14 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 14 2020",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 14 2020 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 14 2020 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 14 2020 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 14 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 14 2021 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 14 2021 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 14 2021 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 14 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD/2.1K FullView display, optional RTX on select models",
+                "processor": "Intel Core i5/i7 / AMD Ryzen 5/7",
+                "ram": "16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "60–75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.45–1.84 kg",
+                "dimensions": "varies by MagicBook N-series chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 14 2022 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 14 2022 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 14 2022 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 14 2022 RTX 2050",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD/2.1K FullView display, optional RTX on select models",
+                "processor": "Intel Core i5/i7 / AMD Ryzen 5/7",
+                "ram": "16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "60–75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.45–1.84 kg",
+                "dimensions": "varies by MagicBook N-series chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 14 2022 RTX 2050 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 14 2022 RTX 2050 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 14 2022 RTX 2050 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 14 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD/2.1K FullView display, optional RTX on select models",
+                "processor": "Intel Core i5/i7 / AMD Ryzen 5/7",
+                "ram": "16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "60–75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.45–1.84 kg",
+                "dimensions": "varies by MagicBook N-series chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 14 2023 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 14 2023 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 14 2023 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 15",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 15 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 15 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 15 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 15 2020",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 15 2020 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 15 2020 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 15 2020 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 15 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 15 2021 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 15 2021 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 15 2021 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 16",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 16 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 16 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 16 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 16 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 16 2021 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 16 2021 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 16 2021 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 16 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD/2.1K FullView display, optional RTX on select models",
+                "processor": "Intel Core i5/i7 / AMD Ryzen 5/7",
+                "ram": "16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "60–75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.45–1.84 kg",
+                "dimensions": "varies by MagicBook N-series chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 16 2022 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 16 2022 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 16 2022 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 16 2026",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" FHD/WUXGA/2.5K HONOR FullView display",
+                "processor": "Intel Core 5/7 or Intel Core Ultra",
+                "ram": "16–32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "60–75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.45–1.84 kg",
+                "dimensions": "varies by MagicBook 14/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 16 2026 512 GB SSD Space Gray",
+                  "processor": "Intel Core 5/7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 16 2026 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core 5/7",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 16 2026 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core 5/7",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 16 Pro",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 16 Pro 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 16 Pro 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 16 Pro 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook V14",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook V14 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook V14 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook V14 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook V14 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.87 kg",
+                "dimensions": "varies by MagicBook 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook V14 2021 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook V14 2021 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook V14 2021 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook V14 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x16-2026/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD/2.1K FullView display, optional RTX on select models",
+                "processor": "Intel Core i5/i7 / AMD Ryzen 5/7",
+                "ram": "16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "60–75 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.45–1.84 kg",
+                "dimensions": "varies by MagicBook N-series chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook V14 2022 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook V14 2022 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook V14 2022 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MagicBook X",
+          "models": [
+            {
+              "name": "Honor MagicBook X14",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X14 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X14 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X14 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X14 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X14 2021 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X14 2021 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X14 2021 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X14 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X14 2022 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X14 2022 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X14 2022 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X14 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X14 2023 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X14 2023 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X14 2023 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X14 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" FHD/WUXGA HONOR FullView Eye Comfort display",
+                "processor": "Intel Core i5/i7 / AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–60 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.4–1.75 kg",
+                "dimensions": "varies by X14/X16/X16 Plus chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X14 2025 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X14 2025 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X14 2025 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X14 2026 Candidate",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" FHD/WUXGA HONOR FullView Eye Comfort display",
+                "processor": "Intel Core i5/i7 / Intel Core 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–60 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.4–1.75 kg",
+                "dimensions": "varies by X14/X16 2026 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X14 2026 Candidate 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X14 2026 Candidate 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X14 2026 Candidate 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X15",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X15 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X15 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X15 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X15 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X15 2021 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X15 2021 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X15 2021 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X15 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X15 2022 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X15 2022 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X15 2022 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X15 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X15 2023 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X15 2023 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X15 2023 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X16",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X16 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X16 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X16 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X16 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X16 2022 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X16 2022 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X16 2022 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X16 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X16 2023 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X16 2023 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X16 2023 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X16 2024",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" FHD IPS FullView display",
+                "processor": "Intel Core i3/i5/i7 10th–12th Gen or AMD Ryzen",
+                "ram": "8–16 GB DDR4",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.75 kg",
+                "dimensions": "varies by MagicBook X chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X16 2024 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X16 2024 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X16 2024 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7 10th–12th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X16 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" FHD/WUXGA HONOR FullView Eye Comfort display",
+                "processor": "Intel Core i5/i7 / AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–60 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.4–1.75 kg",
+                "dimensions": "varies by X14/X16/X16 Plus chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X16 2025 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X16 2025 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X16 2025 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X16 2026",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" FHD/WUXGA HONOR FullView Eye Comfort display",
+                "processor": "Intel Core i5/i7 / Intel Core 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–60 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.4–1.75 kg",
+                "dimensions": "varies by X14/X16 2026 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X16 2026 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X16 2026 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X16 2026 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X16 AMD 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" FHD/WUXGA HONOR FullView Eye Comfort display",
+                "processor": "Intel Core i5/i7 / AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–60 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.4–1.75 kg",
+                "dimensions": "varies by X14/X16/X16 Plus chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X16 AMD 2025 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X16 AMD 2025 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X16 AMD 2025 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook X16 Plus 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.honor.com/global/laptops/honor-magicbook-x14/spec/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" FHD/WUXGA HONOR FullView Eye Comfort display",
+                "processor": "Intel Core i5/i7 / AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–60 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.4–1.75 kg",
+                "dimensions": "varies by X14/X16/X16 Plus chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook X16 Plus 2025 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook X16 Plus 2025 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook X16 Plus 2025 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MagicBook Legacy",
+          "models": [
+            {
+              "name": "Honor MagicBook 2018",
+              "release_year": 2018,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.hihonor.com/global/laptops/honor-magicbook-14/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.7 kg",
+                "dimensions": "varies by early MagicBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 2018 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 2018 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 2018 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Ryzen Edition 2018",
+              "release_year": 2018,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.hihonor.com/global/laptops/honor-magicbook-14/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.7 kg",
+                "dimensions": "varies by early MagicBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Ryzen Edition 2018 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Ryzen Edition 2018 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Ryzen Edition 2018 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Intel Edition 2018",
+              "release_year": 2018,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.hihonor.com/global/laptops/honor-magicbook-14/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.7 kg",
+                "dimensions": "varies by early MagicBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Intel Edition 2018 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Intel Edition 2018 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Intel Edition 2018 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 14 AMD 2019",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.hihonor.com/global/laptops/honor-magicbook-14/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.7 kg",
+                "dimensions": "varies by early MagicBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 14 AMD 2019 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 14 AMD 2019 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 14 AMD 2019 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 14 Intel 2019",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.hihonor.com/global/laptops/honor-magicbook-14/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.7 kg",
+                "dimensions": "varies by early MagicBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 14 Intel 2019 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 14 Intel 2019 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 14 Intel 2019 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 15 AMD 2019",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.hihonor.com/global/laptops/honor-magicbook-14/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.7 kg",
+                "dimensions": "varies by early MagicBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 15 AMD 2019 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 15 AMD 2019 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 15 AMD 2019 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook 15 Intel 2019",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.hihonor.com/global/laptops/honor-magicbook-14/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.7 kg",
+                "dimensions": "varies by early MagicBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook 15 Intel 2019 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook 15 Intel 2019 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook 15 Intel 2019 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro AMD 2019",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.hihonor.com/global/laptops/honor-magicbook-14/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.7 kg",
+                "dimensions": "varies by early MagicBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro AMD 2019 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro AMD 2019 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro AMD 2019 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Honor MagicBook Pro Intel 2019",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Honor%20MagicBook%2014.jpg",
+              "source_url": "https://www.hihonor.com/global/laptops/honor-magicbook-14/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16.1\" FHD IPS FullView display",
+                "processor": "Intel Core i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–56 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.7 kg",
+                "dimensions": "varies by early MagicBook chassis"
+              },
+              "variants": [
+                {
+                  "name": "Honor MagicBook Pro Intel 2019 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Honor MagicBook Pro Intel 2019 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Honor MagicBook Pro Intel 2019 1 TB SSD White",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "catalog_scope_note": "Honor model-line complete repair-shop catalog seed; not every regional SKU or Huawei-era sub-configuration.",
+  "generated_at": "2026-05-13T09:06:28.626085+00:00"
+}

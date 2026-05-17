@@ -1,0 +1,242 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "Condor",
+      "logo_url": "https://logo.clearbit.com/condormobile.dz",
+      "families": [
+        {
+          "name": "C-Book",
+          "models": [
+            {
+              "name": "Condor CBook CL-502",
+              "release_year": 2026,
+              "image_url": "https://condormobile.dz/wp-content/uploads/2026/01/C-book-01-scaled.webp",
+              "source_url": "https://condormobile.dz/c-book-cl-502-bis/",
+              "image_confidence": "exact_model_verified_image",
+              "specs": {
+                "display": "15.6\" IPS, Full HD 1920×1080, anti-glare, non-touch",
+                "processor": "Intel Core i3-1315U / Intel Core i5-13420H / Intel Core i7-13620H",
+                "ram": "8–16 GB DDR4 3200 MHz",
+                "storage": [
+                  "512 GB M.2 SATA SSD"
+                ],
+                "battery": "57 Wh Li-ion polymer",
+                "os": "Windows 11 Home 64-bit",
+                "weight": null,
+                "dimensions": "357.4 × 228 × 18.5 mm"
+              },
+              "variants": [
+                {
+                  "name": "Condor CBook CL-502 i3-1315U 8 GB 512 GB Space Gray",
+                  "processor": "Intel Core i3-1315U",
+                  "ram": "8 GB DDR4 3200 MHz",
+                  "storage": "512 GB M.2 SATA SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Condor CBook CL-502 i5-13420H 8 GB 512 GB Space Gray",
+                  "processor": "Intel Core i5-13420H",
+                  "ram": "8 GB DDR4 3200 MHz",
+                  "storage": "512 GB M.2 SATA SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Condor CBook CL-502 i7-13620H 16 GB 512 GB Space Gray",
+                  "processor": "Intel Core i7-13620H",
+                  "ram": "16 GB DDR4 3200 MHz",
+                  "storage": "512 GB M.2 SATA SSD",
+                  "color": "Space Gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "C-Book Lite",
+          "models": [
+            {
+              "name": "Condor C Book Lite CBL1123",
+              "release_year": 2021,
+              "image_url": "https://multiproducts.tech/cdn/shop/files/12_b9cacc1f-50c5-4984-a767-78459b635ef0.jpg?v=1730113573&width=1445",
+              "source_url": "https://dome-dz.com/product/%D8%AD%D8%A7%D8%B3%D9%88%D8%A8-%D9%85%D8%AD%D9%85%D9%88%D9%84-condor-c-book-lite-cbl-1123/",
+              "image_confidence": "exact_model_verified_reseller_image",
+              "specs": {
+                "display": "11.6\" Full HD 1920×1080 touchscreen, 360° convertible",
+                "processor": "Intel Celeron N3350",
+                "ram": "4 GB LPDDR3 onboard",
+                "storage": [
+                  "64 GB eMMC"
+                ],
+                "battery": "4000 mAh Li-ion",
+                "os": "Windows 10 Home Basic",
+                "weight": "1.04 kg",
+                "dimensions": "277.5 × 188.8 × 18.2 mm"
+              },
+              "variants": [
+                {
+                  "name": "Condor C Book Lite CBL1123 64 GB Gray",
+                  "processor": "Intel Celeron N3350",
+                  "ram": "4 GB LPDDR3",
+                  "storage": "64 GB eMMC",
+                  "color": "Gray"
+                },
+                {
+                  "name": "Condor C Book Lite CBL1123 64 GB Black",
+                  "processor": "Intel Celeron N3350",
+                  "ram": "4 GB LPDDR3",
+                  "storage": "64 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Condor C Book Lite CBL1123 64 GB Gray/Black",
+                  "processor": "Intel Celeron N3350",
+                  "ram": "4 GB LPDDR3",
+                  "storage": "64 GB eMMC",
+                  "color": "Gray / Black"
+                }
+              ]
+            },
+            {
+              "name": "Condor C Book Lite 13 Celeron 3865U",
+              "release_year": 2024,
+              "image_url": "https://multiproducts.tech/cdn/shop/files/1_b7725fb6-0d49-4bf4-95b0-a786ea909ac4.jpg?v=1730113573&width=1445",
+              "source_url": "https://www.facebook.com/Bootika.dz/posts/-nouveau-chez-condor-c-book-lite-intel-celeron-n3350-4-go-ram-64-go-de-stockage-/833072258847542/",
+              "image_confidence": "representative_same_family_image",
+              "specs": {
+                "display": "13\" touchscreen / convertible-class display",
+                "processor": "Intel Celeron 3865U",
+                "ram": "4 GB DDR4",
+                "storage": [
+                  "128 GB SSD"
+                ],
+                "battery": null,
+                "os": "Windows 10 / Windows 11 depending reseller image",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "name": "Condor C Book Lite 13 Celeron 3865U 4 GB 128 GB Black",
+                  "processor": "Intel Celeron 3865U",
+                  "ram": "4 GB DDR4",
+                  "storage": "128 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Condor C Book Lite 13 Celeron 3865U 4 GB 128 GB Gray",
+                  "processor": "Intel Celeron 3865U",
+                  "ram": "4 GB DDR4",
+                  "storage": "128 GB SSD",
+                  "color": "Gray"
+                },
+                {
+                  "name": "Condor C Book Lite 13 Celeron 3865U 4 GB 128 GB Regional",
+                  "processor": "Intel Celeron 3865U",
+                  "ram": "4 GB DDR4",
+                  "storage": "128 GB SSD",
+                  "color": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Legacy / Regional",
+          "models": [
+            {
+              "name": "Condor C Book Lite Regional 11.6",
+              "release_year": 2021,
+              "image_url": "https://multiproducts.tech/cdn/shop/files/2_c190f37e-bbf1-4038-bcea-9e49e899489a.jpg?v=1730113573&width=1445",
+              "source_url": "https://www.ouedkniss.com/informatique-ordinateur-portable-laptop?keywords=condor&lang=en",
+              "image_confidence": "representative_same_family_image",
+              "specs": {
+                "display": "11.6–15.6\" Condor regional notebook display",
+                "processor": "Intel Celeron / Intel Core",
+                "ram": "4–16 GB",
+                "storage": [
+                  "64 GB eMMC",
+                  "128 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": null,
+                "os": "Windows 10 / Windows 11",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "name": "Condor C Book Lite Regional 11.6 regional 64 GB",
+                  "processor": "Intel Celeron",
+                  "ram": "4 GB",
+                  "storage": "64 GB eMMC",
+                  "color": null
+                },
+                {
+                  "name": "Condor C Book Lite Regional 11.6 regional 128 GB",
+                  "processor": "Intel Celeron / Intel Core",
+                  "ram": "4–8 GB",
+                  "storage": "128 GB SSD",
+                  "color": null
+                },
+                {
+                  "name": "Condor C Book Lite Regional 11.6 regional 512 GB",
+                  "processor": "Intel Core",
+                  "ram": "8–16 GB",
+                  "storage": "512 GB SSD",
+                  "color": null
+                }
+              ]
+            },
+            {
+              "name": "Condor C Book Regional 15.6",
+              "release_year": 2025,
+              "image_url": "https://multiproducts.tech/cdn/shop/files/2_c190f37e-bbf1-4038-bcea-9e49e899489a.jpg?v=1730113573&width=1445",
+              "source_url": "https://www.ouedkniss.com/informatique-ordinateur-portable-laptop?keywords=condor&lang=en",
+              "image_confidence": "representative_same_family_image",
+              "specs": {
+                "display": "11.6–15.6\" Condor regional notebook display",
+                "processor": "Intel Celeron / Intel Core",
+                "ram": "4–16 GB",
+                "storage": [
+                  "64 GB eMMC",
+                  "128 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": null,
+                "os": "Windows 10 / Windows 11",
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "name": "Condor C Book Regional 15.6 regional 64 GB",
+                  "processor": "Intel Celeron",
+                  "ram": "4 GB",
+                  "storage": "64 GB eMMC",
+                  "color": null
+                },
+                {
+                  "name": "Condor C Book Regional 15.6 regional 128 GB",
+                  "processor": "Intel Celeron / Intel Core",
+                  "ram": "4–8 GB",
+                  "storage": "128 GB SSD",
+                  "color": null
+                },
+                {
+                  "name": "Condor C Book Regional 15.6 regional 512 GB",
+                  "processor": "Intel Core",
+                  "ram": "8–16 GB",
+                  "storage": "512 GB SSD",
+                  "color": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "catalog_scope_note": "Condor model-line repair-shop catalog. Condor's public current laptop lineup is small and mostly C-Book / C-Book Lite; this file does not invent non-public models or every reseller listing.",
+  "generated_at": "2026-05-13T09:17:18.745671+00:00"
+}

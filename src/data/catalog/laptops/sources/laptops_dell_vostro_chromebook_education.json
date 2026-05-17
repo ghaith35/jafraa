@@ -1,0 +1,4241 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "Dell",
+      "logo_url": "https://logo.clearbit.com/dell.com",
+      "families": [
+        {
+          "name": "Vostro Legacy",
+          "models": [
+            {
+              "name": "Dell Vostro 1000",
+              "release_year": 2007,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.4\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.8 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 1000 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 1000 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 1000 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 1200",
+              "release_year": 2007,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "12.1\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.4 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 1200 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 1200 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 1200 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 1220",
+              "release_year": 2009,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "12.1\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.4 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 1220 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 1220 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 1220 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 1310",
+              "release_year": 2008,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 1310 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 1310 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 1310 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 1320",
+              "release_year": 2009,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 1320 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 1320 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 1320 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 1400",
+              "release_year": 2007,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.1\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 1400 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 1400 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 1400 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 1510",
+              "release_year": 2008,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.4\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.8 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 1510 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 1510 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 1510 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 1520",
+              "release_year": 2009,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.4\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.8 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 1520 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 1520 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 1520 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 1710",
+              "release_year": 2008,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "17.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "2.4 kg",
+                "dimensions": "400 × 265 × 26 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 1710 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 1710 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 1710 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 1720",
+              "release_year": 2009,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "17.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "2.4 kg",
+                "dimensions": "400 × 265 × 26 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 1720 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 1720 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 1720 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3300",
+              "release_year": 2010,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3300 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3300 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3300 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3400",
+              "release_year": 2010,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3400 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3400 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3400 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3500",
+              "release_year": 2010,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3500 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3500 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3500 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3700",
+              "release_year": 2010,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "17.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "2.4 kg",
+                "dimensions": "400 × 265 × 26 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3700 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3700 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3700 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3350",
+              "release_year": 2011,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 2nd Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3350 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3350 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3350 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3450",
+              "release_year": 2011,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 2nd Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3450 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3450 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3450 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3550",
+              "release_year": 2011,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 2nd Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3550 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3550 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3550 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3555",
+              "release_year": 2011,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 2nd Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3555 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3555 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3555 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3750",
+              "release_year": 2011,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "17.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 2nd Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional",
+                "weight": "2.4 kg",
+                "dimensions": "400 × 265 × 26 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3750 Intel Core i3 2 GB 250 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3750 Intel Core i3 2 GB 250 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3750 Intel Core i3 2 GB 250 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "2 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3360",
+              "release_year": 2012,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 3rd Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional / Windows 8 Pro",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3360 Intel Core i3 4 GB 500 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3360 Intel Core i3 4 GB 500 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3360 Intel Core i3 4 GB 500 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3460",
+              "release_year": 2012,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 3rd Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional / Windows 8 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3460 Intel Core i3 4 GB 500 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3460 Intel Core i3 4 GB 500 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3460 Intel Core i3 4 GB 500 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 3560",
+              "release_year": 2012,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 3rd Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "6-cell Li-ion",
+                "os": "Windows 7 Professional / Windows 8 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 3560 Intel Core i3 4 GB 500 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 3560 Intel Core i3 4 GB 500 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 3560 Intel Core i3 4 GB 500 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 5470",
+              "release_year": 2013,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 4th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "40 Wh / 60 Wh",
+                "os": "Windows 7 Professional / Windows 8 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 5470 Intel Core i3 4 GB 500 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 5470 Intel Core i3 4 GB 500 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 5470 Intel Core i3 4 GB 500 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 5480",
+              "release_year": 2014,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 4th/5th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "40 Wh / 60 Wh",
+                "os": "Windows 7 Professional / Windows 8 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 5480 Intel Core i3 4 GB 500 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 5480 Intel Core i3 4 GB 500 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 5480 Intel Core i3 4 GB 500 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 5460",
+              "release_year": 2013,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 4th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "40 Wh / 60 Wh",
+                "os": "Windows 7 Professional / Windows 8 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 5460 Intel Core i3 4 GB 500 GB HDD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 5460 Intel Core i3 4 GB 500 GB HDD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 5460 Intel Core i3 4 GB 500 GB HDD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vostro 3000 Series",
+          "models": [
+            {
+              "name": "Dell Vostro 14 3458",
+              "release_year": 2015,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7 5th/6th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40 Wh / 60 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 3458 Intel Core i5/i7 5th/6th Gen 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 5th/6th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 3458 Intel Core i5/i7 5th/6th Gen 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i5/i7 5th/6th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 3458 Intel Core i5/i7 5th/6th Gen 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 5th/6th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3558",
+              "release_year": 2015,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7 5th/6th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40 Wh / 60 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3558 Intel Core i5/i7 5th/6th Gen 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 5th/6th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3558 Intel Core i5/i7 5th/6th Gen 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i5/i7 5th/6th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3558 Intel Core i5/i7 5th/6th Gen 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 5th/6th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3568",
+              "release_year": 2016,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7 6th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "40 Wh / 60 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3568 Intel Core i5/i7 6th Gen 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i5/i7 6th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3568 Intel Core i5/i7 6th Gen 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i5/i7 6th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3568 Intel Core i5/i7 6th Gen 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i5/i7 6th Gen",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3578",
+              "release_year": 2018,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 8th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3578 Intel Core i3 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3578 Intel Core i3 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3578 Intel Core i3 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3590",
+              "release_year": 2019,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 8th/10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3590 Intel Core i3 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3590 Intel Core i3 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3590 Intel Core i3 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3591",
+              "release_year": 2019,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i3/i5/i7 8th/10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3591 Intel Core i3 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i3",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3591 Intel Core i3 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i3",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3591 Intel Core i3 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i3",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 3400",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 3400 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 3400 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 3400 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 3401",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 3401 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 3401 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 3401 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 3405",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 3405 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 3405 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 3405 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 3410",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 11th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 3410 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 3410 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 3410 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 3420",
+              "release_year": 2022,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 12th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 3420 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 3420 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 3420 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 3430",
+              "release_year": 2023,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 13th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 3430 Intel Core i7 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 3430 Intel Core i7 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 3430 Intel Core i7 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 3440",
+              "release_year": 2024,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7/9 or Intel Core 14th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro / Ubuntu Linux",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 3440 Intel Core Ultra 5 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 3440 Intel Core Ultra 5 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 3440 Intel Core Ultra 5 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3500",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3500 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3500 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3500 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3501",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3501 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3501 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3501 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3510",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 11th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3510 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3510 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3510 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3515",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 11th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3515 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3515 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3515 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3520",
+              "release_year": 2022,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 12th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3520 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3520 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3520 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3530",
+              "release_year": 2023,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 13th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3530 Intel Core i7 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3530 Intel Core i7 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3530 Intel Core i7 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 3540",
+              "release_year": 2024,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7/9 or Intel Core 14th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro / Ubuntu Linux",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 3540 Intel Core Ultra 5 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 3540 Intel Core Ultra 5 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 3540 Intel Core Ultra 5 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vostro 5000 Series",
+          "models": [
+            {
+              "name": "Dell Vostro 13 5300",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 13 5300 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 13 5300 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 13 5300 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 13 5310",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 11th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 13 5310 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 13 5310 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 13 5310 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 13 5320",
+              "release_year": 2022,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 12th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 13 5320 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 13 5320 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 13 5320 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 5401",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 5401 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 5401 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 5401 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 5410",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 11th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 5410 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 5410 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 5410 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 5415",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 11th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 5415 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 5415 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 5415 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 5420",
+              "release_year": 2022,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 12th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 5420 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 5420 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 5420 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 5430",
+              "release_year": 2023,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 13th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 5430 Intel Core i7 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 5430 Intel Core i7 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 5430 Intel Core i7 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 5440",
+              "release_year": 2024,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7/9 or Intel Core 14th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro / Ubuntu Linux",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 5440 Intel Core Ultra 5 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 5440 Intel Core Ultra 5 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 5440 Intel Core Ultra 5 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 5501",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 5501 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 5501 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 5501 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 5510",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 11th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 5510 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 5510 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 5510 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 5515",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 11th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 5515 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 5515 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 5515 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 5520",
+              "release_year": 2022,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 12th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 5520 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 5520 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 5520 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 5530",
+              "release_year": 2023,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 13th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 5530 Intel Core i7 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 5530 Intel Core i7 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 5530 Intel Core i7 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 5540",
+              "release_year": 2024,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7/9 or Intel Core 14th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro / Ubuntu Linux",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 5540 Intel Core Ultra 5 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 5540 Intel Core Ultra 5 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 5540 Intel Core Ultra 5 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 16 5620",
+              "release_year": 2022,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "16.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 12th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "356 × 272 × 24 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 16 5620 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 16 5620 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 16 5620 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 16 5630",
+              "release_year": 2023,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "16.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 13th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "356 × 272 × 24 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 16 5630 Intel Core i7 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 16 5630 Intel Core i7 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 16 5630 Intel Core i7 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 16 5640",
+              "release_year": 2024,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "16.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7/9 or Intel Core 14th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro / Ubuntu Linux",
+                "weight": "2.0 kg",
+                "dimensions": "356 × 272 × 24 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 16 5640 Intel Core Ultra 5 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 16 5640 Intel Core Ultra 5 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 16 5640 Intel Core Ultra 5 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vostro 7000 Series",
+          "models": [
+            {
+              "name": "Dell Vostro 14 7400",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 7400 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 7400 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 7400 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 7420",
+              "release_year": 2022,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 12th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 7420 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 7420 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 7420 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 14 7430",
+              "release_year": 2023,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 13th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 14 7430 Intel Core i7 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 14 7430 Intel Core i7 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 14 7430 Intel Core i7 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 7500",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 7500 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 7500 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 7500 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 7510",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 11th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 7510 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 7510 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 7510 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 7520",
+              "release_year": 2022,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 12th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 7520 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 7520 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 7520 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 15 7530",
+              "release_year": 2023,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 13th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 15 7530 Intel Core i7 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 15 7530 Intel Core i7 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 15 7530 Intel Core i7 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 16 7620",
+              "release_year": 2022,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "16.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 12th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "356 × 272 × 24 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 16 7620 Intel Core i7 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 16 7620 Intel Core i7 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 16 7620 Intel Core i7 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 16 7630",
+              "release_year": 2023,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "16.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core i5/i7/i9 13th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 10 Pro / Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "356 × 272 × 24 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 16 7630 Intel Core i7 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 16 7630 Intel Core i7 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 16 7630 Intel Core i7 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core i7",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Vostro 16 7640",
+              "release_year": 2024,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "16.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7/9 or Intel Core 14th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro / Ubuntu Linux",
+                "weight": "2.0 kg",
+                "dimensions": "356 × 272 × 24 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Vostro 16 7640 Intel Core Ultra 5 8 GB 512 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Vostro 16 7640 Intel Core Ultra 5 8 GB 512 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Vostro 16 7640 Intel Core Ultra 5 8 GB 512 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chromebook / Education",
+          "models": [
+            {
+              "name": "Dell Chromebook 11 3180",
+              "release_year": 2017,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 11 3180 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 11 3180 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 11 3180 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 11 3189 2-in-1",
+              "release_year": 2017,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 11 3189 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 11 3189 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 11 3189 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 11 5190",
+              "release_year": 2018,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 11 5190 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 11 5190 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 11 5190 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 11 5190 2-in-1",
+              "release_year": 2018,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 11 5190 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 11 5190 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 11 5190 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 11 3100",
+              "release_year": 2019,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 11 3100 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 11 3100 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 11 3100 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 11 3100 2-in-1",
+              "release_year": 2019,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 11 3100 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 11 3100 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 11 3100 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 11 3110",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 11 3110 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 11 3110 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 11 3110 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 11 3110 2-in-1",
+              "release_year": 2021,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 11 3110 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 11 3110 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 11 3110 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 11 3120",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 11 3120 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 11 3120 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 11 3120 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 11 3120 2-in-1",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 11 3120 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 11 3120 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 11 3120 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 13 3380",
+              "release_year": 2017,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 13 3380 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 13 3380 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 13 3380 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Chromebook 13 7310",
+              "release_year": 2015,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Chromebook 13 7310 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Chromebook 13 7310 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Chromebook 13 7310 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Latitude 5300 2-in-1 Chromebook Enterprise",
+              "release_year": 2019,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Latitude 5300 2-in-1 Chromebook Enterprise Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Latitude 5300 2-in-1 Chromebook Enterprise Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Latitude 5300 2-in-1 Chromebook Enterprise Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Latitude 5400 Chromebook Enterprise",
+              "release_year": 2019,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Latitude 5400 Chromebook Enterprise Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Latitude 5400 Chromebook Enterprise Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Latitude 5400 Chromebook Enterprise Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Latitude 7410 Chromebook Enterprise",
+              "release_year": 2020,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Latitude 7410 Chromebook Enterprise Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Latitude 7410 Chromebook Enterprise Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Latitude 7410 Chromebook Enterprise Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Latitude 5430 Chromebook",
+              "release_year": 2022,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Latitude 5430 Chromebook Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Latitude 5430 Chromebook Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Latitude 5430 Chromebook Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Latitude 3445 Chromebook",
+              "release_year": 2023,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "ChromeOS",
+                "weight": "1.3 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Latitude 3445 Chromebook Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Latitude 3445 Chromebook Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Latitude 3445 Chromebook Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Pro 11 Education",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "Windows 11 Pro / Ubuntu Linux",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Pro 11 Education Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Pro 11 Education Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Pro 11 Education Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Pro 11 Education 2-in-1",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/vostro-notebooks/vostro-15-3530/media-gallery/bk-pl-fpr/notebook-vostro-15-3530-nt-plastic-fpr-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=402&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=689%2C402&wid=689",
+              "specs": {
+                "display": "11.6\" HD/FHD anti-glare display",
+                "processor": "Intel Celeron / Intel N-series",
+                "ram": "4/8 GB",
+                "storage": [
+                  "32 GB eMMC",
+                  "64 GB eMMC",
+                  "128 GB eMMC"
+                ],
+                "battery": "42 Wh",
+                "os": "Windows 11 Pro / Ubuntu Linux",
+                "weight": "1.3 kg",
+                "dimensions": "303 × 207 × 21 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Pro 11 Education 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Black",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Pro 11 Education 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Grey",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Pro 11 Education 2-in-1 Intel Celeron / Intel N-series 4 GB 32 GB eMMC Silver",
+                  "processor": "Intel Celeron / Intel N-series",
+                  "ram": "4 GB",
+                  "storage": "32 GB eMMC",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dell Pro Essential / Plus Extras",
+          "models": [
+            {
+              "name": "Dell Pro 13 Essential",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pv15260/media-gallery/black/laptop-15-pv15260-nt-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=804&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=1222%2C804&wid=1222",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7 Series 2",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Pro 13 Essential Intel Core Ultra 5 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Pro 13 Essential Intel Core Ultra 5 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Pro 13 Essential Intel Core Ultra 5 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Pro 14 Essential",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pv15260/media-gallery/black/laptop-15-pv15260-nt-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=804&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=1222%2C804&wid=1222",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7 Series 2",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Pro 14 Essential Intel Core Ultra 5 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Pro 14 Essential Intel Core Ultra 5 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Pro 14 Essential Intel Core Ultra 5 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Pro 15 Essential",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pv15260/media-gallery/black/laptop-15-pv15260-nt-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=804&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=1222%2C804&wid=1222",
+              "specs": {
+                "display": "15.6\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7 Series 2",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "358 × 235 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Pro 15 Essential Intel Core Ultra 5 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Pro 15 Essential Intel Core Ultra 5 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Pro 15 Essential Intel Core Ultra 5 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Pro 16 Essential",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pv15260/media-gallery/black/laptop-15-pv15260-nt-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=804&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=1222%2C804&wid=1222",
+              "specs": {
+                "display": "16.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7 Series 2",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "356 × 272 × 24 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Pro 16 Essential Intel Core Ultra 5 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Pro 16 Essential Intel Core Ultra 5 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Pro 16 Essential Intel Core Ultra 5 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Pro 14 Plus",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pv15260/media-gallery/black/laptop-15-pv15260-nt-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=804&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=1222%2C804&wid=1222",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7 Series 2",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Pro 14 Plus Intel Core Ultra 5 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Pro 14 Plus Intel Core Ultra 5 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Pro 14 Plus Intel Core Ultra 5 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Pro 16 Plus",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pv15260/media-gallery/black/laptop-15-pv15260-nt-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=804&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=1222%2C804&wid=1222",
+              "specs": {
+                "display": "16.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7 Series 2",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "2.0 kg",
+                "dimensions": "356 × 272 × 24 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Pro 16 Plus Intel Core Ultra 5 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Pro 16 Plus Intel Core Ultra 5 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Pro 16 Plus Intel Core Ultra 5 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Pro 13 Premium",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pv15260/media-gallery/black/laptop-15-pv15260-nt-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=804&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=1222%2C804&wid=1222",
+              "specs": {
+                "display": "13.3\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7 Series 2",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "1.3 kg",
+                "dimensions": "306 × 205 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Pro 13 Premium Intel Core Ultra 5 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Pro 13 Premium Intel Core Ultra 5 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Pro 13 Premium Intel Core Ultra 5 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            },
+            {
+              "name": "Dell Pro 14 Premium",
+              "release_year": 2025,
+              "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pv15260/media-gallery/black/laptop-15-pv15260-nt-black-gallery-1.psd?chrss=full&fmt=png-alpha&hei=804&pscan=auto&qlt=100%2C1&resMode=sharp2&scl=1&size=1222%2C804&wid=1222",
+              "specs": {
+                "display": "14.0\" HD/FHD anti-glare display",
+                "processor": "Intel Core Ultra 5/7 Series 2",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42 Wh / 54 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "1.5 kg",
+                "dimensions": "322 × 216 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Dell Pro 14 Premium Intel Core Ultra 5 8 GB 256 GB SSD Black",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Dell Pro 14 Premium Intel Core Ultra 5 8 GB 256 GB SSD Grey",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Grey"
+                },
+                {
+                  "name": "Dell Pro 14 Premium Intel Core Ultra 5 8 GB 256 GB SSD Silver",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Silver"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

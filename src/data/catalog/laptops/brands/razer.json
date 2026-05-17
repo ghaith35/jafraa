@@ -1,0 +1,2799 @@
+{
+  "name": "Razer",
+  "sortOrder": 13,
+  "aliases": [],
+  "families": [
+    {
+      "name": "Blade",
+      "models": [
+        {
+          "name": "Razer Blade Book 13",
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "13.4\" 16:10 FHD+ (1920×1200) touch / UHD+ (3840×2400) touch, Gorilla Glass 6",
+            "processor": "Intel Core i5-1135G7 / Intel Core i7-1165G7",
+            "ram": "8–16 GB LPDDR4x-4267",
+            "storage": [
+              "256 GB PCIe NVMe SSD",
+              "512 GB PCIe NVMe SSD"
+            ],
+            "battery": "55 Wh",
+            "os": "Windows 10 Home / Windows 10 Pro, upgradeable to Windows 11",
+            "weight": "1.40 kg",
+            "dimensions": "295.6 × 198.5 × 15.15 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Book 13 i5/8GB/256GB Mercury White",
+              "processor": "Intel Core i5-1135G7",
+              "ram": "8 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury White"
+            },
+            {
+              "name": "Razer Blade Book 13 i7/16GB/256GB Mercury White",
+              "processor": "Intel Core i7-1165G7",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury White"
+            },
+            {
+              "name": "Razer Blade Book 13 i7/16GB/512GB Mercury White",
+              "processor": "Intel Core i7-1165G7",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury White"
+            },
+            {
+              "name": "Razer Blade Book 13 i7/16GB/512GB UHD+ Mercury White",
+              "processor": "Intel Core i7-1165G7",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury White"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2013",
+          "releaseYear": 2013,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" QHD+/FHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.88–1.95 kg",
+            "dimensions": "varies by early Blade 14 chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2013 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2013 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2013 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Base 2018",
+          "releaseYear": 2018,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/094d5957e1db03d23f99c70d37c40676/razer-blade-18-og-image.jpg",
+          "specs": {
+            "display": "18\" QHD+/UHD+ Mini LED / dual-mode or QHD 300Hz display",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 275HX",
+            "ram": "32–64 GB DDR5",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "91.7–99 Wh",
+            "os": "Windows 11 Home",
+            "weight": "3.1–3.2 kg",
+            "dimensions": "approx. 399.9 × 275.4 × 21.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Base 2018 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Base 2018 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Base 2018 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Advanced 2018",
+          "releaseYear": 2018,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/094d5957e1db03d23f99c70d37c40676/razer-blade-18-og-image.jpg",
+          "specs": {
+            "display": "18\" QHD+/UHD+ Mini LED / dual-mode or QHD 300Hz display",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 275HX",
+            "ram": "32–64 GB DDR5",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "91.7–99 Wh",
+            "os": "Windows 11 Home",
+            "weight": "3.1–3.2 kg",
+            "dimensions": "approx. 399.9 × 275.4 × 21.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Advanced 2018 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Advanced 2018 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Advanced 2018 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 16 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/a25dbaac76e8d9dc2c0965ef18b878f8/razer-blade-16-og-image.jpg",
+          "specs": {
+            "display": "16\" QHD+/UHD+/OLED/Mini LED display, 240Hz or dual-mode",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 / AMD Ryzen AI 9",
+            "ram": "16–64 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "95.2 Wh",
+            "os": "Windows 11 Home",
+            "weight": "2.1–2.45 kg",
+            "dimensions": "varies by Blade 16 generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 16 2023 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 16 2023 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 16 2023 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 17 2012",
+          "releaseYear": 2012,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" QHD+/FHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.88–1.95 kg",
+            "dimensions": "varies by early Blade 14 chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 17 2012 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 17 2012 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 17 2012 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 18 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/094d5957e1db03d23f99c70d37c40676/razer-blade-18-og-image.jpg",
+          "specs": {
+            "display": "18\" QHD+/UHD+ Mini LED / dual-mode or QHD 300Hz display",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 275HX",
+            "ram": "32–64 GB DDR5",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "91.7–99 Wh",
+            "os": "Windows 11 Home",
+            "weight": "3.1–3.2 kg",
+            "dimensions": "approx. 399.9 × 275.4 × 21.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 18 2023 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 18 2023 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 18 2023 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Original 17 2011",
+          "releaseYear": 2011,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" QHD+/FHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.88–1.95 kg",
+            "dimensions": "varies by early Blade 14 chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Original 17 2011 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Original 17 2011 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Original 17 2011 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 17 2012",
+          "releaseYear": 2012,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" QHD+/FHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.88–1.95 kg",
+            "dimensions": "varies by early Blade 14 chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 17 2012 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 17 2012 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 17 2012 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2013",
+          "releaseYear": 2013,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" QHD+/FHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.88–1.95 kg",
+            "dimensions": "varies by early Blade 14 chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2013 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2013 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2013 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2014",
+          "releaseYear": 2014,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" QHD+/FHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.88–1.95 kg",
+            "dimensions": "varies by early Blade 14 chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2014 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2014 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2014 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2015",
+          "releaseYear": 2015,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14–15.6\" FHD/QHD+/4K gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.9–2.0 kg",
+            "dimensions": "varies by early Blade chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2015 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2015 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2015 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2016",
+          "releaseYear": 2016,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/a25dbaac76e8d9dc2c0965ef18b878f8/razer-blade-16-og-image.jpg",
+          "specs": {
+            "display": "16\" QHD+/UHD+/OLED/Mini LED display, 240Hz or dual-mode",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 / AMD Ryzen AI 9",
+            "ram": "16–64 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "95.2 Wh",
+            "os": "Windows 11 Home",
+            "weight": "2.1–2.45 kg",
+            "dimensions": "varies by Blade 16 generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2016 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2016 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2016 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2017",
+          "releaseYear": 2017,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" QHD+/FHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.88–1.95 kg",
+            "dimensions": "varies by early Blade 14 chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2017 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2017 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2017 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Base 2018",
+          "releaseYear": 2018,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/094d5957e1db03d23f99c70d37c40676/razer-blade-18-og-image.jpg",
+          "specs": {
+            "display": "18\" QHD+/UHD+ Mini LED / dual-mode or QHD 300Hz display",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 275HX",
+            "ram": "32–64 GB DDR5",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "91.7–99 Wh",
+            "os": "Windows 11 Home",
+            "weight": "3.1–3.2 kg",
+            "dimensions": "approx. 399.9 × 275.4 × 21.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Base 2018 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Base 2018 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Base 2018 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Advanced 2018",
+          "releaseYear": 2018,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/094d5957e1db03d23f99c70d37c40676/razer-blade-18-og-image.jpg",
+          "specs": {
+            "display": "18\" QHD+/UHD+ Mini LED / dual-mode or QHD 300Hz display",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 275HX",
+            "ram": "32–64 GB DDR5",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "91.7–99 Wh",
+            "os": "Windows 11 Home",
+            "weight": "3.1–3.2 kg",
+            "dimensions": "approx. 399.9 × 275.4 × 21.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Advanced 2018 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Advanced 2018 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Advanced 2018 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Base 2019",
+          "releaseYear": 2019,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14–15.6\" FHD/QHD+/4K gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.9–2.0 kg",
+            "dimensions": "varies by early Blade chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Base 2019 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Base 2019 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Base 2019 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Advanced 2019",
+          "releaseYear": 2019,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14–15.6\" FHD/QHD+/4K gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.9–2.0 kg",
+            "dimensions": "varies by early Blade chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Advanced 2019 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Advanced 2019 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Advanced 2019 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Studio Edition 2019",
+          "releaseYear": 2019,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14–15.6\" FHD/QHD+/4K gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8–16 GB DDR3/DDR4",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "70 Wh",
+            "os": "Windows 8 / Windows 10",
+            "weight": "1.9–2.0 kg",
+            "dimensions": "varies by early Blade chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Studio Edition 2019 128 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Studio Edition 2019 256 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Studio Edition 2019 512 GB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Base 2020",
+          "releaseYear": 2020,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "15.6\" FHD/QHD/4K OLED display, 144–360Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0–2.2 kg",
+            "dimensions": "approx. 355 × 235 × 16.8–17.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Base 2020 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Base 2020 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Base 2020 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Advanced 2020",
+          "releaseYear": 2020,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "15.6\" FHD/QHD/4K OLED display, 144–360Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0–2.2 kg",
+            "dimensions": "approx. 355 × 235 × 16.8–17.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Advanced 2020 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Advanced 2020 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Advanced 2020 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Studio Edition 2020",
+          "releaseYear": 2020,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "15.6\" FHD/QHD/4K OLED display, 144–360Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0–2.2 kg",
+            "dimensions": "approx. 355 × 235 × 16.8–17.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Studio Edition 2020 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Studio Edition 2020 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Studio Edition 2020 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Base 2021",
+          "releaseYear": 2021,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "15.6\" FHD/QHD/4K OLED display, 144–360Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0–2.2 kg",
+            "dimensions": "approx. 355 × 235 × 16.8–17.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Base 2021 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Base 2021 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Base 2021 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 Advanced 2021",
+          "releaseYear": 2021,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "15.6\" FHD/QHD/4K OLED display, 144–360Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0–2.2 kg",
+            "dimensions": "approx. 355 × 235 × 16.8–17.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 Advanced 2021 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 Advanced 2021 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 Advanced 2021 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 2022",
+          "releaseYear": 2022,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "15.6\" FHD/QHD/4K OLED display, 144–360Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0–2.2 kg",
+            "dimensions": "approx. 355 × 235 × 16.8–17.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 2022 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 2022 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 2022 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 OLED 2022",
+          "releaseYear": 2022,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "15.6\" FHD/QHD/4K OLED display, 144–360Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0–2.2 kg",
+            "dimensions": "approx. 355 × 235 × 16.8–17.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 OLED 2022 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 OLED 2022 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 OLED 2022 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 15 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "15.6\" FHD/QHD/4K OLED display, 144–360Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0–2.2 kg",
+            "dimensions": "approx. 355 × 235 × 16.8–17.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 15 2023 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 15 2023 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 15 2023 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2021",
+          "releaseYear": 2021,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" FHD/QHD/QHD+ gaming display, 144–240Hz",
+            "processor": "AMD Ryzen 9 5900HX / Ryzen 9 6900HX / Ryzen 9 7940HS",
+            "ram": "16 GB DDR4/DDR5/LPDDR5X",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "61.6–68.1 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.78 kg",
+            "dimensions": "approx. 319.7 × 220 × 16.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2021 512 GB SSD Black",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2021 1 TB SSD Mercury",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2021 2 TB SSD Quartz",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2022",
+          "releaseYear": 2022,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" FHD/QHD/QHD+ gaming display, 144–240Hz",
+            "processor": "AMD Ryzen 9 5900HX / Ryzen 9 6900HX / Ryzen 9 7940HS",
+            "ram": "16 GB DDR4/DDR5/LPDDR5X",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "61.6–68.1 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.78 kg",
+            "dimensions": "approx. 319.7 × 220 × 16.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2022 512 GB SSD Black",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2022 1 TB SSD Mercury",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2022 2 TB SSD Quartz",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" FHD/QHD/QHD+ gaming display, 144–240Hz",
+            "processor": "AMD Ryzen 9 5900HX / Ryzen 9 6900HX / Ryzen 9 7940HS",
+            "ram": "16 GB DDR4/DDR5/LPDDR5X",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "61.6–68.1 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.78 kg",
+            "dimensions": "approx. 319.7 × 220 × 16.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2023 512 GB SSD Black",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2023 1 TB SSD Mercury",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2023 2 TB SSD Quartz",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2024",
+          "releaseYear": 2024,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" FHD/QHD/QHD+ gaming display, 144–240Hz",
+            "processor": "AMD Ryzen 9 5900HX / Ryzen 9 6900HX / Ryzen 9 7940HS",
+            "ram": "16 GB DDR4/DDR5/LPDDR5X",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "61.6–68.1 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "1.78 kg",
+            "dimensions": "approx. 319.7 × 220 × 16.8 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2024 512 GB SSD Black",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2024 1 TB SSD Mercury",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2024 2 TB SSD Quartz",
+              "processor": "AMD Ryzen 9 5900HX",
+              "ram": "16 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 14 2025",
+          "releaseYear": 2025,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/23812c2a65c821bb65b5c5c6f69011e7/razer-blade-14-og-image.jpg",
+          "specs": {
+            "display": "14\" 3K OLED, 2880×1800, 120Hz",
+            "processor": "AMD Ryzen AI 9 365",
+            "ram": "16–64 GB LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "72 Wh",
+            "os": "Windows 11 Home",
+            "weight": "1.63 kg",
+            "dimensions": "approx. 310 × 228 × 15.7–16.2 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 14 2025 1 TB SSD Black",
+              "processor": "AMD Ryzen AI 9 365",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 14 2025 2 TB SSD Mercury",
+              "processor": "AMD Ryzen AI 9 365",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 14 2025 2 TB SSD Mercury Alt",
+              "processor": "AMD Ryzen AI 9 365",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 16 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/a25dbaac76e8d9dc2c0965ef18b878f8/razer-blade-16-og-image.jpg",
+          "specs": {
+            "display": "16\" QHD+/UHD+/OLED/Mini LED display, 240Hz or dual-mode",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 / AMD Ryzen AI 9",
+            "ram": "16–64 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "95.2 Wh",
+            "os": "Windows 11 Home",
+            "weight": "2.1–2.45 kg",
+            "dimensions": "varies by Blade 16 generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 16 2023 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 16 2023 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 16 2023 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 16 2024",
+          "releaseYear": 2024,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/a25dbaac76e8d9dc2c0965ef18b878f8/razer-blade-16-og-image.jpg",
+          "specs": {
+            "display": "16\" QHD+/UHD+/OLED/Mini LED display, 240Hz or dual-mode",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 / AMD Ryzen AI 9",
+            "ram": "16–64 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "95.2 Wh",
+            "os": "Windows 11 Home",
+            "weight": "2.1–2.45 kg",
+            "dimensions": "varies by Blade 16 generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 16 2024 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 16 2024 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 16 2024 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 16 2025",
+          "releaseYear": 2025,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/a25dbaac76e8d9dc2c0965ef18b878f8/razer-blade-16-og-image.jpg",
+          "specs": {
+            "display": "16\" QHD+/UHD+/OLED/Mini LED display, 240Hz or dual-mode",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 / AMD Ryzen AI 9",
+            "ram": "16–64 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "95.2 Wh",
+            "os": "Windows 11 Home",
+            "weight": "2.1–2.45 kg",
+            "dimensions": "varies by Blade 16 generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 16 2025 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 16 2025 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 16 2025 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 16 2026",
+          "releaseYear": 2026,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/a25dbaac76e8d9dc2c0965ef18b878f8/razer-blade-16-og-image.jpg",
+          "specs": {
+            "display": "16\" QHD+/UHD+/OLED/Mini LED display, 240Hz or dual-mode",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 / AMD Ryzen AI 9",
+            "ram": "16–64 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "95.2 Wh",
+            "os": "Windows 11 Home",
+            "weight": "2.1–2.45 kg",
+            "dimensions": "varies by Blade 16 generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 16 2026 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 16 2026 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 16 2026 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 18 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/094d5957e1db03d23f99c70d37c40676/razer-blade-18-og-image.jpg",
+          "specs": {
+            "display": "18\" QHD+/UHD+ Mini LED / dual-mode or QHD 300Hz display",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 275HX",
+            "ram": "32–64 GB DDR5",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "91.7–99 Wh",
+            "os": "Windows 11 Home",
+            "weight": "3.1–3.2 kg",
+            "dimensions": "approx. 399.9 × 275.4 × 21.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 18 2023 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 18 2023 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 18 2023 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 18 2024",
+          "releaseYear": 2024,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/094d5957e1db03d23f99c70d37c40676/razer-blade-18-og-image.jpg",
+          "specs": {
+            "display": "18\" QHD+/UHD+ Mini LED / dual-mode or QHD 300Hz display",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 275HX",
+            "ram": "32–64 GB DDR5",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "91.7–99 Wh",
+            "os": "Windows 11 Home",
+            "weight": "3.1–3.2 kg",
+            "dimensions": "approx. 399.9 × 275.4 × 21.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 18 2024 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 18 2024 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 18 2024 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 18 2025",
+          "releaseYear": 2025,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/094d5957e1db03d23f99c70d37c40676/razer-blade-18-og-image.jpg",
+          "specs": {
+            "display": "18\" QHD+/UHD+ Mini LED / dual-mode or QHD 300Hz display",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 275HX",
+            "ram": "32–64 GB DDR5",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "91.7–99 Wh",
+            "os": "Windows 11 Home",
+            "weight": "3.1–3.2 kg",
+            "dimensions": "approx. 399.9 × 275.4 × 21.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 18 2025 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 18 2025 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 18 2025 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 18 2026",
+          "releaseYear": 2026,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/094d5957e1db03d23f99c70d37c40676/razer-blade-18-og-image.jpg",
+          "specs": {
+            "display": "18\" QHD+/UHD+ Mini LED / dual-mode or QHD 300Hz display",
+            "processor": "Intel Core i9 HX / Intel Core Ultra 9 275HX",
+            "ram": "32–64 GB DDR5",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "91.7–99 Wh",
+            "os": "Windows 11 Home",
+            "weight": "3.1–3.2 kg",
+            "dimensions": "approx. 399.9 × 275.4 × 21.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 18 2026 1 TB SSD Black",
+              "processor": "Intel Core i9 HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 18 2026 2 TB SSD Mercury",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 18 2026 4 TB SSD Quartz",
+              "processor": "Intel Core i9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Pro 17 2012",
+          "releaseYear": 2012,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD/4K IGZO touch display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "70–99 Wh",
+            "os": "Windows 10",
+            "weight": "3.1–3.5 kg",
+            "dimensions": "varies by Blade Pro generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 2012 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 2012 512 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 2012 1 TB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Pro 17 2013",
+          "releaseYear": 2013,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD/4K IGZO touch display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "70–99 Wh",
+            "os": "Windows 10",
+            "weight": "3.1–3.5 kg",
+            "dimensions": "varies by Blade Pro generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 2013 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 2013 512 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 2013 1 TB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Pro 17 2014",
+          "releaseYear": 2014,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD/4K IGZO touch display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "70–99 Wh",
+            "os": "Windows 10",
+            "weight": "3.1–3.5 kg",
+            "dimensions": "varies by Blade Pro generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 2014 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 2014 512 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 2014 1 TB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Pro 17 2015",
+          "releaseYear": 2015,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD/4K IGZO touch display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "70–99 Wh",
+            "os": "Windows 10",
+            "weight": "3.1–3.5 kg",
+            "dimensions": "varies by Blade Pro generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 2015 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 2015 512 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 2015 1 TB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Pro 17 2016",
+          "releaseYear": 2016,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD/4K IGZO touch display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "70–99 Wh",
+            "os": "Windows 10",
+            "weight": "3.1–3.5 kg",
+            "dimensions": "varies by Blade Pro generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 2016 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 2016 512 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 2016 1 TB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Pro 17 Full HD 2017",
+          "releaseYear": 2017,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD/4K IGZO touch display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "70–99 Wh",
+            "os": "Windows 10",
+            "weight": "3.1–3.5 kg",
+            "dimensions": "varies by Blade Pro generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 Full HD 2017 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 Full HD 2017 512 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 Full HD 2017 1 TB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Pro 17 4K 2017",
+          "releaseYear": 2017,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD/4K IGZO touch display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "70–99 Wh",
+            "os": "Windows 10",
+            "weight": "3.1–3.5 kg",
+            "dimensions": "varies by Blade Pro generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 4K 2017 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 4K 2017 512 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 4K 2017 1 TB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Pro 17 2019",
+          "releaseYear": 2019,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD 144/240Hz or 4K touch display",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "70.5 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.75 kg",
+            "dimensions": "approx. 395 × 260 × 19.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 2019 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 2019 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 2019 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Pro 17 2020",
+          "releaseYear": 2020,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD 144/240Hz or 4K touch display",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "70.5 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.75 kg",
+            "dimensions": "approx. 395 × 260 × 19.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 2020 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 2020 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 2020 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Pro 17 2021",
+          "releaseYear": 2021,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD 144/240Hz or 4K touch display",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "70.5 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.75 kg",
+            "dimensions": "approx. 395 × 260 × 19.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 2021 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 2021 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 2021 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade 17 2022",
+          "releaseYear": 2022,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD 144/240Hz or 4K touch display",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "70.5 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.75 kg",
+            "dimensions": "approx. 395 × 260 × 19.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade 17 2022 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade 17 2022 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade 17 2022 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Stealth 12.5 QHD 2016",
+          "releaseYear": 2016,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Stealth%20laptop.jpg",
+          "specs": {
+            "display": "12.5–13.3\" QHD+/UHD touch display",
+            "processor": "Intel Core i7 U-series",
+            "ram": "8–16 GB LPDDR3",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "45–53.6 Wh",
+            "os": "Windows 10",
+            "weight": "1.25–1.35 kg",
+            "dimensions": "varies by Blade Stealth generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Stealth 12.5 QHD 2016 128 GB SSD Black",
+              "processor": "Intel Core i7 U-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Stealth 12.5 QHD 2016 256 GB SSD Mercury",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Stealth 12.5 QHD 2016 512 GB SSD Quartz",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Stealth 12.5 4K 2016",
+          "releaseYear": 2016,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Stealth%20laptop.jpg",
+          "specs": {
+            "display": "12.5–13.3\" QHD+/UHD touch display",
+            "processor": "Intel Core i7 U-series",
+            "ram": "8–16 GB LPDDR3",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "45–53.6 Wh",
+            "os": "Windows 10",
+            "weight": "1.25–1.35 kg",
+            "dimensions": "varies by Blade Stealth generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Stealth 12.5 4K 2016 128 GB SSD Black",
+              "processor": "Intel Core i7 U-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Stealth 12.5 4K 2016 256 GB SSD Mercury",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Stealth 12.5 4K 2016 512 GB SSD Quartz",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Stealth 13.3 2017",
+          "releaseYear": 2017,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Stealth%20laptop.jpg",
+          "specs": {
+            "display": "12.5–13.3\" QHD+/UHD touch display",
+            "processor": "Intel Core i7 U-series",
+            "ram": "8–16 GB LPDDR3",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "45–53.6 Wh",
+            "os": "Windows 10",
+            "weight": "1.25–1.35 kg",
+            "dimensions": "varies by Blade Stealth generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Stealth 13.3 2017 128 GB SSD Black",
+              "processor": "Intel Core i7 U-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Stealth 13.3 2017 256 GB SSD Mercury",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Stealth 13.3 2017 512 GB SSD Quartz",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Stealth 13.3 2018",
+          "releaseYear": 2018,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Stealth%20laptop.jpg",
+          "specs": {
+            "display": "12.5–13.3\" QHD+/UHD touch display",
+            "processor": "Intel Core i7 U-series",
+            "ram": "8–16 GB LPDDR3",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "45–53.6 Wh",
+            "os": "Windows 10",
+            "weight": "1.25–1.35 kg",
+            "dimensions": "varies by Blade Stealth generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Stealth 13.3 2018 128 GB SSD Black",
+              "processor": "Intel Core i7 U-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Stealth 13.3 2018 256 GB SSD Mercury",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Stealth 13.3 2018 512 GB SSD Quartz",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Stealth 13 Mercury White 2019",
+          "releaseYear": 2019,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Stealth%20laptop.jpg",
+          "specs": {
+            "display": "13.3\" FHD/4K touch or OLED ultrabook display",
+            "processor": "Intel Core i7 U-series / Ice Lake",
+            "ram": "16 GB LPDDR3/LPDDR4X",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "53.1 Wh",
+            "os": "Windows 10",
+            "weight": "1.31–1.48 kg",
+            "dimensions": "approx. 304.6 × 210 × 15.3 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Stealth 13 Mercury White 2019 256 GB SSD Black",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Stealth 13 Mercury White 2019 512 GB SSD Mercury",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Stealth 13 Mercury White 2019 1 TB SSD Quartz",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Stealth 13 GTX 1650 2019",
+          "releaseYear": 2019,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Stealth%20laptop.jpg",
+          "specs": {
+            "display": "13.3\" FHD/4K touch or OLED ultrabook display",
+            "processor": "Intel Core i7 U-series / Ice Lake",
+            "ram": "16 GB LPDDR3/LPDDR4X",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "53.1 Wh",
+            "os": "Windows 10",
+            "weight": "1.31–1.48 kg",
+            "dimensions": "approx. 304.6 × 210 × 15.3 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Stealth 13 GTX 1650 2019 256 GB SSD Black",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Stealth 13 GTX 1650 2019 512 GB SSD Mercury",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Stealth 13 GTX 1650 2019 1 TB SSD Quartz",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Stealth 13 Late 2019",
+          "releaseYear": 2019,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Stealth%20laptop.jpg",
+          "specs": {
+            "display": "13.3\" FHD/4K touch or OLED ultrabook display",
+            "processor": "Intel Core i7 U-series / Ice Lake",
+            "ram": "16 GB LPDDR3/LPDDR4X",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "53.1 Wh",
+            "os": "Windows 10",
+            "weight": "1.31–1.48 kg",
+            "dimensions": "approx. 304.6 × 210 × 15.3 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Stealth 13 Late 2019 256 GB SSD Black",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Stealth 13 Late 2019 512 GB SSD Mercury",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Stealth 13 Late 2019 1 TB SSD Quartz",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Stealth 13 2020",
+          "releaseYear": 2020,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Stealth%20laptop.jpg",
+          "specs": {
+            "display": "13.3\" FHD/4K touch or OLED ultrabook display",
+            "processor": "Intel Core i7 U-series / Ice Lake",
+            "ram": "16 GB LPDDR3/LPDDR4X",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "53.1 Wh",
+            "os": "Windows 10",
+            "weight": "1.31–1.48 kg",
+            "dimensions": "approx. 304.6 × 210 × 15.3 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Stealth 13 2020 256 GB SSD Black",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Stealth 13 2020 512 GB SSD Mercury",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Stealth 13 2020 1 TB SSD Quartz",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Stealth 13 OLED 2020",
+          "releaseYear": 2020,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Stealth%20laptop.jpg",
+          "specs": {
+            "display": "13.3\" FHD/4K touch or OLED ultrabook display",
+            "processor": "Intel Core i7 U-series / Ice Lake",
+            "ram": "16 GB LPDDR3/LPDDR4X",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "53.1 Wh",
+            "os": "Windows 10",
+            "weight": "1.31–1.48 kg",
+            "dimensions": "approx. 304.6 × 210 × 15.3 mm"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Stealth 13 OLED 2020 256 GB SSD Black",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Stealth 13 OLED 2020 512 GB SSD Mercury",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Stealth 13 OLED 2020 1 TB SSD Quartz",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Studio Edition 15 2019",
+          "releaseYear": 2019,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/a25dbaac76e8d9dc2c0965ef18b878f8/razer-blade-16-og-image.jpg",
+          "specs": {
+            "display": "15.6–17.3\" 4K OLED / 4K touch creator display",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.8 kg",
+            "dimensions": "varies by Blade Studio Edition chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Studio Edition 15 2019 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Studio Edition 15 2019 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Studio Edition 15 2019 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Studio Edition 15 2020",
+          "releaseYear": 2020,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/a25dbaac76e8d9dc2c0965ef18b878f8/razer-blade-16-og-image.jpg",
+          "specs": {
+            "display": "15.6–17.3\" 4K OLED / 4K touch creator display",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.8 kg",
+            "dimensions": "varies by Blade Studio Edition chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Studio Edition 15 2020 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Studio Edition 15 2020 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Studio Edition 15 2020 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Studio Edition 17 2020",
+          "releaseYear": 2020,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/a25dbaac76e8d9dc2c0965ef18b878f8/razer-blade-16-og-image.jpg",
+          "specs": {
+            "display": "15.6–17.3\" 4K OLED / 4K touch creator display",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.8 kg",
+            "dimensions": "varies by Blade Studio Edition chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Studio Edition 17 2020 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Studio Edition 17 2020 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Studio Edition 17 2020 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        },
+        {
+          "name": "Razer Blade Studio Edition 2021",
+          "releaseYear": 2021,
+          "imageUrl": "https://assets2.razerzone.com/images/pnx.assets/a25dbaac76e8d9dc2c0965ef18b878f8/razer-blade-16-og-image.jpg",
+          "specs": {
+            "display": "15.6–17.3\" 4K OLED / 4K touch creator display",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "65–80 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.1–2.8 kg",
+            "dimensions": "varies by Blade Studio Edition chassis"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Studio Edition 2021 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Studio Edition 2021 1 TB SSD Mercury",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Studio Edition 2021 2 TB SSD Quartz",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blade Stealth",
+      "models": [
+        {
+          "name": "Razer Blade Stealth 13.3 2017",
+          "releaseYear": 2017,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Stealth%20laptop.jpg",
+          "specs": {
+            "display": "12.5–13.3\" QHD+/UHD touch display",
+            "processor": "Intel Core i7 U-series",
+            "ram": "8–16 GB LPDDR3",
+            "storage": [
+              "128 GB SSD",
+              "256 GB SSD",
+              "512 GB SSD"
+            ],
+            "battery": "45–53.6 Wh",
+            "os": "Windows 10",
+            "weight": "1.25–1.35 kg",
+            "dimensions": "varies by Blade Stealth generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Stealth 13.3 2017 128 GB SSD Black",
+              "processor": "Intel Core i7 U-series",
+              "ram": "8 GB",
+              "storage": "128 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Stealth 13.3 2017 256 GB SSD Mercury",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Stealth 13.3 2017 512 GB SSD Quartz",
+              "processor": "Intel Core i7 U-series",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Quartz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blade Pro",
+      "models": [
+        {
+          "name": "Razer Blade Pro 17 2012",
+          "releaseYear": 2012,
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Razer%20Blade%20Pro%20gaming%20laptop.jpg",
+          "specs": {
+            "display": "17.3\" FHD/4K IGZO touch display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "16–32 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "70–99 Wh",
+            "os": "Windows 10",
+            "weight": "3.1–3.5 kg",
+            "dimensions": "varies by Blade Pro generation"
+          },
+          "variants": [
+            {
+              "name": "Razer Blade Pro 17 2012 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "16 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Razer Blade Pro 17 2012 512 GB SSD Mercury",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "512 GB SSD",
+              "color": "Mercury"
+            },
+            {
+              "name": "Razer Blade Pro 17 2012 1 TB SSD Quartz",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Quartz"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3616 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "Huawei",
+      "logo_url": "https://logo.clearbit.com/huawei.com",
+      "families": [
+        {
+          "name": "MateBook",
+          "models": [
+            {
+              "name": "Huawei MateBook",
+              "release_year": 2016,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 13",
+              "release_year": 2018,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 13 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 13 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 13 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 13 2020",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 13 2020 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 13 2020 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 13 2020 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 13s",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 13s 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 13s 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 13s 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14 2020",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14 2020 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14 2020 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14 2020 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14 2021 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14 2021 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14 2021 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14 2022 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14 2022 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14 2022 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14 2023 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14 2023 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14 2023 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14 2024",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" OLED/IPS 2K/2.5K display, 3:2 or 16:10",
+                "processor": "Intel Core Ultra 5/7/9 or AMD Ryzen 7",
+                "ram": "16–32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "56–70 Wh",
+                "os": "Windows 11 / HarmonyOS on China-market variants",
+                "weight": "1.31–1.99 kg",
+                "dimensions": "varies by MateBook 14/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14 2024 512 GB SSD Space Gray",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14 2024 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14 2024 2 TB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" OLED/IPS 2K/2.5K display, 3:2 or 16:10",
+                "processor": "Intel Core Ultra 5/7/9 or AMD Ryzen 7",
+                "ram": "16–32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "56–70 Wh",
+                "os": "Windows 11 / HarmonyOS on China-market variants",
+                "weight": "1.31–1.99 kg",
+                "dimensions": "varies by MateBook 14/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14 2025 512 GB SSD Space Gray",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14 2025 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14 2025 2 TB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14s",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14s 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14s 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14s 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14s 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14s 2022 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14s 2022 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14s 2022 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14s 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14s 2023 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14s 2023 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14s 2023 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 16",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 16 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 16 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 16 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 16s",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 16s 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 16s 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 16s 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 16s 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 16s 2023 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 16s 2023 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 16s 2023 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 16s 2024",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" OLED/IPS 2K/2.5K display, 3:2 or 16:10",
+                "processor": "Intel Core Ultra 5/7/9 or AMD Ryzen 7",
+                "ram": "16–32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "56–70 Wh",
+                "os": "Windows 11 / HarmonyOS on China-market variants",
+                "weight": "1.31–1.99 kg",
+                "dimensions": "varies by MateBook 14/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 16s 2024 512 GB SSD Space Gray",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 16s 2024 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 16s 2024 2 TB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook B3-420",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook B3-420 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook B3-420 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook B3-420 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook B5-430",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook B5-430 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook B5-430 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook B5-430 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook B7-410",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook B7-410 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook B7-410 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook B7-410 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook B3-430 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook B3-430 2022 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook B3-430 2022 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook B3-430 2022 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook B5-440 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook B5-440 2022 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook B5-440 2022 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook B5-440 2022 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook B7-420 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook B7-420 2022 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook B7-420 2022 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook B7-420 2022 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 13 AMD",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 13 AMD 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 13 AMD 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 13 AMD 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 14 AMD",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 14 AMD 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 14 AMD 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 14 AMD 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook 16 AMD",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%2014s%20%28Mazor-X%29%20on%20display%20at%20Huawei%20Store%20Festival%20Walk%20in%20Hong%20Kong%20on%2020230305.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–16\" IPS/OLED 2K-class display",
+                "processor": "Intel Core m3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "33.7–84 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640 g–1.99 kg",
+                "dimensions": "varies by MateBook generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook 16 AMD 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook 16 AMD 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook 16 AMD 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MateBook D",
+          "models": [
+            {
+              "name": "Huawei MateBook D",
+              "release_year": 2017,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 14",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 14 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 14 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 14 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 14 2020",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 14 2020 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2020 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2020 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 14 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 14 2021 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2021 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2021 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 14 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 14 2022 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2022 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2022 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 14 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 14 2023 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2023 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2023 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 14 2024",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" IPS, FHD/WUXGA, 16:10 or 16:9",
+                "processor": "Intel Core i5/i7/i9 13th Gen / Intel Core 5/7 / AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–70 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.39–1.72 kg",
+                "dimensions": "varies by MateBook D 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 14 2024 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2024 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2024 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 14 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" IPS, FHD/WUXGA, 16:10 or 16:9",
+                "processor": "Intel Core i5/i7/i9 13th Gen / Intel Core 5/7 / AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–70 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.39–1.72 kg",
+                "dimensions": "varies by MateBook D 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 14 2025 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2025 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 14 2025 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 15",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 15 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 15 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 15 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 15 2018",
+              "release_year": 2018,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 15 2018 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 15 2018 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 15 2018 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 15 2020",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 15 2020 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 15 2020 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 15 2020 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 15 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 15 2021 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 15 2021 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 15 2021 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 15 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 15 2022 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 15 2022 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 15 2022 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 15 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 15 2023 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 15 2023 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 15 2023 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 16",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 16 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 16 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 16 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 16 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 16 2022 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 16 2022 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 16 2022 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 16 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 16 2023 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 16 2023 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 16 2023 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 16 2024",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" IPS, FHD/WUXGA, 16:10 or 16:9",
+                "processor": "Intel Core i5/i7/i9 13th Gen / Intel Core 5/7 / AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–70 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.39–1.72 kg",
+                "dimensions": "varies by MateBook D 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 16 2024 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 16 2024 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 16 2024 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 16 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14–16\" IPS, FHD/WUXGA, 16:10 or 16:9",
+                "processor": "Intel Core i5/i7/i9 13th Gen / Intel Core 5/7 / AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "56–70 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.39–1.72 kg",
+                "dimensions": "varies by MateBook D 14/15/16 chassis"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 16 2025 512 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 16 2025 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 16 2025 1 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core i5/i7/i9 13th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 16 SE",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 16 SE 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 16 SE 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 16 SE 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 16 Plus",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 16 Plus 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 16 Plus 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 16 Plus 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 16 AMD",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 16 AMD 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 16 AMD 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 16 AMD 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 14 AMD",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 14 AMD 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 14 AMD 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 14 AMD 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook D 15 AMD",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20D%2015.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-d-16-2024/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "14–16\" FHD IPS display",
+                "processor": "Intel Core i3/i5/i7 or AMD Ryzen 5/7",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "42–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.38–1.99 kg",
+                "dimensions": "varies by MateBook D generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook D 15 AMD 256 GB SSD Space Gray",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook D 15 AMD 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook D 15 AMD 1 TB SSD White",
+                  "processor": "Intel Core i3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MateBook X",
+          "models": [
+            {
+              "name": "Huawei MateBook X",
+              "release_year": 2017,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X 2020",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X 2020 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X 2020 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X 2020 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X 2021 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X 2021 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X 2021 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro",
+              "release_year": 2018,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro 2018",
+              "release_year": 2018,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro 2018 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2018 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2018 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro 2019",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro 2019 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2019 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2019 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro 2020",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro 2020 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2020 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2020 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro 2021",
+              "release_year": 2021,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro 2021 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2021 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2021 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro 2022 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2022 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2022 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro 2023 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2023 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2023 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro 2024",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14.2\" OLED, 3120×2080, 3:2, 120Hz, touch",
+                "processor": "Intel Core Ultra 7 / Intel Core Ultra 9",
+                "ram": "16–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "70 Wh",
+                "os": "Windows 11 / HarmonyOS on China-market variants",
+                "weight": "0.98–1.26 kg",
+                "dimensions": "310 × 222 × 13.5 mm"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro 2024 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2024 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2024 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro Core Ultra Premium Edition",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13–14.2\" LTPS/OLED 2K/3K touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 U-series",
+                "ram": "8–16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "41.4–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.0–1.38 kg",
+                "dimensions": "varies by MateBook X / X Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro Core Ultra Premium Edition 256 GB SSD Space Gray",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro Core Ultra Premium Edition 512 GB SSD Mystic Silver",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro Core Ultra Premium Edition 1 TB SSD White",
+                  "processor": "Intel Core i5/i7 U-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14.2\" OLED, 3120×2080, 3:2, 120Hz, touch",
+                "processor": "Intel Core Ultra 7 / Intel Core Ultra 9",
+                "ram": "16–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "70 Wh",
+                "os": "Windows 11 / HarmonyOS on China-market variants",
+                "weight": "0.98–1.26 kg",
+                "dimensions": "310 × 222 × 13.5 mm"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro 2025 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2025 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2025 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook X Pro 2026",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-x-pro-ultra-premium-edition/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14.2\" OLED, 3120×2080, 3:2, 120Hz, touch",
+                "processor": "Intel Core Ultra 7 / Intel Core Ultra 9",
+                "ram": "16–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "70 Wh",
+                "os": "Windows 11 / HarmonyOS on China-market variants",
+                "weight": "0.98–1.26 kg",
+                "dimensions": "310 × 222 × 13.5 mm"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook X Pro 2026 1 TB SSD Space Gray",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2026 2 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook X Pro 2026 2 TB SSD Mystic Silver Alt",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MateBook E",
+          "models": [
+            {
+              "name": "Huawei MateBook E",
+              "release_year": 2017,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20E%202022.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-e/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–12.6\" OLED/IPS touchscreen detachable, 2K-class",
+                "processor": "Intel Core m3/i5/i7 or Intel Core i5 U-series",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "33.7–42 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640–709 g tablet only",
+                "dimensions": "varies by MateBook E detachable generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook E 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook E 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook E 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook E 2019",
+              "release_year": 2019,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20E%202022.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-e/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–12.6\" OLED/IPS touchscreen detachable, 2K-class",
+                "processor": "Intel Core m3/i5/i7 or Intel Core i5 U-series",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "33.7–42 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640–709 g tablet only",
+                "dimensions": "varies by MateBook E detachable generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook E 2019 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook E 2019 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook E 2019 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook E 2022",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20E%202022.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-e/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–12.6\" OLED/IPS touchscreen detachable, 2K-class",
+                "processor": "Intel Core m3/i5/i7 or Intel Core i5 U-series",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "33.7–42 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640–709 g tablet only",
+                "dimensions": "varies by MateBook E detachable generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook E 2022 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook E 2022 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook E 2022 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook E 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20E%202022.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-e/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–12.6\" OLED/IPS touchscreen detachable, 2K-class",
+                "processor": "Intel Core m3/i5/i7 or Intel Core i5 U-series",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "33.7–42 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640–709 g tablet only",
+                "dimensions": "varies by MateBook E detachable generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook E 2023 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook E 2023 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook E 2023 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook E 2024",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20E%202022.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-e/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "12–12.6\" OLED/IPS touchscreen detachable, 2K-class",
+                "processor": "Intel Core m3/i5/i7 or Intel Core i5 U-series",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "33.7–42 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640–709 g tablet only",
+                "dimensions": "varies by MateBook E detachable generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook E 2024 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook E 2024 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook E 2024 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook E Go",
+              "release_year": 2022,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20E%202022.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-e/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.35\" 2.5K IPS touchscreen detachable",
+                "processor": "Qualcomm Snapdragon 8cx Gen 2 / Snapdragon 7c-class",
+                "ram": "8–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "45.8 Wh",
+                "os": "Windows 11",
+                "weight": "710 g tablet only",
+                "dimensions": "286.5 × 184.7 × 7.7 mm"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook E Go 128 GB SSD Space Gray",
+                  "processor": "Qualcomm Snapdragon 8cx Gen 2",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook E Go 256 GB SSD Mystic Silver",
+                  "processor": "Qualcomm Snapdragon 8cx Gen 2",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook E Go 512 GB SSD White",
+                  "processor": "Qualcomm Snapdragon 8cx Gen 2",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook E Go 2023",
+              "release_year": 2023,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20E%202022.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-e/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.35\" 2.5K IPS touchscreen detachable",
+                "processor": "Qualcomm Snapdragon 8cx Gen 2 / Snapdragon 7c-class",
+                "ram": "8–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "45.8 Wh",
+                "os": "Windows 11",
+                "weight": "710 g tablet only",
+                "dimensions": "286.5 × 184.7 × 7.7 mm"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook E Go 2023 128 GB SSD Space Gray",
+                  "processor": "Qualcomm Snapdragon 8cx Gen 2",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook E Go 2023 256 GB SSD Mystic Silver",
+                  "processor": "Qualcomm Snapdragon 8cx Gen 2",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook E Go 2023 512 GB SSD White",
+                  "processor": "Qualcomm Snapdragon 8cx Gen 2",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook E 11",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20E%202022.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-e/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–12.6\" OLED/IPS touchscreen detachable, 2K-class",
+                "processor": "Intel Core m3/i5/i7 or Intel Core i5 U-series",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "33.7–42 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640–709 g tablet only",
+                "dimensions": "varies by MateBook E detachable generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook E 11 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook E 11 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook E 11 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook E 12.6",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20E%202022.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-e/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–12.6\" OLED/IPS touchscreen detachable, 2K-class",
+                "processor": "Intel Core m3/i5/i7 or Intel Core i5 U-series",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "33.7–42 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640–709 g tablet only",
+                "dimensions": "varies by MateBook E detachable generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook E 12.6 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook E 12.6 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook E 12.6 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook E Paper",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20E%202022.jpg",
+              "source_url": "https://consumer.huawei.com/en/laptops/matebook-e/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12–12.6\" OLED/IPS touchscreen detachable, 2K-class",
+                "processor": "Intel Core m3/i5/i7 or Intel Core i5 U-series",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "33.7–42 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "640–709 g tablet only",
+                "dimensions": "varies by MateBook E detachable generation"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook E Paper 128 GB SSD Space Gray",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook E Paper 256 GB SSD Mystic Silver",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook E Paper 512 GB SSD White",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "White"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MateBook GT / Fold",
+          "models": [
+            {
+              "name": "Huawei MateBook GT 14",
+              "release_year": 2024,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://www.reuters.com/world/china/huawei-launches-first-laptops-using-home-grown-harmony-operating-system-2025-05-19/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14\" OLED / IPS creator-performance display",
+                "processor": "Intel Core Ultra 5/7/9",
+                "ram": "16–32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "70 Wh",
+                "os": "Windows 11 / HarmonyOS on China-market variants",
+                "weight": "1.3–1.5 kg",
+                "dimensions": "varies by MateBook GT chassis"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook GT 14 512 GB SSD Space Gray",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook GT 14 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook GT 14 2 TB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook GT 14 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://www.reuters.com/world/china/huawei-launches-first-laptops-using-home-grown-harmony-operating-system-2025-05-19/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14\" OLED / IPS creator-performance display",
+                "processor": "Intel Core Ultra 5/7/9",
+                "ram": "16–32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "70 Wh",
+                "os": "Windows 11 / HarmonyOS on China-market variants",
+                "weight": "1.3–1.5 kg",
+                "dimensions": "varies by MateBook GT chassis"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook GT 14 2025 512 GB SSD Space Gray",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook GT 14 2025 1 TB SSD Mystic Silver",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook GT 14 2025 2 TB SSD White",
+                  "processor": "Intel Core Ultra 5/7/9",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook Pro HarmonyOS",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://www.reuters.com/world/china/huawei-launches-first-laptops-using-home-grown-harmony-operating-system-2025-05-19/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14.2\" OLED 3:2 display",
+                "processor": "Huawei Kirin X-series",
+                "ram": "16–32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "unknown Wh",
+                "os": "HarmonyOS 5",
+                "weight": "approx. 1.0–1.3 kg",
+                "dimensions": "varies by 2025 MateBook Pro chassis"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook Pro HarmonyOS 512 GB SSD Space Gray",
+                  "processor": "Huawei Kirin X-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook Pro HarmonyOS 1 TB SSD Mystic Silver",
+                  "processor": "Huawei Kirin X-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook Pro HarmonyOS 2 TB SSD White",
+                  "processor": "Huawei Kirin X-series",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "White"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook Fold Ultimate Design",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://www.reuters.com/world/china/huawei-launches-first-laptops-using-home-grown-harmony-operating-system-2025-05-19/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "18\" foldable OLED, 3.3K-class, folds to ~13\" laptop mode",
+                "processor": "Kirin X90",
+                "ram": "16–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "unknown Wh",
+                "os": "HarmonyOS 5",
+                "weight": "1.16 kg",
+                "dimensions": "7.3 mm unfolded / 14.9 mm folded thickness"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook Fold Ultimate Design 1 TB SSD Space Gray",
+                  "processor": "Kirin X90",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook Fold Ultimate Design 2 TB SSD Mystic Silver",
+                  "processor": "Kirin X90",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook Fold Ultimate Design 2 TB SSD Mystic Silver Alt",
+                  "processor": "Kirin X90",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook Fold Ultimate Design 2025",
+              "release_year": 2025,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://www.reuters.com/world/china/huawei-launches-first-laptops-using-home-grown-harmony-operating-system-2025-05-19/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "18\" foldable OLED, 3.3K-class, folds to ~13\" laptop mode",
+                "processor": "Kirin X90",
+                "ram": "16–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "unknown Wh",
+                "os": "HarmonyOS 5",
+                "weight": "1.16 kg",
+                "dimensions": "7.3 mm unfolded / 14.9 mm folded thickness"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook Fold Ultimate Design 2025 1 TB SSD Space Gray",
+                  "processor": "Kirin X90",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook Fold Ultimate Design 2025 2 TB SSD Mystic Silver",
+                  "processor": "Kirin X90",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook Fold Ultimate Design 2025 2 TB SSD Mystic Silver Alt",
+                  "processor": "Kirin X90",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            },
+            {
+              "name": "Huawei MateBook Fold Ultimate Design 2026 Candidate",
+              "release_year": 2026,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Huawei%20MateBook%20X%20Pro%20%282018%29%20front.jpg",
+              "source_url": "https://www.reuters.com/world/china/huawei-launches-first-laptops-using-home-grown-harmony-operating-system-2025-05-19/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "18\" foldable OLED, 3.3K-class, folds to ~13\" laptop mode",
+                "processor": "Kirin X90",
+                "ram": "16–32 GB",
+                "storage": [
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "unknown Wh",
+                "os": "HarmonyOS 5",
+                "weight": "1.16 kg",
+                "dimensions": "7.3 mm unfolded / 14.9 mm folded thickness"
+              },
+              "variants": [
+                {
+                  "name": "Huawei MateBook Fold Ultimate Design 2026 Candidate 1 TB SSD Space Gray",
+                  "processor": "Kirin X90",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Space Gray"
+                },
+                {
+                  "name": "Huawei MateBook Fold Ultimate Design 2026 Candidate 2 TB SSD Mystic Silver",
+                  "processor": "Kirin X90",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                },
+                {
+                  "name": "Huawei MateBook Fold Ultimate Design 2026 Candidate 2 TB SSD Mystic Silver Alt",
+                  "processor": "Kirin X90",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Mystic Silver"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "catalog_scope_note": "Huawei model-line complete repair-shop catalog seed; not SKU/region/CTO complete.",
+  "generated_at": "2026-05-13T08:25:12.320283+00:00"
+}

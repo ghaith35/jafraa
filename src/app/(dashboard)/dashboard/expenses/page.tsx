@@ -2,7 +2,6 @@ import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { prisma } from "@/lib/db";
-import { PageHeader } from "@/components/shared/PageHeader";
 import { getAppI18n } from "@/lib/i18n/server";
 import { localizedCategoryName } from "@/lib/i18n/expense-categories";
 import { ExpenseList } from "@/features/expenses/components/ExpenseList";
@@ -104,15 +103,11 @@ export default async function ExpensesPage({
 
   return (
     <div className="space-y-5">
-      <PageHeader
-        title={t("expenses.title")}
-        description={t("expenses.subtitle")}
-        actions={
-          canManage && (
-            <NewExpenseDialog categories={categories} defaultDate={today} />
-          )
-        }
-      />
+      {canManage && (
+        <div className="flex justify-end">
+          <NewExpenseDialog categories={categories} defaultDate={today} />
+        </div>
+      )}
 
       {/* Date filter */}
       <ExpenseDateFilter

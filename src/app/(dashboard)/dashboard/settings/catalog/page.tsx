@@ -6,14 +6,12 @@ import {
   listModelsByFamily,
 } from "@/features/catalog/actions/catalog.actions";
 import { CatalogBrowser } from "@/features/catalog/components/CatalogBrowser";
-import { getAppI18n } from "@/lib/i18n/server";
 
 export const metadata = { title: "Catalogue des appareils" };
 
 export default async function CatalogPage(props: {
   searchParams: Promise<{ category?: string; brand?: string; family?: string }>;
 }) {
-  const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
 
@@ -34,6 +32,7 @@ export default async function CatalogPage(props: {
       families = await listFamiliesByBrand(selectedBrand.id, {
         companyId: session.companyId,
         storeId: session.storeIds[0],
+        includeLaptopModelFallback: true,
       });
       if (sp.family) {
         selectedFamily = families.find((f) => f.id === sp.family) ?? null;

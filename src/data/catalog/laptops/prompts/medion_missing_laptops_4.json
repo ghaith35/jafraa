@@ -1,0 +1,166 @@
+[
+    {
+        "modelName": "Medion Akoya E11201",
+        "releaseYear": 2017,
+        "imageUrl": null,
+        "specs": {
+            "display": "11.6\" HD (1366 \u00d7 768) matte TN LCD",
+            "processor": "Intel Celeron N3450 (Apollo Lake, 4 cores, up to 2.2 GHz)",
+            "ram": "4 GB DDR3L",
+            "storage": [
+                "32 GB eMMC",
+                "64 GB eMMC"
+            ],
+            "battery": "approx. 34 Wh Li-ion",
+            "os": "Windows 10 Home / Windows 10 Pro",
+            "weight": "1.16 kg",
+            "dimensions": "305 \u00d7 201 \u00d7 24 mm"
+        },
+        "variants": [
+            {
+                "name": "Medion Akoya E11201 Celeron N3450 4GB 32GB Black",
+                "processor": "Intel Celeron N3450",
+                "ram": "4 GB",
+                "storage": "32 GB eMMC",
+                "color": "Black"
+            },
+            {
+                "name": "Medion Akoya E11201 Celeron N3450 4GB 64GB Black",
+                "processor": "Intel Celeron N3450",
+                "ram": "4 GB",
+                "storage": "64 GB eMMC",
+                "color": "Black"
+            },
+            {
+                "name": "Medion Akoya E11201 Celeron N3450 4GB 64GB White",
+                "processor": "Intel Celeron N3450",
+                "ram": "4 GB",
+                "storage": "64 GB eMMC",
+                "color": "White"
+            }
+        ]
+    },
+    {
+        "modelName": "Medion Erazer X10",
+        "releaseYear": 2022,
+        "imageUrl": null,
+        "specs": {
+            "display": "16.0\" QHD+ (2560 \u00d7 1600) 16:10 IPS, 165 Hz, anti-glare",
+            "processor": "Intel Core i7-12700H",
+            "ram": "32 GB DDR5-4800",
+            "storage": [
+                "1 TB NVMe SSD",
+                "2 TB NVMe SSD"
+            ],
+            "battery": "approx. 80 Wh",
+            "os": "Windows 11 Home",
+            "weight": "approx. 2.3\u20132.5 kg",
+            "dimensions": "approx. 359 \u00d7 273 \u00d7 27 mm"
+        },
+        "variants": [
+            {
+                "name": "Medion Erazer X10 i7-12700H 32GB 1TB Black",
+                "processor": "Intel Core i7-12700H",
+                "ram": "32 GB",
+                "storage": "1 TB NVMe SSD",
+                "color": "Black"
+            },
+            {
+                "name": "Medion Erazer X10 i7-12700H 32GB 2TB Black",
+                "processor": "Intel Core i7-12700H",
+                "ram": "32 GB",
+                "storage": "2 TB NVMe SSD",
+                "color": "Black"
+            },
+            {
+                "name": "Medion Erazer X10 i7-12700H Arc A730M 32GB 1TB Black",
+                "processor": "Intel Core i7-12700H + Intel Arc A730M 12GB",
+                "ram": "32 GB",
+                "storage": "1 TB NVMe SSD",
+                "color": "Black"
+            }
+        ]
+    },
+    {
+        "modelName": "Medion Erazer X20",
+        "releaseYear": 2023,
+        "imageUrl": null,
+        "specs": {
+            "display": "16.0\" WQXGA/QHD+ (2560 \u00d7 1600) IPS, 240 Hz, 16:10, anti-reflective",
+            "processor": "Intel Core i9-13900HX / Intel Core i9-14900HX",
+            "ram": "32 GB DDR5",
+            "storage": [
+                "1 TB PCIe NVMe SSD",
+                "2 TB PCIe Gen4 NVMe SSD"
+            ],
+            "battery": "approx. 80\u201399 Wh",
+            "os": "Windows 11 Home",
+            "weight": "approx. 2.3\u20132.6 kg",
+            "dimensions": "approx. 357 \u00d7 269 \u00d7 27 mm"
+        },
+        "variants": [
+            {
+                "name": "Medion Erazer X20 i9-13900HX RTX 4070 32GB 1TB Black",
+                "processor": "Intel Core i9-13900HX + NVIDIA GeForce RTX 4070 8GB",
+                "ram": "32 GB",
+                "storage": "1 TB PCIe NVMe SSD",
+                "color": "Black"
+            },
+            {
+                "name": "Medion Erazer X20 i9-14900HX RTX 4070 32GB 2TB Black",
+                "processor": "Intel Core i9-14900HX + NVIDIA GeForce RTX 4070 8GB",
+                "ram": "32 GB",
+                "storage": "2 TB PCIe Gen4 NVMe SSD",
+                "color": "Black"
+            },
+            {
+                "name": "Medion Erazer X20 i9-14900HX RTX 4060 32GB 1TB Black",
+                "processor": "Intel Core i9-14900HX + NVIDIA GeForce RTX 4060 8GB",
+                "ram": "32 GB",
+                "storage": "1 TB PCIe NVMe SSD",
+                "color": "Black"
+            }
+        ]
+    },
+    {
+        "modelName": "Medion Erazer X30",
+        "releaseYear": 2022,
+        "imageUrl": null,
+        "specs": {
+            "display": "17.3\" QHD (2560 \u00d7 1440) IPS, 165 Hz",
+            "processor": "Intel Core i7-12700H",
+            "ram": "16\u201332 GB DDR5",
+            "storage": [
+                "1 TB NVMe SSD",
+                "2 TB NVMe SSD"
+            ],
+            "battery": "91.2 Wh, 6-cell",
+            "os": "Windows 11 Home",
+            "weight": "2.30 kg",
+            "dimensions": "395 \u00d7 262 \u00d7 26 mm"
+        },
+        "variants": [
+            {
+                "name": "Medion Erazer X30 i7-12700H RTX 3070 Ti 16GB 1TB Black",
+                "processor": "Intel Core i7-12700H + NVIDIA GeForce RTX 3070 Ti 8GB",
+                "ram": "16 GB",
+                "storage": "1 TB NVMe SSD",
+                "color": "Black"
+            },
+            {
+                "name": "Medion Erazer X30 i7-12700H RTX 3080 Ti 32GB 1TB Black",
+                "processor": "Intel Core i7-12700H + NVIDIA GeForce RTX 3080 Ti 16GB",
+                "ram": "32 GB",
+                "storage": "1 TB NVMe SSD",
+                "color": "Black"
+            },
+            {
+                "name": "Medion Erazer X30 i7-12700H RTX 3070 Ti 32GB 2TB Black",
+                "processor": "Intel Core i7-12700H + NVIDIA GeForce RTX 3070 Ti 8GB",
+                "ram": "32 GB",
+                "storage": "2 TB NVMe SSD",
+                "color": "Black"
+            }
+        ]
+    }
+]

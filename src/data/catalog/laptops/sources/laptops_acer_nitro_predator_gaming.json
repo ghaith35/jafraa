@@ -1,0 +1,2715 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "Acer",
+      "logo_url": "https://logo.clearbit.com/acer.com",
+      "families": [
+        {
+          "name": "Nitro",
+          "models": [
+            {
+              "name": "Acer Nitro 5 AN515 2017",
+              "release_year": 2017,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 7th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN515 2017 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2017 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2017 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN515 2018",
+              "release_year": 2018,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 8th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "3.2 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN515 2018 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2018 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2018 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN515 2019",
+              "release_year": 2019,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN515 2019 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2019 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2019 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN515 2020",
+              "release_year": 2020,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN515 2020 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2020 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2020 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN515 2021",
+              "release_year": 2021,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN515 2021 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2021 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2021 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN515 2022",
+              "release_year": 2022,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN515 2022 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2022 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN515 2022 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN517 2017",
+              "release_year": 2017,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 7th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN517 2017 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2017 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2017 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN517 2018",
+              "release_year": 2018,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 8th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "3.2 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN517 2018 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2018 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2018 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN517 2019",
+              "release_year": 2019,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN517 2019 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2019 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2019 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN517 2020",
+              "release_year": 2020,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN517 2020 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2020 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2020 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN517 2021",
+              "release_year": 2021,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN517 2021 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2021 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2021 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 5 AN517 2022",
+              "release_year": 2022,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 5 AN517 2022 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2022 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 5 AN517 2022 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 7 AN715 2019",
+              "release_year": 2019,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 7 AN715 2019 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 7 AN715 2019 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 7 AN715 2019 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 7 AN715 2020",
+              "release_year": 2020,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 7 AN715 2020 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 7 AN715 2020 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 7 AN715 2020 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 7 AN715 2021",
+              "release_year": 2021,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 7 AN715 2021 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 7 AN715 2021 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 7 AN715 2021 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 7 AN715 2022",
+              "release_year": 2022,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 7 AN715 2022 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 7 AN715 2022 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 7 AN715 2022 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro V 15",
+              "release_year": 2023,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro V 15 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro V 15 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro V 15 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro V 16",
+              "release_year": 2024,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.6 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro V 16 Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro V 16 Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro V 16 AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro V 17",
+              "release_year": 2024,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro V 17 Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro V 17 Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro V 17 AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro V 14",
+              "release_year": 2024,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro V 14 Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro V 14 Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro V 14 AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 14",
+              "release_year": 2024,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 14 Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 14 Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 14 AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 16",
+              "release_year": 2023,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.6 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 16 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 16 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 16 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 17",
+              "release_year": 2023,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 17 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 17 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 17 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 18",
+              "release_year": 2025,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "3.2 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 18 Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 18 Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 18 AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro V 15 AI",
+              "release_year": 2025,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro V 15 AI Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro V 15 AI Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro V 15 AI AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro V 16 AI",
+              "release_year": 2025,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.6 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro V 16 AI Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro V 16 AI Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro V 16 AI AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro V 16S AI",
+              "release_year": 2026,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 3 / AMD Ryzen AI 400",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.6 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro V 16S AI Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro V 16S AI Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro V 16S AI AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 16 AI",
+              "release_year": 2025,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.6 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 16 AI Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 16 AI Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 16 AI AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Nitro 18 AI",
+              "release_year": 2025,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/laptops/nitro",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "3.2 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Nitro 18 AI Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Nitro 18 AI Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Nitro 18 AI AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Predator Helios",
+          "models": [
+            {
+              "name": "Predator Helios 300 G3-571",
+              "release_year": 2017,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 7th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 300 G3-571 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 300 G3-571 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 300 G3-571 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 300 PH315-51",
+              "release_year": 2018,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 8th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 300 PH315-51 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 300 PH315-51 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 300 PH315-51 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 300 PH315-52",
+              "release_year": 2019,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 300 PH315-52 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 300 PH315-52 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 300 PH315-52 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 300 PH315-53",
+              "release_year": 2020,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 300 PH315-53 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 300 PH315-53 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 300 PH315-53 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 300 PH315-54",
+              "release_year": 2021,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 300 PH315-54 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 300 PH315-54 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 300 PH315-54 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 300 PH315-55",
+              "release_year": 2022,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 300 PH315-55 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 300 PH315-55 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 300 PH315-55 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 500 PH517",
+              "release_year": 2018,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 8th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 500 PH517 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 500 PH517 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 500 PH517 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 500 PH517-52",
+              "release_year": 2021,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 500 PH517-52 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 500 PH517-52 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 500 PH517-52 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 700",
+              "release_year": 2019,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 700 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 700 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 700 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios Neo 16",
+              "release_year": 2023,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.6 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios Neo 16 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios Neo 16 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios Neo 16 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios Neo 18",
+              "release_year": 2024,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "3.2 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios Neo 18 Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios Neo 18 Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios Neo 18 AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 16",
+              "release_year": 2023,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.6 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 16 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 16 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 16 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 18",
+              "release_year": 2023,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "3.2 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 18 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 18 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 18 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 16 AI",
+              "release_year": 2025,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.6 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 16 AI Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 16 AI Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 16 AI AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 18 AI",
+              "release_year": 2025,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "3.2 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 18 AI Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 18 AI Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 18 AI AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Helios 18P AI",
+              "release_year": 2026,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core Ultra Series 3 / AMD Ryzen AI 400",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "3.2 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Helios 18P AI Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Helios 18P AI Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Helios 18P AI AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Predator Triton",
+          "models": [
+            {
+              "name": "Predator Triton 300",
+              "release_year": 2019,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 300 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 300 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 300 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Triton 300 SE",
+              "release_year": 2021,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 300 SE Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 300 SE Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 300 SE Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Triton 500",
+              "release_year": 2019,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 500 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 500 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 500 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Triton 500 SE",
+              "release_year": 2021,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 500 SE Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 500 SE Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 500 SE Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Triton 700",
+              "release_year": 2017,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 7th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 700 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 700 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 700 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Triton 900",
+              "release_year": 2019,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 900 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 900 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 900 Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Triton 14",
+              "release_year": 2023,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 14 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 14 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 14 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Triton 14 AI",
+              "release_year": 2025,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 14 AI Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 14 AI Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 14 AI AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Triton 16",
+              "release_year": 2023,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.6 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 16 Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 16 Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 16 Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Triton 17X",
+              "release_year": 2023,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.9 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 17X Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 17X Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 17X Intel Core i9 H-series 32 GB 1 TB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Predator Triton 16 AI",
+              "release_year": 2025,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.acer.com/us-en/predator/laptops/helios/helios-300",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "16/32/64 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "76 Wh",
+                "os": "Windows 11",
+                "weight": "2.6 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Predator Triton 16 AI Intel Core Ultra 7 HX 16 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 7 HX",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Predator Triton 16 AI Intel Core Ultra 9 HX 32 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 9 HX",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Predator Triton 16 AI AMD Ryzen 9 HX 64 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 9 HX",
+                  "ram": "64 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Aspire V Nitro / VX Legacy",
+          "models": [
+            {
+              "name": "Acer Aspire V Nitro VN7-571G",
+              "release_year": 2014,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.ultrabookreview.com/acer/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 4th/5th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 8.1 / Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire V Nitro VN7-571G Intel Core i5 H-series 8 GB 500 GB HDD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire V Nitro VN7-571G Intel Core i7 H-series 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire V Nitro VN7-571G Intel Core i9 H-series 32 GB 128 GB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire V Nitro VN7-591G",
+              "release_year": 2014,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.ultrabookreview.com/acer/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 4th/5th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 8.1 / Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire V Nitro VN7-591G Intel Core i5 H-series 8 GB 500 GB HDD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire V Nitro VN7-591G Intel Core i7 H-series 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire V Nitro VN7-591G Intel Core i9 H-series 32 GB 128 GB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire V Nitro VN7-592G",
+              "release_year": 2015,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.ultrabookreview.com/acer/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 5th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 8.1 / Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire V Nitro VN7-592G Intel Core i5 H-series 8 GB 500 GB HDD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire V Nitro VN7-592G Intel Core i7 H-series 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire V Nitro VN7-592G Intel Core i9 H-series 32 GB 128 GB SSD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire V Nitro VN7-793G",
+              "release_year": 2016,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.ultrabookreview.com/acer/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 6th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire V Nitro VN7-793G Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire V Nitro VN7-793G Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire V Nitro VN7-793G Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire VX 15 VX5-591G",
+              "release_year": 2017,
+              "image_url": "https://static2-ecemea.acer.com/media/catalog/product/_/p/_predator-helios-300-ph-315-54-bl-black-rmain1000_nh.qc5ek.002.png?bg-color=255%2C255%2C255&canvas=500%3A500&fit=bounds&format=jpeg&height=500&quality=80&width=500",
+              "source_url": "https://www.ultrabookreview.com/acer/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 7th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "57 Wh",
+                "os": "Windows 10",
+                "weight": "2.3 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire VX 15 VX5-591G Intel Core i5 H-series 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5 H-series",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire VX 15 VX5-591G Intel Core i7 H-series 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire VX 15 VX5-591G Intel Core i9 H-series 32 GB 1 TB HDD",
+                  "processor": "Intel Core i9 H-series",
+                  "ram": "32 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

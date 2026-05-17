@@ -1,0 +1,2503 @@
+[
+  {
+    "modelName": "Lenovo IdeaPad 1 14",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" HD TN or FHD IPS anti-glare",
+      "processor": "Intel Celeron N4020 / Pentium Silver N5030 / AMD Athlon Silver 3050e",
+      "ram": "4–12 GB DDR4",
+      "storage": [
+        "64 GB eMMC",
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD"
+      ],
+      "battery": "35–42 Wh",
+      "os": "Windows 10 Home / Windows 11 Home / ChromeOS on selected regional SKUs",
+      "weight": "from 1.4 kg",
+      "dimensions": "327.1 × 235 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo IdeaPad 1 14 Intel Celeron N4020 4 GB/128 GB SSD Cloud Grey",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Cloud Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 1 14 Pentium Silver N5030 8 GB/256 GB SSD Cloud Grey",
+        "processor": "Pentium Silver N5030",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Cloud Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 1 14 AMD Athlon Silver 3050e 12 GB/512 GB SSD Cloud Grey",
+        "processor": "AMD Athlon Silver 3050e",
+        "ram": "12 GB",
+        "storage": "512 GB SSD",
+        "color": "Cloud Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo IdeaPad 1 15",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD TN or FHD IPS anti-glare",
+      "processor": "Intel Celeron N4020 / Core i3-1215U / AMD Ryzen 3 7320U",
+      "ram": "4–16 GB DDR4/LPDDR5",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "42 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "from 1.58 kg",
+      "dimensions": "360.2 × 236 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo IdeaPad 1 15 Intel Celeron N4020 4 GB/128 GB SSD Cloud Grey",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Cloud Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 1 15 Core i3-1215U 8 GB/256 GB SSD Cloud Grey",
+        "processor": "Core i3-1215U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Cloud Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 1 15 AMD Ryzen 3 7320U 16 GB/512 GB SSD Cloud Grey",
+        "processor": "AMD Ryzen 3 7320U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Cloud Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo IdeaPad 3 14",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD TN/IPS anti-glare",
+      "processor": "Intel Core i3-1005G1 / Core i5-1035G1 / AMD Ryzen 5 3500U",
+      "ram": "4–20 GB DDR4",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "35–45 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "from 1.5 kg",
+      "dimensions": "327.1 × 241 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo IdeaPad 3 14 Intel Core i3-1005G1 4 GB/128 GB SSD Arctic Grey",
+        "processor": "Intel Core i3-1005G1",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Arctic Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 3 14 Core i5-1035G1 8 GB/256 GB SSD Arctic Grey",
+        "processor": "Core i5-1035G1",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Arctic Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 3 14 AMD Ryzen 5 3500U 16 GB/512 GB SSD Arctic Grey",
+        "processor": "AMD Ryzen 5 3500U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Arctic Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo IdeaPad 3 15",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD/FHD TN or IPS anti-glare",
+      "processor": "Intel Core i3-1005G1 / Core i5-1135G7 / AMD Ryzen 5 5500U",
+      "ram": "4–20 GB DDR4",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "35–45 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "from 1.65 kg",
+      "dimensions": "362.2 × 253.4 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo IdeaPad 3 15 Intel Core i3-1005G1 4 GB/128 GB SSD Arctic Grey",
+        "processor": "Intel Core i3-1005G1",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Arctic Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 3 15 Core i5-1135G7 8 GB/256 GB SSD Arctic Grey",
+        "processor": "Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Arctic Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 3 15 AMD Ryzen 5 5500U 16 GB/512 GB SSD Arctic Grey",
+        "processor": "AMD Ryzen 5 5500U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Arctic Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo IdeaPad 3 17",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" HD+ or FHD IPS anti-glare",
+      "processor": "Intel Core i3-1005G1 / Core i5-1135G7 / AMD Ryzen 5 5500U",
+      "ram": "4–20 GB DDR4",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD",
+        "1 TB SSD"
+      ],
+      "battery": "42 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "from 2.1 kg",
+      "dimensions": "399 × 274 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo IdeaPad 3 17 Intel Core i3-1005G1 4 GB/128 GB SSD Arctic Grey",
+        "processor": "Intel Core i3-1005G1",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Arctic Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 3 17 Core i5-1135G7 8 GB/256 GB SSD Arctic Grey",
+        "processor": "Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Arctic Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 3 17 AMD Ryzen 5 5500U 16 GB/512 GB SSD Arctic Grey",
+        "processor": "AMD Ryzen 5 5500U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Arctic Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo IdeaPad 5 14",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD IPS anti-glare, 300 nits options",
+      "processor": "Intel Core i5-1035G1 / Core i7-1065G7 / AMD Ryzen 7 4700U",
+      "ram": "8–16 GB DDR4/LPDDR4x",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "from 1.38 kg",
+      "dimensions": "321.6 × 211.6 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo IdeaPad 5 14 Intel Core i5-1035G1 8 GB/256 GB SSD Graphite Grey",
+        "processor": "Intel Core i5-1035G1",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Graphite Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 5 14 Core i7-1065G7 16 GB/512 GB SSD Graphite Grey",
+        "processor": "Core i7-1065G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Graphite Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 5 14 AMD Ryzen 7 4700U 16 GB/1 TB SSD Graphite Grey",
+        "processor": "AMD Ryzen 7 4700U",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Graphite Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo IdeaPad 5 15",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS anti-glare, touch optional",
+      "processor": "Intel Core i5-1035G1 / Core i7-1065G7 / AMD Ryzen 7 4700U",
+      "ram": "8–16 GB DDR4/LPDDR4x",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "from 1.66 kg",
+      "dimensions": "356.7 × 233.1 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo IdeaPad 5 15 Intel Core i5-1035G1 8 GB/256 GB SSD Graphite Grey",
+        "processor": "Intel Core i5-1035G1",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Graphite Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 5 15 Core i7-1065G7 16 GB/512 GB SSD Graphite Grey",
+        "processor": "Core i7-1065G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Graphite Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 5 15 AMD Ryzen 7 4700U 16 GB/1 TB SSD Graphite Grey",
+        "processor": "AMD Ryzen 7 4700U",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Graphite Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo IdeaPad 5 Pro",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\"/16.0\" 2.2K/2.5K IPS or 2.8K OLED 90 Hz options",
+      "processor": "AMD Ryzen 5 5600U / Ryzen 7 5800U / Intel Core i5-11300H",
+      "ram": "16–32 GB DDR4/LPDDR5",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "56.5–75 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "from 1.38 kg",
+      "dimensions": "varies by 14-inch and 16-inch chassis"
+    },
+    "variants": [
+      {
+        "name": "Lenovo IdeaPad 5 Pro AMD Ryzen 5 5600U 8 GB/256 GB SSD Graphite Grey",
+        "processor": "AMD Ryzen 5 5600U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Graphite Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 5 Pro Ryzen 7 5800U 16 GB/512 GB SSD Graphite Grey",
+        "processor": "Ryzen 7 5800U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Graphite Grey"
+      },
+      {
+        "name": "Lenovo IdeaPad 5 Pro Intel Core i5-11300H 16 GB/1 TB SSD Graphite Grey",
+        "processor": "Intel Core i5-11300H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Graphite Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo LOQ 15IAX9",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 144 Hz or 15.6\" WQHD IPS 165 Hz",
+      "processor": "Intel Core i5-12450HX",
+      "ram": "8–32 GB DDR5-4800, 2x SODIMM",
+      "storage": [
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "60 Wh",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "from 2.38 kg",
+      "dimensions": "359.86 × 258.7 × 21.9–23.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo LOQ 15IAX9 Intel Core i5-12450HX 8 GB/256 GB SSD Onyx Grey",
+        "processor": "Intel Core i5-12450HX",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Onyx Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo Legion Y7000",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 60/144 Hz anti-glare",
+      "processor": "Intel Core i5-8300H / Core i7-8750H",
+      "ram": "8–32 GB DDR4",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD + 128 GB SSD"
+      ],
+      "battery": "52.5 Wh",
+      "os": "Windows 10 Home / Windows 11 supported on later SKUs",
+      "weight": "from 2.3 kg",
+      "dimensions": "361 × 267 × 26.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo Legion Y7000 Intel Core i5-8300H 8 GB/256 GB SSD Onyx Grey",
+        "processor": "Intel Core i5-8300H",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Onyx Grey"
+      },
+      {
+        "name": "Lenovo Legion Y7000 Intel Core i7-8750H 16 GB/512 GB SSD Onyx Grey",
+        "processor": "Intel Core i7-8750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Onyx Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo Legion 7 Pro",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WQXGA IPS 240 Hz, 500 nits, G-SYNC",
+      "processor": "Intel Core i9-13900HX / AMD Ryzen 9 7945HX",
+      "ram": "16–32 GB DDR5-5600",
+      "storage": [
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "99.9 Wh",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "from 2.8 kg",
+      "dimensions": "363.4 × 262.2 × 21.95–25.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo Legion 7 Pro Intel Core i9-13900HX 8 GB/256 GB SSD Onyx Grey",
+        "processor": "Intel Core i9-13900HX",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Onyx Grey"
+      },
+      {
+        "name": "Lenovo Legion 7 Pro AMD Ryzen 9 7945HX 16 GB/512 GB SSD Onyx Grey",
+        "processor": "AMD Ryzen 9 7945HX",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Onyx Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo Legion Slim 7i",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 144 Hz or 4K UHD IPS; later 16\" WQXGA options",
+      "processor": "Intel Core i7-10750H / Core i7-12700H / Core i9-13900H",
+      "ram": "16–32 GB DDR4/DDR5",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "71–99.9 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "from 1.86 kg",
+      "dimensions": "varies by 15-inch/16-inch generation"
+    },
+    "variants": [
+      {
+        "name": "Lenovo Legion Slim 7i Intel Core i7-10750H 8 GB/256 GB SSD Onyx Grey",
+        "processor": "Intel Core i7-10750H",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Onyx Grey"
+      },
+      {
+        "name": "Lenovo Legion Slim 7i Intel Core i7-12700H 16 GB/512 GB SSD Onyx Grey",
+        "processor": "Intel Core i7-12700H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Onyx Grey"
+      },
+      {
+        "name": "Lenovo Legion Slim 7i Intel Core i9-13900H 32 GB/1 TB SSD Onyx Grey",
+        "processor": "Intel Core i9-13900H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Onyx Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkBook Plus Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" 2.5K IPS touch main display + 12.0\" E Ink cover display",
+      "processor": "Intel Core i5-1130G7 / Core i7-1160G7",
+      "ram": "8–16 GB LPDDR4x",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "53 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "from 1.16 kg",
+      "dimensions": "298 × 209 × 13.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkBook Plus Gen 2 Intel Core i5-1130G7 8 GB/256 GB SSD Storm Grey",
+        "processor": "Intel Core i5-1130G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Storm Grey"
+      },
+      {
+        "name": "Lenovo ThinkBook Plus Gen 2 Intel Core i7-1160G7 16 GB/512 GB SSD Storm Grey",
+        "processor": "Intel Core i7-1160G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Storm Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkBook Plus Gen 3",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" 3K ultra-wide IPS main display + 8.0\" secondary touch display",
+      "processor": "Intel Core i5-12500H / Core i7-12700H",
+      "ram": "16–32 GB LPDDR5",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "69 Wh",
+      "os": "Windows 11 Pro",
+      "weight": "from 2.0 kg",
+      "dimensions": "410.9 × 230.2 × 17.95 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkBook Plus Gen 3 Intel Core i5-12500H 8 GB/256 GB SSD Storm Grey",
+        "processor": "Intel Core i5-12500H",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Storm Grey"
+      },
+      {
+        "name": "Lenovo ThinkBook Plus Gen 3 Intel Core i7-12700H 16 GB/512 GB SSD Storm Grey",
+        "processor": "Intel Core i7-12700H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Storm Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 14 Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen 5 PRO 4650U / Ryzen 7 PRO 4750U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 14 Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 14 Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 14 Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen 5 PRO 5650U / Ryzen 7 PRO 5850U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 14 Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 14 Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 14 Gen 3",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1235U / i7-1260P or AMD Ryzen 5 PRO 6650U / Ryzen 7 PRO 6850U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 14 Gen 3 Intel Core i5-1235U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 14 Gen 3 i7-1260P 16 GB/512 GB SSD Black",
+        "processor": "i7-1260P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 14 Gen 4",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1335U / i7-1365U or AMD Ryzen 5 PRO 7540U / Ryzen 7 PRO 7840U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 14 Gen 4 Intel Core i5-1335U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1335U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 14 Gen 4 i7-1365U 16 GB/512 GB SSD Black",
+        "processor": "i7-1365U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 14 Gen 5",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core Ultra 5 125U / Ultra 7 155U or AMD Ryzen 5 PRO 8540U / Ryzen 7 PRO 8840U",
+      "ram": "8–64 GB DDR5-5600, 2x SODIMM",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "39.3–52.5 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 14 Gen 5 Intel Core Ultra 5 125U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core Ultra 5 125U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 14 Gen 5 Ultra 7 155U 16 GB/512 GB SSD Black",
+        "processor": "Ultra 7 155U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 14s Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen 5 PRO 4650U / Ryzen 7 PRO 4750U",
+      "ram": "8–32 GB soldered LPDDR4x/LPDDR5/LPDDR5x",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 14s Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 14s Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 14s Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen 5 PRO 5650U / Ryzen 7 PRO 5850U",
+      "ram": "8–32 GB soldered LPDDR4x/LPDDR5/LPDDR5x",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 14s Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 14s Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 14s Gen 3",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1235U / i7-1260P or AMD Ryzen 5 PRO 6650U / Ryzen 7 PRO 6850U",
+      "ram": "8–32 GB soldered LPDDR4x/LPDDR5/LPDDR5x",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 14s Gen 3 Intel Core i5-1235U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 14s Gen 3 i7-1260P 16 GB/512 GB SSD Black",
+        "processor": "i7-1260P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 14s Gen 4",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1335U / i7-1365U or AMD Ryzen 5 PRO 7540U / Ryzen 7 PRO 7840U",
+      "ram": "8–32 GB soldered LPDDR4x/LPDDR5/LPDDR5x",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 14s Gen 4 Intel Core i5-1335U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1335U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 14s Gen 4 i7-1365U 16 GB/512 GB SSD Black",
+        "processor": "i7-1365U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 14s Gen 5",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core Ultra 5 125U / Ultra 7 155U or AMD Ryzen 5 PRO 8540U / Ryzen 7 PRO 8840U",
+      "ram": "8–64 GB DDR5-5600, 2x SODIMM",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "39.3–52.5 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 14s Gen 5 Intel Core Ultra 5 125U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core Ultra 5 125U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 14s Gen 5 Ultra 7 155U 16 GB/512 GB SSD Black",
+        "processor": "Ultra 7 155U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 16 Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen 5 PRO 4650U / Ryzen 7 PRO 4750U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "52.5–86 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.68 kg",
+      "dimensions": "361.9 × 255.5 × 20.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 16 Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 16 Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 16 Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen 5 PRO 5650U / Ryzen 7 PRO 5850U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "52.5–86 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.68 kg",
+      "dimensions": "361.9 × 255.5 × 20.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 16 Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 16 Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad T 16 Gen 3",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1235U / i7-1260P or AMD Ryzen 5 PRO 6650U / Ryzen 7 PRO 6850U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "52.5–86 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.68 kg",
+      "dimensions": "361.9 × 255.5 × 20.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad T 16 Gen 3 Intel Core i5-1235U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad T 16 Gen 3 i7-1260P 16 GB/512 GB SSD Black",
+        "processor": "i7-1260P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad X 13 Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" WUXGA IPS anti-glare; touch and low-power options by configuration",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen 5 PRO 4650U / Ryzen 7 PRO 4750U",
+      "ram": "8–32 GB soldered LPDDR4x/LPDDR5/LPDDR5x",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.19 kg",
+      "dimensions": "305.8 × 217.6 × 18.1 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad X 13 Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad X 13 Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad X 13 Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" WUXGA IPS anti-glare; touch and low-power options by configuration",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen 5 PRO 5650U / Ryzen 7 PRO 5850U",
+      "ram": "8–32 GB soldered LPDDR4x/LPDDR5/LPDDR5x",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.19 kg",
+      "dimensions": "305.8 × 217.6 × 18.1 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad X 13 Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad X 13 Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad X 13 Gen 3",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" WUXGA IPS anti-glare; touch and low-power options by configuration",
+      "processor": "Intel Core i5-1235U / i7-1260P or AMD Ryzen 5 PRO 6650U / Ryzen 7 PRO 6850U",
+      "ram": "8–32 GB soldered LPDDR4x/LPDDR5/LPDDR5x",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.19 kg",
+      "dimensions": "305.8 × 217.6 × 18.1 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad X 13 Gen 3 Intel Core i5-1235U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad X 13 Gen 3 i7-1260P 16 GB/512 GB SSD Black",
+        "processor": "i7-1260P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad X 13 Gen 4",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" WUXGA IPS anti-glare; touch and low-power options by configuration",
+      "processor": "Intel Core i5-1335U / i7-1365U or AMD Ryzen 5 PRO 7540U / Ryzen 7 PRO 7840U",
+      "ram": "8–32 GB soldered LPDDR4x/LPDDR5/LPDDR5x",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.19 kg",
+      "dimensions": "305.8 × 217.6 × 18.1 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad X 13 Gen 4 Intel Core i5-1335U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1335U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad X 13 Gen 4 i7-1365U 16 GB/512 GB SSD Black",
+        "processor": "i7-1365U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad X 13 Gen 5",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" WUXGA IPS anti-glare; touch and low-power options by configuration",
+      "processor": "Intel Core Ultra 5 125U / Ultra 7 155U or AMD Ryzen 5 PRO 8540U / Ryzen 7 PRO 8840U",
+      "ram": "8–32 GB soldered LPDDR4x/LPDDR5/LPDDR5x",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.19 kg",
+      "dimensions": "305.8 × 217.6 × 18.1 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad X 13 Gen 5 Intel Core Ultra 5 125U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core Ultra 5 125U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad X 13 Gen 5 Ultra 7 155U 16 GB/512 GB SSD Black",
+        "processor": "Ultra 7 155U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 14 Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen 5 PRO 4650U / Ryzen 7 PRO 4750U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 14 Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen 5 PRO 5650U / Ryzen 7 PRO 5850U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 14 Gen 3",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core i5-1235U / i7-1260P or AMD Ryzen 5 PRO 6650U / Ryzen 7 PRO 6850U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 3 Intel Core i5-1235U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 3 i7-1260P 16 GB/512 GB SSD Black",
+        "processor": "i7-1260P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 14 Gen 4",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core i5-1335U / i7-1365U or AMD Ryzen 5 PRO 7540U / Ryzen 7 PRO 7840U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 4 Intel Core i5-1335U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1335U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 4 i7-1365U 16 GB/512 GB SSD Black",
+        "processor": "i7-1365U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 14 Gen 5",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core Ultra 5 125U / Ultra 7 155U or AMD Ryzen 5 PRO 8540U / Ryzen 7 PRO 8840U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 5 Intel Core Ultra 5 125U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core Ultra 5 125U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 5 Ultra 7 155U 16 GB/512 GB SSD Black",
+        "processor": "Ultra 7 155U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 14 Gen 6",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core Ultra 5 125U / Ultra 7 155U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 6 Intel Core Ultra 5 125U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core Ultra 5 125U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 14 Gen 6 Ultra 7 155U 16 GB/512 GB SSD Black",
+        "processor": "Ultra 7 155U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 15 Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen 5 PRO 4650U / Ryzen 7 PRO 4750U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 15 Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 15 Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 15 Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen 5 PRO 5650U / Ryzen 7 PRO 5850U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 15 Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 15 Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 15 Gen 3",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core i5-1235U / i7-1260P or AMD Ryzen 5 PRO 6650U / Ryzen 7 PRO 6850U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 15 Gen 3 Intel Core i5-1235U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 15 Gen 3 i7-1260P 16 GB/512 GB SSD Black",
+        "processor": "i7-1260P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 15 Gen 4",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core i5-1335U / i7-1365U or AMD Ryzen 5 PRO 7540U / Ryzen 7 PRO 7840U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 15 Gen 4 Intel Core i5-1335U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1335U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 15 Gen 4 i7-1365U 16 GB/512 GB SSD Black",
+        "processor": "i7-1365U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 15 Gen 5",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core Ultra 5 125U / Ultra 7 155U or AMD Ryzen 5 PRO 8540U / Ryzen 7 PRO 8840U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 15 Gen 5 Intel Core Ultra 5 125U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core Ultra 5 125U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 15 Gen 5 Ultra 7 155U 16 GB/512 GB SSD Black",
+        "processor": "Ultra 7 155U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 16 Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen 5 PRO 4650U / Ryzen 7 PRO 4750U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.68 kg",
+      "dimensions": "361.9 × 255.5 × 20.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 16 Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 16 Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad E 16 Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" FHD/WUXGA IPS anti-glare; touch optional on selected SKUs",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen 5 PRO 5650U / Ryzen 7 PRO 5850U",
+      "ram": "4–40 GB DDR4/DDR5, soldered + SODIMM or 2x SODIMM by generation",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.68 kg",
+      "dimensions": "361.9 × 255.5 × 20.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad E 16 Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad E 16 Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 13 Yoga",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" FHD IPS touch, 360° convertible, garaged pen support",
+      "processor": "Intel Core i5-10210U / Core i7-10510U",
+      "ram": "8–16 GB DDR4",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD"
+      ],
+      "battery": "46 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "from 1.43 kg",
+      "dimensions": "311.5 × 219 × 17.6 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 13 Yoga Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 13 Yoga Intel Core i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "Intel Core i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 14 Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen 5 PRO 4650U / Ryzen 7 PRO 4750U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 14 Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 14 Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 14 Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen 5 PRO 5650U / Ryzen 7 PRO 5850U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 14 Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 14 Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 14 Gen 3",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1235U / i7-1260P or AMD Ryzen 5 PRO 6650U / Ryzen 7 PRO 6850U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 14 Gen 3 Intel Core i5-1235U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 14 Gen 3 i7-1260P 16 GB/512 GB SSD Black",
+        "processor": "i7-1260P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 14 Gen 4",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1335U / i7-1365U or AMD Ryzen 5 PRO 7540U / Ryzen 7 PRO 7840U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 14 Gen 4 Intel Core i5-1335U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1335U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 14 Gen 4 i7-1365U 16 GB/512 GB SSD Black",
+        "processor": "i7-1365U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 14 Gen 5",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core Ultra 5 125U / Ultra 7 155U or AMD Ryzen 5 PRO 8540U / Ryzen 7 PRO 8840U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 14 Gen 5 Intel Core Ultra 5 125U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core Ultra 5 125U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 14 Gen 5 Ultra 7 155U 16 GB/512 GB SSD Black",
+        "processor": "Ultra 7 155U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 15 Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen 5 PRO 4650U / Ryzen 7 PRO 4750U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 15 Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 15 Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 15 Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen 5 PRO 5650U / Ryzen 7 PRO 5850U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 15 Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 15 Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 15 Gen 3",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1235U / i7-1260P or AMD Ryzen 5 PRO 6650U / Ryzen 7 PRO 6850U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 15 Gen 3 Intel Core i5-1235U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 15 Gen 3 i7-1260P 16 GB/512 GB SSD Black",
+        "processor": "i7-1260P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 15 Gen 4",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1335U / i7-1365U or AMD Ryzen 5 PRO 7540U / Ryzen 7 PRO 7840U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 15 Gen 4 Intel Core i5-1335U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1335U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 15 Gen 4 i7-1365U 16 GB/512 GB SSD Black",
+        "processor": "i7-1365U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad L 15 Gen 5",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core Ultra 5 125U / Ultra 7 155U or AMD Ryzen 5 PRO 8540U / Ryzen 7 PRO 8840U",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad L 15 Gen 5 Intel Core Ultra 5 125U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core Ultra 5 125U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad L 15 Gen 5 Ultra 7 155U 16 GB/512 GB SSD Black",
+        "processor": "Ultra 7 155U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad P 14s Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen PRO 4000-series with NVIDIA Quadro P520 options",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad P 14s Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 14s Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad P 14s Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen PRO 5000-series with NVIDIA T500 options",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad P 14s Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 14s Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad P 14s Gen 3",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1240P / i7-1260P or AMD Ryzen PRO 6000-series with NVIDIA T550 options",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad P 14s Gen 3 Intel Core i5-1240P 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1240P",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 14s Gen 3 i7-1260P 16 GB/512 GB SSD Black",
+        "processor": "i7-1260P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad P 14s Gen 4",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1340P / i7-1360P or AMD Ryzen PRO 7040-series with NVIDIA RTX A500 options",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad P 14s Gen 4 Intel Core i5-1340P 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1340P",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 14s Gen 4 i7-1360P 16 GB/512 GB SSD Black",
+        "processor": "i7-1360P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad P 14s Gen 5",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core Ultra 5 / Ultra 7 or AMD Ryzen PRO 8040-series with optional NVIDIA RTX 500 Ada",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.36 kg",
+      "dimensions": "317.7 × 226.9 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad P 14s Gen 5 Intel Core Ultra 5 8 GB/256 GB SSD Black",
+        "processor": "Intel Core Ultra 5",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 14s Gen 5 Ultra 7 16 GB/512 GB SSD Black",
+        "processor": "Ultra 7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad P 15s Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen PRO 4000-series with NVIDIA Quadro P520 options",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "45–57 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.70 kg",
+      "dimensions": "365 × 240 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad P 15s Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 15s Gen 1 Intel Core i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "Intel Core i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad P 15",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS / UHD OLED touch factory-calibrated options",
+      "processor": "Intel Core i7-10750H / Core i9-10885H / Xeon W-10855M",
+      "ram": "8–128 GB DDR4 ECC/non-ECC",
+      "storage": [
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "94 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Linux",
+      "weight": "from 2.74 kg",
+      "dimensions": "375.4 × 252.3 × 24.5–31.45 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad P 15 Intel Core i7-10750H 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i7-10750H",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 15 Intel Core i9-10885H 16 GB/512 GB SSD Black",
+        "processor": "Intel Core i9-10885H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 15 Intel Xeon W-10855M 32 GB/1 TB SSD Black",
+        "processor": "Intel Xeon W-10855M",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad P 16",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WUXGA/WQXGA IPS or UHD+ OLED, factory color calibration options",
+      "processor": "Intel Core i7-12800HX / Core i9-12950HX",
+      "ram": "16–128 GB DDR5 ECC/non-ECC",
+      "storage": [
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD",
+        "4 TB PCIe NVMe SSD"
+      ],
+      "battery": "94 Wh",
+      "os": "Windows 11 Pro / Linux",
+      "weight": "from 2.95 kg",
+      "dimensions": "364 × 266 × 30.2 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad P 16 Intel Core i7-12800HX 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i7-12800HX",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 16 Intel Core i9-12950HX 16 GB/512 GB SSD Black",
+        "processor": "Intel Core i9-12950HX",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad P 16s Gen 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-10210U / i7-10510U or AMD Ryzen PRO 4000-series with NVIDIA Quadro P520 options",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "52.5–86 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.68 kg",
+      "dimensions": "361.9 × 255.5 × 20.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad P 16s Gen 1 Intel Core i5-10210U 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 16s Gen 1 i7-10510U 16 GB/512 GB SSD Black",
+        "processor": "i7-10510U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo ThinkPad P 16s Gen 2",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WUXGA IPS anti-glare; touch, low-power, privacy, 2.2K/2.8K OLED options by configuration",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7 or AMD Ryzen PRO 5000-series with NVIDIA T500 options",
+      "ram": "8–64 GB DDR4/DDR5/LPDDR5x, depending on generation and platform",
+      "storage": [
+        "256 GB PCIe NVMe SSD",
+        "512 GB PCIe NVMe SSD",
+        "1 TB PCIe NVMe SSD",
+        "2 TB PCIe NVMe SSD"
+      ],
+      "battery": "52.5–86 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro / Ubuntu or Linux support on selected SKUs",
+      "weight": "from 1.68 kg",
+      "dimensions": "361.9 × 255.5 × 20.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo ThinkPad P 16s Gen 2 Intel Core i5-1135G7 8 GB/256 GB SSD Black",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Lenovo ThinkPad P 16s Gen 2 i7-1165G7 16 GB/512 GB SSD Black",
+        "processor": "i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo Yoga Slim 9i",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" 4K UHD IPS/VESA HDR 400 or later 2.8K OLED touch options",
+      "processor": "Intel Core i5-1135G7 / Core i7-1165G7 / Core Ultra 7 155H",
+      "ram": "16–32 GB LPDDR4x/LPDDR5x",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "63.5–75 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "from 1.26 kg",
+      "dimensions": "318 × 200 × 13.9–16.4 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo Yoga Slim 9i Intel Core i5-1135G7 8 GB/256 GB SSD Storm Grey",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Storm Grey"
+      },
+      {
+        "name": "Lenovo Yoga Slim 9i Intel Core i7-1165G7 16 GB/512 GB SSD Storm Grey",
+        "processor": "Intel Core i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Storm Grey"
+      },
+      {
+        "name": "Lenovo Yoga Slim 9i Intel Core Ultra 7 155H 32 GB/1 TB SSD Storm Grey",
+        "processor": "Intel Core Ultra 7 155H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Storm Grey"
+      }
+    ]
+  },
+  {
+    "modelName": "Lenovo Yoga 930",
+    "releaseYear": 2018,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.9\" FHD IPS touch or 13.9\" UHD IPS touch, 360° convertible",
+      "processor": "Intel Core i5-8250U / Core i7-8550U",
+      "ram": "8–16 GB LPDDR3",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "60 Wh",
+      "os": "Windows 10 Home / Windows 11 supported",
+      "weight": "from 1.38 kg",
+      "dimensions": "322 × 227 × 14.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Lenovo Yoga 930 Intel Core i5-8250U 8 GB/256 GB SSD Storm Grey",
+        "processor": "Intel Core i5-8250U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Storm Grey"
+      },
+      {
+        "name": "Lenovo Yoga 930 Intel Core i7-8550U 16 GB/512 GB SSD Storm Grey",
+        "processor": "Intel Core i7-8550U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Storm Grey"
+      }
+    ]
+  }
+]

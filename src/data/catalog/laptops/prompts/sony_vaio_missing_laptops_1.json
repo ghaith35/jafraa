@@ -1,0 +1,55 @@
+[
+  {
+    "modelName": "Sony VAIO S Series",
+    "releaseYear": 2010,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" HD (1366×768) / 13.3\" HD+ (1600×900) matte / 15.5\" FHD IPS (1920×1080) matte display",
+      "processor": "Intel Core i5-520M / Core i5-2430M / Core i5-3210M / Core i7-3520M / Core i7-3632QM depending on generation and size",
+      "ram": "4–12 GB DDR3 / DDR3L",
+      "storage": [
+        "500 GB 5400 rpm HDD",
+        "500 GB 7200 rpm HDD",
+        "750 GB 7200 rpm HDD",
+        "1 TB HDD",
+        "128 GB SSD RAID 0",
+        "256 GB SSD RAID 0",
+        "512 GB SSD RAID 0"
+      ],
+      "battery": "4400–4800 mAh Li-ion/Li-polymer main battery; optional sheet battery on select S13/S15 models",
+      "os": "Windows 7 Home Premium / Windows 7 Professional / Windows 8 / Windows 8 Pro",
+      "weight": "1.63–2.00 kg depending on 13.3\" or 15.5\" chassis",
+      "dimensions": "13.3\": about 331 × 225 × 23–24 mm; 15.5\": about 380 × 256 × 23–24 mm"
+    },
+    "variants": [
+      {
+        "name": "Sony VAIO S Series 13 Core i5/4GB/500GB Silver",
+        "processor": "Intel Core i5-3210M",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Silver"
+      },
+      {
+        "name": "Sony VAIO S Series 13 Premium Core i7/8GB/256GB Black",
+        "processor": "Intel Core i7-3520M",
+        "ram": "8 GB",
+        "storage": "256 GB SSD RAID 0",
+        "color": "Black"
+      },
+      {
+        "name": "Sony VAIO S Series 15 Core i7/8GB/750GB Black",
+        "processor": "Intel Core i7-3632QM",
+        "ram": "8 GB",
+        "storage": "750 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Sony VAIO S Series 15 Core i7/12GB/1TB White",
+        "processor": "Intel Core i7-3632QM",
+        "ram": "12 GB",
+        "storage": "1 TB HDD",
+        "color": "White"
+      }
+    ]
+  }
+]

@@ -1,0 +1,4441 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "Acer",
+      "logo_url": "https://logo.clearbit.com/acer.com",
+      "families": [
+        {
+          "name": "Aspire Legacy / Timeline / Aspire One",
+          "models": [
+            {
+              "name": "Acer Aspire One A110",
+              "release_year": 2008,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "11.6\" IPS/TN, 1366×768",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.25 kg",
+                "dimensions": "296 × 205 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire One A110 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire One A110 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire One A110 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire One A150",
+              "release_year": 2008,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire One A150 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire One A150 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire One A150 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire One D250",
+              "release_year": 2009,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire One D250 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire One D250 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire One D250 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire One D255",
+              "release_year": 2010,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire One D255 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire One D255 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire One D255 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 1410",
+              "release_year": 2009,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1410 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1410 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1410 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 1830T",
+              "release_year": 2010,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1830T Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1830T Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1830T Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire Timeline 3810T",
+              "release_year": 2009,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire Timeline 3810T Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire Timeline 3810T Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire Timeline 3810T Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire Timeline 4810T",
+              "release_year": 2009,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire Timeline 4810T Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire Timeline 4810T Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire Timeline 4810T Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire TimelineX 4820T",
+              "release_year": 2010,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire TimelineX 4820T Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire TimelineX 4820T Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire TimelineX 4820T Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5253",
+              "release_year": 2011,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 2nd Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5253 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5253 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5253 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5551",
+              "release_year": 2010,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5551 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5551 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5551 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5733",
+              "release_year": 2010,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5733 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5733 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5733 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5738",
+              "release_year": 2009,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5738 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5738 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5738 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5742",
+              "release_year": 2010,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5742 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5742 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5742 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5750",
+              "release_year": 2011,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 2nd Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5750 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5750 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5750 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5755",
+              "release_year": 2011,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 2nd Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5755 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5755 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5755 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire V3-571",
+              "release_year": 2012,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 3rd Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire V3-571 Intel Core i3 4 GB 500 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire V3-571 Intel Core i5 8 GB 1 TB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire V3-571 Intel Core i7 16 GB 128 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire V5-571",
+              "release_year": 2012,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 3rd Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire V5-571 Intel Core i3 4 GB 500 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire V5-571 Intel Core i5 8 GB 1 TB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire V5-571 Intel Core i7 16 GB 128 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire E1-571",
+              "release_year": 2012,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 3rd Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire E1-571 Intel Core i3 4 GB 500 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire E1-571 Intel Core i5 8 GB 1 TB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire E1-571 Intel Core i7 16 GB 128 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire E5-571",
+              "release_year": 2014,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 4th/5th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 8.1 / Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire E5-571 Intel Core i3 4 GB 500 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire E5-571 Intel Core i5 8 GB 1 TB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire E5-571 Intel Core i7 16 GB 128 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire E5-575",
+              "release_year": 2016,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 6th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire E5-575 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire E5-575 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire E5-575 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire E5-576",
+              "release_year": 2017,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 7th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire E5-576 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire E5-576 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire E5-576 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire ES1-512",
+              "release_year": 2014,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 4th/5th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 8.1 / Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire ES1-512 Intel Core i3 4 GB 500 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire ES1-512 Intel Core i5 8 GB 1 TB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire ES1-512 Intel Core i7 16 GB 128 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire F5-573",
+              "release_year": 2016,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 6th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire F5-573 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire F5-573 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire F5-573 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Aspire Modern",
+          "models": [
+            {
+              "name": "Acer Aspire 1 A114",
+              "release_year": 2018,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 8th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1 A114 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1 A114 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1 A114 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 1 A115",
+              "release_year": 2019,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "11.6\" IPS/TN, 1366×768",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.25 kg",
+                "dimensions": "296 × 205 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1 A115 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1 A115 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1 A115 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 1 A315",
+              "release_year": 2020,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1 A315 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1 A315 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1 A315 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 1 A514",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1 A514 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1 A514 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1 A514 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 1 A515",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1 A515 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1 A515 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1 A515 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 1 A517",
+              "release_year": 2022,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.5 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1 A517 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1 A517 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1 A517 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 1 A14 AI",
+              "release_year": 2024,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1 A14 AI Intel Core Ultra 5 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1 A14 AI Intel Core Ultra 7 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1 A14 AI AMD Ryzen 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 1 A16 AI",
+              "release_year": 2025,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1 A16 AI Intel Core Ultra 5 Series 2 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 2",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1 A16 AI Intel Core Ultra 7 Series 2 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 2",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1 A16 AI AMD Ryzen AI 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 1 A325",
+              "release_year": 2026,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core Ultra Series 3 / AMD Ryzen AI 400",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 1 A325 Intel Core Ultra 5 Series 3 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 3",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 1 A325 Intel Core Ultra 7 Series 3 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 3",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 1 A325 AMD Ryzen AI 7 400 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7 400",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 3 A114",
+              "release_year": 2018,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 8th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 3 A114 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 3 A114 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 3 A114 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 3 A115",
+              "release_year": 2019,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "11.6\" IPS/TN, 1366×768",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.25 kg",
+                "dimensions": "296 × 205 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 3 A115 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 3 A115 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 3 A115 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 3 A315",
+              "release_year": 2020,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 3 A315 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 3 A315 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 3 A315 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 3 A514",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 3 A514 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 3 A514 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 3 A514 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 3 A515",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 3 A515 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 3 A515 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 3 A515 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 3 A517",
+              "release_year": 2022,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.5 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 3 A517 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 3 A517 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 3 A517 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 3 A14 AI",
+              "release_year": 2024,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 3 A14 AI Intel Core Ultra 5 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 3 A14 AI Intel Core Ultra 7 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 3 A14 AI AMD Ryzen 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 3 A16 AI",
+              "release_year": 2025,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 3 A16 AI Intel Core Ultra 5 Series 2 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 2",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 3 A16 AI Intel Core Ultra 7 Series 2 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 2",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 3 A16 AI AMD Ryzen AI 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 3 A325",
+              "release_year": 2026,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core Ultra Series 3 / AMD Ryzen AI 400",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 3 A325 Intel Core Ultra 5 Series 3 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 3",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 3 A325 Intel Core Ultra 7 Series 3 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 3",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 3 A325 AMD Ryzen AI 7 400 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7 400",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5 A114",
+              "release_year": 2018,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 8th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5 A114 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5 A114 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5 A114 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5 A115",
+              "release_year": 2019,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "11.6\" IPS/TN, 1366×768",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.25 kg",
+                "dimensions": "296 × 205 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5 A115 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5 A115 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5 A115 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5 A315",
+              "release_year": 2020,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5 A315 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5 A315 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5 A315 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5 A514",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5 A514 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5 A514 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5 A514 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5 A515",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5 A515 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5 A515 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5 A515 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5 A517",
+              "release_year": 2022,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.5 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5 A517 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5 A517 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5 A517 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5 A14 AI",
+              "release_year": 2024,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5 A14 AI Intel Core Ultra 5 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5 A14 AI Intel Core Ultra 7 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5 A14 AI AMD Ryzen 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5 A16 AI",
+              "release_year": 2025,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5 A16 AI Intel Core Ultra 5 Series 2 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 2",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5 A16 AI Intel Core Ultra 7 Series 2 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 2",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5 A16 AI AMD Ryzen AI 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5 A325",
+              "release_year": 2026,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core Ultra Series 3 / AMD Ryzen AI 400",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5 A325 Intel Core Ultra 5 Series 3 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 3",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5 A325 Intel Core Ultra 7 Series 3 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 3",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5 A325 AMD Ryzen AI 7 400 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7 400",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 7 A315",
+              "release_year": 2020,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 7 A315 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 7 A315 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 7 A315 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 7 A514",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 7 A514 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 7 A514 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 7 A514 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 7 A515",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 7 A515 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 7 A515 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 7 A515 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 7 A517",
+              "release_year": 2022,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "17.3\" IPS, 1600×900 to 1920×1080",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "2.5 kg",
+                "dimensions": "423 × 290 × 25 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 7 A517 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 7 A517 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 7 A517 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 7 A14 AI",
+              "release_year": 2024,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 7 A14 AI Intel Core Ultra 5 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 7 A14 AI Intel Core Ultra 7 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 7 A14 AI AMD Ryzen 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 7 A16 AI",
+              "release_year": 2025,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/gb-en/laptops/aspire/aspire-5-intel",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 7 A16 AI Intel Core Ultra 5 Series 2 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 2",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 7 A16 AI Intel Core Ultra 7 Series 2 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 2",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 7 A16 AI AMD Ryzen AI 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Swift",
+          "models": [
+            {
+              "name": "Acer Swift 1 SF113",
+              "release_year": 2017,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "13.3\" IPS, 1366×768 to 2560×1440",
+                "processor": "Intel Core i3/i5/i7 7th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.2 kg",
+                "dimensions": "305 × 210 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift 1 SF113 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift 1 SF113 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift 1 SF113 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift 3 SF314",
+              "release_year": 2017,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 7th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift 3 SF314 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift 3 SF314 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift 3 SF314 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift 5 SF514",
+              "release_year": 2018,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 8th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift 5 SF514 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift 5 SF514 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift 5 SF514 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift 7 SF713",
+              "release_year": 2017,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "13.3\" IPS, 1366×768 to 2560×1440",
+                "processor": "Intel Core i3/i5/i7 7th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.2 kg",
+                "dimensions": "305 × 210 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift 7 SF713 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift 7 SF713 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift 7 SF713 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift 3 SF313",
+              "release_year": 2020,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "13.3\" IPS, 1366×768 to 2560×1440",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.2 kg",
+                "dimensions": "305 × 210 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift 3 SF313 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift 3 SF313 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift 3 SF313 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift 3X SF314",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift 3X SF314 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift 3X SF314 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift 3X SF314 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift 5 SF514-55T",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift 5 SF514-55T Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift 5 SF514-55T Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift 5 SF514-55T AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift X SFX14",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift X SFX14 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift X SFX14 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift X SFX14 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift X 16 SFX16",
+              "release_year": 2022,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift X 16 SFX16 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift X 16 SFX16 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift X 16 SFX16 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift Go 14 SFG14",
+              "release_year": 2023,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift Go 14 SFG14 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift Go 14 SFG14 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift Go 14 SFG14 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift Go 16 SFG16",
+              "release_year": 2023,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift Go 16 SFG16 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift Go 16 SFG16 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift Go 16 SFG16 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift Edge 16 SFE16",
+              "release_year": 2023,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift Edge 16 SFE16 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift Edge 16 SFE16 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift Edge 16 SFE16 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift 14 AI SF14",
+              "release_year": 2024,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift 14 AI SF14 Intel Core Ultra 5 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift 14 AI SF14 Intel Core Ultra 7 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift 14 AI SF14 AMD Ryzen 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift Go 14 AI SFG14",
+              "release_year": 2024,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift Go 14 AI SFG14 Intel Core Ultra 5 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift Go 14 AI SFG14 Intel Core Ultra 7 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift Go 14 AI SFG14 AMD Ryzen 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift Go 16 AI SFG16",
+              "release_year": 2024,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift Go 16 AI SFG16 Intel Core Ultra 5 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift Go 16 AI SFG16 Intel Core Ultra 7 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift Go 16 AI SFG16 AMD Ryzen 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift X 14 AI SFX14",
+              "release_year": 2025,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift X 14 AI SFX14 Intel Core Ultra 5 Series 2 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 2",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift X 14 AI SFX14 Intel Core Ultra 7 Series 2 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 2",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift X 14 AI SFX14 AMD Ryzen AI 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift Edge 14 AI",
+              "release_year": 2025,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift Edge 14 AI Intel Core Ultra 5 Series 2 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 2",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift Edge 14 AI Intel Core Ultra 7 Series 2 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 2",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift Edge 14 AI AMD Ryzen AI 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift Air 16",
+              "release_year": 2025,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift Air 16 Intel Core Ultra 5 Series 2 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 2",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift Air 16 Intel Core Ultra 7 Series 2 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 2",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift Air 16 AMD Ryzen AI 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift 16 AI SF16",
+              "release_year": 2026,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 3 / AMD Ryzen AI 400",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift 16 AI SF16 Intel Core Ultra 5 Series 3 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 3",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift 16 AI SF16 Intel Core Ultra 7 Series 3 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 3",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift 16 AI SF16 AMD Ryzen AI 7 400 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7 400",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Swift Edge 16 AI",
+              "release_year": 2026,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 3 / AMD Ryzen AI 400",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Swift Edge 16 AI Intel Core Ultra 5 Series 3 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 3",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Swift Edge 16 AI Intel Core Ultra 7 Series 3 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 3",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Swift Edge 16 AI AMD Ryzen AI 7 400 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7 400",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Spin / Aspire Spin",
+          "models": [
+            {
+              "name": "Acer Spin 1 SP111",
+              "release_year": 2016,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "11.6\" IPS/TN, 1366×768",
+                "processor": "Intel Core i3/i5/i7 6th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 10",
+                "weight": "1.25 kg",
+                "dimensions": "296 × 205 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Spin 1 SP111 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Spin 1 SP111 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Spin 1 SP111 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Spin 3 SP315",
+              "release_year": 2016,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 6th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Spin 3 SP315 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Spin 3 SP315 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Spin 3 SP315 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Spin 5 SP513",
+              "release_year": 2017,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "13.3\" IPS, 1366×768 to 2560×1440",
+                "processor": "Intel Core i3/i5/i7 7th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.2 kg",
+                "dimensions": "305 × 210 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Spin 5 SP513 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Spin 5 SP513 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Spin 5 SP513 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Spin 7 SP714",
+              "release_year": 2016,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 6th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 10",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Spin 7 SP714 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Spin 7 SP714 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Spin 7 SP714 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Spin 3 SP314",
+              "release_year": 2019,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Spin 3 SP314 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Spin 3 SP314 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Spin 3 SP314 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Spin 5 SP513-54N",
+              "release_year": 2020,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "13.3\" IPS, 1366×768 to 2560×1440",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.2 kg",
+                "dimensions": "305 × 210 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Spin 5 SP513-54N Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Spin 5 SP513-54N Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Spin 5 SP513-54N AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Spin 5 SP513-55N",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "13.3\" IPS, 1366×768 to 2560×1440",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.2 kg",
+                "dimensions": "305 × 210 × 16 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Spin 5 SP513-55N Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Spin 5 SP513-55N Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Spin 5 SP513-55N AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Spin 3 SP314-54N",
+              "release_year": 2020,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Spin 3 SP314-54N Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Spin 3 SP314-54N Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Spin 3 SP314-54N AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 3 Spin 14",
+              "release_year": 2023,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 3 Spin 14 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 3 Spin 14 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 3 Spin 14 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire 5 Spin 14",
+              "release_year": 2023,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire 5 Spin 14 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire 5 Spin 14 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire 5 Spin 14 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Spin 14 AI",
+              "release_year": 2025,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/laptops/swift",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Spin 14 AI Intel Core Ultra 5 Series 2 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 2",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Spin 14 AI Intel Core Ultra 7 Series 2 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 2",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Spin 14 AI AMD Ryzen AI 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ConceptD / Creator",
+          "models": [
+            {
+              "name": "Acer ConceptD 3",
+              "release_year": 2019,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/conceptd",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer ConceptD 3 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer ConceptD 3 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer ConceptD 3 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer ConceptD 3 Ezel",
+              "release_year": 2020,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/conceptd",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer ConceptD 3 Ezel Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer ConceptD 3 Ezel Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer ConceptD 3 Ezel AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer ConceptD 5",
+              "release_year": 2019,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/conceptd",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer ConceptD 5 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer ConceptD 5 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer ConceptD 5 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer ConceptD 5 Pro",
+              "release_year": 2019,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/conceptd",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer ConceptD 5 Pro Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer ConceptD 5 Pro Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer ConceptD 5 Pro Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer ConceptD 7",
+              "release_year": 2019,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/conceptd",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer ConceptD 7 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer ConceptD 7 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer ConceptD 7 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer ConceptD 7 Pro",
+              "release_year": 2019,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/conceptd",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer ConceptD 7 Pro Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer ConceptD 7 Pro Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer ConceptD 7 Pro Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer ConceptD 7 Ezel",
+              "release_year": 2020,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/conceptd",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer ConceptD 7 Ezel Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer ConceptD 7 Ezel Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer ConceptD 7 Ezel AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer ConceptD 9",
+              "release_year": 2019,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/conceptd",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer ConceptD 9 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer ConceptD 9 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer ConceptD 9 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer ConceptD 9 Pro",
+              "release_year": 2020,
+              "image_url": "https://images.acer.com/is/image/acer/swift-KSP01%3AStatic-KSP-Image-Right-Left-S",
+              "source_url": "https://www.acer.com/us-en/conceptd",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 10th Gen / AMD Ryzen 4000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer ConceptD 9 Pro Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer ConceptD 9 Pro Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer ConceptD 9 Pro AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Aspire Vero",
+          "models": [
+            {
+              "name": "Acer Aspire Vero AV15-51",
+              "release_year": 2021,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 11th Gen / AMD Ryzen 5000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire Vero AV15-51 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire Vero AV15-51 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire Vero AV15-51 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire Vero AV14-51",
+              "release_year": 2022,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire Vero AV14-51 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire Vero AV14-51 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire Vero AV14-51 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire Vero 16 AV16",
+              "release_year": 2024,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire Vero 16 AV16 Intel Core Ultra 5 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire Vero 16 AV16 Intel Core Ultra 7 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire Vero 16 AV16 AMD Ryzen 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

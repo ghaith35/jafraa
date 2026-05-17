@@ -1,0 +1,808 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "Acer",
+      "logo_url": "https://logo.clearbit.com/acer.com",
+      "families": [
+        {
+          "name": "Special / Convertible Legacy",
+          "models": [
+            {
+              "name": "Acer Ferrari 4000",
+              "release_year": 2005,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Ferrari 4000 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Ferrari 4000 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Ferrari 4000 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Ferrari 5000",
+              "release_year": 2006,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Ferrari 5000 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Ferrari 5000 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Ferrari 5000 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Ferrari One 200",
+              "release_year": 2009,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Ferrari One 200 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Ferrari One 200 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Ferrari One 200 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer TravelMate C110",
+              "release_year": 2003,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "11.6\" IPS/TN, 1366×768",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.25 kg",
+                "dimensions": "296 × 205 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer TravelMate C110 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer TravelMate C110 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer TravelMate C110 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer TravelMate C300",
+              "release_year": 2004,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 1st Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer TravelMate C300 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer TravelMate C300 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer TravelMate C300 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire S3",
+              "release_year": 2011,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 2nd Gen",
+                "ram": "2/4/8 GB",
+                "storage": [
+                  "250 GB HDD",
+                  "320 GB HDD",
+                  "500 GB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire S3 Intel Core i3 4 GB 250 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "250 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire S3 Intel Core i5 8 GB 320 GB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "320 GB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire S3 Intel Core i7 16 GB 500 GB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire S5",
+              "release_year": 2012,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 3rd Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire S5 Intel Core i3 4 GB 500 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire S5 Intel Core i5 8 GB 1 TB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire S5 Intel Core i7 16 GB 128 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire S7",
+              "release_year": 2012,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 3rd Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire S7 Intel Core i3 4 GB 500 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire S7 Intel Core i5 8 GB 1 TB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire S7 Intel Core i7 16 GB 128 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire R7",
+              "release_year": 2013,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 4th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 7 / Windows 8",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire R7 Intel Core i3 4 GB 500 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire R7 Intel Core i5 8 GB 1 TB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire R7 Intel Core i7 16 GB 128 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire Switch 10",
+              "release_year": 2014,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 4th/5th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 8.1 / Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire Switch 10 Intel Core i3 4 GB 500 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire Switch 10 Intel Core i5 8 GB 1 TB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire Switch 10 Intel Core i7 16 GB 128 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire Switch 11",
+              "release_year": 2014,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "11.6\" IPS/TN, 1366×768",
+                "processor": "Intel Core i3/i5/i7 4th/5th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "500 GB HDD",
+                  "1 TB HDD",
+                  "128 GB SSD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 8.1 / Windows 10",
+                "weight": "1.25 kg",
+                "dimensions": "296 × 205 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire Switch 11 Intel Core i3 4 GB 500 GB HDD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "500 GB HDD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire Switch 11 Intel Core i5 8 GB 1 TB HDD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire Switch 11 Intel Core i7 16 GB 128 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Switch Alpha 12",
+              "release_year": 2016,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 6th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Switch Alpha 12 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Switch Alpha 12 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Switch Alpha 12 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer One 10 S1003",
+              "release_year": 2016,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i3/i5/i7 6th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "36 Wh",
+                "os": "Windows 10",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer One 10 S1003 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer One 10 S1003 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer One 10 S1003 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer One 14 Z2-485",
+              "release_year": 2018,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i3/i5/i7 8th Gen",
+                "ram": "4/8/16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB HDD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 10",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer One 14 Z2-485 Intel Core i3 4 GB 256 GB SSD",
+                  "processor": "Intel Core i3",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer One 14 Z2-485 Intel Core i5 8 GB 512 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer One 14 Z2-485 Intel Core i7 16 GB 1 TB HDD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "1 TB HDD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire Lite AL14",
+              "release_year": 2023,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire Lite AL14 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire Lite AL14 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire Lite AL14 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Aspire Lite AL15",
+              "release_year": 2023,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.6\" IPS/TN, 1366×768 to 1920×1080",
+                "processor": "Intel Core i5/i7 13th Gen / AMD Ryzen 7000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "363 × 255 × 19 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Aspire Lite AL15 Intel Core i5 8 GB 256 GB SSD",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Aspire Lite AL15 Intel Core i7 16 GB 512 GB SSD",
+                  "processor": "Intel Core i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Aspire Lite AL15 AMD Ryzen 5 32 GB 1 TB SSD",
+                  "processor": "AMD Ryzen 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Lite 14",
+              "release_year": 2024,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "14.0\" IPS/OLED, 1366×768 to 2880×1800",
+                "processor": "Intel Core Ultra Series 1 / Intel Core 13th Gen / AMD Ryzen 8000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.3 kg",
+                "dimensions": "320 × 230 × 18 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Lite 14 Intel Core Ultra 5 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Lite 14 Intel Core Ultra 7 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Lite 14 AMD Ryzen 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            },
+            {
+              "name": "Acer Lite 16",
+              "release_year": 2025,
+              "image_url": "https://images.acer.com/is/image/acer/Aspire5%20banner-6%3ASecondary-Hero-S",
+              "source_url": "https://www.acer.com/us-en/laptops",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, 1920×1200 to 3200×2000",
+                "processor": "Intel Core Ultra Series 2 / AMD Ryzen AI 300",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11",
+                "weight": "1.8 kg",
+                "dimensions": "360 × 265 × 20 mm"
+              },
+              "variants": [
+                {
+                  "name": "Acer Lite 16 Intel Core Ultra 5 Series 2 8 GB 512 GB SSD",
+                  "processor": "Intel Core Ultra 5 Series 2",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Black"
+                },
+                {
+                  "name": "Acer Lite 16 Intel Core Ultra 7 Series 2 16 GB 1 TB SSD",
+                  "processor": "Intel Core Ultra 7 Series 2",
+                  "ram": "16 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Silver"
+                },
+                {
+                  "name": "Acer Lite 16 AMD Ryzen AI 7 32 GB 2 TB SSD",
+                  "processor": "AMD Ryzen AI 7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Steel Gray"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

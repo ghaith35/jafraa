@@ -1,0 +1,249 @@
+[
+  {
+    "modelName": "Condor CloudBook",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "11.6\" Full HD IPS touchscreen, 360° convertible",
+      "processor": "Intel Celeron N3350 dual-core up to 2.4 GHz",
+      "ram": "4 GB LPDDR3",
+      "storage": [
+        "64 GB eMMC",
+        "microSD expansion"
+      ],
+      "battery": "8000 mAh Li-ion",
+      "os": "Windows 10 / Windows 11",
+      "weight": "about 1.2 kg",
+      "dimensions": "approx. 277 × 189 × 18 mm"
+    },
+    "variants": [
+      {
+        "name": "Condor CloudBook Celeron N3350/4GB/64GB Gray",
+        "processor": "Intel Celeron N3350",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Gray"
+      },
+      {
+        "name": "Condor CloudBook CBL1123 N3350/4GB/64GB Silver",
+        "processor": "Intel Celeron N3350",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Silver"
+      },
+      {
+        "name": "Condor CloudBook Lite N3350/4GB/64GB Space Gray",
+        "processor": "Intel Celeron N3350",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Space Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "14",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" HD/FHD display, non-touch",
+      "processor": "Intel Core i3 7th Gen / Intel Core i5 8th Gen / Intel Core i7 8th Gen",
+      "ram": "4–8 GB DDR4, expandable",
+      "storage": [
+        "256 GB SSD",
+        "500 GB HDD",
+        "1 TB HDD"
+      ],
+      "battery": "about 5000–10000 mAh Li-ion depending on configuration",
+      "os": "Windows 10",
+      "weight": "about 1.5–1.8 kg",
+      "dimensions": "varies by 14\" Condor notebook chassis"
+    },
+    "variants": [
+      {
+        "name": "14 Intel Core i3/4GB/500GB Silver",
+        "processor": "Intel Core i3 7th Gen",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Silver"
+      },
+      {
+        "name": "14 Intel Core i5/8GB/1TB Silver",
+        "processor": "Intel Core i5 8th Gen",
+        "ram": "8 GB",
+        "storage": "1 TB HDD",
+        "color": "Silver"
+      },
+      {
+        "name": "14 Intel Core i7/8GB/256GB SSD Gray",
+        "processor": "Intel Core i7 8th Gen",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "15",
+    "releaseYear": 2016,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" Full HD IPS 1920 × 1080",
+      "processor": "Intel Core i3-5005U 2.0 GHz",
+      "ram": "4–8 GB LPDDR3",
+      "storage": [
+        "500 GB HDD",
+        "256 GB SSD"
+      ],
+      "battery": "5000 mAh Li-ion",
+      "os": "Windows 10 Pro",
+      "weight": "1.5 kg",
+      "dimensions": "approx. 375 × 245 × 20 mm"
+    },
+    "variants": [
+      {
+        "name": "15 CBR1535 i3-5005U/4GB/500GB Gray",
+        "processor": "Intel Core i3-5005U",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Gray"
+      },
+      {
+        "name": "15 CBook i3-5005U/8GB/500GB Gray",
+        "processor": "Intel Core i3-5005U",
+        "ram": "8 GB",
+        "storage": "500 GB HDD",
+        "color": "Gray"
+      },
+      {
+        "name": "15 CBook i3-5005U/8GB/256GB SSD Silver",
+        "processor": "Intel Core i3-5005U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "Condor SmartBook",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" Full HD 1920 × 1080 or 14\" HD/FHD display",
+      "processor": "Intel Celeron N3350 / Intel Core i3 7th Gen",
+      "ram": "2–4 GB DDR3/DDR4",
+      "storage": [
+        "32 GB eMMC",
+        "64 GB eMMC",
+        "500 GB HDD"
+      ],
+      "battery": "9600–10000 mAh Li-ion depending on configuration",
+      "os": "Windows 10",
+      "weight": "about 1.3–1.6 kg",
+      "dimensions": "varies by SmartBook chassis"
+    },
+    "variants": [
+      {
+        "name": "Condor SmartBook Celeron N3350/4GB/64GB Silver",
+        "processor": "Intel Celeron N3350",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Silver"
+      },
+      {
+        "name": "Condor SmartBook Core i3/4GB/500GB Silver",
+        "processor": "Intel Core i3 7th Gen",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Silver"
+      },
+      {
+        "name": "Condor SmartBook 14 2GB/32GB Gold",
+        "processor": "Intel Atom / Celeron-class processor",
+        "ram": "2 GB",
+        "storage": "32 GB eMMC",
+        "color": "Gold"
+      }
+    ]
+  },
+  {
+    "modelName": "Condor Neo",
+    "releaseYear": 2025,
+    "imageUrl": "https://condormobile.dz/wp-content/uploads/2026/01/C-book-01-scaled.webp",
+    "specs": {
+      "display": "15.6\" IPS Full HD 1920 × 1080 anti-glare, non-touch",
+      "processor": "Intel Core i3-1315U / Core i5-13420H / Core i7-13620H",
+      "ram": "8–16 GB DDR4 3200 MHz",
+      "storage": [
+        "512 GB M.2 SATA SSD",
+        "expandable via 2× M.2 SATA slots"
+      ],
+      "battery": "57 Wh Li-ion polymer",
+      "os": "Windows 11 Home 64-bit",
+      "weight": "not officially specified",
+      "dimensions": "357.4 × 228 × 18.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Condor Neo CL-502 i3/8GB/512GB Space Gray",
+        "processor": "Intel Core i3-1315U",
+        "ram": "8 GB",
+        "storage": "512 GB M.2 SATA SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Condor Neo CL-502 i5/8GB/512GB Space Gray",
+        "processor": "Intel Core i5-13420H",
+        "ram": "8 GB",
+        "storage": "512 GB M.2 SATA SSD",
+        "color": "Space Gray"
+      },
+      {
+        "name": "Condor Neo CL-502 i7/16GB/512GB Space Gray",
+        "processor": "Intel Core i7-13620H",
+        "ram": "16 GB",
+        "storage": "512 GB M.2 SATA SSD",
+        "color": "Space Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "Condor Terra",
+    "releaseYear": 2025,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" Full HD 1920 × 1080 anti-glare",
+      "processor": "Intel Core i3-1315U / Core i5-13420H / Core i7-13620H",
+      "ram": "8–16 GB DDR4 3200 MHz",
+      "storage": [
+        "512 GB M.2 SSD"
+      ],
+      "battery": "57 Wh Li-ion polymer",
+      "os": "Windows 11 Home 64-bit",
+      "weight": "not officially specified",
+      "dimensions": "357.4 × 228 × 18.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Condor Terra i3/8GB/512GB Gray",
+        "processor": "Intel Core i3-1315U",
+        "ram": "8 GB",
+        "storage": "512 GB M.2 SSD",
+        "color": "Gray"
+      },
+      {
+        "name": "Condor Terra i5/8GB/512GB Gray",
+        "processor": "Intel Core i5-13420H",
+        "ram": "8 GB",
+        "storage": "512 GB M.2 SSD",
+        "color": "Gray"
+      },
+      {
+        "name": "Condor Terra i7/16GB/512GB Gray",
+        "processor": "Intel Core i7-13620H",
+        "ram": "16 GB",
+        "storage": "512 GB M.2 SSD",
+        "color": "Gray"
+      }
+    ]
+  }
+]

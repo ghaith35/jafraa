@@ -52,8 +52,8 @@ const CATALOG: CategoryWithBrands[] = [
   {
     categoryKey: "phone",
     brands: [
-      { name: "Samsung",  sortOrder: 1,  families: ["Galaxy A", "Galaxy S", "Galaxy Note", "Galaxy M", "Galaxy Z", "Galaxy J", "Galaxy F", "Galaxy XCover"] },
-      { name: "Apple",    sortOrder: 2,  families: ["iPhone 6/7/8", "iPhone X/XR/XS", "iPhone 11", "iPhone 12", "iPhone 13", "iPhone 14", "iPhone 15", "iPhone 16", "iPhone SE", "iPhone 5/5S/SE"] },
+      { name: "Samsung",  sortOrder: 1,  families: ["Galaxy A", "Galaxy S", "Galaxy Note", "Galaxy M", "Galaxy Z Fold", "Galaxy Z Flip", "Galaxy Z", "Galaxy J", "Galaxy F", "Galaxy XCover"] },
+      { name: "Apple",    sortOrder: 2,  families: ["iPhone 6/7/8", "iPhone X/XR/XS", "iPhone 11", "iPhone 12", "iPhone 13", "iPhone 14", "iPhone 15", "iPhone 16", "iPhone 17", "iPhone SE", "iPhone 5/5S/SE", "iPhone Air"] },
       { name: "Xiaomi",   sortOrder: 3,  families: ["Xiaomi Number Series", "Xiaomi T Series", "Xiaomi Mix", "Xiaomi Civi", "Xiaomi Black Shark"] },
       { name: "Redmi",    sortOrder: 4,  families: ["Redmi Number Series", "Redmi Note Series", "Redmi A Series", "Redmi K Series"] },
       { name: "Poco",     sortOrder: 5,  families: ["Poco C", "Poco M", "Poco X", "Poco F"] },
@@ -97,8 +97,8 @@ const CATALOG: CategoryWithBrands[] = [
   {
     categoryKey: "laptop",
     brands: [
-      { name: "HP",                   sortOrder: 1,  families: ["Pavilion", "ProBook", "EliteBook", "Envy", "Omen", "Victus", "Spectre", "Stream", "ZBook", "Chromebook"] },
-      { name: "Dell",                 sortOrder: 2,  families: ["Inspiron", "Vostro", "Latitude", "XPS", "Precision", "Alienware", "G Series"] },
+      { name: "HP",                   sortOrder: 1,  families: ["Pavilion", "ProBook", "EliteBook", "Envy", "Omen", "Victus", "Spectre", "Stream", "ZBook", "Chromebook", "HP Essential", "Dragonfly", "EliteBook Extra", "OmniBook", "Compaq / Presario"] },
+      { name: "Dell",                 sortOrder: 2,  families: ["Inspiron", "Vostro", "Latitude", "XPS", "Precision", "Alienware", "G Series", "Dell Pro"] },
       { name: "Lenovo",               sortOrder: 3,  families: ["IdeaPad", "ThinkPad", "ThinkBook", "Yoga", "Legion", "LOQ", "ThinkCentre"] },
       { name: "Acer",                 sortOrder: 4,  families: ["Aspire", "Swift", "Spin", "TravelMate", "Nitro", "Predator", "Extensa", "Chromebook"] },
       { name: "Asus",                 sortOrder: 5,  families: ["VivoBook", "ZenBook", "TUF Gaming", "ROG", "ExpertBook", "Chromebook", "ProArt"] },
@@ -117,6 +117,9 @@ const CATALOG: CategoryWithBrands[] = [
       { name: "Honor",                sortOrder: 18, families: ["MagicBook"] },
       { name: "Condor",               sortOrder: 19, families: ["CloudBook", "Terra", "Neo"] },
       { name: "Thomson",              sortOrder: 20, families: ["Neo", "Hero", "Prestige", "X Pro"] },
+      { name: "Medion",               sortOrder: 21, families: ["Akoya", "Erazer"] },
+      { name: "Chuwi",                sortOrder: 22, families: ["HeroBook", "CoreBook", "GemiBook", "MiniBook", "FreeBook", "LapBook"] },
+      { name: "Sony / VAIO",          sortOrder: 23, families: ["VAIO"] },
       { name: "Autre",                sortOrder: 99, families: [] },
     ],
   },

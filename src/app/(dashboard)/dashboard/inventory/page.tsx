@@ -4,7 +4,6 @@ import { AlertTriangle, Boxes, FileText, Package, Plus, Truck, Wrench } from "lu
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
 import { prisma } from "@/lib/db";
-import { PageHeader } from "@/components/shared/PageHeader";
 import { getAppI18n } from "@/lib/i18n/server";
 
 export const metadata = { title: "Inventaire" };
@@ -40,16 +39,12 @@ export default async function InventoryOverviewPage() {
 
   return (
     <div className="space-y-6">
-      <PageHeader
-        title={t("inventory.overview")}
-        description={t("inventory.overviewDescription")}
-        actions={canManage ? (
-          <div className="flex flex-wrap gap-2">
-            <Link href="/dashboard/inventory/products/new" className="inline-flex items-center gap-2 rounded-xl bg-primary px-3 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90"><Plus className="h-4 w-4" />{t("inventory.newProduct")}</Link>
-            <Link href="/dashboard/inventory/parts/new" className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-3 py-2 text-sm font-bold hover:bg-muted"><Plus className="h-4 w-4" />{t("inventory.newPart")}</Link>
-          </div>
-        ) : null}
-      />
+      {canManage && (
+        <div className="flex justify-end flex-wrap gap-2">
+          <Link href="/dashboard/inventory/products/new" className="inline-flex items-center gap-2 rounded-xl bg-primary px-3 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90"><Plus className="h-4 w-4" />{t("inventory.newProduct")}</Link>
+          <Link href="/dashboard/inventory/parts/new" className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-3 py-2 text-sm font-bold hover:bg-muted"><Plus className="h-4 w-4" />{t("inventory.newPart")}</Link>
+        </div>
+      )}
 
       <div className="grid gap-4 md:grid-cols-4">
         <Metric label={t("inventory.products")} value={productCount} />

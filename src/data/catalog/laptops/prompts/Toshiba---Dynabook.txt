@@ -1,0 +1,121 @@
+Fill in specs, variants, releaseYear, and imageUrl for ALL 19 missing Toshiba / Dynabook laptop models listed below.
+
+For EACH model, provide a JSON object with this EXACT structure:
+```json
+{
+  "name": "ASUS Vivobook 14 X1400",
+  "releaseYear": 2020,
+  "imageUrl": "https://dlcdnwebimgs.asus.com/files/media/202509/f2f518dc-7ed1-4975-9446-4567e8e14bbb/v3/features/images/large/1x/s1/main.jpg",
+  "specs": {
+    "display": "11.6\u201317.3\" HD/FHD/OLED display",
+    "processor": "Intel Core i3/i5/i7, Intel Pentium/Celeron, or AMD Ryzen",
+    "ram": "4\u201332 GB DDR3/DDR4/DDR5",
+    "storage": [
+      "128 GB SSD",
+      "256 GB SSD",
+      "512 GB SSD",
+      "1 TB HDD"
+    ],
+    "battery": "32\u201370 Wh",
+    "os": "Windows 8 / Windows 10 / Windows 11",
+    "weight": "1.2\u20132.3 kg",
+    "dimensions": "varies by X/K/S/M/TP chassis"
+  },
+  "variants": [
+    {
+      "name": "ASUS Vivobook 14 X1400 128 GB SSD Cool Silver",
+      "processor": "Intel Core i3",
+      "ram": "4 GB",
+      "storage": "128 GB SSD",
+      "color": "Cool Silver"
+    },
+    {
+      "name": "ASUS Vivobook 14 X1400 256 GB SSD Matte Gray",
+      "processor": "Intel Core i3",
+      "ram": "32 GB",
+      "storage": "256 GB SSD",
+      "color": "Matte Gray"
+    },
+    {
+      "name": "ASUS Vivobook 14 X1400 512 GB SSD Quiet Blue",
+      "processor": "Intel Core i3",
+      "ram": "32 GB",
+      "storage": "512 GB SSD",
+      "color": "Quiet Blue"
+    }
+  ]
+}
+```
+
+Rules:
+- releaseYear: the year that model was FIRST released (integer, e.g. 2021)
+- imageUrl: official product image URL (prefer manufacturer website CDN). If you cannot find one, use null.
+- specs: an object with these keys: display, processor, ram, storage, battery, os, weight, dimensions (use strings, storage can be an array)
+- variants: an array of objects, each with: name, processor, ram, storage, color. Include 2-4 common configurations.
+- Be SPECIFIC: use exact specs (e.g. "13.3" FHD IPS" not "13 inch"). Include actual CPU names, RAM configs, storage options.
+- If a model has multiple generations (e.g. "HP ProBook 430 G8"), the releaseYear should be the year that specific generation launched.
+
+Missing Toshiba / Dynabook models by family:
+
+## Portege
+- Toshiba Portege Z30
+- Toshiba Portege X20W
+- Toshiba Portege X30
+- Toshiba Portege X40
+- Toshiba Portege R30
+- Toshiba Portege R700
+- Toshiba Portege R830
+- Dynabook Portege X30
+- Dynabook Portege X40
+- Dynabook Portege X50
+- Dynabook Portege Z30
+
+## Qosmio
+- Toshiba Qosmio F750
+
+## Satellite
+- Toshiba Satellite C70
+- Toshiba Satellite L70
+- Toshiba Satellite P55
+- Toshiba Satellite S55
+
+## Tecra
+- Toshiba Tecra X50
+- Toshiba Tecra Z40
+- Toshiba Tecra Z50
+
+
+Return the result as a JSON array. Each element should have: "modelName", "releaseYear", "imageUrl", "specs", "variants".
+The "modelName" must EXACTLY match the model names listed above (including spacing and punctuation).
+
+Example response format:
+```json
+[
+  {
+    "modelName": "HP ProBook 430 G8",
+    "releaseYear": 2020,
+    "imageUrl": "https://h480x360.cdn.hp.com/...",
+    "specs": {
+      "display": "13.3" FHD IPS",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7",
+      "ram": "8–32 GB DDR4",
+      "storage": ["256 GB SSD", "512 GB SSD", "1 TB SSD"],
+      "battery": "45 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "1.34 kg",
+      "dimensions": "312.6 × 227 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "HP ProBook 430 G8 i5/8GB/256GB Silver",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Silver"
+      },
+      ...
+    ]
+  },
+  ...
+]
+```

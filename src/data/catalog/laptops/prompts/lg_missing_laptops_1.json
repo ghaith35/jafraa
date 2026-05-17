@@ -1,0 +1,51 @@
+[
+  {
+    "modelName": "LG Gram SuperSlim",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD OLED (1920×1080) anti-glare low-reflection display, 100% DCI-P3, VESA DisplayHDR True Black 500",
+      "processor": "13th Gen Intel Core i7-1360P with Intel Iris Xe Graphics",
+      "ram": "16–32 GB LPDDR5 / LPDDR5x",
+      "storage": [
+        "512 GB NVMe SSD",
+        "1 TB NVMe SSD",
+        "2 TB NVMe SSD"
+      ],
+      "battery": "60 Wh",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "0.98–0.99 kg",
+      "dimensions": "355.6 × 227.3 × 10.9–12.4 mm"
+    },
+    "variants": [
+      {
+        "name": "LG Gram SuperSlim i7/16GB/512GB Neptune Blue",
+        "processor": "Intel Core i7-1360P",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Neptune Blue"
+      },
+      {
+        "name": "LG Gram SuperSlim i7/16GB/1TB Neptune Blue",
+        "processor": "Intel Core i7-1360P",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Neptune Blue"
+      },
+      {
+        "name": "LG Gram SuperSlim i7/32GB/1TB Neptune Blue",
+        "processor": "Intel Core i7-1360P",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Neptune Blue"
+      },
+      {
+        "name": "LG Gram SuperSlim i7/32GB/2TB Neptune Blue",
+        "processor": "Intel Core i7-1360P",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Neptune Blue"
+      }
+    ]
+  }
+]

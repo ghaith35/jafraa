@@ -1,6 +1,5 @@
 import { redirect } from "next/navigation";
 import { Prisma } from "@prisma/client";
-import { PageHeader } from "@/components/shared/PageHeader";
 import { DateFilter } from "@/components/shared/DateFilter";
 import { getSession } from "@/lib/auth/session";
 import { getAppI18n } from "@/lib/i18n/server";
@@ -92,19 +91,15 @@ export default async function TechnicianWorkspacePage(props: {
 
   return (
     <div className="space-y-6">
-      <PageHeader
-        title={t("technician.title")}
-        description={t("technician.description")}
-        actions={
-          <DateFilter
-            months={months}
-            days={days}
-            selectedYear={selectedYear}
-            selectedMonth={selectedMonth}
-            selectedDay={selectedDay}
-          />
-        }
-      />
+      <div className="flex justify-end">
+        <DateFilter
+          months={months}
+          days={days}
+          selectedYear={selectedYear}
+          selectedMonth={selectedMonth}
+          selectedDay={selectedDay}
+        />
+      </div>
 
       <TechnicianBoard key={[selectedYear, selectedMonth, selectedDay].join("-")} initialLanes={lanes} />
     </div>

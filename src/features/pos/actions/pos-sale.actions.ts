@@ -103,13 +103,17 @@ export async function searchSellableItems(
         storeId,
         isArchived: false,
         OR: [
-          { name: containsFilter },
+          { nameFr: containsFilter },
+          { nameEn: containsFilter },
+          { nameAr: containsFilter },
           { sku: containsFilter },
         ],
       },
       select: {
         id: true,
-        name: true,
+        nameFr: true,
+        nameEn: true,
+        nameAr: true,
         sku: true,
         sellingPrice: true,
       },
@@ -139,7 +143,7 @@ export async function searchSellableItems(
     ...services.map((s) => ({
       id: s.id,
       type: "service" as const,
-      name: s.name,
+      name: s.nameFr,
       sku: s.sku,
       barcode: null,
       sellingPrice: Number(s.sellingPrice),

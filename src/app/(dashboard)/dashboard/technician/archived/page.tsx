@@ -1,6 +1,5 @@
 import { redirect } from "next/navigation";
 import { Prisma } from "@prisma/client";
-import { PageHeader } from "@/components/shared/PageHeader";
 import { DateFilter } from "@/components/shared/DateFilter";
 import { getSession } from "@/lib/auth/session";
 import { getAppI18n } from "@/lib/i18n/server";
@@ -80,19 +79,15 @@ export default async function ArchivedPage(props: {
 
   return (
     <div className="space-y-6">
-      <PageHeader
-        title={t("technician.archivedTitle")}
-        description={t("technician.archivedDescription")}
-        actions={
-          <DateFilter
-            months={months}
-            days={days}
-            selectedYear={selectedYear}
-            selectedMonth={selectedMonth}
-            selectedDay={selectedDay}
-          />
-        }
-      />
+      <div className="flex justify-end">
+        <DateFilter
+          months={months}
+          days={days}
+          selectedYear={selectedYear}
+          selectedMonth={selectedMonth}
+          selectedDay={selectedDay}
+        />
+      </div>
 
       <div className="grid gap-4 md:grid-cols-2">
         {lanes.map((lane) => (

@@ -1,0 +1,961 @@
+[
+  {
+    "modelName": "MSI Alpha 15",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS-level 120/144 Hz",
+      "processor": "AMD Ryzen 5 3550H / Ryzen 7 3750H; later Ryzen 7 5800H",
+      "ram": "8–64 GB DDR4",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "51–90 Wh",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.3 kg",
+      "dimensions": "357.7 × 248 × 27.5 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Alpha 15 Ryzen 5 3550H 8 GB 256 GB SSD + 1 TB HDD Black",
+        "processor": "Ryzen 5 3550H / Radeon RX 560X",
+        "ram": "8 GB",
+        "storage": "256 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Alpha 15 Ryzen 7 3750H 16 GB 512 GB SSD Black",
+        "processor": "Ryzen 7 3750H / Radeon RX 5500M",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Alpha 15 Ryzen 7 5800H 16 GB 1 TB SSD Black",
+        "processor": "Ryzen 7 5800H / Radeon RX 6600M",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Alpha 17",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS-level 120/144 Hz",
+      "processor": "AMD Ryzen 7 3750H / Ryzen 7 4800H / Ryzen 7 5800H",
+      "ram": "8–64 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "51–65 Wh",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.6 kg",
+      "dimensions": "397 × 260 × 27.5 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Alpha 17 Ryzen 7 3750H 16 GB 512 GB SSD Black",
+        "processor": "Ryzen 7 3750H / Radeon RX 5500M",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Alpha 17 Ryzen 7 4800H 16 GB 512 GB SSD + 1 TB HDD Black",
+        "processor": "Ryzen 7 4800H / Radeon RX 5600M",
+        "ram": "16 GB",
+        "storage": "512 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Alpha 17 Ryzen 7 5800H 16 GB 1 TB SSD Black",
+        "processor": "Ryzen 7 5800H / Radeon RX 6600M",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Bravo 15",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS-level 120/144 Hz",
+      "processor": "AMD Ryzen 5 4600H / Ryzen 7 4800H / Ryzen 7 7735HS",
+      "ram": "8–64 GB DDR4/DDR5",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "51–53.5 Wh",
+      "os": "Windows 10 / Windows 11",
+      "weight": "1.96–2.35 kg",
+      "dimensions": "359 × 254 × 21.7–24.9 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Bravo 15 Ryzen 5 4600H 8 GB 512 GB SSD Black",
+        "processor": "Ryzen 5 4600H / Radeon RX 5300M",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Bravo 15 Ryzen 7 4800H 16 GB 512 GB SSD Black",
+        "processor": "Ryzen 7 4800H / Radeon RX 5500M",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Bravo 15 Ryzen 7 7735HS 16 GB 1 TB SSD Black",
+        "processor": "Ryzen 7 7735HS / GeForce RTX 4050",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Bravo 17",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS-level 120/144 Hz",
+      "processor": "AMD Ryzen 5 4600H / Ryzen 7 4800H",
+      "ram": "8–64 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "51 Wh",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.3 kg",
+      "dimensions": "397 × 260 × 23.1 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Bravo 17 Ryzen 5 4600H 8 GB 512 GB SSD Black",
+        "processor": "Ryzen 5 4600H / Radeon RX 5300M",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Bravo 17 Ryzen 7 4800H 16 GB 512 GB SSD Black",
+        "processor": "Ryzen 7 4800H / Radeon RX 5500M",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Bravo 17 Ryzen 7 4800H 16 GB 1 TB SSD Black",
+        "processor": "Ryzen 7 4800H / Radeon RX 5500M",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Creator Pro Z16",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "16\" QHD+ 2560×1600 IPS-level 16:10 touch, 120 Hz",
+      "processor": "Intel Core i7-11800H / Core i9-11900H; later Core i9 HX",
+      "ram": "16–64 GB DDR4/DDR5",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "90 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "2.2–2.35 kg",
+      "dimensions": "359 × 256 × 15.9–18.4 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Creator Pro Z16 Core i7-11800H 16 GB 512 GB SSD Lunar Gray",
+        "processor": "Core i7-11800H / RTX A3000",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Lunar Gray"
+      },
+      {
+        "name": "MSI Creator Pro Z16 Core i9-11900H 32 GB 1 TB SSD Lunar Gray",
+        "processor": "Core i9-11900H / RTX A5000",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Lunar Gray"
+      },
+      {
+        "name": "MSI Creator Pro Z16 Core i9-13950HX 32 GB 2 TB SSD Lunar Gray",
+        "processor": "Core i9-13950HX / RTX 3000 Ada",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Lunar Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Creator Pro Z17",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "17\" QHD+ 2560×1600 IPS-level 16:10 touch, 165 Hz",
+      "processor": "Intel Core i7-12700H / Core i9-12900H / Core i9-13950HX",
+      "ram": "16–64 GB DDR5",
+      "storage": [
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "90 Wh",
+      "os": "Windows 11 Pro",
+      "weight": "2.49 kg",
+      "dimensions": "382 × 260 × 19 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Creator Pro Z17 Core i7-12700H 16 GB 1 TB SSD Lunar Gray",
+        "processor": "Core i7-12700H / RTX A3000",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Lunar Gray"
+      },
+      {
+        "name": "MSI Creator Pro Z17 Core i9-12900H 32 GB 1 TB SSD Lunar Gray",
+        "processor": "Core i9-12900H / RTX A5500",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Lunar Gray"
+      },
+      {
+        "name": "MSI Creator Pro Z17 Core i9-13950HX 64 GB 2 TB SSD Lunar Gray",
+        "processor": "Core i9-13950HX / RTX 3500 Ada",
+        "ram": "64 GB",
+        "storage": "2 TB SSD",
+        "color": "Lunar Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Crosshair A17",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" QHD 2560×1440 IPS-level 240 Hz",
+      "processor": "AMD Ryzen 7 7745HX / Ryzen 9 7945HX",
+      "ram": "16–64 GB DDR5",
+      "storage": [
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "90 Wh",
+      "os": "Windows 11 Home",
+      "weight": "2.8 kg",
+      "dimensions": "398 × 273 × 27 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Crosshair A17 Ryzen 7 7745HX 16 GB 1 TB SSD Cosmos Gray",
+        "processor": "Ryzen 7 7745HX / RTX 4060",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Cosmos Gray"
+      },
+      {
+        "name": "MSI Crosshair A17 Ryzen 9 7945HX 32 GB 1 TB SSD Cosmos Gray",
+        "processor": "Ryzen 9 7945HX / RTX 4070",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Cosmos Gray"
+      },
+      {
+        "name": "MSI Crosshair A17 Ryzen 9 7945HX 32 GB 2 TB SSD Cosmos Gray",
+        "processor": "Ryzen 9 7945HX / RTX 4070",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Cosmos Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Raider GE63",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS-level 120 Hz / 4K UHD",
+      "processor": "Intel Core i7-7700HQ / Core i7-8750H",
+      "ram": "8–32 GB DDR4",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "51 Wh",
+      "os": "Windows 10",
+      "weight": "2.4 kg",
+      "dimensions": "383 × 260 × 29.5 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Raider GE63 Core i7-7700HQ 16 GB 256 GB SSD + 1 TB HDD Black",
+        "processor": "Core i7-7700HQ / GTX 1060",
+        "ram": "16 GB",
+        "storage": "256 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Raider GE63 Core i7-8750H 16 GB 512 GB SSD + 1 TB HDD Black",
+        "processor": "Core i7-8750H / GTX 1060",
+        "ram": "16 GB",
+        "storage": "512 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Raider GE63 Core i7-8750H 32 GB 512 GB SSD + 1 TB HDD Black",
+        "processor": "Core i7-8750H / GTX 1070",
+        "ram": "32 GB",
+        "storage": "512 GB SSD + 1 TB HDD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Raider GE65",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS-level 144/240 Hz",
+      "processor": "Intel Core i7-9750H / Core i9-9880H",
+      "ram": "16–64 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "51 Wh",
+      "os": "Windows 10",
+      "weight": "2.27 kg",
+      "dimensions": "357.7 × 248 × 26.9 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Raider GE65 Core i7-9750H 16 GB 512 GB SSD Black",
+        "processor": "Core i7-9750H / RTX 2060",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Raider GE65 Core i7-9750H 16 GB 1 TB SSD Black",
+        "processor": "Core i7-9750H / RTX 2070",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Raider GE65 Core i9-9880H 32 GB 1 TB SSD Black",
+        "processor": "Core i9-9880H / RTX 2070",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Raider GE66",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD 240/300 Hz or UHD 4K IPS-level",
+      "processor": "Intel Core i7-10750H / i7-11800H / i9-11980HK",
+      "ram": "16–64 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "99.9 Wh",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.38 kg",
+      "dimensions": "358 × 267 × 23.4 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Raider GE66 Core i7-10750H 16 GB 512 GB SSD Titanium Blue",
+        "processor": "Core i7-10750H / RTX 2070",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Titanium Blue"
+      },
+      {
+        "name": "MSI Raider GE66 Core i7-10875H 32 GB 1 TB SSD Titanium Blue",
+        "processor": "Core i7-10875H / RTX 2080 Super",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Titanium Blue"
+      },
+      {
+        "name": "MSI Raider GE66 Core i9-11980HK 32 GB 2 TB SSD Titanium Blue",
+        "processor": "Core i9-11980HK / RTX 3080",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Titanium Blue"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Raider GE75",
+    "releaseYear": 2018,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS-level 144/240 Hz",
+      "processor": "Intel Core i7-8750H / i7-9750H / i9-9880H",
+      "ram": "16–64 GB DDR4",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "51 Wh",
+      "os": "Windows 10",
+      "weight": "2.64 kg",
+      "dimensions": "397 × 268.5 × 27.5 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Raider GE75 Core i7-8750H 16 GB 256 GB SSD + 1 TB HDD Black",
+        "processor": "Core i7-8750H / RTX 2060",
+        "ram": "16 GB",
+        "storage": "256 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Raider GE75 Core i7-9750H 16 GB 512 GB SSD Black",
+        "processor": "Core i7-9750H / RTX 2070",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Raider GE75 Core i9-9880H 32 GB 1 TB SSD Black",
+        "processor": "Core i9-9880H / RTX 2080",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Raider GE76",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD 144/300/360 Hz or QHD 240 Hz or UHD 120 Hz",
+      "processor": "Intel Core i7-10870H / i7-11800H / i9-12900HK",
+      "ram": "16–64 GB DDR4/DDR5",
+      "storage": [
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "99.9 Wh",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.9 kg",
+      "dimensions": "397 × 284 × 25.9 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Raider GE76 Core i7-10870H 16 GB 1 TB SSD Titanium Blue",
+        "processor": "Core i7-10870H / RTX 3070",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Titanium Blue"
+      },
+      {
+        "name": "MSI Raider GE76 Core i9-11980HK 32 GB 2 TB SSD Titanium Blue",
+        "processor": "Core i9-11980HK / RTX 3080",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Titanium Blue"
+      },
+      {
+        "name": "MSI Raider GE76 Core i9-12900HK 32 GB 2 TB SSD Titanium Blue",
+        "processor": "Core i9-12900HK / RTX 3080 Ti",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Titanium Blue"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Stealth GS63",
+    "releaseYear": 2016,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS-level / UHD 4K",
+      "processor": "Intel Core i7-6700HQ / i7-7700HQ / i7-8750H",
+      "ram": "16–32 GB DDR4",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "65 Wh",
+      "os": "Windows 10",
+      "weight": "1.89 kg",
+      "dimensions": "380 × 249 × 17.7 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Stealth GS63 Core i7-6700HQ 16 GB 256 GB SSD + 1 TB HDD Black",
+        "processor": "Core i7-6700HQ / GTX 970M",
+        "ram": "16 GB",
+        "storage": "256 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Stealth GS63 Core i7-7700HQ 16 GB 512 GB SSD Black",
+        "processor": "Core i7-7700HQ / GTX 1060",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Stealth GS63 Core i7-8750H 32 GB 512 GB SSD Black",
+        "processor": "Core i7-8750H / GTX 1070 Max-Q",
+        "ram": "32 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Stealth GS65",
+    "releaseYear": 2018,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS-level 144/240 Hz",
+      "processor": "Intel Core i7-8750H / i7-9750H",
+      "ram": "16–32 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "82 Wh",
+      "os": "Windows 10",
+      "weight": "1.88 kg",
+      "dimensions": "357.7 × 247.7 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Stealth GS65 Core i7-8750H 16 GB 512 GB SSD Matte Black with Gold Diamond Cut",
+        "processor": "Core i7-8750H / GTX 1060 Max-Q",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Matte Black with Gold Diamond Cut"
+      },
+      {
+        "name": "MSI Stealth GS65 Core i7-8750H 16 GB 512 GB SSD Matte Black with Gold Diamond Cut",
+        "processor": "Core i7-8750H / GTX 1070 Max-Q",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Matte Black with Gold Diamond Cut"
+      },
+      {
+        "name": "MSI Stealth GS65 Core i7-9750H 32 GB 1 TB SSD Matte Black with Gold Diamond Cut",
+        "processor": "Core i7-9750H / RTX 2060",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Matte Black with Gold Diamond Cut"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Stealth GS66",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD 240/300 Hz or UHD 4K",
+      "processor": "Intel Core i7-10750H / i9-10980HK / i9-11900H",
+      "ram": "16–64 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "99.9 Wh",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.1 kg",
+      "dimensions": "358.3 × 248 × 19.8 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Stealth GS66 Core i7-10750H 16 GB 512 GB SSD Core Black",
+        "processor": "Core i7-10750H / RTX 2060",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Core Black"
+      },
+      {
+        "name": "MSI Stealth GS66 Core i7-10875H 32 GB 1 TB SSD Core Black",
+        "processor": "Core i7-10875H / RTX 2070 Super Max-Q",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Core Black"
+      },
+      {
+        "name": "MSI Stealth GS66 Core i9-11900H 32 GB 2 TB SSD Core Black",
+        "processor": "Core i9-11900H / RTX 3080",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Core Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Stealth GS75",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS-level 144/240 Hz",
+      "processor": "Intel Core i7-8750H / i7-9750H",
+      "ram": "16–64 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "82 Wh",
+      "os": "Windows 10",
+      "weight": "2.25 kg",
+      "dimensions": "396.1 × 259.4 × 18.95 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Stealth GS75 Core i7-8750H 16 GB 512 GB SSD Black with Gold Diamond Cut",
+        "processor": "Core i7-8750H / RTX 2060",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black with Gold Diamond Cut"
+      },
+      {
+        "name": "MSI Stealth GS75 Core i7-8750H 32 GB 1 TB SSD Black with Gold Diamond Cut",
+        "processor": "Core i7-8750H / RTX 2070 Max-Q",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black with Gold Diamond Cut"
+      },
+      {
+        "name": "MSI Stealth GS75 Core i7-9750H 32 GB 1 TB SSD Black with Gold Diamond Cut",
+        "processor": "Core i7-9750H / RTX 2080 Max-Q",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black with Gold Diamond Cut"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Stealth GS76",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD 240/360 Hz or QHD 240 Hz or UHD 120 Hz",
+      "processor": "Intel Core i7-11800H / Core i9-11900H",
+      "ram": "16–64 GB DDR4",
+      "storage": [
+        "1 TB SSD",
+        "2 TB SSD"
+      ],
+      "battery": "99.9 Wh",
+      "os": "Windows 10 / Windows 11",
+      "weight": "2.45 kg",
+      "dimensions": "396.1 × 259.5 × 20.25 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Stealth GS76 Core i7-11800H 16 GB 1 TB SSD Core Black",
+        "processor": "Core i7-11800H / RTX 3060",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Core Black"
+      },
+      {
+        "name": "MSI Stealth GS76 Core i9-11900H 32 GB 1 TB SSD Core Black",
+        "processor": "Core i9-11900H / RTX 3070",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Core Black"
+      },
+      {
+        "name": "MSI Stealth GS76 Core i9-11900H 32 GB 2 TB SSD Core Black",
+        "processor": "Core i9-11900H / RTX 3080",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Core Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Summit B14",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14\" FHD IPS-level",
+      "processor": "Intel Core i5-1135G7 / Core i7-1165G7; later 12th/13th Gen Core",
+      "ram": "8–32 GB LPDDR4x/DDR5",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "52 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "1.3–1.6 kg",
+      "dimensions": "319 × 219 × 15.9–18.9 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Summit B14 Core i5-1135G7 8 GB 256 GB SSD Ink Black",
+        "processor": "Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Ink Black"
+      },
+      {
+        "name": "MSI Summit B14 Core i7-1165G7 16 GB 512 GB SSD Ink Black",
+        "processor": "Core i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Ink Black"
+      },
+      {
+        "name": "MSI Summit B14 Core i7-1360P 16 GB 1 TB SSD Ink Black",
+        "processor": "Core i7-1360P",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Ink Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Summit B15",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS-level",
+      "processor": "Intel Core i5-1135G7 / Core i7-1165G7",
+      "ram": "8–32 GB LPDDR4x",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "52 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "1.6–1.7 kg",
+      "dimensions": "356.8 × 233.7 × 16.9 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Summit B15 Core i5-1135G7 8 GB 512 GB SSD Ink Black",
+        "processor": "Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Ink Black"
+      },
+      {
+        "name": "MSI Summit B15 Core i7-1165G7 16 GB 512 GB SSD Ink Black",
+        "processor": "Core i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Ink Black"
+      },
+      {
+        "name": "MSI Summit B15 Core i7-1165G7 16 GB 1 TB SSD Ink Black",
+        "processor": "Core i7-1165G7",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Ink Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Titan GT73",
+    "releaseYear": 2016,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD 120 Hz / UHD 4K IPS-level",
+      "processor": "Intel Core i7-6820HK / Core i7-7820HK",
+      "ram": "16–64 GB DDR4",
+      "storage": [
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "75 Wh",
+      "os": "Windows 10",
+      "weight": "4.14 kg",
+      "dimensions": "428 × 287 × 24–49 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Titan GT73 Core i7-6820HK 16 GB 256 GB SSD + 1 TB HDD Black",
+        "processor": "Core i7-6820HK / GTX 1070",
+        "ram": "16 GB",
+        "storage": "256 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Titan GT73 Core i7-6820HK 32 GB 512 GB SSD + 1 TB HDD Black",
+        "processor": "Core i7-6820HK / GTX 1080",
+        "ram": "32 GB",
+        "storage": "512 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Titan GT73 Core i7-7820HK 64 GB 1 TB SSD Black",
+        "processor": "Core i7-7820HK / GTX 1080 SLI",
+        "ram": "64 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Titan GT75",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD 120 Hz / UHD 4K IPS-level",
+      "processor": "Intel Core i7-7820HK / i7-8750H / i9-8950HK",
+      "ram": "16–64 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "90 Wh",
+      "os": "Windows 10",
+      "weight": "4.56 kg",
+      "dimensions": "428 × 314 × 31–58 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Titan GT75 Core i7-7820HK 16 GB 512 GB SSD + 1 TB HDD Black",
+        "processor": "Core i7-7820HK / GTX 1070",
+        "ram": "16 GB",
+        "storage": "512 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Titan GT75 Core i7-8750H 32 GB 512 GB SSD + 1 TB HDD Black",
+        "processor": "Core i7-8750H / GTX 1080",
+        "ram": "32 GB",
+        "storage": "512 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Titan GT75 Core i9-8950HK 64 GB 1 TB SSD Black",
+        "processor": "Core i9-8950HK / GTX 1080",
+        "ram": "64 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Titan GT76",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD 144/240 Hz or UHD 4K IPS-level",
+      "processor": "Intel Core i7-9700K / Core i9-9900K / Core i9-10900K",
+      "ram": "16–128 GB DDR4",
+      "storage": [
+        "1 TB SSD",
+        "2 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "90 Wh",
+      "os": "Windows 10",
+      "weight": "4.2 kg",
+      "dimensions": "397 × 330 × 33–42 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Titan GT76 Core i7-9700K 32 GB 1 TB SSD Aluminum Black",
+        "processor": "Core i7-9700K / RTX 2070",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Aluminum Black"
+      },
+      {
+        "name": "MSI Titan GT76 Core i9-9900K 64 GB 1 TB SSD + 1 TB HDD Aluminum Black",
+        "processor": "Core i9-9900K / RTX 2080",
+        "ram": "64 GB",
+        "storage": "1 TB SSD + 1 TB HDD",
+        "color": "Aluminum Black"
+      },
+      {
+        "name": "MSI Titan GT76 Core i9-10900K 128 GB 2 TB SSD Aluminum Black",
+        "processor": "Core i9-10900K / RTX 2080 Super",
+        "ram": "128 GB",
+        "storage": "2 TB SSD",
+        "color": "Aluminum Black"
+      }
+    ]
+  },
+  {
+    "modelName": "MSI Titan GT83",
+    "releaseYear": 2016,
+    "imageUrl": null,
+    "specs": {
+      "display": "18.4\" FHD IPS-level wide-view display",
+      "processor": "Intel Core i7-6820HK / Core i7-7920HQ / Core i7-8850H",
+      "ram": "16–64 GB DDR4",
+      "storage": [
+        "512 GB SSD",
+        "1 TB SSD",
+        "1 TB HDD"
+      ],
+      "battery": "90 Wh",
+      "os": "Windows 10",
+      "weight": "5.5 kg",
+      "dimensions": "458 × 339 × 42–69 mm"
+    },
+    "variants": [
+      {
+        "name": "MSI Titan GT83 Core i7-6820HK 32 GB 512 GB SSD + 1 TB HDD Black",
+        "processor": "Core i7-6820HK / GTX 980 SLI",
+        "ram": "32 GB",
+        "storage": "512 GB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Titan GT83 Core i7-7920HQ 64 GB 1 TB SSD + 1 TB HDD Black",
+        "processor": "Core i7-7920HQ / GTX 1080 SLI",
+        "ram": "64 GB",
+        "storage": "1 TB SSD + 1 TB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "MSI Titan GT83 Core i7-8850H 64 GB 1 TB SSD Black",
+        "processor": "Core i7-8850H / GTX 1080 SLI",
+        "ram": "64 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  }
+]

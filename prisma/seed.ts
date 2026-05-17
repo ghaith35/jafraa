@@ -10,6 +10,7 @@ import { seedExpandedPrinterCatalog } from "./seed-printers-expanded";
 import { seedInventory } from "./seed-inventory";
 import { seedSuppliers } from "./seed-suppliers";
 import { seedExpenseCategories } from "./seed-expense-categories";
+import { seedServiceTypes } from "./seed-service-types";
 
 // Prisma 7 requires an adapter — no implicit url from schema.prisma
 dotenv.config();
@@ -170,6 +171,9 @@ async function main() {
 
   // ─── Expense Categories (Block 18) ────────────────────────────────────────────
   await seedExpenseCategories(prisma);
+
+  // ─── Service Types ────────────────────────────────────────────────────────────
+  await seedServiceTypes(prisma);
 
   console.log("\nSeed complete.");
   console.log("\nDemo credentials (password: ghaith$):");

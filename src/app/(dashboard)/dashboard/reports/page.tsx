@@ -64,17 +64,10 @@ export default async function ReportsIndexPage() {
 
   return (
     <div className="space-y-7">
-      <div className="rounded-[2rem] border border-border bg-gradient-to-br from-card via-card to-primary/5 p-6 shadow-sm">
-        <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="text-sm font-black uppercase tracking-wide text-primary">Executive dashboard</p>
-            <h1 className="mt-2 text-3xl font-black tracking-tight">{t("title")}</h1>
-            <p className="mt-1 max-w-2xl text-sm text-muted-foreground">Vue complète chiffre d’affaires, réparations, dettes, stock et commandes fournisseurs.</p>
-          </div>
-          <Link href="/dashboard/inventory/purchase-orders" className="inline-flex h-10 items-center justify-center gap-2 rounded-xl border border-border bg-background px-4 text-sm font-bold hover:bg-muted">
-            <Truck className="h-4 w-4" /> Commandes stock
-          </Link>
-        </div>
+      <div className="flex justify-end">
+        <Link href="/dashboard/inventory/purchase-orders" className="inline-flex h-10 items-center justify-center gap-2 rounded-xl border border-border bg-background px-4 text-sm font-bold hover:bg-muted">
+          <Truck className="h-4 w-4" /> Commandes stock
+        </Link>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">

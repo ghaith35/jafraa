@@ -1,6 +1,5 @@
 import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth/session";
-import { PageHeader } from "@/components/shared/PageHeader";
 import { getCurrentCashSession, listCashSessions } from "@/features/pos/actions/cash-session.actions";
 import { OpenSessionCard } from "@/features/pos/components/OpenSessionCard";
 import { ActiveSessionCard } from "@/features/pos/components/ActiveSessionCard";
@@ -23,11 +22,6 @@ export default async function CashRegisterPage() {
 
   return (
     <div className="max-w-6xl mx-auto space-y-8">
-      <PageHeader
-        title={t("cashRegisterManagementTitle")}
-        description={t("cashRegisterManagementDescription")}
-      />
-
       <div className="space-y-10">
         <section>
           {activeSession ? (

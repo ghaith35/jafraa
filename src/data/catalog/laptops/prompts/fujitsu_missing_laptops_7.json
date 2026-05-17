@@ -1,0 +1,311 @@
+[
+  {
+    "modelName": "Fujitsu Celsius H970",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS anti-glare or 17.3\" UHD IPS anti-glare display",
+      "processor": "Intel Core i5-7440HQ / Core i7-7820HQ / Intel Xeon E3-1505M v6 / Xeon E3-1535M v6",
+      "ram": "8–64 GB DDR4-2400, ECC supported with Xeon configurations",
+      "storage": [
+        "256 GB PCIe SSD",
+        "512 GB PCIe SSD",
+        "1 TB PCIe SSD",
+        "1 TB HDD"
+      ],
+      "battery": "96 Wh Li-ion",
+      "os": "Windows 10 Pro / Windows 10 Pro for Workstations",
+      "weight": "from 3.4 kg",
+      "dimensions": "418 × 288 × 31.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Fujitsu Celsius H970 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-7820HQ",
+        "ram": "16 GB",
+        "storage": "512 GB PCIe SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Celsius H970 Xeon E3/32GB/1TB Black",
+        "processor": "Intel Xeon E3-1505M v6",
+        "ram": "32 GB ECC",
+        "storage": "1 TB PCIe SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Celsius H970 Xeon E3/64GB/512GB+1TB Black",
+        "processor": "Intel Xeon E3-1535M v6",
+        "ram": "64 GB ECC",
+        "storage": "512 GB PCIe SSD + 1 TB HDD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Fujitsu Lifebook A357",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366 × 768) anti-glare or 15.6\" FHD (1920 × 1080) anti-glare display",
+      "processor": "Intel Core i3-6006U / Intel Core i5-7200U",
+      "ram": "4–32 GB DDR4-2133",
+      "storage": [
+        "500 GB HDD",
+        "1 TB HDD",
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD"
+      ],
+      "battery": "48–49 Wh 6-cell Li-ion",
+      "os": "Windows 10 Home / Windows 10 Pro / FreeDOS",
+      "weight": "from 2.2 kg",
+      "dimensions": "378 × 256 × 30.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Fujitsu Lifebook A357 i3/4GB/500GB Black",
+        "processor": "Intel Core i3-6006U",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook A357 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-7200U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook A357 i5/16GB/512GB Black",
+        "processor": "Intel Core i5-7200U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Fujitsu Lifebook E736",
+    "releaseYear": 2015,
+    "imageUrl": null,
+    "specs": {
+      "display": "13.3\" HD (1366 × 768) anti-glare or 13.3\" FHD (1920 × 1080) anti-glare display",
+      "processor": "Intel Core i3-6100U / Core i5-6200U / Core i5-6300U / Core i7-6600U",
+      "ram": "4–32 GB DDR4-2133",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "500 GB HDD",
+        "1 TB HDD"
+      ],
+      "battery": "50 Wh main battery; optional 63 Wh high-capacity battery and 28 Wh modular bay battery",
+      "os": "Windows 7 Professional / Windows 10 Pro",
+      "weight": "from 1.6 kg",
+      "dimensions": "321 × 228 × 20–27 mm"
+    },
+    "variants": [
+      {
+        "name": "Fujitsu Lifebook E736 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-6200U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook E736 i5 vPro/8GB/500GB Black",
+        "processor": "Intel Core i5-6300U",
+        "ram": "8 GB",
+        "storage": "500 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook E736 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-6600U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Fujitsu Lifebook E746",
+    "releaseYear": 2015,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" HD (1366 × 768) anti-glare or 14.0\" FHD (1920 × 1080) anti-glare display",
+      "processor": "Intel Core i3-6100U / Core i5-6200U / Core i5-6300U / Core i7-6600U",
+      "ram": "4–32 GB DDR4-2133",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "500 GB HDD",
+        "1 TB HDD"
+      ],
+      "battery": "50 Wh main battery; optional 63 Wh high-capacity battery and 28 Wh modular bay battery",
+      "os": "Windows 7 Professional / Windows 10 Pro",
+      "weight": "from 1.7 kg",
+      "dimensions": "338 × 231 × 20–27 mm"
+    },
+    "variants": [
+      {
+        "name": "Fujitsu Lifebook E746 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-6200U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook E746 i5 vPro/8GB/500GB Black",
+        "processor": "Intel Core i5-6300U",
+        "ram": "8 GB",
+        "storage": "500 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook E746 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-6600U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Fujitsu Lifebook E756",
+    "releaseYear": 2015,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366 × 768), FHD (1920 × 1080), or FHD IPS anti-glare display",
+      "processor": "Intel Core i3-6100U / Core i5-6200U / Core i5-6300U / Core i7-6600U",
+      "ram": "4–32 GB DDR4-2133",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "500 GB HDD",
+        "1 TB HDD"
+      ],
+      "battery": "63 Wh main battery; optional 72 Wh high-capacity battery and 28 Wh modular bay battery",
+      "os": "Windows 7 Professional / Windows 10 Pro",
+      "weight": "from 1.9 kg",
+      "dimensions": "374 × 250 × 20–27 mm"
+    },
+    "variants": [
+      {
+        "name": "Fujitsu Lifebook E756 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-6200U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook E756 i5 vPro/8GB/500GB Black",
+        "processor": "Intel Core i5-6300U",
+        "ram": "8 GB",
+        "storage": "500 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook E756 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-6600U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Fujitsu Lifebook E744",
+    "releaseYear": 2013,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" HD (1366 × 768), HD+ (1600 × 900), or FHD (1920 × 1080) anti-glare display",
+      "processor": "Intel Core i3-4000M / Core i5-4200M / Core i5-4300M / Core i7-4600M",
+      "ram": "4–16 GB DDR3L-1600",
+      "storage": [
+        "320 GB HDD",
+        "500 GB HDD",
+        "1 TB HDD",
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD"
+      ],
+      "battery": "63 Wh or 72 Wh main battery; optional 28 Wh modular bay battery",
+      "os": "Windows 7 Professional / Windows 8 Pro / Windows 10 Pro",
+      "weight": "from 1.7 kg",
+      "dimensions": "338 × 231 × 20–27 mm"
+    },
+    "variants": [
+      {
+        "name": "Fujitsu Lifebook E744 i5/4GB/320GB Black",
+        "processor": "Intel Core i5-4200M",
+        "ram": "4 GB",
+        "storage": "320 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook E744 i5 vPro/8GB/256GB Black",
+        "processor": "Intel Core i5-4300M",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook E744 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-4600M",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Fujitsu Lifebook E754",
+    "releaseYear": 2013,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366 × 768), HD+ (1600 × 900), or FHD (1920 × 1080) anti-glare display",
+      "processor": "Intel Core i3-4000M / Core i5-4200M / Core i5-4300M / Core i7-4600M",
+      "ram": "4–16 GB DDR3L-1600",
+      "storage": [
+        "320 GB HDD",
+        "500 GB HDD",
+        "1 TB HDD",
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD"
+      ],
+      "battery": "63 Wh or 72 Wh main battery; optional 28 Wh modular bay battery",
+      "os": "Windows 7 Professional / Windows 8 Pro / Windows 10 Pro",
+      "weight": "from 1.9 kg",
+      "dimensions": "374 × 250 × 20–27 mm"
+    },
+    "variants": [
+      {
+        "name": "Fujitsu Lifebook E754 i5/4GB/500GB Black",
+        "processor": "Intel Core i5-4200M",
+        "ram": "4 GB",
+        "storage": "500 GB HDD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook E754 i5 vPro/8GB/256GB Black",
+        "processor": "Intel Core i5-4300M",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Fujitsu Lifebook E754 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-4600M",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  }
+]

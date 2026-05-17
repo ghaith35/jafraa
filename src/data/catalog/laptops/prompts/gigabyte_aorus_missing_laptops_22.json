@@ -1,0 +1,852 @@
+[
+  {
+    "modelName": "AORUS 5",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 144 Hz anti-glare",
+      "processor": "Intel Core i5-9300H / i7-9750H / i7-10750H; NVIDIA GeForce GTX 1650 / GTX 1660 Ti / RTX 2060 / RTX 3060",
+      "ram": "8–64 GB DDR4",
+      "storage": "256 GB SSD, 512 GB SSD, 1 TB SSD + optional 1 TB HDD",
+      "battery": "48.96–54 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "~2.2 kg",
+      "dimensions": "361 × 258 × 27.9 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 5 i5/8GB/512GB GTX 1650 Black",
+        "processor": "Intel Core i5-9300H",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 5 i7/16GB/512GB GTX 1660 Ti Black",
+        "processor": "Intel Core i7-9750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 5 i7/16GB/1TB RTX 2060 Black",
+        "processor": "Intel Core i7-10750H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 5 i7/16GB/512GB RTX 3060 Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AORUS 7",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS 144 Hz anti-glare",
+      "processor": "Intel Core i7-9750H / i7-10750H; NVIDIA GeForce GTX 1660 Ti / RTX 2060 / RTX 3060",
+      "ram": "8–64 GB DDR4",
+      "storage": "512 GB SSD, 1 TB SSD + optional 1 TB HDD",
+      "battery": "48.96–54 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "~2.5 kg",
+      "dimensions": "399 × 275 × 29.9 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 7 i7/16GB/512GB GTX 1660 Ti Black",
+        "processor": "Intel Core i7-9750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 7 i7/16GB/1TB RTX 2060 Black",
+        "processor": "Intel Core i7-10750H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 7 i7/16GB/512GB RTX 3060 Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AORUS 15",
+    "releaseYear": 2018,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 144/240 Hz or 4K UHD IPS 60 Hz",
+      "processor": "Intel Core i7-8750H / i7-9750H / i9-9980HK; NVIDIA GeForce GTX 1060 / RTX 2060 / RTX 2070 / RTX 2080 Max-Q",
+      "ram": "16–64 GB DDR4",
+      "storage": "256 GB SSD, 512 GB SSD, 1 TB SSD + 2.5\" HDD bay",
+      "battery": "94 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro",
+      "weight": "~2.4 kg",
+      "dimensions": "361 × 246 × 24.4 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 15 i7/16GB/512GB RTX 2060 Black",
+        "processor": "Intel Core i7-8750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 15 i7/16GB/512GB RTX 2070 Black",
+        "processor": "Intel Core i7-9750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 15 i9/32GB/1TB RTX 2080 Max-Q Black",
+        "processor": "Intel Core i9-9980HK",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AORUS 16",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WQXGA 2560×1600 IPS 165 Hz/240 Hz, 16:10",
+      "processor": "Intel Core i7-13620H / i7-13700H / i9-13900H; NVIDIA GeForce RTX 4060 / RTX 4070 Laptop GPU",
+      "ram": "16–64 GB DDR5",
+      "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+      "battery": "99 Wh",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "~2.3 kg",
+      "dimensions": "356 × 254 × 22.8 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 16 i7/16GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-13700H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 16 i7/32GB/1TB RTX 4070 Black",
+        "processor": "Intel Core i7-13700H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 16 i9/32GB/2TB RTX 4070 Black",
+        "processor": "Intel Core i9-13900H",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AORUS 17",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS 144/240/300 Hz or 4K UHD IPS 60 Hz",
+      "processor": "Intel Core i7-9750H / i7-10875H / i9-10980HK; NVIDIA GeForce RTX 2060 / RTX 2070 / RTX 2080 Super Max-Q",
+      "ram": "16–64 GB DDR4",
+      "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+      "battery": "94–99 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro",
+      "weight": "~2.7 kg",
+      "dimensions": "405 × 276 × 26–28.3 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 17 i7/16GB/512GB RTX 2060 Black",
+        "processor": "Intel Core i7-9750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 17 i7/32GB/1TB RTX 2070 Black",
+        "processor": "Intel Core i7-10875H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 17 i9/32GB/1TB RTX 2080 Super Black",
+        "processor": "Intel Core i9-10980HK",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AORUS 15G",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 144/240/300 Hz anti-glare",
+      "processor": "Intel Core i7-10750H / i7-10870H / i7-10875H / i7-11800H; NVIDIA GeForce GTX 1660 Ti / RTX 2060 / RTX 3060 / RTX 3070 / RTX 3080",
+      "ram": "16–64 GB DDR4",
+      "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+      "battery": "94–99 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+      "weight": "~2.0 kg",
+      "dimensions": "357 × 244 × 23 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 15G i7/16GB/512GB RTX 2060 Black",
+        "processor": "Intel Core i7-10750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 15G i7/16GB/1TB RTX 3060 Black",
+        "processor": "Intel Core i7-10870H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 15G i7/32GB/1TB RTX 3070 Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 15G i7/32GB/1TB RTX 3080 Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AORUS 15P",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 144/240/300 Hz anti-glare",
+      "processor": "Intel Core i7-10750H / i7-10870H / i7-11800H; NVIDIA GeForce RTX 2060 / RTX 3060 / RTX 3070 / RTX 3080 Laptop GPU",
+      "ram": "16–64 GB DDR4",
+      "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+      "battery": "94–99 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+      "weight": "~2.2 kg",
+      "dimensions": "357 × 244 × 27 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 15P i7/16GB/512GB RTX 2060 Black",
+        "processor": "Intel Core i7-10750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 15P i7/16GB/1TB RTX 3060 Black",
+        "processor": "Intel Core i7-10870H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 15P i7/32GB/1TB RTX 3070 Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AORUS 15X",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" QHD 2560×1440 IPS 165/240 Hz",
+      "processor": "Intel Core i7-13700HX / i9-13900HX / i9-13980HX; NVIDIA GeForce RTX 4060 / RTX 4070 Laptop GPU",
+      "ram": "16–64 GB DDR5-5600",
+      "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+      "battery": "99 Wh",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "~2.4 kg",
+      "dimensions": "358 × 274 × 19.9–22.7 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 15X i7/16GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-13700HX",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 15X i9/16GB/1TB RTX 4070 Black",
+        "processor": "Intel Core i9-13900HX",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 15X i9/32GB/2TB RTX 4070 Black",
+        "processor": "Intel Core i9-13980HX",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AORUS 16X",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WQXGA 2560×1600 IPS 165/240 Hz, 16:10",
+      "processor": "Intel Core i7-14650HX / i9-14900HX; NVIDIA GeForce RTX 4060 / RTX 4070 Laptop GPU",
+      "ram": "16–64 GB DDR5-5600",
+      "storage": "1 TB SSD, 2 TB SSD, dual M.2 SSD support",
+      "battery": "99 Wh",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "~2.3 kg",
+      "dimensions": "356 × 254 × 22.8 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 16X i7/16GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-14650HX",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 16X i7/32GB/1TB RTX 4070 Black",
+        "processor": "Intel Core i7-14650HX",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 16X i9/32GB/2TB RTX 4070 Black",
+        "processor": "Intel Core i9-14900HX",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AORUS 17G",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS 240/300 Hz anti-glare",
+      "processor": "Intel Core i7-10750H / i7-10870H / i7-10875H / i7-11800H; NVIDIA GeForce RTX 2060 / RTX 3060 / RTX 3070 / RTX 3080",
+      "ram": "16–64 GB DDR4",
+      "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+      "battery": "94–99 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+      "weight": "~2.7–2.77 kg",
+      "dimensions": "405 × 276 × 26–28.3 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 17G i7/16GB/512GB RTX 2070 Black",
+        "processor": "Intel Core i7-10750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 17G i7/32GB/1TB RTX 3070 Black",
+        "processor": "Intel Core i7-10870H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 17G i7/32GB/1TB RTX 3080 Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AORUS 17X",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS 240/300 Hz or QHD 2560×1440 240 Hz",
+      "processor": "Intel Core i7-10875H / i9-10980HK / i9-12900HX / i9-13900HX; NVIDIA GeForce RTX 2080 Super / RTX 3080 Ti / RTX 4080 / RTX 4090",
+      "ram": "16–64 GB DDR4/DDR5",
+      "storage": "1 TB SSD, 2 TB SSD, dual M.2 SSD support",
+      "battery": "94–99 Wh",
+      "os": "Windows 10 Pro / Windows 11 Home / Windows 11 Pro",
+      "weight": "~2.7–2.8 kg",
+      "dimensions": "396 × 293 × 21.8–38 mm"
+    },
+    "variants": [
+      {
+        "name": "AORUS 17X i9/32GB/1TB RTX 2080 Super Black",
+        "processor": "Intel Core i9-10980HK",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 17X i9/32GB/2TB RTX 3080 Ti Black",
+        "processor": "Intel Core i9-12900HX",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AORUS 17X i9/32GB/2TB RTX 4090 Black",
+        "processor": "Intel Core i9-13900HX",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AERO 14",
+    "releaseYear": 2016,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" QHD 2560×1440 IPS or 14.0\" WQXGA 2560×1600 OLED/IPS depending generation",
+      "processor": "Intel Core i7-6700HQ / i7-7700HQ / Core i5-12500H / i7-13700H; NVIDIA GTX 970M / GTX 1060 / RTX 4050",
+      "ram": "8–32 GB DDR4/DDR5",
+      "storage": "256 GB SSD, 512 GB SSD, 1 TB SSD",
+      "battery": "94 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "~1.49–1.9 kg",
+      "dimensions": "335 × 250 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "AERO 14 i7/16GB/512GB GTX 1060 Black",
+        "processor": "Intel Core i7-7700HQ",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AERO 14 OLED i5/16GB/512GB RTX 4050 Silver",
+        "processor": "Intel Core i5-12500H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "AERO 14 OLED i7/16GB/1TB RTX 4050 Silver",
+        "processor": "Intel Core i7-13700H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "AERO 15",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD 144/240 Hz IPS or 4K UHD AMOLED/OLED, X-Rite/Pantone calibrated",
+      "processor": "Intel Core i7-7700HQ / i7-8750H / i7-9750H / i7-11800H; NVIDIA GTX 1060 / RTX 2060 / RTX 3070 / RTX 3080",
+      "ram": "16–64 GB DDR4",
+      "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+      "battery": "94–99 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+      "weight": "~2.0 kg",
+      "dimensions": "356 × 250 × 18.9–20 mm"
+    },
+    "variants": [
+      {
+        "name": "AERO 15 i7/16GB/512GB GTX 1060 Black",
+        "processor": "Intel Core i7-7700HQ",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AERO 15 OLED i7/16GB/512GB RTX 2060 Black",
+        "processor": "Intel Core i7-9750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AERO 15 OLED i7/32GB/1TB RTX 3070 Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "AERO 16",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" 4K+ 3840×2400 AMOLED/OLED or UHD+ mini-LED, 16:10",
+      "processor": "Intel Core i7-12700H / i9-12900HK / i7-13700H / i9-13900H; NVIDIA GeForce RTX 3060 / RTX 3070 Ti / RTX 4070",
+      "ram": "16–64 GB DDR5",
+      "storage": "1 TB SSD, 2 TB SSD, dual M.2 SSD support",
+      "battery": "99 Wh",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "~2.1–2.3 kg",
+      "dimensions": "356 × 248.5 × 22.4 mm"
+    },
+    "variants": [
+      {
+        "name": "AERO 16 i7/16GB/1TB RTX 3060 Silver",
+        "processor": "Intel Core i7-12700H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "AERO 16 i9/32GB/1TB RTX 3070 Ti Silver",
+        "processor": "Intel Core i9-12900HK",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "AERO 16 OLED i9/32GB/2TB RTX 4070 Silver",
+        "processor": "Intel Core i9-13900H",
+        "ram": "32 GB",
+        "storage": "2 TB SSD",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "AERO 17",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD 144/300 Hz IPS or 4K UHD HDR IPS, X-Rite/Pantone calibrated",
+      "processor": "Intel Core i7-9750H / i9-9980HK / i7-10870H / i7-11800H; NVIDIA RTX 2060 / RTX 2070 / RTX 3070 / RTX 3080",
+      "ram": "16–64 GB DDR4",
+      "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+      "battery": "94–99 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+      "weight": "~2.5 kg",
+      "dimensions": "396 × 270 × 21.4 mm"
+    },
+    "variants": [
+      {
+        "name": "AERO 17 i7/16GB/512GB RTX 2060 Black",
+        "processor": "Intel Core i7-9750H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AERO 17 HDR i9/32GB/1TB RTX 2070 Black",
+        "processor": "Intel Core i9-9980HK",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "AERO 17 HDR i7/32GB/1TB RTX 3070 Black",
+        "processor": "Intel Core i7-11800H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Gigabyte G 5",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD IPS 144 Hz anti-glare",
+      "processor": "Intel Core i5-10500H / i5-11400H / i5-12500H / i7-12650H; NVIDIA GeForce RTX 3050 / RTX 3050 Ti / RTX 3060 / RTX 4060",
+      "ram": "8–64 GB DDR4/DDR5",
+      "storage": "512 GB SSD, 1 TB SSD + M.2/2.5\" expansion depending generation",
+      "battery": "49–54 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "~2.08–2.15 kg",
+      "dimensions": "360 × 238 × 22.7–23.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Gigabyte G 5 i5/16GB/512GB RTX 3050 Black",
+        "processor": "Intel Core i5-10500H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 5 i5/16GB/512GB RTX 3060 Black",
+        "processor": "Intel Core i5-11400H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 5 i7/16GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-12650H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Gigabyte G 6",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WUXGA 1920×1200 IPS 165 Hz, 16:10",
+      "processor": "Intel Core i7-13620H / i7-13650HX; NVIDIA GeForce RTX 4050 / RTX 4060 Laptop GPU",
+      "ram": "16–64 GB DDR5",
+      "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+      "battery": "54 Wh",
+      "os": "Windows 11 Home",
+      "weight": "~2.3 kg",
+      "dimensions": "361 × 259 × 25.1 mm"
+    },
+    "variants": [
+      {
+        "name": "Gigabyte G 6 i7/16GB/512GB RTX 4050 Black",
+        "processor": "Intel Core i7-13620H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 6 i7/16GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-13620H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 6 i7/32GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-13650HX",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Gigabyte G 7",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD IPS 144 Hz anti-glare",
+      "processor": "Intel Core i5-10500H / i5-11400H / i7-12650H; NVIDIA GeForce RTX 3050 / RTX 3050 Ti / RTX 3060 / RTX 4060",
+      "ram": "8–64 GB DDR4/DDR5",
+      "storage": "512 GB SSD, 1 TB SSD + expansion bay depending generation",
+      "battery": "49–54 Wh",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "~2.5 kg",
+      "dimensions": "398 × 254 × 25.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Gigabyte G 7 i5/16GB/512GB RTX 3050 Black",
+        "processor": "Intel Core i5-10500H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 7 i5/16GB/512GB RTX 3060 Black",
+        "processor": "Intel Core i5-11400H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 7 i7/16GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-12650H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Gigabyte G 5 KF",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD 1920×1080 IPS 144 Hz",
+      "processor": "Intel Core i5-12500H / i7-12650H; NVIDIA GeForce RTX 4060 Laptop GPU 8 GB",
+      "ram": "8–64 GB DDR4-3200",
+      "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+      "battery": "54 Wh",
+      "os": "Windows 11 Home",
+      "weight": "~2.08 kg",
+      "dimensions": "360 × 238 × 22.7 mm"
+    },
+    "variants": [
+      {
+        "name": "Gigabyte G 5 KF i5/8GB/512GB RTX 4060 Black",
+        "processor": "Intel Core i5-12500H",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 5 KF i5/16GB/512GB RTX 4060 Black",
+        "processor": "Intel Core i5-12500H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 5 KF i7/16GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-12650H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Gigabyte G 5 MF",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD 1920×1080 IPS 144 Hz",
+      "processor": "Intel Core i5-12450H / i5-12500H; NVIDIA GeForce RTX 4050 Laptop GPU 6 GB",
+      "ram": "8–64 GB DDR4-3200",
+      "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+      "battery": "54 Wh",
+      "os": "Windows 11 Home",
+      "weight": "~2.08 kg",
+      "dimensions": "360 × 238 × 22.7 mm"
+    },
+    "variants": [
+      {
+        "name": "Gigabyte G 5 MF i5/8GB/512GB RTX 4050 Black",
+        "processor": "Intel Core i5-12450H",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 5 MF i5/16GB/512GB RTX 4050 Black",
+        "processor": "Intel Core i5-12500H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 5 MF i5/16GB/1TB RTX 4050 Black",
+        "processor": "Intel Core i5-12500H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Gigabyte G 6 KF",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" WUXGA 1920×1200 IPS 165 Hz, 16:10",
+      "processor": "Intel Core i7-13620H / i7-13650HX; NVIDIA GeForce RTX 4060 Laptop GPU 8 GB",
+      "ram": "16–64 GB DDR5",
+      "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+      "battery": "54 Wh",
+      "os": "Windows 11 Home",
+      "weight": "~2.3 kg",
+      "dimensions": "361 × 259 × 25.1 mm"
+    },
+    "variants": [
+      {
+        "name": "Gigabyte G 6 KF i7/16GB/512GB RTX 4060 Black",
+        "processor": "Intel Core i7-13620H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 6 KF i7/16GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-13620H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 6 KF i7/32GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-13650HX",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Gigabyte G 7 KF",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD 1920×1080 IPS 144 Hz",
+      "processor": "Intel Core i5-12500H / i7-12650H; NVIDIA GeForce RTX 4060 Laptop GPU 8 GB",
+      "ram": "16–64 GB DDR4-3200",
+      "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+      "battery": "54 Wh",
+      "os": "Windows 11 Home",
+      "weight": "~2.5 kg",
+      "dimensions": "398 × 254 × 25.9 mm"
+    },
+    "variants": [
+      {
+        "name": "Gigabyte G 7 KF i5/16GB/512GB RTX 4060 Black",
+        "processor": "Intel Core i5-12500H",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 7 KF i7/16GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-12650H",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Gigabyte G 7 KF i7/32GB/1TB RTX 4060 Black",
+        "processor": "Intel Core i7-12650H",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  }
+]

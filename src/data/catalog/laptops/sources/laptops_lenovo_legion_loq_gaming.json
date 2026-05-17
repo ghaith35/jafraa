@@ -1,0 +1,4607 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "Lenovo",
+      "logo_url": "https://logo.clearbit.com/lenovo.com",
+      "families": [
+        {
+          "name": "Legion Y Legacy",
+          "models": [
+            {
+              "name": "Lenovo Legion Y520",
+              "release_year": 2017,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 7th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Y520 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 7th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y520 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 7th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y520 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 7th Gen",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Y520T",
+              "release_year": 2017,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 7th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Y520T 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 7th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y520T 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 7th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y520T 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 7th Gen",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Y530",
+              "release_year": 2018,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 8th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Y530 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 8th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y530 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 8th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y530 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 8th Gen",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Y540 15",
+              "release_year": 2019,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Y540 15 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y540 15 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y540 15 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Y540 17",
+              "release_year": 2019,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Y540 17 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y540 17 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y540 17 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Y545",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Y545 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y545 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y545 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Y720",
+              "release_year": 2017,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 7th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Y720 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 7th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y720 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 7th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y720 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 7th Gen",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Y730",
+              "release_year": 2018,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 8th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Y730 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 8th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y730 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 8th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y730 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 8th Gen",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Y740 15",
+              "release_year": 2019,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Y740 15 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y740 15 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y740 15 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Y740 17",
+              "release_year": 2019,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 8th/10th Gen",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Y740 17 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y740 17 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Y740 17 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 8th/10th Gen",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Legion Current",
+          "models": [
+            {
+              "name": "Lenovo Legion 5 Gen 5",
+              "release_year": 2024,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Gen 5 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 5 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 5 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Gen 5",
+              "release_year": 2024,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Gen 5 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 5 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 5 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7 Gen 5",
+              "release_year": 2024,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7 Gen 5 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 5 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 5 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7i Gen 5",
+              "release_year": 2024,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7i Gen 5 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 5 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 5 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i7/i9 14th Gen / AMD Ryzen 8000 + NVIDIA RTX 40",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5 Gen 6",
+              "release_year": 2025,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Gen 6 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 6 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 6 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Gen 6",
+              "release_year": 2025,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Gen 6 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 6 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 6 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7 Gen 6",
+              "release_year": 2025,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7 Gen 6 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 6 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 6 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7i Gen 6",
+              "release_year": 2025,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7i Gen 6 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 6 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 6 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5 Pro Gen 6",
+              "release_year": 2025,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 6 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 6 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 6 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Pro Gen 6",
+              "release_year": 2025,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 6 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 6 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 6 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Slim 5 Gen 6",
+              "release_year": 2025,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 6 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 6 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 6 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Slim 7 Gen 6",
+              "release_year": 2025,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 6 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 6 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 6 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 200HX / AMD Ryzen AI 300 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5 Gen 7",
+              "release_year": 2026,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Gen 7 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 7 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 7 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Gen 7",
+              "release_year": 2026,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Gen 7 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 7 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 7 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7 Gen 7",
+              "release_year": 2026,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7 Gen 7 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 7 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 7 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7i Gen 7",
+              "release_year": 2026,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7i Gen 7 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 7 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 7 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5 Pro Gen 7",
+              "release_year": 2026,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 7 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 7 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 7 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Pro Gen 7",
+              "release_year": 2026,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 7 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 7 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 7 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Slim 5 Gen 7",
+              "release_year": 2026,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 7 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 7 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 7 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Slim 7 Gen 7",
+              "release_year": 2026,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 7 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 7 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 7 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5 Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7 Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7 Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7i Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7i Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5 Pro Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Pro Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Slim 5 Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Slim 7 Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 5 Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 5 Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5 Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5 Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 5i Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 5i Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5i Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5i Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 7 Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 7 Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7 Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7 Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 7i Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 7i Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7i Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7i Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5 Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7 Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7 Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7i Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7i Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5 Pro Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Pro Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Slim 5 Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Slim 7 Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 5 Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 5 Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5 Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5 Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 5i Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 5i Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5i Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5i Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 7 Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 7 Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7 Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7 Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 7i Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 7i Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7i Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7i Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5 Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7 Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7 Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7 Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7i Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7i Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7i Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5 Pro Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5 Pro Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5i Pro Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5i Pro Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Slim 5 Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 5 Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Slim 7 Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Slim 7 Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 5 Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 5 Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5 Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5 Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 5i Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 5i Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5i Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 5i Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 7 Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 7 Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7 Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7 Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion Pro 7i Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion Pro 7i Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7i Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion Pro 7i Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 9i Gen 8",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 9i Gen 8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 9i Gen 8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 9i Gen 8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 9i Gen 9",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 9i Gen 9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 9i Gen 9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 9i Gen 9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 9i Gen 10",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 9i Gen 10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 9i Gen 10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 9i Gen 10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 5a Gen 11",
+              "release_year": 2030,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 5a Gen 11 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5a Gen 11 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 5a Gen 11 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo Legion 7a Gen 11",
+              "release_year": 2030,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "16.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.45 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo Legion 7a Gen 11 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7a Gen 11 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo Legion 7a Gen 11 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LOQ Series",
+          "models": [
+            {
+              "name": "Lenovo LOQ 15 Gen 8 Intel",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15 Gen 8 Intel 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 8 Intel 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 8 Intel 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15 Gen 8 AMD",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15 Gen 8 AMD 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 8 AMD 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 8 AMD 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 16 Gen 8 Intel",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 16 Gen 8 Intel 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 8 Intel 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 8 Intel 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 16 Gen 8 AMD",
+              "release_year": 2027,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 16 Gen 8 AMD 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 8 AMD 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 8 AMD 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15 Gen 9 Intel",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15 Gen 9 Intel 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 9 Intel 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 9 Intel 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15 Gen 9 AMD",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15 Gen 9 AMD 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 9 AMD 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 9 AMD 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 16 Gen 9 Intel",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 16 Gen 9 Intel 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 9 Intel 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 9 Intel 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 16 Gen 9 AMD",
+              "release_year": 2028,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 16 Gen 9 AMD 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 9 AMD 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 9 AMD 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15 Gen 10 Intel",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15 Gen 10 Intel 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 10 Intel 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 10 Intel 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15 Gen 10 AMD",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15 Gen 10 AMD 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 10 AMD 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 10 AMD 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 16 Gen 10 Intel",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 16 Gen 10 Intel 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 10 Intel 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 10 Intel 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 16 Gen 10 AMD",
+              "release_year": 2029,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 16 Gen 10 AMD 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 10 AMD 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 10 AMD 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15 Gen 11 Intel",
+              "release_year": 2030,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15 Gen 11 Intel 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 11 Intel 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 11 Intel 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15 Gen 11 AMD",
+              "release_year": 2030,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15 Gen 11 AMD 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 11 AMD 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15 Gen 11 AMD 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 16 Gen 11 Intel",
+              "release_year": 2030,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 16 Gen 11 Intel 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 11 Intel 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 11 Intel 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 16 Gen 11 AMD",
+              "release_year": 2030,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 16 Gen 11 AMD 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 11 AMD 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16 Gen 11 AMD 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core Ultra 300HX / AMD Ryzen AI 400 + NVIDIA RTX 50",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15IRH8",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15IRH8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15IRH8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15IRH8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15APH8",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15APH8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15APH8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15APH8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15IRX9",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15IRX9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15IRX9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15IRX9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15AHP9",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15AHP9 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15AHP9 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15AHP9 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 16IRH8",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 16IRH8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16IRH8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16IRH8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 16APH8",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 16APH8 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16APH8 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 16APH8 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15IRX10",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15IRX10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15IRX10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15IRX10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo LOQ 15AHP10",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo LOQ 15AHP10 8 GB 512 GB Storm Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Storm Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15AHP10 16 GB 1 TB Onyx Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Onyx Grey"
+                },
+                {
+                  "name": "Lenovo LOQ 15AHP10 32 GB 2 TB Eclipse Black",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Eclipse Black"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "IdeaPad Gaming Series",
+          "models": [
+            {
+              "name": "Lenovo IdeaPad Gaming 3 15ARH05",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15ARH05 8 GB 512 GB Platinum Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Platinum Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15ARH05 16 GB 1 TB Cloud Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Cloud Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15ARH05 32 GB 2 TB Abyss Blue",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Abyss Blue"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo IdeaPad Gaming 3 15IMH05",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15IMH05 8 GB 512 GB Platinum Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Platinum Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15IMH05 16 GB 1 TB Cloud Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Cloud Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15IMH05 32 GB 2 TB Abyss Blue",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Abyss Blue"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo IdeaPad Gaming 3 15ACH6",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15ACH6 8 GB 512 GB Platinum Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Platinum Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15ACH6 16 GB 1 TB Cloud Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Cloud Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15ACH6 32 GB 2 TB Abyss Blue",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Abyss Blue"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo IdeaPad Gaming 3 15IHU6",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15IHU6 8 GB 512 GB Platinum Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Platinum Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15IHU6 16 GB 1 TB Cloud Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Cloud Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15IHU6 32 GB 2 TB Abyss Blue",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Abyss Blue"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo IdeaPad Gaming 3 15IAH7",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15IAH7 8 GB 512 GB Platinum Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Platinum Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15IAH7 16 GB 1 TB Cloud Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Cloud Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15IAH7 32 GB 2 TB Abyss Blue",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Abyss Blue"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo IdeaPad Gaming 3 15ARH7",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15ARH7 8 GB 512 GB Platinum Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Platinum Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15ARH7 16 GB 1 TB Cloud Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Cloud Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 15ARH7 32 GB 2 TB Abyss Blue",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Abyss Blue"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo IdeaPad Gaming 3i 15IAH7",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo IdeaPad Gaming 3i 15IAH7 8 GB 512 GB Platinum Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Platinum Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3i 15IAH7 16 GB 1 TB Cloud Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Cloud Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3i 15IAH7 32 GB 2 TB Abyss Blue",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Abyss Blue"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo IdeaPad Gaming 3 16ARH7",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 16ARH7 8 GB 512 GB Platinum Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Platinum Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 16ARH7 16 GB 1 TB Cloud Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Cloud Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3 16ARH7 32 GB 2 TB Abyss Blue",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Abyss Blue"
+                }
+              ]
+            },
+            {
+              "name": "Lenovo IdeaPad Gaming 3i 16IAH7",
+              "release_year": 2022,
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lenovo_Legion_Y520_%281%29.jpg",
+              "source_url": "https://psref.lenovo.com/",
+              "image_confidence": "family_match",
+              "specs": {
+                "display": "15.0\" IPS/OLED, FHD/WQXGA, 120–240Hz",
+                "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                "ram": "8/16/32 GB",
+                "storage": [
+                  "512 GB",
+                  "1 TB",
+                  "2 TB"
+                ],
+                "battery": "60–99.9 Wh",
+                "os": "Windows 10/11",
+                "weight": "2.2 kg",
+                "dimensions": "Model-line dependent; 15–18 inch gaming chassis"
+              },
+              "variants": [
+                {
+                  "name": "Lenovo IdeaPad Gaming 3i 16IAH7 8 GB 512 GB Platinum Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "8 GB",
+                  "storage": "512 GB",
+                  "color": "Platinum Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3i 16IAH7 16 GB 1 TB Cloud Grey",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "16 GB",
+                  "storage": "1 TB",
+                  "color": "Cloud Grey"
+                },
+                {
+                  "name": "Lenovo IdeaPad Gaming 3i 16IAH7 32 GB 2 TB Abyss Blue",
+                  "processor": "Intel Core i5/i7 12th Gen / AMD Ryzen 6000",
+                  "ram": "32 GB",
+                  "storage": "2 TB",
+                  "color": "Abyss Blue"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -12,11 +12,7 @@ import {
   PackageSearch,
   FileText,
   Archive,
-  Smartphone,
   Sparkles,
-  Laptop,
-  UnlockKeyhole,
-  Tags,
   Wallet,
   DollarSign,
   Cpu,
@@ -82,15 +78,7 @@ const ALL_NAV_SECTIONS: NavSection[] = [
           item("/dashboard/inventory/purchases", "nav.inventory.purchaseInvoices", "Factures d’achat", FileText, "inventory:manage"),
         ],
       }),
-      item("/dashboard/services", "nav.services", "Services", Sparkles, "inventory:view", {
-        children: [
-          item("/dashboard/services", "nav.services.all", "Tous les services", Sparkles, "inventory:view"),
-          item("/dashboard/services/repair", "nav.services.repair", "Services réparation", Wrench, "inventory:view"),
-          item("/dashboard/services/software", "nav.services.software", "Services logiciel", Laptop, "inventory:view"),
-          item("/dashboard/services/unlocking", "nav.services.unlocking", "Déverrouillage", UnlockKeyhole, "inventory:view"),
-          item("/dashboard/services/categories", "nav.services.categories", "Catégories services", Tags, "inventory:view"),
-        ],
-      }),
+      item("/dashboard/services", "nav.services", "Services", Sparkles, "inventory:view"),
     ],
   },
   {

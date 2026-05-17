@@ -1,0 +1,3312 @@
+{
+  "name": "Gigabyte / AORUS",
+  "sortOrder": 12,
+  "aliases": [
+    "Gigabyte",
+    "AORUS"
+  ],
+  "families": [
+    {
+      "name": "Gigabyte G",
+      "models": [
+        {
+          "name": "Gigabyte G 5",
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "15.6\" FHD IPS 144 Hz anti-glare",
+            "processor": "Intel Core i5-10500H / i5-11400H / i5-12500H / i7-12650H; NVIDIA GeForce RTX 3050 / RTX 3050 Ti / RTX 3060 / RTX 4060",
+            "ram": "8\u201364 GB DDR4/DDR5",
+            "storage": "512 GB SSD, 1 TB SSD + M.2/2.5\" expansion depending generation",
+            "battery": "49\u201354 Wh",
+            "os": "Windows 10 Home / Windows 11 Home",
+            "weight": "~2.08\u20132.15 kg",
+            "dimensions": "360 \u00d7 238 \u00d7 22.7\u201323.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G 5 i5/16GB/512GB RTX 3050 Black",
+              "processor": "Intel Core i5-10500H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 5 i5/16GB/512GB RTX 3060 Black",
+              "processor": "Intel Core i5-11400H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 5 i7/16GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-12650H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte G 6",
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "16.0\" WUXGA 1920\u00d71200 IPS 165 Hz, 16:10",
+            "processor": "Intel Core i7-13620H / i7-13650HX; NVIDIA GeForce RTX 4050 / RTX 4060 Laptop GPU",
+            "ram": "16\u201364 GB DDR5",
+            "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+            "battery": "54 Wh",
+            "os": "Windows 11 Home",
+            "weight": "~2.3 kg",
+            "dimensions": "361 \u00d7 259 \u00d7 25.1 mm"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G 6 i7/16GB/512GB RTX 4050 Black",
+              "processor": "Intel Core i7-13620H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 6 i7/16GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-13620H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 6 i7/32GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-13650HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte G 7",
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "17.3\" FHD IPS 144 Hz anti-glare",
+            "processor": "Intel Core i5-10500H / i5-11400H / i7-12650H; NVIDIA GeForce RTX 3050 / RTX 3050 Ti / RTX 3060 / RTX 4060",
+            "ram": "8\u201364 GB DDR4/DDR5",
+            "storage": "512 GB SSD, 1 TB SSD + expansion bay depending generation",
+            "battery": "49\u201354 Wh",
+            "os": "Windows 10 Home / Windows 11 Home",
+            "weight": "~2.5 kg",
+            "dimensions": "398 \u00d7 254 \u00d7 25.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G 7 i5/16GB/512GB RTX 3050 Black",
+              "processor": "Intel Core i5-10500H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 7 i5/16GB/512GB RTX 3060 Black",
+              "processor": "Intel Core i5-11400H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 7 i7/16GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-12650H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte G 5 KC",
+      "models": [
+        {
+          "name": "Gigabyte G5 KC",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.gigabyte.com/FileUpload/Global/KeyFeature/2333/innergigabyteimages/main.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "48\u201362 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.6 kg",
+            "dimensions": "varies by G5/G7 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G5 KC 256 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G5 KC 512 GB SSD Gray",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte G5 KC 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte G 5 KD",
+      "models": [
+        {
+          "name": "Gigabyte G5 KD",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.gigabyte.com/FileUpload/Global/KeyFeature/2333/innergigabyteimages/main.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "48\u201362 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.6 kg",
+            "dimensions": "varies by G5/G7 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G5 KD 256 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G5 KD 512 GB SSD Gray",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte G5 KD 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte G 5 KF",
+      "models": [
+        {
+          "name": "Gigabyte G 5 KF",
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "15.6\" FHD 1920\u00d71080 IPS 144 Hz",
+            "processor": "Intel Core i5-12500H / i7-12650H; NVIDIA GeForce RTX 4060 Laptop GPU 8 GB",
+            "ram": "8\u201364 GB DDR4-3200",
+            "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+            "battery": "54 Wh",
+            "os": "Windows 11 Home",
+            "weight": "~2.08 kg",
+            "dimensions": "360 \u00d7 238 \u00d7 22.7 mm"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G 5 KF i5/8GB/512GB RTX 4060 Black",
+              "processor": "Intel Core i5-12500H",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 5 KF i5/16GB/512GB RTX 4060 Black",
+              "processor": "Intel Core i5-12500H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 5 KF i7/16GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-12650H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte G 5 MF",
+      "models": [
+        {
+          "name": "Gigabyte G 5 MF",
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "15.6\" FHD 1920\u00d71080 IPS 144 Hz",
+            "processor": "Intel Core i5-12450H / i5-12500H; NVIDIA GeForce RTX 4050 Laptop GPU 6 GB",
+            "ram": "8\u201364 GB DDR4-3200",
+            "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+            "battery": "54 Wh",
+            "os": "Windows 11 Home",
+            "weight": "~2.08 kg",
+            "dimensions": "360 \u00d7 238 \u00d7 22.7 mm"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G 5 MF i5/8GB/512GB RTX 4050 Black",
+              "processor": "Intel Core i5-12450H",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 5 MF i5/16GB/512GB RTX 4050 Black",
+              "processor": "Intel Core i5-12500H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 5 MF i5/16GB/1TB RTX 4050 Black",
+              "processor": "Intel Core i5-12500H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte G 5 ME",
+      "models": [
+        {
+          "name": "Gigabyte G5 ME",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.gigabyte.com/FileUpload/Global/KeyFeature/2333/innergigabyteimages/main.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "48\u201362 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.6 kg",
+            "dimensions": "varies by G5/G7 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G5 ME 256 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G5 ME 512 GB SSD Gray",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte G5 ME 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte G 6 KF",
+      "models": [
+        {
+          "name": "Gigabyte G 6 KF",
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "16.0\" WUXGA 1920\u00d71200 IPS 165 Hz, 16:10",
+            "processor": "Intel Core i7-13620H / i7-13650HX; NVIDIA GeForce RTX 4060 Laptop GPU 8 GB",
+            "ram": "16\u201364 GB DDR5",
+            "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+            "battery": "54 Wh",
+            "os": "Windows 11 Home",
+            "weight": "~2.3 kg",
+            "dimensions": "361 \u00d7 259 \u00d7 25.1 mm"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G 6 KF i7/16GB/512GB RTX 4060 Black",
+              "processor": "Intel Core i7-13620H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 6 KF i7/16GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-13620H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 6 KF i7/32GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-13650HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte G 7 KC",
+      "models": [
+        {
+          "name": "Gigabyte G7 KC",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.gigabyte.com/FileUpload/Global/KeyFeature/2333/innergigabyteimages/main.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD gaming display",
+            "processor": "Intel Core i5/i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "48\u201362 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.6 kg",
+            "dimensions": "varies by G5/G7 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G7 KC 256 GB SSD Black",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G7 KC 512 GB SSD Gray",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte G7 KC 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i5/i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte G 7 KF",
+      "models": [
+        {
+          "name": "Gigabyte G 7 KF",
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "17.3\" FHD 1920\u00d71080 IPS 144 Hz",
+            "processor": "Intel Core i5-12500H / i7-12650H; NVIDIA GeForce RTX 4060 Laptop GPU 8 GB",
+            "ram": "16\u201364 GB DDR4-3200",
+            "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+            "battery": "54 Wh",
+            "os": "Windows 11 Home",
+            "weight": "~2.5 kg",
+            "dimensions": "398 \u00d7 254 \u00d7 25.9 mm"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte G 7 KF i5/16GB/512GB RTX 4060 Black",
+              "processor": "Intel Core i5-12500H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 7 KF i7/16GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-12650H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte G 7 KF i7/32GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-12650H",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte AERO",
+      "models": [
+        {
+          "name": "Gigabyte AERO 14",
+          "releaseYear": 2016,
+          "imageUrl": null,
+          "specs": {
+            "display": "14.0\" QHD 2560\u00d71440 IPS or 14.0\" WQXGA 2560\u00d71600 OLED/IPS depending generation",
+            "processor": "Intel Core i7-6700HQ / i7-7700HQ / Core i5-12500H / i7-13700H; NVIDIA GTX 970M / GTX 1060 / RTX 4050",
+            "ram": "8\u201332 GB DDR4/DDR5",
+            "storage": "256 GB SSD, 512 GB SSD, 1 TB SSD",
+            "battery": "94 Wh",
+            "os": "Windows 10 Home / Windows 11 Home",
+            "weight": "~1.49\u20131.9 kg",
+            "dimensions": "335 \u00d7 250 \u00d7 19.9 mm"
+          },
+          "variants": [
+            {
+              "name": "AERO 14 i7/16GB/512GB GTX 1060 Black",
+              "processor": "Intel Core i7-7700HQ",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AERO 14 OLED i5/16GB/512GB RTX 4050 Silver",
+              "processor": "Intel Core i5-12500H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "AERO 14 OLED i7/16GB/1TB RTX 4050 Silver",
+              "processor": "Intel Core i7-13700H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AERO 15",
+          "releaseYear": 2017,
+          "imageUrl": null,
+          "specs": {
+            "display": "15.6\" FHD 144/240 Hz IPS or 4K UHD AMOLED/OLED, X-Rite/Pantone calibrated",
+            "processor": "Intel Core i7-7700HQ / i7-8750H / i7-9750H / i7-11800H; NVIDIA GTX 1060 / RTX 2060 / RTX 3070 / RTX 3080",
+            "ram": "16\u201364 GB DDR4",
+            "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+            "battery": "94\u201399 Wh",
+            "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+            "weight": "~2.0 kg",
+            "dimensions": "356 \u00d7 250 \u00d7 18.9\u201320 mm"
+          },
+          "variants": [
+            {
+              "name": "AERO 15 i7/16GB/512GB GTX 1060 Black",
+              "processor": "Intel Core i7-7700HQ",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AERO 15 OLED i7/16GB/512GB RTX 2060 Black",
+              "processor": "Intel Core i7-9750H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AERO 15 OLED i7/32GB/1TB RTX 3070 Black",
+              "processor": "Intel Core i7-11800H",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AERO 16",
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "16.0\" 4K+ 3840\u00d72400 AMOLED/OLED or UHD+ mini-LED, 16:10",
+            "processor": "Intel Core i7-12700H / i9-12900HK / i7-13700H / i9-13900H; NVIDIA GeForce RTX 3060 / RTX 3070 Ti / RTX 4070",
+            "ram": "16\u201364 GB DDR5",
+            "storage": "1 TB SSD, 2 TB SSD, dual M.2 SSD support",
+            "battery": "99 Wh",
+            "os": "Windows 11 Home / Windows 11 Pro",
+            "weight": "~2.1\u20132.3 kg",
+            "dimensions": "356 \u00d7 248.5 \u00d7 22.4 mm"
+          },
+          "variants": [
+            {
+              "name": "AERO 16 i7/16GB/1TB RTX 3060 Silver",
+              "processor": "Intel Core i7-12700H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "AERO 16 i9/32GB/1TB RTX 3070 Ti Silver",
+              "processor": "Intel Core i9-12900HK",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Silver"
+            },
+            {
+              "name": "AERO 16 OLED i9/32GB/2TB RTX 4070 Silver",
+              "processor": "Intel Core i9-13900H",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AERO 17",
+          "releaseYear": 2019,
+          "imageUrl": null,
+          "specs": {
+            "display": "17.3\" FHD 144/300 Hz IPS or 4K UHD HDR IPS, X-Rite/Pantone calibrated",
+            "processor": "Intel Core i7-9750H / i9-9980HK / i7-10870H / i7-11800H; NVIDIA RTX 2060 / RTX 2070 / RTX 3070 / RTX 3080",
+            "ram": "16\u201364 GB DDR4",
+            "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+            "battery": "94\u201399 Wh",
+            "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+            "weight": "~2.5 kg",
+            "dimensions": "396 \u00d7 270 \u00d7 21.4 mm"
+          },
+          "variants": [
+            {
+              "name": "AERO 17 i7/16GB/512GB RTX 2060 Black",
+              "processor": "Intel Core i7-9750H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AERO 17 HDR i9/32GB/1TB RTX 2070 Black",
+              "processor": "Intel Core i9-9980HK",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AERO 17 HDR i7/32GB/1TB RTX 3070 Black",
+              "processor": "Intel Core i7-11800H",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte AERO 15 OLED",
+      "models": [
+        {
+          "name": "Gigabyte AERO 15 OLED SA",
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gigabyte.com/FileUpload/Global/KeyFeature/692/img/aero15-kv.png",
+          "specs": {
+            "display": "14\u201315.6\" FHD/4K creator/gaming display, thin bezel",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB SSD"
+            ],
+            "battery": "94 Wh",
+            "os": "Windows 10",
+            "weight": "1.89\u20132.1 kg",
+            "dimensions": "varies by AERO 14/15 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AERO 15 OLED SA 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AERO 15 OLED SA 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AERO 15 OLED SA 1 TB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte AERO 16 OLED",
+      "models": [
+        {
+          "name": "Gigabyte AERO 16 OLED BSF 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gigabyte.com/FileUpload/Global/KeyFeature/692/img/aero15-kv.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/4K OLED/HDR creator display, Pantone/X-Rite calibrated",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "94\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.6 kg",
+            "dimensions": "varies by AERO 5/15/16/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AERO 16 OLED BSF 2023 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AERO 16 OLED BSF 2023 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AERO 16 OLED BSF 2023 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte AERO 17 HDR",
+      "models": [
+        {
+          "name": "Gigabyte AERO 17 HDR XA",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gigabyte.com/FileUpload/Global/KeyFeature/692/img/aero15-kv.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/4K OLED/HDR creator display, Pantone/X-Rite calibrated",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "94\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.6 kg",
+            "dimensions": "varies by AERO 5/15/16/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AERO 17 HDR XA 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AERO 17 HDR XA 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AERO 17 HDR XA 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AORUS",
+      "models": [
+        {
+          "name": "AORUS 5",
+          "releaseYear": 2019,
+          "imageUrl": null,
+          "specs": {
+            "display": "15.6\" FHD IPS 144 Hz anti-glare",
+            "processor": "Intel Core i5-9300H / i7-9750H / i7-10750H; NVIDIA GeForce GTX 1650 / GTX 1660 Ti / RTX 2060 / RTX 3060",
+            "ram": "8\u201364 GB DDR4",
+            "storage": "256 GB SSD, 512 GB SSD, 1 TB SSD + optional 1 TB HDD",
+            "battery": "48.96\u201354 Wh",
+            "os": "Windows 10 Home / Windows 11 Home",
+            "weight": "~2.2 kg",
+            "dimensions": "361 \u00d7 258 \u00d7 27.9 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 5 i5/8GB/512GB GTX 1650 Black",
+              "processor": "Intel Core i5-9300H",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 5 i7/16GB/512GB GTX 1660 Ti Black",
+              "processor": "Intel Core i7-9750H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 5 i7/16GB/1TB RTX 2060 Black",
+              "processor": "Intel Core i7-10750H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 5 i7/16GB/512GB RTX 3060 Black",
+              "processor": "Intel Core i7-11800H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "AORUS 7",
+          "releaseYear": 2019,
+          "imageUrl": null,
+          "specs": {
+            "display": "17.3\" FHD IPS 144 Hz anti-glare",
+            "processor": "Intel Core i7-9750H / i7-10750H; NVIDIA GeForce GTX 1660 Ti / RTX 2060 / RTX 3060",
+            "ram": "8\u201364 GB DDR4",
+            "storage": "512 GB SSD, 1 TB SSD + optional 1 TB HDD",
+            "battery": "48.96\u201354 Wh",
+            "os": "Windows 10 Home / Windows 11 Home",
+            "weight": "~2.5 kg",
+            "dimensions": "399 \u00d7 275 \u00d7 29.9 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 7 i7/16GB/512GB GTX 1660 Ti Black",
+              "processor": "Intel Core i7-9750H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 7 i7/16GB/1TB RTX 2060 Black",
+              "processor": "Intel Core i7-10750H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 7 i7/16GB/512GB RTX 3060 Black",
+              "processor": "Intel Core i7-11800H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "AORUS 15",
+          "releaseYear": 2018,
+          "imageUrl": null,
+          "specs": {
+            "display": "15.6\" FHD IPS 144/240 Hz or 4K UHD IPS 60 Hz",
+            "processor": "Intel Core i7-8750H / i7-9750H / i9-9980HK; NVIDIA GeForce GTX 1060 / RTX 2060 / RTX 2070 / RTX 2080 Max-Q",
+            "ram": "16\u201364 GB DDR4",
+            "storage": "256 GB SSD, 512 GB SSD, 1 TB SSD + 2.5\" HDD bay",
+            "battery": "94 Wh",
+            "os": "Windows 10 Home / Windows 10 Pro",
+            "weight": "~2.4 kg",
+            "dimensions": "361 \u00d7 246 \u00d7 24.4 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 15 i7/16GB/512GB RTX 2060 Black",
+              "processor": "Intel Core i7-8750H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 15 i7/16GB/512GB RTX 2070 Black",
+              "processor": "Intel Core i7-9750H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 15 i9/32GB/1TB RTX 2080 Max-Q Black",
+              "processor": "Intel Core i9-9980HK",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "AORUS 16",
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "16.0\" WQXGA 2560\u00d71600 IPS 165 Hz/240 Hz, 16:10",
+            "processor": "Intel Core i7-13620H / i7-13700H / i9-13900H; NVIDIA GeForce RTX 4060 / RTX 4070 Laptop GPU",
+            "ram": "16\u201364 GB DDR5",
+            "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+            "battery": "99 Wh",
+            "os": "Windows 11 Home / Windows 11 Pro",
+            "weight": "~2.3 kg",
+            "dimensions": "356 \u00d7 254 \u00d7 22.8 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 16 i7/16GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-13700H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 16 i7/32GB/1TB RTX 4070 Black",
+              "processor": "Intel Core i7-13700H",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 16 i9/32GB/2TB RTX 4070 Black",
+              "processor": "Intel Core i9-13900H",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "AORUS 17",
+          "releaseYear": 2019,
+          "imageUrl": null,
+          "specs": {
+            "display": "17.3\" FHD IPS 144/240/300 Hz or 4K UHD IPS 60 Hz",
+            "processor": "Intel Core i7-9750H / i7-10875H / i9-10980HK; NVIDIA GeForce RTX 2060 / RTX 2070 / RTX 2080 Super Max-Q",
+            "ram": "16\u201364 GB DDR4",
+            "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+            "battery": "94\u201399 Wh",
+            "os": "Windows 10 Home / Windows 10 Pro",
+            "weight": "~2.7 kg",
+            "dimensions": "405 \u00d7 276 \u00d7 26\u201328.3 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 17 i7/16GB/512GB RTX 2060 Black",
+              "processor": "Intel Core i7-9750H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 17 i7/32GB/1TB RTX 2070 Black",
+              "processor": "Intel Core i7-10875H",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 17 i9/32GB/1TB RTX 2080 Super Black",
+              "processor": "Intel Core i9-10980HK",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS X3 Plus v3",
+          "releaseYear": 2014,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS X3 Plus v3 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS X3 Plus v3 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS X3 Plus v3 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS X3 Plus v5",
+          "releaseYear": 2015,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS X3 Plus v5 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS X3 Plus v5 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS X3 Plus v5 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS X5 v5",
+          "releaseYear": 2015,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS X5 v5 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS X5 v5 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS X5 v5 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS X5 v6",
+          "releaseYear": 2016,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS X5 v6 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS X5 v6 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS X5 v6 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS X5 v7",
+          "releaseYear": 2017,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS X5 v7 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS X5 v7 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS X5 v7 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS X7 v2",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS X7 v2 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS X7 v2 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS X7 v2 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS X7 Pro",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS X7 Pro 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS X7 Pro 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS X7 Pro 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS X7 DT v6",
+          "releaseYear": 2016,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS X7 DT v6 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS X7 DT v6 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS X7 DT v6 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS X7 DT v7",
+          "releaseYear": 2017,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS X7 DT v7 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS X7 DT v7 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS X7 DT v7 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS X9 DT",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS X9 DT 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS X9 DT 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS X9 DT 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 5 KB",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 5 KB 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 5 KB 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 5 KB 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 5 MB",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 5 MB 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 5 MB 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 5 MB 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 5 SB",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 5 SB 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 5 SB 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 5 SB 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 5 SE4",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 5 SE4 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 5 SE4 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 5 SE4 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 5 KE4",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 5 KE4 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 5 KE4 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 5 KE4 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 5 ME4",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 5 ME4 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 5 ME4 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 5 ME4 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 7 KB",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 7 KB 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 7 KB 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 7 KB 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 7 MB",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 7 MB 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 7 MB 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 7 MB 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 7 SB",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 7 SB 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 7 SB 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 7 SB 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 7 SE4",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 7 SE4 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 7 SE4 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 7 SE4 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 7 KE4",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 7 KE4 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 7 KE4 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 7 KE4 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15P KC",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15P KC 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15P KC 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15P KC 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15P XD",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15P XD 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15P XD 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15P XD 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15P YD",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15P YD 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15P YD 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15P YD 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15G KC",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15G KC 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15G KC 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15G KC 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15G XC",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15G XC 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15G XC 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15G XC 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15G YC",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15G YC 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15G YC 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15G YC 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15 XE4",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15 XE4 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15 XE4 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15 XE4 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15 YE5",
+          "releaseYear": 2022,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15 YE5 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15 YE5 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15 YE5 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15 BKF 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15 BKF 2023 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15 BKF 2023 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15 BKF 2023 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15 BSF 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15 BSF 2023 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15 BSF 2023 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15 BSF 2023 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 15 2024",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 15 2024 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 15 2024 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 15 2024 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 16X 2024",
+          "releaseYear": 2024,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 16X 2024 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 16X 2024 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 16X 2024 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 16X 2025",
+          "releaseYear": 2025,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "16\u201318\" QHD+/OLED/Mini LED gaming display, 165\u2013240Hz",
+            "processor": "Intel Core Ultra 7/9 HX or AMD Ryzen AI / Ryzen 9",
+            "ram": "16\u201364 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 11 Home / Windows 11 Pro",
+            "weight": "2.3\u20133.5 kg",
+            "dimensions": "varies by AORUS Master/Elite/AI chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 16X 2025 1 TB SSD Black",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "4 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 16X 2025 2 TB SSD Gray",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "16 GB",
+              "storage": "2 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 16X 2025 4 TB SSD Silver",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 16X ASG",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 16X ASG 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 16X ASG 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 16X ASG 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 16X AKG",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 16X AKG 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 16X AKG 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 16X AKG 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 17G KC",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 17G KC 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 17G KC 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 17G KC 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 17G XD",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 17G XD 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 17G XD 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 17G XD 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 17G YD",
+          "releaseYear": 2021,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 17G YD 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 17G YD 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 17G YD 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 17X XES",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 17X XES 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 17X XES 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 17X XES 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 17X YES",
+          "releaseYear": 2020,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD gaming display",
+            "processor": "Intel Core i7 H-series",
+            "ram": "8\u201332 GB DDR4",
+            "storage": [
+              "256 GB SSD",
+              "512 GB SSD",
+              "1 TB HDD + 256 GB SSD"
+            ],
+            "battery": "61\u201394 Wh",
+            "os": "Windows 10",
+            "weight": "2.2\u20133.2 kg",
+            "dimensions": "varies by legacy AORUS X/15/17 chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 17X YES 256 GB SSD Black",
+              "processor": "Intel Core i7 H-series",
+              "ram": "4 GB",
+              "storage": "256 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 17X YES 512 GB SSD Gray",
+              "processor": "Intel Core i7 H-series",
+              "ram": "8 GB",
+              "storage": "512 GB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 17X YES 1 TB HDD + 256 GB SSD Silver",
+              "processor": "Intel Core i7 H-series",
+              "ram": "32 GB",
+              "storage": "1 TB HDD + 256 GB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 17 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 17 2023 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 17 2023 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 17 2023 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 17H BXF 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 17H BXF 2023 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 17H BXF 2023 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 17H BXF 2023 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 17X AZF 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 17X AZF 2023 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 17X AZF 2023 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 17X AZF 2023 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS 17X AXF 2023",
+          "releaseYear": 2023,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "15.6\u201317.3\" FHD/QHD IPS gaming display, 144\u2013300Hz",
+            "processor": "Intel Core i7/i9 H-series",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": [
+              "512 GB SSD",
+              "1 TB SSD",
+              "2 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 10 / Windows 11",
+            "weight": "2.0\u20132.7 kg",
+            "dimensions": "varies by AORUS 15/17 generation"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS 17X AXF 2023 512 GB SSD Black",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "4 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS 17X AXF 2023 1 TB SSD Gray",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS 17X AXF 2023 2 TB SSD Silver",
+              "processor": "Intel Core i7/i9 H-series",
+              "ram": "64 GB",
+              "storage": "2 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS Master 16 2025",
+          "releaseYear": 2025,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "16\u201318\" QHD+/OLED/Mini LED gaming display, 165\u2013240Hz",
+            "processor": "Intel Core Ultra 7/9 HX or AMD Ryzen AI / Ryzen 9",
+            "ram": "16\u201364 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 11 Home / Windows 11 Pro",
+            "weight": "2.3\u20133.5 kg",
+            "dimensions": "varies by AORUS Master/Elite/AI chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS Master 16 2025 1 TB SSD Black",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "4 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS Master 16 2025 2 TB SSD Gray",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "16 GB",
+              "storage": "2 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS Master 16 2025 4 TB SSD Silver",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS Master 18 2025",
+          "releaseYear": 2025,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "16\u201318\" QHD+/OLED/Mini LED gaming display, 165\u2013240Hz",
+            "processor": "Intel Core Ultra 7/9 HX or AMD Ryzen AI / Ryzen 9",
+            "ram": "16\u201364 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 11 Home / Windows 11 Pro",
+            "weight": "2.3\u20133.5 kg",
+            "dimensions": "varies by AORUS Master/Elite/AI chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS Master 18 2025 1 TB SSD Black",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "4 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS Master 18 2025 2 TB SSD Gray",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "16 GB",
+              "storage": "2 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS Master 18 2025 4 TB SSD Silver",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS Elite 16 2025",
+          "releaseYear": 2025,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "16\u201318\" QHD+/OLED/Mini LED gaming display, 165\u2013240Hz",
+            "processor": "Intel Core Ultra 7/9 HX or AMD Ryzen AI / Ryzen 9",
+            "ram": "16\u201364 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 11 Home / Windows 11 Pro",
+            "weight": "2.3\u20133.5 kg",
+            "dimensions": "varies by AORUS Master/Elite/AI chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS Elite 16 2025 1 TB SSD Black",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "4 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS Elite 16 2025 2 TB SSD Gray",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "16 GB",
+              "storage": "2 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS Elite 16 2025 4 TB SSD Silver",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        },
+        {
+          "name": "Gigabyte AORUS Elite 18 2025",
+          "releaseYear": 2025,
+          "imageUrl": "https://www.aorus.com/upload/Product/F_20230105171609kXdyXB.png",
+          "specs": {
+            "display": "16\u201318\" QHD+/OLED/Mini LED gaming display, 165\u2013240Hz",
+            "processor": "Intel Core Ultra 7/9 HX or AMD Ryzen AI / Ryzen 9",
+            "ram": "16\u201364 GB DDR5/LPDDR5X",
+            "storage": [
+              "1 TB SSD",
+              "2 TB SSD",
+              "4 TB SSD"
+            ],
+            "battery": "76\u201399 Wh",
+            "os": "Windows 11 Home / Windows 11 Pro",
+            "weight": "2.3\u20133.5 kg",
+            "dimensions": "varies by AORUS Master/Elite/AI chassis"
+          },
+          "variants": [
+            {
+              "name": "Gigabyte AORUS Elite 18 2025 1 TB SSD Black",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "4 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "Gigabyte AORUS Elite 18 2025 2 TB SSD Gray",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "16 GB",
+              "storage": "2 TB SSD",
+              "color": "Gray"
+            },
+            {
+              "name": "Gigabyte AORUS Elite 18 2025 4 TB SSD Silver",
+              "processor": "Intel Core Ultra 7/9 HX",
+              "ram": "64 GB",
+              "storage": "4 TB SSD",
+              "color": "Silver"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AORUS 15P",
+      "models": [
+        {
+          "name": "AORUS 15P",
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "15.6\" FHD IPS 144/240/300 Hz anti-glare",
+            "processor": "Intel Core i7-10750H / i7-10870H / i7-11800H; NVIDIA GeForce RTX 2060 / RTX 3060 / RTX 3070 / RTX 3080 Laptop GPU",
+            "ram": "16\u201364 GB DDR4",
+            "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+            "battery": "94\u201399 Wh",
+            "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+            "weight": "~2.2 kg",
+            "dimensions": "357 \u00d7 244 \u00d7 27 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 15P i7/16GB/512GB RTX 2060 Black",
+              "processor": "Intel Core i7-10750H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 15P i7/16GB/1TB RTX 3060 Black",
+              "processor": "Intel Core i7-10870H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 15P i7/32GB/1TB RTX 3070 Black",
+              "processor": "Intel Core i7-11800H",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AORUS 15G",
+      "models": [
+        {
+          "name": "AORUS 15G",
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "15.6\" FHD IPS 144/240/300 Hz anti-glare",
+            "processor": "Intel Core i7-10750H / i7-10870H / i7-10875H / i7-11800H; NVIDIA GeForce GTX 1660 Ti / RTX 2060 / RTX 3060 / RTX 3070 / RTX 3080",
+            "ram": "16\u201364 GB DDR4",
+            "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+            "battery": "94\u201399 Wh",
+            "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+            "weight": "~2.0 kg",
+            "dimensions": "357 \u00d7 244 \u00d7 23 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 15G i7/16GB/512GB RTX 2060 Black",
+              "processor": "Intel Core i7-10750H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 15G i7/16GB/1TB RTX 3060 Black",
+              "processor": "Intel Core i7-10870H",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 15G i7/32GB/1TB RTX 3070 Black",
+              "processor": "Intel Core i7-11800H",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 15G i7/32GB/1TB RTX 3080 Black",
+              "processor": "Intel Core i7-11800H",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AORUS 17G",
+      "models": [
+        {
+          "name": "AORUS 17G",
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "17.3\" FHD IPS 240/300 Hz anti-glare",
+            "processor": "Intel Core i7-10750H / i7-10870H / i7-10875H / i7-11800H; NVIDIA GeForce RTX 2060 / RTX 3060 / RTX 3070 / RTX 3080",
+            "ram": "16\u201364 GB DDR4",
+            "storage": "512 GB SSD, 1 TB SSD, dual M.2 SSD support",
+            "battery": "94\u201399 Wh",
+            "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+            "weight": "~2.7\u20132.77 kg",
+            "dimensions": "405 \u00d7 276 \u00d7 26\u201328.3 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 17G i7/16GB/512GB RTX 2070 Black",
+              "processor": "Intel Core i7-10750H",
+              "ram": "16 GB",
+              "storage": "512 GB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 17G i7/32GB/1TB RTX 3070 Black",
+              "processor": "Intel Core i7-10870H",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 17G i7/32GB/1TB RTX 3080 Black",
+              "processor": "Intel Core i7-11800H",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AORUS 17X",
+      "models": [
+        {
+          "name": "AORUS 17X",
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "17.3\" FHD IPS 240/300 Hz or QHD 2560\u00d71440 240 Hz",
+            "processor": "Intel Core i7-10875H / i9-10980HK / i9-12900HX / i9-13900HX; NVIDIA GeForce RTX 2080 Super / RTX 3080 Ti / RTX 4080 / RTX 4090",
+            "ram": "16\u201364 GB DDR4/DDR5",
+            "storage": "1 TB SSD, 2 TB SSD, dual M.2 SSD support",
+            "battery": "94\u201399 Wh",
+            "os": "Windows 10 Pro / Windows 11 Home / Windows 11 Pro",
+            "weight": "~2.7\u20132.8 kg",
+            "dimensions": "396 \u00d7 293 \u00d7 21.8\u201338 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 17X i9/32GB/1TB RTX 2080 Super Black",
+              "processor": "Intel Core i9-10980HK",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 17X i9/32GB/2TB RTX 3080 Ti Black",
+              "processor": "Intel Core i9-12900HX",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 17X i9/32GB/2TB RTX 4090 Black",
+              "processor": "Intel Core i9-13900HX",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AORUS 15X",
+      "models": [
+        {
+          "name": "AORUS 15X",
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "15.6\" QHD 2560\u00d71440 IPS 165/240 Hz",
+            "processor": "Intel Core i7-13700HX / i9-13900HX / i9-13980HX; NVIDIA GeForce RTX 4060 / RTX 4070 Laptop GPU",
+            "ram": "16\u201364 GB DDR5-5600",
+            "storage": "512 GB SSD, 1 TB SSD, 2 TB SSD",
+            "battery": "99 Wh",
+            "os": "Windows 11 Home / Windows 11 Pro",
+            "weight": "~2.4 kg",
+            "dimensions": "358 \u00d7 274 \u00d7 19.9\u201322.7 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 15X i7/16GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-13700HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 15X i9/16GB/1TB RTX 4070 Black",
+              "processor": "Intel Core i9-13900HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 15X i9/32GB/2TB RTX 4070 Black",
+              "processor": "Intel Core i9-13980HX",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AORUS 16X",
+      "models": [
+        {
+          "name": "AORUS 16X",
+          "releaseYear": 2024,
+          "imageUrl": null,
+          "specs": {
+            "display": "16.0\" WQXGA 2560\u00d71600 IPS 165/240 Hz, 16:10",
+            "processor": "Intel Core i7-14650HX / i9-14900HX; NVIDIA GeForce RTX 4060 / RTX 4070 Laptop GPU",
+            "ram": "16\u201364 GB DDR5-5600",
+            "storage": "1 TB SSD, 2 TB SSD, dual M.2 SSD support",
+            "battery": "99 Wh",
+            "os": "Windows 11 Home / Windows 11 Pro",
+            "weight": "~2.3 kg",
+            "dimensions": "356 \u00d7 254 \u00d7 22.8 mm"
+          },
+          "variants": [
+            {
+              "name": "AORUS 16X i7/16GB/1TB RTX 4060 Black",
+              "processor": "Intel Core i7-14650HX",
+              "ram": "16 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 16X i7/32GB/1TB RTX 4070 Black",
+              "processor": "Intel Core i7-14650HX",
+              "ram": "32 GB",
+              "storage": "1 TB SSD",
+              "color": "Black"
+            },
+            {
+              "name": "AORUS 16X i9/32GB/2TB RTX 4070 Black",
+              "processor": "Intel Core i9-14900HX",
+              "ram": "32 GB",
+              "storage": "2 TB SSD",
+              "color": "Black"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

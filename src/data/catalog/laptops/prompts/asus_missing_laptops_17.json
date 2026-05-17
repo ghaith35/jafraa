@@ -1,0 +1,688 @@
+[
+  {
+    "modelName": "ASUS Chromebook C434",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD (1920×1080) NanoEdge touchscreen, 360° convertible, IPS-level, 16:9",
+      "processor": "Intel Core m3-8100Y / Core i5-8200Y / Core i7-8500Y",
+      "ram": "4–8 GB LPDDR3",
+      "storage": [
+        "64 GB eMMC",
+        "128 GB eMMC"
+      ],
+      "battery": "48 Wh 3-cell lithium-polymer",
+      "os": "ChromeOS",
+      "weight": "1.45 kg",
+      "dimensions": "321 × 202 × 15.7 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS Chromebook C434 Core m3/4GB/64GB Silver",
+        "processor": "Intel Core m3-8100Y",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Silver"
+      },
+      {
+        "name": "ASUS Chromebook C434 Core m3/8GB/64GB Silver",
+        "processor": "Intel Core m3-8100Y",
+        "ram": "8 GB",
+        "storage": "64 GB eMMC",
+        "color": "Silver"
+      },
+      {
+        "name": "ASUS Chromebook C434 Core i5/8GB/128GB Silver",
+        "processor": "Intel Core i5-8200Y",
+        "ram": "8 GB",
+        "storage": "128 GB eMMC",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS Chromebook C436",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD (1920×1080) NanoEdge touchscreen, 360° convertible, IPS-level, 16:9",
+      "processor": "Intel Core i3-10110U / Core i5-10210U / Core i7-10510U",
+      "ram": "8–16 GB LPDDR3",
+      "storage": [
+        "128 GB PCIe SSD",
+        "256 GB PCIe SSD",
+        "512 GB PCIe SSD"
+      ],
+      "battery": "42 Wh 3-cell Li-ion",
+      "os": "ChromeOS",
+      "weight": "1.17 kg",
+      "dimensions": "319 × 205 × 13.7 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS Chromebook C436 i3/8GB/128GB Aerogel White",
+        "processor": "Intel Core i3-10110U",
+        "ram": "8 GB",
+        "storage": "128 GB PCIe SSD",
+        "color": "Aerogel White"
+      },
+      {
+        "name": "ASUS Chromebook C436 i5/8GB/256GB Transparent Silver",
+        "processor": "Intel Core i5-10210U",
+        "ram": "8 GB",
+        "storage": "256 GB PCIe SSD",
+        "color": "Transparent Silver"
+      },
+      {
+        "name": "ASUS Chromebook C436 i5/16GB/512GB Aerogel White",
+        "processor": "Intel Core i5-10210U",
+        "ram": "16 GB",
+        "storage": "512 GB PCIe SSD",
+        "color": "Aerogel White"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS Chromebook Flip CX5",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD (1920×1080) touchscreen, IPS-level, 360° convertible",
+      "processor": "Intel Core i3-1115G4 / Core i5-1135G7 / Core i7-1165G7",
+      "ram": "8–16 GB LPDDR4X",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD"
+      ],
+      "battery": "57 Wh 3-cell Li-ion",
+      "os": "ChromeOS",
+      "weight": "1.89 kg",
+      "dimensions": "357.6 × 240.8 × 18.5 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS Chromebook Flip CX5 i3/8GB/128GB AI Blue",
+        "processor": "Intel Core i3-1115G4",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "color": "AI Blue"
+      },
+      {
+        "name": "ASUS Chromebook Flip CX5 i5/8GB/256GB AI Blue",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "AI Blue"
+      },
+      {
+        "name": "ASUS Chromebook Flip CX5 i7/16GB/512GB AI Blue",
+        "processor": "Intel Core i7-1165G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "AI Blue"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS Chromebook Detachable CM3",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "10.5\" WUXGA (1920×1200) touchscreen, 16:10, detachable tablet with kickstand cover",
+      "processor": "MediaTek Kompanio 500 / MediaTek 8183",
+      "ram": "4 GB LPDDR4X",
+      "storage": [
+        "64 GB eMMC",
+        "128 GB eMMC"
+      ],
+      "battery": "27 Wh 2-cell Li-ion",
+      "os": "ChromeOS",
+      "weight": "0.51 kg tablet only; about 0.92 kg with keyboard and cover",
+      "dimensions": "255.4 × 167.2 × 7.9–8.0 mm tablet"
+    },
+    "variants": [
+      {
+        "name": "ASUS Chromebook Detachable CM3 4GB/64GB Mineral Gray",
+        "processor": "MediaTek Kompanio 500",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Mineral Gray"
+      },
+      {
+        "name": "ASUS Chromebook Detachable CM3 4GB/128GB Mineral Gray",
+        "processor": "MediaTek Kompanio 500",
+        "ram": "4 GB",
+        "storage": "128 GB eMMC",
+        "color": "Mineral Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS ROG Zephyrus M15",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD 144/240 Hz IPS-level or 15.6\" 4K UHD 60 Hz IPS-level, Pantone Validated on selected panels",
+      "processor": "Intel Core i7-10750H / Core i7-10875H",
+      "ram": "8–32 GB DDR4-3200",
+      "storage": [
+        "512 GB PCIe SSD",
+        "1 TB PCIe SSD",
+        "2 TB PCIe SSD"
+      ],
+      "battery": "76 Wh 4-cell Li-ion",
+      "os": "Windows 10 Home / Windows 10 Pro",
+      "weight": "1.90 kg",
+      "dimensions": "360 × 252 × 18.9–19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS ROG Zephyrus M15 i7/16GB/512GB RTX 1660 Ti Prism Gray",
+        "processor": "Intel Core i7-10750H",
+        "ram": "16 GB",
+        "storage": "512 GB PCIe SSD",
+        "color": "Prism Gray"
+      },
+      {
+        "name": "ASUS ROG Zephyrus M15 i7/16GB/1TB RTX 2060 Prism Black",
+        "processor": "Intel Core i7-10750H",
+        "ram": "16 GB",
+        "storage": "1 TB PCIe SSD",
+        "color": "Prism Black"
+      },
+      {
+        "name": "ASUS ROG Zephyrus M15 i7/32GB/1TB RTX 2070 Max-Q Prism Black",
+        "processor": "Intel Core i7-10875H",
+        "ram": "32 GB",
+        "storage": "1 TB PCIe SSD",
+        "color": "Prism Black"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS ROG Zephyrus S17",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" FHD 300 Hz IPS-level or 17.3\" 4K UHD 120 Hz IPS-level, Pantone Validated on selected panels",
+      "processor": "Intel Core i7-10875H / Core i9-10980HK",
+      "ram": "16–32 GB DDR4-3200",
+      "storage": [
+        "1 TB PCIe SSD",
+        "2 TB PCIe SSD RAID 0"
+      ],
+      "battery": "76 Wh 4-cell Li-ion",
+      "os": "Windows 10 Home / Windows 10 Pro",
+      "weight": "2.60 kg",
+      "dimensions": "399 × 272 × 18.7 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS ROG Zephyrus S17 i7/16GB/1TB RTX 2070 Super Black",
+        "processor": "Intel Core i7-10875H",
+        "ram": "16 GB",
+        "storage": "1 TB PCIe SSD",
+        "color": "Black"
+      },
+      {
+        "name": "ASUS ROG Zephyrus S17 i7/32GB/1TB RTX 2080 Super Black",
+        "processor": "Intel Core i7-10875H",
+        "ram": "32 GB",
+        "storage": "1 TB PCIe SSD",
+        "color": "Black"
+      },
+      {
+        "name": "ASUS ROG Zephyrus S17 i9/32GB/2TB RTX 2080 Super Black",
+        "processor": "Intel Core i9-10980HK",
+        "ram": "32 GB",
+        "storage": "2 TB PCIe SSD RAID 0",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS TUF Gaming Dash F15",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD (1920×1080) 144/240 Hz IPS-level or 15.6\" WQHD (2560×1440) 165 Hz IPS-level",
+      "processor": "Intel Core i5-11300H / Core i7-11370H / Core i7-11375H",
+      "ram": "8–32 GB DDR4-3200",
+      "storage": [
+        "512 GB PCIe SSD",
+        "1 TB PCIe SSD"
+      ],
+      "battery": "76 Wh 4-cell Li-ion",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "2.00 kg",
+      "dimensions": "360 × 252 × 19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS TUF Gaming Dash F15 i5/8GB/512GB RTX 3050 Eclipse Gray",
+        "processor": "Intel Core i5-11300H",
+        "ram": "8 GB",
+        "storage": "512 GB PCIe SSD",
+        "color": "Eclipse Gray"
+      },
+      {
+        "name": "ASUS TUF Gaming Dash F15 i7/16GB/512GB RTX 3060 Moonlight White",
+        "processor": "Intel Core i7-11370H",
+        "ram": "16 GB",
+        "storage": "512 GB PCIe SSD",
+        "color": "Moonlight White"
+      },
+      {
+        "name": "ASUS TUF Gaming Dash F15 i7/16GB/1TB RTX 3070 Eclipse Gray",
+        "processor": "Intel Core i7-11375H",
+        "ram": "16 GB",
+        "storage": "1 TB PCIe SSD",
+        "color": "Eclipse Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS VivoBook S 14",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" FHD (1920×1080) NanoEdge IPS-level, optional 100% sRGB on selected S433/S435 panels",
+      "processor": "Intel Core i3-1005G1 / Core i5-1035G1 / Core i7-1065G7; later Intel Core i5-1135G7 / i7-1165G7",
+      "ram": "8–16 GB DDR4 or LPDDR4X",
+      "storage": [
+        "256 GB PCIe SSD",
+        "512 GB PCIe SSD",
+        "1 TB PCIe SSD"
+      ],
+      "battery": "50 Wh 3-cell Li-ion",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "1.40 kg",
+      "dimensions": "324.9 × 213.5 × 15.9 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS VivoBook S 14 i5/8GB/512GB Gaia Green",
+        "processor": "Intel Core i5-1035G1",
+        "ram": "8 GB",
+        "storage": "512 GB PCIe SSD",
+        "color": "Gaia Green"
+      },
+      {
+        "name": "ASUS VivoBook S 14 i7/16GB/512GB Indie Black",
+        "processor": "Intel Core i7-1065G7",
+        "ram": "16 GB",
+        "storage": "512 GB PCIe SSD",
+        "color": "Indie Black"
+      },
+      {
+        "name": "ASUS VivoBook S 14 i5/8GB/256GB Resolute Red",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB PCIe SSD",
+        "color": "Resolute Red"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS VivoBook S 15",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" FHD (1920×1080) NanoEdge IPS-level, 16:9",
+      "processor": "Intel Core i3-1005G1 / Core i5-1035G1 / Core i7-1065G7; later Intel Core i5-1135G7 / i7-1165G7",
+      "ram": "8–16 GB DDR4 or LPDDR4X",
+      "storage": [
+        "256 GB PCIe SSD",
+        "512 GB PCIe SSD",
+        "1 TB PCIe SSD"
+      ],
+      "battery": "50 Wh 3-cell Li-ion",
+      "os": "Windows 10 Home / Windows 11 Home",
+      "weight": "1.80 kg",
+      "dimensions": "359.8 × 233.8 × 16.1 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS VivoBook S 15 i5/8GB/512GB Indie Black",
+        "processor": "Intel Core i5-1035G1",
+        "ram": "8 GB",
+        "storage": "512 GB PCIe SSD",
+        "color": "Indie Black"
+      },
+      {
+        "name": "ASUS VivoBook S 15 i7/16GB/512GB Dreamy White",
+        "processor": "Intel Core i7-1065G7",
+        "ram": "16 GB",
+        "storage": "512 GB PCIe SSD",
+        "color": "Dreamy White"
+      },
+      {
+        "name": "ASUS VivoBook S 15 i5/8GB/256GB Gaia Green",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB PCIe SSD",
+        "color": "Gaia Green"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS VivoBook S 16",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" 3.2K (3200×2000) OLED 120 Hz, 16:10, or 16.0\" WUXGA IPS depending on S5606/S3607 configuration",
+      "processor": "Intel Core Ultra 5 125H / Core Ultra 7 155H / Core Ultra 9 185H; later Core Ultra 5 225H / Core Ultra 7 255H",
+      "ram": "16–32 GB LPDDR5X or DDR5",
+      "storage": [
+        "512 GB PCIe 4.0 SSD",
+        "1 TB PCIe 4.0 SSD"
+      ],
+      "battery": "70–75 Wh Li-ion depending on configuration",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "1.50–1.70 kg",
+      "dimensions": "353.6 × 246.9 × 13.9–15.9 mm for S5606; 357.0 × 250.6 × 15.9–17.9 mm for S3607"
+    },
+    "variants": [
+      {
+        "name": "ASUS VivoBook S 16 Core Ultra 5/16GB/512GB Neutral Black",
+        "processor": "Intel Core Ultra 5 125H",
+        "ram": "16 GB",
+        "storage": "512 GB PCIe 4.0 SSD",
+        "color": "Neutral Black"
+      },
+      {
+        "name": "ASUS VivoBook S 16 Core Ultra 7/16GB/1TB Mist Blue",
+        "processor": "Intel Core Ultra 7 155H",
+        "ram": "16 GB",
+        "storage": "1 TB PCIe 4.0 SSD",
+        "color": "Mist Blue"
+      },
+      {
+        "name": "ASUS VivoBook S 16 Core Ultra 9/32GB/1TB Cool Silver",
+        "processor": "Intel Core Ultra 9 185H",
+        "ram": "32 GB",
+        "storage": "1 TB PCIe 4.0 SSD",
+        "color": "Cool Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS VivoBook E12",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "11.6\" HD (1366×768) LED-backlit display, 16:9",
+      "processor": "Intel Celeron N3350 / Celeron N4000 / Pentium Silver N5000",
+      "ram": "2–4 GB LPDDR4",
+      "storage": [
+        "32 GB eMMC",
+        "64 GB eMMC",
+        "128 GB eMMC"
+      ],
+      "battery": "38–42 Wh 2/3-cell Li-ion",
+      "os": "Windows 10 Home / Windows 10 S / Windows 10 Pro",
+      "weight": "0.90–0.98 kg",
+      "dimensions": "286 × 193 × 17 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS VivoBook E12 Celeron/2GB/32GB Star Gray",
+        "processor": "Intel Celeron N3350",
+        "ram": "2 GB",
+        "storage": "32 GB eMMC",
+        "color": "Star Gray"
+      },
+      {
+        "name": "ASUS VivoBook E12 Celeron/4GB/64GB Pearl White",
+        "processor": "Intel Celeron N4000",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Pearl White"
+      },
+      {
+        "name": "ASUS VivoBook E12 Pentium/4GB/128GB Star Gray",
+        "processor": "Intel Pentium Silver N5000",
+        "ram": "4 GB",
+        "storage": "128 GB eMMC",
+        "color": "Star Gray"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS VivoBook E14",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.0\" HD (1366×768) or FHD (1920×1080) NanoEdge display",
+      "processor": "Intel Celeron N4020 / Celeron N4500 / Pentium Silver N5030 / Pentium Silver N6000",
+      "ram": "4–8 GB DDR4 or LPDDR4X",
+      "storage": [
+        "64 GB eMMC",
+        "128 GB eMMC",
+        "256 GB PCIe SSD"
+      ],
+      "battery": "42 Wh 3-cell Li-ion",
+      "os": "Windows 10 Home / Windows 11 Home / Windows 11 Pro Education",
+      "weight": "1.30 kg",
+      "dimensions": "325 × 217 × 18.0–18.4 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS VivoBook E14 Celeron/4GB/64GB Star Black",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Star Black"
+      },
+      {
+        "name": "ASUS VivoBook E14 Pentium/4GB/128GB Peacock Blue",
+        "processor": "Intel Pentium Silver N5030",
+        "ram": "4 GB",
+        "storage": "128 GB eMMC",
+        "color": "Peacock Blue"
+      },
+      {
+        "name": "ASUS VivoBook E14 Pentium/8GB/256GB Dreamy White",
+        "processor": "Intel Pentium Silver N6000",
+        "ram": "8 GB",
+        "storage": "256 GB PCIe SSD",
+        "color": "Dreamy White"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS VivoBook E15",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" HD (1366×768) or FHD (1920×1080) NanoEdge display",
+      "processor": "Intel Celeron N4020 / Celeron N4500 / Celeron N5100 / Pentium Silver N5030 / Pentium Silver N6000",
+      "ram": "4–8 GB DDR4 or LPDDR4X",
+      "storage": [
+        "64 GB eMMC",
+        "128 GB eMMC",
+        "256 GB PCIe SSD",
+        "512 GB PCIe SSD"
+      ],
+      "battery": "42 Wh 3-cell Li-ion",
+      "os": "Windows 10 Home / Windows 11 Home / Windows 11 Pro Education",
+      "weight": "1.57 kg",
+      "dimensions": "360.2 × 236.4 × 18.1 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS VivoBook E15 Celeron/4GB/128GB Star Black",
+        "processor": "Intel Celeron N4020",
+        "ram": "4 GB",
+        "storage": "128 GB eMMC",
+        "color": "Star Black"
+      },
+      {
+        "name": "ASUS VivoBook E15 Pentium/4GB/128GB Dreamy White",
+        "processor": "Intel Pentium Silver N5030",
+        "ram": "4 GB",
+        "storage": "128 GB eMMC",
+        "color": "Dreamy White"
+      },
+      {
+        "name": "ASUS VivoBook E15 Pentium/8GB/256GB Rose Pink",
+        "processor": "Intel Pentium Silver N6000",
+        "ram": "8 GB",
+        "storage": "256 GB PCIe SSD",
+        "color": "Rose Pink"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS Zenbook 16",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "16.0\" 4K (3840×2400) OLED 60 Hz or 3.2K (3200×2000) OLED 120 Hz touchscreen, 16:10",
+      "processor": "Intel Core i7-12700H / Core i9-12900H; later Core i9-13900H / i9-13905H",
+      "ram": "16–64 GB LPDDR5/LPDDR5X",
+      "storage": [
+        "512 GB PCIe 4.0 SSD",
+        "1 TB PCIe 4.0 SSD",
+        "2 TB PCIe 4.0 SSD"
+      ],
+      "battery": "96 Wh Li-ion",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "2.40 kg",
+      "dimensions": "355 × 251 × 16.9 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS Zenbook 16 i7/16GB/1TB Tech Black",
+        "processor": "Intel Core i7-12700H",
+        "ram": "16 GB",
+        "storage": "1 TB PCIe 4.0 SSD",
+        "color": "Tech Black"
+      },
+      {
+        "name": "ASUS Zenbook 16 i9/32GB/1TB Tech Black",
+        "processor": "Intel Core i9-12900H",
+        "ram": "32 GB",
+        "storage": "1 TB PCIe 4.0 SSD",
+        "color": "Tech Black"
+      },
+      {
+        "name": "ASUS Zenbook 16 i9/64GB/2TB Tech Black",
+        "processor": "Intel Core i9-13900H",
+        "ram": "64 GB",
+        "storage": "2 TB PCIe 4.0 SSD",
+        "color": "Tech Black"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS Zenbook 17 Fold",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "17.3\" foldable OLED (2560×1920) touchscreen, 4:3; 12.5\" mode at 1920×1280, 3:2",
+      "processor": "Intel Core i7-1250U",
+      "ram": "16 GB LPDDR5",
+      "storage": [
+        "1 TB PCIe 4.0 SSD"
+      ],
+      "battery": "75 Wh Li-ion",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "1.50 kg without keyboard; about 1.80 kg with keyboard",
+      "dimensions": "378.5 × 287.6 × 8.7–12.9 mm unfolded; 287.6 × 189.3 × 17.4–34.4 mm folded"
+    },
+    "variants": [
+      {
+        "name": "ASUS Zenbook 17 Fold i7/16GB/1TB Tech Black",
+        "processor": "Intel Core i7-1250U",
+        "ram": "16 GB",
+        "storage": "1 TB PCIe 4.0 SSD",
+        "color": "Tech Black"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS Zenbook Duo 15",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "15.6\" 4K UHD (3840×2160) OLED touchscreen plus 14.1\" 3840×1100 ScreenPad Plus secondary touchscreen",
+      "processor": "Intel Core i7-10870H / Core i9-10980HK; later Core i7-10870H / Core i9-10980HK with RTX 30-series SKUs by region",
+      "ram": "16–32 GB DDR4-2933",
+      "storage": [
+        "512 GB PCIe SSD",
+        "1 TB PCIe SSD"
+      ],
+      "battery": "92 Wh 8-cell Li-ion",
+      "os": "Windows 10 Home / Windows 10 Pro / Windows 11 Home",
+      "weight": "2.34 kg",
+      "dimensions": "359.8 × 249.2 × 21.5 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS Zenbook Duo 15 i7/16GB/512GB Celestial Blue",
+        "processor": "Intel Core i7-10870H",
+        "ram": "16 GB",
+        "storage": "512 GB PCIe SSD",
+        "color": "Celestial Blue"
+      },
+      {
+        "name": "ASUS Zenbook Duo 15 i7/32GB/1TB Celestial Blue",
+        "processor": "Intel Core i7-10870H",
+        "ram": "32 GB",
+        "storage": "1 TB PCIe SSD",
+        "color": "Celestial Blue"
+      },
+      {
+        "name": "ASUS Zenbook Duo 15 i9/32GB/1TB Celestial Blue",
+        "processor": "Intel Core i9-10980HK",
+        "ram": "32 GB",
+        "storage": "1 TB PCIe SSD",
+        "color": "Celestial Blue"
+      }
+    ]
+  },
+  {
+    "modelName": "ASUS Zenbook Duo 16",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "Dual 14.0\" OLED touch displays, 3K (2880×1800) 120 Hz or FHD+/WUXGA-class OLED options depending on UX8406 configuration",
+      "processor": "Intel Core Ultra 5 125H / Core Ultra 7 155H / Core Ultra 9 185H; later Core Ultra 9 285H on refreshed SKUs",
+      "ram": "16–32 GB LPDDR5X",
+      "storage": [
+        "512 GB PCIe 4.0 SSD",
+        "1 TB PCIe 4.0 SSD",
+        "2 TB PCIe 4.0 SSD"
+      ],
+      "battery": "75 Wh 4-cell Li-ion",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "1.35 kg system only; 1.60–1.65 kg with detachable keyboard",
+      "dimensions": "313.5 × 217.9 × 14.6–19.9 mm"
+    },
+    "variants": [
+      {
+        "name": "ASUS Zenbook Duo 16 Core Ultra 5/16GB/512GB Inkwell Gray",
+        "processor": "Intel Core Ultra 5 125H",
+        "ram": "16 GB",
+        "storage": "512 GB PCIe 4.0 SSD",
+        "color": "Inkwell Gray"
+      },
+      {
+        "name": "ASUS Zenbook Duo 16 Core Ultra 7/16GB/1TB Inkwell Gray",
+        "processor": "Intel Core Ultra 7 155H",
+        "ram": "16 GB",
+        "storage": "1 TB PCIe 4.0 SSD",
+        "color": "Inkwell Gray"
+      },
+      {
+        "name": "ASUS Zenbook Duo 16 Core Ultra 9/32GB/2TB Inkwell Gray",
+        "processor": "Intel Core Ultra 9 185H",
+        "ram": "32 GB",
+        "storage": "2 TB PCIe 4.0 SSD",
+        "color": "Inkwell Gray"
+      }
+    ]
+  }
+]

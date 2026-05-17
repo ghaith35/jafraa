@@ -17,6 +17,7 @@ import {
   Smartphone, Tablet as TabIcon, Laptop, Monitor, Cpu,
   Printer, Gamepad2, HelpCircle,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import type { UserRole } from "@prisma/client";
 
 type Locale = "fr" | "en" | "ar";
@@ -24,7 +25,9 @@ type Locale = "fr" | "en" | "ar";
 interface Category { id: string; key: string; nameFr: string; nameAr: string; nameEn: string; }
 interface Brand { id: string; name: string; logoUrl?: string | null; isGlobalDefault: boolean; categoryId: string; _count?: { modelFamilies?: number }; }
 interface Family { id: string; name: string; isGlobalDefault: boolean; brandId: string; }
-interface DeviceModel { id: string; name: string; releaseYear: number | null; imageUrl: string | null; specs: any; variants: any; }
+type ModelSpecs = Record<string, unknown> | null;
+type ModelVariant = { name?: unknown; storage?: unknown; color?: unknown };
+interface DeviceModel { id: string; name: string; releaseYear: number | null; imageUrl: string | null; specs: ModelSpecs; variants: unknown; }
 
 interface Props {
   categories: Category[];
@@ -37,7 +40,7 @@ interface Props {
   userRole: UserRole;
 }
 
-const CATEGORY_ICONS: Record<string, any> = {
+const CATEGORY_ICONS: Record<string, LucideIcon> = {
   phone: Smartphone, tablet: TabIcon, laptop: Laptop,
   all_in_one: Monitor, desktop_unit: Cpu,
   printer_laser: Printer, printer_cartridge: Printer, printer_risograph: Printer,
@@ -309,6 +312,7 @@ export function CatalogBrowser({
               <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
                 {filteredModels.map((m) => {
                   const selected = m.id === selectedModelId;
+                  const variants = Array.isArray(m.variants) ? (m.variants as ModelVariant[]) : [];
                   return (
                     <button key={m.id} onClick={() => setSelectedModelId(selected ? null : m.id)}
                       className={cn("rounded-xl border text-start w-full overflow-hidden transition-all", selected ? "border-primary bg-primary/5 ring-2 ring-primary/20 shadow-md" : "border-border bg-surface shadow-sm hover:shadow-md")}>
@@ -319,9 +323,9 @@ export function CatalogBrowser({
                         <p className={cn("text-xs font-semibold truncate", selected ? "text-primary" : "text-foreground")}>{m.name}</p>
                         {m.releaseYear && <p className="text-[11px] text-muted-foreground">{m.releaseYear}</p>}
                         {m.specs?.processor && <p className="text-[11px] text-muted-foreground truncate mt-0.5">{String(m.specs.processor)}</p>}
-                        {m.variants && m.variants.length > 0 && (
+                        {variants.length > 0 && (
                           <span onClick={(e) => { e.stopPropagation(); setVariantModel(m); }} className="inline-block text-[11px] font-medium text-primary hover:underline mt-1 cursor-pointer">
-                            {m.variants.length} {copy.variants}
+                            {variants.length} {copy.variants}
                           </span>
                         )}
                       </div>
@@ -346,9 +350,9 @@ export function CatalogBrowser({
 
       {/* Variants dialog */}
       <Dialog open={!!variantModel} onClose={() => setVariantModel(null)} title={variantModel?.name ?? ""} className="max-w-lg">
-        {variantModel?.variants && (
+        {Array.isArray(variantModel?.variants) && (
           <div className="space-y-1.5 max-h-80 overflow-y-auto">
-            {variantModel.variants.map((v: any, i: number) => (
+            {(variantModel.variants as ModelVariant[]).map((v, i) => (
               <div key={i} className="flex items-center gap-3 rounded-lg border border-border bg-surface px-3 py-2 text-sm">
                 <span className="flex-1 font-medium text-foreground">{String(v.name)}</span>
                 {v.storage && <span className="text-xs text-muted-foreground">{String(v.storage)}</span>}

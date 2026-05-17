@@ -1,0 +1,297 @@
+Fill in specs, variants, releaseYear, and imageUrl for ALL 181 missing Dell laptop models listed below.
+
+For EACH model, provide a JSON object with this EXACT structure:
+```json
+{
+  "name": "ASUS Vivobook 14 X1400",
+  "releaseYear": 2020,
+  "imageUrl": "https://dlcdnwebimgs.asus.com/files/media/202509/f2f518dc-7ed1-4975-9446-4567e8e14bbb/v3/features/images/large/1x/s1/main.jpg",
+  "specs": {
+    "display": "11.6\u201317.3\" HD/FHD/OLED display",
+    "processor": "Intel Core i3/i5/i7, Intel Pentium/Celeron, or AMD Ryzen",
+    "ram": "4\u201332 GB DDR3/DDR4/DDR5",
+    "storage": [
+      "128 GB SSD",
+      "256 GB SSD",
+      "512 GB SSD",
+      "1 TB HDD"
+    ],
+    "battery": "32\u201370 Wh",
+    "os": "Windows 8 / Windows 10 / Windows 11",
+    "weight": "1.2\u20132.3 kg",
+    "dimensions": "varies by X/K/S/M/TP chassis"
+  },
+  "variants": [
+    {
+      "name": "ASUS Vivobook 14 X1400 128 GB SSD Cool Silver",
+      "processor": "Intel Core i3",
+      "ram": "4 GB",
+      "storage": "128 GB SSD",
+      "color": "Cool Silver"
+    },
+    {
+      "name": "ASUS Vivobook 14 X1400 256 GB SSD Matte Gray",
+      "processor": "Intel Core i3",
+      "ram": "32 GB",
+      "storage": "256 GB SSD",
+      "color": "Matte Gray"
+    },
+    {
+      "name": "ASUS Vivobook 14 X1400 512 GB SSD Quiet Blue",
+      "processor": "Intel Core i3",
+      "ram": "32 GB",
+      "storage": "512 GB SSD",
+      "color": "Quiet Blue"
+    }
+  ]
+}
+```
+
+Rules:
+- releaseYear: the year that model was FIRST released (integer, e.g. 2021)
+- imageUrl: official product image URL (prefer manufacturer website CDN). If you cannot find one, use null.
+- specs: an object with these keys: display, processor, ram, storage, battery, os, weight, dimensions (use strings, storage can be an array)
+- variants: an array of objects, each with: name, processor, ram, storage, color. Include 2-4 common configurations.
+- Be SPECIFIC: use exact specs (e.g. "13.3" FHD IPS" not "13 inch"). Include actual CPU names, RAM configs, storage options.
+- If a model has multiple generations (e.g. "HP ProBook 430 G8"), the releaseYear should be the year that specific generation launched.
+
+Missing Dell models by family:
+
+## Alienware
+- Alienware 13 R3
+- Alienware 15 R3
+- Alienware 15 R4
+- Alienware 17 R4
+- Alienware 17 R5
+- Alienware m15 R1
+- Alienware m15 R2
+- Alienware m15 R3
+- Alienware m15 R4
+- Alienware m15 R5
+- Alienware m15 R6
+- Alienware m15 R7
+- Alienware m16 R1
+- Alienware m16 R2
+- Alienware m17 R1
+- Alienware m17 R2
+- Alienware m17 R3
+- Alienware m17 R4
+- Alienware m17 R5
+- Alienware m18 R1
+- Alienware m18 R2
+- Alienware x14 R1
+- Alienware x14 R2
+- Alienware x15 R1
+- Alienware x15 R2
+- Alienware x16 R1
+- Alienware x16 R2
+- Alienware x17 R1
+- Alienware x17 R2
+- Alienware Area-51m R1
+- Alienware Area-51m R2
+
+## Dell Pro
+- Dell Pro 13 Plus
+- Dell Pro 14 Base
+- Dell Pro 14 Max
+- Dell Pro 15 Base
+- Dell Pro 16 Premium
+- Dell Pro 16 Max
+- Dell Pro 18 Max
+
+## Dell Pro Base
+- Dell Pro 13 Base
+- Dell Pro 14 Base
+- Dell Pro 15 Base
+
+## Dell Pro Max
+- Dell Pro 14 Max
+- Dell Pro 16 Max
+- Dell Pro 18 Max
+
+## Dell Pro Plus
+- Dell Pro 13 Plus
+
+## Dell Pro Premium
+- Dell Pro 16 Premium
+
+## G Series
+- Dell G Series G3 15
+- Dell G Series G3 17
+- Dell G Series G5 15
+- Dell G Series G5 15 SE
+- Dell G Series G7 15
+- Dell G Series G7 17
+- Dell G Series G15 5510
+- Dell G Series G15 5511
+- Dell G Series G15 5515
+- Dell G Series G15 5520
+- Dell G Series G15 5525
+- Dell G Series G15 5530
+- Dell G Series G15 5535
+- Dell G Series G16 7620
+- Dell G Series G16 7630
+
+## Inspiron
+- Dell Inspiron 13 3000
+- Dell Inspiron 14 3000
+- Dell Inspiron 15 3000
+- Dell Inspiron 13 5000
+- Dell Inspiron 14 5000
+- Dell Inspiron 15 5000
+- Dell Inspiron 16 5000
+- Dell Inspiron 13 7000
+- Dell Inspiron 14 7000
+- Dell Inspiron 15 7000
+- Dell Inspiron 16 7000
+- Dell Inspiron 15 2-in-1
+- Dell Inspiron 3180
+- Dell Inspiron 3195
+- Dell Inspiron 3301
+- Dell Inspiron 3480
+- Dell Inspiron 3493
+- Dell Inspiron 3501
+- Dell Inspiron 3511
+- Dell Inspiron 3520
+- Dell Inspiron 3525
+- Dell Inspiron 3530
+- Dell Inspiron 3535
+- Dell Inspiron 3541
+- Dell Inspiron 3542
+- Dell Inspiron 3543
+- Dell Inspiron 3551
+- Dell Inspiron 3552
+- Dell Inspiron 3558
+- Dell Inspiron 3567
+- Dell Inspiron 3573
+- Dell Inspiron 3576
+- Dell Inspiron 3580
+- Dell Inspiron 3583
+- Dell Inspiron 3593
+- Dell Inspiron 5400
+- Dell Inspiron 5401
+- Dell Inspiron 5402
+- Dell Inspiron 5405
+- Dell Inspiron 5410
+- Dell Inspiron 5415
+- Dell Inspiron 5420
+- Dell Inspiron 5425
+- Dell Inspiron 5430
+- Dell Inspiron 5435
+- Dell Inspiron 5501
+- Dell Inspiron 5502
+- Dell Inspiron 5510
+- Dell Inspiron 5515
+- Dell Inspiron 5520
+- Dell Inspiron 5525
+- Dell Inspiron 5530
+- Dell Inspiron 5535
+- Dell Inspiron 5602
+- Dell Inspiron 5620
+- Dell Inspiron 5630
+- Dell Inspiron 7300
+- Dell Inspiron 7400
+- Dell Inspiron 7500
+- Dell Inspiron 7590
+- Dell Inspiron 7610
+- Dell Inspiron 7620
+- Dell Inspiron 7630
+
+## Latitude
+- Dell Latitude 7510
+- Dell Latitude 7540
+- Dell Latitude 7550
+
+## Vostro
+- Dell Vostro 3401
+- Dell Vostro 3410
+- Dell Vostro 3420
+- Dell Vostro 3430
+- Dell Vostro 3440
+- Dell Vostro 3501
+- Dell Vostro 3510
+- Dell Vostro 3520
+- Dell Vostro 3530
+- Dell Vostro 3540
+- Dell Vostro 3568
+- Dell Vostro 3580
+- Dell Vostro 3590
+- Dell Vostro 5401
+- Dell Vostro 5410
+- Dell Vostro 5420
+- Dell Vostro 5430
+- Dell Vostro 5459
+- Dell Vostro 5501
+- Dell Vostro 5510
+- Dell Vostro 5520
+- Dell Vostro 5530
+- Dell Vostro 5620
+- Dell Vostro 5630
+- Dell Vostro 7500
+- Dell Vostro 7510
+- Dell Vostro 7620
+
+## XPS
+- Dell XPS 12 2-in-1
+- Dell XPS 13 2-in-1
+- Dell XPS 9360
+- Dell XPS 9370
+- Dell XPS 9380
+- Dell XPS 7390
+- Dell XPS 9300
+- Dell XPS 9305
+- Dell XPS 9310
+- Dell XPS 9315
+- Dell XPS 9320
+- Dell XPS 9340
+- Dell XPS 9350
+- Dell XPS 9500
+- Dell XPS 9510
+- Dell XPS 9520
+- Dell XPS 9530
+- Dell XPS 9540
+- Dell XPS 9550
+- Dell XPS 9560
+- Dell XPS 9570
+- Dell XPS 7590
+- Dell XPS 9700
+- Dell XPS 9710
+- Dell XPS 9720
+- Dell XPS 9730
+- Dell XPS 9640
+
+
+Return the result as a JSON array. Each element should have: "modelName", "releaseYear", "imageUrl", "specs", "variants".
+The "modelName" must EXACTLY match the model names listed above (including spacing and punctuation).
+
+Example response format:
+```json
+[
+  {
+    "modelName": "HP ProBook 430 G8",
+    "releaseYear": 2020,
+    "imageUrl": "https://h480x360.cdn.hp.com/...",
+    "specs": {
+      "display": "13.3" FHD IPS",
+      "processor": "Intel Core i5-1135G7 / i7-1165G7",
+      "ram": "8–32 GB DDR4",
+      "storage": ["256 GB SSD", "512 GB SSD", "1 TB SSD"],
+      "battery": "45 Wh",
+      "os": "Windows 10 Pro / Windows 11 Pro",
+      "weight": "1.34 kg",
+      "dimensions": "312.6 × 227 × 17.9 mm"
+    },
+    "variants": [
+      {
+        "name": "HP ProBook 430 G8 i5/8GB/256GB Silver",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Silver"
+      },
+      ...
+    ]
+  },
+  ...
+]
+```

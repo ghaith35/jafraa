@@ -222,7 +222,7 @@ model Company {
   carts                 Cart[]
   stockAdjustments      StockAdjustment[]
   tradeinPurchases      TradeinPurchase[]
-
+  serviceTypes          ServiceType[]
 
   @@index([name])
   @@map("companies")
@@ -315,7 +315,6 @@ model Store {
   products          Product[]
   parts             Part[]
   services          Service[]
-  serviceCategories ServiceCategory[]
   servicePackages   ServicePackage[]
   suppliers         Supplier[]
   purchaseInvoices  PurchaseInvoice[]
@@ -599,11 +598,10 @@ model DeviceCategory {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  brands         DeviceBrand[]
+  brands              DeviceBrand[]
   inventoryCategories InventoryCategory[]
-  services       Service[]
-  serviceCategories ServiceCategory[]
-  servicePackages ServicePackage[]
+  serviceCategories   ServiceDeviceCategory[]
+  servicePackages     ServicePackage[]
   customerAssets CustomerAsset[]
   compatibleParts Part[]
   repairTickets  RepairTicket[]
@@ -864,6 +862,37 @@ model DocumentSequence {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// SERVICE TYPES  (company-scoped — base types seeded by SaaS, customizable per tenant)
+// ─────────────────────────────────────────────────────────────────────────────
+
+// baseKey values for the 8 SaaS base types (cannot be deleted by tenants):
+//   repair | software | unlocking | maintenance | diagnostic | upgrade | cleaning | other
+model ServiceType {
+  id        String   @id @default(cuid())
+  companyId String
+  // Stable key for the 8 SaaS base types — null for tenant custom types
+  baseKey   String?
+  // Base types cannot be deleted by tenants (only deactivated)
+  isBase    Boolean  @default(false)
+  nameFr    String
+  nameEn    String?
+  nameAr    String?
+  sortOrder Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  company  Company   @relation(fields: [companyId], references: [id])
+  services Service[]
+
+  // One record per base key per company; custom types (baseKey IS NULL) allow multiples
+  // PostgreSQL: NULL != NULL in unique indexes, so (companyId, NULL) is always non-unique
+  @@unique([companyId, baseKey])
+  @@index([companyId, isActive, sortOrder])
+  @@map("service_types")
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // INVENTORY  (store-scoped — products, parts, services)
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -1029,76 +1058,56 @@ model Part {
 // Labor/service item — diagnosis, screen replacement labor, cleaning, etc.
 // Store-scoped. No stock quantity.
 model Service {
-  id                      String   @id @default(cuid())
-  storeId                 String
-  serviceCategoryId       String?
-  deviceCategoryId        String?
-  name                    String
-  nameFr                  String?
-  nameEn                  String?
-  nameAr                  String?
+  id                       String   @id @default(cuid())
+  storeId                  String
+  // Service type group (repair, software, unlocking…) — company-scoped
+  serviceTypeId            String?
+  // FR name is the canonical required name; EN/AR are optional translations
+  nameFr                   String
+  nameEn                   String?
+  nameAr                   String?
   // SRV-000001 style, unique per store
-  sku                     String
-  category                String?
-  basePrice               Decimal?  @db.Decimal(12, 2)
-  costPrice               Decimal?  @db.Decimal(12, 2)
-  sellingPrice            Decimal  @db.Decimal(12, 2)
+  sku                      String
+  basePrice                Decimal? @db.Decimal(12, 2)
+  costPrice                Decimal? @db.Decimal(12, 2)
+  sellingPrice             Decimal  @db.Decimal(12, 2)
   estimatedDurationMinutes Int?
-  notes                   String?
-  isArchived              Boolean  @default(false)
-  createdAt               DateTime @default(now())
-  updatedAt               DateTime @updatedAt
+  notes                    String?
+  isArchived               Boolean  @default(false)
+  createdAt                DateTime @default(now())
+  updatedAt                DateTime @updatedAt
 
-  store Store @relation(fields: [storeId], references: [id])
-  serviceCategory ServiceCategory? @relation(fields: [serviceCategoryId], references: [id], onDelete: SetNull)
-  deviceCategory  DeviceCategory? @relation(fields: [deviceCategoryId], references: [id], onDelete: SetNull)
-  packageItems         ServicePackageItem[]
-  estimateLines        EstimateLine[]
-  posSaleLines         PosSaleLine[]
-  refundLines          RefundLine[]
-  groupPrices          ServiceGroupPrice[]
-
+  store           Store                 @relation(fields: [storeId], references: [id])
+  serviceType     ServiceType?          @relation(fields: [serviceTypeId], references: [id], onDelete: SetNull)
+  deviceCategories ServiceDeviceCategory[]
+  packageItems    ServicePackageItem[]
+  estimateLines   EstimateLine[]
+  posSaleLines    PosSaleLine[]
+  refundLines     RefundLine[]
+  groupPrices     ServiceGroupPrice[]
 
   @@unique([storeId, sku])
   @@index([storeId, isArchived])
-  @@index([storeId, serviceCategoryId])
-  @@index([storeId, deviceCategoryId])
+  @@index([storeId, serviceTypeId])
   @@map("services")
 }
 
-model ServiceCategory {
-  id               String   @id @default(cuid())
-  storeId          String
-  deviceCategoryId String?
-  parentId         String?
-  namePath         String
-  nameFr           String
-  nameEn           String?
-  nameAr           String?
-  sortOrder        Int      @default(0)
-  isActive         Boolean  @default(true)
-  isArchived       Boolean  @default(false)
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+model ServiceDeviceCategory {
+  serviceId        String
+  deviceCategoryId String
 
-  store          Store           @relation(fields: [storeId], references: [id])
-  deviceCategory DeviceCategory? @relation(fields: [deviceCategoryId], references: [id], onDelete: SetNull)
-  parent         ServiceCategory? @relation("ServiceCategoryTree", fields: [parentId], references: [id], onDelete: SetNull)
-  children       ServiceCategory[] @relation("ServiceCategoryTree")
-  services       Service[]
-  packages       ServicePackage[]
+  service        Service        @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  deviceCategory DeviceCategory @relation(fields: [deviceCategoryId], references: [id], onDelete: Cascade)
 
-  @@unique([storeId, namePath])
-  @@index([storeId, deviceCategoryId, isActive, sortOrder])
-  @@index([storeId, parentId])
-  @@map("service_categories")
+  @@id([serviceId, deviceCategoryId])
+  @@index([deviceCategoryId])
+  @@map("service_device_categories")
 }
 
 model ServicePackage {
   id               String   @id @default(cuid())
   storeId          String
   deviceCategoryId String?
-  serviceCategoryId String?
   name             String
   description      String?
   basePrice        Decimal  @default(0) @db.Decimal(12, 2)
@@ -1108,13 +1117,11 @@ model ServicePackage {
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
 
-  store           Store           @relation(fields: [storeId], references: [id])
-  deviceCategory  DeviceCategory? @relation(fields: [deviceCategoryId], references: [id], onDelete: SetNull)
-  serviceCategory ServiceCategory? @relation(fields: [serviceCategoryId], references: [id], onDelete: SetNull)
-  items           ServicePackageItem[]
+  store          Store           @relation(fields: [storeId], references: [id])
+  deviceCategory DeviceCategory? @relation(fields: [deviceCategoryId], references: [id], onDelete: SetNull)
+  items          ServicePackageItem[]
 
   @@index([storeId, deviceCategoryId, isActive])
-  @@index([storeId, serviceCategoryId])
   @@map("service_packages")
 }
 

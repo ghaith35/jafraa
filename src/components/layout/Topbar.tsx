@@ -1,10 +1,12 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { Bell, Menu, Search } from "lucide-react";
 import type { UserRole } from "@prisma/client";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
 import { useAppI18n } from "@/lib/i18n/ui";
+import type { AppTranslationKey } from "@/lib/i18n/ui-core";
 
 interface Props {
   user: {
@@ -14,6 +16,28 @@ interface Props {
   company: { name: string };
   onMobileMenuToggle: () => void;
 }
+
+// Ordered longest-first so more specific paths match before their parents
+const ROUTE_TITLES: { path: string; key: AppTranslationKey }[] = [
+  { path: "/dashboard/settings/catalog", key: "nav.catalog" as AppTranslationKey },
+  { path: "/dashboard/technician/archived", key: "nav.archived" as AppTranslationKey },
+  { path: "/dashboard/inventory/accessories", key: "nav.inventory.accessories" as AppTranslationKey },
+  { path: "/dashboard/inventory/recovered-parts", key: "nav.inventory.recoveredParts" as AppTranslationKey },
+  { path: "/dashboard/inventory/purchases", key: "nav.inventory.purchaseInvoices" as AppTranslationKey },
+  { path: "/dashboard/inventory/parts", key: "nav.inventory.parts" as AppTranslationKey },
+  { path: "/dashboard/pos/cash-register", key: "nav.cashRegister" as AppTranslationKey },
+  { path: "/dashboard/inventory", key: "nav.inventory" as AppTranslationKey },
+  { path: "/dashboard/technician", key: "nav.technician" as AppTranslationKey },
+  { path: "/dashboard/customers", key: "nav.customers" as AppTranslationKey },
+  { path: "/dashboard/suppliers", key: "nav.inventory.suppliers" as AppTranslationKey },
+  { path: "/dashboard/services", key: "nav.services" as AppTranslationKey },
+  { path: "/dashboard/repairs", key: "nav.repairs" as AppTranslationKey },
+  { path: "/dashboard/reports", key: "nav.reports" as AppTranslationKey },
+  { path: "/dashboard/expenses", key: "nav.expenses" as AppTranslationKey },
+  { path: "/dashboard/settings", key: "nav.settings" as AppTranslationKey },
+  { path: "/dashboard/pos", key: "nav.pos" as AppTranslationKey },
+  { path: "/dashboard", key: "nav.dashboard" as AppTranslationKey },
+];
 
 function userInitials(name: string): string {
   return name
@@ -25,6 +49,14 @@ function userInitials(name: string): string {
 
 export function Topbar({ user, onMobileMenuToggle }: Props) {
   const { t } = useAppI18n();
+  const pathname = usePathname();
+
+  const pageTitle = (() => {
+    const match = ROUTE_TITLES.find(
+      ({ path }) => pathname === path || pathname.startsWith(path + "/")
+    );
+    return match ? t(match.key) : t("nav.dashboard");
+  })();
 
   return (
     <header className="sticky top-0 z-20 flex h-14 items-center gap-2 border-b border-[var(--border)] bg-[var(--bg-glass)] backdrop-blur-xl px-3 sm:px-5">
@@ -37,9 +69,9 @@ export function Topbar({ user, onMobileMenuToggle }: Props) {
         <Menu className="h-5 w-5" />
       </button>
 
-      {/* Page title */}
+      {/* Dynamic page title */}
       <div className="hidden text-[15px] font-semibold text-[var(--text-primary)] sm:block">
-        {t("nav.dashboard")}
+        {pageTitle}
       </div>
 
       {/* Right actions */}

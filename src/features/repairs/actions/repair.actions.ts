@@ -335,46 +335,85 @@ export async function createRepairTicket(
 
       // If the catalog did not contain the model, keep the ticket usable now and
       // create a pending suggestion so the owner can approve/merge it later.
-      if (!d.deviceFamilyId && d.customDeviceModel?.trim()) {
-        const existingPendingSuggestion = await tx.deviceCatalogSuggestion.findFirst({
-          where: {
-            companyId: session.companyId,
-            storeId,
-            status: "pending",
-            modelName: { equals: d.customDeviceModel.trim(), mode: "insensitive" },
-            ...(d.deviceCategoryId ? { categoryId: d.deviceCategoryId } : {}),
-            ...(d.deviceBrandId ? { brandId: d.deviceBrandId } : {}),
-          },
-          select: { id: true },
-        });
+      if (d.customDeviceModel?.trim()) {
+        const modelName = d.customDeviceModel.trim();
+        let createSuggestion = true;
 
-        if (!existingPendingSuggestion) {
-          await tx.deviceCatalogSuggestion.create({
-            data: {
+        // When the family is selected and the custom model matches the family
+        // name, it was auto-filled — nothing new to suggest.
+        if (d.deviceFamilyId) {
+          const selectedFamily = await tx.deviceModelFamily.findFirst({
+            where: {
+              id: d.deviceFamilyId,
+              ...(d.deviceBrandId ? { brandId: d.deviceBrandId } : {}),
+              OR: [
+                { isGlobalDefault: true },
+                { companyId: session.companyId, storeId },
+                { companyId: session.companyId, storeId: null },
+              ],
+            },
+            select: { name: true },
+          });
+          if (selectedFamily && selectedFamily.name.toLowerCase() === modelName.toLowerCase()) {
+            createSuggestion = false;
+          }
+
+          if (createSuggestion) {
+            const existingModel = await tx.deviceModel.findFirst({
+              where: {
+                familyId: d.deviceFamilyId,
+                name: { equals: modelName, mode: "insensitive" },
+                isActive: true,
+              },
+              select: { id: true },
+            });
+            if (existingModel) createSuggestion = false;
+          }
+        }
+
+        if (createSuggestion) {
+          const existingPendingSuggestion = await tx.deviceCatalogSuggestion.findFirst({
+            where: {
               companyId: session.companyId,
               storeId,
-              createdByUserId: session.sub,
-              categoryId: d.deviceCategoryId || null,
-              categoryKey: selectedCategoryKey,
-              brandId: d.deviceBrandId || null,
-              brandName: d.customDeviceBrand || selectedBrandName,
-              modelName: d.customDeviceModel.trim(),
-              printerType: d.printerType || null,
-              seriesName: d.laptopSeriesName || null,
-              modelLine: d.laptopModelLine || null,
-              generation: d.laptopGeneration || null,
-              processor: d.laptopProcessor || null,
-              ram: d.laptopRam || null,
-              storage: d.laptopDisk || d.deviceStorageRam || null,
-              gpu: d.laptopGpu || null,
-              notes: [
-                d.diagnosisNote ? `Diagnostic: ${d.diagnosisNote}` : "",
-                d.imeiSerial ? `Serial/IMEI: ${d.imeiSerial}` : "",
-              ].filter(Boolean).join("\n") || null,
-              source: "repair_intake",
               status: "pending",
+              modelName: { equals: modelName, mode: "insensitive" },
+              ...(d.deviceCategoryId ? { categoryId: d.deviceCategoryId } : {}),
+              ...(d.deviceBrandId ? { brandId: d.deviceBrandId } : {}),
+              ...(d.deviceFamilyId ? { familyId: d.deviceFamilyId } : {}),
             },
+            select: { id: true },
           });
+
+          if (!existingPendingSuggestion) {
+            await tx.deviceCatalogSuggestion.create({
+              data: {
+                companyId: session.companyId,
+                storeId,
+                createdByUserId: session.sub,
+                categoryId: d.deviceCategoryId || null,
+                categoryKey: selectedCategoryKey,
+                brandId: d.deviceBrandId || null,
+                familyId: d.deviceFamilyId || null,
+                brandName: d.customDeviceBrand || selectedBrandName,
+                modelName,
+                printerType: d.printerType || null,
+                seriesName: d.laptopSeriesName || null,
+                modelLine: d.laptopModelLine || null,
+                generation: d.laptopGeneration || null,
+                processor: d.laptopProcessor || null,
+                ram: d.laptopRam || null,
+                storage: d.laptopDisk || d.deviceStorageRam || null,
+                gpu: d.laptopGpu || null,
+                notes: [
+                  d.diagnosisNote ? `Diagnostic: ${d.diagnosisNote}` : "",
+                  d.imeiSerial ? `Serial/IMEI: ${d.imeiSerial}` : "",
+                ].filter(Boolean).join("\n") || null,
+                source: "repair_intake",
+                status: "pending",
+              },
+            });
+          }
         }
       }
 

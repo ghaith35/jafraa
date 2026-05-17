@@ -1,0 +1,4 @@
+Build and maintain a Samsung phone repair catalog.
+Use GSMArena model pages as the primary public source for release year, product images, display, chipset/processor, RAM, storage, battery, OS, weight, and dimensions.
+Represent repair variants as concrete RAM + storage + color rows, with modelNumber/market/connectivity when public model-number data exists.
+Avoid placeholder variants with null RAM or null storage.

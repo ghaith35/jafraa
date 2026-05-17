@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Plus, Search, X } from "lucide-react";
-import { PageHeader } from "@/components/shared/PageHeader";
 import { Pagination } from "@/components/shared/Pagination";
 import { getAppI18n } from "@/lib/i18n/server";
 import { getSession } from "@/lib/auth/session";
@@ -68,12 +67,8 @@ export default async function RepairsPage(props: {
 
   return (
     <div className="mx-auto max-w-7xl space-y-5">
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <PageHeader
-          title={t("repairs.title")}
-          description={t("repairs.subtitle")}
-        />
+      {/* New ticket button */}
+      <div className="flex justify-end">
         <Link
           href="/dashboard/repairs/new"
           className="inline-flex h-9 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-[var(--shadow-xs)] transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"

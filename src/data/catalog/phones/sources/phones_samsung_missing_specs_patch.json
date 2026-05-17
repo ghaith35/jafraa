@@ -1,0 +1,734 @@
+{
+  "category": "phone",
+  "brands": [
+    {
+      "name": "Samsung",
+      "logo_url": "https://logo.clearbit.com/samsung.com",
+      "families": [
+        {
+          "name": "Galaxy S",
+          "models": [
+            {
+              "name": "Samsung Galaxy S6",
+              "release_year": 2015,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s6.jpg",
+              "specs": {
+                "display": "5.1\" Super AMOLED, 1440×2560",
+                "processor": "Exynos 7420 Octa",
+                "ram": "3 GB",
+                "storage": ["32 GB", "64 GB", "128 GB"],
+                "battery": "2550 mAh",
+                "os": "Android 5.0.2, TouchWiz UI",
+                "weight": "138 g",
+                "dimensions": "143.4 × 70.5 × 6.8 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S6 Edge",
+              "release_year": 2015,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s6-edge.jpg",
+              "specs": {
+                "display": "5.1\" Super AMOLED, 1440×2560",
+                "processor": "Exynos 7420 Octa",
+                "ram": "3 GB",
+                "storage": ["32 GB", "64 GB", "128 GB"],
+                "battery": "2600 mAh",
+                "os": "Android 5.0.2, TouchWiz UI",
+                "weight": "132 g",
+                "dimensions": "142.1 × 70.1 × 7.0 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S7",
+              "release_year": 2016,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s7--.jpg",
+              "specs": {
+                "display": "5.1\" Super AMOLED, 1440×2560",
+                "processor": "Exynos 8890 Octa / Snapdragon 820",
+                "ram": "4 GB",
+                "storage": ["32 GB", "64 GB"],
+                "battery": "3000 mAh",
+                "os": "Android 6.0, TouchWiz UI",
+                "weight": "152 g",
+                "dimensions": "142.4 × 69.6 × 7.9 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S7 Edge",
+              "release_year": 2016,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s7-edge-.jpg",
+              "specs": {
+                "display": "5.5\" Super AMOLED, 1440×2560",
+                "processor": "Exynos 8890 Octa / Snapdragon 820",
+                "ram": "4 GB",
+                "storage": ["32 GB", "64 GB", "128 GB"],
+                "battery": "3600 mAh",
+                "os": "Android 6.0, TouchWiz UI",
+                "weight": "157 g",
+                "dimensions": "150.9 × 72.6 × 7.7 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S8",
+              "release_year": 2017,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s8-.jpg",
+              "specs": {
+                "display": "5.8\" Super AMOLED, 1440×2960",
+                "processor": "Exynos 8895 / Snapdragon 835",
+                "ram": "4 GB",
+                "storage": ["64 GB"],
+                "battery": "3000 mAh",
+                "os": "Android 7.0, Samsung Experience 8.1",
+                "weight": "155 g",
+                "dimensions": "148.9 × 68.1 × 8.0 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S8+",
+              "release_year": 2017,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s8-plus-.jpg",
+              "specs": {
+                "display": "6.2\" Super AMOLED, 1440×2960",
+                "processor": "Exynos 8895 / Snapdragon 835",
+                "ram": "4/6 GB",
+                "storage": ["64 GB", "128 GB"],
+                "battery": "3500 mAh",
+                "os": "Android 7.0, Samsung Experience 8.1",
+                "weight": "173 g",
+                "dimensions": "159.5 × 73.4 × 8.1 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S9",
+              "release_year": 2018,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s9-.jpg",
+              "specs": {
+                "display": "5.8\" Super AMOLED, 1440×2960",
+                "processor": "Exynos 9810 / Snapdragon 845",
+                "ram": "4 GB",
+                "storage": ["64 GB", "128 GB", "256 GB"],
+                "battery": "3000 mAh",
+                "os": "Android 8.0, Samsung Experience 9.0",
+                "weight": "163 g",
+                "dimensions": "147.7 × 68.7 × 8.5 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S9+",
+              "release_year": 2018,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s9-plus-blue.jpg",
+              "specs": {
+                "display": "6.2\" Super AMOLED, 1440×2960",
+                "processor": "Exynos 9810 / Snapdragon 845",
+                "ram": "6 GB",
+                "storage": ["64 GB", "128 GB", "256 GB"],
+                "battery": "3500 mAh",
+                "os": "Android 8.0, Samsung Experience 9.0",
+                "weight": "189 g",
+                "dimensions": "158.1 × 73.8 × 8.5 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S10",
+              "release_year": 2019,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s10.jpg",
+              "specs": {
+                "display": "6.1\" Dynamic AMOLED, 1440×3040, HDR10+",
+                "processor": "Exynos 9820 / Snapdragon 855",
+                "ram": "8 GB",
+                "storage": ["128 GB", "512 GB"],
+                "battery": "3400 mAh",
+                "os": "Android 9.0, One UI",
+                "weight": "157 g",
+                "dimensions": "149.9 × 70.4 × 7.8 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S10+",
+              "release_year": 2019,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s10-plus-new.jpg",
+              "specs": {
+                "display": "6.4\" Dynamic AMOLED, 1440×3040, HDR10+",
+                "processor": "Exynos 9820 / Snapdragon 855",
+                "ram": "8/12 GB",
+                "storage": ["128 GB", "512 GB", "1 TB"],
+                "battery": "4100 mAh",
+                "os": "Android 9.0, One UI",
+                "weight": "175 g",
+                "dimensions": "157.6 × 74.1 × 7.8 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S10e",
+              "release_year": 2019,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s10e.jpg",
+              "specs": {
+                "display": "5.8\" Dynamic AMOLED, 1080×2280, HDR10+",
+                "processor": "Exynos 9820 / Snapdragon 855",
+                "ram": "6/8 GB",
+                "storage": ["128 GB", "256 GB"],
+                "battery": "3100 mAh",
+                "os": "Android 9.0, One UI",
+                "weight": "150 g",
+                "dimensions": "142.2 × 69.9 × 7.9 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S20",
+              "release_year": 2020,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s20.jpg",
+              "specs": {
+                "display": "6.2\" Dynamic AMOLED 2X, 1440×3200, 120Hz",
+                "processor": "Exynos 990 / Snapdragon 865 5G",
+                "ram": "8/12 GB",
+                "storage": ["128 GB"],
+                "battery": "4000 mAh",
+                "os": "Android 10, One UI 2",
+                "weight": "163 g",
+                "dimensions": "151.7 × 69.1 × 7.9 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S20+",
+              "release_year": 2020,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s20-plus.jpg",
+              "specs": {
+                "display": "6.7\" Dynamic AMOLED 2X, 1440×3200, 120Hz",
+                "processor": "Exynos 990 / Snapdragon 865 5G",
+                "ram": "8/12 GB",
+                "storage": ["128 GB", "256 GB", "512 GB"],
+                "battery": "4500 mAh",
+                "os": "Android 10, One UI 2",
+                "weight": "186 g",
+                "dimensions": "161.9 × 73.7 × 7.8 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S20 Ultra",
+              "release_year": 2020,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s20-ultra.jpg",
+              "specs": {
+                "display": "6.9\" Dynamic AMOLED 2X, 1440×3200, 120Hz",
+                "processor": "Exynos 990 / Snapdragon 865 5G",
+                "ram": "12/16 GB",
+                "storage": ["128 GB", "256 GB", "512 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 10, One UI 2",
+                "weight": "222 g",
+                "dimensions": "166.9 × 76.0 × 8.8 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy S20 FE",
+              "release_year": 2020,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s20-fe-5g.jpg",
+              "specs": {
+                "display": "6.5\" Super AMOLED, 1080×2400, 120Hz",
+                "processor": "Exynos 990 / Snapdragon 865",
+                "ram": "6/8 GB",
+                "storage": ["128 GB", "256 GB"],
+                "battery": "4500 mAh",
+                "os": "Android 10, One UI 2.5",
+                "weight": "190 g",
+                "dimensions": "159.8 × 74.5 × 8.4 mm"
+              },
+              "variants": []
+            }
+          ]
+        },
+        {
+          "name": "Galaxy A",
+          "models": [
+            {
+              "name": "Samsung Galaxy A01",
+              "release_year": 2020,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a01.jpg",
+              "specs": {
+                "display": "5.7\" PLS TFT, 720×1520",
+                "processor": "Snapdragon 439",
+                "ram": "2 GB",
+                "storage": ["16 GB", "32 GB"],
+                "battery": "3000 mAh",
+                "os": "Android 10, One UI 2",
+                "weight": "149 g",
+                "dimensions": "146.2 × 70.9 × 8.3 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A02",
+              "release_year": 2021,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a02.jpg",
+              "specs": {
+                "display": "6.5\" PLS IPS, 720×1600",
+                "processor": "MediaTek MT6739W",
+                "ram": "2/3 GB",
+                "storage": ["32 GB", "64 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 10, One UI 2",
+                "weight": "206 g",
+                "dimensions": "164.0 × 75.9 × 9.1 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A02s",
+              "release_year": 2020,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a02s-sm-a025-new.jpg",
+              "specs": {
+                "display": "6.5\" PLS IPS, 720×1600",
+                "processor": "Snapdragon 450",
+                "ram": "2/3/4 GB",
+                "storage": ["32 GB", "64 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 10, One UI 2.5",
+                "weight": "196 g",
+                "dimensions": "164.2 × 75.9 × 9.1 mm"
+              },
+              "variants": []
+            }
+            ,
+            {
+              "name": "Samsung Galaxy A03",
+              "release_year": 2021,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a03.jpg",
+              "specs": {
+                "display": "6.5\" PLS LCD, 720×1600",
+                "processor": "Unisoc T606",
+                "ram": "3/4 GB",
+                "storage": ["32 GB", "64 GB", "128 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 11, One UI 3.1 Core",
+                "weight": "196 g",
+                "dimensions": "164.2 × 75.9 × 9.1 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A03s",
+              "release_year": 2021,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a03s.jpg",
+              "specs": {
+                "display": "6.5\" PLS LCD, 720×1600",
+                "processor": "MediaTek Helio P35",
+                "ram": "2/3/4 GB",
+                "storage": ["32 GB", "64 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 11, One UI 3.1 Core",
+                "weight": "196 g",
+                "dimensions": "164.2 × 75.9 × 9.1 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A04",
+              "release_year": 2022,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a04.jpg",
+              "specs": {
+                "display": "6.5\" PLS LCD, 720×1600",
+                "processor": "Exynos 850",
+                "ram": "3/4/6/8 GB",
+                "storage": ["32 GB", "64 GB", "128 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 12, One UI Core 4.1",
+                "weight": "192 g",
+                "dimensions": "164.4 × 76.3 × 9.1 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A04s",
+              "release_year": 2022,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a04s.jpg",
+              "specs": {
+                "display": "6.5\" PLS LCD, 720×1600, 90Hz",
+                "processor": "Exynos 850",
+                "ram": "3/4 GB",
+                "storage": ["32 GB", "64 GB", "128 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 12, One UI Core 4.1",
+                "weight": "195 g",
+                "dimensions": "164.7 × 76.7 × 9.1 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A05",
+              "release_year": 2023,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a05.jpg",
+              "specs": {
+                "display": "6.7\" PLS LCD, 720×1600",
+                "processor": "MediaTek Helio G85",
+                "ram": "4/6 GB",
+                "storage": ["64 GB", "128 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 13",
+                "weight": "195 g",
+                "dimensions": "168.8 × 78.2 × 8.8 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A05s",
+              "release_year": 2023,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a05s.jpg",
+              "specs": {
+                "display": "6.7\" PLS LCD, 1080×2400, 90Hz",
+                "processor": "Snapdragon 680 4G",
+                "ram": "4/6 GB",
+                "storage": ["64 GB", "128 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 13, One UI Core 5.1",
+                "weight": "194 g",
+                "dimensions": "168.0 × 77.8 × 8.8 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A06",
+              "release_year": 2024,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a06-1.jpg",
+              "specs": {
+                "display": "6.7\" PLS LCD, 720×1600, 90Hz",
+                "processor": "MediaTek Helio G85",
+                "ram": "4/6 GB",
+                "storage": ["64 GB", "128 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 14, One UI 6.1",
+                "weight": "189 g",
+                "dimensions": "167.3 × 77.3 × 8.0 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A26 5G",
+              "release_year": 2025,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a26.jpg",
+              "specs": {
+                "display": "6.7\" Super AMOLED, 1080×2340, 120Hz",
+                "processor": "Exynos 1380",
+                "ram": "6/8 GB",
+                "storage": ["128 GB", "256 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 15, One UI 7",
+                "weight": "200 g",
+                "dimensions": "164.0 × 77.5 × 7.7 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A36 5G",
+              "release_year": 2025,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a36.jpg",
+              "specs": {
+                "display": "6.7\" Super AMOLED, 1080×2340, 120Hz",
+                "processor": "Snapdragon 6 Gen 3",
+                "ram": "6/8/12 GB",
+                "storage": ["128 GB", "256 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 15, One UI 7",
+                "weight": "195 g",
+                "dimensions": "162.9 × 78.2 × 7.4 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A56 5G",
+              "release_year": 2025,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a56.jpg",
+              "specs": {
+                "display": "6.7\" Super AMOLED, 1080×2340, 120Hz",
+                "processor": "Exynos 1580",
+                "ram": "8/12 GB",
+                "storage": ["128 GB", "256 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 15, One UI 7",
+                "weight": "198 g",
+                "dimensions": "162.2 × 77.5 × 7.4 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A70",
+              "release_year": 2019,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a70.jpg",
+              "specs": {
+                "display": "6.7\" Super AMOLED, 1080×2400",
+                "processor": "Snapdragon 675",
+                "ram": "6/8 GB",
+                "storage": ["128 GB"],
+                "battery": "4500 mAh",
+                "os": "Android 9.0, One UI",
+                "weight": "183 g",
+                "dimensions": "164.3 × 76.7 × 7.9 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A71",
+              "release_year": 2019,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a71.jpg",
+              "specs": {
+                "display": "6.7\" Super AMOLED Plus, 1080×2400",
+                "processor": "Snapdragon 730",
+                "ram": "6/8 GB",
+                "storage": ["128 GB"],
+                "battery": "4500 mAh",
+                "os": "Android 10, One UI 2",
+                "weight": "179 g",
+                "dimensions": "163.6 × 76.0 × 7.7 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A72",
+              "release_year": 2021,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a72-4g.jpg",
+              "specs": {
+                "display": "6.7\" Super AMOLED, 1080×2400, 90Hz",
+                "processor": "Snapdragon 720G",
+                "ram": "6/8 GB",
+                "storage": ["128 GB", "256 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 11, One UI 3.1",
+                "weight": "203 g",
+                "dimensions": "165.0 × 77.4 × 8.4 mm"
+              },
+              "variants": []
+            },
+            {
+              "name": "Samsung Galaxy A73 5G",
+              "release_year": 2022,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a73-5g.jpg",
+              "specs": {
+                "display": "6.7\" Super AMOLED Plus, 1080×2400, 120Hz",
+                "processor": "Snapdragon 778G 5G",
+                "ram": "6/8 GB",
+                "storage": ["128 GB", "256 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 12, One UI 4.1",
+                "weight": "181 g",
+                "dimensions": "163.7 × 76.1 × 7.6 mm"
+              },
+              "variants": []
+            }
+          ]
+        },
+        {
+          "name": "Galaxy F",
+          "models": [
+            {
+              "name": "Samsung Galaxy F12",
+              "release_year": 2021,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f12.jpg",
+              "specs": {
+                "display": "6.5\" PLS IPS, 720×1600, 90Hz",
+                "processor": "Exynos 850",
+                "ram": "4 GB",
+                "storage": ["64 GB", "128 GB"],
+                "battery": "6000 mAh",
+                "os": "Android 11, One UI 3.1",
+                "weight": "221 g",
+                "dimensions": "164.0 × 75.9 × 9.7 mm"
+              }
+            },
+            {
+              "name": "Samsung Galaxy F13",
+              "release_year": 2022,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f13.jpg",
+              "specs": {
+                "display": "6.6\" PLS LCD, 1080×2408",
+                "processor": "Exynos 850",
+                "ram": "4 GB",
+                "storage": ["64 GB", "128 GB"],
+                "battery": "6000 mAh",
+                "os": "Android 12, One UI Core 4.1",
+                "weight": "207 g",
+                "dimensions": "165.4 × 76.9 × 9.3 mm"
+              }
+            },
+            {
+              "name": "Samsung Galaxy F14 5G",
+              "release_year": 2023,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f14.jpg",
+              "specs": {
+                "display": "6.6\" PLS LCD, 1080×2408, 90Hz",
+                "processor": "Exynos 1330",
+                "ram": "4/6 GB",
+                "storage": ["128 GB"],
+                "battery": "6000 mAh",
+                "os": "Android 13, One UI Core 5.1",
+                "weight": "206 g",
+                "dimensions": "166.8 × 77.2 × 9.4 mm"
+              }
+            },
+            {
+              "name": "Samsung Galaxy F22",
+              "release_year": 2021,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f22.jpg",
+              "specs": {
+                "display": "6.4\" Super AMOLED, 720×1600, 90Hz",
+                "processor": "MediaTek Helio G80",
+                "ram": "4/6 GB",
+                "storage": ["64 GB", "128 GB"],
+                "battery": "6000 mAh",
+                "os": "Android 11, One UI Core 3.1",
+                "weight": "203 g",
+                "dimensions": "160.0 × 74.0 × 9.4 mm"
+              }
+            },
+            {
+              "name": "Samsung Galaxy F23 5G",
+              "release_year": 2022,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f23-5g.jpg",
+              "specs": {
+                "display": "6.6\" TFT LCD, 1080×2408, 120Hz",
+                "processor": "Snapdragon 750G 5G",
+                "ram": "4/6 GB",
+                "storage": ["128 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 12, One UI 4.1",
+                "weight": "198 g",
+                "dimensions": "165.5 × 77.0 × 8.4 mm"
+              }
+            },
+            {
+              "name": "Samsung Galaxy F34 5G",
+              "release_year": 2023,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f34.jpg",
+              "specs": {
+                "display": "6.5\" Super AMOLED, 1080×2340, 120Hz",
+                "processor": "Exynos 1280",
+                "ram": "6/8 GB",
+                "storage": ["128 GB"],
+                "battery": "6000 mAh",
+                "os": "Android 13, One UI 5.1",
+                "weight": "208 g",
+                "dimensions": "161.7 × 77.2 × 8.8 mm"
+              }
+            },
+            {
+              "name": "Samsung Galaxy F54 5G",
+              "release_year": 2023,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f54-5g.jpg",
+              "specs": {
+                "display": "6.7\" Super AMOLED Plus, 1080×2400, 120Hz",
+                "processor": "Exynos 1380",
+                "ram": "8 GB",
+                "storage": ["256 GB"],
+                "battery": "6000 mAh",
+                "os": "Android 13, One UI 5.1",
+                "weight": "199 g",
+                "dimensions": "164.9 × 77.3 × 8.4 mm"
+              }
+            },
+            {
+              "name": "Samsung Galaxy F55 5G",
+              "release_year": 2024,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f55.jpg",
+              "specs": {
+                "display": "6.7\" Super AMOLED Plus, 1080×2400, 120Hz",
+                "processor": "Snapdragon 7 Gen 1",
+                "ram": "8/12 GB",
+                "storage": ["128 GB", "256 GB"],
+                "battery": "5000 mAh",
+                "os": "Android 14, One UI 6.1",
+                "weight": "180 g",
+                "dimensions": "163.9 × 76.5 × 7.8 mm"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Galaxy Note",
+          "models": [
+            {
+              "name": "Samsung Galaxy Note8",
+              "release_year": 2017,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note-8.jpg",
+              "specs": {
+                "display": "6.3\" Super AMOLED, 1440×2960",
+                "processor": "Exynos 8895 / Snapdragon 835",
+                "ram": "6 GB",
+                "storage": ["64 GB", "128 GB", "256 GB"],
+                "battery": "3300 mAh",
+                "os": "Android 7.1.1, Samsung Experience 8.5",
+                "weight": "195 g",
+                "dimensions": "162.5 × 74.8 × 8.6 mm"
+              }
+            },
+            {
+              "name": "Samsung Galaxy Note9",
+              "release_year": 2018,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note-9.jpg",
+              "specs": {
+                "display": "6.4\" Super AMOLED, 1440×2960",
+                "processor": "Exynos 9810 / Snapdragon 845",
+                "ram": "6/8 GB",
+                "storage": ["128 GB", "512 GB"],
+                "battery": "4000 mAh",
+                "os": "Android 8.1, Samsung Experience 9.5",
+                "weight": "201 g",
+                "dimensions": "161.9 × 76.4 × 8.8 mm"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Galaxy Z Fold",
+          "models": [
+            {
+              "name": "Samsung Galaxy Fold",
+              "release_year": 2019,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-fold.jpg",
+              "specs": {
+                "display": "7.3\" Foldable Dynamic AMOLED, 1536×2152; 4.6\" cover display",
+                "processor": "Snapdragon 855",
+                "ram": "12 GB",
+                "storage": ["512 GB"],
+                "battery": "4380 mAh",
+                "os": "Android 9.0, One UI",
+                "weight": "263 g",
+                "dimensions": "160.9 × 117.9 × 6.9 mm"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Galaxy Z Flip",
+          "models": [
+            {
+              "name": "Samsung Galaxy Z Flip",
+              "release_year": 2020,
+              "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-flip.jpg",
+              "specs": {
+                "display": "6.7\" Foldable Dynamic AMOLED, 1080×2636; 1.1\" cover display",
+                "processor": "Snapdragon 855+",
+                "ram": "8 GB",
+                "storage": ["256 GB"],
+                "battery": "3300 mAh",
+                "os": "Android 10, One UI 2",
+                "weight": "183 g",
+                "dimensions": "167.3 × 73.6 × 7.2 mm"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

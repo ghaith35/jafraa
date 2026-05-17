@@ -1,4 +1,3 @@
-import { PageHeader } from "@/components/shared/PageHeader";
 import { Settings, MessageSquare, ListChecks } from "lucide-react";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
@@ -10,11 +9,6 @@ export default async function SettingsPage() {
 
   return (
     <>
-      <PageHeader
-        title={t("title")}
-        description={t("description")}
-      />
-
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* Catalog suggestions */}
         <Link

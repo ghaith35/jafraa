@@ -35,10 +35,7 @@ export default async function CustomersPage({
 
   return (
     <div className="flex flex-col" style={{ height: "calc(100svh - 5.5rem)" }}>
-      <div className="shrink-0 flex items-center justify-between mb-3">
-        <div>
-          <h1 className="text-lg font-bold tracking-tight text-foreground">{t("customers.title")}</h1>
-        </div>
+      <div className="shrink-0 flex items-center justify-end mb-3">
         <NewCustomerDialog groups={activeGroupOptions} />
       </div>
 

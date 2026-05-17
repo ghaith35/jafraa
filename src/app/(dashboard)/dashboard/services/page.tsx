@@ -1,89 +1,65 @@
-import { Suspense } from "react";
-import Link from "next/link";
 import { redirect } from "next/navigation";
-import { Plus } from "lucide-react";
 import { getSession } from "@/lib/auth/session";
 import { hasPermission } from "@/lib/auth/permissions";
-import { PageHeader } from "@/components/shared/PageHeader";
-import { Pagination } from "@/components/shared/Pagination";
-import { InventorySearchBar } from "@/features/inventory/components/InventorySearchBar";
-import { ServiceList } from "@/features/inventory/components/ServiceList";
-import { ServiceFilters } from "@/features/inventory/components/ServiceFilters";
-import { listServiceCategories, listServices } from "@/features/inventory/actions/service.actions";
-import { listDeviceCategories } from "@/features/catalog/actions/catalog.actions";
 import { getAppI18n } from "@/lib/i18n/server";
+import { listServices, countServicesByDeviceCategory } from "@/features/inventory/actions/service.actions";
+import { listDeviceCategories } from "@/features/catalog/actions/catalog.actions";
+import { listServiceTypes } from "@/features/services/actions/service-type.actions";
+import { listCustomerGroups } from "@/features/customers/actions/customer-group.actions";
+import { ServicesManagerClient } from "@/features/services/components/ServicesManagerClient";
 
 export const metadata = { title: "Services" };
 
 export default async function ServicesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; archived?: string; device?: string; serviceCategory?: string; page?: string }>;
+  searchParams: Promise<{ q?: string; archived?: string; device?: string; page?: string }>;
 }) {
   const { t } = await getAppI18n();
   const session = await getSession();
   if (!session) redirect("/login");
   if (!hasPermission(session.role, "inventory:view")) redirect("/dashboard");
+
   const sp = await searchParams;
   const storeId = session.storeIds[0];
   const q = sp.q?.trim() || undefined;
   const deviceCategoryId = sp.device?.trim() || undefined;
-  const serviceCategoryId = sp.serviceCategory?.trim() || undefined;
   const page = Number(sp.page) || 1;
   const perPage = 50;
-  const [result, categories, deviceCategories] = await Promise.all([
-    listServices({
-      storeId,
-      q,
-      showArchived: sp.archived === "1",
-      deviceCategoryId,
-      serviceCategoryId,
-      page,
-      perPage,
-    }),
-    listServiceCategories({ storeId, includeArchived: sp.archived === "1", deviceCategoryId }),
+
+  const [result, counts, deviceCategories, serviceTypes, customerGroups] = await Promise.all([
+    listServices({ storeId, q, showArchived: sp.archived === "1", deviceCategoryId, page, perPage }),
+    countServicesByDeviceCategory(storeId),
     listDeviceCategories(),
+    listServiceTypes({ includeInactive: false }),
+    listCustomerGroups(),
   ]);
+
   const canManage = hasPermission(session.role, "inventory:manage");
+
   return (
-    <div className="space-y-5">
-      <PageHeader
-        title={t("services.title")}
-        description={t("services.description")}
-        actions={
-          canManage ? (
-            <Link
-              href="/dashboard/services/new"
-              className="inline-flex items-center gap-2 rounded-xl bg-primary px-3 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90"
-            >
-              <Plus className="h-4 w-4" />
-              {t("inventory.newService")}
-            </Link>
-          ) : null
-        }
-      />
-      <InventorySearchBar placeholder={t("inventory.searchServices")} defaultValue={q ?? ""} />
-      <ServiceFilters
-        device={deviceCategoryId}
-        serviceCategory={serviceCategoryId}
-        archived={sp.archived === "1"}
-        categories={categories.map((category) => ({
-          id: category.id,
-          namePath: category.namePath,
-          deviceCategoryId: category.deviceCategoryId,
-          isActive: category.isActive,
-        }))}
-        devices={deviceCategories.map((category) => ({
-          id: category.id,
-          nameFr: category.nameFr,
-          nameEn: category.nameEn,
-          nameAr: category.nameAr,
-        }))}
-      />
-      <Suspense fallback={<div className="h-24 rounded-xl bg-muted animate-pulse" />}>
-        <ServiceList services={result.data} userRole={session.role} />
-      </Suspense>
-      <Pagination page={result.page} totalPages={result.totalPages} total={result.total} perPage={result.perPage} />
-    </div>
+    <ServicesManagerClient
+      canManage={canManage}
+      services={result.data}
+      deviceCategories={deviceCategories.map((d) => ({
+        id: d.id,
+        key: d.key,
+        nameFr: d.nameFr,
+        nameEn: d.nameEn,
+        nameAr: d.nameAr,
+        sortOrder: d.sortOrder,
+      }))}
+      serviceTypes={serviceTypes}
+      customerGroups={customerGroups.map((g) => ({ id: g.id, name: g.name }))}
+      userRole={session.role}
+      counts={counts}
+      selectedDeviceId={deviceCategoryId ?? null}
+      searchDefaultValue={q ?? ""}
+      searchPlaceholder={t("inventory.searchServices")}
+      page={result.page}
+      totalPages={result.totalPages}
+      total={result.total}
+      perPage={result.perPage}
+    />
   );
 }

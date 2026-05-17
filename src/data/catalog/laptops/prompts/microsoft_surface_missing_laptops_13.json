@@ -1,0 +1,616 @@
+[
+  {
+    "modelName": "Microsoft Surface Laptop Go 1",
+    "releaseYear": 2020,
+    "imageUrl": null,
+    "specs": {
+      "display": "12.45\" PixelSense touchscreen, 1536 × 1024, 148 PPI, 3:2",
+      "processor": "10th Gen Intel Core i5-1035G1",
+      "ram": "4 GB or 8 GB LPDDR4x",
+      "storage": [
+        "64 GB eMMC",
+        "128 GB SSD",
+        "256 GB SSD"
+      ],
+      "battery": "Up to 13 hours typical device usage",
+      "os": "Windows 10 Home in S mode / Windows 10 Pro",
+      "weight": "1.11 kg",
+      "dimensions": "278.18 × 205.67 × 15.69 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Laptop Go 1 i5/4GB/64GB Platinum",
+        "processor": "Intel Core i5-1035G1",
+        "ram": "4 GB",
+        "storage": "64 GB eMMC",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Laptop Go 1 i5/8GB/128GB Ice Blue",
+        "processor": "Intel Core i5-1035G1",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "color": "Ice Blue"
+      },
+      {
+        "name": "Microsoft Surface Laptop Go 1 i5/8GB/256GB Sandstone",
+        "processor": "Intel Core i5-1035G1",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Sandstone"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Laptop Go 2",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "12.4\" PixelSense touchscreen, 1536 × 1024, 148 PPI, 3:2",
+      "processor": "11th Gen Intel Core i5-1135G7",
+      "ram": "4 GB or 8 GB LPDDR4x",
+      "storage": [
+        "128 GB removable SSD",
+        "256 GB removable SSD"
+      ],
+      "battery": "Up to 13.5 hours typical device usage",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "1.127 kg",
+      "dimensions": "278.2 × 206.2 × 15.7 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Laptop Go 2 i5/4GB/128GB Platinum",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Laptop Go 2 i5/8GB/128GB Sage",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "color": "Sage"
+      },
+      {
+        "name": "Microsoft Surface Laptop Go 2 i5/8GB/256GB Ice Blue",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Ice Blue"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Laptop Go 3",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "12.4\" PixelSense touchscreen, 1536 × 1024, 148 PPI, 3:2",
+      "processor": "12th Gen Intel Core i5-1235U",
+      "ram": "8 GB or 16 GB LPDDR5",
+      "storage": [
+        "256 GB removable SSD"
+      ],
+      "battery": "Up to 15 hours typical device usage",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "1.13 kg",
+      "dimensions": "278 × 206 × 15.7 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Laptop Go 3 i5/8GB/256GB Platinum",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Laptop Go 3 i5/8GB/256GB Sage",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Sage"
+      },
+      {
+        "name": "Microsoft Surface Laptop Go 3 i5/16GB/256GB Sandstone",
+        "processor": "Intel Core i5-1235U",
+        "ram": "16 GB",
+        "storage": "256 GB SSD",
+        "color": "Sandstone"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Laptop Studio 1",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.4\" PixelSense Flow touchscreen, 2400 × 1600, 201 PPI, 3:2, 120 Hz",
+      "processor": "Intel Core i5-11300H or Intel Core i7-11370H",
+      "ram": "16 GB or 32 GB LPDDR4x",
+      "storage": [
+        "256 GB removable SSD",
+        "512 GB removable SSD",
+        "1 TB removable SSD",
+        "2 TB removable SSD"
+      ],
+      "battery": "Up to 19 hours typical device usage",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "1.74 kg (i5) / 1.82 kg (i7 GPU)",
+      "dimensions": "323.28 × 228.32 × 18.94 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Laptop Studio 1 i5/16GB/256GB Platinum",
+        "processor": "Intel Core i5-11300H",
+        "ram": "16 GB",
+        "storage": "256 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Laptop Studio 1 i7/16GB/512GB Platinum",
+        "processor": "Intel Core i7-11370H + NVIDIA GeForce RTX 3050 Ti",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Laptop Studio 1 i7/32GB/1TB Platinum",
+        "processor": "Intel Core i7-11370H + NVIDIA GeForce RTX 3050 Ti",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Platinum"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Laptop Studio 2",
+    "releaseYear": 2023,
+    "imageUrl": null,
+    "specs": {
+      "display": "14.4\" PixelSense Flow touchscreen, 2400 × 1600, 201 PPI, 3:2, 120 Hz, Dolby Vision IQ",
+      "processor": "Intel Core i7-13700H or Intel Core i7-13800H",
+      "ram": "16 GB, 32 GB, or 64 GB LPDDR5x",
+      "storage": [
+        "512 GB removable SSD",
+        "1 TB removable SSD",
+        "2 TB removable SSD"
+      ],
+      "battery": "Up to 19 hours typical device usage",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "1.89 kg (Iris Xe) / 1.98 kg (NVIDIA)",
+      "dimensions": "323 × 230 × 22 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Laptop Studio 2 i7/16GB/512GB Platinum",
+        "processor": "Intel Core i7-13700H + Intel Iris Xe",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Laptop Studio 2 i7/16GB/512GB RTX 4050 Platinum",
+        "processor": "Intel Core i7-13700H + NVIDIA GeForce RTX 4050",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Laptop Studio 2 i7/32GB/1TB RTX 4060 Platinum",
+        "processor": "Intel Core i7-13700H + NVIDIA GeForce RTX 4060",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Laptop Studio 2 i7/64GB/2TB RTX 4060 Platinum",
+        "processor": "Intel Core i7-13800H + NVIDIA GeForce RTX 4060",
+        "ram": "64 GB",
+        "storage": "2 TB SSD",
+        "color": "Platinum"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Pro 3",
+    "releaseYear": 2014,
+    "imageUrl": null,
+    "specs": {
+      "display": "12\" ClearType Full HD Plus touchscreen, 2160 × 1440, 216 PPI, 3:2",
+      "processor": "Intel Core i3-4020Y, Core i5-4300U, or Core i7-4650U",
+      "ram": "4 GB or 8 GB LPDDR3",
+      "storage": [
+        "64 GB SSD",
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD"
+      ],
+      "battery": "Up to 9 hours web browsing",
+      "os": "Windows 8.1 Pro / Windows 10 Pro",
+      "weight": "0.80 kg",
+      "dimensions": "292 × 201.3 × 9.1 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Pro 3 i3/4GB/64GB Silver",
+        "processor": "Intel Core i3-4020Y",
+        "ram": "4 GB",
+        "storage": "64 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Microsoft Surface Pro 3 i5/4GB/128GB Silver",
+        "processor": "Intel Core i5-4300U",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Microsoft Surface Pro 3 i5/8GB/256GB Silver",
+        "processor": "Intel Core i5-4300U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Microsoft Surface Pro 3 i7/8GB/512GB Silver",
+        "processor": "Intel Core i7-4650U",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Pro 4",
+    "releaseYear": 2015,
+    "imageUrl": null,
+    "specs": {
+      "display": "12.3\" PixelSense touchscreen, 2736 × 1824, 267 PPI, 3:2",
+      "processor": "Intel Core m3-6Y30, Core i5-6300U, or Core i7-6650U",
+      "ram": "4 GB, 8 GB, or 16 GB LPDDR3",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "38.2 Wh",
+      "os": "Windows 10 Pro",
+      "weight": "0.766 kg (m3) / 0.786 kg (i5/i7)",
+      "dimensions": "292.1 × 201.4 × 8.45 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Pro 4 m3/4GB/128GB Silver",
+        "processor": "Intel Core m3-6Y30",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Microsoft Surface Pro 4 i5/8GB/256GB Silver",
+        "processor": "Intel Core i5-6300U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Microsoft Surface Pro 4 i7/16GB/512GB Silver",
+        "processor": "Intel Core i7-6650U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Microsoft Surface Pro 4 i7/16GB/1TB Silver",
+        "processor": "Intel Core i7-6650U",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Pro 5",
+    "releaseYear": 2017,
+    "imageUrl": null,
+    "specs": {
+      "display": "12.3\" PixelSense touchscreen, 2736 × 1824, 267 PPI, 3:2",
+      "processor": "Intel Core m3-7Y30, Core i5-7300U, or Core i7-7660U",
+      "ram": "4 GB, 8 GB, or 16 GB LPDDR3",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "45 Wh",
+      "os": "Windows 10 Pro",
+      "weight": "0.768 kg (m3) / 0.770 kg (i5) / 0.784 kg (i7)",
+      "dimensions": "292 × 201 × 8.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Pro 5 m3/4GB/128GB Silver",
+        "processor": "Intel Core m3-7Y30",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Microsoft Surface Pro 5 i5/8GB/256GB Silver",
+        "processor": "Intel Core i5-7300U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Microsoft Surface Pro 5 i7/16GB/512GB Silver",
+        "processor": "Intel Core i7-7660U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Silver"
+      },
+      {
+        "name": "Microsoft Surface Pro 5 i7/16GB/1TB Silver",
+        "processor": "Intel Core i7-7660U",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Silver"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Pro 6",
+    "releaseYear": 2018,
+    "imageUrl": null,
+    "specs": {
+      "display": "12.3\" PixelSense touchscreen, 2736 × 1824, 267 PPI, 3:2",
+      "processor": "8th Gen Intel Core i5-8250U or Core i7-8650U",
+      "ram": "8 GB or 16 GB LPDDR3",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "45 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro",
+      "weight": "0.770 kg (i5) / 0.784 kg (i7)",
+      "dimensions": "292 × 201 × 8.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Pro 6 i5/8GB/128GB Platinum",
+        "processor": "Intel Core i5-8250U",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Pro 6 i5/8GB/256GB Black",
+        "processor": "Intel Core i5-8250U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Microsoft Surface Pro 6 i7/16GB/512GB Platinum",
+        "processor": "Intel Core i7-8650U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Pro 6 i7/16GB/1TB Black",
+        "processor": "Intel Core i7-8650U",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Pro 7",
+    "releaseYear": 2019,
+    "imageUrl": null,
+    "specs": {
+      "display": "12.3\" PixelSense touchscreen, 2736 × 1824, 267 PPI, 3:2",
+      "processor": "10th Gen Intel Core i3-1005G1, Core i5-1035G4, or Core i7-1065G7",
+      "ram": "4 GB, 8 GB, or 16 GB LPDDR4x",
+      "storage": [
+        "128 GB SSD",
+        "256 GB SSD",
+        "512 GB SSD",
+        "1 TB SSD"
+      ],
+      "battery": "43.2 Wh",
+      "os": "Windows 10 Home / Windows 10 Pro",
+      "weight": "0.775 kg (i3/i5) / 0.790 kg (i7)",
+      "dimensions": "292 × 201 × 8.5 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Pro 7 i3/4GB/128GB Platinum",
+        "processor": "Intel Core i3-1005G1",
+        "ram": "4 GB",
+        "storage": "128 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Pro 7 i5/8GB/128GB Black",
+        "processor": "Intel Core i5-1035G4",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Microsoft Surface Pro 7 i5/8GB/256GB Platinum",
+        "processor": "Intel Core i5-1035G4",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Pro 7 i7/16GB/512GB Black",
+        "processor": "Intel Core i7-1065G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Pro 8",
+    "releaseYear": 2021,
+    "imageUrl": null,
+    "specs": {
+      "display": "13\" PixelSense Flow touchscreen, 2880 × 1920, 267 PPI, 3:2, up to 120 Hz",
+      "processor": "11th Gen Intel Core i5-1135G7 or Core i7-1185G7",
+      "ram": "8 GB, 16 GB, or 32 GB LPDDR4x",
+      "storage": [
+        "128 GB removable SSD",
+        "256 GB removable SSD",
+        "512 GB removable SSD",
+        "1 TB removable SSD"
+      ],
+      "battery": "51.5 Wh",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "0.891 kg",
+      "dimensions": "287 × 208 × 9.3 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Pro 8 i5/8GB/128GB Platinum",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Pro 8 i5/8GB/256GB Graphite",
+        "processor": "Intel Core i5-1135G7",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Graphite"
+      },
+      {
+        "name": "Microsoft Surface Pro 8 i7/16GB/512GB Platinum",
+        "processor": "Intel Core i7-1185G7",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Pro 8 i7/32GB/1TB Graphite",
+        "processor": "Intel Core i7-1185G7",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Graphite"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Pro 9",
+    "releaseYear": 2022,
+    "imageUrl": null,
+    "specs": {
+      "display": "13\" PixelSense Flow touchscreen, 2880 × 1920, 267 PPI, 3:2, up to 120 Hz",
+      "processor": "12th Gen Intel Core i5-1235U, Core i7-1255U, or Microsoft SQ3",
+      "ram": "8 GB, 16 GB, or 32 GB LPDDR5",
+      "storage": [
+        "128 GB removable SSD",
+        "256 GB removable SSD",
+        "512 GB removable SSD",
+        "1 TB removable SSD"
+      ],
+      "battery": "47.7 Wh nominal",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "0.879 kg (Intel) / 0.883 kg (5G)",
+      "dimensions": "287 × 209 × 9.3 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Pro 9 i5/8GB/256GB Platinum",
+        "processor": "Intel Core i5-1235U",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Pro 9 i7/16GB/512GB Graphite",
+        "processor": "Intel Core i7-1255U",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Graphite"
+      },
+      {
+        "name": "Microsoft Surface Pro 9 SQ3/8GB/256GB Sapphire",
+        "processor": "Microsoft SQ3",
+        "ram": "8 GB",
+        "storage": "256 GB SSD",
+        "color": "Sapphire"
+      },
+      {
+        "name": "Microsoft Surface Pro 9 i7/32GB/1TB Forest",
+        "processor": "Intel Core i7-1255U",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Forest"
+      }
+    ]
+  },
+  {
+    "modelName": "Microsoft Surface Pro 11",
+    "releaseYear": 2024,
+    "imageUrl": null,
+    "specs": {
+      "display": "13\" PixelSense Flow LCD or OLED touchscreen, 2880 × 1920, 267 PPI, 3:2, up to 120 Hz",
+      "processor": "Snapdragon X Plus 10-core, Snapdragon X Elite 12-core, or Intel Core Ultra 5/7 business variants",
+      "ram": "16 GB, 32 GB, or up to 64 GB LPDDR5x",
+      "storage": [
+        "256 GB removable SSD",
+        "512 GB removable SSD",
+        "1 TB removable SSD"
+      ],
+      "battery": "48 Wh nominal LCD / 53 Wh nominal OLED",
+      "os": "Windows 11 Home / Windows 11 Pro",
+      "weight": "0.895 kg",
+      "dimensions": "287 × 209 × 9.3 mm"
+    },
+    "variants": [
+      {
+        "name": "Microsoft Surface Pro 11 X Plus/16GB/256GB Platinum LCD",
+        "processor": "Snapdragon X Plus 10-core",
+        "ram": "16 GB",
+        "storage": "256 GB SSD",
+        "color": "Platinum"
+      },
+      {
+        "name": "Microsoft Surface Pro 11 X Plus/16GB/512GB Black LCD",
+        "processor": "Snapdragon X Plus 10-core",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Black"
+      },
+      {
+        "name": "Microsoft Surface Pro 11 X Elite/16GB/512GB Sapphire OLED",
+        "processor": "Snapdragon X Elite 12-core",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "color": "Sapphire"
+      },
+      {
+        "name": "Microsoft Surface Pro 11 X Elite/32GB/1TB Dune OLED",
+        "processor": "Snapdragon X Elite 12-core",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "color": "Dune"
+      }
+    ]
+  }
+]

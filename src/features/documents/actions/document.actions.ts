@@ -27,7 +27,7 @@ export async function getPosSaleDocument(saleId: string) {
         include: {
           product: { select: { name: true, sku: true } },
           part: { select: { name: true, sku: true } },
-          service: { select: { name: true, sku: true } },
+          service: { select: { nameFr: true, nameEn: true, nameAr: true, sku: true } },
         },
       },
       refunds: {

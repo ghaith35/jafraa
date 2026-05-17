@@ -28,11 +28,7 @@ export default async function SuppliersPage(props: {
 
   return (
     <div className="space-y-5">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <h1 className="text-xl font-bold tracking-tight text-foreground">{t("suppliers.title")}</h1>
-          <p className="text-sm text-muted-foreground mt-0.5">{t("suppliers.description")}</p>
-        </div>
+      <div className="flex items-center justify-end">
         <NewSupplierDialog />
       </div>
 

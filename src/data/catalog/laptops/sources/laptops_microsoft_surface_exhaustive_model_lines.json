@@ -1,0 +1,2404 @@
+{
+  "category": "laptop",
+  "brands": [
+    {
+      "name": "Microsoft Surface",
+      "logo_url": "https://logo.clearbit.com/microsoft.com",
+      "families": [
+        {
+          "name": "Surface Pro",
+          "models": [
+            {
+              "name": "Microsoft Surface",
+              "release_year": 2012,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft%20Surface%20with%20Touch%20Cover.jpg",
+              "source_url": "https://support.microsoft.com/en-us/surface/drivers-firmware/download-drivers-and-firmware-for-surface",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.6–12\" ClearType / PixelSense touchscreen",
+                "processor": "Intel Core i5 / NVIDIA Tegra for RT models",
+                "ram": "2–8 GB",
+                "storage": [
+                  "32 GB SSD",
+                  "64 GB SSD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "31.5–42 Wh",
+                "os": "Windows RT / Windows 8 Pro / Windows 10",
+                "weight": "680–907 g",
+                "dimensions": "varies by Surface / Surface Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface 32 GB SSD Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "32 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface 64 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "64 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface 128 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface 2",
+              "release_year": 2013,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft%20Surface%20with%20Touch%20Cover.jpg",
+              "source_url": "https://support.microsoft.com/en-us/surface/drivers-firmware/download-drivers-and-firmware-for-surface",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.6–12\" ClearType / PixelSense touchscreen",
+                "processor": "Intel Core i5 / NVIDIA Tegra for RT models",
+                "ram": "2–8 GB",
+                "storage": [
+                  "32 GB SSD",
+                  "64 GB SSD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "31.5–42 Wh",
+                "os": "Windows RT / Windows 8 Pro / Windows 10",
+                "weight": "680–907 g",
+                "dimensions": "varies by Surface / Surface Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface 2 32 GB SSD Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "32 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface 2 64 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "64 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface 2 128 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface 3",
+              "release_year": 2015,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft%20Surface%20with%20Touch%20Cover.jpg",
+              "source_url": "https://support.microsoft.com/en-us/surface/drivers-firmware/download-drivers-and-firmware-for-surface",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.6–12\" ClearType / PixelSense touchscreen",
+                "processor": "Intel Core i5 / NVIDIA Tegra for RT models",
+                "ram": "2–8 GB",
+                "storage": [
+                  "32 GB SSD",
+                  "64 GB SSD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "31.5–42 Wh",
+                "os": "Windows RT / Windows 8 Pro / Windows 10",
+                "weight": "680–907 g",
+                "dimensions": "varies by Surface / Surface Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface 3 32 GB SSD Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "32 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface 3 64 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "64 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface 3 128 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro",
+              "release_year": 2013,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.6–12\" ClearType / PixelSense touchscreen",
+                "processor": "Intel Core i5 / NVIDIA Tegra for RT models",
+                "ram": "2–8 GB",
+                "storage": [
+                  "32 GB SSD",
+                  "64 GB SSD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "31.5–42 Wh",
+                "os": "Windows RT / Windows 8 Pro / Windows 10",
+                "weight": "680–907 g",
+                "dimensions": "varies by Surface / Surface Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 32 GB SSD Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "32 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 64 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "64 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 128 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 2",
+              "release_year": 2013,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.6–12\" ClearType / PixelSense touchscreen",
+                "processor": "Intel Core i5 / NVIDIA Tegra for RT models",
+                "ram": "2–8 GB",
+                "storage": [
+                  "32 GB SSD",
+                  "64 GB SSD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "31.5–42 Wh",
+                "os": "Windows RT / Windows 8 Pro / Windows 10",
+                "weight": "680–907 g",
+                "dimensions": "varies by Surface / Surface Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 2 32 GB SSD Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "32 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 2 64 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "64 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 2 128 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 3",
+              "release_year": 2014,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.6–12\" ClearType / PixelSense touchscreen",
+                "processor": "Intel Core i5 / NVIDIA Tegra for RT models",
+                "ram": "2–8 GB",
+                "storage": [
+                  "32 GB SSD",
+                  "64 GB SSD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "31.5–42 Wh",
+                "os": "Windows RT / Windows 8 Pro / Windows 10",
+                "weight": "680–907 g",
+                "dimensions": "varies by Surface / Surface Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 3 32 GB SSD Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "32 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 3 64 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "64 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 3 128 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 4",
+              "release_year": 2015,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10.6–12\" ClearType / PixelSense touchscreen",
+                "processor": "Intel Core i5 / NVIDIA Tegra for RT models",
+                "ram": "2–8 GB",
+                "storage": [
+                  "32 GB SSD",
+                  "64 GB SSD",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "31.5–42 Wh",
+                "os": "Windows RT / Windows 8 Pro / Windows 10",
+                "weight": "680–907 g",
+                "dimensions": "varies by Surface / Surface Pro generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 4 32 GB SSD Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "32 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 4 64 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "64 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 4 128 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 5",
+              "release_year": 2017,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.3\" PixelSense touchscreen, 2736×1824",
+                "processor": "Intel Core m3/i5/i7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "38–45 Wh",
+                "os": "Windows 10",
+                "weight": "768–784 g",
+                "dimensions": "292 × 201 × 8.5 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 5 128 GB SSD Platinum",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 5 256 GB SSD Graphite",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 5 512 GB SSD Sapphire",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 6",
+              "release_year": 2018,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.3\" PixelSense touchscreen, 2736×1824",
+                "processor": "Intel Core m3/i5/i7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "38–45 Wh",
+                "os": "Windows 10",
+                "weight": "768–784 g",
+                "dimensions": "292 × 201 × 8.5 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 6 128 GB SSD Platinum",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 6 256 GB SSD Graphite",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 6 512 GB SSD Sapphire",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 7",
+              "release_year": 2019,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.3\" PixelSense touchscreen, 2736×1824",
+                "processor": "Intel Core m3/i5/i7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "38–45 Wh",
+                "os": "Windows 10",
+                "weight": "768–784 g",
+                "dimensions": "292 × 201 × 8.5 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 7 128 GB SSD Platinum",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 7 256 GB SSD Graphite",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 7 512 GB SSD Sapphire",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro X",
+              "release_year": 2019,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "12.3\" PixelSense touchscreen, 2736×1824",
+                "processor": "Intel Core m3/i5/i7",
+                "ram": "4–16 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "38–45 Wh",
+                "os": "Windows 10",
+                "weight": "768–784 g",
+                "dimensions": "292 × 201 × 8.5 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro X 128 GB SSD Platinum",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro X 256 GB SSD Graphite",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro X 512 GB SSD Sapphire",
+                  "processor": "Intel Core m3/i5/i7",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 7+",
+              "release_year": 2021,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13\" PixelSense Flow touchscreen, up to 120Hz",
+                "processor": "Intel Core i5/i7 or Microsoft SQ3",
+                "ram": "8–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "47.7–51.5 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "891–883 g",
+                "dimensions": "287 × 208 × 9.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 7+ 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 7+ 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 7+ 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 8",
+              "release_year": 2021,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13\" PixelSense Flow touchscreen, up to 120Hz",
+                "processor": "Intel Core i5/i7 or Microsoft SQ3",
+                "ram": "8–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "47.7–51.5 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "891–883 g",
+                "dimensions": "287 × 208 × 9.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 8 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 8 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 8 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 9",
+              "release_year": 2022,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13\" PixelSense Flow touchscreen, up to 120Hz",
+                "processor": "Intel Core i5/i7 or Microsoft SQ3",
+                "ram": "8–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "47.7–51.5 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "891–883 g",
+                "dimensions": "287 × 208 × 9.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 9 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 9 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 9 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 9 5G",
+              "release_year": 2022,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13\" PixelSense Flow touchscreen, up to 120Hz",
+                "processor": "Intel Core i5/i7 or Microsoft SQ3",
+                "ram": "8–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "47.7–51.5 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "891–883 g",
+                "dimensions": "287 × 208 × 9.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 9 5G 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 9 5G 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 9 5G 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 10 for Business",
+              "release_year": 2024,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13\" PixelSense Flow, 2880×1920, 120Hz",
+                "processor": "Intel Core Ultra 5 / Core Ultra 7",
+                "ram": "8–64 GB LPDDR5x",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "47.7 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "879 g",
+                "dimensions": "287 × 209 × 9.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 10 for Business 256 GB SSD Platinum",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 10 for Business 512 GB SSD Graphite",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 10 for Business 1 TB SSD Sapphire",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "64 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 11th Edition",
+              "release_year": 2024,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13\" PixelSense Flow LCD/OLED, 2880×1920, up to 120Hz",
+                "processor": "Snapdragon X Plus / Snapdragon X Elite",
+                "ram": "16–32 GB LPDDR5x",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "53 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "895 g",
+                "dimensions": "287 × 209 × 9.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 11th Edition 256 GB SSD Platinum",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 11th Edition 512 GB SSD Graphite",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 11th Edition 1 TB SSD Sapphire",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 11th Edition Intel for Business",
+              "release_year": 2025,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13\" PixelSense Flow LCD/OLED, 2880×1920, up to 120Hz",
+                "processor": "Intel Core Ultra 5 / Core Ultra 7 Series 2",
+                "ram": "16–32 GB LPDDR5x",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "53 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "872–879 g",
+                "dimensions": "287 × 209 × 9.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 11th Edition Intel for Business 256 GB SSD Platinum",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 11th Edition Intel for Business 512 GB SSD Graphite",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 11th Edition Intel for Business 1 TB SSD Sapphire",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Pro 12-inch",
+              "release_year": 2025,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Pro-11th-Edition-13-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://learn.microsoft.com/en-us/surface/tech-specs/",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "12\" PixelSense touchscreen, 3:2",
+                "processor": "Snapdragon X Plus",
+                "ram": "16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "38 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "686 g",
+                "dimensions": "274 × 190 × 7.8 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Pro 12-inch 256 GB SSD Platinum",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Pro 12-inch 512 GB SSD Graphite",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Pro 12-inch 512 GB SSD Graphite Alt",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Surface Laptop",
+          "models": [
+            {
+              "name": "Microsoft Surface Laptop",
+              "release_year": 2017,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 or AMD Ryzen Surface Edition",
+                "ram": "4–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "45–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.25–1.54 kg",
+                "dimensions": "varies by Surface Laptop generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 2",
+              "release_year": 2018,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 or AMD Ryzen Surface Edition",
+                "ram": "4–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "45–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.25–1.54 kg",
+                "dimensions": "varies by Surface Laptop generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 2 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 2 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 2 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 3 13.5-inch",
+              "release_year": 2019,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 or AMD Ryzen Surface Edition",
+                "ram": "4–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "45–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.25–1.54 kg",
+                "dimensions": "varies by Surface Laptop generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 3 13.5-inch 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 3 13.5-inch 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 3 13.5-inch 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 3 15-inch",
+              "release_year": 2019,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 or AMD Ryzen Surface Edition",
+                "ram": "4–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "45–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.25–1.54 kg",
+                "dimensions": "varies by Surface Laptop generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 3 15-inch 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 3 15-inch 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 3 15-inch 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 4 13.5-inch",
+              "release_year": 2021,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 or AMD Ryzen Surface Edition",
+                "ram": "4–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "45–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.25–1.54 kg",
+                "dimensions": "varies by Surface Laptop generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 4 13.5-inch 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 4 13.5-inch 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 4 13.5-inch 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 4 15-inch",
+              "release_year": 2021,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 or AMD Ryzen Surface Edition",
+                "ram": "4–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "45–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.25–1.54 kg",
+                "dimensions": "varies by Surface Laptop generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 4 15-inch 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 4 15-inch 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 4 15-inch 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 5 13.5-inch",
+              "release_year": 2022,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 or AMD Ryzen Surface Edition",
+                "ram": "4–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "45–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.25–1.54 kg",
+                "dimensions": "varies by Surface Laptop generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 5 13.5-inch 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 5 13.5-inch 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 5 13.5-inch 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 5 15-inch",
+              "release_year": 2022,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core i5/i7 or AMD Ryzen Surface Edition",
+                "ram": "4–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "45–60 Wh",
+                "os": "Windows 10 / Windows 11",
+                "weight": "1.25–1.54 kg",
+                "dimensions": "varies by Surface Laptop generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 5 15-inch 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "4 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 5 15-inch 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 5 15-inch 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 6 for Business 13.5-inch",
+              "release_year": 2024,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core Ultra 5 / Core Ultra 7",
+                "ram": "8–64 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "47–66 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "1.38–1.68 kg",
+                "dimensions": "varies by 13.5/15-inch Surface Laptop chassis"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 6 for Business 13.5-inch 256 GB SSD Platinum",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 6 for Business 13.5-inch 512 GB SSD Graphite",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 6 for Business 13.5-inch 1 TB SSD Sapphire",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "64 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 6 for Business 15-inch",
+              "release_year": 2024,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core Ultra 5 / Core Ultra 7",
+                "ram": "8–64 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "47–66 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "1.38–1.68 kg",
+                "dimensions": "varies by 13.5/15-inch Surface Laptop chassis"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 6 for Business 15-inch 256 GB SSD Platinum",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 6 for Business 15-inch 512 GB SSD Graphite",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 6 for Business 15-inch 1 TB SSD Sapphire",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "64 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 7th Edition 13.8-inch",
+              "release_year": 2024,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.8\" 2304×1536 or 15\" 2496×1664 PixelSense Flow touchscreen, 120Hz",
+                "processor": "Snapdragon X Plus / Snapdragon X Elite",
+                "ram": "16–64 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "54–66 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.34–1.66 kg",
+                "dimensions": "13.8\": 301×220×17.5 mm; 15\": 329×239×18.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 7th Edition 13.8-inch 256 GB SSD Platinum",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 7th Edition 13.8-inch 512 GB SSD Graphite",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 7th Edition 13.8-inch 1 TB SSD Sapphire",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "64 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 7th Edition 15-inch",
+              "release_year": 2024,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.8\" 2304×1536 or 15\" 2496×1664 PixelSense Flow touchscreen, 120Hz",
+                "processor": "Snapdragon X Plus / Snapdragon X Elite",
+                "ram": "16–64 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "54–66 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.34–1.66 kg",
+                "dimensions": "13.8\": 301×220×17.5 mm; 15\": 329×239×18.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 7th Edition 15-inch 256 GB SSD Platinum",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 7th Edition 15-inch 512 GB SSD Graphite",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 7th Edition 15-inch 1 TB SSD Sapphire",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "64 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 13-inch",
+              "release_year": 2025,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13\" PixelSense touchscreen, 1920×1280",
+                "processor": "Snapdragon X Plus",
+                "ram": "16 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD"
+                ],
+                "battery": "50 Wh",
+                "os": "Windows 11 Home",
+                "weight": "1.22 kg",
+                "dimensions": "285.7 × 214.1 × 15.6 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 13-inch 256 GB SSD Platinum",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 13-inch 512 GB SSD Graphite",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 13-inch 512 GB SSD Graphite Alt",
+                  "processor": "Snapdragon X Plus",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 13.8-inch Intel for Business",
+              "release_year": 2025,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core Ultra 5 / Core Ultra 7",
+                "ram": "8–64 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "47–66 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "1.38–1.68 kg",
+                "dimensions": "varies by 13.5/15-inch Surface Laptop chassis"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 13.8-inch Intel for Business 256 GB SSD Platinum",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 13.8-inch Intel for Business 512 GB SSD Graphite",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 13.8-inch Intel for Business 1 TB SSD Sapphire",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "64 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop 15-inch Intel for Business",
+              "release_year": 2025,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-7th-Edition-13-8-inch-Copilot-PC-Platinum-og-twitter-image?scl=1",
+              "source_url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.5\" or 15\" PixelSense touchscreen, 3:2",
+                "processor": "Intel Core Ultra 5 / Core Ultra 7",
+                "ram": "8–64 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "47–66 Wh",
+                "os": "Windows 11 Pro",
+                "weight": "1.38–1.68 kg",
+                "dimensions": "varies by 13.5/15-inch Surface Laptop chassis"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop 15-inch Intel for Business 256 GB SSD Platinum",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 15-inch Intel for Business 512 GB SSD Graphite",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "8 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop 15-inch Intel for Business 1 TB SSD Sapphire",
+                  "processor": "Intel Core Ultra 5",
+                  "ram": "64 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop Go",
+              "release_year": 2020,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-Go-3-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-laptop-go-3-specs-and-features-7f63a077-4b13-4120-bd75-d5f9d4a94f0b",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "11.6–12.4\" PixelSense/HD touchscreen display",
+                "processor": "Intel Core i5 / Intel Celeron",
+                "ram": "4–16 GB",
+                "storage": [
+                  "64 GB eMMC",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "39–41 Wh",
+                "os": "Windows 10 / Windows 11 / Windows 11 SE",
+                "weight": "1.1–1.13 kg",
+                "dimensions": "varies by Surface Laptop Go/SE chassis"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop Go 64 GB eMMC Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "4 GB",
+                  "storage": "64 GB eMMC",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop Go 128 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop Go 256 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop Go 2",
+              "release_year": 2022,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-Go-3-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-laptop-go-3-specs-and-features-7f63a077-4b13-4120-bd75-d5f9d4a94f0b",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "11.6–12.4\" PixelSense/HD touchscreen display",
+                "processor": "Intel Core i5 / Intel Celeron",
+                "ram": "4–16 GB",
+                "storage": [
+                  "64 GB eMMC",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "39–41 Wh",
+                "os": "Windows 10 / Windows 11 / Windows 11 SE",
+                "weight": "1.1–1.13 kg",
+                "dimensions": "varies by Surface Laptop Go/SE chassis"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop Go 2 64 GB eMMC Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "4 GB",
+                  "storage": "64 GB eMMC",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop Go 2 128 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop Go 2 256 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop Go 3",
+              "release_year": 2023,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-Go-3-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-laptop-go-3-specs-and-features-7f63a077-4b13-4120-bd75-d5f9d4a94f0b",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "11.6–12.4\" PixelSense/HD touchscreen display",
+                "processor": "Intel Core i5 / Intel Celeron",
+                "ram": "4–16 GB",
+                "storage": [
+                  "64 GB eMMC",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "39–41 Wh",
+                "os": "Windows 10 / Windows 11 / Windows 11 SE",
+                "weight": "1.1–1.13 kg",
+                "dimensions": "varies by Surface Laptop Go/SE chassis"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop Go 3 64 GB eMMC Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "4 GB",
+                  "storage": "64 GB eMMC",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop Go 3 128 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop Go 3 256 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop SE",
+              "release_year": 2021,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-Go-3-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-laptop-go-3-specs-and-features-7f63a077-4b13-4120-bd75-d5f9d4a94f0b",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "11.6–12.4\" PixelSense/HD touchscreen display",
+                "processor": "Intel Core i5 / Intel Celeron",
+                "ram": "4–16 GB",
+                "storage": [
+                  "64 GB eMMC",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "39–41 Wh",
+                "os": "Windows 10 / Windows 11 / Windows 11 SE",
+                "weight": "1.1–1.13 kg",
+                "dimensions": "varies by Surface Laptop Go/SE chassis"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop SE 64 GB eMMC Platinum",
+                  "processor": "Intel Core i5",
+                  "ram": "4 GB",
+                  "storage": "64 GB eMMC",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop SE 128 GB SSD Graphite",
+                  "processor": "Intel Core i5",
+                  "ram": "16 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop SE 256 GB SSD Sapphire",
+                  "processor": "Intel Core i5",
+                  "ram": "16 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Surface Book",
+          "models": [
+            {
+              "name": "Microsoft Surface Book",
+              "release_year": 2015,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Surface%20Book%20at%20Microsoft%20Store%20-%20IMG%204271.jpg",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-book-tech-specs-3f34abbb-c1a5-6373-c06e-5b2fd5cddf6a",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.5\" 3000×2000 or 15\" 3240×2160 PixelSense detachable touchscreen",
+                "processor": "Intel Core i5/i7",
+                "ram": "8–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "69–82 Wh combined",
+                "os": "Windows 10 Pro",
+                "weight": "1.5–1.9 kg",
+                "dimensions": "varies by 13.5/15-inch Surface Book generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Book 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Book 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Book 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Book with Performance Base",
+              "release_year": 2016,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Surface%20Book%20at%20Microsoft%20Store%20-%20IMG%204271.jpg",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-book-tech-specs-3f34abbb-c1a5-6373-c06e-5b2fd5cddf6a",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.5\" 3000×2000 or 15\" 3240×2160 PixelSense detachable touchscreen",
+                "processor": "Intel Core i5/i7",
+                "ram": "8–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "69–82 Wh combined",
+                "os": "Windows 10 Pro",
+                "weight": "1.5–1.9 kg",
+                "dimensions": "varies by 13.5/15-inch Surface Book generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Book with Performance Base 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Book with Performance Base 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Book with Performance Base 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Book 2 13.5-inch",
+              "release_year": 2017,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Surface%20Book%20at%20Microsoft%20Store%20-%20IMG%204271.jpg",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-book-tech-specs-3f34abbb-c1a5-6373-c06e-5b2fd5cddf6a",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.5\" 3000×2000 or 15\" 3240×2160 PixelSense detachable touchscreen",
+                "processor": "Intel Core i5/i7",
+                "ram": "8–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "69–82 Wh combined",
+                "os": "Windows 10 Pro",
+                "weight": "1.5–1.9 kg",
+                "dimensions": "varies by 13.5/15-inch Surface Book generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Book 2 13.5-inch 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Book 2 13.5-inch 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Book 2 13.5-inch 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Book 2 15-inch",
+              "release_year": 2017,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Surface%20Book%20at%20Microsoft%20Store%20-%20IMG%204271.jpg",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-book-tech-specs-3f34abbb-c1a5-6373-c06e-5b2fd5cddf6a",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "13.5\" 3000×2000 or 15\" 3240×2160 PixelSense detachable touchscreen",
+                "processor": "Intel Core i5/i7",
+                "ram": "8–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "69–82 Wh combined",
+                "os": "Windows 10 Pro",
+                "weight": "1.5–1.9 kg",
+                "dimensions": "varies by 13.5/15-inch Surface Book generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Book 2 15-inch 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Book 2 15-inch 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Book 2 15-inch 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Book 3 13.5-inch",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Surface%20Book%20at%20Microsoft%20Store%20-%20IMG%204271.jpg",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-book-tech-specs-3f34abbb-c1a5-6373-c06e-5b2fd5cddf6a",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.5\" 3000×2000 or 15\" 3240×2160 PixelSense detachable touchscreen",
+                "processor": "Intel Core i5/i7",
+                "ram": "8–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "69–82 Wh combined",
+                "os": "Windows 10 Pro",
+                "weight": "1.5–1.9 kg",
+                "dimensions": "varies by 13.5/15-inch Surface Book generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Book 3 13.5-inch 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Book 3 13.5-inch 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Book 3 13.5-inch 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Book 3 15-inch",
+              "release_year": 2020,
+              "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Surface%20Book%20at%20Microsoft%20Store%20-%20IMG%204271.jpg",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-book-tech-specs-3f34abbb-c1a5-6373-c06e-5b2fd5cddf6a",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "13.5\" 3000×2000 or 15\" 3240×2160 PixelSense detachable touchscreen",
+                "processor": "Intel Core i5/i7",
+                "ram": "8–32 GB",
+                "storage": [
+                  "128 GB SSD",
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD"
+                ],
+                "battery": "69–82 Wh combined",
+                "os": "Windows 10 Pro",
+                "weight": "1.5–1.9 kg",
+                "dimensions": "varies by 13.5/15-inch Surface Book generation"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Book 3 15-inch 128 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Book 3 15-inch 256 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Book 3 15-inch 512 GB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Surface Laptop Studio",
+          "models": [
+            {
+              "name": "Microsoft Surface Laptop Studio",
+              "release_year": 2021,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-Studio-2-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-laptop-studio-2-specs-and-features-14d6778d-85d6-454e-9ab8-2aa8dc4c233f",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14.4\" PixelSense Flow touchscreen, 2400×1600, 120Hz",
+                "processor": "Intel Core i5/i7 H-series or Intel Core i7 13th Gen",
+                "ram": "16–64 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "58 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.74–1.98 kg",
+                "dimensions": "323 × 230 × 18.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop Studio 256 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7 H-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop Studio 512 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop Studio 1 TB SSD Sapphire",
+                  "processor": "Intel Core i5/i7 H-series",
+                  "ram": "64 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Laptop Studio 2",
+              "release_year": 2023,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Laptop-Studio-2-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-laptop-studio-2-specs-and-features-14d6778d-85d6-454e-9ab8-2aa8dc4c233f",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "14.4\" PixelSense Flow touchscreen, 2400×1600, 120Hz",
+                "processor": "Intel Core i5/i7 H-series or Intel Core i7 13th Gen",
+                "ram": "16–64 GB",
+                "storage": [
+                  "256 GB SSD",
+                  "512 GB SSD",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "58 Wh",
+                "os": "Windows 11 Home / Windows 11 Pro",
+                "weight": "1.74–1.98 kg",
+                "dimensions": "323 × 230 × 18.9 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Laptop Studio 2 256 GB SSD Platinum",
+                  "processor": "Intel Core i5/i7 H-series",
+                  "ram": "4 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Laptop Studio 2 512 GB SSD Graphite",
+                  "processor": "Intel Core i5/i7 H-series",
+                  "ram": "16 GB",
+                  "storage": "512 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Laptop Studio 2 1 TB SSD Sapphire",
+                  "processor": "Intel Core i5/i7 H-series",
+                  "ram": "64 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Surface Go",
+          "models": [
+            {
+              "name": "Microsoft Surface Go",
+              "release_year": 2018,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Go-4-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-go-4-specs-and-features-ff90979d-e4e5-40fc-8696-9dd939d031a2",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "10–10.5\" PixelSense touchscreen, 1800×1200 or 1920×1280",
+                "processor": "Intel Pentium Gold / Intel Core m3 / Intel N200",
+                "ram": "4–8 GB",
+                "storage": [
+                  "64 GB eMMC",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "26.8–29 Wh",
+                "os": "Windows 10 / Windows 11 Pro",
+                "weight": "522–544 g",
+                "dimensions": "245 × 175 × 8.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Go 64 GB eMMC Platinum",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "4 GB",
+                  "storage": "64 GB eMMC",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Go 128 GB SSD Graphite",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Go 256 GB SSD Sapphire",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Go 2",
+              "release_year": 2020,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Go-4-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-go-4-specs-and-features-ff90979d-e4e5-40fc-8696-9dd939d031a2",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "10–10.5\" PixelSense touchscreen, 1800×1200 or 1920×1280",
+                "processor": "Intel Pentium Gold / Intel Core m3 / Intel N200",
+                "ram": "4–8 GB",
+                "storage": [
+                  "64 GB eMMC",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "26.8–29 Wh",
+                "os": "Windows 10 / Windows 11 Pro",
+                "weight": "522–544 g",
+                "dimensions": "245 × 175 × 8.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Go 2 64 GB eMMC Platinum",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "4 GB",
+                  "storage": "64 GB eMMC",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Go 2 128 GB SSD Graphite",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Go 2 256 GB SSD Sapphire",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Go 3",
+              "release_year": 2021,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Go-4-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-go-4-specs-and-features-ff90979d-e4e5-40fc-8696-9dd939d031a2",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "10–10.5\" PixelSense touchscreen, 1800×1200 or 1920×1280",
+                "processor": "Intel Pentium Gold / Intel Core m3 / Intel N200",
+                "ram": "4–8 GB",
+                "storage": [
+                  "64 GB eMMC",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "26.8–29 Wh",
+                "os": "Windows 10 / Windows 11 Pro",
+                "weight": "522–544 g",
+                "dimensions": "245 × 175 × 8.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Go 3 64 GB eMMC Platinum",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "4 GB",
+                  "storage": "64 GB eMMC",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Go 3 128 GB SSD Graphite",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Go 3 256 GB SSD Sapphire",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Go 4 for Business",
+              "release_year": 2023,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Go-4-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-go-4-specs-and-features-ff90979d-e4e5-40fc-8696-9dd939d031a2",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "10–10.5\" PixelSense touchscreen, 1800×1200 or 1920×1280",
+                "processor": "Intel Pentium Gold / Intel Core m3 / Intel N200",
+                "ram": "4–8 GB",
+                "storage": [
+                  "64 GB eMMC",
+                  "128 GB SSD",
+                  "256 GB SSD"
+                ],
+                "battery": "26.8–29 Wh",
+                "os": "Windows 10 / Windows 11 Pro",
+                "weight": "522–544 g",
+                "dimensions": "245 × 175 × 8.3 mm"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Go 4 for Business 64 GB eMMC Platinum",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "4 GB",
+                  "storage": "64 GB eMMC",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Go 4 for Business 128 GB SSD Graphite",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "8 GB",
+                  "storage": "128 GB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Go 4 for Business 256 GB SSD Sapphire",
+                  "processor": "Intel Pentium Gold",
+                  "ram": "8 GB",
+                  "storage": "256 GB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Surface Studio",
+          "models": [
+            {
+              "name": "Microsoft Surface Studio",
+              "release_year": 2016,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Studio-2-plus-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-studio-2-specs-and-features-54bb6f44-7d4a-fbe2-39f1-7ff06b69aa15",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "28\" PixelSense touchscreen, 4500×3000",
+                "processor": "Intel Core i5/i7",
+                "ram": "8–32 GB",
+                "storage": [
+                  "1 TB Hybrid Drive",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "AC powered",
+                "os": "Windows 10 / Windows 11",
+                "weight": "9.5–9.7 kg",
+                "dimensions": "637 × 439 × 12.5 mm display"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Studio 1 TB Hybrid Drive Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "1 TB Hybrid Drive",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Studio 1 TB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Studio 2 TB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Studio 2",
+              "release_year": 2018,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Studio-2-plus-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-studio-2-specs-and-features-54bb6f44-7d4a-fbe2-39f1-7ff06b69aa15",
+              "image_confidence": "representative_family_image",
+              "specs": {
+                "display": "28\" PixelSense touchscreen, 4500×3000",
+                "processor": "Intel Core i5/i7",
+                "ram": "8–32 GB",
+                "storage": [
+                  "1 TB Hybrid Drive",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "AC powered",
+                "os": "Windows 10 / Windows 11",
+                "weight": "9.5–9.7 kg",
+                "dimensions": "637 × 439 × 12.5 mm display"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Studio 2 1 TB Hybrid Drive Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "1 TB Hybrid Drive",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Studio 2 1 TB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Studio 2 2 TB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Surface Studio 2+",
+              "release_year": 2022,
+              "image_url": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Studio-2-plus-og-twitter-image?scl=1",
+              "source_url": "https://support.microsoft.com/en-us/surface/surface-studio-2-specs-and-features-54bb6f44-7d4a-fbe2-39f1-7ff06b69aa15",
+              "image_confidence": "exact_series",
+              "specs": {
+                "display": "28\" PixelSense touchscreen, 4500×3000",
+                "processor": "Intel Core i5/i7",
+                "ram": "8–32 GB",
+                "storage": [
+                  "1 TB Hybrid Drive",
+                  "1 TB SSD",
+                  "2 TB SSD"
+                ],
+                "battery": "AC powered",
+                "os": "Windows 10 / Windows 11",
+                "weight": "9.5–9.7 kg",
+                "dimensions": "637 × 439 × 12.5 mm display"
+              },
+              "variants": [
+                {
+                  "name": "Microsoft Surface Studio 2+ 1 TB Hybrid Drive Platinum",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "8 GB",
+                  "storage": "1 TB Hybrid Drive",
+                  "color": "Platinum"
+                },
+                {
+                  "name": "Microsoft Surface Studio 2+ 1 TB SSD Graphite",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "1 TB SSD",
+                  "color": "Graphite"
+                },
+                {
+                  "name": "Microsoft Surface Studio 2+ 2 TB SSD Sapphire",
+                  "processor": "Intel Core i5/i7",
+                  "ram": "32 GB",
+                  "storage": "2 TB SSD",
+                  "color": "Sapphire"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "catalog_scope_note": "Surface model-line complete repair-shop catalog seed. Includes tablets/2-in-1s and Studio because the audit requested Surface Pro/Go/Studio families. Not SKU/region complete.",
+  "generated_at": "2026-05-13T03:50:53.639405+00:00"
+}
