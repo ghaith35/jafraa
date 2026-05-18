@@ -26,7 +26,7 @@ interface Category { id: string; key: string; nameFr: string; nameAr: string; na
 interface Brand { id: string; name: string; logoUrl?: string | null; isGlobalDefault: boolean; categoryId: string; _count?: { modelFamilies?: number }; }
 interface Family { id: string; name: string; isGlobalDefault: boolean; brandId: string; }
 type ModelSpecs = Record<string, unknown> | null;
-type ModelVariant = { name?: unknown; storage?: unknown; color?: unknown };
+type ModelVariant = { name?: unknown; ram?: unknown; storage?: unknown; color?: unknown; connectivity?: unknown };
 interface DeviceModel { id: string; name: string; releaseYear: number | null; imageUrl: string | null; specs: ModelSpecs; variants: unknown; }
 
 interface Props {
@@ -46,6 +46,13 @@ const CATEGORY_ICONS: Record<string, LucideIcon> = {
   printer_laser: Printer, printer_cartridge: Printer, printer_risograph: Printer,
   console: Gamepad2, other: HelpCircle,
 };
+
+function variantParts(variant: ModelVariant): string[] {
+  const parts = [variant.ram, variant.storage, variant.color, variant.connectivity]
+    .map((value) => String(value ?? "").trim())
+    .filter(Boolean);
+  return [...new Set(parts)];
+}
 
 type Copy = {
   search: string; categories: string; brands: string; families: string; models: string;
@@ -352,13 +359,21 @@ export function CatalogBrowser({
       <Dialog open={!!variantModel} onClose={() => setVariantModel(null)} title={variantModel?.name ?? ""} className="max-w-lg">
         {Array.isArray(variantModel?.variants) && (
           <div className="space-y-1.5 max-h-80 overflow-y-auto">
-            {(variantModel.variants as ModelVariant[]).map((v, i) => (
-              <div key={i} className="flex items-center gap-3 rounded-lg border border-border bg-surface px-3 py-2 text-sm">
-                <span className="flex-1 font-medium text-foreground">{String(v.name)}</span>
-                {v.storage && <span className="text-xs text-muted-foreground">{String(v.storage)}</span>}
-                {v.color && <span className="text-xs text-muted-foreground">{String(v.color)}</span>}
-              </div>
-            ))}
+            {(variantModel.variants as ModelVariant[]).map((v, i) => {
+              const parts = variantParts(v);
+              return (
+                <div key={i} className="flex flex-wrap items-center gap-2 rounded-lg border border-border bg-surface px-3 py-2 text-sm">
+                  <span className="mr-1 font-medium text-foreground">{variantModel.name}</span>
+                  {parts.length > 0 ? parts.map((part) => (
+                    <span key={part} className="rounded-md bg-muted px-2 py-1 text-xs font-medium text-foreground">
+                      {part}
+                    </span>
+                  )) : (
+                    <span className="text-sm font-medium text-foreground">{String(v.name ?? "")}</span>
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
       </Dialog>

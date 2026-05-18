@@ -91,19 +91,35 @@ export async function listRepairTickets(opts?: {
   status?: RepairStatus;
   page?: number;
   perPage?: number;
+  year?: number;
+  month?: number;
+  day?: number;
 }) {
   const session = await getSession();
-  if (!session) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
+  if (!session) return { data: [], total: 0, page: 1, perPage: 20, totalPages: 0 };
 
   const storeId = opts?.storeId ?? session.storeIds[0];
-  if (!storeId) return { data: [], total: 0, page: 1, perPage: 50, totalPages: 0 };
+  if (!storeId) return { data: [], total: 0, page: 1, perPage: 20, totalPages: 0 };
 
   const page = opts?.page ?? 1;
-  const perPage = opts?.perPage ?? 50;
+  const perPage = opts?.perPage ?? 20;
 
-  // Technician sees only assigned tickets (unless they created it and it's not assigned yet)
-  // For simplicity: Technician only sees assigned tickets.
   const isTechnician = session.role === "Technician";
+
+  let dateFilter: Prisma.DateTimeFilter | undefined;
+  if (opts?.year && opts?.month) {
+    if (opts?.day) {
+      dateFilter = {
+        gte: new Date(opts.year, opts.month - 1, opts.day),
+        lt: new Date(opts.year, opts.month - 1, opts.day + 1),
+      };
+    } else {
+      dateFilter = {
+        gte: new Date(opts.year, opts.month - 1),
+        lt: new Date(opts.year, opts.month),
+      };
+    }
+  }
 
   const where: Prisma.RepairTicketWhereInput = {
     storeId,
@@ -116,6 +132,7 @@ export async function listRepairTickets(opts?: {
           }
         : {}),
       ...(opts?.status ? { currentStatus: opts.status } : {}),
+      ...(dateFilter ? { createdAt: dateFilter } : {}),
       ...(opts?.q
         ? {
             OR: [

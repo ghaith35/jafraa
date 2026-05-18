@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
 import { Pagination } from "@/components/shared/Pagination";
+import { KpiStrip, type KpiItem } from "@/components/shared/KpiStrip";
 import { InventorySearchBar } from "@/features/inventory/components/InventorySearchBar";
 import { ServiceList } from "@/features/inventory/components/ServiceList";
 import { ServiceDeviceSidebar } from "./ServiceDeviceSidebar";
@@ -17,6 +18,7 @@ type DeviceCategory = ServiceFormDeviceCategory & { sortOrder: number };
 
 interface Props {
   canManage: boolean;
+  kpiItems?: KpiItem[];
   services: ServiceListItem[];
   deviceCategories: DeviceCategory[];
   serviceTypes: ServiceTypeRecord[];
@@ -34,6 +36,7 @@ interface Props {
 
 export function ServicesManagerClient({
   canManage,
+  kpiItems,
   services,
   deviceCategories,
   serviceTypes,
@@ -72,7 +75,13 @@ export function ServicesManagerClient({
 
   return (
     <div className="flex flex-col gap-4" style={{ height: "calc(100svh - 3.5rem - 2.5rem)" }}>
-      {/* ── Fixed header row: title + search + button ───────────────────── */}
+      {/* ── KPI strip ───────────────────────────────────────────────────── */}
+      {kpiItems && kpiItems.length > 0 && (
+        <div className="shrink-0">
+          <KpiStrip items={kpiItems} />
+        </div>
+      )}
+      {/* ── Fixed header row: search + button ───────────────────────────── */}
       <div className="flex items-center gap-3 shrink-0">
         <div className="w-64 shrink-0">
           <InventorySearchBar

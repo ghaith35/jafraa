@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { getTranslations } from "next-intl/server";
 import { LoginForm } from "./_components/LoginForm";
+import { LoginControls } from "./_components/LoginControls";
 import { Wrench } from "lucide-react";
 
 export const metadata = {
@@ -12,6 +13,7 @@ export default async function LoginPage() {
 
   return (
     <main className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <LoginControls />
       {/* Background gradient */}
       <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #0c1226 0%, #1e1b4b 40%, #0f172a 100%)" }} />
 

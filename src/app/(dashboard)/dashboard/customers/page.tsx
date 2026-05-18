@@ -5,6 +5,7 @@ import { getSession } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
 import { EmptyState } from "@/components/shared/EmptyState";
 import { Pagination } from "@/components/shared/Pagination";
+import { KpiStrip } from "@/components/shared/KpiStrip";
 import { CustomerSearchBar } from "@/features/customers/components/CustomerSearchBar";
 import { CustomerCard } from "@/features/customers/components/CustomerCard";
 import { NewCustomerDialog } from "@/features/customers/components/NewCustomerDialog";
@@ -26,17 +27,27 @@ export default async function CustomersPage({
   const groupId = sp.groupId;
   const page = Number(sp.page) || 1;
   const perPage = 50;
+  const startOfMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
 
-  const activeGroupOptions = await prisma.customerGroup.findMany({
-    where: { companyId: session.companyId, isArchived: false },
-    orderBy: { name: "asc" },
-    select: { id: true, name: true },
-  });
+  const [activeGroupOptions, totalCustomers, withDebt, newMonth] = await Promise.all([
+    prisma.customerGroup.findMany({
+      where: { companyId: session.companyId, isArchived: false },
+      orderBy: { name: "asc" },
+      select: { id: true, name: true },
+    }),
+    prisma.customer.count({ where: { companyId: session.companyId, isArchived: false, customerType: "named" } }),
+    prisma.customerDebtBalance.count({ where: { customer: { companyId: session.companyId, isArchived: false }, totalDebt: { gt: 0 } } }),
+    prisma.customer.count({ where: { companyId: session.companyId, isArchived: false, createdAt: { gte: startOfMonth } } }),
+  ]);
 
   return (
     <div className="flex flex-col" style={{ height: "calc(100svh - 5.5rem)" }}>
-      <div className="shrink-0 flex items-center justify-end mb-3">
-        <NewCustomerDialog groups={activeGroupOptions} />
+      <div className="shrink-0 mb-3 space-y-3">
+        <KpiStrip items={[
+          { label: t("kpi.totalCustomers"), value: String(totalCustomers) },
+          { label: t("kpi.withDebt"), value: String(withDebt), tone: withDebt > 0 ? "red" : "default" },
+          { label: t("kpi.newMonth"), value: String(newMonth), tone: newMonth > 0 ? "green" : "default" },
+        ]} />
       </div>
 
       <CustomerTabContent
@@ -97,7 +108,7 @@ async function CustomerTabContent({
   return (
     <div className="flex flex-col flex-1 min-h-0 gap-3">
       <Suspense>
-        <CustomerSearchBar groups={activeGroups} />
+        <CustomerSearchBar groups={activeGroups} rightSlot={<NewCustomerDialog groups={activeGroups} />} />
       </Suspense>
 
       {/* Stats strip */}

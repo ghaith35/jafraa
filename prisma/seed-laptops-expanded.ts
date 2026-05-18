@@ -94,7 +94,7 @@ function getBrandCatalogModels(brandName: string, familyName: string): BrandCata
   const models: BrandCatalogModel[] = [];
   for (const family of catalog.families) {
     const sf = normalize(family.name);
-    if (sf === nf || sf.startsWith(nf + " ") || nf.startsWith(sf + " ") || sf === stripped || sf.startsWith(stripped + " ") || stripped.startsWith(sf + " ")) {
+    if (sf === nf || sf === stripped) {
       for (const model of family.models) {
         const key = normalize(model.name);
         if (!models.some((m) => normalize(m.name) === key)) {

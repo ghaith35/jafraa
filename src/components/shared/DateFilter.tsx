@@ -3,6 +3,7 @@
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useCallback } from "react";
 import { useLocale } from "next-intl";
+import { useSearchParams } from "next/navigation";
 
 interface MonthEntry {
   year: number;
@@ -37,10 +38,13 @@ export function DateFilter({ months, days, selectedYear, selectedMonth, selected
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
+  const searchParams = useSearchParams();
 
   const navigate = useCallback(
     (overrides: Record<string, string | undefined>) => {
-      const params = new URLSearchParams();
+      // Start from current params so status/q/etc. are preserved
+      const params = new URLSearchParams(searchParams.toString());
+      params.delete("year"); params.delete("month"); params.delete("day"); params.delete("page");
       const year = overrides.year ?? (selectedYear ? String(selectedYear) : undefined);
       const month = overrides.month ?? (selectedMonth ? String(selectedMonth) : undefined);
       const day = overrides.day ?? (selectedDay ? String(selectedDay) : undefined);
@@ -50,7 +54,7 @@ export function DateFilter({ months, days, selectedYear, selectedMonth, selected
       const qs = params.toString();
       router.replace(qs ? `${pathname}?${qs}` : pathname);
     },
-    [router, pathname, selectedYear, selectedMonth, selectedDay]
+    [router, pathname, selectedYear, selectedMonth, selectedDay, searchParams]
   );
 
   const hasActiveFilter = selectedYear || selectedMonth || selectedDay;

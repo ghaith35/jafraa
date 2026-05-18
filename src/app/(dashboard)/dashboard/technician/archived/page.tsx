@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { Prisma } from "@prisma/client";
 import { DateFilter } from "@/components/shared/DateFilter";
+import { KpiStrip } from "@/components/shared/KpiStrip";
 import { getSession } from "@/lib/auth/session";
 import { getAppI18n } from "@/lib/i18n/server";
 import { prisma } from "@/lib/db";
@@ -34,6 +35,16 @@ export default async function ArchivedPage(props: {
 
   const storeId = session.storeIds[0];
   if (!storeId) redirect("/dashboard");
+
+  const startOfMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
+
+  const [completedMonth, notRepairedCount, totalArchived] = await Promise.all([
+    prisma.repairStatusHistory.count({
+      where: { newStatus: "completed", createdAt: { gte: startOfMonth }, repairTicket: { storeId } },
+    }),
+    prisma.repairTicket.count({ where: { storeId, currentStatus: "not_repaired" } }),
+    prisma.repairTicket.count({ where: { storeId, currentStatus: { in: ["completed", "not_repaired"] } } }),
+  ]);
 
   const selectedYear = searchParams.year ? Number(searchParams.year) : undefined;
   const selectedMonth = searchParams.month ? Number(searchParams.month) : undefined;
@@ -79,6 +90,11 @@ export default async function ArchivedPage(props: {
 
   return (
     <div className="space-y-6">
+      <KpiStrip items={[
+        { label: t("kpi.completedMonth"), value: String(completedMonth), tone: "green" },
+        { label: t("kpi.notRepaired"), value: String(notRepairedCount), tone: notRepairedCount > 0 ? "red" : "default" },
+        { label: t("kpi.totalArchived"), value: String(totalArchived) },
+      ]} />
       <div className="flex justify-end">
         <DateFilter
           months={months}

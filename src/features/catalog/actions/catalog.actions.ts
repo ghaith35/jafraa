@@ -8,6 +8,8 @@ import { EXPANDED_LAPTOP_CATALOG } from "../../../../prisma/catalog/laptop-catal
 import { EXPANDED_PHONE_CATALOG } from "../../../../prisma/catalog/phone-catalog-expanded";
 import { APPLE_ENRICHED_CATALOG } from "../../../../prisma/catalog/apple-catalog-enriched";
 import { SAMSUNG_ENRICHED_CATALOG } from "../../../../prisma/catalog/samsung-catalog-enriched";
+import { HUAWEI_ENRICHED_CATALOG } from "../../../../prisma/catalog/huawei-catalog-enriched";
+import { INFINIX_ENRICHED_CATALOG } from "../../../../prisma/catalog/infinix-catalog-enriched";
 
 import brandAcer from "../../../data/catalog/laptops/brands/acer.json";
 import brandApple from "../../../data/catalog/laptops/brands/apple.json";
@@ -157,6 +159,8 @@ function phoneEnrichedBrandDef(brandName: string) {
   const normalized = normalizeCatalogName(brandName);
   if (normalized === normalizeCatalogName(APPLE_ENRICHED_CATALOG.brandName)) return APPLE_ENRICHED_CATALOG;
   if (normalized === normalizeCatalogName(SAMSUNG_ENRICHED_CATALOG.brandName)) return SAMSUNG_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(HUAWEI_ENRICHED_CATALOG.brandName)) return HUAWEI_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(INFINIX_ENRICHED_CATALOG.brandName)) return INFINIX_ENRICHED_CATALOG;
   return null;
 }
 
@@ -182,11 +186,7 @@ function isNonEmptyArray(value: unknown): value is unknown[] {
 
 function familyNameMatches(sourceFamily: string, normalizedFamily: string, strippedFamily: string): boolean {
   if (sourceFamily === normalizedFamily) return true;
-  if (sourceFamily.startsWith(normalizedFamily + " ")) return true;
-  if (normalizedFamily.startsWith(sourceFamily + " ")) return true;
   if (sourceFamily === strippedFamily) return true;
-  if (sourceFamily.startsWith(strippedFamily + " ")) return true;
-  if (strippedFamily.startsWith(sourceFamily + " ")) return true;
   return false;
 }
 
@@ -354,6 +354,27 @@ function laptopFallbackModelsForFamily(familyId: string, brandName: string, fami
 }
 
 function phoneFallbackModelsForFamily(familyId: string, brandName: string, familyName: string) {
+  const enrichedBrandDef = phoneEnrichedBrandDef(brandName);
+  const enrichedFamily = enrichedBrandDef?.families.find(
+    (family) => normalizeCatalogName(family.name) === normalizeCatalogName(familyName),
+  );
+  if (enrichedFamily) {
+    const now = new Date(0);
+    return enrichedFamily.models.map((model, index) => ({
+      id: `${VIRTUAL_PHONE_MODEL_PREFIX}${familyId}:${encodeURIComponent(model.name)}`,
+      familyId,
+      name: model.name,
+      releaseYear: model.releaseYear ?? null,
+      imageUrl: model.imageUrl ?? null,
+      specs: model.specs ?? {},
+      variants: model.variants ?? [],
+      sortOrder: index + 1,
+      isActive: true,
+      createdAt: now,
+      updatedAt: now,
+    }));
+  }
+
   const familyDef = phoneFamilyDef(brandName, familyName);
   const enrichedModels = appleEnrichedModelsForFamily(brandName, familyName);
   const enrichedByName = new Map(enrichedModels.map((model) => [normalizeCatalogName(model.name), model]));
@@ -485,7 +506,8 @@ export async function listFamiliesByBrand(
   }
 
   if (brand?.category.key === "phone") {
-    const brandDef = phoneBrandDef(brand.name);
+    const enrichedBrandDef = phoneEnrichedBrandDef(brand.name);
+    const brandDef = enrichedBrandDef ?? phoneBrandDef(brand.name);
     if (brandDef) {
       const properFamilyNames = new Set(brandDef.families.map((family) => normalizeCatalogName(family.name)));
 
@@ -494,7 +516,7 @@ export async function listFamiliesByBrand(
         return properFamilyNames.has(normalizeCatalogName(family.name));
       });
 
-      if (opts?.includeLaptopModelFallback) {
+      if (opts?.includeLaptopModelFallback && !enrichedBrandDef) {
         const existingFamilyNames = new Set(families.map((family) => normalizeCatalogName(family.name)));
         const now = new Date(0);
         const virtualFamilies = brandDef.families
@@ -514,6 +536,20 @@ export async function listFamiliesByBrand(
 
         families = [...families, ...virtualFamilies];
       }
+    }
+  }
+
+  if (brand?.category.key === "phone") {
+    const enrichedBrandDef = phoneEnrichedBrandDef(brand.name);
+    if (enrichedBrandDef) {
+      const familyOrder = new Map(
+        enrichedBrandDef.families.map((family, index) => [normalizeCatalogName(family.name), index]),
+      );
+      return families.sort((a, b) => {
+        const ao = familyOrder.get(normalizeCatalogName(a.name)) ?? Number.MAX_SAFE_INTEGER;
+        const bo = familyOrder.get(normalizeCatalogName(b.name)) ?? Number.MAX_SAFE_INTEGER;
+        return ao - bo || a.sortOrder - b.sortOrder || a.name.localeCompare(b.name);
+      });
     }
   }
 

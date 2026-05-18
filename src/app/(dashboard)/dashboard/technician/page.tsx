@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { Prisma } from "@prisma/client";
 import { DateFilter } from "@/components/shared/DateFilter";
+import { KpiStrip } from "@/components/shared/KpiStrip";
 import { getSession } from "@/lib/auth/session";
 import { getAppI18n } from "@/lib/i18n/server";
 import { prisma } from "@/lib/db";
@@ -38,6 +39,15 @@ export default async function TechnicianWorkspacePage(props: {
 
   const storeId = session.storeIds[0];
   if (!storeId) redirect("/dashboard");
+
+  const techFilter = session.role === "Technician" ? { assignedTechnicianId: session.sub } : {};
+
+  const [inRepairCount, awaitingCount, readyCount, rushCount] = await Promise.all([
+    prisma.repairTicket.count({ where: { storeId, isArchived: false, currentStatus: "in_repair", ...techFilter } }),
+    prisma.repairTicket.count({ where: { storeId, isArchived: false, currentStatus: "waiting_customer_approval", ...techFilter } }),
+    prisma.repairTicket.count({ where: { storeId, isArchived: false, currentStatus: "ready_for_pickup", ...techFilter } }),
+    prisma.repairTicket.count({ where: { storeId, isArchived: false, priority: "rush", currentStatus: { in: ["received", "in_diagnosis", "waiting_customer_approval", "in_repair"] }, ...techFilter } }),
+  ]);
 
   const selectedYear = searchParams.year ? Number(searchParams.year) : undefined;
   const selectedMonth = searchParams.month ? Number(searchParams.month) : undefined;
@@ -91,6 +101,12 @@ export default async function TechnicianWorkspacePage(props: {
 
   return (
     <div className="space-y-6">
+      <KpiStrip items={[
+        { label: t("kpi.inRepair"), value: String(inRepairCount), tone: inRepairCount > 0 ? "amber" : "default" },
+        { label: t("kpi.awaitingApproval"), value: String(awaitingCount) },
+        { label: t("kpi.readyPickup"), value: String(readyCount), tone: readyCount > 0 ? "green" : "default" },
+        { label: t("kpi.rush"), value: String(rushCount), tone: rushCount > 0 ? "red" : "default" },
+      ]} />
       <div className="flex justify-end">
         <DateFilter
           months={months}

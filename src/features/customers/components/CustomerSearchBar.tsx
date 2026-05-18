@@ -8,9 +8,9 @@ import { useAppI18n } from "@/lib/i18n/ui";
 
 interface GroupOption { id: string; name: string; }
 
-interface Props { groups: GroupOption[]; }
+interface Props { groups: GroupOption[]; rightSlot?: React.ReactNode; }
 
-export function CustomerSearchBar({ groups }: Props) {
+export function CustomerSearchBar({ groups, rightSlot }: Props) {
   const { t } = useAppI18n();
   const router = useRouter();
   const pathname = usePathname();
@@ -43,7 +43,8 @@ export function CustomerSearchBar({ groups }: Props) {
   return (
     <div className="shrink-0 space-y-2.5">
       {/* Search row */}
-      <div className="relative">
+      <div className="flex items-center gap-2">
+      <div className="relative flex-1">
         <Search className="absolute start-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground pointer-events-none" />
         <input
           ref={inputRef}
@@ -60,6 +61,8 @@ export function CustomerSearchBar({ groups }: Props) {
             <X className="h-3.5 w-3.5" />
           </button>
         )}
+      </div>
+      {rightSlot}
       </div>
 
       {/* Filter pills */}

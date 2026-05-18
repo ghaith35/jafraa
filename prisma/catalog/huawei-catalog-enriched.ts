@@ -1,0 +1,16568 @@
+/**
+ * Enriched Huawei phone catalog with specs, variants, images, and release years.
+ * Generated from src/data/catalog/phones/brands/huawei.json.
+ */
+
+export type HuaweiEnrichedModelVariant = {
+  name: string;
+  ram?: string;
+  storage?: string;
+  color?: string;
+  connectivity?: string;
+  sourceBasis?: string;
+};
+
+export type HuaweiEnrichedModelSpecs = {
+  display?: string | null;
+  processor?: string | null;
+  ram?: string | null;
+  storage?: string[] | null;
+  battery?: string | null;
+  os?: string | null;
+  weight?: string | null;
+  dimensions?: string | null;
+};
+
+export type HuaweiEnrichedModel = {
+  name: string;
+  aliases: string[];
+  releaseYear: number | null;
+  imageUrl: string | null;
+  specs: HuaweiEnrichedModelSpecs;
+  variants: HuaweiEnrichedModelVariant[];
+  sources?: string[];
+};
+
+export type HuaweiEnrichedFamily = {
+  name: string;
+  models: HuaweiEnrichedModel[];
+};
+
+export const HUAWEI_ENRICHED_CATALOG: {
+  brandName: string;
+  logoUrl: string | null;
+  sortOrder: number;
+  families: HuaweiEnrichedFamily[];
+} = {
+  "brandName": "Huawei",
+  "logoUrl": "https://logo.clearbit.com/huawei.com",
+  "sortOrder": 9,
+  "families": [
+    {
+      "name": "Honor (Huawei-era)",
+      "models": [
+        {
+          "name": "Huawei Honor 10X Lite",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 10X Lite Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2010X%20Lite",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 30",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-30.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 30 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2030",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-30.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 30 Lite",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-30-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 30 Lite Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2030%20Lite",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-30-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 30 Pro",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-30-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 30 Pro Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2030%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-30-pro.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 30 Pro+",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-30-pro-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 30 Pro+ Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2030%20Pro%2B",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-30-pro-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 30i",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-30i.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 30i Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2030i",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-30i.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 30S",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-30s.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 30S Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2030S",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-30s.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor Play 4",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor Play 4 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20Play%204",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor Play 4 Pro",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-play-4-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor Play 4 Pro Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20Play%204%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-play-4-pro.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor Play 4T",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-play-4t.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor Play 4T Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20Play%204T",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-play-4t.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor Play 4T Pro",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-play-4t-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor Play 4T Pro Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20Play%204T%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-play-4t-pro.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor X10",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor X10 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20X10",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor X10 Max",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-x10-max.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor X10 Max Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20X10%20Max",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-x10-max.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 20",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-20.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 20 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2020",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 20 Lite",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-20-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 20 Lite Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2020%20Lite",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-20-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 20 Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/honor-20-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 20 Pro Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2020%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/honor-20-pro/",
+            "https://www.gsmarena.com.bd/images/products/honor-20-pro.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 8A",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 8A Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%208A",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 8S",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/honor-8s.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 8S Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%208S",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/honor-8s/",
+            "https://www.gsmarena.com.bd/images/products/honor-8s.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor Play 3",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-play-3.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor Play 3 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20Play%203",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-play-3.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor Play 3e",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-play-3e.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor Play 3e Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20Play%203e",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-play-3e.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor View 30",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/honor-view-30.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor View 30 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20View%2030",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/honor-view-30/",
+            "https://www.gsmarena.com.bd/images/products/honor-view-30.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor View 30 Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/honor-view-30-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor View 30 Pro Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20View%2030%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/honor-view-30-pro/",
+            "https://www.gsmarena.com.bd/images/products/honor-view-30-pro.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 10",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 10 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2010",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 10 GT",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 10 GT Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2010%20GT",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 10 Lite",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-10-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 10 Lite Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%2010%20Lite",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 7A",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-7a.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 7A Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%207A",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 7C",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-7c.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 7C Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%207C",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 7S",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 7S Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%207S",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 8C",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-8c.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 8C Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%208C",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 8X",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-8x.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 8X Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%208X",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 8X Max",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-8x-max.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 8X Max Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%208X%20Max",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 9i",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-9i.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 9i Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%209i",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor Magic 2",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-magic-2.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor Magic 2 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20Magic%202",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-magic-2.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor Note 10",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor Note 10 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20Note%2010",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor Play",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-play.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor Play Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20Play",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor View 20",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-view-20.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor View 20 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20View%2020",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 7X",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-7x.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 7X Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%207X",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 8 Lite",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 8 Lite Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%208%20Lite",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 8 Pro",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-8-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 8 Pro Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%208%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 9",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-9.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 9 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%209",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 9 Lite",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-9-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 9 Lite Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%209%20Lite",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor View 10",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-view-10.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor View 10 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20View%2010",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 6X",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-6x.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 6X Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%206X",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 8",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 8 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%208",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor Magic",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-magic.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor Magic Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20Magic",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor V8",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-v8.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor V8 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%20V8",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 4A",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-4a.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 4A Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%204A",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 4C",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-4c.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 4C Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%204C",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 5X",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-5x.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 5X Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%205X",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 7",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 7 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%207",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 7i",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-7i.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 7i Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%207i",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 3C 4G",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-3c-4g.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 3C 4G Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%203C%204G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 3C Play",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-3c-play.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 3C Play Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%203C%20Play",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 4X",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-4x.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 4X Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%204X",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 6",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-6.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 6 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%206",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 6 Plus",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-6-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 6 Plus Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%206%20Plus",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 3",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-3.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 3 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%203",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 3C",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 3C Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%203C",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Honor (Huawei-era)",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Honor 3X",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-3x.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 3X Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%203X",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor 2",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor-2.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 2 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor%202",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Honor",
+          "aliases": [],
+          "releaseYear": 2011,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-honor.jpg",
+          "specs": {
+            "display": "4\" inches TFT LCD 480x854 pixels",
+            "processor": "32bit: Qualcomm Snapdragon MSM8255T",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1930 mAh",
+            "os": "Android 2.3.5 Gingerbread",
+            "weight": "140 grams (4.9 ounces)",
+            "dimensions": "61.5 x 122 millimeters (2.42 x 4.8 in) x 10.9 millimeters (0.43 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Honor 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Honor 512MB 4GB White",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Honor 512MB 4GB Yellow",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Yellow",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Honor 512MB 4GB Pink",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Pink",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Honor 512MB 4GB Burgundy",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Burgundy",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Honor",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/honor/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Huawei Ascend G / G",
+      "models": [
+        {
+          "name": "Huawei Ascend G535",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G535 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G535",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend G / G",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G6",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg",
+          "specs": {
+            "display": "4.5\" inches TFT IPS LCD 540x960 pixels",
+            "processor": "32bit: MediaTek MT6582M (28nm)",
+            "ram": "1GB",
+            "storage": [
+              "4GB",
+              "8GB"
+            ],
+            "battery": "2000 mAh",
+            "os": "Android 4.3 Jelly Bean",
+            "weight": "115 grams (4.03 ounces)",
+            "dimensions": "65 x 130 millimeters (2.56 x 5.12 in) x 7.5 millimeters (0.3 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G6 1GB 4GB Black",
+              "ram": "1GB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G6 1GB 4GB White",
+              "ram": "1GB",
+              "storage": "4GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G6 1GB 4GB Pink",
+              "ram": "1GB",
+              "storage": "4GB",
+              "color": "Pink",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G6 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G6",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-g6/",
+            "https://www.phonemore.com/specs/huawei/ascend-g6/3g/",
+            "https://www.phonemore.com/specs/huawei/ascend-g6/4g/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G620s",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g620s.jpg",
+          "specs": {
+            "display": "5\" inches TFT IPS LCD 720x1280 pixels",
+            "processor": "Qualcomm Snapdragon 410 (MSM8916) (28nm)",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2000 mAh",
+            "os": "Android 4.4.2 KitKat",
+            "weight": "160 grams (5.6 ounces)",
+            "dimensions": "72.05 x 142.95 millimeters (2.84 x 5.63 in) x 8.5 millimeters (0.33 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G620s 1GB 8GB Black",
+              "ram": "1GB",
+              "storage": "8GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G620s 1GB 8GB White",
+              "ram": "1GB",
+              "storage": "8GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G620s",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-g620s/",
+            "https://www.phonemore.com/specs/huawei/ascend-g620s/l01/",
+            "https://www.phonemore.com/specs/huawei/ascend-g620s/l02/",
+            "https://www.phonemore.com/specs/huawei/ascend-g620s/l03/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G630",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g630.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G630 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G630",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G7",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g7.jpg",
+          "specs": {
+            "display": "5.5\" inches TFT IPS LCD 720x1280 pixels",
+            "processor": "Qualcomm Snapdragon 410 (MSM8916) (28nm)",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "3000 mAh",
+            "os": "Android 4.4.2 KitKat",
+            "weight": "165 grams (5.78 ounces)",
+            "dimensions": "77.3 x 153.5 millimeters (3.04 x 6.04 in) x 7.6 millimeters (0.3 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G7 2GB 16GB Black",
+              "ram": "2GB",
+              "storage": "16GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G7 2GB 16GB White",
+              "ram": "2GB",
+              "storage": "16GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G7",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-g7/",
+            "https://www.phonemore.com/specs/huawei/ascend-g7/dual-sim/",
+            "https://www.phonemore.com/specs/huawei/ascend-g7/l01/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G510",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg",
+          "specs": {
+            "display": "4.5\" inches TFT IPS LCD 480x854 pixels (16:9)",
+            "processor": "32bit: Qualcomm Snapdragon S4 Play (MSM8225) (45nm)",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1700 mAh",
+            "os": "Android 4.1.1 Jelly Bean",
+            "weight": "150 grams (5.25 ounces)",
+            "dimensions": "67 x 134 millimeters (2.64 x 5.28 in) x 9.9 millimeters (0.39 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G510 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G510 512MB 4GB White",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G510",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-g510/",
+            "https://www.phonemore.com/specs/huawei/ascend-g510/u8951/",
+            "https://www.phonemore.com/specs/huawei/ascend-g510/u8951d/",
+            "fallback:image-from-family:Huawei Ascend G / G",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G525",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g525.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G525 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G525",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G526",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g526.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G526 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G526",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G610",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg",
+          "specs": {
+            "display": "5\" inches TFT IPS LCD 540x960 pixels",
+            "processor": "32bit: MediaTek MT6589",
+            "ram": "1GB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "2150 mAh",
+            "os": "Android 4.2 Jelly Bean",
+            "weight": "170 grams (5.95 ounces)",
+            "dimensions": "73.6 x 142 millimeters (2.9 x 5.59 in) x 9.9 millimeters (0.39 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G610 1GB 4GB Black",
+              "ram": "1GB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G610 1GB 4GB White",
+              "ram": "1GB",
+              "storage": "4GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G610",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-g610/",
+            "fallback:image-from-family:Huawei Ascend G / G",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G615",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/ascend-g615.jpg",
+          "specs": {
+            "display": "4.5\" inches TFT Super IPS+ 720x1280 pixels",
+            "processor": "32bit: Huawei K3V2 HiSilicon Hi3620",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2150 mAh",
+            "os": "Android 4.0.4 Ice Cream Sandwich ICS",
+            "weight": "145 grams (5.08 ounces)",
+            "dimensions": "67.5 x 134 millimeters (2.66 x 5.28 in) x 10.5 millimeters (0.41 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G615 1GB 8GB Metallic black",
+              "ram": "1GB",
+              "storage": "8GB",
+              "color": "Metallic black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G615 1GB 8GB Ceramic white",
+              "ram": "1GB",
+              "storage": "8GB",
+              "color": "Ceramic white",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G615",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-g615/",
+            "https://fdn2.gsmarena.com/vv/bigpic/ascend-g615.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G700",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g700.jpg",
+          "specs": {
+            "display": "5\" inches TFT IPS LCD 720x1280 pixels",
+            "processor": "32bit: MediaTek MT6589",
+            "ram": "2GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2150 mAh",
+            "os": "Android 4.2.1 Jelly Bean",
+            "weight": "155 grams (5.43 ounces)",
+            "dimensions": "72.8 x 142.5 millimeters (2.87 x 5.61 in) x 8.95 millimeters (0.35 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G700 2GB 8GB Black",
+              "ram": "2GB",
+              "storage": "8GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G700 2GB 8GB White",
+              "ram": "2GB",
+              "storage": "8GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G700",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-g700/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G740",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g740.jpg",
+          "specs": {
+            "display": "5\" inches TFT IPS LCD 720x1280 pixels",
+            "processor": "32bit: Qualcomm Snapdragon 400 MSM8930",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2400 mAh",
+            "os": "Android 4.1.2 Jelly Bean",
+            "weight": "155 grams (5.43 ounces)",
+            "dimensions": "71.5 x 139.5 millimeters (2.81 x 5.49 in) x 9.3 millimeters (0.37 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G740 1GB 8GB White",
+              "ram": "1GB",
+              "storage": "8GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G740",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-g740/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G300",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg",
+          "specs": {
+            "display": "4\" inches TFT IPS LCD 480x800 pixels",
+            "processor": "32bit: Qualcomm MSM7227A",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1500 mAh",
+            "os": "Android 2.3.6 Gingerbread",
+            "weight": "140 grams (4.9 ounces)",
+            "dimensions": "63 x 122.5 millimeters (2.48 x 4.82 in) x 10.5 millimeters (0.41 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G300 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G300 512MB 4GB Silver",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Silver",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G300",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-g300/",
+            "fallback:image-from-family:Huawei Ascend G / G",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G312",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G312 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G312",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend G / G",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g6.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend G330",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-g330.jpg",
+          "specs": {
+            "display": "4\" inches TFT LCD 480x800 pixels (5:3)",
+            "processor": "32bit: Qualcomm Snapdragon S4 Play (MSM8225) (45nm)",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1500 mAh",
+            "os": "Android 4.0.4 Ice Cream Sandwich ICS",
+            "weight": "130 grams (4.55 ounces)",
+            "dimensions": "62.6 x 122.5 millimeters (2.46 x 4.82 in) x 11.2 millimeters (0.44 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend G330 512MB 4GB Matt Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Matt Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend G330 512MB 4GB Luxury Silver",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Luxury Silver",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20G330",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-g330/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Huawei Ascend GX",
+      "models": [
+        {
+          "name": "Huawei Ascend GX",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend GX Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20GX",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend GX",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend GX-2",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend GX-2 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20GX-2",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend GX",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend GX-3",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend GX-3 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20GX-3",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend GX",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend GX-4",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend GX-4 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20GX-4",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend GX",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend GX-5",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend GX-5 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20GX-5",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend GX",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend GX-6",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend GX-6 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20GX-6",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend GX",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend GX-7",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend GX-7 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20GX-7",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend GX",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend GX-8",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend GX-8 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20GX-8",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend GX",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend GX-9",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend GX-9 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20GX-9",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Ascend GX",
+            "https://fdn2.gsmarena.com/vv/bigpic/honor-10x-lite.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Huawei Ascend W",
+      "models": [
+        {
+          "name": "Huawei Ascend W1",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-w1.jpg",
+          "specs": {
+            "display": "4\" inches TFT IPS LCD 480x800 pixels (5:3)",
+            "processor": "32bit: Qualcomm Snapdragon 400 (MSM8230) (28nm)",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1950 mAh",
+            "os": "Windows Phone 8.0 Apollo",
+            "weight": "130 grams (4.55 ounces)",
+            "dimensions": "63.7 x 124.5 millimeters (2.51 x 4.9 in) x 10.15 millimeters (0.4 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend W1 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend W1 512MB 4GB Blue",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend W1 512MB 4GB White",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend W1 512MB 4GB Magenta",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Magenta",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20W1",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-w1/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend W2",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-w2.jpg",
+          "specs": {
+            "display": "4.3\" inches TFT IPS LCD 480x800 pixels",
+            "processor": "32bit: Qualcomm Snapdragon 400 MSM8230",
+            "ram": "512MB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "1700 mAh",
+            "os": "Windows Phone 8.0 Apollo",
+            "weight": "160 grams (5.6 ounces)",
+            "dimensions": "67 x 134 millimeters (2.64 x 5.28 in) x 9.9 millimeters (0.39 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend W2 512MB 8GB Black",
+              "ram": "512MB",
+              "storage": "8GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend W2 512MB 8GB Blue",
+              "ram": "512MB",
+              "storage": "8GB",
+              "color": "Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend W2 512MB 8GB Red",
+              "ram": "512MB",
+              "storage": "8GB",
+              "color": "Red",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend W2 512MB 8GB Yellow",
+              "ram": "512MB",
+              "storage": "8GB",
+              "color": "Yellow",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20W2",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-w2/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Huawei Enjoy",
+      "models": [
+        {
+          "name": "Huawei Enjoy 90 Plus",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg",
+          "specs": {
+            "display": "6.67-inch 720 x 1604 IPS LCD",
+            "processor": "Kirin 8000A",
+            "ram": "8GB",
+            "storage": [
+              "Not specified"
+            ],
+            "battery": "6620 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 90 Plus Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://nanoreview.net/en/phone-list/all-huawei"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 90 Pro Max",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-pro-max.jpg",
+          "specs": {
+            "display": "6.84-inch 1272 x 2756 OLED",
+            "processor": "Kirin 8000",
+            "ram": "8GB",
+            "storage": [
+              "Not specified"
+            ],
+            "battery": "8500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 90 Pro Max Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://nanoreview.net/en/phone-list/all-huawei"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 80",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Enjoy-80.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "6620 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 80 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 80 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 80 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2080",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-enjoy-80/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Enjoy-80.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 80 Pro",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 80 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 80 Pro 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 80 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 80 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2080%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Enjoy",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 70",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-70.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 70 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 70 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2070",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 70 Pro",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 70 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 70 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2070%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Enjoy",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 70S",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 70S 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 70S 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2070S",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Enjoy",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 70z",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-70z.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 70z 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 70z 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2070z",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 60",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-60.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 60 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 60 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2060",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 60X",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-60x.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "7000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 60X 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 60X 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 60X 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2060X",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 50",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 50 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 50 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 50 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 50 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2050",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Enjoy",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 50 Pro",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 50 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 50 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2050%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Enjoy",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 50z",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Enjoy-50z.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "4GB/6GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 50z 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 50z 4GB 256GB",
+              "ram": "4GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 50z 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 50z 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2050z",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-enjoy-50z/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Enjoy-50z.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 20e",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20e.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Helio P35/Kirin 710A",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 20e 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 20e 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 20e 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 20e 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2020e",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 20 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Dimensity 720",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 20 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 20 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 20 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2020%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 20 Plus 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Dimensity 720",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 20 Plus 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 20 Plus 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2020%20Plus%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 20 Pro",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Dimensity 800",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 20 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 20 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2020%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 20 SE",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-20-se.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "4GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 20 SE 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 20 SE 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_enjoy_20_se-10652.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy Z 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-z-5g.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Dimensity 800",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy Z 5G 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy Z 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy Z 5G 8GB 64GB",
+              "ram": "8GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy Z 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%20Z%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 10",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-10.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710F",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 10 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 10 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 10 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 10 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2010",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 10 Plus",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-10-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710F",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 10 Plus 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 10 Plus 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 10 Plus 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2010%20Plus",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 10s",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-10s.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710F",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 10s 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 10s 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 10s 8GB 64GB",
+              "ram": "8GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 10s 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%2010s",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 9e",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-enjoy-9e.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Helio A22",
+            "ram": "3GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3020 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 9e 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 9e 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%209e",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-enjoy-9e/",
+            "https://www.gsmarena.com.bd/images/products/huawei-enjoy-9e.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 8",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-enjoy-8.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 8 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%208",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-enjoy-8/",
+            "https://www.gsmarena.com.bd/images/products/huawei-enjoy-8.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 8 Plus",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg",
+          "specs": {
+            "display": "5.93\" inches TFT IPS LCD 1080x2160 pixels",
+            "processor": "Kirin 659",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": "Android 8.0 Oreo",
+            "weight": "170 grams (5.95 ounces)",
+            "dimensions": "75.3 x 157.2 millimeters (2.96 x 6.19 in) x 7.9 millimeters (0.31 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 8 Plus 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8 Plus 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8 Plus 3GB 128GB",
+              "ram": "3GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8 Plus 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8 Plus 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8 Plus 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8 Plus 3GB 32GB Black",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Enjoy 8 Plus 3GB 32GB Gold",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Gold",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Enjoy 8 Plus 3GB 32GB Blue",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%208%20Plus",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/enjoy-8-plus/",
+            "fallback:image-from-family:Huawei Enjoy",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 8e",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB/3GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 8e 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8e 2GB 64GB",
+              "ram": "2GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8e 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 8e 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%208e",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Enjoy",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 9",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-9.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 450",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 9 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 9 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 9 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 9 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%209",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 9 Plus",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 9 Plus 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 9 Plus 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%209%20Plus",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Enjoy",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 7",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB/3GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": "3020 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 7 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 7 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 7 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 7 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%207",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Enjoy",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-90-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 7 Plus",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-7-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 7 Plus 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 7 Plus 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 7 Plus 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Enjoy 7 Plus 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%207%20Plus",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 6",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-6.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Mediatek MT6750",
+            "ram": "3GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "4100 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 6 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%206",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 6S",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-6s.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 435",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "3020 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 6S 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%206S",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 5",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-5.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Mediatek MT6735P",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 5 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%205",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Enjoy 5S",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-5s.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": "2200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Enjoy 5S Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Enjoy%205S",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Huawei Mate",
+      "models": [
+        {
+          "name": "Huawei Mate 80 Pro Max Wind",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg",
+          "specs": {
+            "display": "6.9-inch 1320 x 2848 OLED",
+            "processor": "Kirin 9030 Pro",
+            "ram": "16GB",
+            "storage": [
+              "Not specified"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 80 Pro Max Wind Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://nanoreview.net/en/phone-list/all-huawei"
+          ]
+        },
+        {
+          "name": "Huawei Mate 70 Air",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-70-air.jpg",
+          "specs": {
+            "display": "7.0-inch OLED",
+            "processor": "Not specified",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "6500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 70 Air 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 70 Air 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2070%20Air",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 80",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80.jpg",
+          "specs": {
+            "display": "6.75-inch OLED",
+            "processor": "Kirin-series",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5750 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 80 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 80 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2080",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 80 Pro",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro.jpg",
+          "specs": {
+            "display": "6.9-inch OLED",
+            "processor": "Kirin-series",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 80 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 80 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 80 Pro 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 80 Pro 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 80 Pro 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 80 Pro 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2080%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 80 Pro Max",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max.jpg",
+          "specs": {
+            "display": "6.9-inch dual-layer OLED",
+            "processor": "Kirin-series",
+            "ram": "16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 80 Pro Max 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 80 Pro Max 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2080%20Pro%20Max",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 80 RS Ultimate Design",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg",
+          "specs": {
+            "display": "6.9-inch dual-layer OLED",
+            "processor": "Kirin-series",
+            "ram": "16GB/20GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 80 RS Ultimate Design 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 80 RS Ultimate Design 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 80 RS Ultimate Design 20GB 512GB",
+              "ram": "20GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 80 RS Ultimate Design 20GB 1TB",
+              "ram": "20GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2080%20RS%20Ultimate%20Design",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Mate",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 70",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-70.jpg",
+          "specs": {
+            "display": "6.7-inch OLED",
+            "processor": "Kirin 9020",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5300 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 70 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 70 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 70 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2070",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 70 Pro",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-70-pro.jpg",
+          "specs": {
+            "display": "6.9-inch OLED",
+            "processor": "Kirin 9020",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 70 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 70 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 70 Pro 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2070%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 70 Pro+",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-70-pro-plus.jpg",
+          "specs": {
+            "display": "6.9-inch OLED",
+            "processor": "Kirin 9020",
+            "ram": "16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5700 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 70 Pro+ 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 70 Pro+ 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2070%20Pro%2B",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-70-pro-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 70 RS Ultimate Design",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg",
+          "specs": {
+            "display": "6.9-inch OLED",
+            "processor": "Kirin 9020",
+            "ram": "16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5700 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 70 RS Ultimate Design 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 70 RS Ultimate Design 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2070%20RS%20Ultimate%20Design",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Mate",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 60",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-60.jpg",
+          "specs": {
+            "display": "6.69-inch OLED",
+            "processor": "Kirin 9000S",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "4750 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 60 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 60 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 60 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2060",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 60 Pro",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-60-pro.jpg",
+          "specs": {
+            "display": "6.82-inch OLED",
+            "processor": "Kirin 9000S",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 60 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 60 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 60 Pro 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2060%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 60 Pro+",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-60-pro-plus.jpg",
+          "specs": {
+            "display": "6.82-inch OLED",
+            "processor": "Kirin 9000S",
+            "ram": "16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 60 Pro+ 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 60 Pro+ 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2060%20Pro%2B",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-60-pro-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 60 RS Ultimate Design",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg",
+          "specs": {
+            "display": "6.82-inch OLED",
+            "processor": "Kirin 9000S",
+            "ram": "16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 60 RS Ultimate Design 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 60 RS Ultimate Design 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2060%20RS%20Ultimate%20Design",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Mate",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 50",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50.jpg",
+          "specs": {
+            "display": "6.7-inch OLED",
+            "processor": "Snapdragon 8+ Gen 1 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4460 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 50 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 50 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 50 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2050",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 50 Pro",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-pro.jpg",
+          "specs": {
+            "display": "6.74-inch OLED",
+            "processor": "Snapdragon 8+ Gen 1 4G",
+            "ram": "8GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4700 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 50 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 50 Pro 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2050%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 50 RS Porsche Design",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50-rs-porsche-design.jpg",
+          "specs": {
+            "display": "6.74-inch OLED",
+            "processor": "Snapdragon 8+ Gen 1 4G",
+            "ram": "12GB",
+            "storage": [
+              "512GB"
+            ],
+            "battery": "4700 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 50 RS Porsche Design 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2050%20RS%20Porsche%20Design",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 50E",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-50e.jpg",
+          "specs": {
+            "display": "6.7-inch OLED",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4460 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 50E 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 50E 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2050E",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 40 Pro 4G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate40-pro.jpg",
+          "specs": {
+            "display": "6.76-inch OLED",
+            "processor": "Kirin 9000 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4400 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 40 Pro 4G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 40 Pro 4G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 40 Pro 4G 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_40_pro_4g-10985.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 40E",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-40.jpg",
+          "specs": {
+            "display": "6.5-inch OLED",
+            "processor": "Kirin 990E 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 40E 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 40E 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_40e-10783.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 40E 4G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Mate-40E-4G.jpg",
+          "specs": {
+            "display": "6.5-inch OLED",
+            "processor": "Kirin 990E 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 40E 4G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 40E 4G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2040E%204G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-mate-40e-4g/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Mate-40E-4G.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 30E Pro 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate30-pro-5g.jpg",
+          "specs": {
+            "display": "6.53-inch OLED",
+            "processor": "Kirin 990E 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 30E Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 30E Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_30e_pro_5g-10555.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 40",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-40.jpg",
+          "specs": {
+            "display": "6.5-inch OLED",
+            "processor": "Kirin 9000E",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 40 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 40 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_40-10553.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 40 Pro",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate40-pro.jpg",
+          "specs": {
+            "display": "6.76-inch OLED",
+            "processor": "Kirin 9000 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4400 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 40 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 40 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 40 Pro 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_40_pro-10528.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 40 Pro+",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg",
+          "specs": {
+            "display": "6.76-inch OLED",
+            "processor": "Kirin 9000 5G",
+            "ram": "12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "4400 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 40 Pro+ 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2040%20Pro%2B",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Mate",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 40 RS Porsche Design",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Mate-40-RS-Porsche-Design.jpg",
+          "specs": {
+            "display": "6.76-inch OLED",
+            "processor": "Kirin 9000 5G",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4400 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 40 RS Porsche Design 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 40 RS Porsche Design 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2040%20RS%20Porsche%20Design",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-mate-40-rs-porsche-design/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Mate-40-RS-Porsche-Design.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 20 X 5G",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-20-x.jpg",
+          "specs": {
+            "display": "7.2-inch OLED",
+            "processor": "Kirin 980 + Balong 5000",
+            "ram": "8GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 20 X 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2020%20X%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-20-x.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 30",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-mate-30.jpg",
+          "specs": {
+            "display": "6.62-inch OLED",
+            "processor": "Kirin 990",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 30 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 30 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2030",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-mate-30/",
+            "https://www.gsmarena.com.bd/images/products/huawei-mate-30.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 30 5G",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-mate-30.jpg",
+          "specs": {
+            "display": "6.62-inch OLED",
+            "processor": "Kirin 990 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 30 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 30 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2030%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-mate-30/",
+            "https://www.gsmarena.com.bd/images/products/huawei-mate-30.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 30 Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate30-pro-.jpg",
+          "specs": {
+            "display": "6.53-inch OLED",
+            "processor": "Kirin 990",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 30 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 30 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_30_pro-9885.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 30 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-mate-30-pro.jpg",
+          "specs": {
+            "display": "6.53-inch OLED",
+            "processor": "Kirin 990 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 30 Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 30 Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 30 Pro 5G 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2030%20Pro%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-mate-30-pro/",
+            "https://www.gsmarena.com.bd/images/products/huawei-mate-30-pro.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 30 RS Porsche Design",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-30-rs-porsche-design.jpg",
+          "specs": {
+            "display": "6.53-inch OLED",
+            "processor": "Kirin 990 5G",
+            "ram": "12GB",
+            "storage": [
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 30 RS Porsche Design 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_30_rs_porsche_design-9887.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 20",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-20-.jpg",
+          "specs": {
+            "display": "6.53-inch IPS LCD",
+            "processor": "Kirin 980",
+            "ram": "4GB/6GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 20 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 20 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_20-9367.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 20 lite",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-20-lite-r1.jpg",
+          "specs": {
+            "display": "6.3-inch IPS LCD",
+            "processor": "Kirin 710",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "3750 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 20 lite 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 20 lite 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_20_lite-9284.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 20 Pro",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-20-pro-1.jpg",
+          "specs": {
+            "display": "6.39-inch OLED",
+            "processor": "Kirin 980",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 20 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 20 Pro 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 20 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 20 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_20_pro-9343.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 20 RS Porsche Design",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-20-rs-porsche-design.jpg",
+          "specs": {
+            "display": "6.39-inch OLED",
+            "processor": "Kirin 980",
+            "ram": "8GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 20 RS Porsche Design 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 20 RS Porsche Design 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2020%20RS%20Porsche%20Design",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 20 X",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-20-x.jpg",
+          "specs": {
+            "display": "7.2-inch OLED",
+            "processor": "Kirin 980",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 20 X 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 20 X 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 20 X 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 20 X 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2020%20X",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 10",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-mate-10.jpg",
+          "specs": {
+            "display": "5.9-inch IPS LCD",
+            "processor": "Kirin 970",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 10 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 10 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 10 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 10 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2010",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-mate-10/",
+            "https://www.gsmarena.com.bd/images/products/huawei-mate-10.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 10 Lite",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-10-lite.jpg",
+          "specs": {
+            "display": "5.9-inch IPS LCD",
+            "processor": "Kirin 659",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "3340 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 10 Lite 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_10_lite-8857.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 10 Porsche Design",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-mate-10-porsche-design.jpg",
+          "specs": {
+            "display": "6.0-inch AMOLED",
+            "processor": "Kirin 970",
+            "ram": "6GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 10 Porsche Design 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%2010%20Porsche%20Design",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-mate-10-porsche-design/",
+            "https://www.gsmarena.com.bd/images/products/huawei-mate-10-porsche-design.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 10 Pro",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate10-pro.jpg",
+          "specs": {
+            "display": "6.0-inch AMOLED",
+            "processor": "Kirin 970",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 10 Pro 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 10 Pro 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 10 Pro 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 10 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_10_pro-8854.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate SE",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg",
+          "specs": {
+            "display": "5.93-inch IPS LCD",
+            "processor": "Kirin 659",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "3340 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate SE 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20SE",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Mate",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-80-pro-max-wind.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 9",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-9.jpg",
+          "specs": {
+            "display": "5.9-inch IPS LCD",
+            "processor": "Kirin 960",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 9 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 9 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 9 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 9 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_9-8073.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 9 Porsche Design",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-mate-9-porsche-design.jpg",
+          "specs": {
+            "display": "5.5-inch AMOLED",
+            "processor": "Kirin 960",
+            "ram": "6GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 9 Porsche Design 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%209%20Porsche%20Design",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-mate-9-porsche-design/",
+            "https://www.gsmarena.com.bd/images/products/huawei-mate-9-porsche-design.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate 9 Pro",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-9-pro.jpg",
+          "specs": {
+            "display": "5.5-inch AMOLED",
+            "processor": "Kirin 960",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 9 Pro 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 9 Pro 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 9 Pro 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 9 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%209%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate 8",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-8r1.jpg",
+          "specs": {
+            "display": "6.0-inch IPS LCD",
+            "processor": "Kirin 950",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate 8 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 8 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 8 3GB 128GB",
+              "ram": "3GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 8 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 8 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate 8 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_8-7239.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate S",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-mate-s.jpg",
+          "specs": {
+            "display": "5.5-inch AMOLED",
+            "processor": "Kirin 935",
+            "ram": "3GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "2700 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate S 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate S 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate S 3GB 128GB",
+              "ram": "3GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20S",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-mate-s/",
+            "https://www.gsmarena.com.bd/images/products/huawei-mate-s.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Mate2 4G",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-mate2.jpg",
+          "specs": {
+            "display": "6.1-inch IPS LCD",
+            "processor": "Snapdragon 400",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "4050 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Mate2 4G 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Mate2%204G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-mate2.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Mate7",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-mate7.jpg",
+          "specs": {
+            "display": "6.0-inch IPS LCD",
+            "processor": "Kirin 925",
+            "ram": "2GB/3GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": "4100 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Mate7 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Ascend Mate7 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Ascend Mate7 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Ascend Mate7 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Mate7",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Mate",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-mate.jpg",
+          "specs": {
+            "display": "6.1-inch IPS LCD",
+            "processor": "Huawei K3V2",
+            "ram": "2GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "4050 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Mate 2GB 8GB",
+              "ram": "2GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Mate",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Huawei Mate X",
+      "models": [
+        {
+          "name": "Huawei Mate X7",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-x7.jpg",
+          "specs": {
+            "display": "foldable OLED",
+            "processor": "Kirin-series",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5600 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate X7 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X7 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X7 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X7 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X7 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X7 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20X7",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate XTs Ultimate Design",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-x7.jpg",
+          "specs": {
+            "display": "10.2-inch tri-fold OLED",
+            "processor": "Not specified",
+            "ram": "16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5600 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate XTs Ultimate Design 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate XTs Ultimate Design 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate XTs Ultimate Design 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20XTs%20Ultimate%20Design",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Mate X",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-x7.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate X6",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Mate-X6.jpg",
+          "specs": {
+            "display": "7.93-inch foldable OLED",
+            "processor": "Kirin 9020",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5110 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate X6 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X6 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X6 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X6 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X6 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X6 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20X6",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-mate-x6/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Mate-X6.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate XT Ultimate Design",
+          "aliases": [
+            "Huawei Mate XT Ultimate"
+          ],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-x7.jpg",
+          "specs": {
+            "display": "10.2-inch tri-fold OLED",
+            "processor": "Kirin 9010",
+            "ram": "16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5600 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate XT Ultimate Design 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate XT Ultimate Design 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate XT Ultimate Design 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20XT%20Ultimate%20Design",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Mate X",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-x7.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Mate X3",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-x3.jpg",
+          "specs": {
+            "display": "7.85-inch foldable OLED",
+            "processor": "Snapdragon 8+ Gen 1 4G",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "4800 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate X3 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X3 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X3 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20X3",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate X5",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-x5.jpg",
+          "specs": {
+            "display": "7.85-inch foldable OLED",
+            "processor": "Kirin 9000S",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5060 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate X5 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X5 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X5 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X5 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X5 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X5 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20X5",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate Xs 2",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-xs-2.jpg",
+          "specs": {
+            "display": "7.8-inch foldable OLED",
+            "processor": "Snapdragon 888 4G",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4600 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate Xs 2 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate Xs 2 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate Xs 2 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate Xs 2 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20Xs%202",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate X2",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-x2.jpg",
+          "specs": {
+            "display": "8.0-inch foldable OLED",
+            "processor": "Kirin 9000 5G",
+            "ram": "8GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate X2 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X2 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20X2",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate X2 4G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-x2-new.jpg",
+          "specs": {
+            "display": "8.0-inch foldable OLED",
+            "processor": "Kirin 9000 4G",
+            "ram": "8GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate X2 4G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Mate X2 4G 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_x2_4g-10987.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate Xs",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-xs.jpg",
+          "specs": {
+            "display": "8.0-inch foldable OLED",
+            "processor": "Kirin 990 5G",
+            "ram": "8GB",
+            "storage": [
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate Xs 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mate%20Xs",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Mate X",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate-x-.jpg",
+          "specs": {
+            "display": "8.0-inch foldable OLED",
+            "processor": "Kirin 980 + Balong 5000",
+            "ram": "8GB",
+            "storage": [
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Mate X 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_mate_x-9605.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Huawei nova",
+      "models": [
+        {
+          "name": "Huawei nova 14",
+          "aliases": [
+            "Huawei nova 14"
+          ],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "6.7-inch 1084 x 2412 OLED",
+            "processor": "Kirin-series",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 14 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 14 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2014",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://nanoreview.net/en/phone-list/all-huawei",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-14/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Nova 14 Lite",
+          "aliases": [
+            "Huawei nova 14 Lite"
+          ],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "6.7-inch 1084 x 2412 OLED",
+            "processor": "Kirin 8000",
+            "ram": "12GB",
+            "storage": [
+              "Not specified"
+            ],
+            "battery": "5500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Nova 14 Lite Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://nanoreview.net/en/phone-list/all-huawei",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 14 Pro",
+          "aliases": [
+            "Huawei nova 14 Pro"
+          ],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14-Pro.jpg",
+          "specs": {
+            "display": "6.78-inch 1224 x 2776 OLED",
+            "processor": "Kirin-series",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 14 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 14 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 14 Pro 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2014%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://nanoreview.net/en/phone-list/all-huawei",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-14-pro/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14-Pro.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 14 Ultra",
+          "aliases": [
+            "Huawei nova 14 Ultra"
+          ],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14-Ultra.jpg",
+          "specs": {
+            "display": "6.81-inch 1272 x 2860 OLED",
+            "processor": "Kirin-series",
+            "ram": "12GB/16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 14 Ultra 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 14 Ultra 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 14 Ultra 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 14 Ultra 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2014%20Ultra",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://nanoreview.net/en/phone-list/all-huawei",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-14-ultra/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14-Ultra.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 15",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin-series",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "6500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 15 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 15 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 15 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 15 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2015",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 15 Max",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-15-max.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin-series",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "8500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 15 Max 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 15 Max 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 15 Max 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 15 Max 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2015%20Max",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 15 Pro",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin-series",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "6500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 15 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 15 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2015%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 15 Ultra",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-15-Ultra.jpg",
+          "specs": {
+            "display": "6.84-inch 1320 x 2856 OLED",
+            "processor": "Kirin 9010S",
+            "ram": "12GB",
+            "storage": [
+              "Not specified"
+            ],
+            "battery": "6500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 15 Ultra Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://nanoreview.net/en/phone-list/all-huawei",
+            "https://consumer.huawei.com/en/phones/",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-15-ultra/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-15-Ultra.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 12 SE",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-12-SE-Green.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680",
+            "ram": "8GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 12 SE 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2012%20SE",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-12-se/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-12-SE-Green.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 12i",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-12i.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 12i 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 12i 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2012i",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 12s",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-12s.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "8GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 12s 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 12s 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2012s",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 13",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-13-Green.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 8000",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 13 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 13 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 13 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2013",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-13/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-13-Green.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 13 Pro",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-13-Pro-Purple.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 8000",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 13 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 13 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 13 Pro 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2013%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-13-pro/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-13-Pro-Purple.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 13i",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-13i.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 13i 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 13i 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2013i",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova Flip",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-flip.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin-series",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "4400 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Flip 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Flip 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Flip 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Flip",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova Y72",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-Y72.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Y72 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Y72 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Y72",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-y72/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-Y72.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 10 Youth",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-10-Youth.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 10 Youth 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 10 Youth 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2010%20Youth",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-10-youth/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-10-Youth.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 11",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-11.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 11 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 11 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 11 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2011",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-11/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-11.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 11 Pro",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-11-Pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "8GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 11 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 11 Pro 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2011%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-11-pro/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-11-Pro.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 11 SE",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-11-se.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680",
+            "ram": "8GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 11 SE 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 11 SE 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2011%20SE",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 11 Ultra",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-11-Ultra.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "12GB",
+            "storage": [
+              "512GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 11 Ultra 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2011%20Ultra",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-11-ultra/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-11-Ultra.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 11i",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-11i.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 11i 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 11i 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2011i",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 12",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-12.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 830",
+            "ram": "8GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4600 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 12 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 12 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2012",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 12 Pro",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-12-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 9000S",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4600 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 12 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 12 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2012%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 12 Ultra",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-12-ultra.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 9000S",
+            "ram": "12GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "4600 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 12 Ultra 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 12 Ultra 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2012%20Ultra",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova Y62",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Unknown",
+            "ram": "4GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Y62 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Y62",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova Y62 Plus",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Unknown",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Y62 Plus 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Y62%20Plus",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova Y71",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-y71.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Y71 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Y71",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova Y91",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-y91.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "7000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Y91 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Y91 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Y91 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Y91 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Y91",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 10",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-10.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 10 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 10 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 10 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 10 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2010",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 10 Pro",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-10-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 10 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 10 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2010%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 10 SE",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-10-SE.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680 4G",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 10 SE 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 10 SE 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 10 SE 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 10 SE 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2010%20SE",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-10-se/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-10-SE.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 10z",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-10z.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 10z 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 10z 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%2010z",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-10z/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-10z.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 9 SE",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-9-se.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680 4G",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 9 SE 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 9 SE 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 9 SE 6GB 512GB",
+              "ram": "6GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 9 SE 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 9 SE 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 9 SE 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%209%20SE",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova Y61",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-y61.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Unknown",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Y61 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Y61 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Y61",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova Y70",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Y70 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Y70 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Y70",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova Y90",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-y90.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 680 4G",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Y90 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Y90 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Y90 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Y90",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova Y9a",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Helio G80",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4200/4300 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Y9a 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Y9a",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 8",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 820E",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "3800 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 8 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 8 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_8-11048.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 8 5G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8-5g.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 985 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "3800 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 8 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 8 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_8_5g-10645.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 8 Pro 4G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8-pro-5g.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 985 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 8 Pro 4G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 8 Pro 4G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_8_pro_4g-10875.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 8 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8-pro-5g.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 985 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 8 Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 8 Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%208%20Pro%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 8 SE 4G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8-se.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "3800 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 8 SE 4G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_8_se_4g-11247.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 8 SE Youth",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8-se-youth.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710A",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 8 SE Youth 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%208%20SE%20Youth",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 8i",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8i.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 662",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4300 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 8i 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 8i 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_8i-11002.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 9",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-9-5g.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4300 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 9 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 9 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_9-11121.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 9 Pro",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-9-pro-5g-.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 9 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 9 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_9_pro-11120.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova Y60",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-y60.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Helio P35",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Y60 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Y60",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 7 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova7-5g.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 985 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 7 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 7 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_7_5g-10204.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 7 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 985 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 7 Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 7 Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%207%20Pro%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 7 SE 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-nova-7-se.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 820 5G",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 7 SE 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 7 SE 5G 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 7 SE 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 7 SE 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%207%20SE%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-7-se/",
+            "https://www.gsmarena.com.bd/images/products/huawei-nova-7-se.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 7 SE 5G Youth",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p40-lite-5g.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Dimensity 800U",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 7 SE 5G Youth 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_7_se_5g_youth-10519.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 7i",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p40-lite.jpg",
+          "specs": {
+            "display": "6.4\" inches LTPS IPS LCD 1080x2310 pixels (19:9)",
+            "processor": "Kirin 810",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4200 mAh",
+            "os": "Android 10",
+            "weight": "183 grams (6.41 ounces)",
+            "dimensions": "76.3 x 159.2 millimeters (3 x 6.27 in) x 8.7 millimeters (0.34 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 7i 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 7i 8GB 128GB Black",
+              "ram": "8GB",
+              "storage": "128GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 7i 8GB 128GB Emerald Green",
+              "ram": "8GB",
+              "storage": "128GB",
+              "color": "Emerald Green",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 7i 8GB 128GB Light pink",
+              "ram": "8GB",
+              "storage": "128GB",
+              "color": "Light pink",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 7i 8GB 128GB blue",
+              "ram": "8GB",
+              "storage": "128GB",
+              "color": "blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 7i 6GB 128GB Black",
+              "ram": "6GB",
+              "storage": "128GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 7i 6GB 128GB Emerald Green",
+              "ram": "6GB",
+              "storage": "128GB",
+              "color": "Emerald Green",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 7i 6GB 128GB Light pink",
+              "ram": "6GB",
+              "storage": "128GB",
+              "color": "Light pink",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 7i 6GB 128GB blue",
+              "ram": "6GB",
+              "storage": "128GB",
+              "color": "blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_7i-10058.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/nova-7i/",
+            "https://www.phonemore.com/specs/huawei/nova-7i/l21b/",
+            "https://www.phonemore.com/specs/huawei/nova-7i/l22a/",
+            "https://www.phonemore.com/specs/huawei/nova-7i/l22b/"
+          ]
+        },
+        {
+          "name": "Huawei nova 8 SE",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-8-se.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Dimensity 720/800U",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "3800 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 8 SE 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_8_se-10579.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 4e",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-4e-.jpg",
+          "specs": {
+            "display": "6.15\" inches TFT IPS LCD 1080x2312 pixels",
+            "processor": "Kirin 710",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "3340 mAh",
+            "os": "Android 9.0 Pie",
+            "weight": "159 grams (5.57 ounces)",
+            "dimensions": "72.7 x 152.9 millimeters (2.86 x 6.02 in) x 7.4 millimeters (0.29 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 4e 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 4e 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 4e 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 4e 4GB 128GB Peacock Blue",
+              "ram": "4GB",
+              "storage": "128GB",
+              "color": "Peacock Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 4e 4GB 128GB Midnight Black",
+              "ram": "4GB",
+              "storage": "128GB",
+              "color": "Midnight Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 4e 4GB 128GB Pearl White",
+              "ram": "4GB",
+              "storage": "128GB",
+              "color": "Pearl White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 4e 6GB 128GB Peacock Blue",
+              "ram": "6GB",
+              "storage": "128GB",
+              "color": "Peacock Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 4e 6GB 128GB Midnight Black",
+              "ram": "6GB",
+              "storage": "128GB",
+              "color": "Midnight Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 4e 6GB 128GB Pearl White",
+              "ram": "6GB",
+              "storage": "128GB",
+              "color": "Pearl White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_4e-9627.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/nova-4e/",
+            "https://www.phonemore.com/specs/huawei/nova-4e/al00-128gb4gb/",
+            "https://www.phonemore.com/specs/huawei/nova-4e/al00-128gb6gb/",
+            "https://www.phonemore.com/specs/huawei/nova-4e/lx2/",
+            "https://www.phonemore.com/specs/huawei/nova-4e/tl00-128gb4gb/",
+            "https://www.phonemore.com/specs/huawei/nova-4e/tl00-128gb6gb/"
+          ]
+        },
+        {
+          "name": "Huawei nova 5",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-5-.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 810",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "3500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 5 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_5-9728.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 5 Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-5-pro-new.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 980",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "3500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 5 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 5 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_5_pro-9746.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 5i",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-nova-5i.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710F",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 5i 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 5i 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%205i",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-5i/",
+            "https://www.gsmarena.com.bd/images/products/huawei-nova-5i.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 5i Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-5i-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 810",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 5i Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 5i Pro 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 5i Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 5i Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%205i%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 5T",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-5t.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 980",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "3750 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 5T 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 5T 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_5t-9803.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 5z",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-5z.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 810",
+            "ram": "6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 5z 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 5z 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%205z",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 6",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-6.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 990",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4100 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 6 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_6-9971.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 6 5G",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-6-5g.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 990 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 6 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 6 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%206%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 6 SE",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-6-se.jpg",
+          "specs": {
+            "display": "6.4\" inches LTPS IPS LCD 1080x2310 pixels (19:9)",
+            "processor": "Kirin 810",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4200 mAh",
+            "os": "Android 10",
+            "weight": "183 grams (6.41 ounces)",
+            "dimensions": "76.3 x 159.2 millimeters (3 x 6.27 in) x 8.7 millimeters (0.34 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 6 SE 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 6 SE 8GB 128GB Black",
+              "ram": "8GB",
+              "storage": "128GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 6 SE 8GB 128GB Emerald Green",
+              "ram": "8GB",
+              "storage": "128GB",
+              "color": "Emerald Green",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 6 SE 8GB 128GB Light pink",
+              "ram": "8GB",
+              "storage": "128GB",
+              "color": "Light pink",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 6 SE 8GB 128GB blue",
+              "ram": "8GB",
+              "storage": "128GB",
+              "color": "blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%206%20SE",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/nova-6-se/"
+          ]
+        },
+        {
+          "name": "Huawei nova 2 lite",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 430",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 2 lite 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 2 lite 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 2 lite 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 2 lite 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%202%20lite",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 2i",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-nova-2i.jpg",
+          "specs": {
+            "display": "5.9\" inches TFT IPS LCD 1080x2160 pixels",
+            "processor": "Kirin 659",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "3340 mAh",
+            "os": "Android 7.0 Nougat",
+            "weight": "164 grams (5.74 ounces)",
+            "dimensions": "75.2 x 156.2 millimeters (2.96 x 6.15 in) x 7.5 millimeters (0.3 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 2i 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 2i 4GB 64GB Black",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 2i 4GB 64GB Prestige Gold",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Prestige Gold",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 2i 4GB 64GB Aurora Blue",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Aurora Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%202i",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/nova-2i/",
+            "https://www.phonemore.com/specs/huawei/nova-2i/l02/",
+            "https://www.phonemore.com/specs/huawei/nova-2i/l22/",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-2i/",
+            "https://www.gsmarena.com.bd/images/products/huawei-nova-2i.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 3",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-nova-3.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 970",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "3750 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 3 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 3 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 3 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 3 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%203",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-nova-3/",
+            "https://www.gsmarena.com.bd/images/products/huawei-nova-3.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 3e",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "5.8\" inches LTPS IPS LCD 1080x2280 pixels",
+            "processor": "Kirin 659",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "3000 mAh",
+            "os": "Android 8.0 Oreo",
+            "weight": "145 grams (5.08 ounces)",
+            "dimensions": "71.2 x 148.6 millimeters (2.8 x 5.85 in) x 7.4 millimeters (0.29 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 3e 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 3e 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 3e 4GB 128GB Black",
+              "ram": "4GB",
+              "storage": "128GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 3e 4GB 128GB Gold",
+              "ram": "4GB",
+              "storage": "128GB",
+              "color": "Gold",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 3e 4GB 128GB Sakura Pink",
+              "ram": "4GB",
+              "storage": "128GB",
+              "color": "Sakura Pink",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 3e 4GB 128GB Klein Blue",
+              "ram": "4GB",
+              "storage": "128GB",
+              "color": "Klein Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 3e 4GB 64GB Black",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 3e 4GB 64GB Gold",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Gold",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 3e 4GB 64GB Sakura Pink",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Sakura Pink",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova 3e 4GB 64GB Klein Blue",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Klein Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%203e",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/nova-3e/",
+            "https://www.phonemore.com/specs/huawei/nova-3e/128gb/",
+            "https://www.phonemore.com/specs/huawei/nova-3e/64gb/",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova 3i",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-3i.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 710",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "3340 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 3i 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 3i 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 3i 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 3i 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova_3i-9632.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 4",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-4.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 970",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "3750 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 4 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 4 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%204",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 2",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-2.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 659",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "2950 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 2 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%202",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 2 Plus",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-2-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 659",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "3340 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 2 Plus 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 2 Plus 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%202%20Plus",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova 2s",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-2s.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 960",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "3340 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 2s 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 2s 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 2s 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova 2s 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%202s",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova lite",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 655",
+            "ram": "3GB/4GB",
+            "storage": [
+              "16GB",
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova lite 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova lite 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova lite 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova lite 4GB 16GB",
+              "ram": "4GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova lite 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova lite 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20lite",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova lite+",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 435",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova lite+ 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20lite%2B",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova Smart",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 435",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "3020 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Smart 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Smart",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova Youth",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Kirin 658",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Youth 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Youth 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Youth 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Youth 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Youth",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei nova",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Nova-14.jpg"
+          ]
+        },
+        {
+          "name": "Huawei nova",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Snapdragon 625",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "3020 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei nova 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_nova-8284.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei nova Plus",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-nova-plus.jpg",
+          "specs": {
+            "display": "5.5\" inches TFT IPS LCD 1080x1920 pixels",
+            "processor": "Snapdragon 625",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "3340 mAh",
+            "os": "Android 6.0.1 Marshmallow",
+            "weight": "160 grams (5.6 ounces)",
+            "dimensions": "75.7 x 151.8 millimeters (2.98 x 5.98 in) x 7.3 millimeters (0.29 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei nova Plus 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei nova Plus 3GB 32GB Prestige Gold",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Prestige Gold",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova Plus 3GB 32GB Mystic Silver",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Mystic Silver",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei nova Plus 3GB 32GB Titanium Grey",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Titanium Grey",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20nova%20Plus",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/nova-plus/",
+            "https://www.phonemore.com/specs/huawei/nova-plus/dual-l11/",
+            "https://www.phonemore.com/specs/huawei/nova-plus/dual-l12/",
+            "https://www.phonemore.com/specs/huawei/nova-plus/dual-l13/",
+            "https://www.phonemore.com/specs/huawei/nova-plus/l01/",
+            "https://www.phonemore.com/specs/huawei/nova-plus/l02/",
+            "https://www.phonemore.com/specs/huawei/nova-plus/l03/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Huawei P / Pura",
+      "models": [
+        {
+          "name": "Huawei Pura 90",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-90.jpg",
+          "specs": {
+            "display": "6.8-inch 1320 x 2856 OLED",
+            "processor": "Kirin 9010S",
+            "ram": "12GB/16GB",
+            "storage": [
+              "Not specified"
+            ],
+            "battery": "6500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 90 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://nanoreview.net/en/phone-list/all-huawei",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-90/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-90.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pura 90 Pro",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-90-Pro.jpg",
+          "specs": {
+            "display": "6.6-inch 1256 x 2760 OLED",
+            "processor": "Kirin 9030S",
+            "ram": "12GB/16GB",
+            "storage": [
+              "Not specified"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 90 Pro Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://nanoreview.net/en/phone-list/all-huawei",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-90-pro/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-90-Pro.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pura 90 Pro Max",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-90-Pro-Max.jpg",
+          "specs": {
+            "display": "6.9-inch 1308 x 2880 OLED",
+            "processor": "Kirin 9030S",
+            "ram": "12GB/16GB",
+            "storage": [
+              "Not specified"
+            ],
+            "battery": "6000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 90 Pro Max Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://nanoreview.net/en/phone-list/all-huawei",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-90-pro-max/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-90-Pro-Max.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pura X Max",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-pura-x-max.jpg",
+          "specs": {
+            "display": "7.7-inch 1828 x 2584 OLED",
+            "processor": "Kirin 9030 Pro",
+            "ram": "12GB/16GB",
+            "storage": [
+              "Not specified"
+            ],
+            "battery": "5300 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura X Max Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://nanoreview.net/en/phone-list/all-huawei"
+          ]
+        },
+        {
+          "name": "Huawei Pura 80",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-80.jpg",
+          "specs": {
+            "display": "6.6-inch LTPO OLED",
+            "processor": "Not specified",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5600 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 80 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 80 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pura%2080",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-80/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-80.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pura 80 Pro",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-80-Pro-White.jpg",
+          "specs": {
+            "display": "6.8-inch LTPO OLED",
+            "processor": "Not specified",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5700 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 80 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 80 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 80 Pro 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pura%2080%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-80-pro/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-80-Pro-White.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pura 80 Pro+",
+          "aliases": [
+            "Huawei Pura 80 Pro Plus"
+          ],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-80-Pro-Plus-Red.jpg",
+          "specs": {
+            "display": "6.8-inch LTPO OLED",
+            "processor": "Not specified",
+            "ram": "16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5700 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 80 Pro+ 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 80 Pro+ 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pura%2080%20Pro%2B",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.reuters.com/world/china/huawei-launches-pura-80-smartphone-series-next-step-china-comeback-2025-06-11/",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-80-pro-plus/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-80-Pro-Plus-Red.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pura 80 Ultra",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-80-Ultra-Gold.jpg",
+          "specs": {
+            "display": "6.8-inch LTPO OLED",
+            "processor": "Not specified",
+            "ram": "16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5700 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 80 Ultra 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 80 Ultra 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pura%2080%20Ultra",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-80-ultra/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-80-Ultra-Gold.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pura X",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-pura-x.jpg",
+          "specs": {
+            "display": "6.3-inch foldable OLED",
+            "processor": "Kirin-series",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "4720 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura X 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura X 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura X 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura X 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura X 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura X 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pura%20X",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Pura 70",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-70-Rose-Red.jpg",
+          "specs": {
+            "display": "6.6-inch LTPO OLED",
+            "processor": "Kirin 9000S1",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "4900 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 70 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 70 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 70 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pura%2070",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-70/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-70-Rose-Red.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pura 70 Pro",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-70-Pro-Black.jpg",
+          "specs": {
+            "display": "6.8-inch LTPO OLED",
+            "processor": "Kirin 9010",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5050 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 70 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 70 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 70 Pro 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pura%2070%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-70-pro/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-70-Pro-Black.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pura 70 Pro+",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-70-Pro-Plus-White.jpg",
+          "specs": {
+            "display": "6.8-inch LTPO OLED",
+            "processor": "Kirin 9010",
+            "ram": "16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5050 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 70 Pro+ 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 70 Pro+ 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pura%2070%20Pro%2B",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-70-pro-plus/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-70-Pro-Plus-White.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pura 70 Ultra",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-70-Ultra-Brown.jpg",
+          "specs": {
+            "display": "6.8-inch LTPO OLED",
+            "processor": "Kirin 9010",
+            "ram": "16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pura 70 Ultra 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pura 70 Ultra 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pura%2070%20Ultra",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-pura-70-ultra/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-70-Ultra-Brown.jpg"
+          ]
+        },
+        {
+          "name": "Huawei P60",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p60.jpg",
+          "specs": {
+            "display": "6.67-inch LTPO OLED",
+            "processor": "Snapdragon 8+ Gen 1 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4815 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P60 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P60 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P60 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P60",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P60 Art",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p60-art.jpg",
+          "specs": {
+            "display": "6.67-inch LTPO OLED",
+            "processor": "Snapdragon 8+ Gen 1 4G",
+            "ram": "12GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5100 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P60 Art 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P60 Art 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P60%20Art",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P60 Pro",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p60-pro.jpg",
+          "specs": {
+            "display": "6.67-inch LTPO OLED",
+            "processor": "Snapdragon 8+ Gen 1 4G",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4815 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P60 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P60 Pro 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P60 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P60 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P60%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P50E",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p50e.jpg",
+          "specs": {
+            "display": "6.5-inch OLED",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4100 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P50E 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P50E 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P50E",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P40 4G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p40-4g.jpg",
+          "specs": {
+            "display": "6.1-inch OLED",
+            "processor": "Kirin 990 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "3800 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P40 4G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p40_4g-10755.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P50",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p50.jpg",
+          "specs": {
+            "display": "6.5-inch OLED",
+            "processor": "Snapdragon 888 4G / Kirin 9000",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4100 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P50 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P50 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p50-10788.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P50 Pro",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p50-pro.jpg",
+          "specs": {
+            "display": "6.6-inch OLED",
+            "processor": "Snapdragon 888 4G / Kirin 9000",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4360 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P50 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P50 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P50 Pro 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P50 Pro 12GB 128GB",
+              "ram": "12GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P50 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P50 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p50_pro-11029.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P smart 2020",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p-smart-2020-.jpg",
+          "specs": {
+            "display": "6.21-inch IPS LCD",
+            "processor": "Kirin 710F",
+            "ram": "4GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "3400 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P smart 2020 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p_smart_2020-10212.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P Smart S",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-10s.jpg",
+          "specs": {
+            "display": "6.3-inch OLED",
+            "processor": "Kirin 710F",
+            "ram": "4GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P Smart S 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p_smart_s-10292.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P30 lite New Edition",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p30-lite-new-edition.jpg",
+          "specs": {
+            "display": "6.15-inch IPS LCD",
+            "processor": "Kirin 710",
+            "ram": "6GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "3340 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P30 lite New Edition 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p30_lite_new_edition-10073.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P30 Pro New Edition",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p30-pro-new-edition.jpg",
+          "specs": {
+            "display": "6.47-inch OLED",
+            "processor": "Kirin 980",
+            "ram": "8GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P30 Pro New Edition 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p30_pro_new_edition-10219.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P40",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p40.jpg",
+          "specs": {
+            "display": "6.1-inch OLED",
+            "processor": "Kirin 990 5G",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "3800 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P40 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P40 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P40 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P40 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p40-10153.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P40 lite",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p40-lite.jpg",
+          "specs": {
+            "display": "6.4-inch IPS LCD",
+            "processor": "Kirin 810",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P40 lite 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P40 lite 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p40_lite-9996.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P40 lite 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p40-lite-5g.jpg",
+          "specs": {
+            "display": "6.5-inch IPS LCD",
+            "processor": "Kirin 820 5G",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P40 lite 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P40 lite 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P40%20lite%205G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P40 lite E",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-p40-lite-e.jpg",
+          "specs": {
+            "display": "6.39-inch IPS LCD",
+            "processor": "Kirin 710F",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P40 lite E 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P40%20lite%20E",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-p40-lite-e/",
+            "https://www.gsmarena.com.bd/images/products/huawei-p40-lite-e.jpg"
+          ]
+        },
+        {
+          "name": "Huawei P40 Pro",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p40-pro.jpg",
+          "specs": {
+            "display": "6.58-inch OLED",
+            "processor": "Kirin 990 5G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P40 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P40 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P40 Pro 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p40_pro-10152.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P40 Pro+",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p40-pro-plus.jpg",
+          "specs": {
+            "display": "6.58-inch OLED",
+            "processor": "Kirin 990 5G",
+            "ram": "8GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P40 Pro+ 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P40 Pro+ 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p40_pro+-10118.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P smart 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p-smart-2019.jpg",
+          "specs": {
+            "display": "6.21-inch IPS LCD",
+            "processor": "Kirin 710",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "3400 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P smart 2019 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P smart 2019 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P smart 2019 3GB 128GB",
+              "ram": "3GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P smart 2019 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P smart 2019 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P smart 2019 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p_smart_2019-9409.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P smart Pro 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y9s.jpg",
+          "specs": {
+            "display": "6.59-inch IPS LCD",
+            "processor": "Kirin 710F",
+            "ram": "6GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P smart Pro 2019 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p_smart_pro_2019-9799.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P smart Z",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-p-smart-z.jpg",
+          "specs": {
+            "display": "6.59-inch IPS LCD",
+            "processor": "Kirin 710F",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P smart Z 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P%20smart%20Z",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-p-smart-z/",
+            "https://www.gsmarena.com.bd/images/products/huawei-p-smart-z.jpg"
+          ]
+        },
+        {
+          "name": "Huawei P Smart+ 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p-smart-plus-2019-starlight-blue.jpg",
+          "specs": {
+            "display": "6.21-inch IPS LCD",
+            "processor": "Kirin 710",
+            "ram": "3GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "3400 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P Smart+ 2019 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p_smart+_2019-9272.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P30",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p30.jpg",
+          "specs": {
+            "display": "6.1-inch OLED",
+            "processor": "Kirin 980",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "3650 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P30 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 8GB 64GB",
+              "ram": "8GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p30-9530.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P30 lite",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p30-lite-.jpg",
+          "specs": {
+            "display": "6.15-inch IPS LCD",
+            "processor": "Kirin 710",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "3340 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P30 lite 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 lite 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 lite 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p30_lite-9545.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P30 Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p30-pro.jpg",
+          "specs": {
+            "display": "6.47-inch OLED",
+            "processor": "Kirin 980",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P30 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 Pro 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 Pro 6GB 512GB",
+              "ram": "6GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P30 Pro 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p30_pro-9635.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P20",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p20-.jpg",
+          "specs": {
+            "display": "5.8-inch IPS LCD",
+            "processor": "Kirin 970",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "3400 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P20 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P20 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P20 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P20 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p20-9107.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P20 lite",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p20-lite-.jpg",
+          "specs": {
+            "display": "5.84-inch IPS LCD",
+            "processor": "Kirin 659",
+            "ram": "4GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P20 lite 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P20 lite 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P20 lite 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p20_lite-9098.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P20 Pro",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p20-pro-.jpg",
+          "specs": {
+            "display": "6.1-inch OLED",
+            "processor": "Kirin 970",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P20 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P20 Pro 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P20 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P20 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p20_pro-9106.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P smart",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p-smart-.jpg",
+          "specs": {
+            "display": "5.65-inch IPS LCD",
+            "processor": "Kirin 659",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P smart 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P smart 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P smart 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P smart 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p_smart-8961.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P10",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p10-.jpg",
+          "specs": {
+            "display": "5.1-inch IPS-NEO LCD",
+            "processor": "Kirin 960",
+            "ram": "4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P10 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P10 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p10-8514.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P10 Lite",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p10-lite.jpg",
+          "specs": {
+            "display": "5.2-inch IPS LCD",
+            "processor": "Kirin 658",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P10 Lite 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P10 Lite 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P10 Lite 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P10 Lite 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p10_lite-8598.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P10 Plus",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p10-plus-r1.jpg",
+          "specs": {
+            "display": "5.5-inch IPS-NEO LCD",
+            "processor": "Kirin 960",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "3750 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P10 Plus 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P10 Plus 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P10 Plus 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P10 Plus 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p10_plus-8515.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P8 Lite (2017)",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p8-lite-2017.jpg",
+          "specs": {
+            "display": "5.2-inch IPS LCD",
+            "processor": "Kirin 655",
+            "ram": "3GB/4GB",
+            "storage": [
+              "16GB",
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P8 Lite (2017) 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P8 Lite (2017) 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P8 Lite (2017) 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P8 Lite (2017) 4GB 16GB",
+              "ram": "4GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P8 Lite (2017) 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P8 Lite (2017) 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P8%20Lite%20%282017%29",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P9 lite mini",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-p9-lite-mini.jpg",
+          "specs": {
+            "display": "5.0-inch IPS LCD",
+            "processor": "Snapdragon 425",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "3020 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P9 lite mini 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P9%20lite%20mini",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-p9-lite-mini/",
+            "https://www.gsmarena.com.bd/images/products/huawei-p9-lite-mini.jpg"
+          ]
+        },
+        {
+          "name": "Huawei P9",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p9r2.jpg",
+          "specs": {
+            "display": "5.2-inch IPS-NEO LCD",
+            "processor": "Kirin 955",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P9 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P9 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P9 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P9 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p9-7972.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P9 lite",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p9-lite-r1.jpg",
+          "specs": {
+            "display": "5.2-inch IPS LCD",
+            "processor": "Kirin 650",
+            "ram": "2GB/3GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P9 lite 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P9 lite 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p9_lite-7983.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P9 Plus",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p9-plus.jpg",
+          "specs": {
+            "display": "5.5-inch Super AMOLED",
+            "processor": "Kirin 955",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "3400 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P9 Plus 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P9 Plus 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P9%20Plus",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P8",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p8.jpg",
+          "specs": {
+            "display": "5.2-inch IPS-NEO LCD",
+            "processor": "Kirin 930/935",
+            "ram": "3GB",
+            "storage": [
+              "16GB",
+              "64GB"
+            ],
+            "battery": "2680 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P8 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P8 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P8",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P8lite",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p8-lite1.jpg",
+          "specs": {
+            "display": "5.0-inch IPS LCD",
+            "processor": "Kirin 620",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "2200 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P8lite 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p8lite-7201.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P8max",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-p8max.jpg",
+          "specs": {
+            "display": "6.8-inch IPS-NEO LCD",
+            "processor": "Kirin 935",
+            "ram": "3GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "4360 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P8max 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P8max 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20P8max",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-p8max/",
+            "https://www.gsmarena.com.bd/images/products/huawei-p8max.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend P7",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-p7.jpg",
+          "specs": {
+            "display": "5.0-inch IPS LCD",
+            "processor": "Kirin 910T",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "2500 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend P7 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20P7",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend P7 mini",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-p7-mini.jpg",
+          "specs": {
+            "display": "4.5-inch IPS LCD",
+            "processor": "Snapdragon 400",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend P7 mini 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20P7%20mini",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend P2",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-p2.jpg",
+          "specs": {
+            "display": "4.7-inch IPS LCD",
+            "processor": "K3V2",
+            "ram": "1GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "2420 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend P2 1GB 16GB",
+              "ram": "1GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20P2",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend P6",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-p6.jpg",
+          "specs": {
+            "display": "4.7-inch IPS+ LCD",
+            "processor": "K3V2",
+            "ram": "2GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend P6 2GB 8GB",
+              "ram": "2GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20P6",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend P1",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-p1-new.jpg",
+          "specs": {
+            "display": "4.3-inch Super AMOLED",
+            "processor": "TI OMAP 4460",
+            "ram": "1GB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1670 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend P1 1GB 4GB",
+              "ram": "1GB",
+              "storage": "4GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20P1",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-p1-new.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend P1 LTE",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-p1-lte.jpg",
+          "specs": {
+            "display": "4.3-inch Super AMOLED",
+            "processor": "32bit: Texas Instruments OMAP 4460 (45nm)",
+            "ram": "1GB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "2000 mAh",
+            "os": "Android 4.0.4 Ice Cream Sandwich ICS",
+            "weight": "130 grams (4.55 ounces)",
+            "dimensions": "65.4 x 132.5 millimeters (2.57 x 5.22 in) x 9.9 millimeters (0.39 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend P1 LTE 1GB 4GB",
+              "ram": "1GB",
+              "storage": "4GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Ascend P1 LTE 1GB 4GB Metallic black",
+              "ram": "1GB",
+              "storage": "4GB",
+              "color": "Metallic black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend P1 LTE 1GB 4GB Ceramic white",
+              "ram": "1GB",
+              "storage": "4GB",
+              "color": "Ceramic white",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend P1 LTE 1GB 4GB Soft pink",
+              "ram": "1GB",
+              "storage": "4GB",
+              "color": "Soft pink",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20P1%20LTE",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-p1-lte/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend P1 S",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-p1-s.jpg",
+          "specs": {
+            "display": "4.3-inch Super AMOLED",
+            "processor": "TI OMAP 4460",
+            "ram": "1GB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1670 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend P1 S 1GB 4GB",
+              "ram": "1GB",
+              "storage": "4GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20P1%20S",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend P1 XL",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pura-90.jpg",
+          "specs": {
+            "display": "4.3-inch Super AMOLED",
+            "processor": "TI OMAP 4460",
+            "ram": "1GB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "2600 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend P1 XL 1GB 4GB",
+              "ram": "1GB",
+              "storage": "4GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20P1%20XL",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei P / Pura",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pura-90.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Huawei Pocket",
+      "models": [
+        {
+          "name": "Huawei Pocket 2",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/Huawei-Pocket-2-White.jpg",
+          "specs": {
+            "display": "6.94-inch foldable OLED",
+            "processor": "Kirin 9000S",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "4520 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pocket 2 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pocket 2 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pocket 2 12GB 1TB",
+              "ram": "12GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pocket 2 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pocket 2 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pocket 2 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pocket%202",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-pocket-2/",
+            "https://www.gsmarena.com.bd/images/products/Huawei-Pocket-2-White.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Pocket S",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-pocket-s.jpg",
+          "specs": {
+            "display": "6.9-inch foldable OLED",
+            "processor": "Snapdragon 778G 4G",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Pocket S 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pocket S 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Pocket S 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Pocket%20S",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei P50 Pocket",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p50-pocket.jpg",
+          "specs": {
+            "display": "6.9-inch foldable OLED",
+            "processor": "Snapdragon 888 4G",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei P50 Pocket 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P50 Pocket 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P50 Pocket 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei P50 Pocket 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_p50_pocket-11280.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Huawei Y",
+      "models": [
+        {
+          "name": "Huawei Y5p",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y5p 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y5p",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y6p",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y6p.jpg",
+          "specs": {
+            "display": "6.3\" inches TFT IPS LCD 720x1600 pixels (20:9)",
+            "processor": "MediaTek Helio P22 (MT6762) (12nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "5000 mAh",
+            "os": "Android 10",
+            "weight": "185 grams (6.48 ounces)",
+            "dimensions": "74.06 x 159.07 millimeters (2.92 x 6.26 in) x 9 millimeters (0.35 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6p 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y6p 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y6p 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y6p 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y6p 3GB 32GB Midnight Black",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Midnight Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y6p 3GB 32GB Phantom Purple",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Phantom Purple",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y6p 3GB 32GB Emerald Green",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Emerald Green",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y6p 3GB 64GB Midnight Black",
+              "ram": "3GB",
+              "storage": "64GB",
+              "color": "Midnight Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y6p 3GB 64GB Phantom Purple",
+              "ram": "3GB",
+              "storage": "64GB",
+              "color": "Phantom Purple",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y6p 3GB 64GB Emerald Green",
+              "ram": "3GB",
+              "storage": "64GB",
+              "color": "Emerald Green",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y6p 4GB 64GB Midnight Black",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Midnight Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y6p 4GB 64GB Phantom Purple",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Phantom Purple",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y6p 4GB 64GB Emerald Green",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Emerald Green",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_y6p-10222.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/y6p/",
+            "https://www.phonemore.com/specs/huawei/y6p/lx9-32gb/",
+            "https://www.phonemore.com/specs/huawei/y6p/lx9-64gb3gb/",
+            "https://www.phonemore.com/specs/huawei/y6p/lx9-64gb4gb/",
+            "https://www.phonemore.com/specs/huawei/y6p/lx9n-64gb/"
+          ]
+        },
+        {
+          "name": "Huawei Y6s (2019)",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y6s.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6s (2019) 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y6s (2019) 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_y6s_(2019)-10012.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y7a",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p-smart-2021.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y7a 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7a 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_y7a-10546.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y7p",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y7p-.jpg",
+          "specs": {
+            "display": "6.39\" inches TFT IPS LCD 720x1560 pixels (19.5:9)",
+            "processor": "HiSilicon Kirin 710 (12nm)",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "4000 mAh",
+            "os": "Android 9.0 Pie",
+            "weight": "176 grams (6.16 ounces)",
+            "dimensions": "76.13 x 159.81 millimeters (3 x 6.29 in) x 8.1 millimeters (0.32 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Y7p 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7p 4GB 64GB Midnight Black",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Midnight Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y7p 4GB 64GB Aurora Blue",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Aurora Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_y7p-10074.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/y7p/",
+            "https://www.phonemore.com/specs/huawei/y7p/l28/",
+            "https://www.phonemore.com/specs/huawei/y7p/l29/"
+          ]
+        },
+        {
+          "name": "Huawei Y8p",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-10s.jpg",
+          "specs": {
+            "display": "6.3\" inches OLED 1080x2400 pixels (20:9)",
+            "processor": "HiSilicon Kirin 710 (12nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": "Android 10",
+            "weight": "163 grams (5.71 ounces)",
+            "dimensions": "73.2 x 157.4 millimeters (2.88 x 6.2 in) x 7.75 millimeters (0.31 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Y8p 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y8p 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y8p 4GB 128GB Midnight Black",
+              "ram": "4GB",
+              "storage": "128GB",
+              "color": "Midnight Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y8p 4GB 128GB Breathing Crystal",
+              "ram": "4GB",
+              "storage": "128GB",
+              "color": "Breathing Crystal",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y8p 6GB 128GB Midnight Black",
+              "ram": "6GB",
+              "storage": "128GB",
+              "color": "Midnight Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y8p 6GB 128GB Breathing Crystal",
+              "ram": "6GB",
+              "storage": "128GB",
+              "color": "Breathing Crystal",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_y8p-10249.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/y8p/",
+            "https://www.phonemore.com/specs/huawei/y8p/128gb4gb/",
+            "https://www.phonemore.com/specs/huawei/y8p/128gb6gb/"
+          ]
+        },
+        {
+          "name": "Huawei Y8s",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y8s.png",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y8s 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y8s 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_y8s-10227.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y9a",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y9a.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y9a 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9a 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_y9a-10429.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y5 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5-2019.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y5 2019 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y5 2019 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y5%202019",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y6 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-y6-2019.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 2019 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y6%202019",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-y6-2019/",
+            "https://www.gsmarena.com.bd/images/products/huawei-y6-2019.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y6 Prime 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 Prime 2019 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y6%20Prime%202019",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y6 Pro 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-y6-pro-2019.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 Pro 2019 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y6%20Pro%202019",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-y6-pro-2019/",
+            "https://www.gsmarena.com.bd/images/products/huawei-y6-pro-2019.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y7 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-y7-2019.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y7 2019 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 2019 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 2019 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 2019 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y7%202019",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-y7-2019/",
+            "https://www.gsmarena.com.bd/images/products/huawei-y7-2019.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y7 Prime 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y7-prime-2019.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y7 Prime 2019 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 Prime 2019 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y7%20Prime%202019",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y7 Pro 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y7-pro-2019.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y7 Pro 2019 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 Pro 2019 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 Pro 2019 3GB 128GB",
+              "ram": "3GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 Pro 2019 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 Pro 2019 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 Pro 2019 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y7%20Pro%202019",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y9 Prime 2019",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y9-prime-2019.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y9 Prime 2019 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 Prime 2019 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y9%20Prime%202019",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y Max",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y-max-ars-l22.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y Max 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y Max 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_y_max-9643.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y3 2018",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y3-2018.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y3 2018 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y3%202018",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y5 2018",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "1GB/2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y5 2018 1GB 16GB",
+              "ram": "1GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y5 2018 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y5%202018",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y5 lite",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "1GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y5 lite 1GB 16GB",
+              "ram": "1GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y5%20lite",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y5 Prime 2018",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5-prime-2018.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y5 Prime 2018 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y5 Prime 2018 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y5%20Prime%202018",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y6 2018",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y6-2018.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB/3GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 2018 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y6 2018 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y6%202018",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y6 Prime 2018",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y6-prime-2018.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB/3GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 Prime 2018 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y6 Prime 2018 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y6 Prime 2018 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y6 Prime 2018 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y6%20Prime%202018",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y7 2018",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y7 2018 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y7%202018",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y7 Prime 2018",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y7-prime-2018.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y7 Prime 2018 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 Prime 2018 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 Prime 2018 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y7 Prime 2018 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y7%20Prime%202018",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y7 Pro 2018",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-y7-pro-2018.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y7 Pro 2018 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y7%20Pro%202018",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-y7-pro-2018/",
+            "https://www.gsmarena.com.bd/images/products/huawei-y7-pro-2018.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y9 2018",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-y9-2018.jpg",
+          "specs": {
+            "display": "5.93\" inches TFT IPS LCD 1080x2160 pixels",
+            "processor": "HiSilicon Kirin 659 (16nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "4000 mAh",
+            "os": "Android 8.0 Oreo",
+            "weight": "170 grams (5.95 ounces)",
+            "dimensions": "75.3 x 157.2 millimeters (2.96 x 6.19 in) x 7.9 millimeters (0.31 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Y9 2018 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2018 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2018 3GB 128GB",
+              "ram": "3GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2018 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2018 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2018 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2018 3GB 32GB Black",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y9 2018 3GB 32GB Gold",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Gold",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Y9 2018 3GB 32GB Blue",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y9%202018",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/y9-2018/",
+            "https://www.phonemore.com/specs/huawei/y9-2018/lx1/",
+            "https://www.phonemore.com/specs/huawei/y9-2018/lx2/",
+            "https://www.phonemore.com/specs/huawei/y9-2018/lx3/",
+            "https://www.gsmarena.com.bd/pictures/huawei-y9-2018/",
+            "https://www.gsmarena.com.bd/images/products/huawei-y9-2018.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y9 2019",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-y9-2019.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB/4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y9 2019 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2019 3GB 128GB",
+              "ram": "3GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2019 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2019 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2019 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y9 2019 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y9%202019",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-y9-2019/",
+            "https://www.gsmarena.com.bd/images/products/huawei-y9-2019.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y3 2017",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-y3-2017.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "1GB",
+            "storage": [
+              "8GB",
+              "32GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y3 2017 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y3 2017 1GB 32GB",
+              "ram": "1GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y3%202017",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-y3-2017/",
+            "https://www.gsmarena.com.bd/images/products/huawei-y3-2017.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y5 2017",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5-2017.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y5 2017 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y5%202017",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y6 2017",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y6-2017.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 2017 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y6%202017",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y6 Pro 2017",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 Pro 2017 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y6%20Pro%202017",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y7",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y7.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y7 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y7",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y7 Prime",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-y7-prime.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y7 Prime 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y7%20Prime",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-y7-prime/",
+            "https://www.gsmarena.com.bd/images/products/huawei-y7-prime.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y3 II",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y3 II 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y3%20II",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y5 II",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y5 II 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y5%20II",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y6 II",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 II 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y6%20II",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y6 II Compact",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y6-ii-compact.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 II Compact 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y6%20II%20Compact",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y540",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y540.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y540 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y540",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y360",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-y360.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y360 512MB 4GB",
+              "ram": "512MB",
+              "storage": "4GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y360",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-y360/",
+            "https://www.gsmarena.com.bd/images/products/huawei-y360.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y560",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y560.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y560 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y560",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y5c",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "8GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y5c Base configuration",
+              "storage": "8GB",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y5c",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Y6",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y6.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "1GB/2GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Huawei Y6 2GB 8GB",
+              "ram": "2GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y6",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y6 Pro",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-enjoy-5.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y6 Pro 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/huawei_y6_pro-7647.php",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y635",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-y635.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y635 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y635",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-y635/",
+            "https://www.gsmarena.com.bd/images/products/huawei-y635.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y220",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y220.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y220 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y220",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y221",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y221.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y221 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y221",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y321",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y321 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y321",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y330",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y330.jpg",
+          "specs": {
+            "display": "4\" inches TFT LCD 480x800 pixels",
+            "processor": "32bit: MediaTek MT6572",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1500 mAh",
+            "os": "Android 4.2.2 Jelly Bean",
+            "weight": "126 grams (4.41 ounces)",
+            "dimensions": "63.5 x 122.1 millimeters (2.5 x 4.81 in) x 11.3 millimeters (0.44 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y330 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y330 512MB 4GB Yellow",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Yellow",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y330 512MB 4GB Blue",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Blue",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y330 512MB 4GB Red",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Red",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y330 512MB 4GB White",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y330",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-y330/",
+            "https://www.phonemore.com/specs/huawei/ascend-y330/u01/",
+            "https://www.phonemore.com/specs/huawei/ascend-y330/u11/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y520",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y520.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y520 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y520",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y530",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "4.5\" inches TFT IPS LCD 480x854 pixels",
+            "processor": "32bit: Qualcomm Snapdragon 200 (MSM8210) (28nm)",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1700 mAh",
+            "os": "Android 4.3 Jelly Bean",
+            "weight": "145 grams (5.08 ounces)",
+            "dimensions": "67 x 132.5 millimeters (2.64 x 5.22 in) x 9.3 millimeters (0.37 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y530 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y530 512MB 4GB White",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y530 512MB 4GB Red",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Red",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y530 512MB 4GB Yellow",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Yellow",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y530",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-y530/",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y550",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y550.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y550 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y550",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Y300II",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Y300II Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Y300II",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y210D",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y210d.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y210D Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y210D",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y300",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y300.jpg",
+          "specs": {
+            "display": "4\" inches TFT IPS LCD 480x800 pixels",
+            "processor": "32bit: Qualcomm Snapdragon S4 Play (MSM8225) (45nm)",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1730 mAh",
+            "os": "Android 4.1.1 Jelly Bean",
+            "weight": "130 grams (4.55 ounces)",
+            "dimensions": "63.8 x 124.5 millimeters (2.51 x 4.9 in) x 11.2 millimeters (0.44 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y300 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y300 512MB 4GB White",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y300",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-y300/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y320",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "4\" inches TFT LCD 480x800 pixels",
+            "processor": "32bit: MediaTek MT6572",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1350 mAh",
+            "os": "Android 4.2 Jelly Bean",
+            "weight": "123 grams (4.31 ounces)",
+            "dimensions": "63.2 x 123.3 millimeters (2.49 x 4.85 in) x 11.1 millimeters (0.44 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y320 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y320 512MB 4GB White",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y320",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-y320/",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y511",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y511.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y511 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y511",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y100",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y100.jpg",
+          "specs": {
+            "display": "2.8\" inches TFT LCD 240x320 pixels",
+            "processor": "32bit: Qualcomm MSM7225A Snapdragon",
+            "ram": "256MB",
+            "storage": [
+              "512MB"
+            ],
+            "battery": "1050 mAh",
+            "os": "Android 2.3.6 Gingerbread",
+            "weight": "100 grams (3.5 ounces)",
+            "dimensions": "56 x 106.5 millimeters (2.2 x 4.19 in) x 10.9 millimeters (0.43 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y100 256MB 512MB Black",
+              "ram": "256MB",
+              "storage": "512MB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y100 256MB 512MB White",
+              "ram": "256MB",
+              "storage": "512MB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y100",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-y100/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y200",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y200.jpg",
+          "specs": {
+            "display": "3.5\" inches TFT IPS LCD 320x480 pixels",
+            "processor": "32bit: Qualcomm MSM7227A Snapdragon",
+            "ram": "256MB",
+            "storage": [
+              "512MB"
+            ],
+            "battery": "1400 mAh",
+            "os": "Android 2.3.6 Gingerbread",
+            "weight": "120 grams (4.2 ounces)",
+            "dimensions": "60.4 x 116.9 millimeters (2.38 x 4.6 in) x 11.7 millimeters (0.46 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y200 256MB 512MB Black",
+              "ram": "256MB",
+              "storage": "512MB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y200",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-y200/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y201",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg",
+          "specs": {
+            "display": "3.5\" inches TFT LCD 320x480 pixels",
+            "processor": "32bit: Qualcomm MSM7227A",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1400 mAh",
+            "os": "Android 2.3.6 Gingerbread",
+            "weight": "125 grams (4.38 ounces)",
+            "dimensions": "61.5 x 117 millimeters (2.42 x 4.61 in) x 11.7 millimeters (0.46 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y201 512MB 4GB White",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Ascend Y201 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y201",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ascend-y201/",
+            "https://www.phonemore.com/specs/huawei/ascend-y201/u8666/",
+            "https://www.phonemore.com/specs/huawei/ascend-y201/pro-u8666e/",
+            "fallback:image-from-family:Huawei Y",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-y5p.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend Y201 Pro",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ascend-y201-pro.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend Y201 Pro Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20Y201%20Pro",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Other Huawei Phones",
+      "models": [
+        {
+          "name": "Huawei GR3 2017",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei GR3 2017 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20GR3%202017",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei GR5 2017",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "5.5\" inches TFT IPS LCD 1080x1920 pixels",
+            "processor": "HiSilicon Kirin 655 (16nm)",
+            "ram": "3GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "3340 mAh",
+            "os": "Android 6.0.1 Marshmallow",
+            "weight": "162 grams (5.67 ounces)",
+            "dimensions": "76.2 x 150.9 millimeters (3 x 5.94 in) x 8.2 millimeters (0.32 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei GR5 2017 3GB 32GB Black",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei GR5 2017 3GB 32GB gray",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "gray",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei GR5 2017 3GB 32GB White",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei GR5 2017 3GB 32GB silver",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "silver",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei GR5 2017 3GB 32GB gold",
+              "ram": "3GB",
+              "storage": "32GB",
+              "color": "gold",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei GR5 2017 4GB 64GB Black",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei GR5 2017 4GB 64GB gray",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "gray",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei GR5 2017 4GB 64GB White",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei GR5 2017 4GB 64GB silver",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "silver",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei GR5 2017 4GB 64GB gold",
+              "ram": "4GB",
+              "storage": "64GB",
+              "color": "gold",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20GR5%202017",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/gr5-2017/",
+            "https://www.phonemore.com/specs/huawei/gr5-2017/32gb/",
+            "https://www.phonemore.com/specs/huawei/gr5-2017/64gb/",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei G9 lite",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei G9 lite Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20G9%20lite",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei G9 Plus",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei G9 Plus Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20G9%20Plus",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei GR3",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei GR3 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20GR3",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei GR5",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei GR5 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20GR5",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei GT3",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei GT3 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20GT3",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei G Play",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei G Play Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20G%20Play",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei G Play Mini",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "5\" inches TFT IPS LCD 720x1280 pixels",
+            "processor": "HiSilicon Kirin 620 (28nm)",
+            "ram": "2GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2550 mAh",
+            "os": "Android 4.4.2 KitKat",
+            "weight": "162 grams (5.67 ounces)",
+            "dimensions": "71.9 x 143.3 millimeters (2.83 x 5.64 in) x 8.8 millimeters (0.35 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei G Play Mini 2GB 8GB White",
+              "ram": "2GB",
+              "storage": "8GB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei G Play Mini 2GB 8GB Black",
+              "ram": "2GB",
+              "storage": "8GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei G Play Mini 2GB 8GB Gold",
+              "ram": "2GB",
+              "storage": "8GB",
+              "color": "Gold",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20G%20Play%20Mini",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/g-play-mini/",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei G8",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/huawei-g8.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei G8 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20G8",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.gsmarena.com.bd/pictures/huawei-g8/",
+            "https://www.gsmarena.com.bd/images/products/huawei-g8.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Premia 4G",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-premia-4g.jpg",
+          "specs": {
+            "display": "4\" inches TFT LCD 480x800 pixels",
+            "processor": "32bit: Qualcomm Snapdragon S4 MSM8960",
+            "ram": "1GB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1650 mAh",
+            "os": "Android 4.0.4 Ice Cream Sandwich ICS",
+            "weight": "140 grams (4.9 ounces)",
+            "dimensions": "64.3 x 126 millimeters (2.53 x 4.96 in) x 12.2 millimeters (0.48 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Premia 4G 1GB 4GB Black",
+              "ram": "1GB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Premia%204G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/premia-4g/"
+          ]
+        },
+        {
+          "name": "Huawei Prism II",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Prism II Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Prism%20II",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Activa 4G",
+          "aliases": [],
+          "releaseYear": 2012,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-activa-4g.jpg",
+          "specs": {
+            "display": "3.5\" inches TFT LCD 320x480 pixels",
+            "processor": "32bit: Qualcomm MSM7627T",
+            "ram": "512MB",
+            "storage": [
+              "151MB"
+            ],
+            "battery": "1880 mAh",
+            "os": "Android 2.3.7 Gingerbread",
+            "weight": "140 grams (4.9 ounces)",
+            "dimensions": "61.5 x 122 millimeters (2.42 x 4.8 in) x 10.7 millimeters (0.42 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Activa 4G 512MB 151MB Black",
+              "ram": "512MB",
+              "storage": "151MB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Activa%204G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/activa-4g/"
+          ]
+        },
+        {
+          "name": "Huawei Ascend II",
+          "aliases": [],
+          "releaseYear": 2011,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend II Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20II",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Boulder",
+          "aliases": [],
+          "releaseYear": 2011,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "2.6\" inches TFT LCD 320x240 pixels",
+            "processor": "32bit: Qualcomm MSM7225",
+            "ram": "256MB",
+            "storage": [
+              "512MB"
+            ],
+            "battery": "1200 mAh",
+            "os": "Android 2.2.2 Froyo",
+            "weight": "112 grams (3.92 ounces)",
+            "dimensions": "62.8 x 115 millimeters (2.47 x 4.53 in) x 9.9 millimeters (0.39 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Boulder 256MB 512MB Black",
+              "ram": "256MB",
+              "storage": "512MB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei Boulder 256MB 512MB White",
+              "ram": "256MB",
+              "storage": "512MB",
+              "color": "White",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Boulder",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/boulder/",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Fusion",
+          "aliases": [],
+          "releaseYear": 2011,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "3.5\" inches TFT LCD 320x480 pixels",
+            "processor": "32bit: Qualcomm MSM7227",
+            "ram": "256MB",
+            "storage": [
+              "512MB"
+            ],
+            "battery": "1400 mAh",
+            "os": "Android 2.3.3 Gingerbread",
+            "weight": "117 grams (4.1 ounces)",
+            "dimensions": "60.5 x 116.1 millimeters (2.38 x 4.57 in) x 11.9 millimeters (0.47 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Fusion 256MB 512MB Black",
+              "ram": "256MB",
+              "storage": "512MB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Fusion",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/fusion/",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei IDEOS X3",
+          "aliases": [],
+          "releaseYear": 2011,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ideos-x3.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei IDEOS X3 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20IDEOS%20X3",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei IDEOS X5",
+          "aliases": [],
+          "releaseYear": 2011,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ideos-x5.jpg",
+          "specs": {
+            "display": "3.8\" inches TFT LCD 480x800 pixels",
+            "processor": "32bit: Qualcomm Snapdragon S2 MSM7230",
+            "ram": "512MB",
+            "storage": [
+              "2GB",
+              "4GB"
+            ],
+            "battery": "1500 mAh",
+            "os": "Android 2.2.1 Froyo",
+            "weight": "130 grams (4.55 ounces)",
+            "dimensions": "62 x 120 millimeters (2.44 x 4.72 in) x 11.4 millimeters (0.45 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei IDEOS X5 512MB 2GB Black",
+              "ram": "512MB",
+              "storage": "2GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            },
+            {
+              "name": "Huawei IDEOS X5 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20IDEOS%20X5",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/ideos-x5/",
+            "https://www.phonemore.com/specs/huawei/ideos-x5/u8800/",
+            "https://www.phonemore.com/specs/huawei/ideos-x5/u8800h/"
+          ]
+        },
+        {
+          "name": "Huawei Impulse 4G",
+          "aliases": [],
+          "releaseYear": 2011,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-impulse-4g.jpg",
+          "specs": {
+            "display": "3.8\" inches TFT LCD 480x800 pixels",
+            "processor": "32bit: Qualcomm Snapdragon S2 MSM7230",
+            "ram": "512MB",
+            "storage": [
+              "512MB"
+            ],
+            "battery": "1500 mAh",
+            "os": "Android 2.2.2 Froyo",
+            "weight": "130 grams (4.55 ounces)",
+            "dimensions": "65 x 120 millimeters (2.56 x 4.72 in) x 11.6 millimeters (0.46 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Impulse 4G 512MB 512MB Black",
+              "ram": "512MB",
+              "storage": "512MB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Impulse%204G",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/impulse-4g/"
+          ]
+        },
+        {
+          "name": "Huawei Mercury",
+          "aliases": [],
+          "releaseYear": 2011,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "4\" inches TFT LCD 480x854 pixels",
+            "processor": "32bit: Qualcomm Snapdragon MSM8655T",
+            "ram": "512MB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": "1900 mAh",
+            "os": "Android 2.3.3 Gingerbread",
+            "weight": "139 grams (4.87 ounces)",
+            "dimensions": "61 x 122 millimeters (2.4 x 4.8 in) x 13 millimeters (0.51 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Mercury 512MB 4GB Black",
+              "ram": "512MB",
+              "storage": "4GB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Mercury",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/mercury/",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Sonic",
+          "aliases": [],
+          "releaseYear": 2011,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "3.5\" inches TFT LCD 320x480 pixels",
+            "processor": "32bit: Qualcomm MSM7227",
+            "ram": "256MB",
+            "storage": [
+              "512MB"
+            ],
+            "battery": "1400 mAh",
+            "os": "Android 2.3.3 Gingerbread",
+            "weight": "120 grams (4.2 ounces)",
+            "dimensions": "60.5 x 116.3 millimeters (2.38 x 4.58 in) x 11.9 millimeters (0.47 inches)"
+          },
+          "variants": [
+            {
+              "name": "Huawei Sonic 256MB 512MB Black",
+              "ram": "256MB",
+              "storage": "512MB",
+              "color": "Black",
+              "sourceBasis": "phonemore_simplified_storage_color"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Sonic",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "https://www.phonemore.com/specs/huawei/sonic/",
+            "https://www.phonemore.com/specs/huawei/sonic/u8650-nfc/",
+            "https://www.phonemore.com/specs/huawei/sonic/u8650/",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei Ascend M680",
+          "aliases": [],
+          "releaseYear": 2010,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei Ascend M680 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20Ascend%20M680",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei IDEOS",
+          "aliases": [],
+          "releaseYear": 2010,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-ideos.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei IDEOS Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20IDEOS",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei U8100",
+          "aliases": [],
+          "releaseYear": 2010,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-u8100.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei U8100 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20U8100",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei U8110",
+          "aliases": [],
+          "releaseYear": 2010,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-u8110.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei U8110 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20U8110",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei U9130 Compass",
+          "aliases": [],
+          "releaseYear": 2010,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-u9130-compass.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei U9130 Compass Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20U9130%20Compass",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei U9150",
+          "aliases": [],
+          "releaseYear": 2009,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-u9150.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei U9150 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20U9150",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei T120",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei T120 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20T120",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei T156",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-t156.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei T156 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20T156",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei T158",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-t158.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei T158 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20T158",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei T161L",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-t161l.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei T161L Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20T161L",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei T201",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-t201.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei T201 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20T201",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei T208",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-t208.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei T208 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20T208",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei T211",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-t211.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei T211 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20T211",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei T261L",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei T261L Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20T261L",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products",
+            "fallback:image-from-family:Other Huawei Phones",
+            "https://fdn2.gsmarena.com/vv/bigpic/huawei-g9-plus.jpg"
+          ]
+        },
+        {
+          "name": "Huawei T330",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-t330.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei T330 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20T330",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei T552",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-t552.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei T552 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20T552",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei U1000",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-u1000.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei U1000 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20U1000",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei U1100",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-u1100.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei U1100 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20U1100",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei U1270",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-u1270.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei U1270 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20U1270",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei U3300",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-u3300.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei U3300 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20U3300",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei U7310",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-u7310.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei U7310 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20U7310",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        },
+        {
+          "name": "Huawei U7510",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/huawei-u7510.jpg",
+          "specs": {
+            "display": "Not specified",
+            "processor": "Not specified",
+            "ram": null,
+            "storage": [
+              "Not specified"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null
+          },
+          "variants": [
+            {
+              "name": "Huawei U7510 Base configuration",
+              "storage": "Not specified",
+              "sourceBasis": "fallback_public_model_base_configuration"
+            }
+          ],
+          "sources": [
+            "https://www.gsmarena.com/res.php3?sSearch=Huawei%20U7510",
+            "https://en.wikipedia.org/wiki/List_of_Huawei_products"
+          ]
+        }
+      ]
+    }
+  ]
+};

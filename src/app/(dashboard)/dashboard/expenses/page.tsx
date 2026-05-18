@@ -7,6 +7,7 @@ import { localizedCategoryName } from "@/lib/i18n/expense-categories";
 import { ExpenseList } from "@/features/expenses/components/ExpenseList";
 import { NewExpenseDialog } from "@/features/expenses/components/NewExpenseDialog";
 import { ExpenseDateFilter } from "@/features/expenses/components/ExpenseDateFilter";
+import { KpiStrip } from "@/components/shared/KpiStrip";
 import { Pagination } from "@/components/shared/Pagination";
 import { listExpenses } from "@/features/expenses/actions/expense.actions";
 
@@ -86,6 +87,17 @@ export default async function ExpensesPage({
   ];
 
   const today = new Date().toISOString().split("T")[0];
+  const startOfMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
+  const startOfToday = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+
+  const [monthAgg, todayAgg, monthCount] = await Promise.all([
+    prisma.expense.aggregate({ where: { storeId, expenseDate: { gte: startOfMonth } }, _sum: { amount: true } }),
+    prisma.expense.aggregate({ where: { storeId, expenseDate: { gte: startOfToday } }, _sum: { amount: true } }),
+    prisma.expense.count({ where: { storeId, expenseDate: { gte: startOfMonth } } }),
+  ]);
+
+  const kpiMonthTotal = Math.round(Number(monthAgg._sum.amount ?? 0));
+  const kpiTodayTotal = Math.round(Number(todayAgg._sum.amount ?? 0));
 
   const total = result.data.reduce((sum, e) => sum + e.amount, 0);
 
@@ -103,6 +115,11 @@ export default async function ExpensesPage({
 
   return (
     <div className="space-y-5">
+      <KpiStrip items={[
+        { label: t("kpi.thisMonth"), value: `${kpiMonthTotal.toLocaleString()} DZD` },
+        { label: t("kpi.today"), value: `${kpiTodayTotal.toLocaleString()} DZD`, tone: kpiTodayTotal > 0 ? "amber" : "default" },
+        { label: t("kpi.entriesMonth"), value: String(monthCount) },
+      ]} />
       {canManage && (
         <div className="flex justify-end">
           <NewExpenseDialog categories={categories} defaultDate={today} />
