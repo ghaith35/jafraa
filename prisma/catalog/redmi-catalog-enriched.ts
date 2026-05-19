@@ -1,0 +1,8795 @@
+/**
+ * Enriched Redmi phone catalog with specs, variants, images, and release years.
+ * Generated from src/data/catalog/phones/brands/redmi.json.
+ */
+
+export type RedmiEnrichedModelVariant = {
+  name: string;
+  ram?: string;
+  storage?: string;
+  color?: string;
+  connectivity?: string;
+  sourceBasis?: string;
+};
+
+export type RedmiEnrichedModelSpecs = {
+  display?: string | null;
+  processor?: string | null;
+  ram?: string | null;
+  storage?: string[] | null;
+  battery?: string | null;
+  os?: string | null;
+  weight?: string | null;
+  dimensions?: string | null;
+  colors?: string | null;
+};
+
+export type RedmiEnrichedModel = {
+  name: string;
+  aliases: string[];
+  releaseYear: number | null;
+  imageUrl: string | null;
+  specs: RedmiEnrichedModelSpecs;
+  variants: RedmiEnrichedModelVariant[];
+  sources?: string[];
+};
+
+export type RedmiEnrichedFamily = {
+  name: string;
+  models: RedmiEnrichedModel[];
+};
+
+export const REDMI_ENRICHED_CATALOG: {
+  brandName: string;
+  logoUrl: string | null;
+  sortOrder: number;
+  families: RedmiEnrichedFamily[];
+} = {
+  "brandName": "Redmi",
+  "logoUrl": "https://logo.clearbit.com/mi.com",
+  "sortOrder": 4,
+  "families": [
+    {
+      "name": "Redmi Note",
+      "models": [
+        {
+          "name": "Redmi Note 14S",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-14s.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Mediatek Helio G99 Ultra",
+            "ram": "8GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": "Android 15, HyperOS",
+            "weight": "179 g (6.31 oz)",
+            "dimensions": "161.1 x 75 x 8 mm (6.34 x 2.95 x 0.31 in)",
+            "colors": "Midnight Black, Aurora Purple, Ocean Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 14S 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-14s.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 15",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 15 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 15 5G",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-15-5g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 15 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-15-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 15 Pro",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 15 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 15 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-15-pro-5g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 15 Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 Pro 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 Pro 5G 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-15-pro-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 15 Pro+ 5G",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-15-pro-plus-5g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 15 Pro+ 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 Pro+ 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 Pro+ 5G 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 Pro+ 5G 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-15-pro-plus-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 15 SE 5G",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 15 SE 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 15 SE 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 13R",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13r.jpg",
+          "specs": {
+            "display": "6.79 inches, 109.5 cm, 1080 x 2460 pixels (~396 ppi density)",
+            "processor": "Qualcomm SM4450 Snapdragon 4+ Gen 2 (4 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5030 mAh",
+            "os": "Android 14, HyperOS",
+            "weight": "205 g (7.23 oz)",
+            "dimensions": "168.6 x 76.3 x 8.2 mm (6.64 x 3.00 x 0.32 in)",
+            "colors": "Black, Blue, Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 13R 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 13R 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 13R 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 13R 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 13R 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gadgets360.com/mobiles/redmi-phones",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13r.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 14",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 14 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 14 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 14 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 14 5G",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-14-5g.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Mediatek Dimensity 7025 Ultra (6 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5110 mAh",
+            "os": "Android 14, up to 2 major Android upgrades, HyperOS",
+            "weight": "190 g (6.70 oz)",
+            "dimensions": "162.4 x 75.7 x 8 mm (6.39 x 2.98 x 0.31 in)",
+            "colors": "Midnight Black, Lavender Purple, Coral Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 14 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 14 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 14 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 14 5G 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-14-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 14 Pro",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 14 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 14 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 14 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 14 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-14-pro-5g.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "processor": "Mediatek Dimensity 7300 Ultra (4 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5110 mAh",
+            "os": "Android 14, up to 3 major Android upgrades, HyperOS",
+            "weight": "190 g (6.70 oz)",
+            "dimensions": "162.3 x 74.4 x 8.4 mm (6.39 x 2.93 x 0.33 in)",
+            "colors": "Lavender Purple, Coral Green, Midnight Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 14 Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 14 Pro 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 14 Pro 5G 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-14-pro-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 14 Pro+ 5G",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-14-pro-plus-5g.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "processor": "Qualcomm SM7635 Snapdragon 7s Gen 3 (4 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5110 mAh",
+            "os": "Android 14, up to 3 major Android upgrades, HyperOS",
+            "weight": "205 g or 210 g (7.23 oz)",
+            "dimensions": "162.5 x 74.7 x 8.8 mm (6.40 x 2.94 x 0.35 in)",
+            "colors": "Lavender Purple, Frost Blue, Midnight Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 14 Pro+ 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 14 Pro+ 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 14 Pro+ 5G 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-14-pro-plus-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 12 Turbo",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-turbo.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM7475-AB Snapdragon 7+ Gen 2 (4 nm)",
+            "ram": "8GB/12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, MIUI 14",
+            "weight": "181 g (6.38 oz)",
+            "dimensions": "161.1 x 75 x 7.9 mm (6.34 x 2.95 x 0.31 in)",
+            "colors": "Black, Blue, White, Harry Potter Edition"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12 Turbo 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12 Turbo 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12 Turbo 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12 Turbo 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12 Turbo 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-turbo.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 12R",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12r.jpg",
+          "specs": {
+            "display": "6.79 inches, 109.5 cm, 1080 x 2460 pixels (~396 ppi density)",
+            "processor": "Qualcomm SM4450 Snapdragon 4 Gen 2 (4 nm)",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, MIUI 14",
+            "weight": "199 g (7.02 oz)",
+            "dimensions": "168.6 x 76.3 x 8.2 mm (6.64 x 3.00 x 0.32 in)",
+            "colors": "Black, Blue, Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12R 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12R 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12R 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12R 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12r.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 12R Pro",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12r-pro-.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM4375 Snapdragon 4 Gen 1 (6 nm)",
+            "ram": "12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, MIUI 13",
+            "weight": "188 g (6.63 oz)",
+            "dimensions": "165.9 x 76.2 x 8 mm (6.53 x 3.00 x 0.31 in)",
+            "colors": "Black, White, Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12R Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12r-pro-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 12S",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12s.jpg",
+          "specs": {
+            "display": "AMOLED, 90Hz, 700 nits (HBM), 1000 nits (peak), 6.43 inches, 1080 x 2400",
+            "processor": "Mediatek MT6781 Helio G96 (12 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 13, MIUI 14",
+            "weight": "176.0",
+            "dimensions": "159.9 x 73.9 x 8.1 mm (6.30 x 2.91 x 0.32 in)",
+            "colors": "Onyx Black, Ice Blue, Pearl Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12S 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12s.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 12T Pro",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12t-pro.jpg",
+          "specs": {
+            "display": "6.6 inches, 103.4 cm, 1080 x 2460 pixels (~407 ppi density)",
+            "processor": "Mediatek Dimensity 8200 Ultra (4 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 5080 mAh",
+            "os": "Android 13, MIUI 14",
+            "weight": "200 g (7.05 oz)",
+            "dimensions": "163.6 x 74.3 x 8.9 mm (6.44 x 2.93 x 0.35 in)",
+            "colors": "Blue, White, Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12T Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12T Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12T Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12T Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12t-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 13",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13.jpg",
+          "specs": {
+            "display": "AMOLED, 1B colors*, 120Hz, 1000 nits (peak), 6.67 inches, 1080 x 2400",
+            "processor": "Mediatek Dimensity 6080 (6 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 13, up to 3 major Android upgrades, HyperOS",
+            "weight": "174.5",
+            "dimensions": "161.1 x 75 x 7.6 mm (6.34 x 2.95 x 0.30 in)",
+            "colors": "Graphite black (Stealth Black), Arctic White, Ocean Teal, Prism Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 13 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 13 5G",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-5g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 13 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 13 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 13 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 13 Pro",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro.jpg",
+          "specs": {
+            "display": "AMOLED, 68B colors, 120Hz, Dolby Vision, 500 nits (typ), 1200 nits (HBM), 1800 nits (peak), 6.67 inches, 1220 x 2712",
+            "processor": "Qualcomm SM7435-AB Snapdragon 7s Gen 2 (4 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5100",
+            "os": "Android 13, up to 3 major Android upgrades, HyperOS",
+            "weight": "187.0",
+            "dimensions": "161.2 x 74.2 x 8 mm (6.35 x 2.92 x 0.31 in)",
+            "colors": "Midnight Black, Aurora Purple (Coral Purple), Ocean Teal, Arctic White, Olive Green, Scarlet Red"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 13 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 13 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro-5g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB/16GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 13 Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 13 Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 13 Pro 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 13 Pro 5G 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 13 Pro 5G 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13-pro-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 13 Pro+ 5G",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 13 Pro+ 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 13 Pro+ 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 13 Pro+ 5G 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 13 Pro+ 5G 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 13R Pro",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13r-pro.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Mediatek Dimensity 6080 (6 nm)",
+            "ram": "12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, MIUI 14",
+            "weight": "175 g (6.17 oz)",
+            "dimensions": "161.1 x 75 x 7.7 mm (6.34 x 2.95 x 0.30 in)",
+            "colors": "Black, Blue, Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 13R Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gadgets360.com/mobiles/redmi-phones",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-13r-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 11",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11-4g.jpg",
+          "specs": {
+            "display": "AMOLED, 90Hz, 700 nits, 1000 nits (peak), 6.43 inches, 1080 x 2400",
+            "processor": "Qualcomm SM6225 Snapdragon 680 4G (6 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, upgradable to Android 13, MIUI 14",
+            "weight": "179.0",
+            "dimensions": "159.9 x 73.9 x 8.1 mm (6.30 x 2.91 x 0.32 in)",
+            "colors": "Graphite Gray, Twilight Blue, Star Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11-4g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 11E",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11e.jpg",
+          "specs": {
+            "display": "6.58 inches, 104.3 cm, 1080 x 2408 pixels, 20:9 ratio (~401 ppi density)",
+            "processor": "Mediatek Dimensity 700 (7 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 11, MIUI 13",
+            "weight": "200 g (7.05 oz)",
+            "dimensions": "164 x 76.1 x 8.9 mm (6.46 x 3.00 x 0.35 in)",
+            "colors": "Gray, Silver, Atlantic Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11E 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11E 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11e.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 11E Pro",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11e-pro.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM6375 Snapdragon 695 5G (6 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 11, MIUI 13",
+            "weight": "202 g (7.13 oz)",
+            "dimensions": "164.2 x 76.1 x 8.1 mm (6.46 x 3.00 x 0.32 in)",
+            "colors": "Graphite Gray, Polar White, Atlantic Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11E Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11E Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11E Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11e-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 11R",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11r.jpg",
+          "specs": {
+            "display": "6.58 inches, 104.3 cm, 1080 x 2408 pixels, 20:9 ratio (~401 ppi density)",
+            "processor": "Mediatek Dimensity 700 (7 nm)",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "201 g (7.09 oz)",
+            "dimensions": "164 x 76.1 x 8.9 mm (6.46 x 3.00 x 0.35 in)",
+            "colors": "Black, Blue, Gray"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11R 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11R 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11R 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11r.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 11S",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "AMOLED, 90Hz, 700 nits, 1000 nits (peak), 6.43 inches, 1080 x 2400",
+            "processor": "Mediatek MT6781 Helio G96 (12 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, MIUI 13",
+            "weight": "179.0",
+            "dimensions": "159.9 x 73.9 x 8.1 mm (6.30 x 2.91 x 0.32 in)",
+            "colors": "Graphite Gray, Pearl White, Twilight Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11S 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Note 11S 5G",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11s-5g.jpg",
+          "specs": {
+            "display": "IPS LCD, 90Hz, 450 nits (typ), 6.6 inches, 1080 x 2400",
+            "processor": "Mediatek Dimensity 810 (6 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, MIUI 13",
+            "weight": "195.0",
+            "dimensions": "163.6 x 75.8 x 8.8 mm (6.44 x 2.98 x 0.35 in)",
+            "colors": "Midnight Black, Twilight Blue, Star Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11S 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11s-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 11SE",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11se.jpg",
+          "specs": {
+            "display": "6.5 inches, 102.0 cm, 1080 x 2400 pixels, 20:9 ratio (~405 ppi density)",
+            "processor": "Mediatek Dimensity 700 (7 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "190 g (6.70 oz)",
+            "dimensions": "161.8 x 75.3 x 8.9 mm (6.37 x 2.96 x 0.35 in)",
+            "colors": "Blue, Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11SE 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11SE 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11se.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 11T Pro",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11t-pro.jpg",
+          "specs": {
+            "display": "6.6 inches, 103.4 cm, 1080 x 2460 pixels (~407 ppi density)",
+            "processor": "Mediatek Dimensity 8100 (5 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5080 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "200 g (7.05 oz)",
+            "dimensions": "163.6 x 74.3 x 8.9 mm (6.44 x 2.93 x 0.35 in)",
+            "colors": "Blue, Silver, Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11T Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11T Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11T Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11T Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11T Pro 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11t-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 11T Pro+",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11t-pro-plus.jpg",
+          "specs": {
+            "display": "6.6 inches, 103.4 cm, 1080 x 2460 pixels (~407 ppi density)",
+            "processor": "Mediatek Dimensity 8100 (5 nm)",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 4400 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "198 g (6.98 oz)",
+            "dimensions": "163.6 x 74.3 x 8.9 mm (6.44 x 2.93 x 0.35 in)",
+            "colors": "Blue, Silver, Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11T Pro+ 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11T Pro+ 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11T Pro+ 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11t-pro-plus.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 12",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/redmi-note-12-4g.jpg",
+          "specs": {
+            "display": "AMOLED, 120Hz, 1200 nits (peak), 6.67 inches, 1080 x 2400",
+            "processor": "Qualcomm SM4375 Snapdragon 4 Gen 1 (6 nm)",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 12, MIUI 14 (International), MIUI 13 (India)",
+            "weight": "188.0",
+            "dimensions": "165.9 x 76.2 x 8 mm (6.53 x 3.00 x 0.31 in)",
+            "colors": "Frosted Green, Matte Black, Mystique Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/redmi-note-12-4g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 12 5G",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-5g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 12 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 12 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 12 Pro",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro.jpg",
+          "specs": {
+            "display": "AMOLED, 1B colors, 120Hz, Dolby Vision, HDR10+, 500 nits (typ), 900 nits (HBM), 6.67 inches, 1080 x 2400",
+            "processor": "Mediatek Dimensity 1080 (6 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 12, MIUI 13",
+            "weight": "187.0",
+            "dimensions": "163 x 76 x 8 mm (6.42 x 2.99 x 0.31 in)",
+            "colors": "Frosted Blue (Sky Blue), Onyx Black (Midnight Black), Polar White, Stardust Purple"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 12 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12 Pro 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 12 Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 12 Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 12 Pro 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 12 Pro Speed",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro-speed.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM7325 Snapdragon 778G 5G (6 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, MIUI 14",
+            "weight": "181 g (6.38 oz)",
+            "dimensions": "162.9 x 76 x 7.9 mm (6.41 x 2.99 x 0.31 in)",
+            "colors": "Black, Blue, Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12 Pro Speed 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12 Pro Speed 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 12 Pro Speed 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro-speed.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 12 Pro+ 5G",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 12 Pro+ 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 12 Pro+ 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 10",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "Super AMOLED, 450 nits (typ), 1100 nits (peak), 6.43 inches, 1080 x 2400",
+            "processor": "Qualcomm SDM678 Snapdragon 678 (11 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, upgradable to Android 12, MIUI 14",
+            "weight": "178.8",
+            "dimensions": "160.5 x 74.5 x 8.3 mm (6.32 x 2.93 x 0.33 in)",
+            "colors": "Shadow Black (Onyx Gray), Frost White (Pebble White), Aqua Green (Lake Green)"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 10 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Note 10 5G",
+          "aliases": [
+            "Redmi Note 10 5G China"
+          ],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note10-5g.jpg",
+          "specs": {
+            "display": "IPS LCD, 90Hz, 400 nits (typ), 500 nits (HBM), 6.5 inches, 1080 x 2400",
+            "processor": "Mediatek Dimensity 700 (7 nm)",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, MIUI 12",
+            "weight": "190.0",
+            "dimensions": "161.8 x 75.3 x 8.9 mm (6.37 x 2.96 x 0.35 in)",
+            "colors": "Chrome Silver, Graphite Gray, Nighttime Blue, Aurora Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 10 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note10-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 10 JE",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 10 JE 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 10 Pro",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note10-pro.jpg",
+          "specs": {
+            "display": "AMOLED, 120Hz, HDR10, 450 nits (typ), 1200 nits (peak), 6.67 inches, 1080 x 2400",
+            "processor": "Qualcomm SM7150 Snapdragon 732G (8 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5020",
+            "os": "Android 11, upgradable to Android 13, MIUI 14",
+            "weight": "193.0",
+            "dimensions": "164 x 76.5 x 8.1 mm (6.46 x 3.01 x 0.32 in)",
+            "colors": "Onyx Gray, Glacier Blue, Gradient Bronze"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 10 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note10-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 10 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 10 Pro 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 10 Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 10 Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products"
+          ]
+        },
+        {
+          "name": "Redmi Note 10 Pro Max",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM7150 Snapdragon 732G (8 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 5020 mAh",
+            "os": "Android 11, MIUI 12",
+            "weight": "192 g (6.77 oz)",
+            "dimensions": "164.5 x 76.2 x 8.1 mm (6.48 x 3.00 x 0.32 in)",
+            "colors": "Dark Night, Glacial Blue, Vintage Bronze"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 10 Pro Max 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 10 Pro Max 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 10 Pro Max 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Note 10S",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note10s.jpg",
+          "specs": {
+            "display": "AMOLED, 450 nits (typ), 1100 nits (peak), 6.43 inches, 1080 x 2400",
+            "processor": "Mediatek MT6785V/CD Helio G95 (12 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, upgradable to Android 13, MIUI 14",
+            "weight": "178.8",
+            "dimensions": "160.5 x 74.5 x 8.3 mm (6.32 x 2.93 x 0.33 in)",
+            "colors": "Deep Sea Blue (Ocean Blue), Shadow Black (Onyx Gray), (Frost White) Pebble White"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 10S 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note10s.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 10T 5G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-10t-5g.jpg",
+          "specs": {
+            "display": "6.5 inches, 102.0 cm, 1080 x 2400 pixels, 20:9 ratio (~405 ppi density)",
+            "processor": "Mediatek Dimensity 700 (7 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 11, MIUI 12",
+            "weight": "190 g (6.70 oz)",
+            "dimensions": "161.8 x 75.4 x 8.9 mm (6.37 x 2.97 x 0.35 in)",
+            "colors": "Metallic Blue, Mint Green, Chromium White, Graphite Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 10T 5G 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 10T 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 10T 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-10t-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 11 4G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "LCD, 90Hz, 6.5 inches, 1080 x 2400",
+            "processor": "Mediatek MT6769H Helio G88 (12 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "181.0",
+            "dimensions": "162 x 75.5 x 8.9 mm (6.38 x 2.97 x 0.35 in)",
+            "colors": "Carbon Gray, Pebble White, Sea Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11 4G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Note 11 5G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 11 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 11 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 11 Pro",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note11-pro.jpg",
+          "specs": {
+            "display": "Super AMOLED, 120Hz, 700 nits, 1200 nits (peak), 6.67 inches, 1080 x 2400",
+            "processor": "Mediatek MT6781 Helio G96 (12 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, MIUI 13",
+            "weight": "202.0",
+            "dimensions": "164.2 x 76.1 x 8.1 mm (6.46 x 3.00 x 0.32 in)",
+            "colors": "Graphite Gray (Stealth Black), Polar White (Phantom White), Star Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note11-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 11 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "Super AMOLED, 120Hz, 700 nits, 1200 nits (peak), 6.67 inches, 1080 x 2400",
+            "processor": "Qualcomm SM6375 Snapdragon 695 5G (6 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, MIUI 13",
+            "weight": "202.0",
+            "dimensions": "164.2 x 76.1 x 8.1 mm (6.46 x 3.00 x 0.32 in)",
+            "colors": "Graphite Gray, Polar White, Atlantic Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11 Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Note 11 Pro+ 5G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "Super AMOLED, 120Hz, HDR10, 700 nits (HBM), 1200 nits (peak), 6.67 inches, 1080 x 2400",
+            "processor": "Mediatek Dimensity 920 (6 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "204.0",
+            "dimensions": "163.7 x 76.2 x 8.3 mm (6.44 x 3.00 x 0.33 in)",
+            "colors": "Mysterious Black, Forest Green, Timeless Purple"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11 Pro+ 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Note 11T 5G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11t-5g.jpg",
+          "specs": {
+            "display": "6.6 inches, 105.2 cm, 1080 x 2400 pixels, 20:9 ratio (~399 ppi density)",
+            "processor": "Mediatek Dimensity 810 (6 nm)",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "195 g (6.88 oz)",
+            "dimensions": "163.6 x 75.8 x 8.8 mm (6.44 x 2.98 x 0.35 in)",
+            "colors": "Aquamarine Blue, Stardust White, Matte Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 11T 5G 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11T 5G 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11T 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 11T 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11t-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 8 2021",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note8-2021.jpg",
+          "specs": {
+            "display": "6.3 inches, 97.4 cm, 1080 x 2340 pixels, 19.5:9 ratio (~409 ppi density)",
+            "processor": "Mediatek MT6769Z Helio G85 (12 nm)",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 4000 mAh",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "190 g (6.70 oz)",
+            "dimensions": "158.3 x 75.3 x 8.4 mm (6.23 x 2.96 x 0.33 in)",
+            "colors": "Neptune Blue, Moonlight White, Space Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 8 2021 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 2021 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 2021 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note8-2021.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 9T",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-9t-5g.jpg",
+          "specs": {
+            "display": "IPS LCD, 450 nits (typ), 6.53 inches, 1080 x 2340",
+            "processor": "Mediatek Dimensity 800U (7 nm)",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 10, MIUI 12",
+            "weight": "199.0",
+            "dimensions": "161.2 x 77.3 x 9.1 mm (6.35 x 3.04 x 0.36 in)",
+            "colors": "Nightfall Black, Daybreak Purple"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 9T 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-9t-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 9",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-9.jpg",
+          "specs": {
+            "display": "IPS LCD, 450 nits (typ), 6.53 inches, 1080 x 2340",
+            "processor": "Mediatek MT6769Z Helio G85 (12 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5020",
+            "os": "Android 10, upgradable to Android 11, MIUI 12.5 E",
+            "weight": "199.0",
+            "dimensions": "162.3 x 77.2 x 8.9 mm (6.39 x 3.04 x 0.35 in)",
+            "colors": "Forest Green, Midnight Grey, Polar White"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 9 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-9.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 9 4G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note9-4g.jpg",
+          "specs": {
+            "display": "6.53 inches, 104.7 cm, 1080 x 2340 pixels, 19.5:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM6115 Snapdragon 662 (11 nm)",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 6000 mAh",
+            "os": "Android 10, MIUI 12",
+            "weight": "198 g (6.98 oz)",
+            "dimensions": "162.3 x 77.3 x 9.6 mm (6.39 x 3.04 x 0.38 in)",
+            "colors": "Gray, Green, Blue, Orange"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 9 4G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 4G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 4G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 4G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note9-4g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 9 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-9-5g.jpg",
+          "specs": {
+            "display": "6.53 inches, 104.7 cm, 1080 x 2340 pixels, 19.5:9 ratio (~395 ppi density)",
+            "processor": "Mediatek Dimensity 800U (7 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 10, MIUI 12",
+            "weight": "199 g (7.02 oz)",
+            "dimensions": "162 x 77.3 x 9.2 mm (6.38 x 3.04 x 0.36 in)",
+            "colors": "Gray, Green, Violet"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 9 5G 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 5G 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-9-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 9 Pro",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-9-pro.jpg",
+          "specs": {
+            "display": "IPS LCD, 6.67 inches, 1080 x 2400",
+            "processor": "Qualcomm SM7125 Snapdragon 720G (8 nm)",
+            "ram": "6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5020",
+            "os": "Android 10, MIUI 11",
+            "weight": "209.0",
+            "dimensions": "165.8 x 76.7 x 8.8 mm (6.53 x 3.02 x 0.35 in)",
+            "colors": "Tropical Green, Glacier White, Interstellar Gray"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 9 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-9-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 9 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM7225 Snapdragon 750G 5G (8 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4820 mAh",
+            "os": "Android 10, MIUI 12",
+            "weight": "215 g (7.58 oz)",
+            "dimensions": "165.4 x 76.8 x 9 mm (6.51 x 3.02 x 0.35 in)",
+            "colors": "Gray, Blue, Red/Mint"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 9 Pro 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Note 9 Pro Max",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-9-pro-max.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM7125 Snapdragon 720G (8 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 5020 mAh",
+            "os": "Android 10, upgradable to Android 12, MIUI 13",
+            "weight": "209 g (7.37 oz)",
+            "dimensions": "165.5 x 76.7 x 8.8 mm (6.52 x 3.02 x 0.35 in)",
+            "colors": "Aurora Blue, Glacier White, Interstellar Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 9 Pro Max 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 Pro Max 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 9 Pro Max 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-9-pro-max.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 9S",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "IPS LCD, HDR10, 450 nits (typ), 6.67 inches, 1080 x 2400",
+            "processor": "Qualcomm SM7125 Snapdragon 720G (8 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5020",
+            "os": "Android 10, upgradable to Android 12, MIUI 14",
+            "weight": "209.0",
+            "dimensions": "165.8 x 76.7 x 8.8 mm (6.53 x 3.02 x 0.35 in)",
+            "colors": "Aurora Blue, Glacier White, Interstellar Gray"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 9S 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Note 7",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-7.jpg",
+          "specs": {
+            "display": "6.3 inches, 97.4 cm, 1080 x 2340 pixels, 19.5:9 ratio (~409 ppi density)",
+            "processor": "Qualcomm SDM660 Snapdragon 660 (14 nm)",
+            "ram": "3GB/4GB/6GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), planned upgrade to Android 10, MIUI 12",
+            "weight": "186 g (6.56 oz)",
+            "dimensions": "159.2 x 75.2 x 8.1 mm (6.27 x 2.96 x 0.32 in)",
+            "colors": "Blue, Black, Twilight Gold, White"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 7 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 7 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 7 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 7 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-7.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 7 Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-7-pro.jpg",
+          "specs": {
+            "display": "6.3 inches, 97.4 cm, 1080 x 2340 pixels, 19.5:9 ratio (~409 ppi density)",
+            "processor": "Qualcomm SDM675 Snapdragon 675 (11 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 10, MIUI 12",
+            "weight": "186 g (6.56 oz)",
+            "dimensions": "159.2 x 75.2 x 8.1 mm (6.27 x 2.96 x 0.32 in)",
+            "colors": "Nebula Red, Neptune Blue, Space Black, Astro White"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 7 Pro 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 7 Pro 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 7 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-7-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 7S",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-7s.jpg",
+          "specs": {
+            "display": "6.3 inches, 97.4 cm, 1080 x 2340 pixels, 19.5:9 ratio (~409 ppi density)",
+            "processor": "Qualcomm SDM660 Snapdragon 660 (14 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), planned upgrade to Android 10, MIUI 12",
+            "weight": "186 g (6.56 oz)",
+            "dimensions": "159.2 x 75.2 x 8.1 mm (6.27 x 2.96 x 0.32 in)",
+            "colors": "Onyx Black, Sapphire Blue, Ruby Red, Astro White"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 7S 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 7S 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-7s.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 8",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-8.jpg",
+          "specs": {
+            "display": "6.3 inches, 97.4 cm, 1080 x 2340 pixels, 19.5:9 ratio (~409 ppi density)",
+            "processor": "Qualcomm SDM665 Snapdragon 665 (11 nm)",
+            "ram": "3GB/4GB/6GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 11, MIUI 12.5",
+            "weight": "190 (6.70 oz)",
+            "dimensions": "158.3 x 75.3 x 8.4 mm (6.23 x 2.96 x 0.33 in)",
+            "colors": "Neptune Blue, Moonlight White, Space Black, Nebula Purple, Cosmic Purple"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 8 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-8.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 8 Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-8-pro.jpg",
+          "specs": {
+            "display": "6.53 inches, 104.7 cm, 1080 x 2340 pixels, 19.5:9 ratio (~395 ppi density)",
+            "processor": "Mediatek MT6785V/CC Helio G90T (12 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4500 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 11, MIUI 12.5",
+            "weight": "200 g (7.05 oz)",
+            "dimensions": "161.4 x 76.4 x 8.8 mm (6.35 x 3.01 x 0.35 in)",
+            "colors": "Black, Red, Blue, White, Deep Sea Blue, Midnight Blue, Electric Blue, Twilight Orange"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 8 Pro 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 Pro 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 Pro 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-8-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 8T",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-8t.jpg",
+          "specs": {
+            "display": "6.3 inches, 97.4 cm, 1080 x 2340 pixels, 19.5:9 ratio (~409 ppi density)",
+            "processor": "Qualcomm SDM665 Snapdragon 665 (11 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 11, MIUI 12.5",
+            "weight": "200 g (7.05 oz)",
+            "dimensions": "161.1 x 75.4 x 8.6 mm (6.34 x 2.97 x 0.34 in)",
+            "colors": "Starscape Blue, Moonlight White, Moonshadow Grey"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 8T 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8T 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 8T 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-8t.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 5",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 5 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 5 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 5 Pro",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-5-pro.jpg",
+          "specs": {
+            "display": "5.99 inches, 92.6 cm, 1080 x 2160 pixels, 18:9 ratio (~403 ppi density)",
+            "processor": "Qualcomm SDM636 Snapdragon 636 (14 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 7.1.2 (Nougat), upgradable to Android 9, MIUI 11",
+            "weight": "181 g (6.38 oz)",
+            "dimensions": "158.6 x 75.4 x 8.1 mm (6.24 x 2.97 x 0.32 in)",
+            "colors": "Black, Champagne Gold, Rose Gold, Lake Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 5 Pro 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 5 Pro 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-5-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 6 Pro",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.26 inches, 97.8 cm, 1080 x 2280 pixels, 19:9 ratio (~403 ppi density)",
+            "processor": "Qualcomm SDM636 Snapdragon 636 (14 nm)",
+            "ram": "3GB/4GB/6GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 8.1 (Oreo), planned upgrade to Android 10, MIUI 12",
+            "weight": "182 g (6.42 oz)",
+            "dimensions": "157.9 x 76.4 x 8.3 mm (6.22 x 3.01 x 0.33 in)",
+            "colors": "Black, Blue, Rose Gold, Red"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 6 Pro 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 6 Pro 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 6 Pro 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Note 4X",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-4x.jpg",
+          "specs": {
+            "display": "IPS LCD capacitive touchscreen 16M colors, 1080 x 1920 pixels (~401 ppi pixel density), 5.5 inches (~72.7% screen-to-body ratio)",
+            "processor": "Qualcomm MSM8953 Snapdragon 625",
+            "ram": "2GB/3GB/4GB",
+            "storage": [
+              "16GB",
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Non-removable Li-Po 4100 mAh battery",
+            "os": "Android 6.0 (Marshmallow)",
+            "weight": "165 g",
+            "dimensions": "151 x 76 x 8.5 mm (5.94 x 2.99 x 0.33 in)",
+            "colors": "Gray| Gold| Black| Pink"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 4X 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 4X 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 4X 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "kaggle:gsmarena-img-url",
+            "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-4x.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 5A",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-5a.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 5A 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-5a.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 5A Prime",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 5A Prime 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 5A Prime 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Note 3",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-3.jpg",
+          "specs": {
+            "display": "5.5 inches, 82.6 cm, 1080 x 1920 pixels, 16:9 ratio (~403 ppi density)",
+            "processor": "Qualcomm MSM8956 Snapdragon 650",
+            "ram": "2GB/3GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": "Li-Po 4050 mAh, non-removable",
+            "os": "Android 5.1.1 (Lollipop), upgradable to 6.0.1 (Marshmallow), MIUI 9.5",
+            "weight": "164 g (5.78 oz)",
+            "dimensions": "150 x 76 x 8.7 mm (5.91 x 2.99 x 0.34 in)",
+            "colors": "Silver, Gray, Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 3 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 3 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-3.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 4",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-4.jpg",
+          "specs": {
+            "display": "IPS LCD capacitive touchscreen 16M colors, 1080 x 1920 pixels (~401 ppi pixel density), 5.5 inches (~72.7% screen-to-body ratio)",
+            "processor": "Mediatek MT6797 Helio X20",
+            "ram": "2GB/3GB/4GB",
+            "storage": [
+              "16GB",
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Non-removable Li-Po 4100 mAh battery",
+            "os": "Android 6.0 (Marshmallow)",
+            "weight": "175 g",
+            "dimensions": "151 x 76 x 8.4 mm (5.94 x 2.99 x 0.33 in)",
+            "colors": "Silver| Gray| Gold| Blue| Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 4 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 4 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Note 4 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "kaggle:gsmarena-img-url",
+            "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-4.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 2",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-2-.jpg",
+          "specs": {
+            "display": "5.5 inches, 82.6 cm, 1080 x 1920 pixels, 16:9 ratio (~403 ppi density)",
+            "processor": "Mediatek MT6795 Helio X10 (28 nm)",
+            "ram": "2GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": "Li-Po 3060 mAh, removable",
+            "os": "Android 5.0 (Lollipop), MIUI 7",
+            "weight": "160 g (5.64 oz)",
+            "dimensions": "152 x 76 x 8.3 mm (5.98 x 2.99 x 0.33 in)",
+            "colors": "White, blue, yellow, pink, mint green"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 2 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 2 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-2-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note.jpg",
+          "specs": {
+            "display": "5.5 inches, 83.4 cm, 720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+            "processor": "Mediatek MT6592 (28 nm)",
+            "ram": "1GB/2GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "Li-Po 3200/3100 mAh, removable",
+            "os": "Android 4.2 (Jelly Bean), upgradable to 4.4.4 (KitKat), MIUI 9.2",
+            "weight": "199 g (7.02 oz)",
+            "dimensions": "154 x 78.7 x 9.5 mm (6.06 x 3.10 x 0.37 in)",
+            "colors": "Black, White"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Note 2GB 8GB",
+              "ram": "2GB",
+              "storage": "8GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Note 4G",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-4g.jpg",
+          "specs": {
+            "display": "5.5 inches, 83.4 cm, 720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+            "processor": "Qualcomm MSM8928 Snapdragon 400 (28 nm)",
+            "ram": "2GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "Li-Po 3100 mAh, removable",
+            "os": "Android 4.2 (Jelly Bean), upgradable to 4.4.2 (KitKat), MIUI 5",
+            "weight": "185 g (6.53 oz)",
+            "dimensions": "154 x 78.7 x 9.5 mm (6.06 x 3.10 x 0.37 in)",
+            "colors": "Black/White"
+          },
+          "variants": [
+            {
+              "name": "Redmi Note 4G 2GB 8GB",
+              "ram": "2GB",
+              "storage": "8GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-4g.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Redmi K",
+      "models": [
+        {
+          "name": "Redmi K80 Ultra",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k80-ultra.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi K80 Ultra 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi K80 Ultra 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi K80 Ultra 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k80-ultra.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K90",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi K90 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi K90 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi K90 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi K90 Pro Max",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k90-pro-max.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi K90 Pro Max 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi K90 Pro Max 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi K90 Pro Max 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k90-pro-max.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K70 Ultra",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k70-ultra-.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "processor": "Mediatek Dimensity 9300+ (4 nm)",
+            "ram": "12GB/16GB/24GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Li-Po 5500 mAh",
+            "os": "Android 14, HyperOS",
+            "weight": "211 g (7.44 oz)",
+            "dimensions": "160.4 x 75.1 x 8.4 mm (6.31 x 2.96 x 0.33 in)",
+            "colors": "Black, White, Violet, Green Championship Edition, Orange Championship Edition"
+          },
+          "variants": [
+            {
+              "name": "Redmi K70 Ultra 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 Ultra 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 Ultra 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 Ultra 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 Ultra 24GB 1TB",
+              "ram": "24GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k70-ultra-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K80",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k80-.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+            "processor": "Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Si/C Li-Ion 6550 mAh",
+            "os": "Android 15, HyperOS 2",
+            "weight": "206 g (7.27 oz)",
+            "dimensions": "160.3 x 75 x 8.1 mm (6.31 x 2.95 x 0.32 in)",
+            "colors": "Black, White, Mint, Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi K80 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K80 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K80 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K80 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K80 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k80-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K80 Pro",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k80-pro-.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+            "processor": "Qualcomm SM8750-AB Snapdragon 8 Elite (3 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Si/C Li-Ion 6000 mAh",
+            "os": "Android 15, HyperOS 2",
+            "weight": "212 g or 217 g (7.48 oz)",
+            "dimensions": "160.3 x 75 x 8.4 mm (6.31 x 2.95 x 0.33 in)",
+            "colors": "Black, White, Mint, Lamborgini Green, Lamborgini Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi K80 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K80 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K80 Pro 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K80 Pro 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k80-pro-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K60 Ultra",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k60-ultra.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "processor": "Mediatek Dimensity 9200+ (4 nm)",
+            "ram": "12GB/16GB/24GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, MIUI 14",
+            "weight": "204 g (7.20 oz)",
+            "dimensions": "162.2 x 75.7 x 8.5 mm (6.39 x 2.98 x 0.33 in)",
+            "colors": "Black, White, Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi K60 Ultra 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 Ultra 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 Ultra 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 Ultra 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 Ultra 24GB 1TB",
+              "ram": "24GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k60-ultra.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K70",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k70.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+            "processor": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 14, HyperOS",
+            "weight": "209 g (7.37 oz)",
+            "dimensions": "160.9 x 75 x 8.2 mm (6.33 x 2.95 x 0.32 in)",
+            "colors": "Black, Silver, Blue/Green, Purple"
+          },
+          "variants": [
+            {
+              "name": "Redmi K70 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k70.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K70 Pro",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k70-pro.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+            "processor": "Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)",
+            "ram": "12GB/16GB/24GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 14, HyperOS",
+            "weight": "209 g (7.37 oz)",
+            "dimensions": "160.9 x 75 x 8.2 mm (6.33 x 2.95 x 0.32 in)",
+            "colors": "Black, Silver, Blue/Green, Lamborgini Green, Lamborgini Yellow"
+          },
+          "variants": [
+            {
+              "name": "Redmi K70 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 Pro 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 Pro 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70 Pro 24GB 1TB",
+              "ram": "24GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k70-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K70E",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k70e.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "processor": "Mediatek Dimensity 8300 Ultra (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Li-Po 5500 mAh",
+            "os": "Android 14, HyperOS",
+            "weight": "198 g (6.98 oz)",
+            "dimensions": "160.5 x 74.3 x 8.1 mm (6.32 x 2.93 x 0.32 in)",
+            "colors": "Black, White, Mint"
+          },
+          "variants": [
+            {
+              "name": "Redmi K70E 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70E 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70E 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K70E 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k70e.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K40S",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k40s.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM8250-AC Snapdragon 870 5G (7 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4500 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "195 g (6.88 oz)",
+            "dimensions": "163.2 x 76 x 7.7 mm (6.43 x 2.99 x 0.30 in)",
+            "colors": "Black, Gray, Blue, Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi K40S 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40S 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40S 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40S 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k40s.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K50",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k50.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+            "processor": "Mediatek Dimensity 8100 (5 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5500 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "201 g (7.09 oz)",
+            "dimensions": "163.1 x 76.2 x 8.5 mm (6.42 x 3.00 x 0.33 in)",
+            "colors": "Black, Gray, Blue, Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi K50 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k50.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K50 Gaming",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k50-gaming.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4700 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "210 g (7.41 oz)",
+            "dimensions": "162.5 x 76.7 x 8.5 mm (6.40 x 3.02 x 0.33 in)",
+            "colors": "Black, Gray, Blue, AMG"
+          },
+          "variants": [
+            {
+              "name": "Redmi K50 Gaming 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 Gaming 12GB 128GB",
+              "ram": "12GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 Gaming 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k50-gaming.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K50 Pro",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k50-pro.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+            "processor": "Mediatek Dimensity 9000 (4 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "201 g (7.09 oz)",
+            "dimensions": "163.1 x 76.2 x 8.5 mm (6.42 x 3.00 x 0.33 in)",
+            "colors": "Black, Gray, Blue, Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi K50 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k50-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K50 Ultra",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k50-ultra.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "processor": "Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "202 g (7.13 oz)",
+            "dimensions": "163.1 x 75.9 x 8.6 mm (6.42 x 2.99 x 0.34 in)",
+            "colors": "Black, Gray, Blue, Mercedes AMG"
+          },
+          "variants": [
+            {
+              "name": "Redmi K50 Ultra 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 Ultra 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 Ultra 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50 Ultra 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k50-ultra.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K50i",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k50i-5g.jpg",
+          "specs": {
+            "display": "6.6 inches, 103.4 cm, 1080 x 2460 pixels (~407 ppi density)",
+            "processor": "Mediatek Dimensity 8100 (5 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5080 mAh",
+            "os": "Android 12, upgradable to Android 13, MIUI 14",
+            "weight": "200 g (7.05 oz)",
+            "dimensions": "163.6 x 74.3 x 8.9 mm (6.44 x 2.93 x 0.35 in)",
+            "colors": "Phantom Blue, Stealth Black, Quick Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi K50i 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50i 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K50i 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k50i-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K50i Pro",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi K50i Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "https://www.gsmchoice.com/en/catalogue/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi K60",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k60.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+            "processor": "Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)",
+            "ram": "8GB/12GB/16GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 5500 mAh",
+            "os": "Android 13, MIUI 14",
+            "weight": "199 g or 204 g (7.02 oz)",
+            "dimensions": "162.8 x 75.4 x 8.6 mm or 8.8 mm",
+            "colors": "Black, White, Blue, Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi K60 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k60.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K60 Pro",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k60-pro.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+            "processor": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+            "ram": "8GB/12GB/16GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, MIUI 14",
+            "weight": "201 g or 205 g (7.09 oz)",
+            "dimensions": "162.8 x 75.4 x 8.6 mm or 8.9 mm",
+            "colors": "Black, White, Mint, Champion Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi K60 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60 Pro 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k60-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K60E",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k60e.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+            "processor": "Mediatek Dimensity 8200 (4 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 5500 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "202 g (7.13 oz)",
+            "dimensions": "163.1 x 76.2 x 8.5 mm (6.42 x 3.00 x 0.33 in)",
+            "colors": "Black, White, Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi K60E 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60E 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60E 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K60E 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k60e.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K40",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k40.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM8250-AC Snapdragon 870 5G (7 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4520 mAh",
+            "os": "Android 11, MIUI 12",
+            "weight": "196 g (6.91 oz)",
+            "dimensions": "163.7 x 76.4 x 7.8 mm (6.44 x 3.01 x 0.31 in)",
+            "colors": "Black, White, Aurora"
+          },
+          "variants": [
+            {
+              "name": "Redmi K40 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k40.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K40 Gaming",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k40-gaming.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Mediatek Dimensity 1200 (6 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5065 mAh",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "205 g (7.23 oz)",
+            "dimensions": "161.9 x 76.9 x 8.3 mm (6.37 x 3.03 x 0.33 in)",
+            "colors": "Black, Gray, Silver, Bruce Lee Yellow"
+          },
+          "variants": [
+            {
+              "name": "Redmi K40 Gaming 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40 Gaming 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40 Gaming 12GB 128GB",
+              "ram": "12GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40 Gaming 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40 Gaming 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k40-gaming.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K40 Pro",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k40-pro.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM8350 Snapdragon 888 5G (5 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4520 mAh",
+            "os": "Android 11, MIUI 12",
+            "weight": "196 g (6.91 oz)",
+            "dimensions": "163.7 x 76.4 x 7.8 mm (6.44 x 3.01 x 0.31 in)",
+            "colors": "Black, White, Aurora"
+          },
+          "variants": [
+            {
+              "name": "Redmi K40 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K40 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k40-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K40 Pro+",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k40-pro-plus.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM8350 Snapdragon 888 5G (5 nm)",
+            "ram": "12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "Li-Po 4520 mAh",
+            "os": "Android 11, MIUI 12",
+            "weight": "196 g (6.91 oz)",
+            "dimensions": "163.7 x 76.4 x 7.8 mm (6.44 x 3.01 x 0.31 in)",
+            "colors": "Black, White, Aurora"
+          },
+          "variants": [
+            {
+              "name": "Redmi K40 Pro+ 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k40-pro-plus.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K30 5G Racing",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SDM768 Snapdragon 768G 5G (7 nm)",
+            "ram": "6GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "Li-Po 4500 mAh",
+            "os": "Android 10, MIUI 11",
+            "weight": "208 g (7.34 oz)",
+            "dimensions": "165.3 x 76.6 x 8.8 mm (6.51 x 3.02 x 0.35 in)",
+            "colors": "Mint, Blue, Red, Purple, White"
+          },
+          "variants": [
+            {
+              "name": "Redmi K30 5G Racing 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi K30 Pro",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30-pro.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM8250 Snapdragon 865 5G (7 nm+)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4700 mAh",
+            "os": "Android 10, MIUI 11",
+            "weight": "218 g (7.69 oz)",
+            "dimensions": "163.3 x 75.4 x 8.9 mm (6.43 x 2.97 x 0.35 in)",
+            "colors": "Neon Blue, Phantom White, Electric Purple, Cyber Gray"
+          },
+          "variants": [
+            {
+              "name": "Redmi K30 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 Pro 12GB 128GB",
+              "ram": "12GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K30 Pro Zoom",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30-pro-zoom.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM8250 Snapdragon 865 5G (7 nm+)",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4700 mAh",
+            "os": "Android 10, MIUI 11",
+            "weight": "218 g (7.69 oz)",
+            "dimensions": "163.3 x 75.4 x 8.9 mm (6.43 x 2.97 x 0.35 in)",
+            "colors": "Grey, Purple, White, Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi K30 Pro Zoom 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 Pro Zoom 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 Pro Zoom 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30-pro-zoom.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K30 Ultra",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30-ultra.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Mediatek Dimensity 1000+ (7 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 4500 mAh",
+            "os": "Android 10, MIUI 12",
+            "weight": "213 g (7.51 oz)",
+            "dimensions": "163.3 x 75.4 x 9.1 mm (6.43 x 2.97 x 0.36 in)",
+            "colors": "Moonlight White, Midnight Black, Mint Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi K30 Ultra 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 Ultra 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 Ultra 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 Ultra 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30-ultra.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K30i 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30i-5g-.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM7250 Snapdragon 765G 5G (7 nm)",
+            "ram": "6GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "Li-Po 4500 mAh",
+            "os": "Android 10, MIUI 11",
+            "weight": "208 g (7.34 oz)",
+            "dimensions": "165.3 x 76.6 x 8.8 mm (6.51 x 3.02 x 0.35 in)",
+            "colors": "Blue, White, Red, Purple"
+          },
+          "variants": [
+            {
+              "name": "Redmi K30i 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30i 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30i 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30i-5g-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K30S Ultra",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi K30S Ultra 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi K30S Ultra 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi K20",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.39 inches, 100.2 cm, 1080 x 2340 pixels, 19.5:9 ratio (~403 ppi density)",
+            "processor": "Qualcomm SDM730 Snapdragon 730 (8 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 10, MIUI 12",
+            "weight": "191 g (6.74 oz)",
+            "dimensions": "156.7 x 74.3 x 8.8 mm (6.17 x 2.93 x 0.35 in)",
+            "colors": "Carbon black, Red flame, Glacier blue, Pearl White"
+          },
+          "variants": [
+            {
+              "name": "Redmi K20 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K20 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K20 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi K20 Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/k20-pro.jpg",
+          "specs": {
+            "display": "6.39 inches, 100.2 cm, 1080 x 2340 pixels, 19.5:9 ratio (~403 ppi density)",
+            "processor": "Qualcomm SM8150 Snapdragon 855 (7 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 10, MIUI 12",
+            "weight": "191 g (6.74 oz)",
+            "dimensions": "156.7 x 74.3 x 8.8 mm (6.17 x 2.93 x 0.35 in)",
+            "colors": "Carbon black, Flame red, Glacier blue, Summer Honey, Pearl White"
+          },
+          "variants": [
+            {
+              "name": "Redmi K20 Pro 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K20 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K20 Pro 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K20 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/k20-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K20 Pro Premium",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.39 inches, 100.2 cm, 1080 x 2340 pixels, 19.5:9 ratio (~403 ppi density)",
+            "processor": "Qualcomm SM8150 Snapdragon 855+ (7 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 10, MIUI 11",
+            "weight": "191 g (6.74 oz)",
+            "dimensions": "156.7 x 74.3 x 8.8 mm (6.17 x 2.93 x 0.35 in)",
+            "colors": "Carbon black, Flame red, Glacier blue, Summer Honey, Pearl White"
+          },
+          "variants": [
+            {
+              "name": "Redmi K20 Pro Premium 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K20 Pro Premium 8GB 512GB",
+              "ram": "8GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K20 Pro Premium 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi K30",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SDM730 Snapdragon 730G (8 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4500 mAh, non-removable",
+            "os": "Android 10, MIUI 11",
+            "weight": "208 g (7.34 oz)",
+            "dimensions": "165.3 x 76.6 x 8.8 mm (6.51 x 3.02 x 0.35 in)",
+            "colors": "Blue, Red, Purple"
+          },
+          "variants": [
+            {
+              "name": "Redmi K30 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30.jpg"
+          ]
+        },
+        {
+          "name": "Redmi K30 5G",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30-5g.jpg",
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM7250 Snapdragon 765G 5G (7 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4500 mAh, non-removable",
+            "os": "Android 10, upgradable to Android 11, MIUI 12",
+            "weight": "208 g (7.34 oz)",
+            "dimensions": "165.3 x 76.6 x 8.8 mm (6.51 x 3.02 x 0.35 in)",
+            "colors": "Blue, Red, Purple, White"
+          },
+          "variants": [
+            {
+              "name": "Redmi K30 5G 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi K30 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-k30-5g.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Redmi Turbo",
+      "models": [
+        {
+          "name": "Redmi Turbo 5 Pro",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Turbo 5 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Turbo 5 Pro 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Turbo 5 Pro 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Turbo 4",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "processor": "Mediatek Dimensity 8400 Ultra (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Si/C Li-Ion 6550 mAh",
+            "os": "Android 15, HyperOS 2",
+            "weight": "203.5 g (7.20 oz)",
+            "dimensions": "161 x 75.2 x 8.1 mm (6.34 x 2.96 x 0.32 in)",
+            "colors": "Black, White, Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Turbo 4 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Turbo 4 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Turbo 4 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Turbo 4 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Turbo 4 Pro",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-turbo-4-pro.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Turbo 4 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Turbo 4 Pro 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Turbo 4 Pro 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-turbo-4-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Turbo 5",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-turbo-5.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Turbo 5 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Turbo 5 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Turbo 5 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-turbo-5.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Turbo 3",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.67 inches, 107.4 cm, 1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "processor": "Qualcomm SM8635 Snapdragon 8s Gen 3 (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 14, HyperOS",
+            "weight": "179 g (6.31 oz)",
+            "dimensions": "160.5 x 74.4 x 7.8 mm (6.32 x 2.93 x 0.31 in)",
+            "colors": "Black, Green, Titanium, Harry Potter"
+          },
+          "variants": [
+            {
+              "name": "Redmi Turbo 3 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Turbo 3 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Turbo 3 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Turbo 3 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Redmi Number Series",
+      "models": [
+        {
+          "name": "Redmi 14C 5G",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.88 inches, 112.4 cm, 720 x 1640 pixels (~260 ppi density)",
+            "processor": "Qualcomm SM4450 Snapdragon 4 Gen 2 (4 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 5160 mAh",
+            "os": "Android 14, up to 2 major Android upgrades, HyperOS",
+            "weight": "205 g or 212 g (7.23 oz)",
+            "dimensions": "171.9 x 77.8 x 8.2 mm (6.77 x 3.06 x 0.32 in)",
+            "colors": "Stardust Purple, Starlight Blue, Stargaze Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi 14C 5G 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 14C 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 14C 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 15",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 15 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 15 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi 15 5G",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-15-5g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 15 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 15 5G 4GB 256GB",
+              "ram": "4GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 15 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/15-5g/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-15-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 15C",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-15c.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 15C 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 15C 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 15C 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-15c.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 15C 5G",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 15C 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 15C 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 15C 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi 15R 5G",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB/6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 15R 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 15R 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 15R 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 15R 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.devicespecifications.com/",
+            "https://www.gadgets360.com/mobiles/redmi-phones"
+          ]
+        },
+        {
+          "name": "Redmi 13",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13.jpg",
+          "specs": {
+            "display": "IPS LCD, 90Hz, 550 nits (HBM), 6.79 inches, 1080 x 2460",
+            "processor": "Mediatek Helio G91 Ultra (12 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5030",
+            "os": "Android 14, HyperOS",
+            "weight": "205.0",
+            "dimensions": "168.6 x 76.3 x 8.3 mm (6.64 x 3.00 x 0.33 in)",
+            "colors": "Midnight Black, Sandy Gold, Ocean Blue, Pink"
+          },
+          "variants": [
+            {
+              "name": "Redmi 13 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 13 5G",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13-5g.jpg",
+          "specs": {
+            "display": "6.79 inches, 109.5 cm, 1080 x 2460 pixels (~396 ppi density)",
+            "processor": "Qualcomm SM4450 Snapdragon 4 Gen 2 AE (4 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "Li-Po 5030 mAh",
+            "os": "Android 14, HyperOS, up to 2 major Android upgrades",
+            "weight": "205 g (7.23 oz)",
+            "dimensions": "168.6 x 76.3 x 8.3 mm (6.64 x 3.00 x 0.33 in)",
+            "colors": "Black Diamond, Hawaiian Blue, Orchid Pink"
+          },
+          "variants": [
+            {
+              "name": "Redmi 13 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 13 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 13 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 14C",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-14c.jpg",
+          "specs": {
+            "display": "IPS LCD, 120Hz, 450 nits (typ), 600 nits (HBM), 6.88 inches, 720 x 1640",
+            "processor": "Mediatek Helio G81 Ultra",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5160",
+            "os": "Android 14, HyperOS",
+            "weight": "211.0",
+            "dimensions": "171.9 x 77.8 x 8.2 mm (6.77 x 3.06 x 0.32 in)",
+            "colors": "Midnight Black, Sage Green, Dreamy Purple, Starry Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 14C 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-14c.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 14R 5G",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 14R 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 14R 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 14R 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 14R 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.devicespecifications.com/",
+            "https://www.gadgets360.com/mobiles/redmi-phones"
+          ]
+        },
+        {
+          "name": "Redmi 12",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-12.jpg",
+          "specs": {
+            "display": "IPS LCD, 90Hz, 550 nits (peak), 6.79 inches, 1080 x 2460",
+            "processor": "Mediatek MT6769H Helio G88 (12 nm)",
+            "ram": "4GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 13, upgradable to Android 14, HyperOS",
+            "weight": "198.5",
+            "dimensions": "168.6 x 76.3 x 8.2 mm (6.64 x 3.00 x 0.32 in)",
+            "colors": "Midnight Black, Sky Blue, Polar Silver, Moonstone Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi 12 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-12.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 12 5G",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-12-5g.jpg",
+          "specs": {
+            "display": "IPS LCD, 90Hz, 550 nits, 6.79 inches, 1080 x 2460",
+            "processor": "Qualcomm SM4450 Snapdragon 4 Gen 2 (4 nm)",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 13, upgradable to Android 14, HyperOS",
+            "weight": "199.0",
+            "dimensions": "168.6 x 76.3 x 8.2 mm (6.64 x 3.00 x 0.32 in)",
+            "colors": "Jade Black, Pastel Blue, Moonstone Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi 12 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-12-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 12R",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-12r.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 12R 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 12R 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 12R 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-12r.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 13C",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13c.jpg",
+          "specs": {
+            "display": "IPS LCD, 90Hz, 450 nits (typ), 600 nits (HBM), 6.74 inches, 720 x 1600",
+            "processor": "Mediatek MT6769Z Helio G85 (12 nm)",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 13, MIUI 14",
+            "weight": "192.0",
+            "dimensions": "168 x 78 x 8.1 mm (6.61 x 3.07 x 0.32 in)",
+            "colors": "Midnight Black, Navy Blue, Glacier White, Clover Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi 13C 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13c.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 13C 5G",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13c-5g.jpg",
+          "specs": {
+            "display": "IPS LCD, 90Hz, 450 nits (typ), 600 nits (HBM), 6.74 inches, 720 x 1600",
+            "processor": "Mediatek Dimensity 6100+ (6 nm)",
+            "ram": "4GB/6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 13, MIUI 14",
+            "weight": "192.0",
+            "dimensions": "168 x 78 x 8.1 mm (6.61 x 3.07 x 0.32 in)",
+            "colors": "Starlight Black, Startrail Green, Startrail Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi 13C 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13c-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 13R 5G",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13r-5g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 13R 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gadgets360.com/mobiles/redmi-phones",
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-13r-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 10 2022",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "LCD, 90Hz, 6.5 inches, 1080 x 2400",
+            "processor": "Mediatek MT6769H Helio G88 (12 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "181.0",
+            "dimensions": "162 x 75.5 x 8.9 mm (6.38 x 2.97 x 0.35 in)",
+            "colors": "Carbon Gray, Pebble White, Sea Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10 2022 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.mi.com/global/product-list/redmi/",
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 10 5G",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10-5g.jpg",
+          "specs": {
+            "display": "IPS LCD, 90Hz, 6.58 inches, 1080 x 2408",
+            "processor": "Mediatek Dimensity 700 (7 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 12, MIUI 13",
+            "weight": "200.0",
+            "dimensions": "164 x 76.1 x 8.9 mm (6.46 x 3.00 x 0.35 in)",
+            "colors": "Graphite Gray, Chrome Silver, Aurora Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 10 Prime 2022",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.5 inches, 102.0 cm, 1080 x 2400 pixels, 20:9 ratio (~405 ppi density)",
+            "processor": "Mediatek MT6769H Helio G88 (12 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 6000 mAh",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "192 g (6.77 oz)",
+            "dimensions": "162 x 75.5 x 9.6 mm (6.38 x 2.97 x 0.38 in)",
+            "colors": "Astral White, Bifrost Blue, Phantom Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10 Prime 2022 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 10 Prime 2022 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 10 Prime 2022 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 10 Prime+ 5G",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.58 inches, 104.3 cm, 1080 x 2408 pixels, 20:9 ratio (~401 ppi density)",
+            "processor": "Mediatek Dimensity 700 (7 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 11, MIUI 13",
+            "weight": "-",
+            "dimensions": "-",
+            "colors": "Gray, Silver, Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10 Prime+ 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 10 Prime+ 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 10A",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10a.jpg",
+          "specs": {
+            "display": "IPS LCD, 400 nits (typ), 6.53 inches, 720 x 1600",
+            "processor": "Mediatek MT6762G Helio G25 (12 nm)",
+            "ram": "2GB/3GB/4GB/6GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "194.0",
+            "dimensions": "164.9 x 77.1 x 9 mm (6.49 x 3.04 x 0.35 in)",
+            "colors": "Charcoal Black, Sea Blue, Slate Grey"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10A 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10a.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 10C",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10c.jpg",
+          "specs": {
+            "display": "IPS LCD, 6.71 inches, 720 x 1650",
+            "processor": "Qualcomm SM6225 Snapdragon 680 4G (6 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, MIUI 13",
+            "weight": "190.0",
+            "dimensions": "169.6 x 76.6 x 8.3 mm (6.68 x 3.02 x 0.33 in)",
+            "colors": "Graphite Gray, Ocean Blue, Mint Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10C 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10c.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 11 Prime",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-11-prime-4g.jpg",
+          "specs": {
+            "display": "6.58 inches, 104.3 cm, 1080 x 2408 pixels, 20:9 ratio (~401 ppi density)",
+            "processor": "Mediatek Helio G99 (6 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "201 g (7.09 oz)",
+            "dimensions": "164 x 76.1 x 8.9 mm (6.46 x 3.00 x 0.35 in)",
+            "colors": "Playful Green, Flashy Black, Peppy Purple"
+          },
+          "variants": [
+            {
+              "name": "Redmi 11 Prime 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 11 Prime 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-11-prime-4g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 11 Prime 5G",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.58 inches, 104.3 cm, 1080 x 2408 pixels, 20:9 ratio (~401 ppi density)",
+            "processor": "Mediatek Dimensity 700 (7 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 12, MIUI 13",
+            "weight": "200 g (7.05 oz)",
+            "dimensions": "164 x 76.1 x 8.9 mm (6.46 x 3.00 x 0.35 in)",
+            "colors": "Thunder Black, Chrome Silver, Meadow Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi 11 Prime 5G 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 11 Prime 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 11 Prime 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 12C",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-12c.jpg",
+          "specs": {
+            "display": "IPS LCD, 500 nits (typ), 6.71 inches, 720 x 1650",
+            "processor": "Mediatek MT6769Z Helio G85 (12 nm)",
+            "ram": "3GB/4GB/6GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 12, MIUI 13",
+            "weight": "192.0",
+            "dimensions": "168.8 x 76.4 x 8.8 mm (6.65 x 3.01 x 0.35 in)",
+            "colors": "Graphite Gray, Ocean Blue, Mint Green, Lavender Purple"
+          },
+          "variants": [
+            {
+              "name": "Redmi 12C 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.mi.com/global/product-list/redmi/",
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-12c.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 10",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10.jpg",
+          "specs": {
+            "display": "LCD, 90Hz, 6.5 inches, 1080 x 2400",
+            "processor": "Mediatek MT6769H Helio G88 (12 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "181.0",
+            "dimensions": "162 x 75.5 x 8.9 mm (6.38 x 2.97 x 0.35 in)",
+            "colors": "Carbon Gray, Pebble White, Sea Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 10 Prime",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.5 inches, 102.0 cm, 1080 x 2400 pixels, 20:9 ratio (~405 ppi density)",
+            "processor": "Mediatek MT6769H Helio G88 (12 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 6000 mAh",
+            "os": "Android 11, MIUI 12.5",
+            "weight": "192 g (6.77 oz)",
+            "dimensions": "162 x 75.6 x 9.6 mm (6.38 x 2.98 x 0.38 in)",
+            "colors": "Astral White, Bifrost Blue, Phantom Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10 Prime 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 10 Prime 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 9T",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "IPS LCD, 400 nits (typ), 6.53 inches, 1080 x 2340",
+            "processor": "Qualcomm SM6115 Snapdragon 662 (11 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "6000",
+            "os": "Android 10, MIUI 12",
+            "weight": "198.0",
+            "dimensions": "162.3 x 77.3 x 9.6 mm (6.39 x 3.04 x 0.38 in)",
+            "colors": "Carbon Gray, Twilight Blue, Sunrise Orange, Ocean Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi 9T 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 10X 4G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10x-4g.jpg",
+          "specs": {
+            "display": "6.53 inches, 104.7 cm, 1080 x 2340 pixels, 19.5:9 ratio (~395 ppi density)",
+            "processor": "Mediatek MT6769Z Helio G85 (12 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "Li-Po 5020 mAh",
+            "os": "Android 10, MIUI 11",
+            "weight": "199 g (7.02 oz)",
+            "dimensions": "162.3 x 77.2 x 8.9 mm (6.39 x 3.04 x 0.35 in)",
+            "colors": "Blue, Green, White"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10X 4G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 10X 4G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10x-4g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 10X 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10x-5g.jpg",
+          "specs": {
+            "display": "6.57 inches, 104.2 cm, 1080 x 2400 pixels, 20:9 ratio (~401 ppi density)",
+            "processor": "Mediatek Dimensity 820 (7 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4520 mAh",
+            "os": "Android 10, MIUI 11",
+            "weight": "205 g (7.23 oz)",
+            "dimensions": "164.2 x 75.8 x 9 mm (6.46 x 2.98 x 0.35 in)",
+            "colors": "Blue, Gold, Pink/Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10X 5G 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 10X 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 10X 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 10X 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10x-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 10X Pro 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10x-pro-5g.jpg",
+          "specs": {
+            "display": "6.57 inches, 104.2 cm, 1080 x 2400 pixels, 20:9 ratio (~401 ppi density)",
+            "processor": "Mediatek Dimensity 820 (7 nm)",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4520 mAh",
+            "os": "Android 10, MIUI 11",
+            "weight": "208 g (7.34 oz)",
+            "dimensions": "164.2 x 75.8 x 9 mm (6.46 x 2.98 x 0.35 in)",
+            "colors": "Blue, Gold, Pink/Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 10X Pro 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 10X Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-10x-pro-5g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 8A Dual",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-8a-dual.jpg",
+          "specs": {
+            "display": "6.22 inches, 96.6 cm, 720 x 1520 pixels, 19:9 ratio (~270 ppi density)",
+            "processor": "Qualcomm SDM439 Snapdragon 439 (12 nm)",
+            "ram": "2GB/3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 9.0 (Pie), upgradable to Android 10, MIUI 12",
+            "weight": "188 g (6.63 oz)",
+            "dimensions": "156.5 x 75.4 x 9.4 mm (6.16 x 2.97 x 0.37 in)",
+            "colors": "Sky White, Sea Blue, Midnight Grey"
+          },
+          "variants": [
+            {
+              "name": "Redmi 8A Dual 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 8A Dual 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 8A Dual 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-8a-dual.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 8A Pro",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.22 inches, 96.6 cm, 720 x 1520 pixels, 19:9 ratio (~270 ppi density)",
+            "processor": "Qualcomm SDM439 Snapdragon 439 (12 nm)",
+            "ram": "2GB/3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 9.0 (Pie), planned upgrade to Android 10, MIUI 12",
+            "weight": "188 g (6.63 oz)",
+            "dimensions": "156.5 x 75.4 x 9.4 mm (6.16 x 2.97 x 0.37 in)",
+            "colors": "Sky White, Sea Blue, Midnight Grey"
+          },
+          "variants": [
+            {
+              "name": "Redmi 8A Pro 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 8A Pro 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 9",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-9.jpg",
+          "specs": {
+            "display": "IPS LCD, 400 nits (typ), 6.53 inches, 1080 x 2340",
+            "processor": "Mediatek MT6769V/CU Helio G80 (12 nm)",
+            "ram": "3GB/4GB/6GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5020",
+            "os": "Android 10, upgradable to Android 12, MIUI 13",
+            "weight": "198.0",
+            "dimensions": "163.3 x 77 x 9.1 mm (6.43 x 3.03 x 0.36 in)",
+            "colors": "Carbon Gray, Sunset Purple, Ocean Green, Pink/Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 9 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-9.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 9 Power",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-9-power.jpg",
+          "specs": {
+            "display": "6.53 inches, 104.7 cm, 1080 x 2340 pixels, 19.5:9 ratio (~395 ppi density)",
+            "processor": "Qualcomm SM6115 Snapdragon 662 (11 nm)",
+            "ram": "4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 6000 mAh",
+            "os": "Android 10, MIUI 12",
+            "weight": "198 g (6.98 oz)",
+            "dimensions": "162.3 x 77.3 x 9.6 mm (6.39 x 3.04 x 0.38 in)",
+            "colors": "Mighty Black, Fiery Red, Electric Green, Blazing Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 9 Power 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 9 Power 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 9 Power 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-9-power.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 9 Prime",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.53 inches, 104.7 cm, 1080 x 2340 pixels, 19.5:9 ratio (~395 ppi density)",
+            "processor": "Mediatek MT6769V/CU Helio G80 (12 nm)",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 5020 mAh",
+            "os": "Android 10, MIUI 11",
+            "weight": "198 g (6.98 oz)",
+            "dimensions": "163.3 x 77 x 9.1 mm (6.43 x 3.03 x 0.36 in)",
+            "colors": "Space Blue, Mint Green, Matte Black, Sunrise Flare"
+          },
+          "variants": [
+            {
+              "name": "Redmi 9 Prime 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 9 Prime 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 9A",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-9a-1.jpg",
+          "specs": {
+            "display": "IPS LCD, 400 nits (typ), 6.53 inches, 720 x 1600",
+            "processor": "Mediatek MT6762G Helio G25 (12 nm)",
+            "ram": "2GB/3GB/4GB/6GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 10, up to Android 11, MIUI 12",
+            "weight": "196.0",
+            "dimensions": "164.9 x 77.1 x 9 mm (6.49 x 3.04 x 0.35 in)",
+            "colors": "Carbon Gray (Midnight Black), Sky Blue (Sea Blue), Ocean Green (Nature Green)"
+          },
+          "variants": [
+            {
+              "name": "Redmi 9A 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-9a-1.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 9AT",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.53 inches, 102.9 cm, 720 x 1600 pixels, 20:9 ratio (~269 ppi density)",
+            "processor": "Mediatek MT6762G Helio G25 (12 nm)",
+            "ram": "2GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 10, MIUI 12",
+            "weight": "194 g (6.84 oz)",
+            "dimensions": "164.9 x 77 x 9 mm (6.49 x 3.03 x 0.35 in)",
+            "colors": "Carbon Gray, Sky Blue, Ocean Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi 9AT 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 9C",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-9c.jpg",
+          "specs": {
+            "display": "IPS LCD, 400 nits (typ), 6.53 inches, 720 x 1600",
+            "processor": "Mediatek MT6765G Helio G35 (12 nm)",
+            "ram": "2GB/3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 10, MIUI 12",
+            "weight": "196.0",
+            "dimensions": "164.9 x 77 x 9 mm (6.49 x 3.03 x 0.35 in)",
+            "colors": "Midnight Gray, Sunrise Orange, Twilight Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 9C 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-9c.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 7",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-7.jpg",
+          "specs": {
+            "display": "6.26 inches, 97.8 cm, 720 x 1520 pixels, 19:9 ratio (~269 ppi density)",
+            "processor": "Qualcomm SDM632 Snapdragon 632 (14 nm)",
+            "ram": "2GB/3GB/4GB",
+            "storage": [
+              "16GB",
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 Pie, upgradable to Android 10, MIUI 12",
+            "weight": "180 g (6.35 oz)",
+            "dimensions": "158.7 x 75.6 x 8.5 mm (6.25 x 2.98 x 0.33 in)",
+            "colors": "Lunar Red, Eclipse Black, Comet Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 7 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 7 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 7 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 7 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 7 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-7.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 7A",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-7a.jpg",
+          "specs": {
+            "display": "5.45 inches, 76.7 cm, 720 x 1440 pixels, 18:9 ratio (~295 ppi density)",
+            "processor": "Qualcomm SDM439 Snapdragon 439 (12 nm)",
+            "ram": "2GB/3GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 10, MIUI 12",
+            "weight": "165 g (5.82 oz)",
+            "dimensions": "146.3 x 70.4 x 9.6 mm (5.76 x 2.77 x 0.38 in)",
+            "colors": "Matte Black, Morning blue, Matte Blue, Matte Gold, Gem Red, Gem Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 7A 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 7A 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 7A 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-7a.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 8",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-8.jpg",
+          "specs": {
+            "display": "6.22 inches, 96.6 cm, 720 x 1520 pixels, 19:9 ratio (~270 ppi density)",
+            "processor": "Qualcomm SDM439 Snapdragon 439 (12 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Li-Po 5000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 10, MIUI 12",
+            "weight": "188 g (6.63 oz)",
+            "dimensions": "156.5 x 75.4 x 9.4 mm (6.16 x 2.97 x 0.37 in)",
+            "colors": "Onyx Black, Ruby Red, Sapphire Blue, Phantom Red"
+          },
+          "variants": [
+            {
+              "name": "Redmi 8 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 8 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-8.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 8A",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-8a.jpg",
+          "specs": {
+            "display": "6.22 inches, 96.6 cm, 720 x 1520 pixels, 19:9 ratio (~270 ppi density)",
+            "processor": "Qualcomm SDM439 Snapdragon 439 (12 nm)",
+            "ram": "2GB/3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Li-Po 5000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 10, MIUI 12",
+            "weight": "188 g (6.63 oz)",
+            "dimensions": "156.5 x 75.4 x 9.4 mm (6.16 x 2.97 x 0.37 in)",
+            "colors": "Midnight Black, Ocean Blue, Sunset Red"
+          },
+          "variants": [
+            {
+              "name": "Redmi 8A 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 8A 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 8A 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-8a.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 6",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-6.jpg",
+          "specs": {
+            "display": "5.45 inches, 76.7 cm, 720 x 1440 pixels, 18:9 ratio (~295 ppi density)",
+            "processor": "Mediatek MT6762 Helio P22 (12 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Li-Po 3000 mAh, non-removable",
+            "os": "Android 8.1 (Oreo), planned upgrade to Android 10, MIUI 12",
+            "weight": "146 g (5.15 oz)",
+            "dimensions": "147.5 x 71.5 x 8.3 mm (5.81 x 2.81 x 0.33 in)",
+            "colors": "Black, Grey, Blue, Gold, Rose Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi 6 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 6 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 6 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-6.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 6 Pro",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-6-pro.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 6 Pro 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 6 Pro 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-6-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 6A",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-6a.jpg",
+          "specs": {
+            "display": "5.45 inches, 76.7 cm, 720 x 1440 pixels, 18:9 ratio (~295 ppi density)",
+            "processor": "Mediatek MT6761 Helio A22 (12 nm)",
+            "ram": "2GB/3GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": "Li-Ion 3000 mAh, non-removable",
+            "os": "Android 8.1 (Oreo), planned upgrade to Android 10, MIUI 12",
+            "weight": "145 g (5.11 oz)",
+            "dimensions": "147.5 x 71.5 x 8.3 mm (5.81 x 2.81 x 0.33 in)",
+            "colors": "Black, Grey, Blue, Gold, Rose Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi 6A 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 6A 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 6A 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-6a.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 4X",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4x.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "2GB/3GB/4GB",
+            "storage": [
+              "16GB",
+              "32GB",
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 4X 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 4X 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 4X 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4x.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 5",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-5.jpg",
+          "specs": {
+            "display": "5.7 inches, 83.8 cm, 720 x 1440 pixels, 18:9 ratio (~282 ppi density)",
+            "processor": "Qualcomm SDM450 Snapdragon 450 (14 nm)",
+            "ram": "2GB/3GB/4GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": "Li-Po 3300 mAh, non-removable",
+            "os": "Android 7.1.2 (Nougat), MIUI 11",
+            "weight": "157 g (5.54 oz)",
+            "dimensions": "151.8 x 72.8 x 7.7 mm (5.98 x 2.87 x 0.30 in)",
+            "colors": "Black, Gold, Light Blue, Rose Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi 5 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 5 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 5 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 5 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-5.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 5 Plus",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-5-plus.jpg",
+          "specs": {
+            "display": "5.99 inches, 92.6 cm, 1080 x 2160 pixels, 18:9 ratio (~403 ppi density)",
+            "processor": "Qualcomm MSM8953 Snapdragon 625 (14 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 7.1.2 (Nougat), planned upgrade to Android 10, MIUI 12",
+            "weight": "180 g (6.35 oz)",
+            "dimensions": "158.5 x 75.5 x 8.1 mm (6.24 x 2.97 x 0.32 in)",
+            "colors": "Black, Gold, Blue, Rose Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi 5 Plus 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 5 Plus 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 5 Plus 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-5-plus.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 5A",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-5a.jpg",
+          "specs": {
+            "display": "5.0 inches, 68.0 cm, 720 x 1280 pixels, 16:9 ratio (~296 ppi density)",
+            "processor": "Qualcomm MSM8917 Snapdragon 425 (28 nm)",
+            "ram": "2GB/3GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": "Li-Ion 3000 mAh, non-removable",
+            "os": "Android 7.1.2 (Nougat), upgradable to Android 8.1, MIUI 12",
+            "weight": "137 g (4.83 oz)",
+            "dimensions": "140.4 x 70.1 x 8.4 mm (5.53 x 2.76 x 0.33 in)",
+            "colors": "Gold, Dark Gray, Rose Gold, Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi 5A 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 5A 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-5a.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 3",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3.jpg",
+          "specs": {
+            "display": "5.0 inches, 68.9 cm, 720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+            "processor": "Qualcomm MSM8939v2 Snapdragon 616 (28 nm)",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "Li-Ion 4100 mAh, non-removable",
+            "os": "Android 5.1 (Lollipop), MIUI 7",
+            "weight": "144 g (5.08 oz)",
+            "dimensions": "139.3 x 69.6 x 8.5 mm (5.48 x 2.74 x 0.33 in)",
+            "colors": "Gold, Dark Gray, Silver, Classic Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi 3 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 3 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 3 Pro",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3-pro-.jpg",
+          "specs": {
+            "display": "IPS LCD capacitive touchscreen 16M colors, 720 x 1280 pixels (~294 ppi pixel density), 5.0 inches (~71.1% screen-to-body ratio)",
+            "processor": "Qualcomm MSM8939v2 Snapdragon 616",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "Non-removable Li-Ion 4100 mAh battery",
+            "os": "Android 5.1 (Lollipop)",
+            "weight": "144 g",
+            "dimensions": "139.3 x 69.6 x 8.5 mm (5.48 x 2.74 x 0.33 in)",
+            "colors": "Dark Gray| Silver| Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi 3 Pro 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "kaggle:gsmarena-img-url",
+            "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3-pro-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 3S",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3s.jpg",
+          "specs": {
+            "display": "IPS LCD capacitive touchscreen 16M colors, 720 x 1280 pixels (~294 ppi pixel density), 5.0 inches (~71.1% screen-to-body ratio)",
+            "processor": "Qualcomm MSM8937 Snapdragon 430",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "Non-removable Li-Ion 4100 mAh battery",
+            "os": "Android 6.0.1 (Marshmallow)",
+            "weight": "144 g",
+            "dimensions": "139.3 x 69.6 x 8.5 mm (5.48 x 2.74 x 0.33 in)",
+            "colors": "Gold| Dark Gray| Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi 3S 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "kaggle:gsmarena-img-url",
+            "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3s.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 3S Prime",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": null,
+          "specs": {
+            "display": "IPS LCD capacitive touchscreen 16M colors, 720 x 1280 pixels (~294 ppi pixel density), 5.0 inches (~71.1% screen-to-body ratio)",
+            "processor": "Qualcomm MSM8937 Snapdragon 430",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "Non-removable Li-Ion 4100 mAh battery",
+            "os": "Android 6.0.1 (Marshmallow)",
+            "weight": "144 g",
+            "dimensions": "139.3 x 69.6 x 8.5 mm (5.48 x 2.74 x 0.33 in)",
+            "colors": "Gold| Dark Gray| Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi 3S Prime 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 3x",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3x.jpg",
+          "specs": {
+            "display": "IPS LCD capacitive touchscreen 16M colors, 720 x 1280 pixels (~294 ppi pixel density), 5.0 inches (~71.1% screen-to-body ratio)",
+            "processor": "Qualcomm MSM8937 Snapdragon 430",
+            "ram": "2GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "Non-removable Li-Ion 4100 mAh battery",
+            "os": "Android 6.0.1 (Marshmallow)",
+            "weight": "144 g",
+            "dimensions": "139.3 x 69.6 x 8.5 mm (5.48 x 2.74 x 0.33 in)",
+            "colors": "Gold| Dark Gray| Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi 3x 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://en.wikipedia.org/wiki/List_of_Redmi_products",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "kaggle:gsmarena-img-url",
+            "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-3x.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 4",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4-prime-.jpg",
+          "specs": {
+            "display": "IPS LCD capacitive touchscreen 16M colors, 720 x 1280 pixels (~296 ppi pixel density), 5.0 inches (~69.1% screen-to-body ratio)",
+            "processor": "Qualcomm MSM8937 Snapdragon 430",
+            "ram": "2GB/3GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": "Non-removable Li-Po 4100 mAh battery",
+            "os": "Android 6.0.1 (Marshmallow)",
+            "weight": "156 g",
+            "dimensions": "141.3 x 69.6 x 8.9 mm (5.56 x 2.74 x 0.35 in)",
+            "colors": "Gold| Dark Gray| Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi 4 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 4 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "kaggle:gsmarena-img-url",
+            "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4-prime-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 4 Prime",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4-prime-new.jpg",
+          "specs": {
+            "display": "IPS LCD capacitive touchscreen 16M colors, 1080 x 1920 pixels (~441 ppi pixel density), 5.0 inches (~70.1% screen-to-body ratio)",
+            "processor": "Qualcomm MSM8953 Snapdragon 625",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "Non-removable Li-Po 4100 mAh battery",
+            "os": "Android 6.0.1 (Marshmallow)",
+            "weight": "156 g",
+            "dimensions": "141.3 x 69.6 x 8.9 mm (5.56 x 2.74 x 0.35 in)",
+            "colors": "Gold| Dark Gray| Silver"
+          },
+          "variants": [
+            {
+              "name": "Redmi 4 Prime 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "kaggle:gsmarena-img-url",
+            "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4-prime-new.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 4A",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4a-.jpg",
+          "specs": {
+            "display": "IPS LCD capacitive touchscreen 16M colors, 720 x 1280 pixels (~296 ppi pixel density), 5.0 inches (~69.0% screen-to-body ratio)",
+            "processor": "Qualcomm MSM8917 Snapdragon 425",
+            "ram": "2GB",
+            "storage": [
+              "16GB",
+              "32GB"
+            ],
+            "battery": "Non-removable Li-Ion 3120 mAh battery",
+            "os": "Android 6.0.1 (Marshmallow)",
+            "weight": "131.5 g",
+            "dimensions": "139.9 x 70.4 x 8.5 mm (5.51 x 2.77 x 0.33 in)",
+            "colors": "Gold| Rose Gold| Dark Gray"
+          },
+          "variants": [
+            {
+              "name": "Redmi 4A 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi 4A 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "kaggle:gsmarena-img-url",
+            "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-4a-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 2",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-2.jpg",
+          "specs": {
+            "display": "4.7 inches, 60.9 cm, 720 x 1280 pixels, 16:9 ratio (~312 ppi density)",
+            "processor": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+            "ram": "1GB/2GB",
+            "storage": [
+              "8GB",
+              "16GB"
+            ],
+            "battery": "Li-Po 2200 mAh, removable",
+            "os": "Android 4.4.4 (KitKat), MIUI 6.0",
+            "weight": "133 g (4.69 oz)",
+            "dimensions": "134 x 67.2 x 9.4 mm (5.28 x 2.65 x 0.37 in)",
+            "colors": "Black, White, Yellow, Pink, Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi 2 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi 2 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-2.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 2 Prime",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-2-prime-.jpg",
+          "specs": {
+            "display": "4.7 inches, 60.9 cm, 720 x 1280 pixels, 16:9 ratio (~312 ppi density)",
+            "processor": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "Li-Po 2200 mAh, removable",
+            "os": "Android 4.4.4 (KitKat), upgradable to 5.1.1 (Lollipop), MIUI 7.2",
+            "weight": "133 g (4.69 oz)",
+            "dimensions": "134 x 67 x 9 mm (5.28 x 2.64 x 0.35 in)",
+            "colors": "White, Dark gray"
+          },
+          "variants": [
+            {
+              "name": "Redmi 2 Prime 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-2-prime-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 2 Pro",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": null,
+          "specs": {
+            "display": "4.7 inches, 60.9 cm, 720 x 1280 pixels, 16:9 ratio (~312 ppi density)",
+            "processor": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "Li-Po 2200 mAh, removable",
+            "os": "Android 4.4.4 (KitKat), MIUI 6",
+            "weight": "133 g (4.69 oz)",
+            "dimensions": "134 x 67 x 9 mm (5.28 x 2.64 x 0.35 in)",
+            "colors": "Dark gray"
+          },
+          "variants": [
+            {
+              "name": "Redmi 2 Pro 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 2A",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-2a.jpg",
+          "specs": {
+            "display": "4.7 inches, 60.9 cm, 720 x 1280 pixels, 16:9 ratio (~312 ppi density)",
+            "processor": "Leadcore L1860C",
+            "ram": "1GB/2GB",
+            "storage": [
+              "8GB",
+              "16GB"
+            ],
+            "battery": "Li-Ion 2200 mAh, removable",
+            "os": "Android 5.0 (Lollipop), MIUI 6",
+            "weight": "132 g (4.66 oz)",
+            "dimensions": "134 x 67.2 x 9.4 mm (5.28 x 2.65 x 0.37 in)",
+            "colors": "Black, Green, Yellow, Pink"
+          },
+          "variants": [
+            {
+              "name": "Redmi 2A 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-2a.jpg"
+          ]
+        },
+        {
+          "name": "Redmi 1S",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": null,
+          "specs": {
+            "display": "4.7 inches, 60.9 cm, 720 x 1280 pixels, 16:9 ratio (~312 ppi density)",
+            "processor": "Qualcomm MSM8228 Snapdragon 400 (28 nm)",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "Li-Ion 2000 mAh, removable",
+            "os": "Android 4.3 (Jelly Bean), upgradable to 4.4.4 (KitKat), MIUI 9.2",
+            "weight": "158 g (5.57 oz)",
+            "dimensions": "137 x 69 x 9.9 mm (5.39 x 2.72 x 0.39 in)",
+            "colors": "Black, Chinese Red, Metallic Gray/ blue, green, yellow panels"
+          },
+          "variants": [
+            {
+              "name": "Redmi 1S 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi 1",
+          "aliases": [],
+          "releaseYear": 2013,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "1GB",
+            "storage": [
+              "4GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi 1 1GB 4GB",
+              "ram": "1GB",
+              "storage": "4GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Redmi A",
+      "models": [
+        {
+          "name": "Redmi A7",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a7-4g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "3GB/4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi A7 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi A7 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi A7 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a7-4g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi A7 Pro",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a7-pro.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi A7 Pro 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a7-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi A5",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a5-4g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "3GB/4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi A5 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi A5 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a5-4g.jpg"
+          ]
+        },
+        {
+          "name": "Redmi A3",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a3.jpg",
+          "specs": {
+            "display": "IPS LCD, 90Hz, 500 nits (HBM), 6.71 inches, 720 x 1650",
+            "processor": "Mediatek Helio G36 (12 nm)",
+            "ram": "3GB/4GB/6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 14, MIUI",
+            "weight": "193.0",
+            "dimensions": "168.3 x 76.3 x 8.3 mm (6.63 x 3.00 x 0.33 in)",
+            "colors": "Midnight Black, Forest Green (Olive Green), Star Blue (Lake Blue)"
+          },
+          "variants": [
+            {
+              "name": "Redmi A3 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a3.jpg"
+          ]
+        },
+        {
+          "name": "Redmi A3 Pro",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a3-pro.jpg",
+          "specs": {
+            "display": "6.88 inches, 112.4 cm, 720 x 1640 pixels (~260 ppi density)",
+            "processor": "Mediatek Helio G81 Ultra",
+            "ram": "4GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5160 mAh",
+            "os": "Android 14, HyperOS",
+            "weight": "204 g (7.20 oz)",
+            "dimensions": "171.9 x 77.8 x 8.2 mm (6.77 x 3.06 x 0.32 in)",
+            "colors": "Blue, Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi A3 Pro 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a3-pro.jpg"
+          ]
+        },
+        {
+          "name": "Redmi A3x",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": null,
+          "specs": {
+            "display": "IPS LCD, 90Hz, 500 nits, 6.71 inches, 720 x 1650",
+            "processor": "Unisoc T603 (22 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 14, up to 2 major Android upgrades, MIUI",
+            "weight": "193.0",
+            "dimensions": "168.4 x 76.3 x 8.3 mm (6.63 x 3.00 x 0.33 in)",
+            "colors": "Midnight Black, Moonlight White (Starry White), Aurora Green (Ocean Green), Olive Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi A3x 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi A4 5G",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a4-5g-.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi A4 5G 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi A4 5G 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a4-5g-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi A2",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a2-.jpg",
+          "specs": {
+            "display": "IPS LCD, 400 nits (typ), 6.52 inches, 720 x 1600",
+            "processor": "Mediatek Helio G36 (12 nm)",
+            "ram": "2GB/3GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "5000",
+            "os": "Android 12 or 13 (Go edition), MIUI",
+            "weight": "192.0",
+            "dimensions": "164.9 x 76.8 x 9.1 mm (6.49 x 3.02 x 0.36 in)",
+            "colors": "Aqua Blue, Classic Black, Sea Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi A2 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a2-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi A2+",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a2-plus.jpg",
+          "specs": {
+            "display": "IPS LCD, 400 nits (typ), 6.52 inches, 720 x 1600",
+            "processor": "Mediatek Helio G36 (12 nm)",
+            "ram": "2GB/3GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "5000",
+            "os": "Android 12 or 13 (Go edition), MIUI",
+            "weight": "192.0",
+            "dimensions": "164.9 x 76.8 x 9.1 mm (6.49 x 3.02 x 0.36 in)",
+            "colors": "Aqua Blue, Classic Black, Sea Green"
+          },
+          "variants": [
+            {
+              "name": "Redmi A2+ 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a2-plus.jpg"
+          ]
+        },
+        {
+          "name": "Redmi A1",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.52 inches, 102.6 cm, 720 x 1600 pixels, 20:9 ratio (~269 ppi density)",
+            "processor": "Mediatek MT6761 Helio A22 (12 nm)",
+            "ram": "2GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 12 (Go edition), MIUI 12",
+            "weight": "192 g (6.77 oz)",
+            "dimensions": "164.9 x 76.8 x 9.1 mm (6.49 x 3.02 x 0.36 in)",
+            "colors": "Light Green, Light Blue, Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi A1 2GB 32GB",
+              "ram": "2GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi A1 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi A1+",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a1-plus.jpg",
+          "specs": {
+            "display": "IPS LCD, 400 nits (typ), 6.52 inches, 720 x 1600",
+            "processor": "Mediatek MT6761 Helio A22 (12 nm)",
+            "ram": "2GB/3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "5000",
+            "os": "Android 12 (Go edition), MIUI 12",
+            "weight": "192.0",
+            "dimensions": "164.9 x 76.8 x 9.1 mm (6.49 x 3.02 x 0.36 in)",
+            "colors": "Light Green, Light Blue, Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi A1+ 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-a1-plus.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Redmi Other Series",
+      "models": [
+        {
+          "name": "Redmi Go",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-go.jpg",
+          "specs": {
+            "display": "5.0 inches, 68.0 cm, 720 x 1280 pixels, 16:9 ratio (~296 ppi density)",
+            "processor": "Qualcomm MSM8917 Snapdragon 425 (28 nm)",
+            "ram": "1GB",
+            "storage": [
+              "8GB",
+              "16GB"
+            ],
+            "battery": "Li-Ion 3000 mAh, non-removable",
+            "os": "Android 8.1 Oreo (Go edition)",
+            "weight": "137 g (4.83 oz)",
+            "dimensions": "140.4 x 70.1 x 8.4 mm (5.53 x 2.76 x 0.33 in)",
+            "colors": "Black, Blue"
+          },
+          "variants": [
+            {
+              "name": "Redmi Go 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Go 1GB 16GB",
+              "ram": "1GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-go.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Y3",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-y3.jpg",
+          "specs": {
+            "display": "6.26 inches, 97.8 cm, 720 x 1520 pixels, 19:9 ratio (~269 ppi density)",
+            "processor": "Qualcomm SDM632 Snapdragon 632 (14 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), planned upgrade to Android 10, MIUI 12",
+            "weight": "180 g (6.35 oz)",
+            "dimensions": "158.7 x 75.6 x 8.5 mm (6.25 x 2.98 x 0.33 in)",
+            "colors": "Elegant Blue, Bold Red, Prime Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi Y3 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Y3 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-y3.jpg"
+          ]
+        },
+        {
+          "name": "Redmi S2",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-s2-.jpg",
+          "specs": {
+            "display": "5.99 inches, 92.6 cm, 720 x 1440 pixels, 18:9 ratio (~269 ppi density)",
+            "processor": "Qualcomm MSM8953 Snapdragon 625 (14 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Li-Po 3080 mAh, non-removable",
+            "os": "Android 8.1 (Oreo), upgradable to Android 9, MIUI 12",
+            "weight": "170 g (6.00 oz)",
+            "dimensions": "160.7 x 77.3 x 8.1 mm (6.33 x 3.04 x 0.32 in)",
+            "colors": "Gray, Gold, Rose Gold, Mesmerising Blue, Stunning Black"
+          },
+          "variants": [
+            {
+              "name": "Redmi S2 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi S2 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-s2-.jpg"
+          ]
+        },
+        {
+          "name": "Redmi Y2",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Redmi Y2 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Y2 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/"
+          ]
+        },
+        {
+          "name": "Redmi Y1",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.5 inches, 83.4 cm, 720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+            "processor": "Qualcomm MSM8940 Snapdragon 435 (28 nm)",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB"
+            ],
+            "battery": "Li-Ion 3080 mAh, non-removable",
+            "os": "Android 7.1.2 (Nougat), MIUI 11",
+            "weight": "153 g (5.40 oz)",
+            "dimensions": "153 x 76.2 x 7.7 mm (6.02 x 3.00 x 0.30 in)",
+            "colors": "Gold, Dark Grey, Silver, Rose Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi Y1 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "Redmi Y1 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Y1 Lite",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.5 inches, 83.4 cm, 720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+            "processor": "Qualcomm MSM8917 Snapdragon 425 (28 nm)",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "Li-Ion 3080 mAh, non-removable",
+            "os": "Android 7.0 (Nougat), MIUI 11",
+            "weight": "150 g (5.29 oz)",
+            "dimensions": "153 x 76.2 x 7.6 mm (6.02 x 3.00 x 0.30 in)",
+            "colors": "Gold, Dark Grey, Silver, Rose Gold"
+          },
+          "variants": [
+            {
+              "name": "Redmi Y1 Lite 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs"
+          ]
+        },
+        {
+          "name": "Redmi Pro",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-pro.jpg",
+          "specs": {
+            "display": "LTPS-AMOLED capacitive touchscreen 16M colors, 1080 x 1920 pixels (~401 ppi pixel density), 5.5 inches (~72.2% screen-to-body ratio)",
+            "processor": "Mediatek MT6797T Helio X25 - High & Exclusive editions",
+            "ram": "3GB/4GB",
+            "storage": [
+              "32GB",
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Non-removable Li-Ion 4050 mAh battery",
+            "os": "Android 6.0 (Marshmallow)",
+            "weight": "174 g",
+            "dimensions": "151.5 x 76.2 x 8.2 mm (5.96 x 3.00 x 0.32 in)",
+            "colors": "Silver| Gold| Gray"
+          },
+          "variants": [
+            {
+              "name": "Redmi Pro 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Pro 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Redmi Pro 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/redmi/",
+            "https://www.mi.com/global/product-list/phone/redmi/",
+            "kaggle:gsmarena-derived-redmi-specs",
+            "kaggle:gsmarena-img-url",
+            "http://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-pro.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+};

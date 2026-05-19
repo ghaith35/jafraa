@@ -1,0 +1,4119 @@
+/**
+ * Enriched OnePlus phone catalog with specs, variants, images, and release years.
+ * Generated from src/data/catalog/phones/brands/oneplus.json.
+ */
+
+export type OnePlusEnrichedModelVariant = {
+  name: string;
+  ram?: string;
+  storage?: string;
+  color?: string;
+  connectivity?: string;
+  sourceBasis?: string;
+};
+
+export type OnePlusEnrichedModelSpecs = {
+  display?: string | null;
+  processor?: string | null;
+  ram?: string | null;
+  storage?: string[] | null;
+  battery?: string | null;
+  os?: string | null;
+  weight?: string | null;
+  dimensions?: string | null;
+  colors?: string | null;
+};
+
+export type OnePlusEnrichedModel = {
+  name: string;
+  aliases: string[];
+  releaseYear: number | null;
+  imageUrl: string | null;
+  specs: OnePlusEnrichedModelSpecs;
+  variants: OnePlusEnrichedModelVariant[];
+  sources?: string[];
+};
+
+export type OnePlusEnrichedFamily = {
+  name: string;
+  models: OnePlusEnrichedModel[];
+};
+
+export const ONEPLUS_ENRICHED_CATALOG: {
+  brandName: string;
+  logoUrl: string | null;
+  sortOrder: number;
+  families: OnePlusEnrichedFamily[];
+} = {
+  "brandName": "OnePlus",
+  "logoUrl": "https://logo.clearbit.com/oneplus.com",
+  "sortOrder": 16,
+  "families": [
+    {
+      "name": "OnePlus Number Series",
+      "models": [
+        {
+          "name": "OnePlus 15T",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-15t.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 15T 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 15T 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 15T 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 15T 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 15T 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "https://www.mobolist.net/en/devices/oneplus-15t",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-15t.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 13R",
+          "aliases": [
+            "OnePlus Ace 5"
+          ],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13r.jpg",
+          "specs": {
+            "display": "6.78 inches, 111.7 cm, 1264 x 2780 pixels (~450 ppi density)",
+            "processor": "Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Ion 6000 mAh",
+            "os": "Android 15, up to 4 major Android upgrades, OxygenOS 15",
+            "weight": "206 g (7.27 oz)",
+            "dimensions": "161.7 x 75.8 x 8 mm (6.37 x 2.98 x 0.31 in)",
+            "colors": "Astral Trail, Nebula Noir"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 13R 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 13R 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13r.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 13s",
+          "aliases": [
+            "OnePlus 13T",
+            "OnePlus 13S"
+          ],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13s-.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 13s 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 13s 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13s-.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 13T",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13t.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 13T 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 13T 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 13T 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 13T 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13t.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 15",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-15.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 15 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 15 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 15 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "https://www.oneplus.com/oneplus-15",
+            "https://www.theverge.com/news/838017/oneplus-15-preorders-us",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-15.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 15R",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-15r.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 15R 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 15R 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-15r.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 12R",
+          "aliases": [
+            "OnePlus Ace 3"
+          ],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12r.jpg",
+          "specs": {
+            "display": "LTPO4 AMOLED, 1B colors, 120Hz, HDR10+, Dolby Vision, 1600 nits (HBM), 4500 nits (peak), 6.78 inches, 1264 x 2780",
+            "processor": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+            "ram": "8GB/16GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5500",
+            "os": "Android 14, up to 3 major Android upgrades, OxygenOS 14",
+            "weight": "207.0",
+            "dimensions": "163.3 x 75.3 x 8.8 mm (6.43 x 2.96 x 0.35 in)",
+            "colors": "Iron Gray, Cool Blue, Electric Violet, Sunset Dune"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 12R 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12r.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 12R Genshin Impact",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-12R-Iron-Gray.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "16GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 12R Genshin Impact 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/us/12r-edition/specs",
+            "https://www.oneplus.in/12r-edition/specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-12r/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-12R-Iron-Gray.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 13",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13.jpg",
+          "specs": {
+            "display": "6.82 inches, 113.0 cm, 1440 x 3168 pixels (~510 ppi density)",
+            "processor": "Qualcomm SM8750-AB Snapdragon 8 Elite (3 nm)",
+            "ram": "12GB/16GB/24GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Si/C Li-Ion 6000 mAh",
+            "os": "Android 15, up to 4 major Android upgrades, OxygenOS 15 (International), ColorOS 15 (China)",
+            "weight": "210 g or 213 g (7.41 oz)",
+            "dimensions": "162.9 x 76.5 x 8.5 mm or 8.9 mm",
+            "colors": "Black Eclipse, Arctic Dawn, Midnight Ocean"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 13 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 13 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 13 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 13 24GB 1TB",
+              "ram": "24GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 11",
+          "aliases": [
+            "OnePlus 11 5G",
+            "OnePlus 11 Global"
+          ],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-11.jpg",
+          "specs": {
+            "display": "LTPO3 Fluid AMOLED, 1B colors, 120Hz, Dolby Vision, HDR10+, 500 nits (typ), 800 nits (HBM), 1300 nits (peak), 6.7 inches, 1440 x 3216",
+            "processor": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+            "ram": "8GB/12GB/16GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 13, upgradable to Android 14, OxygenOS 14 (International), ColorOS 14 (China)",
+            "weight": "205.0",
+            "dimensions": "163.1 x 74.1 x 8.5 mm (6.42 x 2.92 x 0.33 in)",
+            "colors": "Titan Black, Eternal Green, Jupiter Rock"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 11 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-11.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 11 5G Marble Odyssey",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "16GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 11 5G Marble Odyssey 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.flipkart.com/oneplus-11-5g-marble-odyssey-256-gb/p/itm4d6999d9b201d",
+            "https://www.oneplus.com/global/11/specs"
+          ]
+        },
+        {
+          "name": "OnePlus 11 5G x Genshin Impact",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "16GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 11 5G x Genshin Impact 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global/11/specs"
+          ]
+        },
+        {
+          "name": "OnePlus 11 Jupiter Rock",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-11-Green.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "16GB",
+            "storage": [
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 11 Jupiter Rock 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gsmarena.com.bd/pictures/oneplus-11/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-11-Green.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 11R",
+          "aliases": [
+            "OnePlus Ace 2",
+            "OnePlus 11R 5G"
+          ],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-11R.jpg",
+          "specs": {
+            "display": "6.74 inches, 109.2 cm, 1240 x 2772 pixels, 20:9 ratio (~451 ppi density)",
+            "processor": "Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)",
+            "ram": "8GB/16GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, upgradable to Android 15, OxygenOS 15",
+            "weight": "204 g (7.20 oz)",
+            "dimensions": "163.4 x 74.3 x 8.7 mm (6.43 x 2.93 x 0.34 in)",
+            "colors": "Galactic Silver, Sonic Black, Solar Red"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 11R 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 11R 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 11R 18GB 512GB",
+              "ram": "18GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-11r/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-11R.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 12",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg",
+          "specs": {
+            "display": "LTPO AMOLED, 1B colors, 120Hz, Dolby Vision, HDR10+, 600 nits (typ), 1600 nits (HBM), 4500 nits (peak), 6.82 inches, 1440 x 3168",
+            "processor": "Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)",
+            "ram": "12GB/16GB/24GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5400",
+            "os": "Android 14, up to 4 major Android upgrades, OxygenOS 14 (International), ColorOS 14 (China)",
+            "weight": "220.0",
+            "dimensions": "164.3 x 75.8 x 9.2 mm (6.47 x 2.98 x 0.36 in)",
+            "colors": "Flowy Emerald, Silky Black, Silver (Glacial White)"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 12 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 10 Pro",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-10-pro.jpg",
+          "specs": {
+            "display": "LTPO2 Fluid AMOLED, 1B colors, 120Hz, HDR10+, 500 nits (typ), 800 nits (HBM), 1300 nits (peak), 6.7 inches, 1440 x 3216",
+            "processor": "Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 12, upgradable to Android 14, OxygenOS 14 (International), ColorOS (China)",
+            "weight": "201.0",
+            "dimensions": "163 x 73.9 x 8.6 mm (6.42 x 2.91 x 0.34 in)",
+            "colors": "Volcanic Black, Emerald Forest, Panda White (Extreme Edition)"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 10 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-10-pro.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 10 Pro Extreme Edition",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-10-Pro-Green.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB",
+            "storage": [
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 10 Pro Extreme Edition 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gsmarena.com.bd/pictures/oneplus-10-pro/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-10-Pro-Green.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 10R",
+          "aliases": [
+            "OnePlus Ace",
+            "OnePlus 10R 5G"
+          ],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-10r.jpg",
+          "specs": {
+            "display": "6.7 inches, 108.0 cm, 1080 x 2412 pixels, 20:9 ratio (~394 ppi density)",
+            "processor": "Mediatek Dimensity 8100 Max (5 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 12, upgradable to Android 13, OxygenOS 13",
+            "weight": "186 g (6.56 oz)",
+            "dimensions": "163.3 x 75.5 x 8.2 mm (6.43 x 2.97 x 0.32 in)",
+            "colors": "Sierra Black, Forest Green, Prime Blue"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 10R 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 10R 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 10R 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-10r.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 10R 150W",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-10R-Forest-Green.jpg",
+          "specs": {
+            "display": "6.7 inches, 108.0 cm, 1080 x 2412 pixels, 20:9 ratio (~394 ppi density)",
+            "processor": "Mediatek Dimensity 8100 Max (5 nm)",
+            "ram": "12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "Li-Po 4500 mAh",
+            "os": "Android 12, upgradable to Android 13, OxygenOS 13",
+            "weight": "186 g (6.56 oz)",
+            "dimensions": "163.3 x 75.5 x 8.2 mm (6.43 x 2.97 x 0.32 in)",
+            "colors": "Sierra Black, Forest Green"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 10R 150W 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-10r/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-10R-Forest-Green.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 10T",
+          "aliases": [
+            "OnePlus Ace Pro"
+          ],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-10t.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 1B colors, 120Hz, HDR10+, 6.7 inches, 1080 x 2412",
+            "processor": "Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)",
+            "ram": "8GB/12GB/16GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4800",
+            "os": "Android 12, OxygenOS 13",
+            "weight": "204.0",
+            "dimensions": "163 x 75.4 x 8.8 mm (6.42 x 2.97 x 0.35 in)",
+            "colors": "Moonstone Black, Jade Green"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 10T 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-10t.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 9RT Genshin Impact",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus9RT.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 9RT Genshin Impact 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gsmarena.com.bd/pictures/oneplus-9rt/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus9RT.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 9",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-9-.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 120Hz, HDR10+, 1100 nits (peak), 6.55 inches, 1080 x 2400",
+            "processor": "Qualcomm SM8350 Snapdragon 888 5G (5 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500",
+            "os": "Android 11, upgradable to Android 13, OxygenOS 13",
+            "weight": "192.0",
+            "dimensions": "160 x 74.2 x 8.7 mm (EU/NA)",
+            "colors": "Winter Mist, Arctic Sky, Astral Black"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 9 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-9-.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 9 Pro",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-9-pro-.jpg",
+          "specs": {
+            "display": "LTPO Fluid2 AMOLED, 1B colors, 120Hz, HDR10+, 1300 nits (peak), 6.7 inches, 1440 x 3216",
+            "processor": "Qualcomm SM8350 Snapdragon 888 5G (5 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500",
+            "os": "Android 11, upgradable to Android 14, OxygenOS 14",
+            "weight": "197.0",
+            "dimensions": "163.2 x 73.6 x 8.7 mm (6.43 x 2.90 x 0.34 in)",
+            "colors": "Morning Mist, Forest Green, Stellar Black"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 9 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-9-pro-.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 9R",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-9r.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 120Hz, HDR10+, 6.55 inches, 1080 x 2400",
+            "processor": "Qualcomm SM8250-AC Snapdragon 870 5G (7 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500",
+            "os": "Android 10, upgradable to Android 13, OxygenOS 13",
+            "weight": "189.0",
+            "dimensions": "161 x 74.1 x 8.4 mm (6.34 x 2.92 x 0.33 in)",
+            "colors": "Carbon Black, Lake Blue"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 9R 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-9r.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 9RT",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-9-rt-r.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 9RT 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 9RT 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 9RT 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-9-rt-r.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 8",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-8.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 90Hz, HDR10+, 6.55 inches, 1080 x 2400",
+            "processor": "Qualcomm SM8250 Snapdragon 865 5G (7 nm+)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4300",
+            "os": "Android 10, upgradable to Android 13, OxygenOS 13",
+            "weight": "180.0",
+            "dimensions": "160.2 x 72.9 x 8 mm (6.31 x 2.87 x 0.31 in)",
+            "colors": "Onyx Black, Glacial Green, Interstellar Glow, Polar Silver"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 8 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-8.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 8 5G UW",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-8-5g-uw.jpg",
+          "specs": {
+            "display": "6.55 inches, 103.6 cm, 1080 x 2400 pixels, 20:9 ratio (~402 ppi density)",
+            "processor": "Qualcomm SM8250 Snapdragon 865 5G (7 nm+)",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "Li-Po 4300 mAh",
+            "os": "Android 10, OxygenOS 10.0",
+            "weight": "180 g (6.35 oz)",
+            "dimensions": "160.2 x 72.9 x 8 mm (6.31 x 2.87 x 0.31 in)",
+            "colors": "Onyx Black, Polar Silver"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 8 5G UW 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-8-5g-uw.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 8 Pro",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-8-pro.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 1B colors, 120Hz, HDR10+, 6.78 inches, 1440 x 3168",
+            "processor": "Qualcomm SM8250 Snapdragon 865 5G (7 nm+)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4510",
+            "os": "Android 10, upgradable to Android 13, OxygenOS 13",
+            "weight": "199.0",
+            "dimensions": "165.3 x 74.4 x 8.5 mm (6.51 x 2.93 x 0.33 in)",
+            "colors": "Glacial Green, Ultramarine Blue, Onyx Black"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 8 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-8-pro.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 8T",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-8t.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 120Hz, HDR10+, 6.55 inches, 1080 x 2400",
+            "processor": "Qualcomm SM8250 Snapdragon 865 5G (7 nm+)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500",
+            "os": "Android 11, upgradable to Android 14, OxygenOS 14",
+            "weight": "188.0",
+            "dimensions": "160.7 x 74.1 x 8.4 mm (6.33 x 2.92 x 0.33 in)",
+            "colors": "Aquamarine Green, Lunar Silver, Cyberpunk 2077 Edition"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 8T 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-8t.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 8T Cyberpunk 2077",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-8T-Aquamarine-Green.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 8T Cyberpunk 2077 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gsmarena.com.bd/pictures/oneplus-8t/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-8T-Aquamarine-Green.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 7",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-7--.jpg",
+          "specs": {
+            "display": "6.41 inches, 100.9 cm, 1080 x 2340 pixels, 19.5:9 ratio (~402 ppi density)",
+            "processor": "Qualcomm SM8150 Snapdragon 855 (7 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 3700 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 12, OxygenOS 12.1",
+            "weight": "182 g (6.42 oz)",
+            "dimensions": "157.7 x 74.8 x 8.2 mm (6.21 x 2.94 x 0.32 in)",
+            "colors": "Mirror Gray, Red, Mirror Blue"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 7 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 7 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 7 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-7--.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 7 Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-7-pro-r1.jpg",
+          "specs": {
+            "display": "6.67 inches, 108.8 cm, 1440 x 3120 pixels, 19.5:9 ratio (~516 ppi density)",
+            "processor": "Qualcomm SM8150 Snapdragon 855 (7 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 12, OxygenOS 12.1",
+            "weight": "206 g (7.27 oz)",
+            "dimensions": "162.6 x 75.9 x 8.8 mm (6.40 x 2.99 x 0.35 in)",
+            "colors": "Mirror Grey, Almond, Nebula Blue"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 7 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 7 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 7 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-7-pro-r1.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 7 Pro 5G",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/oneplus-7-pro.jpg",
+          "specs": {
+            "display": "6.67 inches, 109.2 cm, 1440 x 3120 pixels, 19.5:9 ratio (~515 ppi density)",
+            "processor": "Qualcomm SM8150 Snapdragon 855 (7 nm)",
+            "ram": "8GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "Li-Po 4000 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 10, OxygenOS 10.0.4",
+            "weight": "206 g (7.27 oz)",
+            "dimensions": "162.6 x 75.9 x 8.8 mm (6.40 x 2.99 x 0.35 in)",
+            "colors": "Mirror Grey, Almond, Nebula Blue"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 7 Pro 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 7 Pro 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 7 Pro 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-7-pro/",
+            "https://www.gsmarena.com.bd/images/products/oneplus-7-pro.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 7T",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-7t-.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 90Hz, HDR10+, 6.55 inches, 1080 x 2400",
+            "processor": "Qualcomm SM8150 Snapdragon 855+ (7 nm)",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "3800",
+            "os": "Android 10, upgradable to Android 12, OxygenOS 12.1",
+            "weight": "190.0",
+            "dimensions": "160.9 x 74.4 x 8.1 mm (6.33 x 2.93 x 0.32 in)",
+            "colors": "Frosted Silver, Glacier Blue, White"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 7T 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-7t-.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 7T Pro",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-7t-pro.jpg",
+          "specs": {
+            "display": "6.67 inches, 108.8 cm, 1440 x 3120 pixels, 19.5:9 ratio (~516 ppi density)",
+            "processor": "Qualcomm SM8150 Snapdragon 855+ (7 nm)",
+            "ram": "8GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "Li-Po 4085 mAh, non-removable",
+            "os": "Android 10, upgradable to Android 12, OxygenOS 12.1",
+            "weight": "206 g (7.27 oz)",
+            "dimensions": "162.6 x 75.9 x 8.8 mm (6.40 x 2.99 x 0.35 in)",
+            "colors": "Haze Blue, McLaren Edition"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 7T Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 7T Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-7t-pro.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 7T Pro 5G McLaren",
+          "aliases": [
+            "OnePlus 7T Pro McLaren"
+          ],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/oneplus-7t-pro-5g-mclaren-edition.jpg",
+          "specs": {
+            "display": "6.67 inches, 108.8 cm, 1440 x 3120 pixels, 19.5:9 ratio (~516 ppi density)",
+            "processor": "Qualcomm SM8150 Snapdragon 855+ (7 nm)",
+            "ram": "12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "Li-Po 4085 mAh, non-removable",
+            "os": "Android 10, OxygenOS 10.0",
+            "weight": "206 g (7.27 oz)",
+            "dimensions": "162.6 x 75.9 x 8.8 mm (6.40 x 2.99 x 0.35 in)",
+            "colors": "Papaya Orange"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 7T Pro 5G McLaren 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-7t-pro-5g-mclaren-edition/",
+            "https://www.gsmarena.com.bd/images/products/oneplus-7t-pro-5g-mclaren-edition.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 7T Pro McLaren Edition",
+          "aliases": [],
+          "releaseYear": 2019,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/oneplus-7t-pro.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus 7T Pro McLaren Edition 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gsmarena.com.bd/pictures/oneplus-7t-pro/",
+            "https://www.gsmarena.com.bd/images/products/oneplus-7t-pro.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 6",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-6-red.jpg",
+          "specs": {
+            "display": "6.28 inches, 98.4 cm, 1080 x 2280 pixels, 19:9 ratio (~402 ppi density)",
+            "processor": "Qualcomm SDM845 Snapdragon 845 (10 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 3300 mAh, non-removable",
+            "os": "Android 8.1 (Oreo), upgradable to Android 11, OxygenOS 11.1.1.1",
+            "weight": "177 g (6.24 oz)",
+            "dimensions": "155.7 x 75.4 x 7.8 mm (6.13 x 2.97 x 0.31 in)",
+            "colors": "Midnight Black, Mirror Black, Silk White, Amber Red"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 6 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 6 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 6 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-6-red.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 6T",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-6t-thunder-purple.jpg",
+          "specs": {
+            "display": "6.41 inches, 100.9 cm, 1080 x 2340 pixels, 19.5:9 ratio (~402 ppi density)",
+            "processor": "Qualcomm SDM845 Snapdragon 845 (10 nm)",
+            "ram": "6GB/8GB/10GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 3700 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 11, OxygenOS 11.1.1.1",
+            "weight": "185 g (6.53 oz)",
+            "dimensions": "157.5 x 74.8 x 8.2 mm (6.20 x 2.94 x 0.32 in)",
+            "colors": "Thunder Purple, Mirror Black, Midnight Black"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 6T 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 6T 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 6T 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-6t-thunder-purple.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 6T McLaren Edition",
+          "aliases": [],
+          "releaseYear": 2018,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-6t-mclaren-edition.jpg",
+          "specs": {
+            "display": "6.41 inches, 100.9 cm, 1080 x 2340 pixels, 19.5:9 ratio (~402 ppi density)",
+            "processor": "Qualcomm SDM845 Snapdragon 845 (10 nm)",
+            "ram": "10GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "Li-Po 3700 mAh, non-removable",
+            "os": "Android 9.0 (Pie), upgradable to Android 10, OxygenOS 10",
+            "weight": "185 g (6.53 oz)",
+            "dimensions": "157.5 x 74.8 x 8.2 mm (6.20 x 2.94 x 0.32 in)",
+            "colors": "Speed Orange"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 6T McLaren Edition 10GB 256GB",
+              "ram": "10GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global/6t/specs",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-6t-mclaren-edition.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 5",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-5.jpg",
+          "specs": {
+            "display": "5.5 inches, 83.4 cm, 1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+            "processor": "Qualcomm MSM8998 Snapdragon 835 (10 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 3300 mAh, non-removable",
+            "os": "Android 7.1.1 (Nougat), upgradable to Android 10, OxygenOS 10.0.0",
+            "weight": "153 g (5.40 oz)",
+            "dimensions": "154.2 x 74.1 x 7.3 mm (6.07 x 2.92 x 0.29 in)",
+            "colors": "Midnight Black, Slate Gray"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 5 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 5 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-5.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 5T",
+          "aliases": [],
+          "releaseYear": 2017,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-5t.jpg",
+          "specs": {
+            "display": "6.01 inches, 93.7 cm, 1080 x 2160 pixels, 18:9 ratio (~401 ppi density)",
+            "processor": "Qualcomm MSM8998 Snapdragon 835 (10 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Po 3300 mAh, non-removable",
+            "os": "Android 7.1.1 (Nougat), upgradable to Android 10, OxygenOS 10.0.0",
+            "weight": "162 g (5.71 oz)",
+            "dimensions": "156.1 x 75 x 7.3 mm (6.15 x 2.95 x 0.29 in)",
+            "colors": "Midnight Black, Lava Red, Sandstone White"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 5T 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 5T 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-5t.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 3",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-3.jpg",
+          "specs": {
+            "display": "5.5 inches, 83.4 cm, 1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+            "processor": "Qualcomm MSM8996 Snapdragon 820 (14 nm)",
+            "ram": "6GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "Li-Ion 3000 mAh, non-removable",
+            "os": "Android 6.0.1 (Marshmallow), upgradable to Android 9.0 (Pie)",
+            "weight": "158 g (5.57 oz)",
+            "dimensions": "152.7 x 74.7 x 7.4 mm (6.01 x 2.94 x 0.29 in)",
+            "colors": "Graphite, soft gold"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 3 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-3.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 3T",
+          "aliases": [],
+          "releaseYear": 2016,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-3t-.jpg",
+          "specs": {
+            "display": "5.5 inches, 83.4 cm, 1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+            "processor": "Qualcomm MSM8996 Snapdragon 821 (14 nm)",
+            "ram": "6GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "Li-Ion 3400 mAh, non-removable",
+            "os": "Android 6.0.1 (Marshmallow), upgradable to Android 9.0 (Pie)",
+            "weight": "158 g (5.57 oz)",
+            "dimensions": "152.7 x 74.7 x 7.4 mm (6.01 x 2.94 x 0.29 in)",
+            "colors": "Gunmetal, Soft Gold, Midnight Black"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 3T 6GB 64GB",
+              "ram": "6GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus 3T 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-3t-.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus 2",
+          "aliases": [
+            "OnePlus Two"
+          ],
+          "releaseYear": 2015,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/oneplus-two.jpg",
+          "specs": {
+            "display": "LTPS IPS LCD capacitive touchscreen 16M colors, 1080 x 1920 pixels (~401 ppi pixel density), 5.5 inches (~73.3% screen-to-body ratio)",
+            "processor": "Qualcomm MSM8994 Snapdragon 810",
+            "ram": "3GB/4GB",
+            "storage": [
+              "16GB",
+              "64GB"
+            ],
+            "battery": "Non-removable Li-Po 3300 mAh battery",
+            "os": "Android 5.1 (Lollipop)| upgradable to 6.0.1 (Marshmallow)",
+            "weight": "175 g",
+            "dimensions": "151.8 x 74.9 x 9.9 mm (5.98 x 2.95 x 0.39 in)",
+            "colors": "Sandstone Black"
+          },
+          "variants": [
+            {
+              "name": "OnePlus 2 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus 2 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "http://cdn2.gsmarena.com/vv/bigpic/oneplus-two.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus X",
+          "aliases": [],
+          "releaseYear": 2015,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/oneplus-x.jpg",
+          "specs": {
+            "display": "AMOLED capacitive touchscreen 16M colors, 1080 x 1920 pixels (~441 ppi pixel density), 5.0 inches (~71.3% screen-to-body ratio)",
+            "processor": "Qualcomm Snapdragon 801",
+            "ram": "3GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "Non-removable Li-Po 2525 mAh battery",
+            "os": "Android 5.1.1 (Lollipop)| upgradable to 6.0.1 (Marshmallow)",
+            "weight": "138 g",
+            "dimensions": "140 x 69 x 6.9 mm (5.51 x 2.72 x 0.27 in)",
+            "colors": "Onyx| Ceramic| Champagne"
+          },
+          "variants": [
+            {
+              "name": "OnePlus X 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "http://cdn2.gsmarena.com/vv/bigpic/oneplus-x.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus One",
+          "aliases": [],
+          "releaseYear": 2014,
+          "imageUrl": "http://cdn2.gsmarena.com/vv/bigpic/oneplus-one.jpg",
+          "specs": {
+            "display": "LTPS IPS LCD capacitive touchscreen 16M colors, 1080 x 1920 pixels (~401 ppi pixel density), 5.5 inches (~71.9% screen-to-body ratio)",
+            "processor": "Qualcomm MSM8974AC Snapdragon 801",
+            "ram": "3GB",
+            "storage": [
+              "16GB",
+              "64GB"
+            ],
+            "battery": "Non-removable Li-Po 3100 mAh battery",
+            "os": "Android 4.4.2 (KitKat)| upgradable to 6.0.1 (Marshmallow)",
+            "weight": "162 g",
+            "dimensions": "152.9 x 75.9 x 8.9 mm (6.02 x 2.99 x 0.35 in)",
+            "colors": "Silk White| Sandstone Black"
+          },
+          "variants": [
+            {
+              "name": "OnePlus One 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus One 3GB 64GB",
+              "ram": "3GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "http://cdn2.gsmarena.com/vv/bigpic/oneplus-one.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OnePlus Open",
+      "models": [
+        {
+          "name": "OnePlus Open Apex Edition",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "16GB",
+            "storage": [
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Open Apex Edition 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.theverge.com/2024/8/7/24214775/oneplus-open-apex-edition-special-color",
+            "https://www.oneplus.com/global/open/specs"
+          ]
+        },
+        {
+          "name": "OnePlus Open",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Open-Dusk.jpg",
+          "specs": {
+            "display": "7.82 inches, 196.7 cm, 2268 x 2440 pixels (~426 ppi density)",
+            "processor": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+            "ram": "16GB",
+            "storage": [
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Li-Po 4805 mAh",
+            "os": "Android 13, upgradable to Android 15, OxygenOS 15",
+            "weight": "239 g or 245 g (8.43 oz)",
+            "dimensions": "Unfolded: 153.4 x 143.1 x 5.8 mm",
+            "colors": "Emerald Dusk, Voyager Black, Apex Edition"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Open 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Open 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-open/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Open-Dusk.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OnePlus Nord",
+      "models": [
+        {
+          "name": "OnePlus Nord 6",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-6-5G.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord 6 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Nord 6 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "https://www.oneplus.com/global/nord-6/specs",
+            "https://www.91mobiles.com/oneplus-nord-6-price-in-india",
+            "https://www.gsmarena.com.bd/pictures/oneplus-nord-6/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-6-5G.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord 5",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-5.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord 5 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Nord 5 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "https://www.gsmarena.com.bd/pictures/oneplus-nord-5/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-5.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord 4",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-4-Silver.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 1B colors, 120Hz, HDR10+, 2150 nits (peak), 6.74 inches, 1240 x 2772",
+            "processor": "Qualcomm SM7675 Snapdragon 7+ Gen 3 (4 nm)",
+            "ram": "8GB/12GB/16GB",
+            "storage": [
+              "128GB",
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5500",
+            "os": "Android 14, up to 4 major Android upgrades, OxygenOS 14.1",
+            "weight": "199.5",
+            "dimensions": "162.6 x 75 x 8 mm (6.40 x 2.95 x 0.31 in)",
+            "colors": "Obsidian Midnight, Mercurial Silver, Oasis Green"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord 4 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/us/phone/compare",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-nord-4/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-4-Silver.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord 3",
+          "aliases": [
+            "OnePlus Nord 3 5G"
+          ],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-3.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 1B colors, 120Hz, HDR10+, 1450 nits (peak), 6.74 inches, 1240 x 2772",
+            "processor": "Mediatek Dimensity 9000 (4 nm)",
+            "ram": "8GB/16GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5000",
+            "os": "Android 13, up to 3 major Android upgrades, OxygenOS 14",
+            "weight": "193.5",
+            "dimensions": "162 x 75.1 x 8.2 mm (6.38 x 2.96 x 0.32 in)",
+            "colors": "Misty Green, Tempest Gray"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord 3 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/us/phone/compare",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-nord-3/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-3.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord 2T",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-2t.jpg",
+          "specs": {
+            "display": "AMOLED, 90Hz, HDR10+, 6.43 inches, 1080 x 2400",
+            "processor": "Mediatek Dimensity 1300 (6 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500",
+            "os": "Android 12, upgradable to Android 14, OxygenOS 14",
+            "weight": "190.0",
+            "dimensions": "159.1 x 73.2 x 8.2 mm (6.26 x 2.88 x 0.32 in)",
+            "colors": "Gray Shadow, Jade Fog"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord 2T 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/us/phone/compare",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-2t.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord 2 5G",
+          "aliases": [
+            "OnePlus Nord 2"
+          ],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-2-5g.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 90Hz, HDR10+, 6.43 inches, 1080 x 2400",
+            "processor": "Mediatek Dimensity 1200 (6 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500",
+            "os": "Android 11, upgradable to Android 13, OxygenOS 13",
+            "weight": "189.0",
+            "dimensions": "159.1 x 73.3 x 8.3 mm (6.26 x 2.89 x 0.33 in)",
+            "colors": "Gray Sierra, Blue Haze, Green Wood, Pac-Man Edition"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord 2 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/us/phone/compare",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-2-5g.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord 2 PAC-MAN Edition",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord 2 PAC-MAN Edition 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/"
+          ]
+        },
+        {
+          "name": "OnePlus Nord",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 90Hz, HDR10+, 6.44 inches, 1080 x 2400",
+            "processor": "Qualcomm SM7250 Snapdragon 765G 5G (7 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "64GB",
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4115",
+            "os": "Android 10, upgradable to Android 12, OxygenOS 12",
+            "weight": "184.0",
+            "dimensions": "158.3 x 73.3 x 8.2 mm (6.23 x 2.89 x 0.32 in)",
+            "colors": "Blue Marble, Gray Onyx (Gray Ash)"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.oneplus.com/us/phone/compare",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OnePlus Nord CE",
+      "models": [
+        {
+          "name": "OnePlus Nord CE 6 5G",
+          "aliases": [
+            "OnePlus Nord CE6"
+          ],
+          "releaseYear": 2026,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-CE6.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord CE 6 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Nord CE 6 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gadgets360.com/mobiles/oneplus-price-list",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "https://www.oneplus.in/nord-ce6/specs",
+            "https://www.androidupdatetracker.com/specs/oneplus-nord-ce6",
+            "https://www.gsmarena.com.bd/pictures/oneplus-nord-ce6/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-CE6.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord CE 6 Lite",
+          "aliases": [
+            "OnePlus Nord CE6 Lite"
+          ],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce-6-lite.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord CE 6 Lite 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Nord CE 6 Lite 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gadgets360.com/mobiles/oneplus-price-list",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce-6-lite.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord CE 5 5G",
+          "aliases": [
+            "OnePlus Nord CE5"
+          ],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-CE5.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord CE 5 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Nord CE 5 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Nord CE 5 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gadgets360.com/mobiles/oneplus-price-list",
+            "https://www.oneplus.com/global",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "https://www.gsmarena.com.bd/pictures/oneplus-nord-ce5/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-CE5.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord CE 4",
+          "aliases": [
+            "OnePlus Nord CE4"
+          ],
+          "releaseYear": 2024,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-CE4-Dark-Chrome.jpg",
+          "specs": {
+            "display": "6.7 inches, 108.0 cm, 1080 x 2412 pixels, 20:9 ratio (~394 ppi density)",
+            "processor": "Qualcomm SM7550-AB Snapdragon 7 Gen 3 (4 nm)",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5500 mAh",
+            "os": "Android 14, ColorOS 14",
+            "weight": "186 g (6.56 oz)",
+            "dimensions": "162.5 x 75.3 x 8.4 mm (6.40 x 2.96 x 0.33 in)",
+            "colors": "Celadon Marble, Dark Chrome"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord CE 4 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Nord CE 4 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gadgets360.com/mobiles/oneplus-price-list",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-nord-ce4/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-CE4-Dark-Chrome.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord CE 4 Lite 5G",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce4-lite.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord CE 4 Lite 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Nord CE 4 Lite 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gadgets360.com/mobiles/oneplus-price-list",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce4-lite.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord CE 3 5G",
+          "aliases": [
+            "OnePlus Nord CE3",
+            "OnePlus Nord CE 3"
+          ],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce3-5g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord CE 3 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Nord CE 3 5G 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gadgets360.com/mobiles/oneplus-price-list",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce3-5g.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord CE 3 Lite 5G",
+          "aliases": [
+            "OnePlus Nord CE3 Lite",
+            "OnePlus Nord CE 3 Lite"
+          ],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-CE-3-Lite-Gray.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord CE 3 Lite 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Nord CE 3 Lite 5G 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gadgets360.com/mobiles/oneplus-price-list",
+            "https://www.gsmarena.com.bd/pictures/oneplus-nord-ce-3-lite/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Nord-CE-3-Lite-Gray.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord CE 2 5G",
+          "aliases": [
+            "OnePlus Nord CE2",
+            "OnePlus Nord CE 2"
+          ],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce-2-5g.jpg",
+          "specs": {
+            "display": "AMOLED, 90Hz, HDR10+, 6.43 inches, 1080 x 2400",
+            "processor": "Mediatek Dimensity 900 (6 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "4500",
+            "os": "Android 11, upgradable to Android 13, OxygenOS 13",
+            "weight": "173.0",
+            "dimensions": "160.6 x 73.2 x 7.8 mm (6.32 x 2.88 x 0.31 in)",
+            "colors": "Gray Mirror, Bahama Blue"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord CE 2 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gadgets360.com/mobiles/oneplus-price-list",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce-2-5g.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord CE 2 Lite 5G",
+          "aliases": [
+            "OnePlus Nord CE2 Lite",
+            "OnePlus Nord CE 2 Lite"
+          ],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce-2-lite-5g--.jpg",
+          "specs": {
+            "display": "IPS LCD, 120Hz, 6.59 inches, 1080 x 2412",
+            "processor": "Qualcomm SM6375 Snapdragon 695 5G (6 nm)",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 12, upgradable to Android 13, OxygenOS 13",
+            "weight": "195.0",
+            "dimensions": "164.3 x 75.6 x 8.5 mm (6.47 x 2.98 x 0.33 in)",
+            "colors": "Black Dusk, Blue Tide"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord CE 2 Lite 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gadgets360.com/mobiles/oneplus-price-list",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce-2-lite-5g--.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord CE 5G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce-5g.jpg",
+          "specs": {
+            "display": "Fluid AMOLED, 90Hz, 6.43 inches, 1080 x 2400",
+            "processor": "Qualcomm SM7225 Snapdragon 750G 5G (8 nm)",
+            "ram": "6GB/8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "4500",
+            "os": "Android 11, upgradable to Android 13, OxygenOS 13",
+            "weight": "170.0",
+            "dimensions": "159.2 x 73.5 x 7.9 mm (6.27 x 2.89 x 0.31 in)",
+            "colors": "Blue Void, Charkoal Ink, Silver Ray"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord CE 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gadgets360.com/mobiles/oneplus-price-list",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce-5g.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OnePlus Nord N",
+      "models": [
+        {
+          "name": "OnePlus Nord N30 SE",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n30-se-5g.jpg",
+          "specs": {
+            "display": "6.72 inches, 109.0 cm, 1080 x 2400 pixels, 20:9 ratio (~392 ppi density)",
+            "processor": "Mediatek Dimensity 6020 (7 nm)",
+            "ram": "4GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000 mAh",
+            "os": "Android 13, OxygenOS 13.1",
+            "weight": "193 g (6.81 oz)",
+            "dimensions": "165.6 x 76 x 8 mm (6.52 x 2.99 x 0.31 in)",
+            "colors": "Black Satin, Cyan"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord N30 SE 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n30-se-5g.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord N30 5G",
+          "aliases": [
+            "OnePlus Nord N30"
+          ],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n30-5g.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord N30 5G 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n30-5g.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord N20 5G",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n20-5g.jpg",
+          "specs": {
+            "display": "6.43 inches, 99.8 cm, 1080 x 2400 pixels, 20:9 ratio (~409 ppi density)",
+            "processor": "Qualcomm SM6375 Snapdragon 695 5G (6 nm)",
+            "ram": "6GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "Li-Po 4500 mAh",
+            "os": "Android 11, OxygenOS 11",
+            "weight": "173 g (6.10 oz)",
+            "dimensions": "159.9 x 73.2 x 7.5 mm (6.30 x 2.88 x 0.30 in)",
+            "colors": "Blue"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord N20 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n20-5g.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord N20 SE",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n20-se.jpg",
+          "specs": {
+            "display": "IPS LCD, 480 nits (typ), 600 nits (HBM), 6.56 inches, 720 x 1612",
+            "processor": "Mediatek MT6765G Helio G35 (12 nm)",
+            "ram": "4GB",
+            "storage": [
+              "64GB",
+              "128GB"
+            ],
+            "battery": "5000",
+            "os": "Android 12, OxygenOS 12.1",
+            "weight": "187.0",
+            "dimensions": "163.8 x 75 x 8 mm (6.45 x 2.95 x 0.31 in)",
+            "colors": "Blue Oasis, Celestial Black"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord N20 SE 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n20-se.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord N300",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n300-5g.jpg",
+          "specs": {
+            "display": "6.56 inches, 103.4 cm, 720 x 1612 pixels, 20:9 ratio (~269 ppi density)",
+            "processor": "Mediatek Dimensity 810 (6 nm)",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 12, OxygenOS",
+            "weight": "190 g (6.70 oz)",
+            "dimensions": "163.8 x 75.1 x 8 mm (6.45 x 2.96 x 0.31 in)",
+            "colors": "Midnight Jade"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord N300 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n300-5g.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord N200 5G",
+          "aliases": [],
+          "releaseYear": 2021,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n200-5g.jpg",
+          "specs": {
+            "display": "6.49 inches, 102.2 cm, 1080 x 2400 pixels, 20:9 ratio (~405 ppi density)",
+            "processor": "Qualcomm SM4350 Snapdragon 480 5G (8 nm)",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 11, OxygenOS 11",
+            "weight": "189 g (6.67 oz)",
+            "dimensions": "163.1 x 74.9 x 8.3 mm (6.42 x 2.95 x 0.33 in)",
+            "colors": "Blue Quantum"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord N200 5G 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n200-5g.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord N10 5G",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n10-5g-.jpg",
+          "specs": {
+            "display": "6.49 inches, 101.7 cm, 1080 x 2400 pixels, 20:9 ratio (~406 ppi density)",
+            "processor": "Qualcomm SM6350 Snapdragon 690 5G (8 nm)",
+            "ram": "6GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "Li-Po 4300 mAh",
+            "os": "Android 10, OxygenOS 10.5",
+            "weight": "190 g (6.70 oz)",
+            "dimensions": "163 x 74.7 x 9 mm (6.42 x 2.94 x 0.35 in)",
+            "colors": "Midnight Ice"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord N10 5G 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n10-5g-.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Nord N100",
+          "aliases": [],
+          "releaseYear": 2020,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n100-.jpg",
+          "specs": {
+            "display": "6.52 inches, 102.6 cm, 720 x 1600 pixels, 20:9 ratio (~269 ppi density)",
+            "processor": "Qualcomm SM4250 Snapdragon 460 (11 nm)",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 10, OxygenOS 10.5.9",
+            "weight": "188 g (6.63 oz)",
+            "dimensions": "164.9 x 75.1 x 8.5 mm (6.49 x 2.96 x 0.33 in)",
+            "colors": "Midnight Frost"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Nord N100 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n100-.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OnePlus Ace",
+      "models": [
+        {
+          "name": "OnePlus Ace 6 Ultra",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-6-ultra.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 6 Ultra 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 6 Ultra 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 6 Ultra 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 6 Ultra 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 6 Ultra 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.kalvo.com/oneplus-ace-6-ultra-227695.html",
+            "https://www.devicespecifications.com/en/model/632a6736",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-6-ultra.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 5 Racing",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-5-racing.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 5 Racing 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 5 Racing 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 5 Racing 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.oneplus.com/global",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-5-racing.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 5 Ultra",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-5-ultra.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 5 Ultra 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 5 Ultra 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 5 Ultra 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.oneplus.com/global",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-5-ultra.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 6",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace6.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 6 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 6 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 6 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "https://www.oneplus.com/global",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace6.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 6T",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-6t.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 6T 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 6T 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 6T 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 6T 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Ace 6T 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.kalvo.com/oneplus-ace-6t-204768.html",
+            "https://www.fonearena.com/blog/470364/oneplus-ace-6t-price-specifications.html",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-6t.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 6T Genshin Impact",
+          "aliases": [],
+          "releaseYear": 2025,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Ace-6T.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "16GB",
+            "storage": [
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 6T Genshin Impact 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gsmchoice.com/en/catalogue/oneplus/ace-6t-genshin-impact/",
+            "https://bludiode.com/en/phones-and-smartphones/oneplus-ace-6t-genshin-impact-16gb512gb-kamisato-ayaka-30327/",
+            "https://www.gsmarena.com.bd/pictures/oneplus-ace-6t/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Ace-6T.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 3",
+          "aliases": [
+            "OnePlus 12R"
+          ],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace3.jpg",
+          "specs": {
+            "display": "6.78 inches, 111.7 cm, 1264 x 2780 pixels (~450 ppi density)",
+            "processor": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "5500 mAh",
+            "os": "Android 14, ColorOS 14",
+            "weight": "207 g (7.30 oz)",
+            "dimensions": "163.3 x 75.3 x 8.8 mm (6.43 x 2.96 x 0.35 in)",
+            "colors": "Black, Blue, Rose Gold"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 3 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 3 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 3 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace3.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 3 Pro",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace3-pro.jpg",
+          "specs": {
+            "display": "6.78 inches, 111.7 cm, 1264 x 2780 pixels (~450 ppi density)",
+            "processor": "Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)",
+            "ram": "12GB/16GB/24GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "6100 mAh",
+            "os": "Android 14, ColorOS 14",
+            "weight": "207 g, 212 g, 225 g (7.30 oz)",
+            "dimensions": "163.3 x 75.3 x 8.7 / 8.9 / 9.0 mm",
+            "colors": "Gray, White, Green"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 3 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 3 Pro 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 3 Pro 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 3 Pro 24GB 1TB",
+              "ram": "24GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace3-pro.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 3V",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-3v.jpg",
+          "specs": {
+            "display": "6.74 inches, 109.2 cm, 1240 x 2772 pixels, 20:9 ratio (~451 ppi density)",
+            "processor": "Qualcomm SM7675 Snapdragon 7+ Gen 3 (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "5500 mAh",
+            "os": "Android 14, ColorOS 14",
+            "weight": "200 g (7.05 oz)",
+            "dimensions": "162.7 x 75.2 x 8.5 mm (6.41 x 2.96 x 0.33 in)",
+            "colors": "Purple, Gray"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 3V 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 3V 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 3V 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-3v.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 5",
+          "aliases": [
+            "OnePlus 13R"
+          ],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace5.jpg",
+          "specs": {
+            "display": "6.78 inches, 111.7 cm, 1264 x 2780 pixels (~450 ppi density)",
+            "processor": "Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Si/C Li-Ion 6415 mAh",
+            "os": "Android 15, ColorOS 15",
+            "weight": "206 g or 223 g (7.27 oz)",
+            "dimensions": "161.7 x 75.8 x 8.1 mm (6.37 x 2.98 x 0.32 in)",
+            "colors": "Gray, White, Green"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 5 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 5 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 5 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 5 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 5 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace5.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 5 Pro",
+          "aliases": [],
+          "releaseYear": 2024,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace5-pro.jpg",
+          "specs": {
+            "display": "6.78 inches, 111.7 cm, 1264 x 2780 pixels (~450 ppi density)",
+            "processor": "Qualcomm SM8750-AB Snapdragon 8 Elite (3 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Si/C Li-Ion 6100 mAh",
+            "os": "Android 15, ColorOS 15",
+            "weight": "203 g or 217 g (7.16 oz)",
+            "dimensions": "161.7 x 75.8 x 8.1 mm (6.37 x 2.98 x 0.32 in)",
+            "colors": "Gray, White, Purple"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 5 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 5 Pro 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 5 Pro 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 5 Pro 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 5 Pro 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace5-pro.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 2",
+          "aliases": [
+            "OnePlus 11R"
+          ],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace2.jpg",
+          "specs": {
+            "display": "6.74 inches, 109.2 cm, 1240 x 2772 pixels, 20:9 ratio (~451 ppi density)",
+            "processor": "Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, ColorOS 13",
+            "weight": "204 g (7.20 oz)",
+            "dimensions": "163.4 x 74.3 x 8.7 mm (6.43 x 2.93 x 0.34 in)",
+            "colors": "Black, Glacier Blue, Red"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 2 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 2 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 2 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 2 18GB 512GB",
+              "ram": "18GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace2.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 2 Genshin Impact",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Ace2.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "18GB",
+            "storage": [
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 2 Genshin Impact 18GB 512GB",
+              "ram": "18GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://www.gsmarena.com.bd/pictures/oneplus-ace-2/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Ace2.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 2 Pro",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-2-pro.jpg",
+          "specs": {
+            "display": "6.74 inches, 109.2 cm, 1240 x 2772 pixels, 20:9 ratio (~451 ppi density)",
+            "processor": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+            "ram": "12GB/16GB/24GB",
+            "storage": [
+              "256GB",
+              "512GB",
+              "1TB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, ColorOS 13.1",
+            "weight": "210 g (7.41 oz)",
+            "dimensions": "163.1 x 74.2 x 9 mm (6.42 x 2.92 x 0.35 in)",
+            "colors": "Aurora Green, Titanium Gray"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 2 Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 2 Pro 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 2 Pro 24GB 1TB",
+              "ram": "24GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-2-pro.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace 2V",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-2v.jpg",
+          "specs": {
+            "display": "6.74 inches, 109.2 cm, 1240 x 2772 pixels, 20:9 ratio (~451 ppi density)",
+            "processor": "Mediatek Dimensity 9000 (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 13, ColorOS 13",
+            "weight": "191.5 g (6.77 oz)",
+            "dimensions": "162.6 x 75.1 x 8.2 mm (6.40 x 2.96 x 0.32 in)",
+            "colors": "Black, Blue/Green"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 2V 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 2V 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 2V 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 2V 16GB 1TB",
+              "ram": "16GB",
+              "storage": "1TB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace-2v.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace",
+          "aliases": [
+            "OnePlus 10R"
+          ],
+          "releaseYear": 2022,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace.jpg",
+          "specs": {
+            "display": "6.7 inches, 108.0 cm, 1080 x 2412 pixels, 20:9 ratio (~394 ppi density)",
+            "processor": "Mediatek Dimensity 8100 Max (5 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 4500 mAh",
+            "os": "Android 12, ColorOS 12.1",
+            "weight": "186 g (6.56 oz)",
+            "dimensions": "163.3 x 75.5 x 8.2 mm (6.43 x 2.97 x 0.32 in)",
+            "colors": "Black, Blue"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace Pro",
+          "aliases": [
+            "OnePlus 10T"
+          ],
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Ace-Pro.jpg",
+          "specs": {
+            "display": "6.7 inches, 108.0 cm, 1080 x 2412 pixels, 20:9 ratio (~394 ppi density)",
+            "processor": "Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": "Li-Po 4800 mAh",
+            "os": "Android 12, ColorOS 12.1",
+            "weight": "203.5 g (7.20 oz)",
+            "dimensions": "163 x 75.4 x 8.8 mm (6.42 x 2.97 x 0.35 in)",
+            "colors": "Moonstone Black, Jade Green, Genshin Impact"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace Pro 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace Pro 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace Pro 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-ace-pro/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Ace-Pro.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Ace Pro Genshin Impact",
+          "aliases": [],
+          "releaseYear": 2022,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "16GB",
+            "storage": [
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace Pro Genshin Impact 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/"
+          ]
+        },
+        {
+          "name": "OnePlus Ace Racing",
+          "aliases": [
+            "OnePlus Ace Racing Edition"
+          ],
+          "releaseYear": 2022,
+          "imageUrl": "https://www.gsmarena.com.bd/images/products/OnePlus-Ace-Racing-Edition.jpg",
+          "specs": {
+            "display": "6.59 inches, 104.5 cm, 1080 x 2412 pixels, 20:9 ratio (~401 ppi density)",
+            "processor": "Mediatek Dimensity 8100 Max (5 nm)",
+            "ram": "8GB/12GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "Li-Po 5000 mAh",
+            "os": "Android 12, ColorOS 12.1",
+            "weight": "205 g (7.23 oz)",
+            "dimensions": "164.3 x 75.8 x 8.7 mm (6.47 x 2.98 x 0.34 in)",
+            "colors": "Black, Blue"
+          },
+          "variants": [
+            {
+              "name": "OnePlus Ace Racing 8GB 128GB",
+              "ram": "8GB",
+              "storage": "128GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace Racing 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            },
+            {
+              "name": "OnePlus Ace Racing 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "kaggle_gsmarena_internal_memory"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+            "kaggle:gsmarena-derived-oneplus-specs",
+            "https://www.gsmarena.com.bd/pictures/oneplus-ace-racing-edition/",
+            "https://www.gsmarena.com.bd/images/products/OnePlus-Ace-Racing-Edition.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OnePlus Turbo/K",
+      "models": [
+        {
+          "name": "OnePlus Turbo 6",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-turbo-6.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "12GB/16GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Turbo 6 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Turbo 6 16GB 256GB",
+              "ram": "16GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Turbo 6 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Turbo 6 16GB 512GB",
+              "ram": "16GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.kalvo.com/oneplus-turbo-6-200877.html",
+            "https://www.kimovil.com/en/where-to-buy-oneplus-turbo-6",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-turbo-6.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus Turbo 6V",
+          "aliases": [],
+          "releaseYear": 2026,
+          "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-turbo-6v.jpg",
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus Turbo 6V 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Turbo 6V 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus Turbo 6V 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/",
+            "https://en.kalvo.com/oneplus-turbo-6v-211190.html",
+            "https://www.kimovil.com/en/where-to-buy-oneplus-turbo-6v",
+            "gsmarena:fdn2-bigpic-candidate",
+            "https://fdn2.gsmarena.com/vv/bigpic/oneplus-turbo-6v.jpg"
+          ]
+        },
+        {
+          "name": "OnePlus K11",
+          "aliases": [],
+          "releaseYear": 2023,
+          "imageUrl": null,
+          "specs": {
+            "display": "Display details pending public verification",
+            "processor": "Processor details pending public verification",
+            "ram": "8GB/12GB",
+            "storage": [
+              "256GB",
+              "512GB"
+            ],
+            "battery": null,
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "OnePlus K11 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus K11 12GB 256GB",
+              "ram": "12GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "OnePlus K11 12GB 512GB",
+              "ram": "12GB",
+              "storage": "512GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/oneplus/"
+          ]
+        }
+      ]
+    }
+  ]
+};

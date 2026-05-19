@@ -1,0 +1,3450 @@
+{
+  "category": "phone",
+  "brands": [
+    {
+      "name": "OnePlus",
+      "logo_url": "https://logo.clearbit.com/oneplus.com",
+      "families": [
+        {
+          "name": "OnePlus Number Series",
+          "models": [
+            {
+              "name": "OnePlus One",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB",
+                "storage": [
+                  "16GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 2",
+              "aliases": [
+                "OnePlus Two"
+              ],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB",
+                "storage": [
+                  "16GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus X",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 3",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 3T",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 5",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 5T",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 6",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 6T",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/10GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "10GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 7",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 7 Pro",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 7 Pro 5G",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 7T",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 7T Pro",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 7T Pro 5G McLaren",
+              "aliases": [
+                "OnePlus 7T Pro McLaren"
+              ],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 8",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 8 5G UW",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 8 Pro",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 8T",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 9",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 9 Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 9R",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 9RT",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 10 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 10R",
+              "aliases": [
+                "OnePlus Ace",
+                "OnePlus 10R 5G"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 10R 150W",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 10T",
+              "aliases": [
+                "OnePlus Ace Pro"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB/16GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 11",
+              "aliases": [
+                "OnePlus 11 5G",
+                "OnePlus 11 Global"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB/16GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 11R",
+              "aliases": [
+                "OnePlus Ace 2",
+                "OnePlus 11R 5G"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/16GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 12",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB/24GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                },
+                {
+                  "ram": "24GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 12R",
+              "aliases": [
+                "OnePlus Ace 3"
+              ],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/16GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 13",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB/24GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "24GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 13R",
+              "aliases": [
+                "OnePlus Ace 5"
+              ],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 13T",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 13s",
+              "aliases": [
+                "OnePlus 13T",
+                "OnePlus 13S"
+              ],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 15",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/oneplus-15",
+                "https://www.theverge.com/news/838017/oneplus-15-preorders-us"
+              ]
+            },
+            {
+              "name": "OnePlus 15R",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 15T",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.mobolist.net/en/devices/oneplus-15t"
+              ]
+            },
+            {
+              "name": "OnePlus 12R Genshin Impact",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "16GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/us/12r-edition/specs",
+                "https://www.oneplus.in/12r-edition/specs"
+              ]
+            },
+            {
+              "name": "OnePlus 11 5G x Genshin Impact",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "16GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global/11/specs"
+              ]
+            },
+            {
+              "name": "OnePlus 11 5G Marble Odyssey",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "16GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.flipkart.com/oneplus-11-5g-marble-odyssey-256-gb/p/itm4d6999d9b201d",
+                "https://www.oneplus.com/global/11/specs"
+              ]
+            },
+            {
+              "name": "OnePlus 11 Jupiter Rock",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "16GB",
+                "storage": [
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 9RT Genshin Impact",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 10 Pro Extreme Edition",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 8T Cyberpunk 2077",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 7T Pro McLaren Edition",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus 6T McLaren Edition",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "10GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "10GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global/6t/specs"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OnePlus Open",
+          "models": [
+            {
+              "name": "OnePlus Open",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "16GB",
+                "storage": [
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global"
+              ]
+            },
+            {
+              "name": "OnePlus Open Apex Edition",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "16GB",
+                "storage": [
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.theverge.com/2024/8/7/24214775/oneplus-open-apex-edition-special-color",
+                "https://www.oneplus.com/global/open/specs"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OnePlus Nord",
+          "models": [
+            {
+              "name": "OnePlus Nord",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/12GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/us/phone/compare"
+              ]
+            },
+            {
+              "name": "OnePlus Nord 2 5G",
+              "aliases": [
+                "OnePlus Nord 2"
+              ],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/us/phone/compare"
+              ]
+            },
+            {
+              "name": "OnePlus Nord 2T",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/us/phone/compare"
+              ]
+            },
+            {
+              "name": "OnePlus Nord 3",
+              "aliases": [
+                "OnePlus Nord 3 5G"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/16GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/us/phone/compare"
+              ]
+            },
+            {
+              "name": "OnePlus Nord 4",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB/16GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/us/phone/compare"
+              ]
+            },
+            {
+              "name": "OnePlus Nord 5",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus Nord 6",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.com/global/nord-6/specs",
+                "https://www.91mobiles.com/oneplus-nord-6-price-in-india"
+              ]
+            },
+            {
+              "name": "OnePlus Nord 2 PAC-MAN Edition",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OnePlus Nord CE",
+          "models": [
+            {
+              "name": "OnePlus Nord CE 5G",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gadgets360.com/mobiles/oneplus-price-list"
+              ]
+            },
+            {
+              "name": "OnePlus Nord CE 2 5G",
+              "aliases": [
+                "OnePlus Nord CE2",
+                "OnePlus Nord CE 2"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gadgets360.com/mobiles/oneplus-price-list"
+              ]
+            },
+            {
+              "name": "OnePlus Nord CE 2 Lite 5G",
+              "aliases": [
+                "OnePlus Nord CE2 Lite",
+                "OnePlus Nord CE 2 Lite"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gadgets360.com/mobiles/oneplus-price-list"
+              ]
+            },
+            {
+              "name": "OnePlus Nord CE 3 5G",
+              "aliases": [
+                "OnePlus Nord CE3",
+                "OnePlus Nord CE 3"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gadgets360.com/mobiles/oneplus-price-list"
+              ]
+            },
+            {
+              "name": "OnePlus Nord CE 3 Lite 5G",
+              "aliases": [
+                "OnePlus Nord CE3 Lite",
+                "OnePlus Nord CE 3 Lite"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gadgets360.com/mobiles/oneplus-price-list"
+              ]
+            },
+            {
+              "name": "OnePlus Nord CE 4",
+              "aliases": [
+                "OnePlus Nord CE4"
+              ],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gadgets360.com/mobiles/oneplus-price-list"
+              ]
+            },
+            {
+              "name": "OnePlus Nord CE 4 Lite 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gadgets360.com/mobiles/oneplus-price-list"
+              ]
+            },
+            {
+              "name": "OnePlus Nord CE 5 5G",
+              "aliases": [
+                "OnePlus Nord CE5"
+              ],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gadgets360.com/mobiles/oneplus-price-list",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus Nord CE 6 5G",
+              "aliases": [
+                "OnePlus Nord CE6"
+              ],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gadgets360.com/mobiles/oneplus-price-list",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.oneplus.in/nord-ce6/specs",
+                "https://www.androidupdatetracker.com/specs/oneplus-nord-ce6"
+              ]
+            },
+            {
+              "name": "OnePlus Nord CE 6 Lite",
+              "aliases": [
+                "OnePlus Nord CE6 Lite"
+              ],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gadgets360.com/mobiles/oneplus-price-list",
+                "https://www.oneplus.com/global",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OnePlus Nord N",
+          "models": [
+            {
+              "name": "OnePlus Nord N10 5G",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india"
+              ]
+            },
+            {
+              "name": "OnePlus Nord N100",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india"
+              ]
+            },
+            {
+              "name": "OnePlus Nord N200 5G",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india"
+              ]
+            },
+            {
+              "name": "OnePlus Nord N20 5G",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india"
+              ]
+            },
+            {
+              "name": "OnePlus Nord N20 SE",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india"
+              ]
+            },
+            {
+              "name": "OnePlus Nord N300",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india"
+              ]
+            },
+            {
+              "name": "OnePlus Nord N30 5G",
+              "aliases": [
+                "OnePlus Nord N30"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india"
+              ]
+            },
+            {
+              "name": "OnePlus Nord N30 SE",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.91mobiles.com/list-of-phones/oneplus-mobile-price-list-in-india"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OnePlus Ace",
+          "models": [
+            {
+              "name": "OnePlus Ace",
+              "aliases": [
+                "OnePlus 10R"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace Racing",
+              "aliases": [
+                "OnePlus Ace Racing Edition"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace Pro",
+              "aliases": [
+                "OnePlus 10T"
+              ],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 2",
+              "aliases": [
+                "OnePlus 11R"
+              ],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 2V",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 2 Pro",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB/24GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "24GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 3",
+              "aliases": [
+                "OnePlus 12R"
+              ],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 3V",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 3 Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB/24GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                },
+                {
+                  "ram": "24GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 5",
+              "aliases": [
+                "OnePlus 13R"
+              ],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 5 Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 5 Racing",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.oneplus.com/global"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 5 Ultra",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.oneplus.com/global"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 6",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.wikipedia.org/wiki/List_of_OnePlus_products",
+                "https://www.oneplus.com/global"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 6 Ultra",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.kalvo.com/oneplus-ace-6-ultra-227695.html",
+                "https://www.devicespecifications.com/en/model/632a6736"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 6T",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.kalvo.com/oneplus-ace-6t-204768.html",
+                "https://www.fonearena.com/blog/470364/oneplus-ace-6t-price-specifications.html"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 6T Genshin Impact",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "16GB",
+                "storage": [
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://www.gsmchoice.com/en/catalogue/oneplus/ace-6t-genshin-impact/",
+                "https://bludiode.com/en/phones-and-smartphones/oneplus-ace-6t-genshin-impact-16gb512gb-kamisato-ayaka-30327/"
+              ]
+            },
+            {
+              "name": "OnePlus Ace 2 Genshin Impact",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "18GB",
+                "storage": [
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "18GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            },
+            {
+              "name": "OnePlus Ace Pro Genshin Impact",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "16GB",
+                "storage": [
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OnePlus Turbo/K",
+          "models": [
+            {
+              "name": "OnePlus Turbo 6",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.kalvo.com/oneplus-turbo-6-200877.html",
+                "https://www.kimovil.com/en/where-to-buy-oneplus-turbo-6"
+              ]
+            },
+            {
+              "name": "OnePlus Turbo 6V",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/",
+                "https://en.kalvo.com/oneplus-turbo-6v-211190.html",
+                "https://www.kimovil.com/en/where-to-buy-oneplus-turbo-6v"
+              ]
+            },
+            {
+              "name": "OnePlus K11",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/oneplus/"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-05-18",
+    "scope": "Public OnePlus phone models only; excludes tablets, watches, earbuds, laptops, accessories, and country/carrier SKU duplicates.",
+    "variant_policy": "RAM/storage combinations only.",
+    "image_policy": "image_url is null unless a stable direct image URL is verified; no hotlink-blocked image hosts are used."
+  }
+}

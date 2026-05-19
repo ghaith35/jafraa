@@ -1,0 +1,4791 @@
+{
+  "category": "phone",
+  "brands": [
+    {
+      "name": "Xiaomi",
+      "logo_url": "https://logo.clearbit.com/mi.com",
+      "families": [
+        {
+          "name": "Xiaomi Number Series",
+          "models": [
+            {
+              "name": "Xiaomi 17 Ultra",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 17 Pro Max",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 17 Pro",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 17",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 15T Pro",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 15T",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 15 Ultra",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 15S Pro",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 15 Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 15",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 14T Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 14T",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 14 Ultra",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 14 Pro",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 14",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 13T Pro",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 13T",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 13 Ultra",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 13 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 13 Lite",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 13",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 12T Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 12T",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 12S Ultra",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 12S Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 12S",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 12 Pro Dimensity",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 12 Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 12X",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 12 Lite",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 12",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 11T Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 11T",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 11 Lite 5G NE",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 11 Lite 5G",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 11 Lite",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 11i HyperCharge",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi 11i",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mi Number Series",
+          "models": [
+            {
+              "name": "Xiaomi Mi 11 Ultra",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 11 Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 11",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 11i",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 11X Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 11X",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 11 Lite 5G",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 11 Lite",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 10 Ultra",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB/16GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 10 Pro 5G",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 10 5G",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 10T Pro 5G",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 10T 5G",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 10T Lite 5G",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 10 Lite 5G",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 10 Youth 5G",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 10i 5G",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 10S",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 9 Pro 5G",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 9",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 9 Explorer",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 9 SE",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 9 Lite",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 9T Pro",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 9T",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 8 Pro",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 8 Explorer",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 8",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 8 SE",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 8 Lite",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 6",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 6X",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 5",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 5s",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 5s Plus",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 5c",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 5X",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 4",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB/3GB",
+                "storage": [
+                  "16GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 4i",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB",
+                "storage": [
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 4c",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB/3GB",
+                "storage": [
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 4s",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 3",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB",
+                "storage": [
+                  "16GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 2",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB",
+                "storage": [
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 2S",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB",
+                "storage": [
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 2A",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 1",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB",
+                "storage": [
+                  "4GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "4GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi 1S",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB",
+                "storage": [
+                  "4GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "4GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MIX / Foldables",
+          "models": [
+            {
+              "name": "Xiaomi MIX Flip 2",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi MIX Flip",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi MIX Fold 5",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi MIX Fold 4",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi MIX Fold 3",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi MIX Fold 2",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi MIX Fold",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi MIX 4",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi MIX Alpha",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi MIX 3 5G",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi MIX 3",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/10GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "10GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi MIX 2S",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi MIX 2",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi MIX",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mi Note",
+          "models": [
+            {
+              "name": "Xiaomi Mi Note 10 Pro",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi Note 10",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi Note 10 Lite",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi Note 3",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi Note 2",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi Note Pro",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi Note",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB",
+                "storage": [
+                  "16GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mi Max",
+          "models": [
+            {
+              "name": "Xiaomi Mi Max 3",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi Max 2",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi Max",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mi A / Other Mi",
+          "models": [
+            {
+              "name": "Xiaomi Mi A3",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi A2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi A2 Lite",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB",
+                "storage": [
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi A1",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Mi Play",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Civi",
+          "models": [
+            {
+              "name": "Xiaomi Civi 5 Pro",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Civi 4 Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Civi 3",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Civi 2",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Civi 1S",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Civi",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Black Shark",
+          "models": [
+            {
+              "name": "Xiaomi Black Shark 5 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 5 RS",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 5",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 4S Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 4S",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 4 Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 4",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 3S",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 3 Pro",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 3",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 2 Pro",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark 2",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark Helo",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/10GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "10GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Black Shark",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Other Xiaomi Phones",
+          "models": [
+            {
+              "name": "Xiaomi Qin 2",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB",
+                "storage": [
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Qin 1s",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "256MB",
+                "storage": [
+                  "512MB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "256MB",
+                  "storage": "512MB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            },
+            {
+              "name": "Xiaomi Qin 1",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "256MB",
+                "storage": [
+                  "512MB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "256MB",
+                  "storage": "512MB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/xiaomi/"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1212 @@
+{
+  "name": "Condor",
+  "sortOrder": 21,
+  "aliases": [
+    "CONDOR"
+  ],
+  "logoUrl": "https://logo.clearbit.com/condor.dz",
+  "families": [
+    {
+      "name": "Nova",
+      "models": [
+        {
+          "name": "Condor Nova 70",
+          "aliases": [
+            "SP664"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.6-inch 720 x 1612 IPS TFT",
+            "processor": "Unisoc Tiger T606 UMS9230 T7200",
+            "ram": "4GB/6GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": "199 g",
+            "dimensions": "163.60 x 75.60 x 8.60 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Nova 70 4GB 256GB",
+              "ram": "4GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Condor Nova 70 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/nova-70/"
+          ]
+        },
+        {
+          "name": "Condor Nova 70 Pro",
+          "aliases": [
+            "SP668"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.6-inch 720 x 1612 IPS TFT",
+            "processor": "MediaTek Helio G81",
+            "ram": "6GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": "Android 14",
+            "weight": "199 g",
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Nova 70 Pro 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/nova-70-pro/"
+          ]
+        },
+        {
+          "name": "Condor Nova 70 S",
+          "aliases": [
+            "SP667"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.6-inch 720 x 1612 IPS TFT",
+            "processor": "MediaTek Helio G81",
+            "ram": "4GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": "195 g",
+            "dimensions": "163.70 x 75.60 x 8.20 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Nova 70 S 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/nova-70-s/"
+          ]
+        },
+        {
+          "name": "Condor Nova 70 SE",
+          "aliases": [
+            "SP662"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.6-inch 720 x 1612 IPS TFT",
+            "processor": "Unisoc Tiger T606 UMS9230 T7200",
+            "ram": "3GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": "190 g",
+            "dimensions": "163.60 x 75.60 x 8.60 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Nova 70 SE 3GB 128GB",
+              "ram": "3GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/nova-70-se/"
+          ]
+        },
+        {
+          "name": "Condor Nova 70i",
+          "aliases": [
+            "SP663"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.6-inch 720 x 1612 IPS TFT",
+            "processor": "Unisoc Tiger T606 UMS9230 T7200",
+            "ram": "4GB",
+            "storage": [
+              "128GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": "191 g",
+            "dimensions": "163.60 x 75.60 x 8.60 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Nova 70i 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/nova-70i/"
+          ]
+        },
+        {
+          "name": "Condor Nova 80 Pro",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://packpromodzz.com/cdn/shop/files/8bd5e9c1-e2a1-473f-8f17-b02e23dd40f4.jpg?v=1771356283",
+          "specs": {
+            "display": "6.67-inch 720 x 1600 IPS TFT",
+            "processor": "MediaTek Helio G85 MT6769V",
+            "ram": "4GB/6GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5100 mAh",
+            "os": "Android 15",
+            "weight": "204 g",
+            "dimensions": "166.60 x 76.60 x 7.88 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Nova 80 Pro 4GB 128GB",
+              "ram": "4GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Condor Nova 80 Pro 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/nova-80-pro/",
+            "gsmarena:override",
+            "https://packpromodzz.com/cdn/shop/files/8bd5e9c1-e2a1-473f-8f17-b02e23dd40f4.jpg?v=1771356283"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GT / Mate / 80",
+      "models": [
+        {
+          "name": "Condor 80 Pro",
+          "aliases": [
+            "SP674"
+          ],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.78-inch 1080 x 2400 IPS TFT",
+            "processor": "MediaTek Helio G99 MT6789",
+            "ram": "6GB/8GB",
+            "storage": [
+              "128GB",
+              "256GB"
+            ],
+            "battery": "5100 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": "164.60 x 74.60 x 6.88 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor 80 Pro 6GB 128GB",
+              "ram": "6GB",
+              "storage": "128GB",
+              "sourceBasis": "simplified_storage_color_network"
+            },
+            {
+              "name": "Condor 80 Pro 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/80-pro/"
+          ]
+        },
+        {
+          "name": "Condor GT 70",
+          "aliases": [
+            "SP665"
+          ],
+          "releaseYear": 2025,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.78-inch 1080 x 2460 IPS TFT",
+            "processor": "MediaTek Helio G91 MT6769K",
+            "ram": "6GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": "205 g",
+            "dimensions": "168.16 x 76.00 x 8.60 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor GT 70 6GB 256GB",
+              "ram": "6GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/gt-70/"
+          ]
+        },
+        {
+          "name": "Condor Mate 70",
+          "aliases": [
+            "SP666"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.78-inch 1080 x 2460 IPS TFT",
+            "processor": "MediaTek Helio G91 MT6769K",
+            "ram": "8GB",
+            "storage": [
+              "256GB"
+            ],
+            "battery": "5000 mAh",
+            "os": null,
+            "weight": "205 g",
+            "dimensions": "168.16 x 76.00 x 8.60 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Mate 70 8GB 256GB",
+              "ram": "8GB",
+              "storage": "256GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/mate-70/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "F Series",
+      "models": [
+        {
+          "name": "Condor F Flip",
+          "aliases": [
+            "FP212"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "2.4-inch 240 x 320 TFT",
+            "processor": "Feature phone chipset",
+            "ram": "32MB",
+            "storage": [
+              "32MB"
+            ],
+            "battery": "800 mAh",
+            "os": null,
+            "weight": null,
+            "dimensions": null,
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor F Flip 32MB 32MB",
+              "ram": "32MB",
+              "storage": "32MB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/fflip/"
+          ]
+        },
+        {
+          "name": "Condor F Flip Lite",
+          "aliases": [
+            "FP215"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "1.77-inch 160 x 128 TFT",
+            "processor": "Spreadtrum SC6531E",
+            "ram": "32MB",
+            "storage": [
+              "32MB"
+            ],
+            "battery": "500 mAh",
+            "os": null,
+            "weight": "150 g",
+            "dimensions": "110.00 x 54.00 x 18.00 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor F Flip Lite 32MB 32MB",
+              "ram": "32MB",
+              "storage": "32MB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/ffliplite/"
+          ]
+        },
+        {
+          "name": "Condor F Senior",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "1.77-inch 160 x 128 TFT",
+            "processor": "Feature phone chipset",
+            "ram": "32MB",
+            "storage": [
+              "32MB"
+            ],
+            "battery": "600 mAh",
+            "os": null,
+            "weight": "79 g",
+            "dimensions": "115.00 x 54.00 x 13.20 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor F Senior 32MB 32MB",
+              "ram": "32MB",
+              "storage": "32MB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/fsenior/"
+          ]
+        },
+        {
+          "name": "Condor F1 Mini",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://mobilespecs.net/image/mobile/CONDOR_F1_MINI.jpg",
+          "specs": {
+            "display": "1.77-inch 128 x 160 TFT",
+            "processor": "Feature phone chipset",
+            "ram": "32MB",
+            "storage": [
+              "32MB"
+            ],
+            "battery": "600 mAh",
+            "os": null,
+            "weight": "72 g",
+            "dimensions": "112.00 x 46.80 x 14.50 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor F1 Mini 32MB 32MB",
+              "ram": "32MB",
+              "storage": "32MB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/f1mini/",
+            "mobilespecs:condor-product-image",
+            "https://mobilespecs.net/image/mobile/CONDOR_F1_MINI.jpg"
+          ]
+        },
+        {
+          "name": "Condor F6",
+          "aliases": [
+            "FP208"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "1.77-inch 128 x 160 TFT",
+            "processor": "Feature phone chipset",
+            "ram": "32MB",
+            "storage": [
+              "32MB"
+            ],
+            "battery": "800 mAh",
+            "os": null,
+            "weight": "70 g",
+            "dimensions": "116.00 x 50.00 x 14.00 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor F6 32MB 32MB",
+              "ram": "32MB",
+              "storage": "32MB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/f6/"
+          ]
+        },
+        {
+          "name": "Condor FTrios",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "2.8-inch 240 x 320 TFT",
+            "processor": "Feature phone chipset",
+            "ram": "32MB",
+            "storage": [
+              "32MB"
+            ],
+            "battery": "800 mAh",
+            "os": null,
+            "weight": "127.5 g",
+            "dimensions": "130.10 x 56.50 x 16.50 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor FTrios 32MB 32MB",
+              "ram": "32MB",
+              "storage": "32MB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/ftrios/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Griffe",
+      "models": [
+        {
+          "name": "Condor Griffe T1",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://mobilespecs.net/image/mobile/CONDOR_GRIFFE_T1.jpg",
+          "specs": {
+            "display": "4.5-inch 480 x 854 IPS TFT",
+            "processor": "Entry-level mobile chipset",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2000 mAh",
+            "os": "Android 7.0 Nougat",
+            "weight": "145 g",
+            "dimensions": "134.50 x 67.00 x 9.50 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Griffe T1 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/griffet1/",
+            "mobilespecs:condor-product-image",
+            "https://mobilespecs.net/image/mobile/CONDOR_GRIFFE_T1.jpg"
+          ]
+        },
+        {
+          "name": "Condor Griffe T2",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5-inch 480 x 854 IPS TFT",
+            "processor": "Entry-level mobile chipset",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2500 mAh",
+            "os": null,
+            "weight": "150 g",
+            "dimensions": "143.70 x 73.70 x 9.10 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Griffe T2 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/griffet2/"
+          ]
+        },
+        {
+          "name": "Condor Griffe T3",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "4.5-inch 480 x 854 IPS TFT",
+            "processor": "Entry-level mobile chipset",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "1700 mAh",
+            "os": null,
+            "weight": "129.8 g",
+            "dimensions": "132.90 x 67.00 x 10.50 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Griffe T3 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/griffet3/"
+          ]
+        },
+        {
+          "name": "Condor Griffe T4",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5-inch 480 x 854 IPS TFT",
+            "processor": "Spreadtrum SC7731",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2000 mAh",
+            "os": null,
+            "weight": "150 g",
+            "dimensions": "144.00 x 71.50 x 9.50 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Griffe T4 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/griffet4/"
+          ]
+        },
+        {
+          "name": "Condor Griffe T5",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.34-inch 480 x 960 TFT",
+            "processor": "Spreadtrum SC7731",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2500 mAh",
+            "os": null,
+            "weight": "150 g",
+            "dimensions": "149.10 x 72.10 x 10.80 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Griffe T5 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/griffet5/"
+          ]
+        },
+        {
+          "name": "Condor Griffe T6",
+          "aliases": [
+            "SP631"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.34-inch 480 x 960 IPS TFT",
+            "processor": "Spreadtrum SC9850",
+            "ram": "1GB",
+            "storage": [
+              "8GB"
+            ],
+            "battery": "2500 mAh",
+            "os": null,
+            "weight": "150.9 g",
+            "dimensions": "146.30 x 70.50 x 10.50 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Griffe T6 1GB 8GB",
+              "ram": "1GB",
+              "storage": "8GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/griffet6/"
+          ]
+        },
+        {
+          "name": "Condor Griffe T7",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.47-inch 720 x 1440 IPS TFT",
+            "processor": "MediaTek MT6739",
+            "ram": "1GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "2500 mAh",
+            "os": null,
+            "weight": "145 g",
+            "dimensions": "148.00 x 70.90 x 8.70 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Griffe T7 1GB 16GB",
+              "ram": "1GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/griffet7/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plume",
+      "models": [
+        {
+          "name": "Condor Plume H1",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.5-inch 1080 x 1920 IPS TFT",
+            "processor": "Qualcomm Snapdragon 625 8953",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": "173 g",
+            "dimensions": "155.00 x 75.80 x 5.50 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume H1 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumeh1/"
+          ]
+        },
+        {
+          "name": "Condor Plume L1",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://mobilespecs.net/image/mobile/CONDOR_PLUME_L1.jpg",
+          "specs": {
+            "display": "5.5-inch 720 x 1280 IPS TFT",
+            "processor": "MediaTek MT6737",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "2800 mAh",
+            "os": null,
+            "weight": "162 g",
+            "dimensions": "155.00 x 78.50 x 8.90 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume L1 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumel1/",
+            "mobilespecs:condor-product-image",
+            "https://mobilespecs.net/image/mobile/CONDOR_PLUME_L1.jpg"
+          ]
+        },
+        {
+          "name": "Condor Plume L1 Plus",
+          "aliases": [
+            "SP624"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.5-inch 720 x 1280 IPS TFT",
+            "processor": "MediaTek MT6739",
+            "ram": "1GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": "183 g",
+            "dimensions": "153.80 x 76.64 x 8.95 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume L1 Plus 1GB 16GB",
+              "ram": "1GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumel1plus/"
+          ]
+        },
+        {
+          "name": "Condor Plume L2",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.5-inch 720 x 1440 IPS TFT",
+            "processor": "Entry-level mobile chipset",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": "145 g",
+            "dimensions": "148.30 x 71.70 x 8.10 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume L2 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumel2/"
+          ]
+        },
+        {
+          "name": "Condor Plume L2 Pro",
+          "aliases": [
+            "SP633"
+          ],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.7-inch 720 x 1440 IPS TFT",
+            "processor": "MediaTek MT6737",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "4000 mAh",
+            "os": "Android 8.1 Oreo",
+            "weight": "170 g",
+            "dimensions": "154.00 x 73.40 x 8.40 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume L2 Pro 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumel2pro/"
+          ]
+        },
+        {
+          "name": "Condor Plume L3",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.7-inch 720 x 1440 IPS TFT",
+            "processor": "Entry-level mobile chipset",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "3500 mAh",
+            "os": "Android 8.1 Oreo",
+            "weight": "143 g",
+            "dimensions": "154.00 x 73.00 x 8.00 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume L3 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumel3/"
+          ]
+        },
+        {
+          "name": "Condor Plume L3 Plus",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.7-inch 720 x 1440 IPS TFT",
+            "processor": "Qualcomm Snapdragon 430 8937",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "2970 mAh",
+            "os": null,
+            "weight": "143 g",
+            "dimensions": "154.00 x 73.00 x 8.00 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume L3 Plus 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumel3plus/"
+          ]
+        },
+        {
+          "name": "Condor Plume P6 Plus",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://mobilespecs.net/image/mobile/CONDOR_PLUME_P6_PLUS.jpg",
+          "specs": {
+            "display": "5-inch 480 x 854 IPS TFT",
+            "processor": "MediaTek MT6735M",
+            "ram": "1GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "2300 mAh",
+            "os": null,
+            "weight": "163 g",
+            "dimensions": "143.90 x 72.70 x 8.50 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume P6 Plus 1GB 16GB",
+              "ram": "1GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumep6plus/",
+            "mobilespecs:condor-product-image",
+            "https://mobilespecs.net/image/mobile/CONDOR_PLUME_P6_PLUS.jpg"
+          ]
+        },
+        {
+          "name": "Condor Plume P6 Pro LTE",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://mobilespecs.net/image/mobile/CONDOR_PLUME_P6_PRO_LTE.jpg",
+          "specs": {
+            "display": "5-inch 720 x 1280 IPS TFT",
+            "processor": "MediaTek MT6737",
+            "ram": "2GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": "185 g",
+            "dimensions": "144.00 x 70.80 x 10.20 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume P6 Pro LTE 2GB 16GB",
+              "ram": "2GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumep6prolte/",
+            "mobilespecs:condor-product-image",
+            "https://mobilespecs.net/image/mobile/CONDOR_PLUME_P6_PRO_LTE.jpg"
+          ]
+        },
+        {
+          "name": "Condor Plume P8 Lite",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": "https://mobilespecs.net/image/mobile/CONDOR_PLUME_P8_LITE.jpg",
+          "specs": {
+            "display": "5.5-inch 720 x 1280 IPS TFT",
+            "processor": "MediaTek MT6737T",
+            "ram": "3GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "3150 mAh",
+            "os": null,
+            "weight": "178 g",
+            "dimensions": "154.40 x 76.60 x 9.20 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume P8 Lite 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumep8lite/",
+            "mobilespecs:condor-product-image",
+            "https://mobilespecs.net/image/mobile/CONDOR_PLUME_P8_LITE.jpg"
+          ]
+        },
+        {
+          "name": "Condor Plume P8 Pro",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.5-inch 720 x 1280 IPS TFT",
+            "processor": "Entry-level mobile chipset",
+            "ram": "3GB",
+            "storage": [
+              "16GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": "183.1 g",
+            "dimensions": "155.00 x 75.80 x 8.50 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Plume P8 Pro 3GB 16GB",
+              "ram": "3GB",
+              "storage": "16GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/plumep8pro/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Allure",
+      "models": [
+        {
+          "name": "Condor Allure M1",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.5-inch 1080 x 1920 IPS TFT",
+            "processor": "MediaTek Helio P10 MT6755",
+            "ram": "4GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": "184 g",
+            "dimensions": "154.50 x 76.50 x 8.30 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Allure M1 4GB 32GB",
+              "ram": "4GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/allurem1/"
+          ]
+        },
+        {
+          "name": "Condor Allure M2",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.99-inch 720 x 1440 IPS TFT",
+            "processor": "MediaTek Helio P25 MT6757CD",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "4000 mAh",
+            "os": null,
+            "weight": "188.3 g",
+            "dimensions": "160.00 x 76.60 x 8.20 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Allure M2 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/allurem2/"
+          ]
+        },
+        {
+          "name": "Condor Allure M3",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "6.2-inch 1080 x 2246 IPS TFT",
+            "processor": "MediaTek Helio P60 MT6771",
+            "ram": "4GB",
+            "storage": [
+              "64GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": "188.3 g",
+            "dimensions": "160.00 x 76.60 x 8.20 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Allure M3 4GB 64GB",
+              "ram": "4GB",
+              "storage": "64GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/allurem3/"
+          ]
+        },
+        {
+          "name": "Condor Allure M3 Lite",
+          "aliases": [],
+          "releaseYear": null,
+          "imageUrl": null,
+          "specs": {
+            "display": "5.86-inch 720 x 1560 IPS TFT",
+            "processor": "Entry-level mobile chipset",
+            "ram": "3GB",
+            "storage": [
+              "32GB"
+            ],
+            "battery": "3000 mAh",
+            "os": null,
+            "weight": "184 g",
+            "dimensions": "155.00 x 75.50 x 7.80 mm",
+            "colors": null
+          },
+          "variants": [
+            {
+              "name": "Condor Allure M3 Lite 3GB 32GB",
+              "ram": "3GB",
+              "storage": "32GB",
+              "sourceBasis": "simplified_storage_color_network"
+            }
+          ],
+          "sources": [
+            "https://www.gsmchoice.com/en/catalogue/condor/allurem3lite/"
+          ]
+        }
+      ]
+    }
+  ]
+}

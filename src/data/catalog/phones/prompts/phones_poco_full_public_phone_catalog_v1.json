@@ -1,0 +1,2961 @@
+{
+  "category": "phone",
+  "brands": [
+    {
+      "name": "POCO",
+      "logo_url": "https://logo.clearbit.com/po.co",
+      "families": [
+        {
+          "name": "POCO F",
+          "models": [
+            {
+              "name": "POCO F8 Ultra",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F8 Pro",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F7 Ultra",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO F7 Pro",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO F7 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO F7",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/"
+              ]
+            },
+            {
+              "name": "POCO F6 Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F6",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F6 Deadpool",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO F5 Pro",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F5",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F4 GT",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F4",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F3 GT",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F3",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F2 Pro",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO F1",
+              "aliases": [
+                "Pocophone F1"
+              ],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "POCO X",
+          "models": [
+            {
+              "name": "POCO X8 Pro Max",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X8 Pro Iron Man",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO X8 Pro",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X7 Pro Iron Man Edition",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO X7 Pro",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X7",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X6 Neo",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO X6 Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X6",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X5 Pro",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X5 5G",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X5",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X4 GT",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X4 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X4 Pro 5G",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X3 GT",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X3 Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X3 NFC",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X3",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO X2",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "POCO M",
+          "models": [
+            {
+              "name": "POCO M8s 5G",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M8 Pro 5G",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M8 Pro",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M8 5G",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M8",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M7 Plus 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M7 Pro 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M7 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M7",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M6 Plus 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M6 Pro 5G",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M6 Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB/12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M6 5G",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M6 4G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M6",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M5s",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M5",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M4 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M4 Pro 5G",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB/8GB",
+                "storage": [
+                  "64GB",
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M4 5G India",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M4 5G",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M3 Pro 5G India",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M3 Pro 5G",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M3 MZB087AIN",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M3",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M2 Reloaded",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO M2 Pro",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO M2",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "POCO C",
+          "models": [
+            {
+              "name": "POCO C81x",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C81 Pro",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C81",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C85x",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C85 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C85",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C75 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C75",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C71",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C65 India",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C65",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C61",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.mi.com/global/product-list/phone/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C55",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C51",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C50",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB/3GB",
+                "storage": [
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/"
+              ]
+            },
+            {
+              "name": "POCO C40",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB",
+                "storage": [
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO C31",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB",
+                "storage": [
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            },
+            {
+              "name": "POCO C3",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB",
+                "storage": [
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/poco/",
+                "https://www.gsmchoice.com/en/catalogue/poco/models/1/",
+                "https://en.wikipedia.org/wiki/Poco_(smartphone)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

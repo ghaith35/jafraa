@@ -1,0 +1,4852 @@
+{
+  "category": "phone",
+  "brands": [
+    {
+      "name": "Tecno",
+      "logo_url": "https://logo.clearbit.com/tecno-mobile.com",
+      "families": [
+        {
+          "name": "Phantom",
+          "models": [
+            {
+              "name": "Tecno Phantom V Flip2",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom V Fold2",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom V Flip 5G",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom V Fold",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom X2",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom X2 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom X",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom 8",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom 6 Plus",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom 6",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom 9",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            },
+            {
+              "name": "Tecno Phantom 5",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Phantom Z",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Phantom Z Mini",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Camon",
+          "models": [
+            {
+              "name": "Tecno Camon 50 Pro 5G",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 50 Ultra",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 50 Pro",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 50",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 40 Premier",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 40",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 40 Pro",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 40 Pro 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 30 Loewe",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 30S",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 30s Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 20s Pro 5G",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 30 Pro 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 30 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 30",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 30 Premier 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 20 Avocado Art",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 20",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 20 Pro",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 20 Premier 5G",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 20 Pro 5G",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 19 Pro Art Edition",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 19 Neo",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 19 Pro 5G",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 19 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 19",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 18T",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 18P",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 18 Premier",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 18",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I Click",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I 2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I Sky 3",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I Sky",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I 2x",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I Air 2+",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I Sky 2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I Click 2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I Twin",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon I Air",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 17P",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 17 Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 17",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 16 SE",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 16 Pro",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 16 S",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 16 Premier",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 16",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Camon i4",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Camon iAce",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Camon iAce 2x",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Camon iAce 2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 15 Premier",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 15 Air",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 15 Pro",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 15",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 11 Pro",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 11",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 12 Air",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 12 Pro",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            },
+            {
+              "name": "Tecno Camon 12",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            },
+            {
+              "name": "Tecno Camon X Pro",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Camon X",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Camon CM",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Camon CX Air",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Camon CX",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Camon C9",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Camon C8",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Camon C7",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Camon C5",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pova",
+          "models": [
+            {
+              "name": "Tecno Pova Curve 2 5G",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pova Slim 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 7 Pro 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 7 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 7 Neo",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 7 Ultra 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 7",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pova Curve 5G",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 6 Neo 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 6",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 6 Neo",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 6 Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 5 Pro",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 5",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pova Neo 3",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 5 Free Fire",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 4 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 4",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pova Neo 2",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pova Neo 5G",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 3",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 5G",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pova Neo",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pova 2",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Pova",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Spark",
+          "models": [
+            {
+              "name": "Tecno Spark 50",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 50 5G",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go 3",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 40 5G",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Slim",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go 5G",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 40C",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 40 Pro+",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 40 Pro",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 30 Limited Edition",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 40",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB/8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go 2",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 30 Pro Limited Edition",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go 1S",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 30 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 30 Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 30C 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 30",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 30C",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go 1",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 20 Pro 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 20 Pro+",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 20 Pro",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 20",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 20C",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go 2024",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 10 Pro Moon Explorer",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 10 Pro Magic Magenta",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 10 5G",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 10",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 10C",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 10 Pro",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go 2023",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 9 Pro Sport",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 9T India",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 9",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 9T",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 9 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 8C",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go 2022",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 8T",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 8 Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 8P",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 8",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go 2021",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 7T",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 7 Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 7P",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 7",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 6 Go",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 6",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Power 2 Air",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go 2020",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 6 Air",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Power 2",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 5 Pro",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 5 Air",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 5",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 3 16+1",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 3 Pro",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 3",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 4 Air",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 4 Lite",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark 4",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go Plus",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Power",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            },
+            {
+              "name": "Tecno Spark Go",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            },
+            {
+              "name": "Tecno Spark K9 Plus",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Spark K7",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Spark 2",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Spark Pro",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pop",
+          "models": [
+            {
+              "name": "Tecno Pop X 5G",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pop X",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 20",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 9 5G",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 9",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 8",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/1/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 7",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 7 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 6 Pro",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 6 Go",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 6",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 5S",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 5X",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 5 Pro",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 5 LTE",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 5C",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/2/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 5",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 4 LTE",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 4 Pro",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 4",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 1s Pro",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 1s",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 1 Pro",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 1",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 2F",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 2 Power",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 2 Pro",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 3 Plus",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 3",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pop 2 Plus",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/5/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pouvoir",
+          "models": [
+            {
+              "name": "Tecno Pouvoir 4 Pro",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pouvoir 4",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pouvoir 3 Plus",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pouvoir 3 Air",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pouvoir 3",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pouvoir 2 Pro",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno Pouvoir 2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "F",
+          "models": [
+            {
+              "name": "Tecno F2 LTE",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            },
+            {
+              "name": "Tecno F2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/4/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "i",
+          "models": [
+            {
+              "name": "Tecno i5 Pro",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/tecno/models/3/"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "W",
+          "models": [
+            {
+              "name": "Tecno W5 Lite",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno W5",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno W4",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno W3",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno W2",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno W1",
+              "aliases": [],
+              "release_year": null,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "L",
+          "models": [
+            {
+              "name": "Tecno L9 Plus",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno L9",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno L8 Plus",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno L8 Lite",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno L8",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boom",
+          "models": [
+            {
+              "name": "Tecno Boom J8",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB",
+                "storage": [
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            },
+            {
+              "name": "Tecno Boom J7",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://en.wikipedia.org/wiki/Tecno_Mobile"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

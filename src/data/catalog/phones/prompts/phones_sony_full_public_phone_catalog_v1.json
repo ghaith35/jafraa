@@ -1,0 +1,5397 @@
+{
+  "category": "phone",
+  "brands": [
+    {
+      "name": "Sony",
+      "logo_url": "https://logo.clearbit.com/sony.com",
+      "families": [
+        {
+          "name": "Xperia 1 / PRO",
+          "models": [
+            {
+              "name": "Sony Xperia 1 VIII",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB/16GB",
+                "storage": [
+                  "256GB",
+                  "512GB",
+                  "1TB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                },
+                {
+                  "ram": "16GB",
+                  "storage": "1TB"
+                }
+              ],
+              "sources": [
+                "https://www.sony.co.uk/smartphones",
+                "https://www.sony.de/smartphones/gallery",
+                "https://www.gsmchoice.com/en/catalogue/sony/"
+              ]
+            },
+            {
+              "name": "Sony Xperia 1 VII",
+              "aliases": [],
+              "release_year": 2025,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.sony.co.uk/smartphones",
+                "https://www.sony.de/smartphones/gallery",
+                "https://www.gsmchoice.com/en/catalogue/sony/"
+              ]
+            },
+            {
+              "name": "Sony Xperia 1 VI",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.sony.co.uk/smartphones",
+                "https://www.sony.de/smartphones/gallery",
+                "https://www.gsmchoice.com/en/catalogue/sony/"
+              ]
+            },
+            {
+              "name": "Sony Xperia 1 V",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 1 IV",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 1 III",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "256GB",
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "256GB"
+                },
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 1 II",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 1 Professional Edition",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 1",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia PRO-I",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia PRO",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "12GB",
+                "storage": [
+                  "512GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "12GB",
+                  "storage": "512GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Xperia 5",
+          "models": [
+            {
+              "name": "Sony Xperia 5 V",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 5 IV",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 5 III",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 5 II",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB",
+                  "256GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "256GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 5",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Xperia 10 / Ace / 8",
+          "models": [
+            {
+              "name": "Sony Xperia 10 VII",
+              "aliases": [],
+              "release_year": 2026,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.sony.co.uk/smartphones",
+                "https://www.sony.de/smartphones/gallery",
+                "https://www.gsmchoice.com/en/catalogue/sony/"
+              ]
+            },
+            {
+              "name": "Sony Xperia 10 VI",
+              "aliases": [],
+              "release_year": 2024,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.sony.co.uk/smartphones",
+                "https://www.sony.de/smartphones/gallery",
+                "https://www.gsmchoice.com/en/catalogue/sony/"
+              ]
+            },
+            {
+              "name": "Sony Xperia 10 V",
+              "aliases": [],
+              "release_year": 2023,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB/8GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                },
+                {
+                  "ram": "8GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 10 IV",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 10 III Lite",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 10 III",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "6GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 10 II",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 10 Plus",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB/6GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 10",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Ace III",
+              "aliases": [],
+              "release_year": 2022,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Ace II",
+              "aliases": [],
+              "release_year": 2021,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Ace",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 8 Lite",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia 8",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "4GB",
+                "storage": [
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Xperia X / XA / XZ / R / L",
+          "models": [
+            {
+              "name": "Sony Xperia XZ3",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XZ2 Premium",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XZ2 Compact",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XZ2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XZ1 Compact",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XZ1",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XZ Premium",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XZs",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XZ",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia X Compact",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia X Performance",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia X",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XA2 Plus",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XA2 Ultra",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XA2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XA1 Plus",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XA1 Ultra",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XA1",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XA Ultra",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia XA",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia R1 Plus",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB/3GB/4GB",
+                "storage": [
+                  "16GB",
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia R1",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB/3GB/4GB",
+                "storage": [
+                  "16GB",
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia L4",
+              "aliases": [],
+              "release_year": 2020,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia L3",
+              "aliases": [],
+              "release_year": 2019,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "3GB/4GB/6GB",
+                "storage": [
+                  "32GB",
+                  "64GB",
+                  "128GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                },
+                {
+                  "ram": "6GB",
+                  "storage": "128GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia L2",
+              "aliases": [],
+              "release_year": 2018,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB/3GB/4GB",
+                "storage": [
+                  "16GB",
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia L1",
+              "aliases": [],
+              "release_year": 2017,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB/3GB/4GB",
+                "storage": [
+                  "16GB",
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://www.gadgets360.com/mobiles/sony-phones",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Xperia Z",
+          "models": [
+            {
+              "name": "Sony Xperia Z5 Premium",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z5 Compact",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z5",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z4v",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z3+ dual",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z3+",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z3v",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z3 Compact",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z3",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z2a",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z2",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z1 Compact",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z1s",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z1",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z Ultra",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia ZR",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia ZL",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia Z",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Xperia C / E / M / T / 2012-2016",
+          "models": [
+            {
+              "name": "Sony Xperia C5 Ultra",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia C4",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia C3",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia C",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia E5",
+              "aliases": [],
+              "release_year": 2016,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "2GB/3GB/4GB",
+                "storage": [
+                  "16GB",
+                  "32GB",
+                  "64GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                },
+                {
+                  "ram": "4GB",
+                  "storage": "64GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia E4g",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia E4",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia E3",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia E1",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia E",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia M5",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia M4 Aqua",
+              "aliases": [],
+              "release_year": 2015,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia M2 Aqua",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia M2",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia M",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia T3",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia T2 Ultra",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia T2 Ultra dual",
+              "aliases": [],
+              "release_year": 2014,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia T",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia TX",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia TL",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia V",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia SP",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia L",
+              "aliases": [],
+              "release_year": 2013,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "1GB/2GB/3GB",
+                "storage": [
+                  "8GB",
+                  "16GB",
+                  "32GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "2GB",
+                  "storage": "16GB"
+                },
+                {
+                  "ram": "3GB",
+                  "storage": "32GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia J",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia ion",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia S",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia SL",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia acro S",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia P",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia U",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia sola",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia go",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia miro",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia tipo dual",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia tipo",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Xperia neo L",
+              "aliases": [],
+              "release_year": 2012,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sony/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Legacy Sony Ericsson Xperia",
+          "models": [
+            {
+              "name": "Sony Ericsson Xperia arc S",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia arc",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia PLAY",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia neo V",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia neo",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia pro",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia mini pro",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia mini",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia ray",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia active",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Live with Walkman",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia X8",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia X10",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia X10 mini pro",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia X10 mini",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia X2",
+              "aliases": [],
+              "release_year": 2009,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia X1",
+              "aliases": [],
+              "release_year": 2008,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Xperia Pureness",
+              "aliases": [],
+              "release_year": 2009,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Acro SO-02C",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson WT18i",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson W8 Walkman",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            },
+            {
+              "name": "Sony Ericsson A8i",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/",
+                "https://en.wikipedia.org/wiki/Sony_Xperia"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Other Sony Ericsson Phones",
+          "models": [
+            {
+              "name": "Sony Ericsson Mix Walkman",
+              "aliases": [],
+              "release_year": 2011,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": "512MB/1GB",
+                "storage": [
+                  "320MB",
+                  "1GB",
+                  "8GB",
+                  "16GB"
+                ],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [
+                {
+                  "ram": "512MB",
+                  "storage": "320MB"
+                },
+                {
+                  "ram": "512MB",
+                  "storage": "1GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "8GB"
+                },
+                {
+                  "ram": "1GB",
+                  "storage": "16GB"
+                }
+              ],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Yendo",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Cedar",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Zylo",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Spiro",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Vivaz Pro",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Vivaz",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Aspen",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Elm",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Hazel",
+              "aliases": [],
+              "release_year": 2010,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Jalou by Dolce&Gabbana",
+              "aliases": [],
+              "release_year": 2009,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Jalou",
+              "aliases": [],
+              "release_year": 2009,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson T715",
+              "aliases": [],
+              "release_year": 2009,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson C901 GreenHeart",
+              "aliases": [],
+              "release_year": 2009,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            },
+            {
+              "name": "Sony Ericsson Naite",
+              "aliases": [],
+              "release_year": 2009,
+              "image_url": null,
+              "specs": {
+                "display": null,
+                "processor": null,
+                "ram": null,
+                "storage": [],
+                "battery": null,
+                "os": null,
+                "weight": null,
+                "dimensions": null
+              },
+              "variants": [],
+              "sources": [
+                "https://www.gsmchoice.com/en/catalogue/sonyericsson/"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

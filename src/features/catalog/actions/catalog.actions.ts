@@ -10,6 +10,18 @@ import { APPLE_ENRICHED_CATALOG } from "../../../../prisma/catalog/apple-catalog
 import { SAMSUNG_ENRICHED_CATALOG } from "../../../../prisma/catalog/samsung-catalog-enriched";
 import { HUAWEI_ENRICHED_CATALOG } from "../../../../prisma/catalog/huawei-catalog-enriched";
 import { INFINIX_ENRICHED_CATALOG } from "../../../../prisma/catalog/infinix-catalog-enriched";
+import { VIVO_ENRICHED_CATALOG } from "../../../../prisma/catalog/vivo-catalog-enriched";
+import { TECNO_ENRICHED_CATALOG } from "../../../../prisma/catalog/tecno-catalog-enriched";
+import { ONEPLUS_ENRICHED_CATALOG } from "../../../../prisma/catalog/oneplus-catalog-enriched";
+import { GOOGLE_ENRICHED_CATALOG } from "../../../../prisma/catalog/google-catalog-enriched";
+import { XIAOMI_ENRICHED_CATALOG } from "../../../../prisma/catalog/xiaomi-catalog-enriched";
+import { REDMI_ENRICHED_CATALOG } from "../../../../prisma/catalog/redmi-catalog-enriched";
+import { OPPO_ENRICHED_CATALOG } from "../../../../prisma/catalog/oppo-catalog-enriched";
+import { CONDOR_ENRICHED_CATALOG } from "../../../../prisma/catalog/condor-catalog-enriched";
+import { SONY_ENRICHED_CATALOG } from "../../../../prisma/catalog/sony-catalog-enriched";
+import { LG_ENRICHED_CATALOG } from "../../../../prisma/catalog/lg-catalog-enriched";
+import { NOKIA_ENRICHED_CATALOG } from "../../../../prisma/catalog/nokia-catalog-enriched";
+import { POCO_ENRICHED_CATALOG } from "../../../../prisma/catalog/poco-catalog-enriched";
 
 import brandAcer from "../../../data/catalog/laptops/brands/acer.json";
 import brandApple from "../../../data/catalog/laptops/brands/apple.json";
@@ -161,6 +173,18 @@ function phoneEnrichedBrandDef(brandName: string) {
   if (normalized === normalizeCatalogName(SAMSUNG_ENRICHED_CATALOG.brandName)) return SAMSUNG_ENRICHED_CATALOG;
   if (normalized === normalizeCatalogName(HUAWEI_ENRICHED_CATALOG.brandName)) return HUAWEI_ENRICHED_CATALOG;
   if (normalized === normalizeCatalogName(INFINIX_ENRICHED_CATALOG.brandName)) return INFINIX_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(VIVO_ENRICHED_CATALOG.brandName)) return VIVO_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(TECNO_ENRICHED_CATALOG.brandName)) return TECNO_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(ONEPLUS_ENRICHED_CATALOG.brandName)) return ONEPLUS_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(GOOGLE_ENRICHED_CATALOG.brandName)) return GOOGLE_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(XIAOMI_ENRICHED_CATALOG.brandName)) return XIAOMI_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(REDMI_ENRICHED_CATALOG.brandName)) return REDMI_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(OPPO_ENRICHED_CATALOG.brandName)) return OPPO_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(CONDOR_ENRICHED_CATALOG.brandName)) return CONDOR_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(SONY_ENRICHED_CATALOG.brandName)) return SONY_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(LG_ENRICHED_CATALOG.brandName)) return LG_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(NOKIA_ENRICHED_CATALOG.brandName)) return NOKIA_ENRICHED_CATALOG;
+  if (normalized === normalizeCatalogName(POCO_ENRICHED_CATALOG.brandName)) return POCO_ENRICHED_CATALOG;
   return null;
 }
 
